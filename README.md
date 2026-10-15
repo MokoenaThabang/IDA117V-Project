@@ -11,6 +11,14 @@ Lecturer **approved** this municipal Open Data source. Written/code due **20 Oct
 - Main split: stratified random **70/15/15** on `target`. Time split = robustness only.
 - UI later: **Streamlit** (a notebook cell is not the UI)
 
+## Getting started
+
+```bash
+python -m venv .venv
+source .venv/bin/activate  # On Windows use .venv\Scripts\activate
+python -m pip install -r requirements.txt
+```
+
 ## Execution order
 
 1. `python -m pip install -r requirements.txt`
@@ -35,6 +43,14 @@ Lecturer **approved** this municipal Open Data source. Written/code due **20 Oct
 
 Raw team extract: 5,199,661 rows (8 Oct 2026).
 
+## Layout
+
+- `notebooks/` — Q1–Q3 Jupyter notebooks
+- `src/` — `prep.py`, EDA, Dummy, Q3 training
+- `data/` — obtain-instructions, licence, sample (raw/processed parquets are gitignored)
+- `experiments/` — dummy + Q3 val logs
+- `figures/` — train-only EDA and Q3 val plots
+
 ## Docs
 
 - [Concept notes](docs/concept-notes.md)
@@ -43,4 +59,4 @@ Raw team extract: 5,199,661 rows (8 Oct 2026).
 - [Licence text](data/licence.txt)
 - UI dropdowns: `data/app_choices.json`
 
-This foundation PR does **not** train Random Forest / MLP / embeddings and does **not** ship Streamlit.
+This PR trains Dummy + LR + Random Forest + MLP + the embedding net on the frozen split. It does **not** tune a champion, score a new test pass for those four, or ship Streamlit.

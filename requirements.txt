@@ -8,3 +8,4 @@ joblib>=1.4
 torch>=2.0
 requests>=2.32
 tqdm>=4.66
+jupyter
