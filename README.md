@@ -1,2 +1,45 @@
-# IDA117V-Project
-Assignment repository for IDA117V Project
+# IDA117V — Cape Town C3 resolution classifier
+
+Predict **Resolved Fast / Resolved Slow / Unresolved** for a City of Cape Town SAP C3 **repair/fault** request **at logging**.
+
+Lecturer **approved** this municipal Open Data source. Written/code due **20 October 2026**. Presentation slot **not yet announced** (do not treat the template’s 5–17 Oct window as the slot). Team names: add later; do not invent.
+
+- Dataset: https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore
+- Splits (preferred): https://drive.google.com/drive/folders/1ca8M2Gjq-sbe7I8wrt_WUyBm8523PwCq
+- Seed: **42** (`src/prep.py`)
+- Fast/Slow cut: **7 days** (empirical ~75th percentile of resolved durations)
+- Main split: stratified random **70/15/15** on `target`. Time split = robustness only.
+- UI later: **Streamlit** (a notebook cell is not the UI)
+
+## Execution order
+
+1. `python -m pip install -r requirements.txt`
+2. Obtain modelling parquets — see [`data/README.md`](data/README.md) (Drive first; portal paging is fallback). Put `train.parquet`, `val.parquet`, `test.parquet` in `data/processed/`.
+3. `python -m src.eda` — five figures from **train only** → `figures/`
+4. `python -m src.baseline` — `DummyClassifier` most-frequent **and** stratified. Fits `prep.py` on **train only**. Logs val metrics; one locked test pass. Writes `models/dummy_most_frequent.joblib` and `experiments/experiment_log.csv`.
+5. Later (not this PR): Logistic Regression, Random Forest, MLP, tabular embedding net on the **same** split. Tune **only** the validation winner. **Do not tune on test.** Then Streamlit.
+
+## Leakage-safe pipeline
+
+`src/prep.py` is the source of truth. Features: complaint type, department, suburb_group, ward, sub-council, created date. Banned: completed date, changed-on, notification IDs/text, resolution_days, raw suburb, work centre.
+
+## Counts (Drive files, 15 Oct 2026)
+
+| Split | n | Fast | Slow | Unresolved |
+| --- | ---: | ---: | ---: | ---: |
+| Train | 2,120,469 | 1,429,124 | 455,121 | 236,224 |
+| Val | 454,386 | 306,241 | 97,526 | 50,619 |
+| Test (locked) | 454,387 | 306,241 | 97,526 | 50,620 |
+| **Total** | **3,029,242** | | | |
+
+Raw team extract: 5,199,661 rows (8 Oct 2026).
+
+## Docs
+
+- [Concept notes](docs/concept-notes.md)
+- [Dataset card](docs/dataset-card.md)
+- [Data dictionary](docs/data-dictionary.md)
+- [Licence text](data/licence.txt)
+- UI dropdowns: `data/app_choices.json`
+
+This foundation PR does **not** train Random Forest / MLP / embeddings and does **not** ship Streamlit.
