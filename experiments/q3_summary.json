@@ -1,0 +1,69 @@
+{
+  "compute": {
+    "python": "3.12.3",
+    "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+    "seed": 42,
+    "rf_train_n": 150000,
+    "nn_train_n": 150000,
+    "note": "Official val/test are frozen Drive folds. RF/MLP/embedding subsample train only. Neural early stopping uses 15% of that train subsample, not official val. Test is not loaded in Q3."
+  },
+  "val_table": [
+    {
+      "model": "Dummy (most_frequent)",
+      "family": "baseline",
+      "macro_f1_val": 0.26841101705128356,
+      "accuracy_val": 0.6739666274929245,
+      "recall_resolved_slow_val": 0.0,
+      "recall_unresolved_val": 0.0
+    },
+    {
+      "model": "Dummy (stratified)",
+      "family": "baseline",
+      "macro_f1_val": 0.33291606368236476,
+      "accuracy_val": 0.5123243233726391,
+      "recall_resolved_slow_val": 0.21472222791870885,
+      "recall_unresolved_val": 0.11051186313439618
+    },
+    {
+      "model": "LogisticRegression",
+      "family": "traditional",
+      "macro_f1_val": 0.5828293497250269,
+      "accuracy_val": 0.6580836557464359,
+      "recall_resolved_slow_val": 0.5032606689498185,
+      "recall_unresolved_val": 0.6806535095517493,
+      "roc_auc_ovr_macro_val": 0.8072833284279971,
+      "pr_auc_macro_val": 0.6320875114647729
+    },
+    {
+      "model": "RandomForest",
+      "family": "traditional",
+      "macro_f1_val": 0.5350340800443757,
+      "accuracy_val": 0.5867500319111945,
+      "recall_resolved_slow_val": 0.5662695076184813,
+      "recall_unresolved_val": 0.5952903060115767,
+      "roc_auc_ovr_macro_val": 0.7720074743090057,
+      "pr_auc_macro_val": 0.5908339462022633
+    },
+    {
+      "model": "MLP",
+      "family": "neural",
+      "macro_f1_val": 0.6012234338638383,
+      "accuracy_val": 0.6723138476977724,
+      "recall_resolved_slow_val": 0.5373541414597133,
+      "recall_unresolved_val": 0.7197890120310555,
+      "roc_auc_ovr_macro_val": 0.8231583238580122,
+      "pr_auc_macro_val": 0.6594032526517136
+    },
+    {
+      "model": "EmbeddingNet",
+      "family": "neural",
+      "macro_f1_val": 0.5584785058310126,
+      "accuracy_val": 0.6378145453425061,
+      "recall_resolved_slow_val": 0.4727457293439698,
+      "recall_unresolved_val": 0.659416424662676,
+      "roc_auc_ovr_macro_val": 0.7803190569645194,
+      "pr_auc_macro_val": 0.5982562528606422
+    }
+  ],
+  "test_loaded": false
+}

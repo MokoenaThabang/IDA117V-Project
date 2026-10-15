@@ -1,0 +1,8 @@
+{
+  "python": "3.12.3",
+  "platform": "Linux-6.12.94+-x86_64-with-glibc2.39",
+  "seed": 42,
+  "rf_train_n": 150000,
+  "nn_train_n": 150000,
+  "note": "Official val/test are frozen Drive folds. RF/MLP/embedding subsample train only. Neural early stopping uses 15% of that train subsample, not official val. Test is not loaded in Q3."
+}
