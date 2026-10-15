@@ -17,7 +17,8 @@ Lecturer **approved** this municipal Open Data source. Written/code due **20 Oct
 2. Obtain modelling parquets — see [`data/README.md`](data/README.md) (Drive first; portal paging is fallback). Put `train.parquet`, `val.parquet`, `test.parquet` in `data/processed/`.
 3. `python -m src.eda` — five figures from **train only** → `figures/`
 4. `python -m src.baseline` — `DummyClassifier` most-frequent **and** stratified. Fits `prep.py` on **train only**. Logs val metrics; one locked test pass. Writes `models/dummy_most_frequent.joblib` and `experiments/experiment_log.csv`.
-5. Later (not this PR): Logistic Regression, Random Forest, MLP, tabular embedding net on the **same** split. Tune **only** the validation winner. **Do not tune on test.** Then Streamlit.
+5. Jupyter (template order): [`notebooks/q1.ipynb`](notebooks/q1.ipynb) (Q1 numbers only) then [`notebooks/q2.ipynb`](notebooks/q2.ipynb) (Q2 audit, five figures, split-before-fit, `prep.py` Pipeline). How to run: [`notebooks/README.md`](notebooks/README.md). **Do not** train LR / Forest / MLP here.
+6. Later (not this PR): Logistic Regression, Random Forest, MLP, tabular embedding net on the **same** split. Tune **only** the validation winner. **Do not tune on test.** Then Streamlit.
 
 ## Leakage-safe pipeline
 
