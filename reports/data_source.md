@@ -23,8 +23,9 @@ Metadata below was read on **16 October 2026** from the City of Cape Town Open D
 | Portal item size | 1,825,087,488 bytes, as reported by the item. This is not a measured local file size. |
 | Item created | 23 May 2026, 11:04 UTC |
 | Item modified | 15 October 2026, 10:24 UTC |
-| Local raw file | Not saved. `data/raw/` contains no extract. |
-| Download date of a local file | Not downloaded |
+| Local raw file | `data/raw/c3_notifications.parquet` (gitignored). 5,372,466 rows, the same count as the feature layer. |
+| How the local file was obtained | On 16 October 2026 the Hub CSV export was still generating. The rows were read from the feature layer in ObjectId order and written to parquet. Columns were not renamed. Dates remain UTC epoch milliseconds, as returned by the service. |
+| Download date of the local copy | 16 October 2026 |
 
 The repository code is MIT. That licence does not apply to the City dataset.
 
@@ -101,7 +102,9 @@ That title was checked against the ArcGIS item on 16 October 2026. This project 
 
 The description also still contains the unfilled phrases “[MONTH YEAR — e.g. January 2027]” and “[Your name / team email]”, so it does not state a retirement month or a contact address. It includes a “Historic Data” list of years from 2024 back to 2011. That list does not match the `Created_On_Date` minimum returned by the layer, which is 1 January 2023.
 
-## Why there is no local file
+## Local copy
+
+The Hub CSV was not ready, so `python -m src.fetch_c3` saved the feature-layer attributes to `data/raw/c3_notifications.parquet` on 16 October 2026. That file is the extract notebook 01 audits. It is gitignored. The CSV endpoint, at 19:59 UTC the same day, had not finished:
 
 The Hub CSV download endpoint returned HTTP 202 on 16 October 2026 at 19:59 UTC:
 

@@ -1,0 +1,12 @@
+decision,rows_affected
+"Remove exact duplicate business rows, ignoring ObjectId. Keep the first copy.",779663
+Keep rows that share a notification id when the other columns differ.,309758
+Exclude malformed Created On Date values from the label.,0
+Exclude rows with no Created On Date.,0
+Exclude malformed Completed Date values. Do not treat them as open.,0
+Exclude completion dates earlier than creation dates.,20
+Exclude requests created after the observation cutoff.,0
+Leave open requests younger than the observation window unlabelled.,15981
+Keep completed requests longer than the unusual-duration flag. Do not delete them.,14953
+Flag coordinates outside the local metre envelope. Do not delete those rows.,2515158
+"Omit Completed Date, Changed on, coordinates, and Notification type from the analysis file.",4592803

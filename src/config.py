@@ -52,20 +52,6 @@ def _env_path(name: str, default: Path) -> Path:
     return path.resolve()
 
 
-def _optional_positive_int(name: str) -> int | None:
-    """Read a positive integer setting. An empty value means "not chosen yet"."""
-    raw = os.environ.get(name, "").strip()
-    if raw == "":
-        return None
-    try:
-        value = int(raw)
-    except ValueError as exc:
-        raise ValueError(f"{name} must be a positive whole number. Got {raw!r}.") from exc
-    if value <= 0:
-        raise ValueError(f"{name} must be greater than 0. Got {value}.")
-    return value
-
-
 load_env_file()
 
 # Data directories. Raw files stay as downloaded. Interim and processed
@@ -117,6 +103,10 @@ CONSTRUCTED_COLUMNS = (
     TARGET_COLUMN,
     "resolution_days",
     "label_status",
+    "duration_flag",
+    "coordinate_quality",
+    "notification_id_repeated",
+    "notification_type_matches_id",
 )
 
 # Stated in the project plan. The published layer's own dates are in
@@ -138,9 +128,53 @@ FEATURE_LAYER_URL = (
     "Service_Requests_2023_until_20_May_2026/FeatureServer/0"
 )
 
-# None means the audit has not chosen a boundary yet. Do not invent one here.
-FAST_SLOW_THRESHOLD_DAYS = _optional_positive_int("FAST_SLOW_THRESHOLD_DAYS")
-OBSERVATION_WINDOW_DAYS = _optional_positive_int("OBSERVATION_WINDOW_DAYS")
+# Seven calendar days is a provisional cut, not a fitted result and not a
+# citywide resolution standard. The City has said C3 turnaround depends on
+# the department. Override either value in the environment if the team
+# adopts a different documented rule. The observation window defaults to
+# the same number so an open request is Unresolved only after it has had
+# the full fast-resolution period to be completed.
+PROVISIONAL_THRESHOLD_DAYS = 7
+UNUSUAL_DURATION_DAYS = 365
+
+
+def _positive_int(name: str, default: int) -> int:
+    """Read a positive integer, or return the documented default."""
+    raw = os.environ.get(name, "").strip()
+    if raw == "":
+        return default
+    try:
+        value = int(raw)
+    except ValueError as exc:
+        raise ValueError(f"{name} must be a positive whole number. Got {raw!r}.") from exc
+    if value <= 0:
+        raise ValueError(f"{name} must be greater than 0. Got {value}.")
+    return value
+
+
+FAST_SLOW_THRESHOLD_DAYS = _positive_int("FAST_SLOW_THRESHOLD_DAYS", PROVISIONAL_THRESHOLD_DAYS)
+OBSERVATION_WINDOW_DAYS = _positive_int("OBSERVATION_WINDOW_DAYS", FAST_SLOW_THRESHOLD_DAYS)
+
+# Identifiers and precise location. They are kept in the raw extract and
+# blocked from the default model-feature list.
+IDENTIFIER_COLUMNS = (
+    "Notification",
+    "Notification_type",
+    "ObjectId",
+)
+PRECISE_LOCATION_COLUMNS = (
+    "X_Y_Co_ordinate_1",
+    "X_Y_Co_ordinate_2",
+)
+# Envelope counted on the published layer on 16 October 2026.
+# Coordinate 1 is the easting-like value and coordinate 2 the northing-like
+# value. This is not an official EPSG declaration; only a handful of rows
+# fall in a longitude/latitude box. Rows outside the envelope are flagged,
+# not deleted.
+LOCAL_GRID_X_MIN = -200_000
+LOCAL_GRID_X_MAX = 200_000
+LOCAL_GRID_Y_MIN = 3_600_000
+LOCAL_GRID_Y_MAX = 4_000_000
 
 
 def required_directories() -> tuple[Path, ...]:

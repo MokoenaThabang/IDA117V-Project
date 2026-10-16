@@ -1,0 +1,56 @@
+{
+  "raw_rows": 5372466,
+  "rows_after_duplicate_rule": 4592803,
+  "exact_duplicate_rows_including_objectid": 0,
+  "exact_business_duplicate_rows_removed": 779663,
+  "notification_ids_with_repeats": 142898,
+  "rows_in_repeated_notification_ids": 309758,
+  "reference_date": "2026-10-06",
+  "threshold_days": 7,
+  "observation_days": 7,
+  "completed_after_reference": 3080,
+  "completed_before_2023": 20,
+  "created_min": "2023-01-01",
+  "created_max": "2026-10-06",
+  "completed_min": "2000-01-01",
+  "completed_max": "2026-11-06",
+  "exclusion_counts": {
+    "labelled": 4576802,
+    "insufficient_follow_up": 15981,
+    "completion_before_creation": 20
+  },
+  "target_counts": {
+    "Resolved Fast": 2969242,
+    "Resolved Slow": 937145,
+    "Unresolved": 670415,
+    "None": 16001
+  },
+  "unusual_long_durations_retained": 14953,
+  "completed_duration_count": 3906387,
+  "completed_within_threshold": 2969242,
+  "duration_quantiles_days": {
+    "p50": 2.0,
+    "p75": 7.0,
+    "p90": 32.0,
+    "p99": 236.0
+  },
+  "changed_before_created": 0,
+  "malformed_changed_on": 0,
+  "coordinate_quality_counts": {
+    "outside_local_grid": 2515158,
+    "plausible_local_grid": 1042005,
+    "missing": 1035640
+  },
+  "notification_type_matches_id": 1222465,
+  "notification_type_other": 3370338,
+  "model_features": [
+    "Sub_Council",
+    "Ward",
+    "Suburb",
+    "C3_Complaint_Type",
+    "Work_Center",
+    "Created_On_Date",
+    "Notifications_Created"
+  ],
+  "unusual_duration_rule_days": 365
+}

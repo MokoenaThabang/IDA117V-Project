@@ -22,6 +22,36 @@ def use_project_style() -> None:
     plt.rcParams["axes.titlesize"] = 12
 
 
+def save_duration_histogram(durations, threshold_days: int, clip_days: int = 90):
+    """Save a histogram of completed durations.
+
+    Durations above ``clip_days`` stay in the data and are left off the
+    chart so the body of the distribution stays readable. No location
+    fields are drawn.
+    """
+    import matplotlib.pyplot as plt
+
+    use_project_style()
+    values = durations.dropna()
+    shown = values[values <= clip_days]
+    figure, axis = plt.subplots()
+    axis.hist(shown, bins=clip_days + 1, color="#2c6e8a")
+    axis.axvline(threshold_days, color="#b85c38", linewidth=1.5)
+    axis.set_xlabel("Resolution duration (calendar days)")
+    axis.set_ylabel("Completed requests")
+    axis.set_title(f"Completed durations up to {clip_days} days")
+    hidden = int((values > clip_days).sum())
+    axis.text(
+        0.98,
+        0.95,
+        f"Hidden above {clip_days} days: {hidden}",
+        transform=axis.transAxes,
+        ha="right",
+        va="top",
+    )
+    return figure, save_figure(figure, "01_resolution_duration.png")
+
+
 def save_figure(figure, filename: str, directory: Path | None = None) -> Path:
     """Save a Matplotlib figure as a PNG and return the path.
 

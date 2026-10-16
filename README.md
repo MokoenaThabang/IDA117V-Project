@@ -16,7 +16,7 @@ The dataset page for this project is:
 
 https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore
 
-The published title is **Service Requests 2023 until 06 October 2026 (Deprecated)**. The City marks the layer as frozen. Created-on dates in the feature service run from 1 January 2023 through 6 October 2026, which is later than the plan's end date. Details, the licence, field names, and the fact that no local file has been saved yet are in [`reports/data_source.md`](reports/data_source.md). Do not commit the raw extract. The repository MIT licence covers the code only, not the City dataset.
+The published title is **Service Requests 2023 until 06 October 2026 (Deprecated)**. The City marks the layer as frozen. Created-on dates in the feature service run from 1 January 2023 through 6 October 2026, which is later than the plan's end date. Field names, the licence, and the local-copy note are in [`reports/data_source.md`](reports/data_source.md). A gitignored parquet copy can be built with `python -m src.fetch_c3` when `data/raw/` is empty. Notebook 01 loads that file, or a CSV or Excel file placed in `data/raw/`, and writes `data/processed/service_requests_labelled.parquet`. Do not commit the raw extract. The repository MIT licence covers the code only, not the City dataset.
 
 ## Setup (Windows)
 

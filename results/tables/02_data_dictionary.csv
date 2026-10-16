@@ -1,0 +1,15 @@
+column,pandas_dtype,meaning,missing_count,missing_percent,distinct_values,proposed_use
+Sub_Council,str,Subcouncil recorded on the request.,348869,6.4936,47,"Candidate predictor. Coarse area, not a precise point."
+Ward,str,Ward recorded on the request.,93565,1.7416,220,"Candidate predictor. Coarse area, not a precise point."
+Suburb,str,Suburb recorded on the request.,52761,0.9821,44905,"Candidate predictor. Coarse area, not a precise point."
+C3_Complaint_Type,str,Complaint or request category.,0,0.0,1154,Candidate predictor if it is known when the request is logged.
+Work_Center,str,Work centre named on the request.,0,0.0,2076,Uncertain predictor. Use only if the centre is known at logging rather than assigned later.
+Notification,int64,Service-request identifier.,0,0.0,4425943,Identifier. Not a model input.
+Notification_type,str,Mixed field. On the published layer many rows repeat the notification id and other rows hold free text.,22,0.0004,1630557,Not a model input. Do not print the free-text values.
+X_Y_Co_ordinate_1,float64,First coordinate attribute.,1152483,21.4517,2276268,Precise location. Not a model input and not shown in tables or figures.
+X_Y_Co_ordinate_2,float64,Second coordinate attribute.,1152443,21.4509,2277380,Precise location. Not a model input and not shown in tables or figures.
+Created_On_Date,int64,Date the request was logged.,0,0.0,1323,Known at logging. Used for the observation cutoff and allowed as a time feature.
+Changed_on,float64,Date of a later change to the request.,116320,2.1651,1373,Post-logging field. Not a model input.
+Completed_Date,float64,"Date the request was completed, when it has been completed.",785115,14.6137,1374,Used only to build the label. Not a model input.
+Notifications_Created,float64,Count stored in Notifications Created. On the published layer almost every row is 1.,3588,0.0668,3,Low-variance candidate predictor. Not used to build the label and not an identifier.
+ObjectId,int64,Feature-service row identifier.,0,0.0,5372466,System identifier. Not a model input. Ignored when checking business duplicates.

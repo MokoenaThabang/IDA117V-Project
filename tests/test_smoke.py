@@ -28,8 +28,8 @@ class ProjectSmokeTest(unittest.TestCase):
             "https://odp-cctegis.opendata.arcgis.com/datasets/"
             "90711027d33940b5a06e96ad8a8f7ede_0/explore",
         )
-        self.assertIsNone(config.FAST_SLOW_THRESHOLD_DAYS)
-        self.assertIsNone(config.OBSERVATION_WINDOW_DAYS)
+        self.assertEqual(config.FAST_SLOW_THRESHOLD_DAYS, 7)
+        self.assertEqual(config.OBSERVATION_WINDOW_DAYS, 7)
         self.assertTrue(callable(data_loader.list_raw_files))
         self.assertTrue(callable(preprocessing.build_resolution_target))
         self.assertTrue(callable(evaluation.classification_scores))
@@ -57,10 +57,10 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertEqual(config.TABLES_DIR, PROJECT_ROOT / "results" / "tables")
 
     def test_empty_raw_directory_does_not_invent_a_file(self) -> None:
-        files = data_loader.list_raw_files(PROJECT_ROOT / "data" / "raw")
-        self.assertEqual(files, [])
-        with self.assertRaises(data_loader.RawDataNotFoundError):
-            data_loader.resolve_raw_file()
+        import tempfile
+
+        with tempfile.TemporaryDirectory() as folder:
+            self.assertEqual(data_loader.list_raw_files(Path(folder)), [])
         instructions = data_loader.manual_download_instructions()
         self.assertIn(config.SOURCE_PAGE_URL, instructions)
         self.assertIn("18 September 2026", instructions)
@@ -75,7 +75,7 @@ class ProjectSmokeTest(unittest.TestCase):
             "Notification",
         ]
         kept = preprocessing.select_model_features(columns)
-        self.assertEqual(kept, ["Created On Date", "Notification"])
+        self.assertEqual(kept, ["Created On Date"])
         report = preprocessing.planned_column_report(columns)
         found = dict(zip(report["role"], report["found"], strict=True))
         self.assertTrue(found["created_on_date"])
