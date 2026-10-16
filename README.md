@@ -1,27 +1,111 @@
-# IDA117V Project
+# Cape Town service-request resolution classifier
 
-This repository is set up for the data science group assignment.
+IDA117V project. At the moment a City of Cape Town municipal service request is logged, estimate which resolution outcome is likely:
 
-## Project structure
+- Resolved Fast
+- Resolved Slow
+- Unresolved
 
-- `notebooks/` - exploratory analysis and modeling notebooks
-- `src/` - reusable Python source code
-- `data/` - raw and processed datasets
-- `requirements.txt` - Python dependencies
+The intended users are municipal service departments that need to see requests which may need earlier attention. Phase 1 prepares the repository, records the dataset source, and audits the extract if it is present. It does not train a model.
 
-## Getting started
+## Dataset
 
-1. Clone the repository
-2. Create a virtual environment
-3. Install dependencies
-4. Start working in the notebooks
+The project plan names **SAP C3 Notifications** on the **City of Cape Town Open Data Portal**: service requests from **2023 until 18 September 2026**. The owner is the City of Cape Town.
 
-```bash
-python -m venv .venv
-source .venv/bin/activate  # On Windows use .venv\Scripts\activate
-pip install -r requirements.txt
+This workspace does not contain the exact download URL, a download script, or the data file. Those gaps are recorded in [`reports/data_source.md`](reports/data_source.md), with manual download steps. Do not commit the raw extract. The repository MIT licence covers the code only, not the City dataset.
+
+## Setup (Windows)
+
+From the project folder (the folder that contains this README):
+
+```bat
+py -m venv .venv
+.venv\Scripts\activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
 ```
 
-## Notes
+`py -m venv .venv` is the usual Windows command. If `py` is not available, use `python -m venv .venv` instead.
 
-This is a starter repository for your assignment. Update it as your project evolves.
+macOS or Linux:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+python -m pip install --upgrade pip
+python -m pip install -r requirements.txt
+```
+
+The pinned neural-network framework is **PyTorch** (CPU build). `requirements.txt` points at the PyTorch CPU index so a Linux install does not download CUDA libraries. No model is trained by the install.
+
+Optional path and threshold overrides live in [`.env.example`](.env.example). Copy it to `.env` only if you need them. Leave the day thresholds blank until a later notebook chooses them from training data.
+
+## How to open the notebooks
+
+JupyterLab is the interface installed by `requirements.txt`. Start it from the project folder:
+
+```bat
+jupyter lab
+```
+
+Then open `notebooks/01_data_acquisition_and_audit.ipynb`.
+
+The classic `jupyter notebook` command is a separate package and is not pinned here. JupyterLab opens and runs the same `.ipynb` files. Use JupyterLab for this project.
+
+Run each notebook from top to bottom with the project folder as the working directory. Notebooks do not rely on variables left in memory by another notebook.
+
+Check that the source modules import and the folders resolve:
+
+```bat
+python -m unittest tests.test_smoke
+```
+
+If no raw file is present, this check is still expected to pass. Asking the loader to read data will print manual download steps and exit with status 1:
+
+```bat
+python -m src.data_loader
+```
+
+## Folder guide
+
+| Path | Purpose |
+| --- | --- |
+| `data/raw/` | Original download only. Gitignored. Not modified by code. |
+| `data/interim/` | Working extracts after cleaning. Gitignored. |
+| `data/processed/` | Model-ready tables written by later notebooks. Gitignored. |
+| `notebooks/` | Numbered analysis notebooks, in the order below. |
+| `src/` | Reusable loading, label, metric, and figure code. |
+| `models/` | Saved pipelines from a later phase. Fitted files are gitignored. |
+| `app/` | Prediction interface in a later phase. It will load a saved pipeline and will not retrain. |
+| `results/figures/` | Saved plots. |
+| `results/tables/` | Saved metric and audit tables. |
+| `reports/` | Dataset source notes and later written findings. |
+| `tests/` | Small checks that the package imports and paths resolve. |
+
+`src/config.py` holds paths, the random seed (`42`), the three class names, and the optional day thresholds.
+
+## Notebook order
+
+Run them in this order once each file exists. Only notebook 1 is part of Phase 1.
+
+| Step | Notebook | What it will cover | Status |
+| --- | --- | --- | --- |
+| 1 | `notebooks/01_data_acquisition_and_audit.ipynb` | Source, raw file, column audit | Created |
+| 2 | `notebooks/02_exploratory_data_analysis.ipynb` | EDA and required figures | Not created |
+| 3 | `notebooks/03_preprocessing_and_baselines.ipynb` | Cleaning, features, dummy baseline | Not created |
+| 4 | `notebooks/04_traditional_machine_learning.ipynb` | Logistic regression and a tree model | Not created |
+| 5 | `notebooks/05_neural_networks.ipynb` | Neural-network models in PyTorch | Not created |
+| 6 | `notebooks/06_evaluation_and_optimisation.ipynb` | Comparison, overfitting, champion tuning | Not created |
+| 7 | `notebooks/07_ablation_and_statistical_testing.ipynb` | Ablations and McNemar's test | Not created |
+| 8 | `notebooks/08_final_model_export.ipynb` | Save the pipeline used by the app | Not created |
+
+## Label rules (not yet fitted)
+
+Later notebooks build the class from **Created On Date** and **Completed Date**. **Completed Date** and **Changed on** are excluded from model features. Open requests younger than the observation window are left unlabelled rather than called Unresolved. Both day boundaries stay unset until the resolution-time distribution has been audited. See `src/preprocessing.py`.
+
+## Reproducibility
+
+- Python 3.12 was used to pin the versions in `requirements.txt`.
+- `RANDOM_SEED` is 42.
+- Raw data is not rewritten.
+- Preprocessing that learns from data (imputation, encoding, scaling, feature selection, resampling) must be fit on training data only. That fitting is not part of Phase 1.

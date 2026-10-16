@@ -218,3 +218,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# Municipal extracts and derived tables (keep the folder placeholders)
+data/raw/*
+!data/raw/.gitkeep
+data/interim/*
+!data/interim/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+
+# Fitted models and checkpoints. The models/ folder itself stays in git.
+models/*
+!models/.gitkeep
+*.joblib
+*.pkl
+*.pickle
+*.h5
+*.keras
+*.pt
+*.pth
+*.onnx

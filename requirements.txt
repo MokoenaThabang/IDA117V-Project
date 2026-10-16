@@ -1,9 +1,15 @@
-# Requirements
+# Direct dependencies for the IDA117V Cape Town resolution classifier.
+# Versions were installed and imported successfully with Python 3.12 on Linux.
+# The PyTorch CPU index is required so Linux does not pull large CUDA wheels.
+# A Windows CPU wheel for this same torch version is published on that index.
+--extra-index-url https://download.pytorch.org/whl/cpu
 
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-jupyter
-
+pandas==3.0.6
+numpy==2.5.4
+matplotlib==3.11.2
+seaborn==0.13.2
+scikit-learn==1.9.1
+jupyterlab==4.6.4
+joblib==1.6.0
+streamlit==1.66.0
+torch==2.14.1+cpu
