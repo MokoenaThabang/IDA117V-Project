@@ -17,7 +17,7 @@ PROJECT_ROOT = Path(__file__).resolve().parents[1]
 if str(PROJECT_ROOT) not in sys.path:
     sys.path.insert(0, str(PROJECT_ROOT))
 
-from src import config, data_loader, evaluation, preprocessing, visualization  # noqa: E402
+from src import config, data_loader, eda, evaluation, preprocessing, visualization  # noqa: E402
 
 
 class ProjectSmokeTest(unittest.TestCase):
@@ -34,6 +34,7 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertTrue(callable(preprocessing.build_resolution_target))
         self.assertTrue(callable(evaluation.classification_scores))
         self.assertTrue(callable(visualization.save_figure))
+        self.assertTrue(callable(eda.target_distribution))
 
     def test_project_directories_resolve(self) -> None:
         expected = [

@@ -1,0 +1,8 @@
+column,display_name,missing_count,missing_percent,kind
+Sub_Council,Subcouncil,201272,4.382334709326745,genuine_missing
+Ward,Ward,81551,1.7756259086226862,genuine_missing
+Suburb,Suburb,45107,0.982123552871743,genuine_missing
+C3_Complaint_Type,Complaint type,0,0.0,genuine_missing
+Work_Center,Work centre,0,0.0,genuine_missing
+Created_On_Date,Created on date,0,0.0,genuine_missing
+Notifications_Created,Notifications created,3587,0.07810045412354939,genuine_missing
