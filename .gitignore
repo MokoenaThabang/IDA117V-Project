@@ -1,3 +1,23 @@
+# --- IDA117V ---
+# Raw extracts and large tables. Keep data/raw/ empty in git.
+data/raw/*
+!data/raw/.gitkeep
+*.parquet
+*.pq
+*.feather
+*.h5
+*.hdf5
+*.csv.gz
+
+# Secrets / credentials
+.env
+.env.*
+!.env.example
+*.pem
+secrets.*
+credentials.json
+service-account*.json
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[codz]

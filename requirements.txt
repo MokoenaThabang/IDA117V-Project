@@ -1,9 +1,11 @@
-# Requirements
+# Pinned, minimal environment for IDA117V.
+# Install: pip install -r requirements.txt
 
-pandas
-numpy
-matplotlib
-seaborn
-scikit-learn
-jupyter
+pandas==3.0.6
+scikit-learn==1.9.1
+matplotlib==3.11.2
+jupyter==1.1.1
+joblib==1.6.0
 
+# Optional — install later for neural models (MLP + tabular embedding net).
+# torch
