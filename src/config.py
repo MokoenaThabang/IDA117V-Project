@@ -97,16 +97,21 @@ TARGET_COLUMN = "resolution_outcome"
 # Later evaluation pays particular attention to these two classes.
 RECALL_FOCUS_LABELS = ("Resolved Slow", "Unresolved")
 
-# Names as written in the project brief. The extract may use different
-# spelling. Phase 1 does not rename columns; the audit only reports matches.
+# Names as written in the project brief. The feature service uses the
+# underscored field names; a CSV download may use either spelling.
 PLANNED_CREATED_DATE_COLUMN = "Created On Date"
 PLANNED_COMPLETED_DATE_COLUMN = "Completed Date"
 PLANNED_CHANGED_ON_COLUMN = "Changed on"
+SERVICE_CREATED_DATE_COLUMN = "Created_On_Date"
+SERVICE_COMPLETED_DATE_COLUMN = "Completed_Date"
+SERVICE_CHANGED_ON_COLUMN = "Changed_on"
 
 # Known after logging, or constructed from those fields. Never use them as inputs.
 LEAKAGE_OR_POST_EVENT_COLUMNS = (
     PLANNED_COMPLETED_DATE_COLUMN,
     PLANNED_CHANGED_ON_COLUMN,
+    SERVICE_COMPLETED_DATE_COLUMN,
+    SERVICE_CHANGED_ON_COLUMN,
 )
 CONSTRUCTED_COLUMNS = (
     TARGET_COLUMN,
@@ -114,14 +119,24 @@ CONSTRUCTED_COLUMNS = (
     "label_status",
 )
 
-# Stated in the project plan. Not checked against a downloaded file.
+# Stated in the project plan. The published layer's own dates are in
+# reports/data_source.md and are not the same end date.
 DATASET_OWNER = "City of Cape Town"
 DATASET_NAME = "SAP C3 Notifications"
 DATASET_PORTAL = "City of Cape Town Open Data Portal"
+DATASET_TITLE = "Service Requests 2023 until  06 October 2026 (Deprecated)"
 PLANNED_COLLECTION_PERIOD = "2023 until 18 September 2026"
 PLANNED_COLLECTION_END = date(2026, 9, 18)
-# The exact dataset page was not in the workspace. Leave this unset.
-SOURCE_PAGE_URL = None
+SOURCE_PAGE_URL = (
+    "https://odp-cctegis.opendata.arcgis.com/datasets/"
+    "90711027d33940b5a06e96ad8a8f7ede_0/explore"
+)
+# Link stored on the ArcGIS item. It redirects to the City terms page.
+LICENCE_PAGE_URL = "https://www.capetown.gov.za/General/Terms-of-use-open-data"
+FEATURE_LAYER_URL = (
+    "https://services6.arcgis.com/nyYfO9SxHU2ChQd9/arcgis/rest/services/"
+    "Service_Requests_2023_until_20_May_2026/FeatureServer/0"
+)
 
 # None means the audit has not chosen a boundary yet. Do not invent one here.
 FAST_SLOW_THRESHOLD_DAYS = _optional_positive_int("FAST_SLOW_THRESHOLD_DAYS")

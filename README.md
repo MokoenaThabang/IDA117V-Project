@@ -10,9 +10,13 @@ The intended users are municipal service departments that need to see requests w
 
 ## Dataset
 
-The project plan names **SAP C3 Notifications** on the **City of Cape Town Open Data Portal**: service requests from **2023 until 18 September 2026**. The owner is the City of Cape Town.
+The project plan names **SAP C3 Notifications** on the **City of Cape Town Open Data Portal**, covering service requests from **2023 until 18 September 2026**.
 
-This workspace does not contain the exact download URL, a download script, or the data file. Those gaps are recorded in [`reports/data_source.md`](reports/data_source.md), with manual download steps. Do not commit the raw extract. The repository MIT licence covers the code only, not the City dataset.
+The dataset page for this project is:
+
+https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore
+
+The published title is **Service Requests 2023 until 06 October 2026 (Deprecated)**. The City marks the layer as frozen. Created-on dates in the feature service run from 1 January 2023 through 6 October 2026, which is later than the plan's end date. Details, the licence, field names, and the fact that no local file has been saved yet are in [`reports/data_source.md`](reports/data_source.md). Do not commit the raw extract. The repository MIT licence covers the code only, not the City dataset.
 
 ## Setup (Windows)
 

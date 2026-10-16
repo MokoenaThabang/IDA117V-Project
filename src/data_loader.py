@@ -17,18 +17,25 @@ from src.config import RAW_DATA_DIR, RAW_DATA_FILE, PROJECT_ROOT
 SUPPORTED_SUFFIXES = {".csv", ".parquet", ".json"}
 
 MANUAL_DOWNLOAD_INSTRUCTIONS = """
-No raw City of Cape Town extract is available to this project yet.
+No raw file is in data/raw yet.
 
-The project plan names the dataset, but this workspace does not contain an
-exact download URL or a working download mechanism. Do not invent one.
+Dataset page:
+https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore
 
-1. Open the City of Cape Town Open Data Portal.
-2. Search for SAP C3 Notifications: service requests from 2023 until 18 September 2026.
-3. On the dataset page, confirm the owner and the collection period before downloading.
-4. Copy the page URL, the licence or terms shown there, and the download date into reports/data_source.md.
-5. Save the original file, unchanged, in data/raw/.
-6. If you download more than one file, set DATA_RAW_FILE in .env to the file this audit should read.
-7. Do not commit the raw file. data/raw/ is gitignored except for .gitkeep.
+Published title: Service Requests 2023 until  06 October 2026 (Deprecated)
+Portal owner: City of Cape Town
+Licence link on the item: https://www.capetown.gov.za/General/Terms-of-use-open-data
+
+On 16 October 2026 the portal CSV export was still being generated, so this
+repository has no local copy. Counts, fields, and date limits already read
+from the feature service are in reports/data_source.md.
+
+1. Open the dataset page above and download the original file when the portal offers it.
+2. Save that file, unchanged, in data/raw/. CSV is the preferred format.
+3. If you save more than one file, set DATA_RAW_FILE in .env to the file this audit should read.
+4. Do not commit the raw file. data/raw/ is gitignored except for .gitkeep.
+5. Do not trim the raw file to the project-plan end date of 18 September 2026.
+   The published Created On Date values continue through 6 October 2026.
 
 Then re-run the audit from the top.
 """.strip()
@@ -39,7 +46,7 @@ class RawDataNotFoundError(FileNotFoundError):
 
 
 def manual_download_instructions() -> str:
-    """Return the steps for obtaining the extract without a hard-coded URL."""
+    """Return the steps for saving the portal file into data/raw."""
     return MANUAL_DOWNLOAD_INSTRUCTIONS
 
 

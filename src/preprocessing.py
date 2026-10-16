@@ -17,6 +17,9 @@ from src.config import (
     PLANNED_CHANGED_ON_COLUMN,
     PLANNED_COMPLETED_DATE_COLUMN,
     PLANNED_CREATED_DATE_COLUMN,
+    SERVICE_CHANGED_ON_COLUMN,
+    SERVICE_COMPLETED_DATE_COLUMN,
+    SERVICE_CREATED_DATE_COLUMN,
     TARGET_LABELS,
 )
 
@@ -45,24 +48,31 @@ def select_model_features(columns: list[str] | pd.Index) -> list[str]:
 
 
 def match_planned_columns(columns: list[str] | pd.Index) -> dict[str, dict[str, str | None]]:
-    """Match brief column names to the extract with a case-insensitive exact match.
+    """Match known date fields with a case-insensitive exact match.
 
-    A missing match means the extract uses another name, or the file is not
-    the expected dataset. It is not filled in with a guess.
+    Each role accepts the project-brief alias and the feature-service field
+    name. Both were read from the published layer. Any other spelling is
+    reported as missing rather than renamed.
     """
     lookup: dict[str, str] = {}
     for column in columns:
         lookup[str(column).casefold()] = str(column)
     planned = {
-        "created_on_date": PLANNED_CREATED_DATE_COLUMN,
-        "completed_date": PLANNED_COMPLETED_DATE_COLUMN,
-        "changed_on": PLANNED_CHANGED_ON_COLUMN,
+        "created_on_date": (PLANNED_CREATED_DATE_COLUMN, SERVICE_CREATED_DATE_COLUMN),
+        "completed_date": (PLANNED_COMPLETED_DATE_COLUMN, SERVICE_COMPLETED_DATE_COLUMN),
+        "changed_on": (PLANNED_CHANGED_ON_COLUMN, SERVICE_CHANGED_ON_COLUMN),
     }
     report: dict[str, dict[str, str | None]] = {}
-    for role, planned_name in planned.items():
+    for role, names in planned.items():
+        actual = None
+        for name in names:
+            actual = lookup.get(name.casefold())
+            if actual is not None:
+                break
         report[role] = {
-            "planned_name": planned_name,
-            "actual_name": lookup.get(planned_name.casefold()),
+            "planned_name": names[0],
+            "service_name": names[1],
+            "actual_name": actual,
         }
     return report
 
@@ -75,6 +85,7 @@ def planned_column_report(columns: list[str] | pd.Index) -> pd.DataFrame:
             {
                 "role": role,
                 "planned_name": info["planned_name"],
+                "service_name": info["service_name"],
                 "found": info["actual_name"] is not None,
                 "actual_name": info["actual_name"],
             }

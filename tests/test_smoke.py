@@ -23,7 +23,11 @@ from src import config, data_loader, evaluation, preprocessing, visualization  #
 class ProjectSmokeTest(unittest.TestCase):
     def test_source_modules_import(self) -> None:
         self.assertEqual(config.TARGET_LABELS[0], "Resolved Fast")
-        self.assertIsNone(config.SOURCE_PAGE_URL)
+        self.assertEqual(
+            config.SOURCE_PAGE_URL,
+            "https://odp-cctegis.opendata.arcgis.com/datasets/"
+            "90711027d33940b5a06e96ad8a8f7ede_0/explore",
+        )
         self.assertIsNone(config.FAST_SLOW_THRESHOLD_DAYS)
         self.assertIsNone(config.OBSERVATION_WINDOW_DAYS)
         self.assertTrue(callable(data_loader.list_raw_files))
@@ -58,9 +62,9 @@ class ProjectSmokeTest(unittest.TestCase):
         with self.assertRaises(data_loader.RawDataNotFoundError):
             data_loader.resolve_raw_file()
         instructions = data_loader.manual_download_instructions()
-        self.assertNotIn("http://", instructions)
-        self.assertNotIn("https://", instructions)
+        self.assertIn(config.SOURCE_PAGE_URL, instructions)
         self.assertIn("18 September 2026", instructions)
+        self.assertIn("data/raw/", instructions)
 
     def test_leakage_columns_are_removed_and_created_date_is_kept(self) -> None:
         columns = [
@@ -77,6 +81,19 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertTrue(found["created_on_date"])
         self.assertTrue(found["completed_date"])
         self.assertTrue(found["changed_on"])
+        service_columns = ["Created_On_Date", "Completed_Date", "Changed_on", "Ward"]
+        self.assertEqual(
+            preprocessing.select_model_features(service_columns),
+            ["Created_On_Date", "Ward"],
+        )
+        service_found = dict(
+            zip(
+                preprocessing.planned_column_report(service_columns)["role"],
+                preprocessing.planned_column_report(service_columns)["found"],
+                strict=True,
+            )
+        )
+        self.assertTrue(all(service_found.values()))
 
     def test_target_rules_on_a_toy_table(self) -> None:
         import pandas as pd
