@@ -1,0 +1,14 @@
+item,description,requests,source,percent_of_analysis_file
+analysis_rows,Rows in the analysis file,4592803,analysis_file,100.0
+exact_business_duplicates_removed,Exact duplicate business rows removed before this file was written,779663,phase2_cleaning_log,
+labelled_rows,Rows with a resolution class,4576802,analysis_file,99.65160709048483
+insufficient_follow_up,Open requests excluded because they are younger than 7 days,15981,analysis_file,0.34795744559477076
+completion_before_creation,Rows excluded because completion is earlier than creation,20,analysis_file,0.0004354639203989372
+unusual_long_duration,"Completed requests longer than 365 days, retained",14953,analysis_file,0.3255746000862654
+repeated_notification_id_rows,Rows that still share a notification id after exact copies were removed,309758,analysis_file,6.7444216527467
+suburb_placeholder_hash,Suburb stored as '#',365919,analysis_file,7.967226114422936
+suburb_generic_town,Suburb stored as 'GENERIC TOWN 0000',4248,analysis_file,0.09249253669273426
+subcouncil_not_assigned,Subcouncil stored as 'Not assigned',1622881,analysis_file,35.33530613004738
+coordinate_missing,Coordinate pair missing,1035640,analysis_file,22.549192726097765
+coordinate_outside_local_grid,Coordinate pair outside the local metre envelope,2515158,analysis_file,54.763028155137505
+coordinate_plausible_local_grid,Coordinate pair inside the local metre envelope,1042005,analysis_file,22.687779118764727
