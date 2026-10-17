@@ -47,6 +47,9 @@ class ProjectSmokeTest(unittest.TestCase):
 
         self.assertTrue(callable(optimisation.run_champion_search))
         self.assertTrue(callable(statistics.mcnemar_test))
+        from app.predict import load_pipeline
+
+        self.assertTrue(callable(load_pipeline))
 
     def test_project_directories_resolve(self) -> None:
         expected = [

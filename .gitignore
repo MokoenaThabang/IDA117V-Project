@@ -231,6 +231,8 @@ data/processed/*
 models/*
 !models/.gitkeep
 *.joblib
+# The Streamlit app loads this frozen pipeline and does not refit it.
+!models/frozen_resolution_pipeline.joblib
 *.pkl
 *.pickle
 *.h5

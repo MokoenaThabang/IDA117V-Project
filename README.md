@@ -79,8 +79,8 @@ python -m src.data_loader
 | `data/processed/` | Model-ready tables written by later notebooks. Gitignored. |
 | `notebooks/` | Numbered analysis notebooks, in the order below. |
 | `src/` | Reusable loading, label, metric, and figure code. |
-| `models/` | Saved pipelines from a later phase. Fitted files are gitignored. |
-| `app/` | Prediction interface in a later phase. It will load a saved pipeline and will not retrain. |
+| `models/` | Saved pipelines. `models/frozen_resolution_pipeline.joblib` is the file the app loads. Other fitted files stay gitignored. |
+| `app/` | Streamlit interface. It loads the saved pipeline and does not retrain. |
 | `results/figures/` | Saved plots. |
 | `results/tables/` | Saved metric and audit tables. |
 | `reports/` | Dataset source notes and later written findings. |
@@ -117,3 +117,27 @@ Notebook 01 builds the class from **Created On Date** and **Completed Date**. Th
 - The Phase 5 provisional champion is chosen from validation macro-F1. The locked test is not scored in that phase.
 - Phase 6 tunes only that champion. The search is chronological cross-validation on the training period and optimises macro-F1. The frozen pipeline is scored once on the locked test and is not changed afterwards.
 - Work Center stays out of the model. The work-centre ablation records that exclusion and does not fit a second model.
+
+## Prediction interface
+
+The app loads `models/frozen_resolution_pipeline.joblib`. It does not fit a model and it does not rebuild the encoder. The file is a refit of the frozen Phase 6 settings on the training period only. Those settings are not changed after the locked test.
+
+From the project folder, with the virtual environment activated:
+
+```bash
+streamlit run app/app.py
+```
+
+On Windows, use the same command after `.venv\Scripts\activate`.
+
+The form asks for complaint type, suburb, ward, subcouncil, and the request creation date. Work centre is not requested. The creation date is used only to derive the weekday, the month, and the weekend flag. Dropdown values are categories kept from the training period. A value outside that list is grouped with rare or unseen levels. The demonstration sample is a set of frequent training categories, not a logged request and not an unresolved case.
+
+`requirements.txt` already pins Streamlit and joblib. Install it with the setup commands above before launching the app.
+
+To write the pipeline file again from the labelled extract and the frozen decision in `results/tables/06_frozen_decision.json`:
+
+```bash
+python -m app.export_frozen_pipeline --force
+```
+
+That command needs `data/processed/service_requests_labelled.parquet`. The app itself does not run it. The export checks that the refit matches the locked-test predictions already saved by notebook 06, and it stops without replacing the file if they differ.
