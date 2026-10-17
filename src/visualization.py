@@ -434,3 +434,36 @@ def plot_train_validation_macro_f1(
     axis.set_title("Training and validation macro-F1")
     axis.legend()
     return _finish(figure, filename, directory, apply_layout=False)
+
+
+def plot_ablation_deltas(table, filename: str = "07_ablation_deltas.png", directory: Path | None = None):
+    """Bar chart of validation macro-F1 and recall changes against the full model."""
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    use_project_style()
+    metrics = [
+        ("delta_macro_f1", "Macro-F1"),
+        ("delta_recall_resolved_slow", "Resolved Slow recall"),
+        ("delta_recall_unresolved", "Unresolved recall"),
+    ]
+    labels = list(table["experiment"])
+    positions = np.arange(len(labels))
+    width = 0.24
+    figure, axis = plt.subplots(figsize=(10.4, 4.8), constrained_layout=True)
+    colours = ["#0072B2", "#E69F00", "#CC79A7"]
+    for offset, ((column, label), colour) in enumerate(zip(metrics, colours)):
+        axis.bar(
+            positions + (offset - 1) * width,
+            table[column],
+            width=width,
+            color=colour,
+            label=label,
+        )
+    axis.axhline(0.0, color="#333333", linewidth=0.8)
+    axis.set_xticks(positions)
+    axis.set_xticklabels(labels, rotation=15, ha="right")
+    axis.set_ylabel("Change from the full model")
+    axis.set_title("Validation ablation changes")
+    axis.legend()
+    return _finish(figure, filename, directory, apply_layout=False)

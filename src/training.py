@@ -140,8 +140,14 @@ def _clean_category(series: pd.Series) -> pd.Series:
 
 
 def _assert_model_frame(frame: pd.DataFrame) -> None:
+    _assert_predictor_frame(frame, list(MODEL_FEATURES))
+
+
+def _assert_predictor_frame(frame: pd.DataFrame, columns: list[str]) -> None:
+    """Reject leakage columns and require the predictors this fit will use."""
     _reject_blocked_features(list(frame.columns))
-    missing = [column for column in MODEL_FEATURES if column not in frame.columns]
+    _reject_blocked_features(list(columns))
+    missing = [column for column in columns if column not in frame.columns]
     if missing:
         raise ValueError(
             "The modelling frame is missing predictors: "
@@ -207,16 +213,29 @@ class TreeCategoryEncoder:
         self,
         min_count: int = RARE_CATEGORY_MIN_COUNT,
         max_kept: int = TREE_MAX_KEPT_CATEGORIES,
+        categorical_columns: tuple[str, ...] | list[str] | None = None,
+        numeric_columns: tuple[str, ...] | list[str] | None = None,
     ):
         self.min_count = min_count
         self.max_kept = max_kept
+        self.categorical_columns = categorical_columns
+        self.numeric_columns = numeric_columns
 
     def fit(self, frame: pd.DataFrame):
-        _assert_model_frame(frame)
+        categorical = list(
+            CATEGORICAL_FEATURES if self.categorical_columns is None else self.categorical_columns
+        )
+        numeric = list(NUMERIC_FEATURES if self.numeric_columns is None else self.numeric_columns)
+        if not categorical and not numeric:
+            raise ValueError("The tree encoder needs at least one predictor.")
+        _assert_predictor_frame(frame, categorical + numeric)
+        self.categorical_columns_ = categorical
+        self.numeric_columns_ = numeric
         self.code_maps_ = {}
         self.unseen_codes_ = {}
         self.summary_ = []
-        for column in CATEGORICAL_FEATURES:
+        self.numeric_fill_ = {}
+        for column in categorical:
             levels = training_category_levels(
                 frame[column],
                 min_count=self.min_count,
@@ -248,20 +267,21 @@ class TreeCategoryEncoder:
                     "max_kept": int(self.max_kept),
                 }
             )
-        weekend = frame[NUMERIC_FEATURES[0]]
-        observed = pd.to_numeric(weekend, errors="coerce").dropna()
-        self.numeric_fill_ = float(observed.median()) if len(observed) else 0.0
+        for column in numeric:
+            observed = pd.to_numeric(frame[column], errors="coerce").dropna()
+            self.numeric_fill_[column] = float(observed.median()) if len(observed) else 0.0
         return self
 
     def transform(self, frame: pd.DataFrame) -> pd.DataFrame:
         if not hasattr(self, "code_maps_"):
             raise AttributeError("TreeCategoryEncoder must be fit before transform.")
-        _assert_model_frame(frame)
+        _assert_predictor_frame(frame, list(self.categorical_columns_) + list(self.numeric_columns_))
         coded = {}
-        for column in CATEGORICAL_FEATURES:
+        for column in self.categorical_columns_:
             coded[column] = self._codes(frame[column], column)
-        weekend = pd.to_numeric(frame[NUMERIC_FEATURES[0]], errors="coerce")
-        coded[NUMERIC_FEATURES[0]] = weekend.fillna(self.numeric_fill_).to_numpy(dtype=np.float64)
+        for column in self.numeric_columns_:
+            values = pd.to_numeric(frame[column], errors="coerce")
+            coded[column] = values.fillna(self.numeric_fill_[column]).to_numpy(dtype=np.float64)
         return pd.DataFrame(coded, index=frame.index)
 
     def level_summary(self) -> pd.DataFrame:
@@ -551,9 +571,11 @@ def summarise_predictions(
     split: str,
     approval: str,
     fit_seconds: float | None = None,
+    locked_test_authorised: bool = False,
 ) -> tuple[pd.DataFrame, pd.DataFrame]:
-    """Score one split. The locked test is refused."""
-    assert_split_may_be_scored(split)
+    """Score one split. The locked test is refused unless a frozen model authorises it."""
+    if not (split == LOCKED_TEST_SPLIT and locked_test_authorised):
+        assert_split_may_be_scored(split)
     if approval not in {APPROVED_APPROVAL, PENDING_APPROVAL}:
         raise ValueError(
             f"approval must be {APPROVED_APPROVAL!r} or {PENDING_APPROVAL!r}. Got {approval!r}."

@@ -43,6 +43,10 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertTrue(callable(training.provisional_champion))
         self.assertTrue(callable(neural.train_feedforward))
         self.assertIn("pending lecturer approval", neural.EmbeddingNet.__doc__)
+        from src import optimisation, statistics
+
+        self.assertTrue(callable(optimisation.run_champion_search))
+        self.assertTrue(callable(statistics.mcnemar_test))
 
     def test_project_directories_resolve(self) -> None:
         expected = [
