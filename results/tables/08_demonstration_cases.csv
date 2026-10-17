@@ -1,0 +1,9 @@
+case,status,message,prediction,p_resolved_fast,p_resolved_slow,p_unresolved,unknown_categories,notes
+demonstration_sample,scored,,Resolved Fast,0.5983545145919503,0.24721289959942122,0.15443258580862854,,
+unknown_suburb,scored,,Resolved Fast,0.7026485915996632,0.1642479812985838,0.13310342710175302,Suburb,"Suburb was not a kept training category. The saved encoder groups that value with rare or unseen levels. This is a coarser input, not a new category the model learned."
+date_after_training_period,scored,,Resolved Fast,0.7353579494086029,0.20128328310925167,0.06335876748214557,,"This creation date is after 31 December 2024. The booster was fit on requests through that date. Later dates were used only for evaluation, not for choosing settings."
+missing_complaint_type,input_error,Choose a complaint type.,,,,,,
+date_before_extract,input_error,"The creation date must fall between 1 January 2023 and 6 October 2026, the period covered by the project extract.",,,,,,
+invalid_date,input_error,The creation date is not a valid calendar date. Use a date such as 2024-06-12.,,,,,,
+work_centre_rejected,input_error,"These fields are not inputs to the fitted pipeline: Work_Center. Work centre, completion fields, identifiers, and the outcome are excluded.",,,,,,
+second_frequent_categories,scored,,Unresolved,0.14196309933164564,0.16615311220212453,0.6918837884662298,,

@@ -6,7 +6,9 @@ IDA117V project. At the moment a City of Cape Town municipal service request is 
 - Resolved Slow
 - Unresolved
 
-The intended users are municipal service departments that need to see requests which may need earlier attention. Phase 1 prepares the repository, records the dataset source, and audits the extract if it is present. It does not train a model.
+The intended users are municipal service departments that need to see requests which may need earlier attention. The estimate is a review aid. It must not be used to deny or reduce service.
+
+The draft report is [`reports/final_report.md`](reports/final_report.md). It is assembled from the saved notebook outputs. This repository does not declare the project complete: the embedding network is still pending lecturer approval, no suburb or ward fairness audit was run, and notebooks 01 to 07 were not re-executed from an empty environment while the draft was written. The open items are listed at the end of the report.
 
 ## Dataset
 
@@ -90,7 +92,9 @@ python -m src.data_loader
 
 ## Notebook order
 
-Run them in this order once each file exists. Notebooks 1 to 5 are in the repository. Notebook 2 reads the labelled file from notebook 1 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md). Notebook 3 fits a most-frequent dummy and a logistic regression on the training period only. Its written summary is [`reports/phase4_baselines.md`](reports/phase4_baselines.md). Notebooks 4 and 5 fit the traditional and neural models on those same partitions. Their written summary is [`reports/phase5_models.md`](reports/phase5_models.md). Notebook 5 chooses a provisional champion from validation macro-F1 and does not score the locked test. Notebooks 6 and 7 tune that champion on chronological folds inside the training period, score the locked test once, and then run the ablations and McNemar's test. Their written summary is [`reports/phase6_evaluation.md`](reports/phase6_evaluation.md).
+Run them in this order, from the project folder, after the raw extract is in `data/raw/`. Each notebook finds the project root by looking for `src/config.py` in the working directory or a parent. Do not hardcode a machine path. Notebook 02 reads the labelled file from notebook 01 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md). Notebook 03 fits a most-frequent dummy and a logistic regression on the training period only. Its written summary is [`reports/phase4_baselines.md`](reports/phase4_baselines.md). Notebooks 04 and 05 fit the traditional and neural models on those same partitions. Their written summary is [`reports/phase5_models.md`](reports/phase5_models.md). Notebook 05 chooses a provisional champion from validation macro-F1 and does not score the locked test. Notebooks 06 and 07 tune that champion on chronological folds inside the training period, score the locked test once, and then run the ablations and McNemar's test. Their written summary is [`reports/phase6_evaluation.md`](reports/phase6_evaluation.md). Notebook 08 checks the saved pipeline and does not fit a model.
+
+Notebooks 01 to 07 already contain executed outputs. They were not run again from an empty environment while the Phase 8 draft was written. Notebook 08 was executed.
 
 | Step | Notebook | What it will cover | Status |
 | --- | --- | --- | --- |
@@ -101,7 +105,7 @@ Run them in this order once each file exists. Notebooks 1 to 5 are in the reposi
 | 5 | `notebooks/05_neural_networks.ipynb` | Multilayer perceptron and a pending embedding network | Created |
 | 6 | `notebooks/06_evaluation_and_optimisation.ipynb` | Champion tuning and one locked-test evaluation | Created |
 | 7 | `notebooks/07_ablation_and_statistical_testing.ipynb` | Ablations and McNemar's test | Created |
-| 8 | `notebooks/08_final_model_export.ipynb` | Save the pipeline used by the app | Not created |
+| 8 | `notebooks/08_final_model_export.ipynb` | Check the saved pipeline. It does not refit. | Created |
 
 ## Label rules
 
@@ -109,7 +113,7 @@ Notebook 01 builds the class from **Created On Date** and **Completed Date**. Th
 
 ## Reproducibility
 
-- Python 3.12 was used to pin the versions in `requirements.txt`.
+- Python 3.12 was used to pin the versions in `requirements.txt`, including SciPy 1.18.1 because `src/statistics.py` imports it.
 - `RANDOM_SEED` is 42.
 - Raw data is not rewritten.
 - Preprocessing that learns from data (imputation, encoding, scaling, rare-category grouping) is fit on the training period only. Validation and test rows are not resampled.
@@ -141,3 +145,17 @@ python -m app.export_frozen_pipeline --force
 ```
 
 That command needs `data/processed/service_requests_labelled.parquet`. The app itself does not run it. The export checks that the refit matches the locked-test predictions already saved by notebook 06, and it stops without replacing the file if they differ.
+
+## Deliverables
+
+| File | What it holds |
+| --- | --- |
+| [`reports/final_report.md`](reports/final_report.md) | Report draft. Export to PDF with Pandoc when that tool is installed. |
+| [`reports/experiment_log.md`](reports/experiment_log.md) | Experiments that were run, and experiments that were not. |
+| [`results/tables/08_model_metrics.csv`](results/tables/08_model_metrics.csv) | Model metrics copied from the phase tables. |
+| [`results/tables/07_paired_predictions.parquet`](results/tables/07_paired_predictions.parquet) | Paired locked-test predictions for McNemar's test. No notification ids. |
+| [`reports/demonstration_checklist.md`](reports/demonstration_checklist.md) | Demonstration cases run on the saved pipeline. |
+| [`reports/presentation_outline.md`](reports/presentation_outline.md) | 11-minute presentation outline. |
+| [`reports/team_contribution_template.md`](reports/team_contribution_template.md) | Blank contribution table. Fill it with the people who did the work. |
+
+Plots and confusion matrices are in `results/figures/`. The City extract stays in `data/raw/` and `data/processed/`, which are gitignored. Do not commit those files or a file that contains notification ids, coordinates, or personal contact details. The published layer does not include a name, phone number, email address, or street address.
