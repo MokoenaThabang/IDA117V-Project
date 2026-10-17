@@ -37,6 +37,12 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertTrue(callable(evaluation.classification_scores))
         self.assertTrue(callable(visualization.save_figure))
         self.assertTrue(callable(eda.target_distribution))
+        from src import neural, training
+
+        self.assertTrue(callable(training.make_hist_gradient_boosting))
+        self.assertTrue(callable(training.provisional_champion))
+        self.assertTrue(callable(neural.train_feedforward))
+        self.assertIn("pending lecturer approval", neural.EmbeddingNet.__doc__)
 
     def test_project_directories_resolve(self) -> None:
         expected = [

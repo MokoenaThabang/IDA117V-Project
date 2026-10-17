@@ -331,3 +331,106 @@ def plot_confusion_matrix(matrix, labels, title: str, filename: str, directory: 
     axis.set_title(title)
     axis.tick_params(axis="y", pad=4)
     return _finish(figure, filename, directory, apply_layout=False)
+
+
+def plot_learning_curves(history, title: str, filename: str, directory: Path | None = None):
+    """Plot training and validation loss and macro-F1 against epoch."""
+    import matplotlib.pyplot as plt
+
+    use_project_style()
+    figure, axes = plt.subplots(1, 2, figsize=(10.6, 4.2), constrained_layout=True)
+    epochs = history["epoch"]
+    axes[0].plot(epochs, history["train_loss"], color="#0072B2", marker="o", label="Training")
+    axes[0].plot(epochs, history["validation_loss"], color="#D55E00", marker="o", label="Validation")
+    axes[0].set_xlabel("Epoch")
+    axes[0].set_ylabel("Mean weighted cross-entropy")
+    axes[0].set_title("Loss")
+    axes[0].legend()
+    axes[1].plot(epochs, history["train_macro_f1"], color="#0072B2", marker="o", label="Training")
+    axes[1].plot(epochs, history["validation_macro_f1"], color="#D55E00", marker="o", label="Validation")
+    axes[1].set_xlabel("Epoch")
+    axes[1].set_ylabel("Macro-F1")
+    axes[1].set_title("Macro-F1")
+    axes[1].legend()
+    figure.suptitle(title)
+    return _finish(figure, filename, directory, apply_layout=False)
+
+
+def plot_boosting_curve(curve, chosen_iteration: int, title: str, filename: str, directory: Path | None = None):
+    """Plot validation macro-F1 at each boosting iteration and mark the selected one."""
+    import matplotlib.pyplot as plt
+
+    use_project_style()
+    figure, axis = plt.subplots(figsize=(8.2, 4.4), constrained_layout=True)
+    axis.plot(curve["iteration"], curve["validation_macro_f1"], color="#0072B2", marker="o")
+    axis.axvline(chosen_iteration, color="#D55E00", linestyle="--", label=f"Selected iteration {chosen_iteration}")
+    axis.set_xlabel("Boosting iteration")
+    axis.set_ylabel("Validation macro-F1")
+    axis.set_title(title)
+    axis.legend()
+    return _finish(figure, filename, directory, apply_layout=False)
+
+
+def plot_validation_comparison(comparison, filename: str = "05_validation_comparison.png", directory: Path | None = None):
+    """Grouped bars of validation macro-F1 and the two recall priorities."""
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    use_project_style()
+    metrics = [
+        ("macro_f1", "Macro-F1"),
+        ("recall_resolved_slow", "Resolved Slow recall"),
+        ("recall_unresolved", "Unresolved recall"),
+    ]
+    models = []
+    for row in comparison.itertuples(index=False):
+        name = str(row.model)
+        if getattr(row, "approval", "approved") != "approved":
+            name = f"{name} (pending)"
+        models.append(name)
+    positions = np.arange(len(models))
+    width = 0.24
+    figure, axis = plt.subplots(figsize=(10.4, 4.8), constrained_layout=True)
+    colours = ["#0072B2", "#E69F00", "#CC79A7"]
+    for offset, ((column, label), colour) in enumerate(zip(metrics, colours)):
+        axis.bar(positions + (offset - 1) * width, comparison[column], width=width, color=colour, label=label)
+    axis.set_xticks(positions)
+    axis.set_xticklabels(models, rotation=15, ha="right")
+    axis.set_ylim(0, 1)
+    axis.set_ylabel("Validation score")
+    axis.set_title("Validation comparison")
+    axis.legend(loc="upper right")
+    return _finish(figure, filename, directory, apply_layout=False)
+
+
+def plot_train_validation_macro_f1(
+    metrics,
+    filename: str = "05_train_validation_macro_f1.png",
+    directory: Path | None = None,
+):
+    """Compare full-period training and validation macro-F1 for each model."""
+    import matplotlib.pyplot as plt
+    import numpy as np
+
+    use_project_style()
+    labels = []
+    train_scores = []
+    validation_scores = []
+    for model in list(dict.fromkeys(metrics["model"])):
+        rows = metrics.loc[metrics["model"].eq(model)]
+        approval = str(rows["approval"].iloc[0])
+        labels.append(model if approval == "approved" else f"{model} (pending)")
+        train_scores.append(float(rows.loc[rows["split"].eq("train"), "macro_f1"].iloc[0]))
+        validation_scores.append(float(rows.loc[rows["split"].eq("validation"), "macro_f1"].iloc[0]))
+    positions = np.arange(len(labels))
+    width = 0.36
+    figure, axis = plt.subplots(figsize=(10.4, 4.8), constrained_layout=True)
+    axis.bar(positions - width / 2, train_scores, width=width, color="#0072B2", label="Training")
+    axis.bar(positions + width / 2, validation_scores, width=width, color="#D55E00", label="Validation")
+    axis.set_xticks(positions)
+    axis.set_xticklabels(labels, rotation=15, ha="right")
+    axis.set_ylim(0, 1)
+    axis.set_ylabel("Macro-F1")
+    axis.set_title("Training and validation macro-F1")
+    axis.legend()
+    return _finish(figure, filename, directory, apply_layout=False)
