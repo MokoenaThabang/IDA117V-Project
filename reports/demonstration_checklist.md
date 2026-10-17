@@ -2,7 +2,7 @@
 
 These cases were run on 17 October 2026 against `models/frozen_resolution_pipeline.joblib`. The full numeric record is `results/tables/08_demonstration_cases.csv`. None of these rows is a logged municipal request. A prediction of Unresolved is the model's class for the typed fields. It is not a City case file.
 
-The sample row was also submitted through the running Streamlit form in a browser. The form showed Resolved Fast with probabilities 0.598, 0.247, and 0.154, which matches this table at three decimal places. Screenshot files were not saved.
+The sample row was also submitted through the running Streamlit form in a browser. The form showed Resolved Fast with probabilities 0.598, 0.247, and 0.154, which matches this table at three decimal places. The captured page is `evidence/screenshots/03_prediction.png`.
 
 | Case | Input | Result |
 | --- | --- | --- |
