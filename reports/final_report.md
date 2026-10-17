@@ -2,13 +2,7 @@
 
 Draft report for IDA117V. The numbers come from the executed notebooks and the tables in `results/tables/`. This draft does not say the project is complete. The last section lists what was not run and what still needs a decision.
 
-A PDF was not produced in this environment. Pandoc is not installed. From a machine that has Pandoc and a PDF engine, export with:
-
-```bash
-pandoc reports/final_report.md -o reports/final_report.pdf --resource-path=reports
-```
-
-The figure paths are relative to this file.
+The PDF export of this file is `reports/final_report.pdf`. It was printed from `reports/final_report.html` with headless Chrome, because Pandoc is not installed. The figure paths below are relative to this Markdown file. Regenerating the HTML and the PDF is described in `reports/submission_checklist.md`.
 
 ## 1. Problem definition
 
@@ -145,7 +139,7 @@ The second network embeds each categorical field. Embedding dimension is 16, the
 
 ## 8. Evaluation and model comparison
 
-Macro-F1 is the primary metric. Accuracy, weighted-F1, and recall for Resolved Slow and Unresolved are reported with it. Where the model implements `predict_proba`, macro one-versus-rest ROC-AUC and macro average precision are reported. Those are the ROC and precision-recall summaries that were computed. Separate per-class ROC and precision-recall plots were not saved.
+Macro-F1 is the primary metric. Accuracy, weighted-F1, and recall for Resolved Slow and Unresolved are reported with it. Where the model implements `predict_proba`, macro one-versus-rest ROC-AUC and macro average precision are reported. Section 14 adds the per-class ROC and precision-recall curves for the frozen champion. The earlier macro summaries were kept.
 
 Phase 5 validation comparison, approved models only:
 
@@ -222,9 +216,25 @@ The ablations use the frozen hyperparameters, the same chronological split, and 
 
 Removing the geographic fields changes macro-F1 by less than one percentage point. Unresolved recall rises by 0.033. The geographic fields are not useless on every class, and they are also not the main source of the macro-F1 score in this comparison.
 
-Work centre was already absent, because the extract has no assignment time. Removing it does not change the inputs. No second model was fit. The zero change is by construction. It is not evidence about how a leakage-safe work-centre field would behave, because that field is not in the extract.
+Work centre was already absent from the champion, because the extract has no assignment time. The `remove_work_centre` row therefore does not change the inputs. No second model was fit for that row. The zero change is by construction. That row, on its own, is not a work-centre ablation.
 
 Turning class weights off, with no SMOTE and no other resampling, drops Unresolved recall from 0.442 to 0.037. Unresolved is 4.5% of the training rows, so an unweighted model can score well on the majority class and miss that class. The balanced weights are doing the work this project asked for on Unresolved recall.
+
+### Work-centre sensitivity comparison
+
+A later comparison did fit two models. Both use the frozen hyperparameters, seed 42, the training period for the fit, and the 2025 validation period for the score. The locked test was not scored. One model uses the champion features. The other adds `Work_Center` and nothing else. The model without work centre reproduced the saved champion validation macro-F1 of 0.477, with a difference of 0. The settings and the full-precision scores are in `results/tables/09_work_centre_config.json`, `results/tables/09_work_centre_comparison.csv`, and `results/tables/09_work_centre_per_class.csv`.
+
+| Setting | Accuracy | Macro-F1 | Weighted-F1 | ROC-AUC | PR-AUC |
+| --- | --- | --- | --- | --- | --- |
+| Without work centre | 0.591 | 0.477 | 0.641 | 0.742 | 0.510 |
+| With work centre | 0.648 | 0.525 | 0.691 | 0.788 | 0.560 |
+
+| Setting | Fast precision / recall / F1 | Slow precision / recall / F1 | Unresolved precision / recall / F1 |
+| --- | --- | --- | --- |
+| Without work centre | 0.881 / 0.659 / 0.754 | 0.142 / 0.432 / 0.214 | 0.483 / 0.442 / 0.462 |
+| With work centre | 0.895 / 0.727 / 0.803 | 0.168 / 0.486 / 0.249 | 0.603 / 0.464 / 0.524 |
+
+Validation support is 648,570 Resolved Fast, 88,411 Resolved Slow, and 199,488 Unresolved. Adding work centre raises validation macro-F1 by 0.049. The champion file was not replaced. The extract still has no assignment timestamp, so this column is not known to be available when a request is logged. The higher score is a sensitivity result. It is not a logging-time model and it is not a reason to collect work centre on the form.
 
 ## 12. McNemar's test
 
@@ -251,25 +261,68 @@ The form asks for complaint type, suburb, ward, subcouncil, and the creation dat
 
 The page states that this is an academic prototype and not an official City of Cape Town system, and that predictions must support human review and must not be used to deny or reduce service. Probabilities are described as model confidence under balanced class weights, not as causes and not as the historical share of each class.
 
-The demonstration checklist is `reports/demonstration_checklist.md`. Eight cases were run on the saved pipeline. The sample case, No Power in PHILIPPI on 12 June 2024, was also submitted in the browser and showed Resolved Fast with probabilities 0.598, 0.247, and 0.154. A second assembled input, using other frequent categories, was scored as Unresolved. That row is not a logged municipal case. Screenshot files were not saved.
+The demonstration checklist is `reports/demonstration_checklist.md`. Eight cases were run on the saved pipeline. On 17 October 2026 the running page was captured into `evidence/screenshots/`. The blank form, the filled demonstration sample, the estimate, and the empty-form validation message are separate files. The capture notes are in `evidence/README.md`. The sample shown on the page is No Power, PHILIPPI, ward 000, Sub-Council 16, and 12 June 2024. The page estimated Resolved Fast, with predicted probabilities 0.598, 0.247, and 0.154. A second assembled input, using other frequent categories, was scored as Unresolved in the checklist. That row is not a logged municipal case.
 
-## 14. Ethics, fairness, limitations, and recommendations
+![Blank form](../evidence/screenshots/01_blank_form.png)
+
+![Filled demonstration sample](../evidence/screenshots/02_completed_sample.png)
+
+![Estimate and class probabilities](../evidence/screenshots/03_prediction.png)
+
+![Validation message on an empty form](../evidence/screenshots/04_validation_error.png)
+
+## 14. Per-class ROC and precision-recall curves
+
+The curves use the frozen champion's locked-test probabilities in `results/tables/06_test_predictions.parquet`. They are one-versus-rest curves from those probabilities, not from the hard class labels. The saved macro ROC-AUC of 0.724 and macro average precision of 0.519 in `results/tables/06_locked_test_summary.csv` were recomputed from the same file and matched. That summary file was not overwritten.
+
+| Class | Support | ROC-AUC | Average precision |
+| --- | --- | --- | --- |
+| Resolved Fast | 287,131 | 0.763 | 0.854 |
+| Resolved Slow | 65,522 | 0.613 | 0.216 |
+| Unresolved | 69,380 | 0.796 | 0.487 |
+
+Resolved Slow is the weak ranking class. Its average precision is 0.216, close to its share of the locked test, and its ROC-AUC is 0.613. The full-precision table is `results/tables/09_per_class_ranking_locked_test.csv`.
+
+![Locked-test one-vs-rest ROC](../results/figures/09_roc_per_class_locked_test.png)
+
+![Locked-test one-vs-rest precision-recall](../results/figures/09_pr_per_class_locked_test.png)
+
+## 15. Suburb and ward error audit
+
+The audit uses the same locked-test predictions, joined to suburb and ward by the saved row index. It does not fit a model and it does not contain notification ids or row-level records. A group needs at least 200 test rows before any class metric is reported, and that class needs at least 30 actual rows in the group. Smaller groups are counted and flagged. They are not evidence of geographic bias.
+
+The locked test has 422,033 rows, 7,806 suburb values, and 119 ward values. Class metrics are reported for 359 suburbs. The other 7,447 suburbs hold 61,698 rows. Class metrics are reported for 115 wards. The other 4 wards hold 467 rows.
+
+Stored codes that are not a named place are kept as their own groups. Suburb `#` has 34,305 rows and a blank suburb has 1,666. Ward `#` has 177,319 rows, ward `000` has 33,272, and a blank ward has 2,490. Those codes are data-quality groups.
+
+Among suburbs with at least 200 rows, the error rate runs from 0.217 to 0.678. Among wards with at least 200 rows, it runs from 0.066 to 0.771. Complaint type is not held constant, so that range is not a finding that one area is treated unfairly. In 296 of the 359 large suburbs, and in 100 of the 115 large wards, the most common mistake is Resolved Fast predicted as Resolved Slow. That repeats the champion's weak Resolved Slow precision. It is not a separate geographic result.
+
+PHILIPPI is one large named suburb, with 9,674 test rows and an error rate of 0.356. Its reported class metrics are Resolved Fast precision 0.842, recall 0.742, and F1 0.789 on 7,015 rows; Resolved Slow precision 0.250, recall 0.525, and F1 0.338 on 1,313 rows; Unresolved precision 0.461, recall 0.253, and F1 0.326 on 1,346 rows. The same table gives the other groups that pass the support rule.
+
+![Error rates for the 15 largest suburb groups](../results/figures/09_suburb_error_rates.png)
+
+![Error rates for the 15 largest ward groups](../results/figures/09_ward_error_rates.png)
+
+The machine-readable tables are `results/tables/09_suburb_error_audit.csv`, `results/tables/09_suburb_class_metrics.csv`, `results/tables/09_suburb_confusion_counts.csv`, and the ward files with the same names. Confusion counts are saved only for groups with at least 200 rows. The support rules are in `results/tables/09_geographic_audit_config.json`.
+
+## 16. Ethics, fairness, limitations, and recommendations
 
 The City terms say the data are provided as is and that reliance is at the user's risk. This prototype is not an official City system. The label is a project rule, not a published service standard. A prediction does not establish why a request will be completed or will stay open.
 
 Resolved Slow precision on the locked test is 0.210. If a department treated "Resolved Slow" as a reason to delay or refuse work, most of those flags would be wrong, and the harm would fall on the people waiting for the service. The interface warning exists for that reason. The model is a review aid.
 
-No fairness audit of model error across suburbs or wards was run. The exploratory tables do show that area fields are messy: suburb `#` is 7.97% of analysis rows, subcouncil `Not assigned` is 35.34%, and ward `000` is a very common stored value. The geographic ablation changes validation macro-F1 by −0.008, which is not a disparity analysis. A later audit should compare recall for Resolved Slow and Unresolved across suburbs and wards on the validation period, and it should not retune the model on the locked test. That audit is future work, not a result of this draft.
+Section 15 counts locked-test errors by suburb and by ward. It is not a disparity finding. Suburb `#` is 7.97% of analysis rows, subcouncil `Not assigned` is 35.34%, and ward `000` is a very common stored value. The geographic ablation changes validation macro-F1 by −0.008. Groups below 200 test rows were not given class metrics, and the model was not changed after the audit.
 
 Other limitations, all from the executed work:
 
 - The layer is frozen. Open requests may have been completed later, so some Unresolved labels can be wrong.
 - The 2025 class mix is not the 2023–2024 mix. Unresolved rises from 4.5% to 21.3%.
 - Logistic regression did not converge.
-- The embedding network is not approved.
-- The work-centre ablation is not a fitted comparison.
+- The embedding network is pending lecturer approval and is not the champion.
+- No stakeholder interview has been conducted.
+- The fitted work-centre comparison is not leakage-safe. The extract has no assignment time, and the champion still excludes that column.
 - Balanced weights improve Unresolved recall and, on the logistic test score, leave Resolved Slow precision at 0.202.
-- Macro ROC-AUC near 0.72 to 0.74 is better than chance and is not a basis for an automated decision.
+- Macro ROC-AUC near 0.72 to 0.74 is better than chance and is not a basis for an automated decision. Resolved Slow average precision on the locked test is 0.216.
 
 Practical recommendations:
 
@@ -279,19 +332,25 @@ Practical recommendations:
 - Do not add work centre until an assignment time is known.
 - Do not treat the pending embedding network as the delivered model unless a lecturer approves it and the locked test is not used to make that approval.
 
-## 15. Conclusion and future work
+## 17. Conclusion and future work
 
 On the measurements that were saved, a most-frequent prediction reaches validation macro-F1 0.273. Logistic regression reaches 0.460. Histogram gradient boosting reaches 0.482 in the Phase 5 early-stopped fit and is the approved champion family. A training-fold search did not beat the untuned refit on the 2025 validation macro-F1, so the frozen pipeline keeps those untuned settings with a 12-iteration cap. Its single locked-test macro-F1 is 0.494. The multilayer perceptron is close on macro-F1 and differs in which minority class it recalls. McNemar's test finds a difference in paired error rates and does not justify replacing the frozen model after seeing the test.
 
 This report does not declare the project complete. The following are still open:
 
 - Lecturer approval of the categorical embedding network. Until that decision, its scores stay out of the champion rule.
-- A second fitted work-centre model. It cannot be leakage-safe with the current extract.
-- A suburb and ward fairness audit of model error. It was not run.
-- Stakeholder review with a service department. It was not run.
-- Per-class ROC and precision-recall figures. Only the macro summaries were saved.
+- A stakeholder interview. The question list is `reports/stakeholder_interview_guide.md`. No interview has been recorded, so this report has no stakeholder validation.
+- An assignment timestamp for work centre. The sensitivity comparison in section 11 was fit, and it still cannot support a logging-time model.
 - A full re-execution of notebooks 01 to 07 from an empty environment in this phase. Those notebooks already contain executed outputs with no error cells, and their source cells do not hardcode a machine path. They were not run again while this draft was written. Notebook 08 was executed. It only checks the saved pipeline.
-- A PDF export. The Markdown is the draft, and Pandoc was not available here.
-- Saved screenshots of the form. The browser check and `reports/demonstration_checklist.md` are the demonstration evidence.
 
-Future work that would not reuse the locked test for tuning: approve or reject the embedding architecture, calibrate the probabilities, audit minority-class recall by suburb and ward on the validation period, and revisit work centre only if an assignment timestamp becomes available.
+The new tables and figures are reproduced with:
+
+```bash
+python -m src.work_centre_comparison
+python -m src.geographic_error_audit
+python -m src.per_class_curves
+```
+
+The submission status of each item is `reports/submission_checklist.md`.
+
+Future work that would not reuse the locked test for tuning: approve or reject the embedding architecture, record a stakeholder interview before any operational claim, calibrate the probabilities, and revisit work centre only if an assignment timestamp becomes available.

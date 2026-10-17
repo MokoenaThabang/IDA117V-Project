@@ -465,10 +465,16 @@ def feature_decision_table() -> pd.DataFrame:
     )
 
 
-def _reject_blocked_features(columns: list[str]) -> None:
-    """Raise when a predictor list contains leakage, identifiers, or the target."""
+def _reject_blocked_features(columns: list[str], *, allow_work_centre: bool = False) -> None:
+    """Raise when a predictor list contains leakage, identifiers, or the target.
+
+    ``allow_work_centre`` is only for the explicit sensitivity comparison.
+    The fitted champion and the app keep the default, which still rejects it.
+    """
     blocked = _blocked_names()
     blocked.update({"work_center", "created_on_date", "created on date", "notifications_created"})
+    if allow_work_centre:
+        blocked.discard("work_center")
     found = [column for column in columns if str(column).casefold() in blocked]
     if found:
         raise ValueError(

@@ -143,10 +143,15 @@ def _assert_model_frame(frame: pd.DataFrame) -> None:
     _assert_predictor_frame(frame, list(MODEL_FEATURES))
 
 
-def _assert_predictor_frame(frame: pd.DataFrame, columns: list[str]) -> None:
+def _assert_predictor_frame(
+    frame: pd.DataFrame,
+    columns: list[str],
+    *,
+    allow_work_centre: bool = False,
+) -> None:
     """Reject leakage columns and require the predictors this fit will use."""
-    _reject_blocked_features(list(frame.columns))
-    _reject_blocked_features(list(columns))
+    _reject_blocked_features(list(frame.columns), allow_work_centre=allow_work_centre)
+    _reject_blocked_features(list(columns), allow_work_centre=allow_work_centre)
     missing = [column for column in columns if column not in frame.columns]
     if missing:
         raise ValueError(
@@ -215,11 +220,13 @@ class TreeCategoryEncoder:
         max_kept: int = TREE_MAX_KEPT_CATEGORIES,
         categorical_columns: tuple[str, ...] | list[str] | None = None,
         numeric_columns: tuple[str, ...] | list[str] | None = None,
+        allow_work_centre: bool = False,
     ):
         self.min_count = min_count
         self.max_kept = max_kept
         self.categorical_columns = categorical_columns
         self.numeric_columns = numeric_columns
+        self.allow_work_centre = allow_work_centre
 
     def fit(self, frame: pd.DataFrame):
         categorical = list(
@@ -228,7 +235,16 @@ class TreeCategoryEncoder:
         numeric = list(NUMERIC_FEATURES if self.numeric_columns is None else self.numeric_columns)
         if not categorical and not numeric:
             raise ValueError("The tree encoder needs at least one predictor.")
-        _assert_predictor_frame(frame, categorical + numeric)
+        if "Work_Center" in categorical and not getattr(self, "allow_work_centre", False):
+            raise ValueError(
+                "Work Center is not a champion predictor. "
+                "The sensitivity comparison must set allow_work_centre=True."
+            )
+        _assert_predictor_frame(
+            frame,
+            categorical + numeric,
+            allow_work_centre=getattr(self, "allow_work_centre", False),
+        )
         self.categorical_columns_ = categorical
         self.numeric_columns_ = numeric
         self.code_maps_ = {}
@@ -275,7 +291,11 @@ class TreeCategoryEncoder:
     def transform(self, frame: pd.DataFrame) -> pd.DataFrame:
         if not hasattr(self, "code_maps_"):
             raise AttributeError("TreeCategoryEncoder must be fit before transform.")
-        _assert_predictor_frame(frame, list(self.categorical_columns_) + list(self.numeric_columns_))
+        _assert_predictor_frame(
+            frame,
+            list(self.categorical_columns_) + list(self.numeric_columns_),
+            allow_work_centre=getattr(self, "allow_work_centre", False),
+        )
         coded = {}
         for column in self.categorical_columns_:
             coded[column] = self._codes(frame[column], column)

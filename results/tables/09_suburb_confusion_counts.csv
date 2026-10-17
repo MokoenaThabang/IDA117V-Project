@@ -1,0 +1,3214 @@
+suburb,y_true,predicted,count,n
+#,Resolved Fast,Resolved Fast,16372,34305
+#,Resolved Fast,Resolved Slow,2795,34305
+#,Resolved Fast,Unresolved,4099,34305
+#,Resolved Slow,Resolved Fast,2005,34305
+#,Resolved Slow,Resolved Slow,1463,34305
+#,Resolved Slow,Unresolved,1070,34305
+#,Unresolved,Resolved Fast,1065,34305
+#,Unresolved,Resolved Slow,2336,34305
+#,Unresolved,Unresolved,3100,34305
+(blank),Resolved Fast,Resolved Fast,282,1666
+(blank),Resolved Fast,Resolved Slow,66,1666
+(blank),Resolved Fast,Unresolved,137,1666
+(blank),Resolved Slow,Resolved Fast,352,1666
+(blank),Resolved Slow,Resolved Slow,222,1666
+(blank),Resolved Slow,Unresolved,94,1666
+(blank),Unresolved,Resolved Fast,108,1666
+(blank),Unresolved,Resolved Slow,270,1666
+(blank),Unresolved,Unresolved,135,1666
+ADRIAANSE,Resolved Fast,Resolved Fast,117,236
+ADRIAANSE,Resolved Fast,Resolved Slow,20,236
+ADRIAANSE,Resolved Fast,Unresolved,9,236
+ADRIAANSE,Resolved Slow,Resolved Fast,9,236
+ADRIAANSE,Resolved Slow,Resolved Slow,7,236
+ADRIAANSE,Resolved Slow,Unresolved,14,236
+ADRIAANSE,Unresolved,Resolved Fast,4,236
+ADRIAANSE,Unresolved,Resolved Slow,16,236
+ADRIAANSE,Unresolved,Unresolved,40,236
+ASANDA,Resolved Fast,Resolved Fast,673,1052
+ASANDA,Resolved Fast,Resolved Slow,127,1052
+ASANDA,Resolved Fast,Unresolved,9,1052
+ASANDA,Resolved Slow,Resolved Fast,100,1052
+ASANDA,Resolved Slow,Resolved Slow,60,1052
+ASANDA,Resolved Slow,Unresolved,4,1052
+ASANDA,Unresolved,Resolved Fast,25,1052
+ASANDA,Unresolved,Resolved Slow,45,1052
+ASANDA,Unresolved,Unresolved,9,1052
+ATHLONE,Resolved Fast,Resolved Fast,1538,2515
+ATHLONE,Resolved Fast,Resolved Slow,286,2515
+ATHLONE,Resolved Fast,Unresolved,108,2515
+ATHLONE,Resolved Slow,Resolved Fast,175,2515
+ATHLONE,Resolved Slow,Resolved Slow,71,2515
+ATHLONE,Resolved Slow,Unresolved,54,2515
+ATHLONE,Unresolved,Resolved Fast,83,2515
+ATHLONE,Unresolved,Resolved Slow,63,2515
+ATHLONE,Unresolved,Unresolved,137,2515
+ATLANTIS,Resolved Fast,Resolved Fast,71,294
+ATLANTIS,Resolved Fast,Resolved Slow,4,294
+ATLANTIS,Resolved Fast,Unresolved,33,294
+ATLANTIS,Resolved Slow,Resolved Fast,17,294
+ATLANTIS,Resolved Slow,Resolved Slow,3,294
+ATLANTIS,Resolved Slow,Unresolved,38,294
+ATLANTIS,Unresolved,Resolved Fast,3,294
+ATLANTIS,Unresolved,Unresolved,125,294
+AUDAS ESTATE,Resolved Fast,Resolved Fast,117,239
+AUDAS ESTATE,Resolved Fast,Resolved Slow,31,239
+AUDAS ESTATE,Resolved Fast,Unresolved,11,239
+AUDAS ESTATE,Resolved Slow,Resolved Fast,23,239
+AUDAS ESTATE,Resolved Slow,Resolved Slow,10,239
+AUDAS ESTATE,Resolved Slow,Unresolved,15,239
+AUDAS ESTATE,Unresolved,Resolved Fast,5,239
+AUDAS ESTATE,Unresolved,Resolved Slow,13,239
+AUDAS ESTATE,Unresolved,Unresolved,14,239
+AVONDALE - PAROW,Resolved Fast,Resolved Fast,316,546
+AVONDALE - PAROW,Resolved Fast,Resolved Slow,71,546
+AVONDALE - PAROW,Resolved Fast,Unresolved,30,546
+AVONDALE - PAROW,Resolved Slow,Resolved Fast,46,546
+AVONDALE - PAROW,Resolved Slow,Resolved Slow,9,546
+AVONDALE - PAROW,Resolved Slow,Unresolved,8,546
+AVONDALE - PAROW,Unresolved,Resolved Fast,11,546
+AVONDALE - PAROW,Unresolved,Resolved Slow,16,546
+AVONDALE - PAROW,Unresolved,Unresolved,39,546
+AVONDALE - WESFLEUR,Resolved Fast,Resolved Fast,556,844
+AVONDALE - WESFLEUR,Resolved Fast,Resolved Slow,38,844
+AVONDALE - WESFLEUR,Resolved Fast,Unresolved,25,844
+AVONDALE - WESFLEUR,Resolved Slow,Resolved Fast,114,844
+AVONDALE - WESFLEUR,Resolved Slow,Resolved Slow,24,844
+AVONDALE - WESFLEUR,Resolved Slow,Unresolved,8,844
+AVONDALE - WESFLEUR,Unresolved,Resolved Fast,39,844
+AVONDALE - WESFLEUR,Unresolved,Resolved Slow,24,844
+AVONDALE - WESFLEUR,Unresolved,Unresolved,16,844
+AVONWOOD,Resolved Fast,Resolved Fast,125,314
+AVONWOOD,Resolved Fast,Resolved Slow,62,314
+AVONWOOD,Resolved Fast,Unresolved,13,314
+AVONWOOD,Resolved Slow,Resolved Fast,9,314
+AVONWOOD,Resolved Slow,Resolved Slow,28,314
+AVONWOOD,Resolved Slow,Unresolved,7,314
+AVONWOOD,Unresolved,Resolved Fast,5,314
+AVONWOOD,Unresolved,Resolved Slow,38,314
+AVONWOOD,Unresolved,Unresolved,27,314
+BALVENIE,Resolved Fast,Resolved Fast,195,353
+BALVENIE,Resolved Fast,Resolved Slow,65,353
+BALVENIE,Resolved Fast,Unresolved,7,353
+BALVENIE,Resolved Slow,Resolved Fast,18,353
+BALVENIE,Resolved Slow,Resolved Slow,19,353
+BALVENIE,Resolved Slow,Unresolved,7,353
+BALVENIE,Unresolved,Resolved Fast,12,353
+BALVENIE,Unresolved,Resolved Slow,16,353
+BALVENIE,Unresolved,Unresolved,14,353
+BANTRY BAY,Resolved Fast,Resolved Fast,135,277
+BANTRY BAY,Resolved Fast,Resolved Slow,50,277
+BANTRY BAY,Resolved Fast,Unresolved,11,277
+BANTRY BAY,Resolved Slow,Resolved Fast,13,277
+BANTRY BAY,Resolved Slow,Resolved Slow,17,277
+BANTRY BAY,Resolved Slow,Unresolved,3,277
+BANTRY BAY,Unresolved,Resolved Fast,7,277
+BANTRY BAY,Unresolved,Resolved Slow,14,277
+BANTRY BAY,Unresolved,Unresolved,27,277
+BEACON HILL,Resolved Fast,Resolved Fast,118,238
+BEACON HILL,Resolved Fast,Resolved Slow,47,238
+BEACON HILL,Resolved Fast,Unresolved,5,238
+BEACON HILL,Resolved Slow,Resolved Fast,34,238
+BEACON HILL,Resolved Slow,Resolved Slow,7,238
+BEACON HILL,Unresolved,Resolved Fast,9,238
+BEACON HILL,Unresolved,Resolved Slow,16,238
+BEACON HILL,Unresolved,Unresolved,2,238
+BEACON VALLEY,Resolved Fast,Resolved Fast,966,2127
+BEACON VALLEY,Resolved Fast,Resolved Slow,380,2127
+BEACON VALLEY,Resolved Fast,Unresolved,31,2127
+BEACON VALLEY,Resolved Slow,Resolved Fast,168,2127
+BEACON VALLEY,Resolved Slow,Resolved Slow,140,2127
+BEACON VALLEY,Resolved Slow,Unresolved,17,2127
+BEACON VALLEY,Unresolved,Resolved Fast,56,2127
+BEACON VALLEY,Unresolved,Resolved Slow,338,2127
+BEACON VALLEY,Unresolved,Unresolved,31,2127
+BEACONVALE,Resolved Fast,Resolved Fast,124,328
+BEACONVALE,Resolved Fast,Resolved Slow,74,328
+BEACONVALE,Resolved Fast,Unresolved,24,328
+BEACONVALE,Resolved Slow,Resolved Fast,16,328
+BEACONVALE,Resolved Slow,Resolved Slow,33,328
+BEACONVALE,Resolved Slow,Unresolved,13,328
+BEACONVALE,Unresolved,Resolved Fast,10,328
+BEACONVALE,Unresolved,Resolved Slow,13,328
+BEACONVALE,Unresolved,Unresolved,21,328
+BELGRAVIA,Resolved Fast,Resolved Fast,862,1334
+BELGRAVIA,Resolved Fast,Resolved Slow,137,1334
+BELGRAVIA,Resolved Fast,Unresolved,86,1334
+BELGRAVIA,Resolved Slow,Resolved Fast,94,1334
+BELGRAVIA,Resolved Slow,Resolved Slow,35,1334
+BELGRAVIA,Resolved Slow,Unresolved,17,1334
+BELGRAVIA,Unresolved,Resolved Fast,35,1334
+BELGRAVIA,Unresolved,Resolved Slow,30,1334
+BELGRAVIA,Unresolved,Unresolved,38,1334
+BELHAR,Resolved Fast,Resolved Fast,22,255
+BELHAR,Resolved Fast,Resolved Slow,34,255
+BELHAR,Resolved Fast,Unresolved,35,255
+BELHAR,Resolved Slow,Resolved Fast,7,255
+BELHAR,Resolved Slow,Resolved Slow,17,255
+BELHAR,Resolved Slow,Unresolved,47,255
+BELHAR,Unresolved,Resolved Fast,2,255
+BELHAR,Unresolved,Resolved Slow,15,255
+BELHAR,Unresolved,Unresolved,76,255
+BELHAR EXT 17,Resolved Fast,Resolved Fast,141,258
+BELHAR EXT 17,Resolved Fast,Resolved Slow,36,258
+BELHAR EXT 17,Resolved Fast,Unresolved,11,258
+BELHAR EXT 17,Resolved Slow,Resolved Fast,31,258
+BELHAR EXT 17,Resolved Slow,Resolved Slow,13,258
+BELHAR EXT 17,Resolved Slow,Unresolved,5,258
+BELHAR EXT 17,Unresolved,Resolved Fast,9,258
+BELHAR EXT 17,Unresolved,Resolved Slow,4,258
+BELHAR EXT 17,Unresolved,Unresolved,8,258
+BELHAR EXT 18,Resolved Fast,Resolved Fast,121,214
+BELHAR EXT 18,Resolved Fast,Resolved Slow,29,214
+BELHAR EXT 18,Resolved Fast,Unresolved,7,214
+BELHAR EXT 18,Resolved Slow,Resolved Fast,10,214
+BELHAR EXT 18,Resolved Slow,Resolved Slow,17,214
+BELHAR EXT 18,Resolved Slow,Unresolved,2,214
+BELHAR EXT 18,Unresolved,Resolved Fast,6,214
+BELHAR EXT 18,Unresolved,Resolved Slow,17,214
+BELHAR EXT 18,Unresolved,Unresolved,5,214
+BELHAR EXT 19,Resolved Fast,Resolved Fast,172,302
+BELHAR EXT 19,Resolved Fast,Resolved Slow,38,302
+BELHAR EXT 19,Resolved Fast,Unresolved,12,302
+BELHAR EXT 19,Resolved Slow,Resolved Fast,23,302
+BELHAR EXT 19,Resolved Slow,Resolved Slow,10,302
+BELHAR EXT 19,Resolved Slow,Unresolved,2,302
+BELHAR EXT 19,Unresolved,Resolved Fast,5,302
+BELHAR EXT 19,Unresolved,Resolved Slow,24,302
+BELHAR EXT 19,Unresolved,Unresolved,16,302
+BELHAR EXT 20,Resolved Fast,Resolved Fast,140,284
+BELHAR EXT 20,Resolved Fast,Resolved Slow,47,284
+BELHAR EXT 20,Resolved Fast,Unresolved,7,284
+BELHAR EXT 20,Resolved Slow,Resolved Fast,17,284
+BELHAR EXT 20,Resolved Slow,Resolved Slow,28,284
+BELHAR EXT 20,Resolved Slow,Unresolved,2,284
+BELHAR EXT 20,Unresolved,Resolved Fast,5,284
+BELHAR EXT 20,Unresolved,Resolved Slow,28,284
+BELHAR EXT 20,Unresolved,Unresolved,10,284
+BELHAR EXT 21,Resolved Fast,Resolved Fast,210,396
+BELHAR EXT 21,Resolved Fast,Resolved Slow,39,396
+BELHAR EXT 21,Resolved Fast,Unresolved,7,396
+BELHAR EXT 21,Resolved Slow,Resolved Fast,29,396
+BELHAR EXT 21,Resolved Slow,Resolved Slow,47,396
+BELHAR EXT 21,Unresolved,Resolved Fast,10,396
+BELHAR EXT 21,Unresolved,Resolved Slow,47,396
+BELHAR EXT 21,Unresolved,Unresolved,7,396
+BELHAR EXT 22,Resolved Fast,Resolved Fast,140,275
+BELHAR EXT 22,Resolved Fast,Resolved Slow,24,275
+BELHAR EXT 22,Resolved Fast,Unresolved,6,275
+BELHAR EXT 22,Resolved Slow,Resolved Fast,17,275
+BELHAR EXT 22,Resolved Slow,Resolved Slow,25,275
+BELHAR EXT 22,Resolved Slow,Unresolved,1,275
+BELHAR EXT 22,Unresolved,Resolved Fast,10,275
+BELHAR EXT 22,Unresolved,Resolved Slow,44,275
+BELHAR EXT 22,Unresolved,Unresolved,8,275
+BELHAR EXT 23,Resolved Fast,Resolved Fast,338,634
+BELHAR EXT 23,Resolved Fast,Resolved Slow,59,634
+BELHAR EXT 23,Resolved Fast,Unresolved,15,634
+BELHAR EXT 23,Resolved Slow,Resolved Fast,39,634
+BELHAR EXT 23,Resolved Slow,Resolved Slow,93,634
+BELHAR EXT 23,Resolved Slow,Unresolved,2,634
+BELHAR EXT 23,Unresolved,Resolved Fast,16,634
+BELHAR EXT 23,Unresolved,Resolved Slow,64,634
+BELHAR EXT 23,Unresolved,Unresolved,8,634
+BELHAR EXT 7,Resolved Fast,Resolved Fast,149,238
+BELHAR EXT 7,Resolved Fast,Resolved Slow,13,238
+BELHAR EXT 7,Resolved Fast,Unresolved,5,238
+BELHAR EXT 7,Resolved Slow,Resolved Fast,25,238
+BELHAR EXT 7,Resolved Slow,Resolved Slow,11,238
+BELHAR EXT 7,Resolved Slow,Unresolved,7,238
+BELHAR EXT 7,Unresolved,Resolved Fast,2,238
+BELHAR EXT 7,Unresolved,Resolved Slow,15,238
+BELHAR EXT 7,Unresolved,Unresolved,11,238
+BELL GLEN,Resolved Fast,Resolved Fast,176,292
+BELL GLEN,Resolved Fast,Resolved Slow,40,292
+BELL GLEN,Resolved Fast,Unresolved,5,292
+BELL GLEN,Resolved Slow,Resolved Fast,30,292
+BELL GLEN,Resolved Slow,Resolved Slow,22,292
+BELL GLEN,Resolved Slow,Unresolved,1,292
+BELL GLEN,Unresolved,Resolved Fast,5,292
+BELL GLEN,Unresolved,Resolved Slow,11,292
+BELL GLEN,Unresolved,Unresolved,2,292
+BELLVILLE CBD,Resolved Fast,Resolved Fast,105,294
+BELLVILLE CBD,Resolved Fast,Resolved Slow,92,294
+BELLVILLE CBD,Resolved Fast,Unresolved,10,294
+BELLVILLE CBD,Resolved Slow,Resolved Fast,8,294
+BELLVILLE CBD,Resolved Slow,Resolved Slow,20,294
+BELLVILLE CBD,Resolved Slow,Unresolved,7,294
+BELLVILLE CBD,Unresolved,Resolved Fast,8,294
+BELLVILLE CBD,Unresolved,Resolved Slow,24,294
+BELLVILLE CBD,Unresolved,Unresolved,20,294
+BELLVILLE SOUTH,Resolved Fast,Resolved Fast,941,2158
+BELLVILLE SOUTH,Resolved Fast,Resolved Slow,519,2158
+BELLVILLE SOUTH,Resolved Fast,Unresolved,40,2158
+BELLVILLE SOUTH,Resolved Slow,Resolved Fast,112,2158
+BELLVILLE SOUTH,Resolved Slow,Resolved Slow,138,2158
+BELLVILLE SOUTH,Resolved Slow,Unresolved,42,2158
+BELLVILLE SOUTH,Unresolved,Resolved Fast,43,2158
+BELLVILLE SOUTH,Unresolved,Resolved Slow,187,2158
+BELLVILLE SOUTH,Unresolved,Unresolved,136,2158
+BELMONT PARK,Resolved Fast,Resolved Fast,487,923
+BELMONT PARK,Resolved Fast,Resolved Slow,175,923
+BELMONT PARK,Resolved Fast,Unresolved,45,923
+BELMONT PARK,Resolved Slow,Resolved Fast,77,923
+BELMONT PARK,Resolved Slow,Resolved Slow,34,923
+BELMONT PARK,Resolved Slow,Unresolved,15,923
+BELMONT PARK,Unresolved,Resolved Fast,16,923
+BELMONT PARK,Unresolved,Resolved Slow,43,923
+BELMONT PARK,Unresolved,Unresolved,31,923
+BELTHORN ESTATE,Resolved Fast,Resolved Fast,251,557
+BELTHORN ESTATE,Resolved Fast,Resolved Slow,100,557
+BELTHORN ESTATE,Resolved Fast,Unresolved,55,557
+BELTHORN ESTATE,Resolved Slow,Resolved Fast,36,557
+BELTHORN ESTATE,Resolved Slow,Resolved Slow,17,557
+BELTHORN ESTATE,Resolved Slow,Unresolved,11,557
+BELTHORN ESTATE,Unresolved,Resolved Fast,16,557
+BELTHORN ESTATE,Unresolved,Resolved Slow,36,557
+BELTHORN ESTATE,Unresolved,Unresolved,35,557
+BERGVLIET,Resolved Fast,Resolved Fast,484,1009
+BERGVLIET,Resolved Fast,Resolved Slow,103,1009
+BERGVLIET,Resolved Fast,Unresolved,120,1009
+BERGVLIET,Resolved Slow,Resolved Fast,71,1009
+BERGVLIET,Resolved Slow,Resolved Slow,30,1009
+BERGVLIET,Resolved Slow,Unresolved,28,1009
+BERGVLIET,Unresolved,Resolved Fast,38,1009
+BERGVLIET,Unresolved,Resolved Slow,88,1009
+BERGVLIET,Unresolved,Unresolved,47,1009
+BIG BAY,Resolved Fast,Resolved Fast,123,296
+BIG BAY,Resolved Fast,Resolved Slow,68,296
+BIG BAY,Resolved Fast,Unresolved,9,296
+BIG BAY,Resolved Slow,Resolved Fast,31,296
+BIG BAY,Resolved Slow,Resolved Slow,27,296
+BIG BAY,Resolved Slow,Unresolved,5,296
+BIG BAY,Unresolved,Resolved Fast,7,296
+BIG BAY,Unresolved,Resolved Slow,14,296
+BIG BAY,Unresolved,Unresolved,12,296
+BISHOP LAVIS,Resolved Fast,Resolved Fast,1036,2136
+BISHOP LAVIS,Resolved Fast,Resolved Slow,369,2136
+BISHOP LAVIS,Resolved Fast,Unresolved,65,2136
+BISHOP LAVIS,Resolved Slow,Resolved Fast,184,2136
+BISHOP LAVIS,Resolved Slow,Resolved Slow,147,2136
+BISHOP LAVIS,Resolved Slow,Unresolved,52,2136
+BISHOP LAVIS,Unresolved,Resolved Fast,59,2136
+BISHOP LAVIS,Unresolved,Resolved Slow,117,2136
+BISHOP LAVIS,Unresolved,Unresolved,107,2136
+BISHOPSCOURT,Resolved Fast,Resolved Fast,179,411
+BISHOPSCOURT,Resolved Fast,Resolved Slow,72,411
+BISHOPSCOURT,Resolved Fast,Unresolved,25,411
+BISHOPSCOURT,Resolved Slow,Resolved Fast,29,411
+BISHOPSCOURT,Resolved Slow,Resolved Slow,28,411
+BISHOPSCOURT,Resolved Slow,Unresolved,9,411
+BISHOPSCOURT,Unresolved,Resolved Fast,19,411
+BISHOPSCOURT,Unresolved,Resolved Slow,27,411
+BISHOPSCOURT,Unresolved,Unresolved,23,411
+BLAAUWBERGSTRAND,Resolved Fast,Resolved Fast,163,331
+BLAAUWBERGSTRAND,Resolved Fast,Resolved Slow,65,331
+BLAAUWBERGSTRAND,Resolved Fast,Unresolved,7,331
+BLAAUWBERGSTRAND,Resolved Slow,Resolved Fast,28,331
+BLAAUWBERGSTRAND,Resolved Slow,Resolved Slow,15,331
+BLAAUWBERGSTRAND,Resolved Slow,Unresolved,5,331
+BLAAUWBERGSTRAND,Unresolved,Resolved Fast,8,331
+BLAAUWBERGSTRAND,Unresolved,Resolved Slow,10,331
+BLAAUWBERGSTRAND,Unresolved,Unresolved,30,331
+BLOEKOMBOS,Resolved Fast,Resolved Fast,142,562
+BLOEKOMBOS,Resolved Fast,Resolved Slow,205,562
+BLOEKOMBOS,Resolved Fast,Unresolved,4,562
+BLOEKOMBOS,Resolved Slow,Resolved Fast,108,562
+BLOEKOMBOS,Resolved Slow,Resolved Slow,47,562
+BLOEKOMBOS,Resolved Slow,Unresolved,1,562
+BLOEKOMBOS,Unresolved,Resolved Fast,9,562
+BLOEKOMBOS,Unresolved,Resolved Slow,42,562
+BLOEKOMBOS,Unresolved,Unresolved,4,562
+BLOUBERG SANDS,Resolved Fast,Resolved Fast,131,285
+BLOUBERG SANDS,Resolved Fast,Resolved Slow,50,285
+BLOUBERG SANDS,Resolved Fast,Unresolved,6,285
+BLOUBERG SANDS,Resolved Slow,Resolved Fast,19,285
+BLOUBERG SANDS,Resolved Slow,Resolved Slow,24,285
+BLOUBERG SANDS,Resolved Slow,Unresolved,7,285
+BLOUBERG SANDS,Unresolved,Resolved Fast,7,285
+BLOUBERG SANDS,Unresolved,Resolved Slow,30,285
+BLOUBERG SANDS,Unresolved,Unresolved,11,285
+BLUE DOWNS CBD,Resolved Fast,Resolved Fast,130,236
+BLUE DOWNS CBD,Resolved Fast,Resolved Slow,65,236
+BLUE DOWNS CBD,Resolved Fast,Unresolved,9,236
+BLUE DOWNS CBD,Resolved Slow,Resolved Fast,12,236
+BLUE DOWNS CBD,Resolved Slow,Resolved Slow,11,236
+BLUE DOWNS CBD,Unresolved,Resolved Slow,6,236
+BLUE DOWNS CBD,Unresolved,Unresolved,3,236
+BO OAKDALE,Resolved Fast,Resolved Fast,77,211
+BO OAKDALE,Resolved Fast,Resolved Slow,42,211
+BO OAKDALE,Resolved Fast,Unresolved,5,211
+BO OAKDALE,Resolved Slow,Resolved Fast,11,211
+BO OAKDALE,Resolved Slow,Resolved Slow,13,211
+BO OAKDALE,Resolved Slow,Unresolved,14,211
+BO OAKDALE,Unresolved,Resolved Fast,7,211
+BO OAKDALE,Unresolved,Resolved Slow,26,211
+BO OAKDALE,Unresolved,Unresolved,16,211
+BO-KAAP,Resolved Fast,Resolved Fast,307,637
+BO-KAAP,Resolved Fast,Resolved Slow,71,637
+BO-KAAP,Resolved Fast,Unresolved,42,637
+BO-KAAP,Resolved Slow,Resolved Fast,81,637
+BO-KAAP,Resolved Slow,Resolved Slow,21,637
+BO-KAAP,Resolved Slow,Unresolved,11,637
+BO-KAAP,Unresolved,Resolved Fast,22,637
+BO-KAAP,Unresolved,Resolved Slow,40,637
+BO-KAAP,Unresolved,Unresolved,42,637
+BONNIE BRAE,Resolved Fast,Resolved Fast,146,327
+BONNIE BRAE,Resolved Fast,Resolved Slow,57,327
+BONNIE BRAE,Resolved Fast,Unresolved,10,327
+BONNIE BRAE,Resolved Slow,Resolved Fast,31,327
+BONNIE BRAE,Resolved Slow,Resolved Slow,23,327
+BONNIE BRAE,Resolved Slow,Unresolved,11,327
+BONNIE BRAE,Unresolved,Resolved Fast,7,327
+BONNIE BRAE,Unresolved,Resolved Slow,32,327
+BONNIE BRAE,Unresolved,Unresolved,10,327
+BONTEHEUWEL,Resolved Fast,Resolved Fast,2037,3133
+BONTEHEUWEL,Resolved Fast,Resolved Slow,198,3133
+BONTEHEUWEL,Resolved Fast,Unresolved,89,3133
+BONTEHEUWEL,Resolved Slow,Resolved Fast,192,3133
+BONTEHEUWEL,Resolved Slow,Resolved Slow,115,3133
+BONTEHEUWEL,Resolved Slow,Unresolved,90,3133
+BONTEHEUWEL,Unresolved,Resolved Fast,103,3133
+BONTEHEUWEL,Unresolved,Resolved Slow,132,3133
+BONTEHEUWEL,Unresolved,Unresolved,177,3133
+BONTHEUWEL,Resolved Fast,Resolved Fast,87,274
+BONTHEUWEL,Resolved Fast,Resolved Slow,34,274
+BONTHEUWEL,Resolved Fast,Unresolved,20,274
+BONTHEUWEL,Resolved Slow,Resolved Fast,19,274
+BONTHEUWEL,Resolved Slow,Resolved Slow,16,274
+BONTHEUWEL,Resolved Slow,Unresolved,20,274
+BONTHEUWEL,Unresolved,Resolved Fast,14,274
+BONTHEUWEL,Unresolved,Resolved Slow,16,274
+BONTHEUWEL,Unresolved,Unresolved,48,274
+BOSTON,Resolved Fast,Resolved Fast,498,1121
+BOSTON,Resolved Fast,Resolved Slow,246,1121
+BOSTON,Resolved Fast,Unresolved,21,1121
+BOSTON,Resolved Slow,Resolved Fast,73,1121
+BOSTON,Resolved Slow,Resolved Slow,58,1121
+BOSTON,Resolved Slow,Unresolved,6,1121
+BOSTON,Unresolved,Resolved Fast,33,1121
+BOSTON,Unresolved,Resolved Slow,116,1121
+BOSTON,Unresolved,Unresolved,70,1121
+BOTHASIG,Resolved Fast,Resolved Fast,599,1427
+BOTHASIG,Resolved Fast,Resolved Slow,265,1427
+BOTHASIG,Resolved Fast,Unresolved,92,1427
+BOTHASIG,Resolved Slow,Resolved Fast,122,1427
+BOTHASIG,Resolved Slow,Resolved Slow,97,1427
+BOTHASIG,Resolved Slow,Unresolved,40,1427
+BOTHASIG,Unresolved,Resolved Fast,23,1427
+BOTHASIG,Unresolved,Resolved Slow,74,1427
+BOTHASIG,Unresolved,Unresolved,115,1427
+BRACKENFELL SOUTH,Resolved Fast,Resolved Fast,393,765
+BRACKENFELL SOUTH,Resolved Fast,Resolved Slow,153,765
+BRACKENFELL SOUTH,Resolved Fast,Unresolved,15,765
+BRACKENFELL SOUTH,Resolved Slow,Resolved Fast,70,765
+BRACKENFELL SOUTH,Resolved Slow,Resolved Slow,35,765
+BRACKENFELL SOUTH,Resolved Slow,Unresolved,6,765
+BRACKENFELL SOUTH,Unresolved,Resolved Fast,16,765
+BRACKENFELL SOUTH,Unresolved,Resolved Slow,63,765
+BRACKENFELL SOUTH,Unresolved,Unresolved,14,765
+BRIDGETOWN,Resolved Fast,Resolved Fast,412,777
+BRIDGETOWN,Resolved Fast,Resolved Slow,67,777
+BRIDGETOWN,Resolved Fast,Unresolved,32,777
+BRIDGETOWN,Resolved Slow,Resolved Fast,50,777
+BRIDGETOWN,Resolved Slow,Resolved Slow,28,777
+BRIDGETOWN,Resolved Slow,Unresolved,18,777
+BRIDGETOWN,Unresolved,Resolved Fast,40,777
+BRIDGETOWN,Unresolved,Resolved Slow,15,777
+BRIDGETOWN,Unresolved,Unresolved,115,777
+BRIZA,Resolved Fast,Resolved Fast,201,383
+BRIZA,Resolved Fast,Resolved Slow,61,383
+BRIZA,Resolved Fast,Unresolved,15,383
+BRIZA,Resolved Slow,Resolved Fast,34,383
+BRIZA,Resolved Slow,Resolved Slow,25,383
+BRIZA,Resolved Slow,Unresolved,5,383
+BRIZA,Unresolved,Resolved Fast,5,383
+BRIZA,Unresolved,Resolved Slow,21,383
+BRIZA,Unresolved,Unresolved,16,383
+BROADLANDS PARK,Resolved Fast,Resolved Fast,252,428
+BROADLANDS PARK,Resolved Fast,Resolved Slow,46,428
+BROADLANDS PARK,Resolved Slow,Resolved Fast,68,428
+BROADLANDS PARK,Resolved Slow,Resolved Slow,39,428
+BROADLANDS PARK,Resolved Slow,Unresolved,1,428
+BROADLANDS PARK,Unresolved,Resolved Fast,8,428
+BROADLANDS PARK,Unresolved,Resolved Slow,7,428
+BROADLANDS PARK,Unresolved,Unresolved,7,428
+BROADLANDS VILLAGE,Resolved Fast,Resolved Fast,195,274
+BROADLANDS VILLAGE,Resolved Fast,Resolved Slow,33,274
+BROADLANDS VILLAGE,Resolved Fast,Unresolved,4,274
+BROADLANDS VILLAGE,Resolved Slow,Resolved Fast,23,274
+BROADLANDS VILLAGE,Resolved Slow,Resolved Slow,7,274
+BROADLANDS VILLAGE,Resolved Slow,Unresolved,3,274
+BROADLANDS VILLAGE,Unresolved,Resolved Slow,7,274
+BROADLANDS VILLAGE,Unresolved,Unresolved,2,274
+BROOKLYN,Resolved Fast,Resolved Fast,1063,1662
+BROOKLYN,Resolved Fast,Resolved Slow,217,1662
+BROOKLYN,Resolved Fast,Unresolved,24,1662
+BROOKLYN,Resolved Slow,Resolved Fast,133,1662
+BROOKLYN,Resolved Slow,Resolved Slow,64,1662
+BROOKLYN,Resolved Slow,Unresolved,9,1662
+BROOKLYN,Unresolved,Resolved Fast,33,1662
+BROOKLYN,Unresolved,Resolved Slow,76,1662
+BROOKLYN,Unresolved,Unresolved,43,1662
+BURGUNDY,Resolved Fast,Resolved Fast,124,226
+BURGUNDY,Resolved Fast,Resolved Slow,44,226
+BURGUNDY,Resolved Fast,Unresolved,5,226
+BURGUNDY,Resolved Slow,Resolved Fast,22,226
+BURGUNDY,Resolved Slow,Resolved Slow,10,226
+BURGUNDY,Resolved Slow,Unresolved,2,226
+BURGUNDY,Unresolved,Resolved Fast,6,226
+BURGUNDY,Unresolved,Resolved Slow,9,226
+BURGUNDY,Unresolved,Unresolved,4,226
+Bellville,Resolved Fast,Resolved Fast,105,254
+Bellville,Resolved Fast,Resolved Slow,54,254
+Bellville,Resolved Fast,Unresolved,8,254
+Bellville,Resolved Slow,Resolved Fast,45,254
+Bellville,Resolved Slow,Resolved Slow,8,254
+Bellville,Resolved Slow,Unresolved,2,254
+Bellville,Unresolved,Resolved Fast,13,254
+Bellville,Unresolved,Resolved Slow,12,254
+Bellville,Unresolved,Unresolved,7,254
+CAMPS BAY / BAKOVEN,Resolved Fast,Resolved Fast,592,1081
+CAMPS BAY / BAKOVEN,Resolved Fast,Resolved Slow,119,1081
+CAMPS BAY / BAKOVEN,Resolved Fast,Unresolved,36,1081
+CAMPS BAY / BAKOVEN,Resolved Slow,Resolved Fast,82,1081
+CAMPS BAY / BAKOVEN,Resolved Slow,Resolved Slow,40,1081
+CAMPS BAY / BAKOVEN,Resolved Slow,Unresolved,27,1081
+CAMPS BAY / BAKOVEN,Unresolved,Resolved Fast,25,1081
+CAMPS BAY / BAKOVEN,Unresolved,Resolved Slow,46,1081
+CAMPS BAY / BAKOVEN,Unresolved,Unresolved,114,1081
+CAPE FARMS - DISTRICT B,Resolved Fast,Resolved Fast,207,583
+CAPE FARMS - DISTRICT B,Resolved Fast,Resolved Slow,95,583
+CAPE FARMS - DISTRICT B,Resolved Fast,Unresolved,11,583
+CAPE FARMS - DISTRICT B,Resolved Slow,Resolved Fast,98,583
+CAPE FARMS - DISTRICT B,Resolved Slow,Resolved Slow,66,583
+CAPE FARMS - DISTRICT B,Resolved Slow,Unresolved,7,583
+CAPE FARMS - DISTRICT B,Unresolved,Resolved Fast,19,583
+CAPE FARMS - DISTRICT B,Unresolved,Resolved Slow,65,583
+CAPE FARMS - DISTRICT B,Unresolved,Unresolved,15,583
+CAPE FARMS - DISTRICT C,Resolved Fast,Resolved Fast,81,323
+CAPE FARMS - DISTRICT C,Resolved Fast,Resolved Slow,157,323
+CAPE FARMS - DISTRICT C,Resolved Fast,Unresolved,16,323
+CAPE FARMS - DISTRICT C,Resolved Slow,Resolved Fast,18,323
+CAPE FARMS - DISTRICT C,Resolved Slow,Resolved Slow,21,323
+CAPE FARMS - DISTRICT C,Resolved Slow,Unresolved,3,323
+CAPE FARMS - DISTRICT C,Unresolved,Resolved Fast,1,323
+CAPE FARMS - DISTRICT C,Unresolved,Resolved Slow,21,323
+CAPE FARMS - DISTRICT C,Unresolved,Unresolved,5,323
+CAPE TOWN,Resolved Fast,Resolved Fast,323,1233
+CAPE TOWN,Resolved Fast,Resolved Slow,173,1233
+CAPE TOWN,Resolved Fast,Unresolved,121,1233
+CAPE TOWN,Resolved Slow,Resolved Fast,45,1233
+CAPE TOWN,Resolved Slow,Resolved Slow,65,1233
+CAPE TOWN,Resolved Slow,Unresolved,127,1233
+CAPE TOWN,Unresolved,Resolved Fast,29,1233
+CAPE TOWN,Unresolved,Resolved Slow,47,1233
+CAPE TOWN,Unresolved,Unresolved,303,1233
+CAPE TOWN CITY CENTRE,Resolved Fast,Resolved Fast,462,1031
+CAPE TOWN CITY CENTRE,Resolved Fast,Resolved Slow,137,1031
+CAPE TOWN CITY CENTRE,Resolved Fast,Unresolved,83,1031
+CAPE TOWN CITY CENTRE,Resolved Slow,Resolved Fast,74,1031
+CAPE TOWN CITY CENTRE,Resolved Slow,Resolved Slow,47,1031
+CAPE TOWN CITY CENTRE,Resolved Slow,Unresolved,50,1031
+CAPE TOWN CITY CENTRE,Unresolved,Resolved Fast,36,1031
+CAPE TOWN CITY CENTRE,Unresolved,Resolved Slow,60,1031
+CAPE TOWN CITY CENTRE,Unresolved,Unresolved,82,1031
+CENTURY CITY,Resolved Fast,Resolved Fast,217,572
+CENTURY CITY,Resolved Fast,Resolved Slow,164,572
+CENTURY CITY,Resolved Fast,Unresolved,20,572
+CENTURY CITY,Resolved Slow,Resolved Fast,39,572
+CENTURY CITY,Resolved Slow,Resolved Slow,24,572
+CENTURY CITY,Resolved Slow,Unresolved,4,572
+CENTURY CITY,Unresolved,Resolved Fast,16,572
+CENTURY CITY,Unresolved,Resolved Slow,54,572
+CENTURY CITY,Unresolved,Unresolved,34,572
+CHRISMAR,Resolved Fast,Resolved Fast,94,251
+CHRISMAR,Resolved Fast,Resolved Slow,88,251
+CHRISMAR,Resolved Fast,Unresolved,2,251
+CHRISMAR,Resolved Slow,Resolved Fast,15,251
+CHRISMAR,Resolved Slow,Resolved Slow,20,251
+CHRISMAR,Resolved Slow,Unresolved,5,251
+CHRISMAR,Unresolved,Resolved Fast,3,251
+CHRISMAR,Unresolved,Resolved Slow,15,251
+CHRISMAR,Unresolved,Unresolved,9,251
+CHURCHILL ESTATE,Resolved Fast,Resolved Fast,287,551
+CHURCHILL ESTATE,Resolved Fast,Resolved Slow,89,551
+CHURCHILL ESTATE,Resolved Fast,Unresolved,21,551
+CHURCHILL ESTATE,Resolved Slow,Resolved Fast,30,551
+CHURCHILL ESTATE,Resolved Slow,Resolved Slow,22,551
+CHURCHILL ESTATE,Resolved Slow,Unresolved,10,551
+CHURCHILL ESTATE,Unresolved,Resolved Fast,19,551
+CHURCHILL ESTATE,Unresolved,Resolved Slow,30,551
+CHURCHILL ESTATE,Unresolved,Unresolved,43,551
+CLAREMONT,Resolved Fast,Resolved Fast,1798,3581
+CLAREMONT,Resolved Fast,Resolved Slow,678,3581
+CLAREMONT,Resolved Fast,Unresolved,85,3581
+CLAREMONT,Resolved Slow,Resolved Fast,234,3581
+CLAREMONT,Resolved Slow,Resolved Slow,197,3581
+CLAREMONT,Resolved Slow,Unresolved,27,3581
+CLAREMONT,Unresolved,Resolved Fast,96,3581
+CLAREMONT,Unresolved,Resolved Slow,276,3581
+CLAREMONT,Unresolved,Unresolved,190,3581
+CLARKES ESTATE,Resolved Fast,Resolved Fast,92,211
+CLARKES ESTATE,Resolved Fast,Resolved Slow,37,211
+CLARKES ESTATE,Resolved Fast,Unresolved,9,211
+CLARKES ESTATE,Resolved Slow,Resolved Fast,12,211
+CLARKES ESTATE,Resolved Slow,Resolved Slow,7,211
+CLARKES ESTATE,Resolved Slow,Unresolved,1,211
+CLARKES ESTATE,Unresolved,Resolved Fast,7,211
+CLARKES ESTATE,Unresolved,Resolved Slow,18,211
+CLARKES ESTATE,Unresolved,Unresolved,28,211
+CLIFTON,Resolved Fast,Resolved Fast,158,262
+CLIFTON,Resolved Fast,Resolved Slow,36,262
+CLIFTON,Resolved Fast,Unresolved,8,262
+CLIFTON,Resolved Slow,Resolved Fast,16,262
+CLIFTON,Resolved Slow,Resolved Slow,12,262
+CLIFTON,Resolved Slow,Unresolved,4,262
+CLIFTON,Unresolved,Resolved Fast,4,262
+CLIFTON,Unresolved,Resolved Slow,6,262
+CLIFTON,Unresolved,Unresolved,18,262
+COLORADO PARK,Resolved Fast,Resolved Fast,299,540
+COLORADO PARK,Resolved Fast,Resolved Slow,96,540
+COLORADO PARK,Resolved Fast,Unresolved,13,540
+COLORADO PARK,Resolved Slow,Resolved Fast,38,540
+COLORADO PARK,Resolved Slow,Resolved Slow,32,540
+COLORADO PARK,Unresolved,Resolved Fast,22,540
+COLORADO PARK,Unresolved,Resolved Slow,34,540
+COLORADO PARK,Unresolved,Unresolved,6,540
+CONNAUGHT,Resolved Fast,Resolved Fast,203,368
+CONNAUGHT,Resolved Fast,Resolved Slow,53,368
+CONNAUGHT,Resolved Fast,Unresolved,10,368
+CONNAUGHT,Resolved Slow,Resolved Fast,19,368
+CONNAUGHT,Resolved Slow,Resolved Slow,29,368
+CONNAUGHT,Resolved Slow,Unresolved,7,368
+CONNAUGHT,Unresolved,Resolved Fast,7,368
+CONNAUGHT,Unresolved,Resolved Slow,30,368
+CONNAUGHT,Unresolved,Unresolved,10,368
+CONSTANTIA,Resolved Fast,Resolved Fast,1175,2731
+CONSTANTIA,Resolved Fast,Resolved Slow,534,2731
+CONSTANTIA,Resolved Fast,Unresolved,160,2731
+CONSTANTIA,Resolved Slow,Resolved Fast,186,2731
+CONSTANTIA,Resolved Slow,Resolved Slow,138,2731
+CONSTANTIA,Resolved Slow,Unresolved,48,2731
+CONSTANTIA,Unresolved,Resolved Fast,109,2731
+CONSTANTIA,Unresolved,Resolved Slow,218,2731
+CONSTANTIA,Unresolved,Unresolved,163,2731
+CRAVENBY,Resolved Fast,Resolved Fast,159,333
+CRAVENBY,Resolved Fast,Resolved Slow,87,333
+CRAVENBY,Resolved Fast,Unresolved,12,333
+CRAVENBY,Resolved Slow,Resolved Fast,21,333
+CRAVENBY,Resolved Slow,Resolved Slow,19,333
+CRAVENBY,Resolved Slow,Unresolved,1,333
+CRAVENBY,Unresolved,Resolved Fast,5,333
+CRAVENBY,Unresolved,Resolved Slow,22,333
+CRAVENBY,Unresolved,Unresolved,7,333
+CRAWFORD,Resolved Fast,Resolved Fast,498,971
+CRAWFORD,Resolved Fast,Resolved Slow,114,971
+CRAWFORD,Resolved Fast,Unresolved,74,971
+CRAWFORD,Resolved Slow,Resolved Fast,75,971
+CRAWFORD,Resolved Slow,Resolved Slow,29,971
+CRAWFORD,Resolved Slow,Unresolved,26,971
+CRAWFORD,Unresolved,Resolved Fast,23,971
+CRAWFORD,Unresolved,Resolved Slow,35,971
+CRAWFORD,Unresolved,Unresolved,97,971
+CROSSROADS,Resolved Fast,Resolved Fast,449,709
+CROSSROADS,Resolved Fast,Resolved Slow,41,709
+CROSSROADS,Resolved Fast,Unresolved,19,709
+CROSSROADS,Resolved Slow,Resolved Fast,41,709
+CROSSROADS,Resolved Slow,Resolved Slow,12,709
+CROSSROADS,Resolved Slow,Unresolved,16,709
+CROSSROADS,Unresolved,Resolved Fast,44,709
+CROSSROADS,Unresolved,Resolved Slow,32,709
+CROSSROADS,Unresolved,Unresolved,55,709
+Cape Town,Resolved Fast,Resolved Fast,161,486
+Cape Town,Resolved Fast,Resolved Slow,76,486
+Cape Town,Resolved Fast,Unresolved,41,486
+Cape Town,Resolved Slow,Resolved Fast,26,486
+Cape Town,Resolved Slow,Resolved Slow,34,486
+Cape Town,Resolved Slow,Unresolved,47,486
+Cape Town,Unresolved,Resolved Fast,15,486
+Cape Town,Unresolved,Resolved Slow,6,486
+Cape Town,Unresolved,Unresolved,80,486
+DE KUILEN,Resolved Fast,Resolved Fast,81,212
+DE KUILEN,Resolved Fast,Resolved Slow,63,212
+DE KUILEN,Resolved Fast,Unresolved,3,212
+DE KUILEN,Resolved Slow,Resolved Fast,11,212
+DE KUILEN,Resolved Slow,Resolved Slow,21,212
+DE KUILEN,Resolved Slow,Unresolved,3,212
+DE KUILEN,Unresolved,Resolved Fast,5,212
+DE KUILEN,Unresolved,Resolved Slow,19,212
+DE KUILEN,Unresolved,Unresolved,6,212
+DE LA HAYE,Resolved Fast,Resolved Fast,167,326
+DE LA HAYE,Resolved Fast,Resolved Slow,87,326
+DE LA HAYE,Resolved Fast,Unresolved,5,326
+DE LA HAYE,Resolved Slow,Resolved Fast,17,326
+DE LA HAYE,Resolved Slow,Resolved Slow,13,326
+DE LA HAYE,Resolved Slow,Unresolved,6,326
+DE LA HAYE,Unresolved,Resolved Fast,2,326
+DE LA HAYE,Unresolved,Resolved Slow,21,326
+DE LA HAYE,Unresolved,Unresolved,8,326
+DE TIJGER,Resolved Fast,Resolved Fast,141,368
+DE TIJGER,Resolved Fast,Resolved Slow,78,368
+DE TIJGER,Resolved Fast,Unresolved,22,368
+DE TIJGER,Resolved Slow,Resolved Fast,30,368
+DE TIJGER,Resolved Slow,Resolved Slow,21,368
+DE TIJGER,Resolved Slow,Unresolved,6,368
+DE TIJGER,Unresolved,Resolved Fast,12,368
+DE TIJGER,Unresolved,Resolved Slow,25,368
+DE TIJGER,Unresolved,Unresolved,33,368
+DELFT 1 & 2,Resolved Fast,Resolved Fast,177,272
+DELFT 1 & 2,Resolved Fast,Resolved Slow,28,272
+DELFT 1 & 2,Resolved Fast,Unresolved,5,272
+DELFT 1 & 2,Resolved Slow,Resolved Fast,41,272
+DELFT 1 & 2,Resolved Slow,Resolved Slow,7,272
+DELFT 1 & 2,Resolved Slow,Unresolved,1,272
+DELFT 1 & 2,Unresolved,Resolved Fast,5,272
+DELFT 1 & 2,Unresolved,Resolved Slow,4,272
+DELFT 1 & 2,Unresolved,Unresolved,4,272
+DELFT 4,Resolved Fast,Resolved Fast,140,219
+DELFT 4,Resolved Fast,Resolved Slow,22,219
+DELFT 4,Resolved Fast,Unresolved,1,219
+DELFT 4,Resolved Slow,Resolved Fast,34,219
+DELFT 4,Resolved Slow,Resolved Slow,5,219
+DELFT 4,Resolved Slow,Unresolved,1,219
+DELFT 4,Unresolved,Resolved Fast,4,219
+DELFT 4,Unresolved,Resolved Slow,7,219
+DELFT 4,Unresolved,Unresolved,5,219
+DELFT 5,Resolved Fast,Resolved Fast,186,333
+DELFT 5,Resolved Fast,Resolved Slow,42,333
+DELFT 5,Resolved Fast,Unresolved,5,333
+DELFT 5,Resolved Slow,Resolved Fast,37,333
+DELFT 5,Resolved Slow,Resolved Slow,24,333
+DELFT 5,Resolved Slow,Unresolved,5,333
+DELFT 5,Unresolved,Resolved Fast,5,333
+DELFT 5,Unresolved,Resolved Slow,27,333
+DELFT 5,Unresolved,Unresolved,2,333
+DELFT 8,Resolved Fast,Resolved Fast,147,226
+DELFT 8,Resolved Fast,Resolved Slow,20,226
+DELFT 8,Resolved Fast,Unresolved,6,226
+DELFT 8,Resolved Slow,Resolved Fast,33,226
+DELFT 8,Resolved Slow,Resolved Slow,5,226
+DELFT 8,Resolved Slow,Unresolved,2,226
+DELFT 8,Unresolved,Resolved Fast,4,226
+DELFT 8,Unresolved,Resolved Slow,7,226
+DELFT 8,Unresolved,Unresolved,2,226
+DELFT 9,Resolved Fast,Resolved Fast,174,273
+DELFT 9,Resolved Fast,Resolved Slow,24,273
+DELFT 9,Resolved Fast,Unresolved,6,273
+DELFT 9,Resolved Slow,Resolved Fast,38,273
+DELFT 9,Resolved Slow,Resolved Slow,12,273
+DELFT 9,Resolved Slow,Unresolved,1,273
+DELFT 9,Unresolved,Resolved Fast,10,273
+DELFT 9,Unresolved,Resolved Slow,6,273
+DELFT 9,Unresolved,Unresolved,2,273
+DELFT SOUTH,Resolved Fast,Resolved Fast,1018,1596
+DELFT SOUTH,Resolved Fast,Resolved Slow,105,1596
+DELFT SOUTH,Resolved Fast,Unresolved,42,1596
+DELFT SOUTH,Resolved Slow,Resolved Fast,215,1596
+DELFT SOUTH,Resolved Slow,Resolved Slow,51,1596
+DELFT SOUTH,Resolved Slow,Unresolved,19,1596
+DELFT SOUTH,Unresolved,Resolved Fast,45,1596
+DELFT SOUTH,Unresolved,Resolved Slow,57,1596
+DELFT SOUTH,Unresolved,Unresolved,44,1596
+DENNEMERE,Resolved Fast,Resolved Fast,149,325
+DENNEMERE,Resolved Fast,Resolved Slow,102,325
+DENNEMERE,Resolved Fast,Unresolved,5,325
+DENNEMERE,Resolved Slow,Resolved Fast,9,325
+DENNEMERE,Resolved Slow,Resolved Slow,30,325
+DENNEMERE,Unresolved,Resolved Fast,6,325
+DENNEMERE,Unresolved,Resolved Slow,17,325
+DENNEMERE,Unresolved,Unresolved,7,325
+DIEP RIVER,Resolved Fast,Resolved Fast,320,772
+DIEP RIVER,Resolved Fast,Resolved Slow,136,772
+DIEP RIVER,Resolved Fast,Unresolved,29,772
+DIEP RIVER,Resolved Slow,Resolved Fast,56,772
+DIEP RIVER,Resolved Slow,Resolved Slow,87,772
+DIEP RIVER,Resolved Slow,Unresolved,13,772
+DIEP RIVER,Unresolved,Resolved Fast,13,772
+DIEP RIVER,Unresolved,Resolved Slow,54,772
+DIEP RIVER,Unresolved,Unresolved,64,772
+DISTRICT SIX,Resolved Fast,Resolved Fast,266,736
+DISTRICT SIX,Resolved Fast,Resolved Slow,125,736
+DISTRICT SIX,Resolved Fast,Unresolved,106,736
+DISTRICT SIX,Resolved Slow,Resolved Fast,51,736
+DISTRICT SIX,Resolved Slow,Resolved Slow,57,736
+DISTRICT SIX,Resolved Slow,Unresolved,38,736
+DISTRICT SIX,Unresolved,Resolved Fast,14,736
+DISTRICT SIX,Unresolved,Resolved Slow,28,736
+DISTRICT SIX,Unresolved,Unresolved,51,736
+DOOR DE KRAAL,Resolved Fast,Resolved Fast,134,353
+DOOR DE KRAAL,Resolved Fast,Resolved Slow,91,353
+DOOR DE KRAAL,Resolved Fast,Unresolved,15,353
+DOOR DE KRAAL,Resolved Slow,Resolved Fast,13,353
+DOOR DE KRAAL,Resolved Slow,Resolved Slow,27,353
+DOOR DE KRAAL,Resolved Slow,Unresolved,2,353
+DOOR DE KRAAL,Unresolved,Resolved Fast,6,353
+DOOR DE KRAAL,Unresolved,Resolved Slow,40,353
+DOOR DE KRAAL,Unresolved,Unresolved,25,353
+DUNOON,Resolved Fast,Resolved Fast,234,474
+DUNOON,Resolved Fast,Resolved Slow,77,474
+DUNOON,Resolved Fast,Unresolved,1,474
+DUNOON,Resolved Slow,Resolved Fast,50,474
+DUNOON,Resolved Slow,Resolved Slow,31,474
+DUNOON,Resolved Slow,Unresolved,1,474
+DUNOON,Unresolved,Resolved Fast,34,474
+DUNOON,Unresolved,Resolved Slow,34,474
+DUNOON,Unresolved,Unresolved,12,474
+DURBANVILLE,Resolved Fast,Resolved Fast,769,1759
+DURBANVILLE,Resolved Fast,Resolved Slow,370,1759
+DURBANVILLE,Resolved Fast,Unresolved,67,1759
+DURBANVILLE,Resolved Slow,Resolved Fast,115,1759
+DURBANVILLE,Resolved Slow,Resolved Slow,121,1759
+DURBANVILLE,Resolved Slow,Unresolved,33,1759
+DURBANVILLE,Unresolved,Resolved Fast,45,1759
+DURBANVILLE,Unresolved,Resolved Slow,134,1759
+DURBANVILLE,Unresolved,Unresolved,105,1759
+EAGLE PARK,Resolved Fast,Resolved Fast,452,712
+EAGLE PARK,Resolved Fast,Resolved Slow,48,712
+EAGLE PARK,Resolved Fast,Unresolved,27,712
+EAGLE PARK,Resolved Slow,Resolved Fast,47,712
+EAGLE PARK,Resolved Slow,Resolved Slow,45,712
+EAGLE PARK,Resolved Slow,Unresolved,8,712
+EAGLE PARK,Unresolved,Resolved Fast,18,712
+EAGLE PARK,Unresolved,Resolved Slow,43,712
+EAGLE PARK,Unresolved,Unresolved,24,712
+EASTRIDGE,Resolved Fast,Resolved Fast,1093,2257
+EASTRIDGE,Resolved Fast,Resolved Slow,458,2257
+EASTRIDGE,Resolved Fast,Unresolved,106,2257
+EASTRIDGE,Resolved Slow,Resolved Fast,178,2257
+EASTRIDGE,Resolved Slow,Resolved Slow,132,2257
+EASTRIDGE,Resolved Slow,Unresolved,42,2257
+EASTRIDGE,Unresolved,Resolved Fast,70,2257
+EASTRIDGE,Unresolved,Resolved Slow,116,2257
+EASTRIDGE,Unresolved,Unresolved,62,2257
+EDGEMEAD,Resolved Fast,Resolved Fast,846,1684
+EDGEMEAD,Resolved Fast,Resolved Slow,249,1684
+EDGEMEAD,Resolved Fast,Unresolved,114,1684
+EDGEMEAD,Resolved Slow,Resolved Fast,129,1684
+EDGEMEAD,Resolved Slow,Resolved Slow,99,1684
+EDGEMEAD,Resolved Slow,Unresolved,26,1684
+EDGEMEAD,Unresolved,Resolved Fast,34,1684
+EDGEMEAD,Unresolved,Resolved Slow,100,1684
+EDGEMEAD,Unresolved,Unresolved,87,1684
+EERSTERIVIER,Resolved Fast,Resolved Fast,693,1412
+EERSTERIVIER,Resolved Fast,Resolved Slow,382,1412
+EERSTERIVIER,Resolved Fast,Unresolved,19,1412
+EERSTERIVIER,Resolved Slow,Resolved Fast,80,1412
+EERSTERIVIER,Resolved Slow,Resolved Slow,142,1412
+EERSTERIVIER,Resolved Slow,Unresolved,12,1412
+EERSTERIVIER,Unresolved,Resolved Fast,14,1412
+EERSTERIVIER,Unresolved,Resolved Slow,54,1412
+EERSTERIVIER,Unresolved,Unresolved,16,1412
+EERSTERIVIER SOUTH,Resolved Fast,Resolved Fast,271,574
+EERSTERIVIER SOUTH,Resolved Fast,Resolved Slow,169,574
+EERSTERIVIER SOUTH,Resolved Fast,Unresolved,7,574
+EERSTERIVIER SOUTH,Resolved Slow,Resolved Fast,22,574
+EERSTERIVIER SOUTH,Resolved Slow,Resolved Slow,50,574
+EERSTERIVIER SOUTH,Resolved Slow,Unresolved,7,574
+EERSTERIVIER SOUTH,Unresolved,Resolved Fast,8,574
+EERSTERIVIER SOUTH,Unresolved,Resolved Slow,34,574
+EERSTERIVIER SOUTH,Unresolved,Unresolved,6,574
+EIKENDAL,Resolved Fast,Resolved Fast,180,448
+EIKENDAL,Resolved Fast,Resolved Slow,80,448
+EIKENDAL,Resolved Fast,Unresolved,31,448
+EIKENDAL,Resolved Slow,Resolved Fast,38,448
+EIKENDAL,Resolved Slow,Resolved Slow,37,448
+EIKENDAL,Resolved Slow,Unresolved,5,448
+EIKENDAL,Unresolved,Resolved Fast,14,448
+EIKENDAL,Unresolved,Resolved Slow,47,448
+EIKENDAL,Unresolved,Unresolved,16,448
+EINDHOVEN,Resolved Fast,Resolved Fast,177,303
+EINDHOVEN,Resolved Fast,Resolved Slow,45,303
+EINDHOVEN,Resolved Fast,Unresolved,3,303
+EINDHOVEN,Resolved Slow,Resolved Fast,42,303
+EINDHOVEN,Resolved Slow,Resolved Slow,12,303
+EINDHOVEN,Resolved Slow,Unresolved,1,303
+EINDHOVEN,Unresolved,Resolved Fast,12,303
+EINDHOVEN,Unresolved,Resolved Slow,7,303
+EINDHOVEN,Unresolved,Unresolved,4,303
+ELECTRIC CITY,Resolved Fast,Resolved Fast,171,388
+ELECTRIC CITY,Resolved Fast,Resolved Slow,121,388
+ELECTRIC CITY,Resolved Fast,Unresolved,4,388
+ELECTRIC CITY,Resolved Slow,Resolved Fast,10,388
+ELECTRIC CITY,Resolved Slow,Resolved Slow,39,388
+ELECTRIC CITY,Resolved Slow,Unresolved,2,388
+ELECTRIC CITY,Unresolved,Resolved Fast,2,388
+ELECTRIC CITY,Unresolved,Resolved Slow,27,388
+ELECTRIC CITY,Unresolved,Unresolved,12,388
+ELFINDALE,Resolved Fast,Resolved Fast,117,277
+ELFINDALE,Resolved Fast,Resolved Slow,52,277
+ELFINDALE,Resolved Fast,Unresolved,3,277
+ELFINDALE,Resolved Slow,Resolved Fast,22,277
+ELFINDALE,Resolved Slow,Resolved Slow,27,277
+ELFINDALE,Resolved Slow,Unresolved,5,277
+ELFINDALE,Unresolved,Resolved Fast,5,277
+ELFINDALE,Unresolved,Resolved Slow,30,277
+ELFINDALE,Unresolved,Unresolved,16,277
+ELIM,Resolved Fast,Resolved Fast,68,235
+ELIM,Resolved Fast,Resolved Slow,57,235
+ELIM,Resolved Fast,Unresolved,18,235
+ELIM,Resolved Slow,Resolved Fast,13,235
+ELIM,Resolved Slow,Resolved Slow,24,235
+ELIM,Resolved Slow,Unresolved,5,235
+ELIM,Unresolved,Resolved Fast,3,235
+ELIM,Unresolved,Resolved Slow,29,235
+ELIM,Unresolved,Unresolved,18,235
+ELSIES RIVER,Resolved Fast,Resolved Fast,420,1485
+ELSIES RIVER,Resolved Fast,Resolved Slow,141,1485
+ELSIES RIVER,Resolved Fast,Unresolved,163,1485
+ELSIES RIVER,Resolved Slow,Resolved Fast,47,1485
+ELSIES RIVER,Resolved Slow,Resolved Slow,86,1485
+ELSIES RIVER,Resolved Slow,Unresolved,156,1485
+ELSIES RIVER,Unresolved,Resolved Fast,16,1485
+ELSIES RIVER,Unresolved,Resolved Slow,100,1485
+ELSIES RIVER,Unresolved,Unresolved,356,1485
+ELSIES RIVER INDUSTRIA,Resolved Fast,Resolved Fast,126,267
+ELSIES RIVER INDUSTRIA,Resolved Fast,Resolved Slow,47,267
+ELSIES RIVER INDUSTRIA,Resolved Fast,Unresolved,11,267
+ELSIES RIVER INDUSTRIA,Resolved Slow,Resolved Fast,9,267
+ELSIES RIVER INDUSTRIA,Resolved Slow,Resolved Slow,15,267
+ELSIES RIVER INDUSTRIA,Resolved Slow,Unresolved,10,267
+ELSIES RIVER INDUSTRIA,Unresolved,Resolved Fast,6,267
+ELSIES RIVER INDUSTRIA,Unresolved,Resolved Slow,13,267
+ELSIES RIVER INDUSTRIA,Unresolved,Unresolved,30,267
+EPPING FOREST,Resolved Fast,Resolved Fast,163,273
+EPPING FOREST,Resolved Fast,Resolved Slow,52,273
+EPPING FOREST,Resolved Fast,Unresolved,6,273
+EPPING FOREST,Resolved Slow,Resolved Fast,17,273
+EPPING FOREST,Resolved Slow,Resolved Slow,10,273
+EPPING FOREST,Resolved Slow,Unresolved,9,273
+EPPING FOREST,Unresolved,Resolved Fast,1,273
+EPPING FOREST,Unresolved,Resolved Slow,3,273
+EPPING FOREST,Unresolved,Unresolved,12,273
+EPPING INDUSTRIA 2,Resolved Fast,Resolved Fast,61,241
+EPPING INDUSTRIA 2,Resolved Fast,Resolved Slow,72,241
+EPPING INDUSTRIA 2,Resolved Fast,Unresolved,20,241
+EPPING INDUSTRIA 2,Resolved Slow,Resolved Fast,8,241
+EPPING INDUSTRIA 2,Resolved Slow,Resolved Slow,26,241
+EPPING INDUSTRIA 2,Resolved Slow,Unresolved,4,241
+EPPING INDUSTRIA 2,Unresolved,Resolved Fast,8,241
+EPPING INDUSTRIA 2,Unresolved,Resolved Slow,28,241
+EPPING INDUSTRIA 2,Unresolved,Unresolved,14,241
+EUREKA ESTATE,Resolved Fast,Resolved Fast,145,285
+EUREKA ESTATE,Resolved Fast,Resolved Slow,48,285
+EUREKA ESTATE,Resolved Fast,Unresolved,10,285
+EUREKA ESTATE,Resolved Slow,Resolved Fast,14,285
+EUREKA ESTATE,Resolved Slow,Resolved Slow,25,285
+EUREKA ESTATE,Resolved Slow,Unresolved,11,285
+EUREKA ESTATE,Unresolved,Resolved Fast,7,285
+EUREKA ESTATE,Unresolved,Resolved Slow,17,285
+EUREKA ESTATE,Unresolved,Unresolved,8,285
+EVERSDAL,Resolved Fast,Resolved Fast,231,526
+EVERSDAL,Resolved Fast,Resolved Slow,101,526
+EVERSDAL,Resolved Fast,Unresolved,19,526
+EVERSDAL,Resolved Slow,Resolved Fast,22,526
+EVERSDAL,Resolved Slow,Resolved Slow,35,526
+EVERSDAL,Resolved Slow,Unresolved,5,526
+EVERSDAL,Unresolved,Resolved Fast,7,526
+EVERSDAL,Unresolved,Resolved Slow,68,526
+EVERSDAL,Unresolved,Unresolved,38,526
+EYETHU,Resolved Fast,Resolved Fast,258,420
+EYETHU,Resolved Fast,Resolved Slow,40,420
+EYETHU,Resolved Fast,Unresolved,1,420
+EYETHU,Resolved Slow,Resolved Fast,45,420
+EYETHU,Resolved Slow,Resolved Slow,17,420
+EYETHU,Resolved Slow,Unresolved,3,420
+EYETHU,Unresolved,Resolved Fast,10,420
+EYETHU,Unresolved,Resolved Slow,35,420
+EYETHU,Unresolved,Unresolved,11,420
+FAIRDALE,Resolved Fast,Resolved Fast,193,387
+FAIRDALE,Resolved Fast,Resolved Slow,62,387
+FAIRDALE,Resolved Fast,Unresolved,10,387
+FAIRDALE,Resolved Slow,Resolved Fast,48,387
+FAIRDALE,Resolved Slow,Resolved Slow,28,387
+FAIRDALE,Resolved Slow,Unresolved,3,387
+FAIRDALE,Unresolved,Resolved Fast,10,387
+FAIRDALE,Unresolved,Resolved Slow,20,387
+FAIRDALE,Unresolved,Unresolved,13,387
+FAIRFIELD ESTATE,Resolved Fast,Resolved Fast,223,364
+FAIRFIELD ESTATE,Resolved Fast,Resolved Slow,31,364
+FAIRFIELD ESTATE,Resolved Fast,Unresolved,10,364
+FAIRFIELD ESTATE,Resolved Slow,Resolved Fast,30,364
+FAIRFIELD ESTATE,Resolved Slow,Resolved Slow,17,364
+FAIRFIELD ESTATE,Resolved Slow,Unresolved,1,364
+FAIRFIELD ESTATE,Unresolved,Resolved Fast,9,364
+FAIRFIELD ESTATE,Unresolved,Resolved Slow,20,364
+FAIRFIELD ESTATE,Unresolved,Unresolved,23,364
+FISANTEKRAAL,Resolved Fast,Resolved Fast,128,231
+FISANTEKRAAL,Resolved Fast,Resolved Slow,41,231
+FISANTEKRAAL,Resolved Fast,Unresolved,12,231
+FISANTEKRAAL,Resolved Slow,Resolved Fast,12,231
+FISANTEKRAAL,Resolved Slow,Resolved Slow,12,231
+FISANTEKRAAL,Unresolved,Resolved Fast,10,231
+FISANTEKRAAL,Unresolved,Resolved Slow,14,231
+FISANTEKRAAL,Unresolved,Unresolved,2,231
+FISH HOEK,Resolved Fast,Resolved Fast,1069,2080
+FISH HOEK,Resolved Fast,Resolved Slow,446,2080
+FISH HOEK,Resolved Fast,Unresolved,85,2080
+FISH HOEK,Resolved Slow,Resolved Fast,140,2080
+FISH HOEK,Resolved Slow,Resolved Slow,100,2080
+FISH HOEK,Resolved Slow,Unresolved,27,2080
+FISH HOEK,Unresolved,Resolved Fast,61,2080
+FISH HOEK,Unresolved,Resolved Slow,78,2080
+FISH HOEK,Unresolved,Unresolved,74,2080
+FLAMINGO VLEI,Resolved Fast,Resolved Fast,71,275
+FLAMINGO VLEI,Resolved Fast,Resolved Slow,73,275
+FLAMINGO VLEI,Resolved Fast,Unresolved,9,275
+FLAMINGO VLEI,Resolved Slow,Resolved Fast,21,275
+FLAMINGO VLEI,Resolved Slow,Resolved Slow,26,275
+FLAMINGO VLEI,Resolved Slow,Unresolved,6,275
+FLAMINGO VLEI,Unresolved,Resolved Fast,7,275
+FLAMINGO VLEI,Unresolved,Resolved Slow,37,275
+FLAMINGO VLEI,Unresolved,Unresolved,25,275
+FLORIDA,Resolved Fast,Resolved Fast,375,701
+FLORIDA,Resolved Fast,Resolved Slow,107,701
+FLORIDA,Resolved Fast,Unresolved,32,701
+FLORIDA,Resolved Slow,Resolved Fast,53,701
+FLORIDA,Resolved Slow,Resolved Slow,40,701
+FLORIDA,Resolved Slow,Unresolved,13,701
+FLORIDA,Unresolved,Resolved Fast,23,701
+FLORIDA,Unresolved,Resolved Slow,25,701
+FLORIDA,Unresolved,Unresolved,33,701
+FORESHORE,Resolved Fast,Resolved Fast,85,207
+FORESHORE,Resolved Fast,Resolved Slow,29,207
+FORESHORE,Resolved Fast,Unresolved,14,207
+FORESHORE,Resolved Slow,Resolved Fast,12,207
+FORESHORE,Resolved Slow,Resolved Slow,12,207
+FORESHORE,Resolved Slow,Unresolved,7,207
+FORESHORE,Unresolved,Resolved Fast,12,207
+FORESHORE,Unresolved,Resolved Slow,16,207
+FORESHORE,Unresolved,Unresolved,20,207
+FOREST HEIGHTS,Resolved Fast,Resolved Fast,232,459
+FOREST HEIGHTS,Resolved Fast,Resolved Slow,113,459
+FOREST HEIGHTS,Resolved Fast,Unresolved,2,459
+FOREST HEIGHTS,Resolved Slow,Resolved Fast,20,459
+FOREST HEIGHTS,Resolved Slow,Resolved Slow,52,459
+FOREST HEIGHTS,Resolved Slow,Unresolved,6,459
+FOREST HEIGHTS,Unresolved,Resolved Fast,4,459
+FOREST HEIGHTS,Unresolved,Resolved Slow,19,459
+FOREST HEIGHTS,Unresolved,Unresolved,11,459
+FOREST VILLAGE,Resolved Fast,Resolved Fast,241,709
+FOREST VILLAGE,Resolved Fast,Resolved Slow,171,709
+FOREST VILLAGE,Resolved Fast,Unresolved,20,709
+FOREST VILLAGE,Resolved Slow,Resolved Fast,63,709
+FOREST VILLAGE,Resolved Slow,Resolved Slow,69,709
+FOREST VILLAGE,Resolved Slow,Unresolved,5,709
+FOREST VILLAGE,Unresolved,Resolved Fast,32,709
+FOREST VILLAGE,Unresolved,Resolved Slow,91,709
+FOREST VILLAGE,Unresolved,Unresolved,17,709
+FOUNTAIN VILLAGE,Resolved Fast,Resolved Fast,213,364
+FOUNTAIN VILLAGE,Resolved Fast,Resolved Slow,82,364
+FOUNTAIN VILLAGE,Resolved Fast,Unresolved,5,364
+FOUNTAIN VILLAGE,Resolved Slow,Resolved Fast,17,364
+FOUNTAIN VILLAGE,Resolved Slow,Resolved Slow,18,364
+FOUNTAIN VILLAGE,Resolved Slow,Unresolved,1,364
+FOUNTAIN VILLAGE,Unresolved,Resolved Fast,1,364
+FOUNTAIN VILLAGE,Unresolved,Resolved Slow,21,364
+FOUNTAIN VILLAGE,Unresolved,Unresolved,6,364
+FRESNAYE,Resolved Fast,Resolved Fast,344,657
+FRESNAYE,Resolved Fast,Resolved Slow,84,657
+FRESNAYE,Resolved Fast,Unresolved,37,657
+FRESNAYE,Resolved Slow,Resolved Fast,52,657
+FRESNAYE,Resolved Slow,Resolved Slow,31,657
+FRESNAYE,Resolved Slow,Unresolved,12,657
+FRESNAYE,Unresolved,Resolved Fast,16,657
+FRESNAYE,Unresolved,Resolved Slow,19,657
+FRESNAYE,Unresolved,Unresolved,62,657
+GARDENS,Resolved Fast,Resolved Fast,864,1805
+GARDENS,Resolved Fast,Resolved Slow,195,1805
+GARDENS,Resolved Fast,Unresolved,93,1805
+GARDENS,Resolved Slow,Resolved Fast,138,1805
+GARDENS,Resolved Slow,Resolved Slow,105,1805
+GARDENS,Resolved Slow,Unresolved,74,1805
+GARDENS,Unresolved,Resolved Fast,89,1805
+GARDENS,Unresolved,Resolved Slow,78,1805
+GARDENS,Unresolved,Unresolved,169,1805
+GATESVILLE,Resolved Fast,Resolved Fast,267,576
+GATESVILLE,Resolved Fast,Resolved Slow,84,576
+GATESVILLE,Resolved Fast,Unresolved,45,576
+GATESVILLE,Resolved Slow,Resolved Fast,58,576
+GATESVILLE,Resolved Slow,Resolved Slow,33,576
+GATESVILLE,Resolved Slow,Unresolved,12,576
+GATESVILLE,Unresolved,Resolved Fast,22,576
+GATESVILLE,Unresolved,Resolved Slow,19,576
+GATESVILLE,Unresolved,Unresolved,36,576
+GENERIC TOWN 0000,Resolved Fast,Resolved Fast,1072,2302
+GENERIC TOWN 0000,Resolved Fast,Resolved Slow,566,2302
+GENERIC TOWN 0000,Resolved Fast,Unresolved,186,2302
+GENERIC TOWN 0000,Resolved Slow,Resolved Fast,94,2302
+GENERIC TOWN 0000,Resolved Slow,Resolved Slow,137,2302
+GENERIC TOWN 0000,Resolved Slow,Unresolved,21,2302
+GENERIC TOWN 0000,Unresolved,Resolved Fast,49,2302
+GENERIC TOWN 0000,Unresolved,Resolved Slow,116,2302
+GENERIC TOWN 0000,Unresolved,Unresolved,61,2302
+GLENCAIRN,Resolved Fast,Resolved Fast,339,778
+GLENCAIRN,Resolved Fast,Resolved Slow,194,778
+GLENCAIRN,Resolved Fast,Unresolved,55,778
+GLENCAIRN,Resolved Slow,Resolved Fast,56,778
+GLENCAIRN,Resolved Slow,Resolved Slow,36,778
+GLENCAIRN,Resolved Slow,Unresolved,18,778
+GLENCAIRN,Unresolved,Resolved Fast,35,778
+GLENCAIRN,Unresolved,Resolved Slow,23,778
+GLENCAIRN,Unresolved,Unresolved,22,778
+GLENHAVEN,Resolved Fast,Resolved Fast,155,365
+GLENHAVEN,Resolved Fast,Resolved Slow,91,365
+GLENHAVEN,Resolved Fast,Unresolved,9,365
+GLENHAVEN,Resolved Slow,Resolved Fast,19,365
+GLENHAVEN,Resolved Slow,Resolved Slow,32,365
+GLENHAVEN,Resolved Slow,Unresolved,12,365
+GLENHAVEN,Unresolved,Resolved Fast,7,365
+GLENHAVEN,Unresolved,Resolved Slow,21,365
+GLENHAVEN,Unresolved,Unresolved,19,365
+GLENLILY,Resolved Fast,Resolved Fast,546,944
+GLENLILY,Resolved Fast,Resolved Slow,87,944
+GLENLILY,Resolved Fast,Unresolved,32,944
+GLENLILY,Resolved Slow,Resolved Fast,60,944
+GLENLILY,Resolved Slow,Resolved Slow,46,944
+GLENLILY,Resolved Slow,Unresolved,24,944
+GLENLILY,Unresolved,Resolved Fast,25,944
+GLENLILY,Unresolved,Resolved Slow,34,944
+GLENLILY,Unresolved,Unresolved,90,944
+GOLDEN ACRE,Resolved Fast,Resolved Fast,88,209
+GOLDEN ACRE,Resolved Fast,Resolved Slow,47,209
+GOLDEN ACRE,Resolved Fast,Unresolved,14,209
+GOLDEN ACRE,Resolved Slow,Resolved Fast,8,209
+GOLDEN ACRE,Resolved Slow,Resolved Slow,13,209
+GOLDEN ACRE,Resolved Slow,Unresolved,2,209
+GOLDEN ACRE,Unresolved,Resolved Fast,5,209
+GOLDEN ACRE,Unresolved,Resolved Slow,20,209
+GOLDEN ACRE,Unresolved,Unresolved,12,209
+GOODWOOD,Resolved Fast,Resolved Fast,82,265
+GOODWOOD,Resolved Fast,Resolved Slow,73,265
+GOODWOOD,Resolved Fast,Unresolved,17,265
+GOODWOOD,Resolved Slow,Resolved Fast,14,265
+GOODWOOD,Resolved Slow,Resolved Slow,14,265
+GOODWOOD,Resolved Slow,Unresolved,10,265
+GOODWOOD,Unresolved,Resolved Fast,9,265
+GOODWOOD,Unresolved,Resolved Slow,18,265
+GOODWOOD,Unresolved,Unresolved,28,265
+GOODWOOD  EXT 1,Resolved Fast,Resolved Fast,114,203
+GOODWOOD  EXT 1,Resolved Fast,Resolved Slow,20,203
+GOODWOOD  EXT 1,Resolved Fast,Unresolved,6,203
+GOODWOOD  EXT 1,Resolved Slow,Resolved Fast,16,203
+GOODWOOD  EXT 1,Resolved Slow,Resolved Slow,5,203
+GOODWOOD  EXT 1,Resolved Slow,Unresolved,10,203
+GOODWOOD  EXT 1,Unresolved,Resolved Fast,3,203
+GOODWOOD  EXT 1,Unresolved,Resolved Slow,9,203
+GOODWOOD  EXT 1,Unresolved,Unresolved,20,203
+GOODWOOD ESTATE,Resolved Fast,Resolved Fast,353,645
+GOODWOOD ESTATE,Resolved Fast,Resolved Slow,69,645
+GOODWOOD ESTATE,Resolved Fast,Unresolved,31,645
+GOODWOOD ESTATE,Resolved Slow,Resolved Fast,43,645
+GOODWOOD ESTATE,Resolved Slow,Resolved Slow,22,645
+GOODWOOD ESTATE,Resolved Slow,Unresolved,18,645
+GOODWOOD ESTATE,Unresolved,Resolved Fast,19,645
+GOODWOOD ESTATE,Unresolved,Resolved Slow,32,645
+GOODWOOD ESTATE,Unresolved,Unresolved,58,645
+GORDONS BAY,Resolved Fast,Resolved Fast,267,619
+GORDONS BAY,Resolved Fast,Resolved Slow,108,619
+GORDONS BAY,Resolved Fast,Unresolved,63,619
+GORDONS BAY,Resolved Slow,Resolved Fast,44,619
+GORDONS BAY,Resolved Slow,Resolved Slow,37,619
+GORDONS BAY,Resolved Slow,Unresolved,25,619
+GORDONS BAY,Unresolved,Resolved Fast,11,619
+GORDONS BAY,Unresolved,Resolved Slow,30,619
+GORDONS BAY,Unresolved,Unresolved,34,619
+GORDONS BAY VILLAGE,Resolved Fast,Resolved Fast,130,272
+GORDONS BAY VILLAGE,Resolved Fast,Resolved Slow,57,272
+GORDONS BAY VILLAGE,Resolved Fast,Unresolved,8,272
+GORDONS BAY VILLAGE,Resolved Slow,Resolved Fast,21,272
+GORDONS BAY VILLAGE,Resolved Slow,Resolved Slow,12,272
+GORDONS BAY VILLAGE,Resolved Slow,Unresolved,11,272
+GORDONS BAY VILLAGE,Unresolved,Resolved Fast,6,272
+GORDONS BAY VILLAGE,Unresolved,Resolved Slow,7,272
+GORDONS BAY VILLAGE,Unresolved,Unresolved,20,272
+GRASSY PARK,Resolved Fast,Resolved Fast,1239,2831
+GRASSY PARK,Resolved Fast,Resolved Slow,326,2831
+GRASSY PARK,Resolved Fast,Unresolved,186,2831
+GRASSY PARK,Resolved Slow,Resolved Fast,130,2831
+GRASSY PARK,Resolved Slow,Resolved Slow,160,2831
+GRASSY PARK,Resolved Slow,Unresolved,191,2831
+GRASSY PARK,Unresolved,Resolved Fast,45,2831
+GRASSY PARK,Unresolved,Resolved Slow,155,2831
+GRASSY PARK,Unresolved,Unresolved,399,2831
+GREEN POINT,Resolved Fast,Resolved Fast,510,1025
+GREEN POINT,Resolved Fast,Resolved Slow,100,1025
+GREEN POINT,Resolved Fast,Unresolved,70,1025
+GREEN POINT,Resolved Slow,Resolved Fast,89,1025
+GREEN POINT,Resolved Slow,Resolved Slow,35,1025
+GREEN POINT,Resolved Slow,Unresolved,34,1025
+GREEN POINT,Unresolved,Resolved Fast,40,1025
+GREEN POINT,Unresolved,Resolved Slow,51,1025
+GREEN POINT,Unresolved,Unresolved,96,1025
+GREENLANDS,Resolved Fast,Resolved Fast,142,256
+GREENLANDS,Resolved Fast,Resolved Slow,69,256
+GREENLANDS,Resolved Fast,Unresolved,2,256
+GREENLANDS,Resolved Slow,Resolved Fast,13,256
+GREENLANDS,Resolved Slow,Resolved Slow,14,256
+GREENLANDS,Resolved Slow,Unresolved,1,256
+GREENLANDS,Unresolved,Resolved Fast,1,256
+GREENLANDS,Unresolved,Resolved Slow,9,256
+GREENLANDS,Unresolved,Unresolved,5,256
+GREENVILLE GARDEN CITY,Resolved Fast,Resolved Fast,255,402
+GREENVILLE GARDEN CITY,Resolved Fast,Resolved Slow,43,402
+GREENVILLE GARDEN CITY,Resolved Fast,Unresolved,15,402
+GREENVILLE GARDEN CITY,Resolved Slow,Resolved Fast,28,402
+GREENVILLE GARDEN CITY,Resolved Slow,Resolved Slow,12,402
+GREENVILLE GARDEN CITY,Resolved Slow,Unresolved,2,402
+GREENVILLE GARDEN CITY,Unresolved,Resolved Fast,20,402
+GREENVILLE GARDEN CITY,Unresolved,Resolved Slow,17,402
+GREENVILLE GARDEN CITY,Unresolved,Unresolved,10,402
+GROENVALLEI,Resolved Fast,Resolved Fast,88,293
+GROENVALLEI,Resolved Fast,Resolved Slow,94,293
+GROENVALLEI,Resolved Fast,Unresolved,7,293
+GROENVALLEI,Resolved Slow,Resolved Fast,11,293
+GROENVALLEI,Resolved Slow,Resolved Slow,28,293
+GROENVALLEI,Resolved Slow,Unresolved,9,293
+GROENVALLEI,Unresolved,Resolved Fast,18,293
+GROENVALLEI,Unresolved,Resolved Slow,25,293
+GROENVALLEI,Unresolved,Unresolved,13,293
+GUGULETHU,Resolved Fast,Resolved Fast,319,488
+GUGULETHU,Resolved Fast,Resolved Slow,30,488
+GUGULETHU,Resolved Fast,Unresolved,19,488
+GUGULETHU,Resolved Slow,Resolved Fast,30,488
+GUGULETHU,Resolved Slow,Resolved Slow,16,488
+GUGULETHU,Resolved Slow,Unresolved,19,488
+GUGULETHU,Unresolved,Resolved Fast,18,488
+GUGULETHU,Unresolved,Resolved Slow,17,488
+GUGULETHU,Unresolved,Unresolved,20,488
+GUGULETU,Resolved Fast,Resolved Fast,4948,7054
+GUGULETU,Resolved Fast,Resolved Slow,332,7054
+GUGULETU,Resolved Fast,Unresolved,164,7054
+GUGULETU,Resolved Slow,Resolved Fast,408,7054
+GUGULETU,Resolved Slow,Resolved Slow,143,7054
+GUGULETU,Resolved Slow,Unresolved,122,7054
+GUGULETU,Unresolved,Resolved Fast,435,7054
+GUGULETU,Unresolved,Resolved Slow,194,7054
+GUGULETU,Unresolved,Unresolved,308,7054
+Gugulethu,Resolved Fast,Resolved Fast,159,262
+Gugulethu,Resolved Fast,Resolved Slow,44,262
+Gugulethu,Resolved Fast,Unresolved,4,262
+Gugulethu,Resolved Slow,Resolved Fast,12,262
+Gugulethu,Resolved Slow,Resolved Slow,16,262
+Gugulethu,Resolved Slow,Unresolved,2,262
+Gugulethu,Unresolved,Resolved Fast,3,262
+Gugulethu,Unresolved,Resolved Slow,10,262
+Gugulethu,Unresolved,Unresolved,12,262
+Guguletu,Resolved Fast,Resolved Fast,44,235
+Guguletu,Resolved Fast,Resolved Slow,8,235
+Guguletu,Resolved Fast,Unresolved,36,235
+Guguletu,Resolved Slow,Resolved Fast,7,235
+Guguletu,Resolved Slow,Resolved Slow,20,235
+Guguletu,Resolved Slow,Unresolved,23,235
+Guguletu,Unresolved,Resolved Slow,13,235
+Guguletu,Unresolved,Unresolved,84,235
+HAGLEY,Resolved Fast,Resolved Fast,212,426
+HAGLEY,Resolved Fast,Resolved Slow,97,426
+HAGLEY,Resolved Fast,Unresolved,18,426
+HAGLEY,Resolved Slow,Resolved Fast,16,426
+HAGLEY,Resolved Slow,Resolved Slow,35,426
+HAGLEY,Resolved Slow,Unresolved,4,426
+HAGLEY,Unresolved,Resolved Fast,2,426
+HAGLEY,Unresolved,Resolved Slow,29,426
+HAGLEY,Unresolved,Unresolved,13,426
+HANOVER PARK,Resolved Fast,Resolved Fast,1024,3845
+HANOVER PARK,Resolved Fast,Resolved Slow,437,3845
+HANOVER PARK,Resolved Fast,Unresolved,264,3845
+HANOVER PARK,Resolved Slow,Resolved Fast,140,3845
+HANOVER PARK,Resolved Slow,Resolved Slow,194,3845
+HANOVER PARK,Resolved Slow,Unresolved,397,3845
+HANOVER PARK,Unresolved,Resolved Fast,89,3845
+HANOVER PARK,Unresolved,Resolved Slow,137,3845
+HANOVER PARK,Unresolved,Unresolved,1163,3845
+HARARE,Resolved Fast,Resolved Fast,374,667
+HARARE,Resolved Fast,Resolved Slow,72,667
+HARARE,Resolved Fast,Unresolved,7,667
+HARARE,Resolved Slow,Resolved Fast,72,667
+HARARE,Resolved Slow,Resolved Slow,31,667
+HARARE,Resolved Slow,Unresolved,2,667
+HARARE,Unresolved,Resolved Fast,25,667
+HARARE,Unresolved,Resolved Slow,68,667
+HARARE,Unresolved,Unresolved,16,667
+HARMONY VILLAGE,Resolved Fast,Resolved Fast,192,321
+HARMONY VILLAGE,Resolved Fast,Resolved Slow,52,321
+HARMONY VILLAGE,Resolved Fast,Unresolved,6,321
+HARMONY VILLAGE,Resolved Slow,Resolved Fast,29,321
+HARMONY VILLAGE,Resolved Slow,Resolved Slow,17,321
+HARMONY VILLAGE,Resolved Slow,Unresolved,2,321
+HARMONY VILLAGE,Unresolved,Resolved Fast,9,321
+HARMONY VILLAGE,Unresolved,Resolved Slow,9,321
+HARMONY VILLAGE,Unresolved,Unresolved,5,321
+HAZENDAL,Resolved Fast,Resolved Fast,527,848
+HAZENDAL,Resolved Fast,Resolved Slow,69,848
+HAZENDAL,Resolved Fast,Unresolved,32,848
+HAZENDAL,Resolved Slow,Resolved Fast,66,848
+HAZENDAL,Resolved Slow,Resolved Slow,18,848
+HAZENDAL,Resolved Slow,Unresolved,25,848
+HAZENDAL,Unresolved,Resolved Fast,42,848
+HAZENDAL,Unresolved,Resolved Slow,29,848
+HAZENDAL,Unresolved,Unresolved,40,848
+HEATHFIELD,Resolved Fast,Resolved Fast,279,639
+HEATHFIELD,Resolved Fast,Resolved Slow,150,639
+HEATHFIELD,Resolved Fast,Unresolved,33,639
+HEATHFIELD,Resolved Slow,Resolved Fast,58,639
+HEATHFIELD,Resolved Slow,Resolved Slow,31,639
+HEATHFIELD,Resolved Slow,Unresolved,9,639
+HEATHFIELD,Unresolved,Resolved Fast,20,639
+HEATHFIELD,Unresolved,Resolved Slow,26,639
+HEATHFIELD,Unresolved,Unresolved,33,639
+HEIDEVELD,Resolved Fast,Resolved Fast,853,1869
+HEIDEVELD,Resolved Fast,Resolved Slow,114,1869
+HEIDEVELD,Resolved Fast,Unresolved,108,1869
+HEIDEVELD,Resolved Slow,Resolved Fast,92,1869
+HEIDEVELD,Resolved Slow,Resolved Slow,34,1869
+HEIDEVELD,Resolved Slow,Unresolved,147,1869
+HEIDEVELD,Unresolved,Resolved Fast,50,1869
+HEIDEVELD,Unresolved,Resolved Slow,45,1869
+HEIDEVELD,Unresolved,Unresolved,426,1869
+HELDERVUE,Resolved Fast,Resolved Fast,323,579
+HELDERVUE,Resolved Fast,Resolved Slow,130,579
+HELDERVUE,Resolved Fast,Unresolved,14,579
+HELDERVUE,Resolved Slow,Resolved Fast,41,579
+HELDERVUE,Resolved Slow,Resolved Slow,21,579
+HELDERVUE,Resolved Slow,Unresolved,2,579
+HELDERVUE,Unresolved,Resolved Fast,9,579
+HELDERVUE,Unresolved,Resolved Slow,25,579
+HELDERVUE,Unresolved,Unresolved,14,579
+HIGHBURY,Resolved Fast,Resolved Fast,209,466
+HIGHBURY,Resolved Fast,Resolved Slow,86,466
+HIGHBURY,Resolved Fast,Unresolved,12,466
+HIGHBURY,Resolved Slow,Resolved Fast,25,466
+HIGHBURY,Resolved Slow,Resolved Slow,39,466
+HIGHBURY,Resolved Slow,Unresolved,5,466
+HIGHBURY,Unresolved,Resolved Fast,7,466
+HIGHBURY,Unresolved,Resolved Slow,70,466
+HIGHBURY,Unresolved,Unresolved,13,466
+HIGHBURY PARK,Resolved Fast,Resolved Fast,122,380
+HIGHBURY PARK,Resolved Fast,Resolved Slow,45,380
+HIGHBURY PARK,Resolved Fast,Unresolved,12,380
+HIGHBURY PARK,Resolved Slow,Resolved Fast,10,380
+HIGHBURY PARK,Resolved Slow,Resolved Slow,58,380
+HIGHBURY PARK,Resolved Slow,Unresolved,3,380
+HIGHBURY PARK,Unresolved,Resolved Slow,122,380
+HIGHBURY PARK,Unresolved,Unresolved,8,380
+HILLCREST HEIGHTS,Resolved Fast,Resolved Fast,110,279
+HILLCREST HEIGHTS,Resolved Fast,Resolved Slow,75,279
+HILLCREST HEIGHTS,Resolved Fast,Unresolved,15,279
+HILLCREST HEIGHTS,Resolved Slow,Resolved Fast,14,279
+HILLCREST HEIGHTS,Resolved Slow,Resolved Slow,24,279
+HILLCREST HEIGHTS,Resolved Slow,Unresolved,2,279
+HILLCREST HEIGHTS,Unresolved,Resolved Fast,1,279
+HILLCREST HEIGHTS,Unresolved,Resolved Slow,23,279
+HILLCREST HEIGHTS,Unresolved,Unresolved,15,279
+HOUT BAY,Resolved Fast,Resolved Fast,1761,3702
+HOUT BAY,Resolved Fast,Resolved Slow,591,3702
+HOUT BAY,Resolved Fast,Unresolved,224,3702
+HOUT BAY,Resolved Slow,Resolved Fast,212,3702
+HOUT BAY,Resolved Slow,Resolved Slow,191,3702
+HOUT BAY,Resolved Slow,Unresolved,91,3702
+HOUT BAY,Unresolved,Resolved Fast,65,3702
+HOUT BAY,Unresolved,Resolved Slow,174,3702
+HOUT BAY,Unresolved,Unresolved,393,3702
+ILITHA PARK,Resolved Fast,Resolved Fast,650,1052
+ILITHA PARK,Resolved Fast,Resolved Slow,147,1052
+ILITHA PARK,Resolved Fast,Unresolved,26,1052
+ILITHA PARK,Resolved Slow,Resolved Fast,69,1052
+ILITHA PARK,Resolved Slow,Resolved Slow,38,1052
+ILITHA PARK,Resolved Slow,Unresolved,10,1052
+ILITHA PARK,Unresolved,Resolved Fast,18,1052
+ILITHA PARK,Unresolved,Resolved Slow,63,1052
+ILITHA PARK,Unresolved,Unresolved,31,1052
+JOE SLOVO PARK,Resolved Fast,Resolved Fast,335,501
+JOE SLOVO PARK,Resolved Fast,Resolved Slow,39,501
+JOE SLOVO PARK,Resolved Fast,Unresolved,1,501
+JOE SLOVO PARK,Resolved Slow,Resolved Fast,56,501
+JOE SLOVO PARK,Resolved Slow,Resolved Slow,16,501
+JOE SLOVO PARK,Resolved Slow,Unresolved,2,501
+JOE SLOVO PARK,Unresolved,Resolved Fast,24,501
+JOE SLOVO PARK,Unresolved,Resolved Slow,27,501
+JOE SLOVO PARK,Unresolved,Unresolved,1,501
+KALK BAY,Resolved Fast,Resolved Fast,108,257
+KALK BAY,Resolved Fast,Resolved Slow,48,257
+KALK BAY,Resolved Fast,Unresolved,15,257
+KALK BAY,Resolved Slow,Resolved Fast,24,257
+KALK BAY,Resolved Slow,Resolved Slow,15,257
+KALK BAY,Resolved Slow,Unresolved,7,257
+KALK BAY,Unresolved,Resolved Fast,9,257
+KALK BAY,Unresolved,Resolved Slow,17,257
+KALK BAY,Unresolved,Unresolved,14,257
+KALKFONTEIN,Resolved Fast,Resolved Fast,378,804
+KALKFONTEIN,Resolved Fast,Resolved Slow,172,804
+KALKFONTEIN,Resolved Fast,Unresolved,22,804
+KALKFONTEIN,Resolved Slow,Resolved Fast,30,804
+KALKFONTEIN,Resolved Slow,Resolved Slow,68,804
+KALKFONTEIN,Resolved Slow,Unresolved,10,804
+KALKFONTEIN,Unresolved,Resolved Fast,3,804
+KALKFONTEIN,Unresolved,Resolved Slow,79,804
+KALKFONTEIN,Unresolved,Unresolved,42,804
+KALKSTEENFONTEIN,Resolved Fast,Resolved Fast,298,783
+KALKSTEENFONTEIN,Resolved Fast,Resolved Slow,45,783
+KALKSTEENFONTEIN,Resolved Fast,Unresolved,27,783
+KALKSTEENFONTEIN,Resolved Slow,Resolved Fast,39,783
+KALKSTEENFONTEIN,Resolved Slow,Resolved Slow,49,783
+KALKSTEENFONTEIN,Resolved Slow,Unresolved,43,783
+KALKSTEENFONTEIN,Unresolved,Resolved Fast,35,783
+KALKSTEENFONTEIN,Unresolved,Resolved Slow,54,783
+KALKSTEENFONTEIN,Unresolved,Unresolved,193,783
+KEMPENVILLE,Resolved Fast,Resolved Fast,136,312
+KEMPENVILLE,Resolved Fast,Resolved Slow,99,312
+KEMPENVILLE,Resolved Fast,Unresolved,2,312
+KEMPENVILLE,Resolved Slow,Resolved Fast,12,312
+KEMPENVILLE,Resolved Slow,Resolved Slow,23,312
+KEMPENVILLE,Resolved Slow,Unresolved,3,312
+KEMPENVILLE,Unresolved,Resolved Fast,13,312
+KEMPENVILLE,Unresolved,Resolved Slow,13,312
+KEMPENVILLE,Unresolved,Unresolved,11,312
+KENILWORTH,Resolved Fast,Resolved Fast,636,1534
+KENILWORTH,Resolved Fast,Resolved Slow,370,1534
+KENILWORTH,Resolved Fast,Unresolved,48,1534
+KENILWORTH,Resolved Slow,Resolved Fast,115,1534
+KENILWORTH,Resolved Slow,Resolved Slow,110,1534
+KENILWORTH,Resolved Slow,Unresolved,19,1534
+KENILWORTH,Unresolved,Resolved Fast,40,1534
+KENILWORTH,Unresolved,Resolved Slow,115,1534
+KENILWORTH,Unresolved,Unresolved,81,1534
+KENRIDGE,Resolved Fast,Resolved Fast,235,646
+KENRIDGE,Resolved Fast,Resolved Slow,213,646
+KENRIDGE,Resolved Fast,Unresolved,17,646
+KENRIDGE,Resolved Slow,Resolved Fast,22,646
+KENRIDGE,Resolved Slow,Resolved Slow,49,646
+KENRIDGE,Resolved Slow,Unresolved,7,646
+KENRIDGE,Unresolved,Resolved Fast,9,646
+KENRIDGE,Unresolved,Resolved Slow,68,646
+KENRIDGE,Unresolved,Unresolved,26,646
+KENSINGTON,Resolved Fast,Resolved Fast,1120,2369
+KENSINGTON,Resolved Fast,Resolved Slow,289,2369
+KENSINGTON,Resolved Fast,Unresolved,72,2369
+KENSINGTON,Resolved Slow,Resolved Fast,134,2369
+KENSINGTON,Resolved Slow,Resolved Slow,249,2369
+KENSINGTON,Resolved Slow,Unresolved,15,2369
+KENSINGTON,Unresolved,Resolved Fast,39,2369
+KENSINGTON,Unresolved,Resolved Slow,243,2369
+KENSINGTON,Unresolved,Unresolved,208,2369
+KEWTOWN,Resolved Fast,Resolved Fast,396,1040
+KEWTOWN,Resolved Fast,Resolved Slow,90,1040
+KEWTOWN,Resolved Fast,Unresolved,77,1040
+KEWTOWN,Resolved Slow,Resolved Fast,56,1040
+KEWTOWN,Resolved Slow,Resolved Slow,16,1040
+KEWTOWN,Resolved Slow,Unresolved,126,1040
+KEWTOWN,Unresolved,Resolved Fast,25,1040
+KEWTOWN,Unresolved,Resolved Slow,13,1040
+KEWTOWN,Unresolved,Unresolved,241,1040
+KHAYA,Resolved Fast,Resolved Fast,253,534
+KHAYA,Resolved Fast,Resolved Slow,56,534
+KHAYA,Resolved Fast,Unresolved,9,534
+KHAYA,Resolved Slow,Resolved Fast,103,534
+KHAYA,Resolved Slow,Resolved Slow,14,534
+KHAYA,Resolved Slow,Unresolved,8,534
+KHAYA,Unresolved,Resolved Fast,15,534
+KHAYA,Unresolved,Resolved Slow,65,534
+KHAYA,Unresolved,Unresolved,11,534
+KHAYELITSHA,Resolved Fast,Resolved Fast,160,278
+KHAYELITSHA,Resolved Fast,Resolved Slow,22,278
+KHAYELITSHA,Resolved Fast,Unresolved,4,278
+KHAYELITSHA,Resolved Slow,Resolved Fast,36,278
+KHAYELITSHA,Resolved Slow,Resolved Slow,15,278
+KHAYELITSHA,Resolved Slow,Unresolved,1,278
+KHAYELITSHA,Unresolved,Resolved Fast,16,278
+KHAYELITSHA,Unresolved,Resolved Slow,19,278
+KHAYELITSHA,Unresolved,Unresolved,5,278
+KIRSTENHOF,Resolved Fast,Resolved Fast,203,501
+KIRSTENHOF,Resolved Fast,Resolved Slow,110,501
+KIRSTENHOF,Resolved Fast,Unresolved,7,501
+KIRSTENHOF,Resolved Slow,Resolved Fast,41,501
+KIRSTENHOF,Resolved Slow,Resolved Slow,31,501
+KIRSTENHOF,Resolved Slow,Unresolved,3,501
+KIRSTENHOF,Unresolved,Resolved Fast,12,501
+KIRSTENHOF,Unresolved,Resolved Slow,80,501
+KIRSTENHOF,Unresolved,Unresolved,14,501
+KLEINBRON,Resolved Fast,Resolved Fast,110,229
+KLEINBRON,Resolved Fast,Resolved Slow,62,229
+KLEINBRON,Resolved Fast,Unresolved,6,229
+KLEINBRON,Resolved Slow,Resolved Fast,15,229
+KLEINBRON,Resolved Slow,Resolved Slow,10,229
+KLEINBRON,Resolved Slow,Unresolved,3,229
+KLEINBRON,Unresolved,Resolved Fast,8,229
+KLEINBRON,Unresolved,Resolved Slow,5,229
+KLEINBRON,Unresolved,Unresolved,10,229
+KLEINVLEI TOWN,Resolved Fast,Resolved Fast,299,491
+KLEINVLEI TOWN,Resolved Fast,Resolved Slow,97,491
+KLEINVLEI TOWN,Resolved Fast,Unresolved,9,491
+KLEINVLEI TOWN,Resolved Slow,Resolved Fast,23,491
+KLEINVLEI TOWN,Resolved Slow,Resolved Slow,32,491
+KLEINVLEI TOWN,Resolved Slow,Unresolved,3,491
+KLEINVLEI TOWN,Unresolved,Resolved Fast,5,491
+KLEINVLEI TOWN,Unresolved,Resolved Slow,18,491
+KLEINVLEI TOWN,Unresolved,Unresolved,5,491
+KLIPKOP,Resolved Fast,Resolved Fast,227,594
+KLIPKOP,Resolved Fast,Resolved Slow,119,594
+KLIPKOP,Resolved Fast,Unresolved,28,594
+KLIPKOP,Resolved Slow,Resolved Fast,45,594
+KLIPKOP,Resolved Slow,Resolved Slow,54,594
+KLIPKOP,Resolved Slow,Unresolved,15,594
+KLIPKOP,Unresolved,Resolved Fast,23,594
+KLIPKOP,Unresolved,Resolved Slow,33,594
+KLIPKOP,Unresolved,Unresolved,50,594
+KOMMETJIE,Resolved Fast,Resolved Fast,342,824
+KOMMETJIE,Resolved Fast,Resolved Slow,178,824
+KOMMETJIE,Resolved Fast,Unresolved,79,824
+KOMMETJIE,Resolved Slow,Resolved Fast,49,824
+KOMMETJIE,Resolved Slow,Resolved Slow,46,824
+KOMMETJIE,Resolved Slow,Unresolved,25,824
+KOMMETJIE,Unresolved,Resolved Fast,27,824
+KOMMETJIE,Unresolved,Resolved Slow,37,824
+KOMMETJIE,Unresolved,Unresolved,41,824
+KRAAIFONTEIN,Resolved Fast,Resolved Fast,93,351
+KRAAIFONTEIN,Resolved Fast,Resolved Slow,59,351
+KRAAIFONTEIN,Resolved Fast,Unresolved,19,351
+KRAAIFONTEIN,Resolved Slow,Resolved Fast,19,351
+KRAAIFONTEIN,Resolved Slow,Resolved Slow,18,351
+KRAAIFONTEIN,Resolved Slow,Unresolved,23,351
+KRAAIFONTEIN,Unresolved,Resolved Fast,3,351
+KRAAIFONTEIN,Unresolved,Resolved Slow,26,351
+KRAAIFONTEIN,Unresolved,Unresolved,91,351
+KUYASA,Resolved Fast,Resolved Fast,399,699
+KUYASA,Resolved Fast,Resolved Slow,90,699
+KUYASA,Resolved Fast,Unresolved,9,699
+KUYASA,Resolved Slow,Resolved Fast,95,699
+KUYASA,Resolved Slow,Resolved Slow,24,699
+KUYASA,Resolved Slow,Unresolved,5,699
+KUYASA,Unresolved,Resolved Fast,22,699
+KUYASA,Unresolved,Resolved Slow,33,699
+KUYASA,Unresolved,Unresolved,22,699
+LABIANCE,Resolved Fast,Resolved Fast,88,217
+LABIANCE,Resolved Fast,Resolved Slow,54,217
+LABIANCE,Resolved Fast,Unresolved,9,217
+LABIANCE,Resolved Slow,Resolved Fast,12,217
+LABIANCE,Resolved Slow,Resolved Slow,17,217
+LABIANCE,Resolved Slow,Unresolved,3,217
+LABIANCE,Unresolved,Resolved Fast,2,217
+LABIANCE,Unresolved,Resolved Slow,23,217
+LABIANCE,Unresolved,Unresolved,9,217
+LAKESIDE,Resolved Fast,Resolved Fast,206,599
+LAKESIDE,Resolved Fast,Resolved Slow,164,599
+LAKESIDE,Resolved Fast,Unresolved,32,599
+LAKESIDE,Resolved Slow,Resolved Fast,51,599
+LAKESIDE,Resolved Slow,Resolved Slow,48,599
+LAKESIDE,Resolved Slow,Unresolved,7,599
+LAKESIDE,Unresolved,Resolved Fast,18,599
+LAKESIDE,Unresolved,Resolved Slow,52,599
+LAKESIDE,Unresolved,Unresolved,21,599
+LANGA,Resolved Fast,Resolved Fast,1990,3735
+LANGA,Resolved Fast,Resolved Slow,316,3735
+LANGA,Resolved Fast,Unresolved,157,3735
+LANGA,Resolved Slow,Resolved Fast,296,3735
+LANGA,Resolved Slow,Resolved Slow,105,3735
+LANGA,Resolved Slow,Unresolved,115,3735
+LANGA,Unresolved,Resolved Fast,130,3735
+LANGA,Unresolved,Resolved Slow,141,3735
+LANGA,Unresolved,Unresolved,485,3735
+LANGEBERG RIDGE,Resolved Fast,Resolved Fast,116,319
+LANGEBERG RIDGE,Resolved Fast,Resolved Slow,59,319
+LANGEBERG RIDGE,Resolved Fast,Unresolved,23,319
+LANGEBERG RIDGE,Resolved Slow,Resolved Fast,41,319
+LANGEBERG RIDGE,Resolved Slow,Resolved Slow,26,319
+LANGEBERG RIDGE,Resolved Slow,Unresolved,11,319
+LANGEBERG RIDGE,Unresolved,Resolved Fast,5,319
+LANGEBERG RIDGE,Unresolved,Resolved Slow,28,319
+LANGEBERG RIDGE,Unresolved,Unresolved,10,319
+LANSDOWNE,Resolved Fast,Resolved Fast,2247,3647
+LANSDOWNE,Resolved Fast,Resolved Slow,413,3647
+LANSDOWNE,Resolved Fast,Unresolved,169,3647
+LANSDOWNE,Resolved Slow,Resolved Fast,242,3647
+LANSDOWNE,Resolved Slow,Resolved Slow,128,3647
+LANSDOWNE,Resolved Slow,Unresolved,40,3647
+LANSDOWNE,Unresolved,Resolved Fast,108,3647
+LANSDOWNE,Unresolved,Resolved Slow,90,3647
+LANSDOWNE,Unresolved,Unresolved,210,3647
+LAVENDER HILL,Resolved Fast,Resolved Fast,595,2290
+LAVENDER HILL,Resolved Fast,Resolved Slow,420,2290
+LAVENDER HILL,Resolved Fast,Unresolved,89,2290
+LAVENDER HILL,Resolved Slow,Resolved Fast,99,2290
+LAVENDER HILL,Resolved Slow,Resolved Slow,245,2290
+LAVENDER HILL,Resolved Slow,Unresolved,58,2290
+LAVENDER HILL,Unresolved,Resolved Fast,142,2290
+LAVENDER HILL,Unresolved,Resolved Slow,400,2290
+LAVENDER HILL,Unresolved,Unresolved,242,2290
+LEIDEN,Resolved Fast,Resolved Fast,717,1263
+LEIDEN,Resolved Fast,Resolved Slow,141,1263
+LEIDEN,Resolved Fast,Unresolved,25,1263
+LEIDEN,Resolved Slow,Resolved Fast,185,1263
+LEIDEN,Resolved Slow,Resolved Slow,69,1263
+LEIDEN,Resolved Slow,Unresolved,13,1263
+LEIDEN,Unresolved,Resolved Fast,34,1263
+LEIDEN,Unresolved,Resolved Slow,68,1263
+LEIDEN,Unresolved,Unresolved,11,1263
+LENTEGEUR,Resolved Fast,Resolved Fast,1684,4886
+LENTEGEUR,Resolved Fast,Resolved Slow,901,4886
+LENTEGEUR,Resolved Fast,Unresolved,118,4886
+LENTEGEUR,Resolved Slow,Resolved Fast,252,4886
+LENTEGEUR,Resolved Slow,Resolved Slow,782,4886
+LENTEGEUR,Resolved Slow,Unresolved,30,4886
+LENTEGEUR,Unresolved,Resolved Fast,78,4886
+LENTEGEUR,Unresolved,Resolved Slow,980,4886
+LENTEGEUR,Unresolved,Unresolved,61,4886
+LEONSDALE,Resolved Fast,Resolved Fast,282,735
+LEONSDALE,Resolved Fast,Resolved Slow,104,735
+LEONSDALE,Resolved Fast,Unresolved,52,735
+LEONSDALE,Resolved Slow,Resolved Fast,24,735
+LEONSDALE,Resolved Slow,Resolved Slow,36,735
+LEONSDALE,Resolved Slow,Unresolved,38,735
+LEONSDALE,Unresolved,Resolved Fast,17,735
+LEONSDALE,Unresolved,Resolved Slow,61,735
+LEONSDALE,Unresolved,Unresolved,121,735
+LLANDUDNO,Resolved Fast,Resolved Fast,130,201
+LLANDUDNO,Resolved Fast,Resolved Slow,19,201
+LLANDUDNO,Resolved Fast,Unresolved,15,201
+LLANDUDNO,Resolved Slow,Resolved Fast,10,201
+LLANDUDNO,Resolved Slow,Resolved Slow,5,201
+LLANDUDNO,Unresolved,Resolved Fast,7,201
+LLANDUDNO,Unresolved,Resolved Slow,4,201
+LLANDUDNO,Unresolved,Unresolved,11,201
+LOEVENSTEIN,Resolved Fast,Resolved Fast,288,678
+LOEVENSTEIN,Resolved Fast,Resolved Slow,118,678
+LOEVENSTEIN,Resolved Fast,Unresolved,61,678
+LOEVENSTEIN,Resolved Slow,Resolved Fast,39,678
+LOEVENSTEIN,Resolved Slow,Resolved Slow,41,678
+LOEVENSTEIN,Resolved Slow,Unresolved,8,678
+LOEVENSTEIN,Unresolved,Resolved Fast,11,678
+LOEVENSTEIN,Unresolved,Resolved Slow,62,678
+LOEVENSTEIN,Unresolved,Unresolved,50,678
+LOTUS RIVER,Resolved Fast,Resolved Fast,2067,3794
+LOTUS RIVER,Resolved Fast,Resolved Slow,492,3794
+LOTUS RIVER,Resolved Fast,Unresolved,162,3794
+LOTUS RIVER,Resolved Slow,Resolved Fast,201,3794
+LOTUS RIVER,Resolved Slow,Resolved Slow,203,3794
+LOTUS RIVER,Resolved Slow,Unresolved,94,3794
+LOTUS RIVER,Unresolved,Resolved Fast,101,3794
+LOTUS RIVER,Unresolved,Resolved Slow,196,3794
+LOTUS RIVER,Unresolved,Unresolved,278,3794
+LWANDLE,Resolved Fast,Resolved Fast,753,1282
+LWANDLE,Resolved Fast,Resolved Slow,214,1282
+LWANDLE,Resolved Fast,Unresolved,3,1282
+LWANDLE,Resolved Slow,Resolved Fast,88,1282
+LWANDLE,Resolved Slow,Resolved Slow,103,1282
+LWANDLE,Resolved Slow,Unresolved,7,1282
+LWANDLE,Unresolved,Resolved Fast,18,1282
+LWANDLE,Unresolved,Resolved Slow,76,1282
+LWANDLE,Unresolved,Unresolved,20,1282
+LYNN'S VIEW,Resolved Fast,Resolved Fast,97,204
+LYNN'S VIEW,Resolved Fast,Resolved Slow,45,204
+LYNN'S VIEW,Resolved Fast,Unresolved,17,204
+LYNN'S VIEW,Resolved Slow,Resolved Fast,10,204
+LYNN'S VIEW,Resolved Slow,Resolved Slow,3,204
+LYNN'S VIEW,Resolved Slow,Unresolved,2,204
+LYNN'S VIEW,Unresolved,Resolved Fast,1,204
+LYNN'S VIEW,Unresolved,Resolved Slow,11,204
+LYNN'S VIEW,Unresolved,Unresolved,18,204
+MACASSAR,Resolved Fast,Resolved Fast,293,1139
+MACASSAR,Resolved Fast,Resolved Slow,207,1139
+MACASSAR,Resolved Fast,Unresolved,6,1139
+MACASSAR,Resolved Slow,Resolved Fast,43,1139
+MACASSAR,Resolved Slow,Resolved Slow,215,1139
+MACASSAR,Resolved Slow,Unresolved,17,1139
+MACASSAR,Unresolved,Resolved Fast,6,1139
+MACASSAR,Unresolved,Resolved Slow,299,1139
+MACASSAR,Unresolved,Unresolved,53,1139
+MACASSAR VILLAGE,Resolved Fast,Resolved Fast,362,646
+MACASSAR VILLAGE,Resolved Fast,Resolved Slow,110,646
+MACASSAR VILLAGE,Resolved Fast,Unresolved,12,646
+MACASSAR VILLAGE,Resolved Slow,Resolved Fast,54,646
+MACASSAR VILLAGE,Resolved Slow,Resolved Slow,64,646
+MACASSAR VILLAGE,Resolved Slow,Unresolved,3,646
+MACASSAR VILLAGE,Unresolved,Resolved Fast,3,646
+MACASSAR VILLAGE,Unresolved,Resolved Slow,29,646
+MACASSAR VILLAGE,Unresolved,Unresolved,9,646
+MAITLAND,Resolved Fast,Resolved Fast,1275,2664
+MAITLAND,Resolved Fast,Resolved Slow,476,2664
+MAITLAND,Resolved Fast,Unresolved,57,2664
+MAITLAND,Resolved Slow,Resolved Fast,162,2664
+MAITLAND,Resolved Slow,Resolved Slow,246,2664
+MAITLAND,Resolved Slow,Unresolved,30,2664
+MAITLAND,Unresolved,Resolved Fast,35,2664
+MAITLAND,Unresolved,Resolved Slow,246,2664
+MAITLAND,Unresolved,Unresolved,137,2664
+MAITLAND GARDEN VILLAGE,Resolved Fast,Resolved Fast,99,251
+MAITLAND GARDEN VILLAGE,Resolved Fast,Resolved Slow,65,251
+MAITLAND GARDEN VILLAGE,Resolved Fast,Unresolved,4,251
+MAITLAND GARDEN VILLAGE,Resolved Slow,Resolved Fast,7,251
+MAITLAND GARDEN VILLAGE,Resolved Slow,Resolved Slow,15,251
+MAITLAND GARDEN VILLAGE,Resolved Slow,Unresolved,6,251
+MAITLAND GARDEN VILLAGE,Unresolved,Resolved Fast,4,251
+MAITLAND GARDEN VILLAGE,Unresolved,Resolved Slow,26,251
+MAITLAND GARDEN VILLAGE,Unresolved,Unresolved,25,251
+MALIBU VILLAGE,Resolved Fast,Resolved Fast,276,647
+MALIBU VILLAGE,Resolved Fast,Resolved Slow,189,647
+MALIBU VILLAGE,Resolved Fast,Unresolved,12,647
+MALIBU VILLAGE,Resolved Slow,Resolved Fast,36,647
+MALIBU VILLAGE,Resolved Slow,Resolved Slow,66,647
+MALIBU VILLAGE,Resolved Slow,Unresolved,9,647
+MALIBU VILLAGE,Unresolved,Resolved Fast,3,647
+MALIBU VILLAGE,Unresolved,Resolved Slow,39,647
+MALIBU VILLAGE,Unresolved,Unresolved,17,647
+MAMRE,Resolved Fast,Resolved Fast,362,589
+MAMRE,Resolved Fast,Resolved Slow,55,589
+MAMRE,Resolved Fast,Unresolved,15,589
+MAMRE,Resolved Slow,Resolved Fast,97,589
+MAMRE,Resolved Slow,Resolved Slow,11,589
+MAMRE,Resolved Slow,Unresolved,7,589
+MAMRE,Unresolved,Resolved Fast,21,589
+MAMRE,Unresolved,Resolved Slow,9,589
+MAMRE,Unresolved,Unresolved,12,589
+MANDALAY,Resolved Fast,Resolved Fast,230,516
+MANDALAY,Resolved Fast,Resolved Slow,131,516
+MANDALAY,Resolved Fast,Unresolved,9,516
+MANDALAY,Resolved Slow,Resolved Fast,40,516
+MANDALAY,Resolved Slow,Resolved Slow,48,516
+MANDALAY,Resolved Slow,Unresolved,5,516
+MANDALAY,Unresolved,Resolved Fast,13,516
+MANDALAY,Unresolved,Resolved Slow,25,516
+MANDALAY,Unresolved,Unresolved,15,516
+MANDELA PARK,Resolved Fast,Resolved Fast,409,938
+MANDELA PARK,Resolved Fast,Resolved Slow,146,938
+MANDELA PARK,Resolved Fast,Unresolved,12,938
+MANDELA PARK,Resolved Slow,Resolved Fast,80,938
+MANDELA PARK,Resolved Slow,Resolved Slow,100,938
+MANDELA PARK,Resolved Slow,Unresolved,9,938
+MANDELA PARK,Unresolved,Resolved Fast,20,938
+MANDELA PARK,Unresolved,Resolved Slow,133,938
+MANDELA PARK,Unresolved,Unresolved,29,938
+MANENBERG,Resolved Fast,Resolved Fast,1530,4937
+MANENBERG,Resolved Fast,Resolved Slow,410,4937
+MANENBERG,Resolved Fast,Unresolved,201,4937
+MANENBERG,Resolved Slow,Resolved Fast,202,4937
+MANENBERG,Resolved Slow,Resolved Slow,128,4937
+MANENBERG,Resolved Slow,Unresolved,421,4937
+MANENBERG,Unresolved,Resolved Fast,112,4937
+MANENBERG,Unresolved,Resolved Slow,175,4937
+MANENBERG,Unresolved,Unresolved,1758,4937
+MARCONI BEAM,Resolved Fast,Resolved Fast,122,261
+MARCONI BEAM,Resolved Fast,Resolved Slow,52,261
+MARCONI BEAM,Resolved Fast,Unresolved,21,261
+MARCONI BEAM,Resolved Slow,Resolved Fast,19,261
+MARCONI BEAM,Resolved Slow,Resolved Slow,9,261
+MARCONI BEAM,Resolved Slow,Unresolved,5,261
+MARCONI BEAM,Unresolved,Resolved Fast,11,261
+MARCONI BEAM,Unresolved,Resolved Slow,16,261
+MARCONI BEAM,Unresolved,Unresolved,6,261
+MARTINVILLE,Resolved Fast,Resolved Fast,114,247
+MARTINVILLE,Resolved Fast,Resolved Slow,49,247
+MARTINVILLE,Resolved Fast,Unresolved,9,247
+MARTINVILLE,Resolved Slow,Resolved Fast,16,247
+MARTINVILLE,Resolved Slow,Resolved Slow,21,247
+MARTINVILLE,Resolved Slow,Unresolved,2,247
+MARTINVILLE,Unresolved,Resolved Fast,6,247
+MARTINVILLE,Unresolved,Resolved Slow,22,247
+MARTINVILLE,Unresolved,Unresolved,8,247
+MATROOSFONTEIN,Resolved Fast,Resolved Fast,153,297
+MATROOSFONTEIN,Resolved Fast,Resolved Slow,69,297
+MATROOSFONTEIN,Resolved Fast,Unresolved,10,297
+MATROOSFONTEIN,Resolved Slow,Resolved Fast,22,297
+MATROOSFONTEIN,Resolved Slow,Resolved Slow,5,297
+MATROOSFONTEIN,Resolved Slow,Unresolved,7,297
+MATROOSFONTEIN,Unresolved,Resolved Fast,3,297
+MATROOSFONTEIN,Unresolved,Resolved Slow,8,297
+MATROOSFONTEIN,Unresolved,Unresolved,20,297
+MEADOWRIDGE,Resolved Fast,Resolved Fast,248,577
+MEADOWRIDGE,Resolved Fast,Resolved Slow,88,577
+MEADOWRIDGE,Resolved Fast,Unresolved,32,577
+MEADOWRIDGE,Resolved Slow,Resolved Fast,41,577
+MEADOWRIDGE,Resolved Slow,Resolved Slow,19,577
+MEADOWRIDGE,Resolved Slow,Unresolved,11,577
+MEADOWRIDGE,Unresolved,Resolved Fast,12,577
+MEADOWRIDGE,Unresolved,Resolved Slow,57,577
+MEADOWRIDGE,Unresolved,Unresolved,69,577
+MELKBOSCH STRAND,Resolved Fast,Resolved Fast,520,1190
+MELKBOSCH STRAND,Resolved Fast,Resolved Slow,245,1190
+MELKBOSCH STRAND,Resolved Fast,Unresolved,12,1190
+MELKBOSCH STRAND,Resolved Slow,Resolved Fast,104,1190
+MELKBOSCH STRAND,Resolved Slow,Resolved Slow,100,1190
+MELKBOSCH STRAND,Resolved Slow,Unresolved,13,1190
+MELKBOSCH STRAND,Unresolved,Resolved Fast,52,1190
+MELKBOSCH STRAND,Unresolved,Resolved Slow,79,1190
+MELKBOSCH STRAND,Unresolved,Unresolved,65,1190
+MFULENI,Resolved Fast,Resolved Fast,2701,4649
+MFULENI,Resolved Fast,Resolved Slow,424,4649
+MFULENI,Resolved Fast,Unresolved,10,4649
+MFULENI,Resolved Slow,Resolved Fast,256,4649
+MFULENI,Resolved Slow,Resolved Slow,481,4649
+MFULENI,Resolved Slow,Unresolved,6,4649
+MFULENI,Unresolved,Resolved Fast,61,4649
+MFULENI,Unresolved,Resolved Slow,690,4649
+MFULENI,Unresolved,Unresolved,20,4649
+MILNERTON,Resolved Fast,Resolved Fast,847,1472
+MILNERTON,Resolved Fast,Resolved Slow,224,1472
+MILNERTON,Resolved Fast,Unresolved,17,1472
+MILNERTON,Resolved Slow,Resolved Fast,125,1472
+MILNERTON,Resolved Slow,Resolved Slow,68,1472
+MILNERTON,Resolved Slow,Unresolved,13,1472
+MILNERTON,Unresolved,Resolved Fast,39,1472
+MILNERTON,Unresolved,Resolved Slow,95,1472
+MILNERTON,Unresolved,Unresolved,44,1472
+MITCHELLS PLAIN,Resolved Fast,Resolved Fast,95,439
+MITCHELLS PLAIN,Resolved Fast,Resolved Slow,92,439
+MITCHELLS PLAIN,Resolved Fast,Unresolved,10,439
+MITCHELLS PLAIN,Resolved Slow,Resolved Fast,22,439
+MITCHELLS PLAIN,Resolved Slow,Resolved Slow,69,439
+MITCHELLS PLAIN,Resolved Slow,Unresolved,12,439
+MITCHELLS PLAIN,Unresolved,Resolved Fast,14,439
+MITCHELLS PLAIN,Unresolved,Resolved Slow,102,439
+MITCHELLS PLAIN,Unresolved,Unresolved,23,439
+MONTAGUE GARDENS,Resolved Fast,Resolved Fast,97,314
+MONTAGUE GARDENS,Resolved Fast,Resolved Slow,83,314
+MONTAGUE GARDENS,Resolved Fast,Unresolved,23,314
+MONTAGUE GARDENS,Resolved Slow,Resolved Fast,29,314
+MONTAGUE GARDENS,Resolved Slow,Resolved Slow,24,314
+MONTAGUE GARDENS,Resolved Slow,Unresolved,6,314
+MONTAGUE GARDENS,Unresolved,Resolved Fast,14,314
+MONTAGUE GARDENS,Unresolved,Resolved Slow,20,314
+MONTAGUE GARDENS,Unresolved,Unresolved,18,314
+MONTCLAIR,Resolved Fast,Resolved Fast,144,378
+MONTCLAIR,Resolved Fast,Resolved Slow,70,378
+MONTCLAIR,Resolved Fast,Unresolved,8,378
+MONTCLAIR,Resolved Slow,Resolved Fast,19,378
+MONTCLAIR,Resolved Slow,Resolved Slow,30,378
+MONTCLAIR,Resolved Slow,Unresolved,5,378
+MONTCLAIR,Unresolved,Resolved Fast,12,378
+MONTCLAIR,Unresolved,Resolved Slow,80,378
+MONTCLAIR,Unresolved,Unresolved,10,378
+MONTE VISTA,Resolved Fast,Resolved Fast,387,909
+MONTE VISTA,Resolved Fast,Resolved Slow,133,909
+MONTE VISTA,Resolved Fast,Unresolved,55,909
+MONTE VISTA,Resolved Slow,Resolved Fast,44,909
+MONTE VISTA,Resolved Slow,Resolved Slow,59,909
+MONTE VISTA,Resolved Slow,Unresolved,36,909
+MONTE VISTA,Unresolved,Resolved Fast,21,909
+MONTE VISTA,Unresolved,Resolved Slow,67,909
+MONTE VISTA,Unresolved,Unresolved,107,909
+MORGANS VILLAGE,Resolved Fast,Resolved Fast,278,501
+MORGANS VILLAGE,Resolved Fast,Resolved Slow,78,501
+MORGANS VILLAGE,Resolved Fast,Unresolved,19,501
+MORGANS VILLAGE,Resolved Slow,Resolved Fast,57,501
+MORGANS VILLAGE,Resolved Slow,Resolved Slow,21,501
+MORGANS VILLAGE,Resolved Slow,Unresolved,3,501
+MORGANS VILLAGE,Unresolved,Resolved Fast,18,501
+MORGANS VILLAGE,Unresolved,Resolved Slow,21,501
+MORGANS VILLAGE,Unresolved,Unresolved,6,501
+MORGENSTER,Resolved Fast,Resolved Fast,90,217
+MORGENSTER,Resolved Fast,Resolved Slow,44,217
+MORGENSTER,Resolved Fast,Unresolved,4,217
+MORGENSTER,Resolved Slow,Resolved Fast,29,217
+MORGENSTER,Resolved Slow,Resolved Slow,13,217
+MORGENSTER,Resolved Slow,Unresolved,12,217
+MORGENSTER,Unresolved,Resolved Fast,3,217
+MORGENSTER,Unresolved,Resolved Slow,14,217
+MORGENSTER,Unresolved,Unresolved,8,217
+MORGENSTER HEIGHTS,Resolved Fast,Resolved Fast,109,263
+MORGENSTER HEIGHTS,Resolved Fast,Resolved Slow,51,263
+MORGENSTER HEIGHTS,Resolved Fast,Unresolved,18,263
+MORGENSTER HEIGHTS,Resolved Slow,Resolved Fast,39,263
+MORGENSTER HEIGHTS,Resolved Slow,Resolved Slow,11,263
+MORGENSTER HEIGHTS,Resolved Slow,Unresolved,9,263
+MORGENSTER HEIGHTS,Unresolved,Resolved Fast,2,263
+MORGENSTER HEIGHTS,Unresolved,Resolved Slow,12,263
+MORGENSTER HEIGHTS,Unresolved,Unresolved,12,263
+MORNINGSTAR,Resolved Fast,Resolved Fast,114,211
+MORNINGSTAR,Resolved Fast,Resolved Slow,49,211
+MORNINGSTAR,Resolved Fast,Unresolved,8,211
+MORNINGSTAR,Resolved Slow,Resolved Fast,12,211
+MORNINGSTAR,Resolved Slow,Resolved Slow,5,211
+MORNINGSTAR,Resolved Slow,Unresolved,2,211
+MORNINGSTAR,Unresolved,Resolved Fast,1,211
+MORNINGSTAR,Unresolved,Resolved Slow,13,211
+MORNINGSTAR,Unresolved,Unresolved,7,211
+MOUNTVIEW,Resolved Fast,Resolved Fast,78,203
+MOUNTVIEW,Resolved Fast,Resolved Slow,30,203
+MOUNTVIEW,Resolved Fast,Unresolved,12,203
+MOUNTVIEW,Resolved Slow,Resolved Fast,24,203
+MOUNTVIEW,Resolved Slow,Resolved Slow,14,203
+MOUNTVIEW,Resolved Slow,Unresolved,3,203
+MOUNTVIEW,Unresolved,Resolved Fast,11,203
+MOUNTVIEW,Unresolved,Resolved Slow,18,203
+MOUNTVIEW,Unresolved,Unresolved,13,203
+MOWBRAY,Resolved Fast,Resolved Fast,801,2379
+MOWBRAY,Resolved Fast,Resolved Slow,343,2379
+MOWBRAY,Resolved Fast,Unresolved,78,2379
+MOWBRAY,Resolved Slow,Resolved Fast,125,2379
+MOWBRAY,Resolved Slow,Resolved Slow,393,2379
+MOWBRAY,Resolved Slow,Unresolved,23,2379
+MOWBRAY,Unresolved,Resolved Fast,74,2379
+MOWBRAY,Unresolved,Resolved Slow,461,2379
+MOWBRAY,Unresolved,Unresolved,81,2379
+MUIZENBERG,Resolved Fast,Resolved Fast,772,1828
+MUIZENBERG,Resolved Fast,Resolved Slow,413,1828
+MUIZENBERG,Resolved Fast,Unresolved,58,1828
+MUIZENBERG,Resolved Slow,Resolved Fast,152,1828
+MUIZENBERG,Resolved Slow,Resolved Slow,118,1828
+MUIZENBERG,Resolved Slow,Unresolved,37,1828
+MUIZENBERG,Unresolved,Resolved Fast,50,1828
+MUIZENBERG,Unresolved,Resolved Slow,150,1828
+MUIZENBERG,Unresolved,Unresolved,78,1828
+NEW WOODLANDS,Resolved Fast,Resolved Fast,364,740
+NEW WOODLANDS,Resolved Fast,Resolved Slow,149,740
+NEW WOODLANDS,Resolved Fast,Unresolved,17,740
+NEW WOODLANDS,Resolved Slow,Resolved Fast,84,740
+NEW WOODLANDS,Resolved Slow,Resolved Slow,37,740
+NEW WOODLANDS,Resolved Slow,Unresolved,7,740
+NEW WOODLANDS,Unresolved,Resolved Fast,23,740
+NEW WOODLANDS,Unresolved,Resolved Slow,46,740
+NEW WOODLANDS,Unresolved,Unresolved,13,740
+NEWFIELDS,Resolved Fast,Resolved Fast,299,581
+NEWFIELDS,Resolved Fast,Resolved Slow,79,581
+NEWFIELDS,Resolved Fast,Unresolved,36,581
+NEWFIELDS,Resolved Slow,Resolved Fast,45,581
+NEWFIELDS,Resolved Slow,Resolved Slow,33,581
+NEWFIELDS,Resolved Slow,Unresolved,18,581
+NEWFIELDS,Unresolved,Resolved Fast,22,581
+NEWFIELDS,Unresolved,Resolved Slow,23,581
+NEWFIELDS,Unresolved,Unresolved,26,581
+NEWLANDS,Resolved Fast,Resolved Fast,519,1418
+NEWLANDS,Resolved Fast,Resolved Slow,352,1418
+NEWLANDS,Resolved Fast,Unresolved,42,1418
+NEWLANDS,Resolved Slow,Resolved Fast,86,1418
+NEWLANDS,Resolved Slow,Resolved Slow,89,1418
+NEWLANDS,Resolved Slow,Unresolved,35,1418
+NEWLANDS,Unresolved,Resolved Fast,38,1418
+NEWLANDS,Unresolved,Resolved Slow,150,1418
+NEWLANDS,Unresolved,Unresolved,107,1418
+NOMZAMO,Resolved Fast,Resolved Fast,447,824
+NOMZAMO,Resolved Fast,Resolved Slow,125,824
+NOMZAMO,Resolved Fast,Unresolved,19,824
+NOMZAMO,Resolved Slow,Resolved Fast,105,824
+NOMZAMO,Resolved Slow,Resolved Slow,42,824
+NOMZAMO,Resolved Slow,Unresolved,5,824
+NOMZAMO,Unresolved,Resolved Fast,26,824
+NOMZAMO,Unresolved,Resolved Slow,29,824
+NOMZAMO,Unresolved,Unresolved,26,824
+NONQUBELA,Resolved Fast,Resolved Fast,289,648
+NONQUBELA,Resolved Fast,Resolved Slow,45,648
+NONQUBELA,Resolved Fast,Unresolved,12,648
+NONQUBELA,Resolved Slow,Resolved Fast,95,648
+NONQUBELA,Resolved Slow,Resolved Slow,29,648
+NONQUBELA,Resolved Slow,Unresolved,8,648
+NONQUBELA,Unresolved,Resolved Fast,24,648
+NONQUBELA,Unresolved,Resolved Slow,89,648
+NONQUBELA,Unresolved,Unresolved,57,648
+NOOITGEDACHT,Resolved Fast,Resolved Fast,169,458
+NOOITGEDACHT,Resolved Fast,Resolved Slow,63,458
+NOOITGEDACHT,Resolved Fast,Unresolved,36,458
+NOOITGEDACHT,Resolved Slow,Resolved Fast,15,458
+NOOITGEDACHT,Resolved Slow,Resolved Slow,29,458
+NOOITGEDACHT,Resolved Slow,Unresolved,32,458
+NOOITGEDACHT,Unresolved,Resolved Fast,14,458
+NOOITGEDACHT,Unresolved,Resolved Slow,34,458
+NOOITGEDACHT,Unresolved,Unresolved,66,458
+NOORDHOEK,Resolved Fast,Resolved Fast,358,853
+NOORDHOEK,Resolved Fast,Resolved Slow,277,853
+NOORDHOEK,Resolved Fast,Unresolved,42,853
+NOORDHOEK,Resolved Slow,Resolved Fast,45,853
+NOORDHOEK,Resolved Slow,Resolved Slow,42,853
+NOORDHOEK,Resolved Slow,Unresolved,8,853
+NOORDHOEK,Unresolved,Resolved Fast,24,853
+NOORDHOEK,Unresolved,Resolved Slow,31,853
+NOORDHOEK,Unresolved,Unresolved,26,853
+NORTHPINE,Resolved Fast,Resolved Fast,310,609
+NORTHPINE,Resolved Fast,Resolved Slow,95,609
+NORTHPINE,Resolved Fast,Unresolved,17,609
+NORTHPINE,Resolved Slow,Resolved Fast,60,609
+NORTHPINE,Resolved Slow,Resolved Slow,21,609
+NORTHPINE,Resolved Slow,Unresolved,4,609
+NORTHPINE,Unresolved,Resolved Fast,12,609
+NORTHPINE,Unresolved,Resolved Slow,71,609
+NORTHPINE,Unresolved,Unresolved,19,609
+NYANGA,Resolved Fast,Resolved Fast,1725,2740
+NYANGA,Resolved Fast,Resolved Slow,226,2740
+NYANGA,Resolved Fast,Unresolved,77,2740
+NYANGA,Resolved Slow,Resolved Fast,190,2740
+NYANGA,Resolved Slow,Resolved Slow,47,2740
+NYANGA,Resolved Slow,Unresolved,77,2740
+NYANGA,Unresolved,Resolved Fast,124,2740
+NYANGA,Unresolved,Resolved Slow,101,2740
+NYANGA,Unresolved,Unresolved,173,2740
+Nyanga,Resolved Fast,Resolved Fast,712,993
+Nyanga,Resolved Fast,Resolved Slow,18,993
+Nyanga,Resolved Fast,Unresolved,17,993
+Nyanga,Resolved Slow,Resolved Fast,107,993
+Nyanga,Resolved Slow,Resolved Slow,17,993
+Nyanga,Resolved Slow,Unresolved,15,993
+Nyanga,Unresolved,Resolved Fast,47,993
+Nyanga,Unresolved,Resolved Slow,11,993
+Nyanga,Unresolved,Unresolved,49,993
+OAKDALE,Resolved Fast,Resolved Fast,502,1223
+OAKDALE,Resolved Fast,Resolved Slow,361,1223
+OAKDALE,Resolved Fast,Unresolved,24,1223
+OAKDALE,Resolved Slow,Resolved Fast,43,1223
+OAKDALE,Resolved Slow,Resolved Slow,108,1223
+OAKDALE,Resolved Slow,Unresolved,26,1223
+OAKDALE,Unresolved,Resolved Fast,27,1223
+OAKDALE,Unresolved,Resolved Slow,85,1223
+OAKDALE,Unresolved,Unresolved,47,1223
+OAKGLEN,Resolved Fast,Resolved Fast,278,571
+OAKGLEN,Resolved Fast,Resolved Slow,93,571
+OAKGLEN,Resolved Fast,Unresolved,9,571
+OAKGLEN,Resolved Slow,Resolved Fast,37,571
+OAKGLEN,Resolved Slow,Resolved Slow,38,571
+OAKGLEN,Resolved Slow,Unresolved,1,571
+OAKGLEN,Unresolved,Resolved Fast,23,571
+OAKGLEN,Unresolved,Resolved Slow,68,571
+OAKGLEN,Unresolved,Unresolved,24,571
+OBSERVATORY,Resolved Fast,Resolved Fast,1002,3240
+OBSERVATORY,Resolved Fast,Resolved Slow,350,3240
+OBSERVATORY,Resolved Fast,Unresolved,116,3240
+OBSERVATORY,Resolved Slow,Resolved Fast,173,3240
+OBSERVATORY,Resolved Slow,Resolved Slow,510,3240
+OBSERVATORY,Resolved Slow,Unresolved,44,3240
+OBSERVATORY,Unresolved,Resolved Fast,54,3240
+OBSERVATORY,Unresolved,Resolved Slow,548,3240
+OBSERVATORY,Unresolved,Unresolved,443,3240
+OCEAN VIEW,Resolved Fast,Resolved Fast,880,2183
+OCEAN VIEW,Resolved Fast,Resolved Slow,377,2183
+OCEAN VIEW,Resolved Fast,Unresolved,107,2183
+OCEAN VIEW,Resolved Slow,Resolved Fast,103,2183
+OCEAN VIEW,Resolved Slow,Resolved Slow,128,2183
+OCEAN VIEW,Resolved Slow,Unresolved,136,2183
+OCEAN VIEW,Unresolved,Resolved Fast,25,2183
+OCEAN VIEW,Unresolved,Resolved Slow,131,2183
+OCEAN VIEW,Unresolved,Unresolved,296,2183
+ONVERWACHT - THE STRAND,Resolved Fast,Resolved Fast,105,252
+ONVERWACHT - THE STRAND,Resolved Fast,Resolved Slow,46,252
+ONVERWACHT - THE STRAND,Resolved Fast,Unresolved,9,252
+ONVERWACHT - THE STRAND,Resolved Slow,Resolved Fast,24,252
+ONVERWACHT - THE STRAND,Resolved Slow,Resolved Slow,15,252
+ONVERWACHT - THE STRAND,Resolved Slow,Unresolved,4,252
+ONVERWACHT - THE STRAND,Unresolved,Resolved Fast,5,252
+ONVERWACHT - THE STRAND,Unresolved,Resolved Slow,27,252
+ONVERWACHT - THE STRAND,Unresolved,Unresolved,17,252
+ORANJEZICHT,Resolved Fast,Resolved Fast,416,905
+ORANJEZICHT,Resolved Fast,Resolved Slow,131,905
+ORANJEZICHT,Resolved Fast,Unresolved,111,905
+ORANJEZICHT,Resolved Slow,Resolved Fast,62,905
+ORANJEZICHT,Resolved Slow,Resolved Slow,54,905
+ORANJEZICHT,Resolved Slow,Unresolved,16,905
+ORANJEZICHT,Unresolved,Resolved Fast,26,905
+ORANJEZICHT,Unresolved,Resolved Slow,30,905
+ORANJEZICHT,Unresolved,Unresolved,59,905
+OTTERY,Resolved Fast,Resolved Fast,966,2077
+OTTERY,Resolved Fast,Resolved Slow,383,2077
+OTTERY,Resolved Fast,Unresolved,68,2077
+OTTERY,Resolved Slow,Resolved Fast,149,2077
+OTTERY,Resolved Slow,Resolved Slow,122,2077
+OTTERY,Resolved Slow,Unresolved,23,2077
+OTTERY,Unresolved,Resolved Fast,70,2077
+OTTERY,Unresolved,Resolved Slow,175,2077
+OTTERY,Unresolved,Unresolved,121,2077
+OUDE WESTHOF,Resolved Fast,Resolved Fast,64,244
+OUDE WESTHOF,Resolved Fast,Resolved Slow,68,244
+OUDE WESTHOF,Resolved Fast,Unresolved,19,244
+OUDE WESTHOF,Resolved Slow,Resolved Fast,17,244
+OUDE WESTHOF,Resolved Slow,Resolved Slow,15,244
+OUDE WESTHOF,Resolved Slow,Unresolved,3,244
+OUDE WESTHOF,Unresolved,Resolved Fast,2,244
+OUDE WESTHOF,Unresolved,Resolved Slow,26,244
+OUDE WESTHOF,Unresolved,Unresolved,30,244
+Observatory,Resolved Fast,Resolved Fast,294,497
+Observatory,Resolved Fast,Resolved Slow,60,497
+Observatory,Resolved Fast,Unresolved,37,497
+Observatory,Resolved Slow,Resolved Fast,36,497
+Observatory,Resolved Slow,Resolved Slow,21,497
+Observatory,Resolved Slow,Unresolved,10,497
+Observatory,Unresolved,Resolved Fast,12,497
+Observatory,Unresolved,Resolved Slow,5,497
+Observatory,Unresolved,Unresolved,22,497
+PAARDEN EILAND,Resolved Fast,Resolved Fast,184,362
+PAARDEN EILAND,Resolved Fast,Resolved Slow,59,362
+PAARDEN EILAND,Resolved Fast,Unresolved,18,362
+PAARDEN EILAND,Resolved Slow,Resolved Fast,24,362
+PAARDEN EILAND,Resolved Slow,Resolved Slow,19,362
+PAARDEN EILAND,Resolved Slow,Unresolved,4,362
+PAARDEN EILAND,Unresolved,Resolved Fast,15,362
+PAARDEN EILAND,Unresolved,Resolved Slow,15,362
+PAARDEN EILAND,Unresolved,Unresolved,24,362
+PANORAMA,Resolved Fast,Resolved Fast,262,572
+PANORAMA,Resolved Fast,Resolved Slow,92,572
+PANORAMA,Resolved Fast,Unresolved,19,572
+PANORAMA,Resolved Slow,Resolved Fast,69,572
+PANORAMA,Resolved Slow,Resolved Slow,46,572
+PANORAMA,Resolved Slow,Unresolved,8,572
+PANORAMA,Unresolved,Resolved Fast,21,572
+PANORAMA,Unresolved,Resolved Slow,27,572
+PANORAMA,Unresolved,Unresolved,28,572
+PAREL VALLEI,Resolved Fast,Resolved Fast,108,227
+PAREL VALLEI,Resolved Fast,Resolved Slow,37,227
+PAREL VALLEI,Resolved Fast,Unresolved,10,227
+PAREL VALLEI,Resolved Slow,Resolved Fast,15,227
+PAREL VALLEI,Resolved Slow,Resolved Slow,17,227
+PAREL VALLEI,Resolved Slow,Unresolved,4,227
+PAREL VALLEI,Unresolved,Resolved Fast,4,227
+PAREL VALLEI,Unresolved,Resolved Slow,26,227
+PAREL VALLEI,Unresolved,Unresolved,6,227
+PARKLANDS,Resolved Fast,Resolved Fast,1271,3366
+PARKLANDS,Resolved Fast,Resolved Slow,714,3366
+PARKLANDS,Resolved Fast,Unresolved,85,3366
+PARKLANDS,Resolved Slow,Resolved Fast,329,3366
+PARKLANDS,Resolved Slow,Resolved Slow,268,3366
+PARKLANDS,Resolved Slow,Unresolved,47,3366
+PARKLANDS,Unresolved,Resolved Fast,94,3366
+PARKLANDS,Unresolved,Resolved Slow,311,3366
+PARKLANDS,Unresolved,Unresolved,247,3366
+PARKWOOD,Resolved Fast,Resolved Fast,379,920
+PARKWOOD,Resolved Fast,Resolved Slow,84,920
+PARKWOOD,Resolved Fast,Unresolved,71,920
+PARKWOOD,Resolved Slow,Resolved Fast,28,920
+PARKWOOD,Resolved Slow,Resolved Slow,54,920
+PARKWOOD,Resolved Slow,Unresolved,99,920
+PARKWOOD,Unresolved,Resolved Fast,18,920
+PARKWOOD,Unresolved,Resolved Slow,50,920
+PARKWOOD,Unresolved,Unresolved,137,920
+PARKWOOD EST,Resolved Fast,Resolved Fast,9,437
+PARKWOOD EST,Resolved Fast,Resolved Slow,23,437
+PARKWOOD EST,Resolved Fast,Unresolved,61,437
+PARKWOOD EST,Resolved Slow,Resolved Fast,1,437
+PARKWOOD EST,Resolved Slow,Resolved Slow,28,437
+PARKWOOD EST,Resolved Slow,Unresolved,138,437
+PARKWOOD EST,Unresolved,Resolved Fast,2,437
+PARKWOOD EST,Unresolved,Resolved Slow,25,437
+PARKWOOD EST,Unresolved,Unresolved,150,437
+PAROW,Resolved Fast,Resolved Fast,360,1089
+PAROW,Resolved Fast,Resolved Slow,135,1089
+PAROW,Resolved Fast,Unresolved,104,1089
+PAROW,Resolved Slow,Resolved Fast,37,1089
+PAROW,Resolved Slow,Resolved Slow,78,1089
+PAROW,Resolved Slow,Unresolved,115,1089
+PAROW,Unresolved,Resolved Fast,12,1089
+PAROW,Unresolved,Resolved Slow,58,1089
+PAROW,Unresolved,Unresolved,190,1089
+PAROW INDUSTRIA,Resolved Fast,Resolved Fast,40,277
+PAROW INDUSTRIA,Resolved Fast,Resolved Slow,95,277
+PAROW INDUSTRIA,Resolved Fast,Unresolved,10,277
+PAROW INDUSTRIA,Resolved Slow,Resolved Fast,14,277
+PAROW INDUSTRIA,Resolved Slow,Resolved Slow,39,277
+PAROW INDUSTRIA,Resolved Slow,Unresolved,5,277
+PAROW INDUSTRIA,Unresolved,Resolved Fast,9,277
+PAROW INDUSTRIA,Unresolved,Resolved Slow,43,277
+PAROW INDUSTRIA,Unresolved,Unresolved,22,277
+PAROW NORTH,Resolved Fast,Resolved Fast,293,623
+PAROW NORTH,Resolved Fast,Resolved Slow,90,623
+PAROW NORTH,Resolved Fast,Unresolved,46,623
+PAROW NORTH,Resolved Slow,Resolved Fast,48,623
+PAROW NORTH,Resolved Slow,Resolved Slow,32,623
+PAROW NORTH,Resolved Slow,Unresolved,11,623
+PAROW NORTH,Unresolved,Resolved Fast,23,623
+PAROW NORTH,Unresolved,Resolved Slow,35,623
+PAROW NORTH,Unresolved,Unresolved,45,623
+PAROW VALLEY,Resolved Fast,Resolved Fast,463,876
+PAROW VALLEY,Resolved Fast,Resolved Slow,123,876
+PAROW VALLEY,Resolved Fast,Unresolved,39,876
+PAROW VALLEY,Resolved Slow,Resolved Fast,75,876
+PAROW VALLEY,Resolved Slow,Resolved Slow,57,876
+PAROW VALLEY,Resolved Slow,Unresolved,14,876
+PAROW VALLEY,Unresolved,Resolved Fast,27,876
+PAROW VALLEY,Unresolved,Resolved Slow,34,876
+PAROW VALLEY,Unresolved,Unresolved,44,876
+PEERLESS PARK EAST,Resolved Fast,Resolved Fast,140,282
+PEERLESS PARK EAST,Resolved Fast,Resolved Slow,57,282
+PEERLESS PARK EAST,Resolved Fast,Unresolved,7,282
+PEERLESS PARK EAST,Resolved Slow,Resolved Fast,25,282
+PEERLESS PARK EAST,Resolved Slow,Resolved Slow,11,282
+PEERLESS PARK EAST,Resolved Slow,Unresolved,2,282
+PEERLESS PARK EAST,Unresolved,Resolved Fast,11,282
+PEERLESS PARK EAST,Unresolved,Resolved Slow,20,282
+PEERLESS PARK EAST,Unresolved,Unresolved,9,282
+PEERLESS PARK NORTH,Resolved Fast,Resolved Fast,145,266
+PEERLESS PARK NORTH,Resolved Fast,Resolved Slow,34,266
+PEERLESS PARK NORTH,Resolved Fast,Unresolved,7,266
+PEERLESS PARK NORTH,Resolved Slow,Resolved Fast,41,266
+PEERLESS PARK NORTH,Resolved Slow,Resolved Slow,9,266
+PEERLESS PARK NORTH,Resolved Slow,Unresolved,10,266
+PEERLESS PARK NORTH,Unresolved,Resolved Fast,3,266
+PEERLESS PARK NORTH,Unresolved,Resolved Slow,10,266
+PEERLESS PARK NORTH,Unresolved,Unresolved,7,266
+PELIKAN PARK,Resolved Fast,Resolved Fast,754,1329
+PELIKAN PARK,Resolved Fast,Resolved Slow,288,1329
+PELIKAN PARK,Resolved Fast,Unresolved,23,1329
+PELIKAN PARK,Resolved Slow,Resolved Fast,103,1329
+PELIKAN PARK,Resolved Slow,Resolved Slow,51,1329
+PELIKAN PARK,Resolved Slow,Unresolved,7,1329
+PELIKAN PARK,Unresolved,Resolved Fast,44,1329
+PELIKAN PARK,Unresolved,Resolved Slow,40,1329
+PELIKAN PARK,Unresolved,Unresolved,19,1329
+PENLYN ESTATE,Resolved Fast,Resolved Fast,140,329
+PENLYN ESTATE,Resolved Fast,Resolved Slow,72,329
+PENLYN ESTATE,Resolved Fast,Unresolved,22,329
+PENLYN ESTATE,Resolved Slow,Resolved Fast,17,329
+PENLYN ESTATE,Resolved Slow,Resolved Slow,13,329
+PENLYN ESTATE,Resolved Slow,Unresolved,5,329
+PENLYN ESTATE,Unresolved,Resolved Fast,4,329
+PENLYN ESTATE,Unresolved,Resolved Slow,33,329
+PENLYN ESTATE,Unresolved,Unresolved,23,329
+PHILIPPI,Resolved Fast,Resolved Fast,5202,9674
+PHILIPPI,Resolved Fast,Resolved Slow,1553,9674
+PHILIPPI,Resolved Fast,Unresolved,260,9674
+PHILIPPI,Resolved Slow,Resolved Fast,487,9674
+PHILIPPI,Resolved Slow,Resolved Slow,689,9674
+PHILIPPI,Resolved Slow,Unresolved,137,9674
+PHILIPPI,Unresolved,Resolved Fast,487,9674
+PHILIPPI,Unresolved,Resolved Slow,519,9674
+PHILIPPI,Unresolved,Unresolved,340,9674
+PHOENIX,Resolved Fast,Resolved Fast,283,481
+PHOENIX,Resolved Fast,Resolved Slow,73,481
+PHOENIX,Resolved Fast,Unresolved,6,481
+PHOENIX,Resolved Slow,Resolved Fast,65,481
+PHOENIX,Resolved Slow,Resolved Slow,15,481
+PHOENIX,Resolved Slow,Unresolved,1,481
+PHOENIX,Unresolved,Resolved Fast,10,481
+PHOENIX,Unresolved,Resolved Slow,20,481
+PHOENIX,Unresolved,Unresolved,8,481
+PINATI ESTATE,Resolved Fast,Resolved Fast,149,329
+PINATI ESTATE,Resolved Fast,Resolved Slow,63,329
+PINATI ESTATE,Resolved Fast,Unresolved,24,329
+PINATI ESTATE,Resolved Slow,Resolved Fast,21,329
+PINATI ESTATE,Resolved Slow,Resolved Slow,15,329
+PINATI ESTATE,Resolved Slow,Unresolved,15,329
+PINATI ESTATE,Unresolved,Resolved Fast,14,329
+PINATI ESTATE,Unresolved,Resolved Slow,13,329
+PINATI ESTATE,Unresolved,Unresolved,15,329
+PINEHURST,Resolved Fast,Resolved Fast,331,667
+PINEHURST,Resolved Fast,Resolved Slow,135,667
+PINEHURST,Resolved Fast,Unresolved,8,667
+PINEHURST,Resolved Slow,Resolved Fast,85,667
+PINEHURST,Resolved Slow,Resolved Slow,30,667
+PINEHURST,Resolved Slow,Unresolved,4,667
+PINEHURST,Unresolved,Resolved Fast,18,667
+PINEHURST,Unresolved,Resolved Slow,45,667
+PINEHURST,Unresolved,Unresolved,11,667
+PINELANDS,Resolved Fast,Resolved Fast,1210,2260
+PINELANDS,Resolved Fast,Resolved Slow,357,2260
+PINELANDS,Resolved Fast,Unresolved,107,2260
+PINELANDS,Resolved Slow,Resolved Fast,181,2260
+PINELANDS,Resolved Slow,Resolved Slow,150,2260
+PINELANDS,Resolved Slow,Unresolved,48,2260
+PINELANDS,Unresolved,Resolved Fast,32,2260
+PINELANDS,Unresolved,Resolved Slow,73,2260
+PINELANDS,Unresolved,Unresolved,102,2260
+PLATTEKLOOF 2,Resolved Fast,Resolved Fast,103,255
+PLATTEKLOOF 2,Resolved Fast,Resolved Slow,69,255
+PLATTEKLOOF 2,Resolved Fast,Unresolved,9,255
+PLATTEKLOOF 2,Resolved Slow,Resolved Fast,13,255
+PLATTEKLOOF 2,Resolved Slow,Resolved Slow,24,255
+PLATTEKLOOF 2,Resolved Slow,Unresolved,2,255
+PLATTEKLOOF 2,Unresolved,Resolved Fast,4,255
+PLATTEKLOOF 2,Unresolved,Resolved Slow,10,255
+PLATTEKLOOF 2,Unresolved,Unresolved,21,255
+PLATTEKLOOF 3,Resolved Fast,Resolved Fast,160,320
+PLATTEKLOOF 3,Resolved Fast,Resolved Slow,57,320
+PLATTEKLOOF 3,Resolved Fast,Unresolved,8,320
+PLATTEKLOOF 3,Resolved Slow,Resolved Fast,20,320
+PLATTEKLOOF 3,Resolved Slow,Resolved Slow,26,320
+PLATTEKLOOF 3,Resolved Slow,Unresolved,2,320
+PLATTEKLOOF 3,Unresolved,Resolved Fast,5,320
+PLATTEKLOOF 3,Unresolved,Resolved Slow,30,320
+PLATTEKLOOF 3,Unresolved,Unresolved,12,320
+PLATTEKLOOF GLEN,Resolved Fast,Resolved Fast,134,336
+PLATTEKLOOF GLEN,Resolved Fast,Resolved Slow,68,336
+PLATTEKLOOF GLEN,Resolved Fast,Unresolved,21,336
+PLATTEKLOOF GLEN,Resolved Slow,Resolved Fast,20,336
+PLATTEKLOOF GLEN,Resolved Slow,Resolved Slow,27,336
+PLATTEKLOOF GLEN,Resolved Slow,Unresolved,5,336
+PLATTEKLOOF GLEN,Unresolved,Resolved Fast,4,336
+PLATTEKLOOF GLEN,Unresolved,Resolved Slow,24,336
+PLATTEKLOOF GLEN,Unresolved,Unresolved,33,336
+PLUMSTEAD,Resolved Fast,Resolved Fast,1548,3037
+PLUMSTEAD,Resolved Fast,Resolved Slow,477,3037
+PLUMSTEAD,Resolved Fast,Unresolved,103,3037
+PLUMSTEAD,Resolved Slow,Resolved Fast,215,3037
+PLUMSTEAD,Resolved Slow,Resolved Slow,106,3037
+PLUMSTEAD,Resolved Slow,Unresolved,56,3037
+PLUMSTEAD,Unresolved,Resolved Fast,98,3037
+PLUMSTEAD,Unresolved,Resolved Slow,185,3037
+PLUMSTEAD,Unresolved,Unresolved,249,3037
+PORTLAND,Resolved Fast,Resolved Fast,763,1479
+PORTLAND,Resolved Fast,Resolved Slow,278,1479
+PORTLAND,Resolved Fast,Unresolved,32,1479
+PORTLAND,Resolved Slow,Resolved Fast,129,1479
+PORTLAND,Resolved Slow,Resolved Slow,87,1479
+PORTLAND,Resolved Slow,Unresolved,25,1479
+PORTLAND,Unresolved,Resolved Fast,49,1479
+PORTLAND,Unresolved,Resolved Slow,57,1479
+PORTLAND,Unresolved,Unresolved,59,1479
+PROTEA HEIGHTS,Resolved Fast,Resolved Fast,494,833
+PROTEA HEIGHTS,Resolved Fast,Resolved Slow,102,833
+PROTEA HEIGHTS,Resolved Fast,Unresolved,5,833
+PROTEA HEIGHTS,Resolved Slow,Resolved Fast,92,833
+PROTEA HEIGHTS,Resolved Slow,Resolved Slow,36,833
+PROTEA HEIGHTS,Resolved Slow,Unresolved,1,833
+PROTEA HEIGHTS,Unresolved,Resolved Fast,21,833
+PROTEA HEIGHTS,Unresolved,Resolved Slow,65,833
+PROTEA HEIGHTS,Unresolved,Unresolved,17,833
+PROTEA PARK - WESFLEUR,Resolved Fast,Resolved Fast,370,632
+PROTEA PARK - WESFLEUR,Resolved Fast,Resolved Slow,36,632
+PROTEA PARK - WESFLEUR,Resolved Fast,Unresolved,2,632
+PROTEA PARK - WESFLEUR,Resolved Slow,Resolved Fast,113,632
+PROTEA PARK - WESFLEUR,Resolved Slow,Resolved Slow,19,632
+PROTEA PARK - WESFLEUR,Resolved Slow,Unresolved,1,632
+PROTEA PARK - WESFLEUR,Unresolved,Resolved Fast,28,632
+PROTEA PARK - WESFLEUR,Unresolved,Resolved Slow,60,632
+PROTEA PARK - WESFLEUR,Unresolved,Unresolved,3,632
+PROTEA VILLAGE,Resolved Fast,Resolved Fast,95,253
+PROTEA VILLAGE,Resolved Fast,Resolved Slow,53,253
+PROTEA VILLAGE,Resolved Fast,Unresolved,60,253
+PROTEA VILLAGE,Resolved Slow,Resolved Fast,10,253
+PROTEA VILLAGE,Resolved Slow,Resolved Slow,3,253
+PROTEA VILLAGE,Resolved Slow,Unresolved,4,253
+PROTEA VILLAGE,Unresolved,Resolved Fast,4,253
+PROTEA VILLAGE,Unresolved,Resolved Slow,15,253
+PROTEA VILLAGE,Unresolved,Unresolved,9,253
+Philippi,Resolved Fast,Resolved Fast,126,223
+Philippi,Resolved Fast,Resolved Slow,34,223
+Philippi,Resolved Fast,Unresolved,5,223
+Philippi,Resolved Slow,Resolved Fast,20,223
+Philippi,Resolved Slow,Resolved Slow,12,223
+Philippi,Resolved Slow,Unresolved,2,223
+Philippi,Unresolved,Resolved Fast,5,223
+Philippi,Unresolved,Resolved Slow,8,223
+Philippi,Unresolved,Unresolved,11,223
+RAVENSMEAD,Resolved Fast,Resolved Fast,1035,2230
+RAVENSMEAD,Resolved Fast,Resolved Slow,283,2230
+RAVENSMEAD,Resolved Fast,Unresolved,95,2230
+RAVENSMEAD,Resolved Slow,Resolved Fast,132,2230
+RAVENSMEAD,Resolved Slow,Resolved Slow,205,2230
+RAVENSMEAD,Resolved Slow,Unresolved,87,2230
+RAVENSMEAD,Unresolved,Resolved Fast,42,2230
+RAVENSMEAD,Unresolved,Resolved Slow,136,2230
+RAVENSMEAD,Unresolved,Unresolved,215,2230
+RETREAT,Resolved Fast,Resolved Fast,1255,2567
+RETREAT,Resolved Fast,Resolved Slow,374,2567
+RETREAT,Resolved Fast,Unresolved,143,2567
+RETREAT,Resolved Slow,Resolved Fast,181,2567
+RETREAT,Resolved Slow,Resolved Slow,142,2567
+RETREAT,Resolved Slow,Unresolved,88,2567
+RETREAT,Unresolved,Resolved Fast,71,2567
+RETREAT,Unresolved,Resolved Slow,143,2567
+RETREAT,Unresolved,Unresolved,170,2567
+RICHMOND ESTATE,Resolved Fast,Resolved Fast,319,535
+RICHMOND ESTATE,Resolved Fast,Resolved Slow,55,535
+RICHMOND ESTATE,Resolved Fast,Unresolved,18,535
+RICHMOND ESTATE,Resolved Slow,Resolved Fast,25,535
+RICHMOND ESTATE,Resolved Slow,Resolved Slow,19,535
+RICHMOND ESTATE,Resolved Slow,Unresolved,7,535
+RICHMOND ESTATE,Unresolved,Resolved Fast,16,535
+RICHMOND ESTATE,Unresolved,Resolved Slow,30,535
+RICHMOND ESTATE,Unresolved,Unresolved,46,535
+RICHWOOD,Resolved Fast,Resolved Fast,180,336
+RICHWOOD,Resolved Fast,Resolved Slow,44,336
+RICHWOOD,Resolved Fast,Unresolved,5,336
+RICHWOOD,Resolved Slow,Resolved Fast,43,336
+RICHWOOD,Resolved Slow,Resolved Slow,14,336
+RICHWOOD,Resolved Slow,Unresolved,7,336
+RICHWOOD,Unresolved,Resolved Fast,10,336
+RICHWOOD,Unresolved,Resolved Slow,25,336
+RICHWOOD,Unresolved,Unresolved,8,336
+RIDGEWORTH,Resolved Fast,Resolved Fast,130,286
+RIDGEWORTH,Resolved Fast,Resolved Slow,43,286
+RIDGEWORTH,Resolved Fast,Unresolved,13,286
+RIDGEWORTH,Resolved Slow,Resolved Fast,27,286
+RIDGEWORTH,Resolved Slow,Resolved Slow,14,286
+RIDGEWORTH,Resolved Slow,Unresolved,4,286
+RIDGEWORTH,Unresolved,Resolved Fast,10,286
+RIDGEWORTH,Unresolved,Resolved Slow,25,286
+RIDGEWORTH,Unresolved,Unresolved,20,286
+RIVERGATE,Resolved Fast,Resolved Fast,227,512
+RIVERGATE,Resolved Fast,Resolved Slow,84,512
+RIVERGATE,Resolved Fast,Unresolved,18,512
+RIVERGATE,Resolved Slow,Resolved Fast,60,512
+RIVERGATE,Resolved Slow,Resolved Slow,52,512
+RIVERGATE,Resolved Slow,Unresolved,15,512
+RIVERGATE,Unresolved,Resolved Fast,10,512
+RIVERGATE,Unresolved,Resolved Slow,17,512
+RIVERGATE,Unresolved,Unresolved,29,512
+RIVERSIDE,Resolved Fast,Resolved Fast,232,379
+RIVERSIDE,Resolved Fast,Resolved Slow,65,379
+RIVERSIDE,Resolved Fast,Unresolved,3,379
+RIVERSIDE,Resolved Slow,Resolved Fast,31,379
+RIVERSIDE,Resolved Slow,Resolved Slow,27,379
+RIVERSIDE,Unresolved,Resolved Slow,15,379
+RIVERSIDE,Unresolved,Unresolved,6,379
+ROBINVALE,Resolved Fast,Resolved Fast,368,649
+ROBINVALE,Resolved Fast,Resolved Slow,56,649
+ROBINVALE,Resolved Fast,Unresolved,14,649
+ROBINVALE,Resolved Slow,Resolved Fast,94,649
+ROBINVALE,Resolved Slow,Resolved Slow,20,649
+ROBINVALE,Resolved Slow,Unresolved,8,649
+ROBINVALE,Unresolved,Resolved Fast,29,649
+ROBINVALE,Unresolved,Resolved Slow,38,649
+ROBINVALE,Unresolved,Unresolved,22,649
+ROCKLANDS,Resolved Fast,Resolved Fast,969,1999
+ROCKLANDS,Resolved Fast,Resolved Slow,423,1999
+ROCKLANDS,Resolved Fast,Unresolved,51,1999
+ROCKLANDS,Resolved Slow,Resolved Fast,146,1999
+ROCKLANDS,Resolved Slow,Resolved Slow,172,1999
+ROCKLANDS,Resolved Slow,Unresolved,22,1999
+ROCKLANDS,Unresolved,Resolved Fast,49,1999
+ROCKLANDS,Unresolved,Resolved Slow,118,1999
+ROCKLANDS,Unresolved,Unresolved,49,1999
+RONDEBOSCH,Resolved Fast,Resolved Fast,1444,3446
+RONDEBOSCH,Resolved Fast,Resolved Slow,466,3446
+RONDEBOSCH,Resolved Fast,Unresolved,118,3446
+RONDEBOSCH,Resolved Slow,Resolved Fast,181,3446
+RONDEBOSCH,Resolved Slow,Resolved Slow,91,3446
+RONDEBOSCH,Resolved Slow,Unresolved,28,3446
+RONDEBOSCH,Unresolved,Resolved Fast,72,3446
+RONDEBOSCH,Unresolved,Resolved Slow,190,3446
+RONDEBOSCH,Unresolved,Unresolved,856,3446
+RONDEBOSCH EAST,Resolved Fast,Resolved Fast,463,735
+RONDEBOSCH EAST,Resolved Fast,Resolved Slow,83,735
+RONDEBOSCH EAST,Resolved Fast,Unresolved,36,735
+RONDEBOSCH EAST,Resolved Slow,Resolved Fast,54,735
+RONDEBOSCH EAST,Resolved Slow,Resolved Slow,19,735
+RONDEBOSCH EAST,Resolved Slow,Unresolved,9,735
+RONDEBOSCH EAST,Unresolved,Resolved Fast,16,735
+RONDEBOSCH EAST,Unresolved,Resolved Slow,26,735
+RONDEBOSCH EAST,Unresolved,Unresolved,29,735
+RONDEVLEI PARK,Resolved Fast,Resolved Fast,175,313
+RONDEVLEI PARK,Resolved Fast,Resolved Slow,54,313
+RONDEVLEI PARK,Resolved Fast,Unresolved,9,313
+RONDEVLEI PARK,Resolved Slow,Resolved Fast,38,313
+RONDEVLEI PARK,Resolved Slow,Resolved Slow,11,313
+RONDEVLEI PARK,Resolved Slow,Unresolved,4,313
+RONDEVLEI PARK,Unresolved,Resolved Fast,6,313
+RONDEVLEI PARK,Unresolved,Resolved Slow,8,313
+RONDEVLEI PARK,Unresolved,Unresolved,8,313
+ROOSENDAL,Resolved Fast,Resolved Fast,557,840
+ROOSENDAL,Resolved Fast,Resolved Slow,57,840
+ROOSENDAL,Resolved Fast,Unresolved,14,840
+ROOSENDAL,Resolved Slow,Resolved Fast,94,840
+ROOSENDAL,Resolved Slow,Resolved Slow,25,840
+ROOSENDAL,Resolved Slow,Unresolved,11,840
+ROOSENDAL,Unresolved,Resolved Fast,20,840
+ROOSENDAL,Unresolved,Resolved Slow,43,840
+ROOSENDAL,Unresolved,Unresolved,19,840
+ROSEBANK,Resolved Fast,Resolved Fast,312,1301
+ROSEBANK,Resolved Fast,Resolved Slow,302,1301
+ROSEBANK,Resolved Fast,Unresolved,102,1301
+ROSEBANK,Resolved Slow,Resolved Fast,40,1301
+ROSEBANK,Resolved Slow,Resolved Slow,79,1301
+ROSEBANK,Resolved Slow,Unresolved,74,1301
+ROSEBANK,Unresolved,Resolved Fast,34,1301
+ROSEBANK,Unresolved,Resolved Slow,42,1301
+ROSEBANK,Unresolved,Unresolved,316,1301
+ROSEDALE - KLEIN VLEI,Resolved Fast,Resolved Fast,399,759
+ROSEDALE - KLEIN VLEI,Resolved Fast,Resolved Slow,192,759
+ROSEDALE - KLEIN VLEI,Resolved Fast,Unresolved,23,759
+ROSEDALE - KLEIN VLEI,Resolved Slow,Resolved Fast,23,759
+ROSEDALE - KLEIN VLEI,Resolved Slow,Resolved Slow,49,759
+ROSEDALE - KLEIN VLEI,Resolved Slow,Unresolved,13,759
+ROSEDALE - KLEIN VLEI,Unresolved,Resolved Fast,3,759
+ROSEDALE - KLEIN VLEI,Unresolved,Resolved Slow,28,759
+ROSEDALE - KLEIN VLEI,Unresolved,Unresolved,29,759
+ROYAL ASCOT,Resolved Fast,Resolved Fast,137,323
+ROYAL ASCOT,Resolved Fast,Resolved Slow,41,323
+ROYAL ASCOT,Resolved Fast,Unresolved,39,323
+ROYAL ASCOT,Resolved Slow,Resolved Fast,28,323
+ROYAL ASCOT,Resolved Slow,Resolved Slow,8,323
+ROYAL ASCOT,Resolved Slow,Unresolved,1,323
+ROYAL ASCOT,Unresolved,Resolved Fast,18,323
+ROYAL ASCOT,Unresolved,Resolved Slow,36,323
+ROYAL ASCOT,Unresolved,Unresolved,15,323
+RUGBY,Resolved Fast,Resolved Fast,482,805
+RUGBY,Resolved Fast,Resolved Slow,71,805
+RUGBY,Resolved Fast,Unresolved,25,805
+RUGBY,Resolved Slow,Resolved Fast,48,805
+RUGBY,Resolved Slow,Resolved Slow,29,805
+RUGBY,Resolved Slow,Unresolved,29,805
+RUGBY,Unresolved,Resolved Fast,9,805
+RUGBY,Unresolved,Resolved Slow,29,805
+RUGBY,Unresolved,Unresolved,83,805
+RUYTERWACHT,Resolved Fast,Resolved Fast,743,1113
+RUYTERWACHT,Resolved Fast,Resolved Slow,109,1113
+RUYTERWACHT,Resolved Fast,Unresolved,28,1113
+RUYTERWACHT,Resolved Slow,Resolved Fast,53,1113
+RUYTERWACHT,Resolved Slow,Resolved Slow,42,1113
+RUYTERWACHT,Resolved Slow,Unresolved,19,1113
+RUYTERWACHT,Unresolved,Resolved Fast,32,1113
+RUYTERWACHT,Unresolved,Resolved Slow,39,1113
+RUYTERWACHT,Unresolved,Unresolved,48,1113
+RYLANDS,Resolved Fast,Resolved Fast,570,936
+RYLANDS,Resolved Fast,Resolved Slow,103,936
+RYLANDS,Resolved Fast,Unresolved,60,936
+RYLANDS,Resolved Slow,Resolved Fast,72,936
+RYLANDS,Resolved Slow,Resolved Slow,15,936
+RYLANDS,Resolved Slow,Unresolved,15,936
+RYLANDS,Unresolved,Resolved Fast,36,936
+RYLANDS,Unresolved,Resolved Slow,31,936
+RYLANDS,Unresolved,Unresolved,34,936
+SALT RIVER,Resolved Fast,Resolved Fast,558,1375
+SALT RIVER,Resolved Fast,Resolved Slow,299,1375
+SALT RIVER,Resolved Fast,Unresolved,53,1375
+SALT RIVER,Resolved Slow,Resolved Fast,82,1375
+SALT RIVER,Resolved Slow,Resolved Slow,148,1375
+SALT RIVER,Resolved Slow,Unresolved,18,1375
+SALT RIVER,Unresolved,Resolved Fast,25,1375
+SALT RIVER,Unresolved,Resolved Slow,125,1375
+SALT RIVER,Unresolved,Unresolved,67,1375
+SANDDRIFT,Resolved Fast,Resolved Fast,188,423
+SANDDRIFT,Resolved Fast,Resolved Slow,64,423
+SANDDRIFT,Resolved Fast,Unresolved,14,423
+SANDDRIFT,Resolved Slow,Resolved Fast,45,423
+SANDDRIFT,Resolved Slow,Resolved Slow,32,423
+SANDDRIFT,Resolved Slow,Unresolved,10,423
+SANDDRIFT,Unresolved,Resolved Fast,19,423
+SANDDRIFT,Unresolved,Resolved Slow,35,423
+SANDDRIFT,Unresolved,Unresolved,16,423
+SANDOWN,Resolved Fast,Resolved Fast,213,458
+SANDOWN,Resolved Fast,Resolved Slow,77,458
+SANDOWN,Resolved Fast,Unresolved,17,458
+SANDOWN,Resolved Slow,Resolved Fast,67,458
+SANDOWN,Resolved Slow,Resolved Slow,28,458
+SANDOWN,Resolved Slow,Unresolved,8,458
+SANDOWN,Unresolved,Resolved Fast,14,458
+SANDOWN,Unresolved,Resolved Slow,20,458
+SANDOWN,Unresolved,Unresolved,14,458
+SAREPTA,Resolved Fast,Resolved Fast,278,675
+SAREPTA,Resolved Fast,Resolved Slow,242,675
+SAREPTA,Resolved Fast,Unresolved,9,675
+SAREPTA,Resolved Slow,Resolved Fast,20,675
+SAREPTA,Resolved Slow,Resolved Slow,80,675
+SAREPTA,Resolved Slow,Unresolved,4,675
+SAREPTA,Unresolved,Resolved Fast,7,675
+SAREPTA,Unresolved,Resolved Slow,27,675
+SAREPTA,Unresolved,Unresolved,8,675
+SAXONSEA,Resolved Fast,Resolved Fast,642,1014
+SAXONSEA,Resolved Fast,Resolved Slow,47,1014
+SAXONSEA,Resolved Fast,Unresolved,12,1014
+SAXONSEA,Resolved Slow,Resolved Fast,172,1014
+SAXONSEA,Resolved Slow,Resolved Slow,34,1014
+SAXONSEA,Resolved Slow,Unresolved,7,1014
+SAXONSEA,Unresolved,Resolved Fast,50,1014
+SAXONSEA,Unresolved,Resolved Slow,25,1014
+SAXONSEA,Unresolved,Unresolved,25,1014
+SCARBOROUGH,Resolved Fast,Resolved Fast,66,262
+SCARBOROUGH,Resolved Fast,Resolved Slow,138,262
+SCARBOROUGH,Resolved Fast,Unresolved,5,262
+SCARBOROUGH,Resolved Slow,Resolved Fast,10,262
+SCARBOROUGH,Resolved Slow,Resolved Slow,25,262
+SCARBOROUGH,Unresolved,Resolved Fast,5,262
+SCARBOROUGH,Unresolved,Resolved Slow,8,262
+SCARBOROUGH,Unresolved,Unresolved,5,262
+SCOTTSDENE,Resolved Fast,Resolved Fast,387,1077
+SCOTTSDENE,Resolved Fast,Resolved Slow,287,1077
+SCOTTSDENE,Resolved Fast,Unresolved,52,1077
+SCOTTSDENE,Resolved Slow,Resolved Fast,64,1077
+SCOTTSDENE,Resolved Slow,Resolved Slow,81,1077
+SCOTTSDENE,Resolved Slow,Unresolved,24,1077
+SCOTTSDENE,Unresolved,Resolved Fast,11,1077
+SCOTTSDENE,Unresolved,Resolved Slow,53,1077
+SCOTTSDENE,Unresolved,Unresolved,118,1077
+SCOTTSVILLE,Resolved Fast,Resolved Fast,447,653
+SCOTTSVILLE,Resolved Fast,Resolved Slow,35,653
+SCOTTSVILLE,Resolved Fast,Unresolved,14,653
+SCOTTSVILLE,Resolved Slow,Resolved Fast,68,653
+SCOTTSVILLE,Resolved Slow,Resolved Slow,13,653
+SCOTTSVILLE,Resolved Slow,Unresolved,14,653
+SCOTTSVILLE,Unresolved,Resolved Fast,20,653
+SCOTTSVILLE,Unresolved,Resolved Slow,14,653
+SCOTTSVILLE,Unresolved,Unresolved,28,653
+SEA POINT,Resolved Fast,Resolved Fast,1292,2320
+SEA POINT,Resolved Fast,Resolved Slow,198,2320
+SEA POINT,Resolved Fast,Unresolved,125,2320
+SEA POINT,Resolved Slow,Resolved Fast,222,2320
+SEA POINT,Resolved Slow,Resolved Slow,78,2320
+SEA POINT,Resolved Slow,Unresolved,67,2320
+SEA POINT,Unresolved,Resolved Fast,133,2320
+SEA POINT,Unresolved,Resolved Slow,76,2320
+SEA POINT,Unresolved,Unresolved,129,2320
+SEAWINDS,Resolved Fast,Resolved Fast,806,1261
+SEAWINDS,Resolved Fast,Resolved Slow,124,1261
+SEAWINDS,Resolved Fast,Unresolved,30,1261
+SEAWINDS,Resolved Slow,Resolved Fast,120,1261
+SEAWINDS,Resolved Slow,Resolved Slow,75,1261
+SEAWINDS,Resolved Slow,Unresolved,4,1261
+SEAWINDS,Unresolved,Resolved Fast,39,1261
+SEAWINDS,Unresolved,Resolved Slow,43,1261
+SEAWINDS,Unresolved,Unresolved,20,1261
+SERCOR PARK,Resolved Fast,Resolved Fast,188,316
+SERCOR PARK,Resolved Fast,Resolved Slow,52,316
+SERCOR PARK,Resolved Fast,Unresolved,5,316
+SERCOR PARK,Resolved Slow,Resolved Fast,37,316
+SERCOR PARK,Resolved Slow,Resolved Slow,19,316
+SERCOR PARK,Resolved Slow,Unresolved,3,316
+SERCOR PARK,Unresolved,Resolved Fast,3,316
+SERCOR PARK,Unresolved,Resolved Slow,7,316
+SERCOR PARK,Unresolved,Unresolved,2,316
+SHERWOOD,Resolved Fast,Resolved Fast,525,852
+SHERWOOD,Resolved Fast,Resolved Slow,85,852
+SHERWOOD,Resolved Fast,Unresolved,3,852
+SHERWOOD,Resolved Slow,Resolved Fast,127,852
+SHERWOOD,Resolved Slow,Resolved Slow,33,852
+SHERWOOD,Resolved Slow,Unresolved,1,852
+SHERWOOD,Unresolved,Resolved Fast,35,852
+SHERWOOD,Unresolved,Resolved Slow,37,852
+SHERWOOD,Unresolved,Unresolved,6,852
+SILVEROAKS,Resolved Fast,Resolved Fast,85,259
+SILVEROAKS,Resolved Fast,Resolved Slow,86,259
+SILVEROAKS,Resolved Fast,Unresolved,12,259
+SILVEROAKS,Resolved Slow,Resolved Fast,18,259
+SILVEROAKS,Resolved Slow,Resolved Slow,24,259
+SILVEROAKS,Resolved Slow,Unresolved,2,259
+SILVEROAKS,Unresolved,Resolved Fast,7,259
+SILVEROAKS,Unresolved,Resolved Slow,18,259
+SILVEROAKS,Unresolved,Unresolved,7,259
+SILVERSANDS,Resolved Fast,Resolved Fast,274,688
+SILVERSANDS,Resolved Fast,Resolved Slow,227,688
+SILVERSANDS,Resolved Fast,Unresolved,20,688
+SILVERSANDS,Resolved Slow,Resolved Fast,31,688
+SILVERSANDS,Resolved Slow,Resolved Slow,68,688
+SILVERSANDS,Resolved Slow,Unresolved,5,688
+SILVERSANDS,Unresolved,Resolved Fast,7,688
+SILVERSANDS,Unresolved,Resolved Slow,36,688
+SILVERSANDS,Unresolved,Unresolved,20,688
+SILVERTOWN,Resolved Fast,Resolved Fast,503,898
+SILVERTOWN,Resolved Fast,Resolved Slow,133,898
+SILVERTOWN,Resolved Fast,Unresolved,40,898
+SILVERTOWN,Resolved Slow,Resolved Fast,45,898
+SILVERTOWN,Resolved Slow,Resolved Slow,30,898
+SILVERTOWN,Resolved Slow,Unresolved,18,898
+SILVERTOWN,Unresolved,Resolved Fast,30,898
+SILVERTOWN,Unresolved,Resolved Slow,32,898
+SILVERTOWN,Unresolved,Unresolved,67,898
+SIMON'S TOWN,Resolved Fast,Resolved Fast,385,924
+SIMON'S TOWN,Resolved Fast,Resolved Slow,212,924
+SIMON'S TOWN,Resolved Fast,Unresolved,62,924
+SIMON'S TOWN,Resolved Slow,Resolved Fast,40,924
+SIMON'S TOWN,Resolved Slow,Resolved Slow,73,924
+SIMON'S TOWN,Resolved Slow,Unresolved,17,924
+SIMON'S TOWN,Unresolved,Resolved Fast,35,924
+SIMON'S TOWN,Unresolved,Resolved Slow,36,924
+SIMON'S TOWN,Unresolved,Unresolved,64,924
+SOMERSET WEST,Resolved Fast,Resolved Fast,277,892
+SOMERSET WEST,Resolved Fast,Resolved Slow,154,892
+SOMERSET WEST,Resolved Fast,Unresolved,52,892
+SOMERSET WEST,Resolved Slow,Resolved Fast,43,892
+SOMERSET WEST,Resolved Slow,Resolved Slow,64,892
+SOMERSET WEST,Resolved Slow,Unresolved,54,892
+SOMERSET WEST,Unresolved,Resolved Fast,17,892
+SOMERSET WEST,Unresolved,Resolved Slow,73,892
+SOMERSET WEST,Unresolved,Unresolved,158,892
+SONEIKE II,Resolved Fast,Resolved Fast,119,243
+SONEIKE II,Resolved Fast,Resolved Slow,65,243
+SONEIKE II,Resolved Fast,Unresolved,6,243
+SONEIKE II,Resolved Slow,Resolved Fast,13,243
+SONEIKE II,Resolved Slow,Resolved Slow,9,243
+SONEIKE II,Resolved Slow,Unresolved,5,243
+SONEIKE II,Unresolved,Resolved Fast,5,243
+SONEIKE II,Unresolved,Resolved Slow,12,243
+SONEIKE II,Unresolved,Unresolved,9,243
+SONSTRAAL HEIGHTS,Resolved Fast,Resolved Fast,257,498
+SONSTRAAL HEIGHTS,Resolved Fast,Resolved Slow,90,498
+SONSTRAAL HEIGHTS,Resolved Fast,Unresolved,8,498
+SONSTRAAL HEIGHTS,Resolved Slow,Resolved Fast,50,498
+SONSTRAAL HEIGHTS,Resolved Slow,Resolved Slow,24,498
+SONSTRAAL HEIGHTS,Resolved Slow,Unresolved,3,498
+SONSTRAAL HEIGHTS,Unresolved,Resolved Fast,11,498
+SONSTRAAL HEIGHTS,Unresolved,Resolved Slow,44,498
+SONSTRAAL HEIGHTS,Unresolved,Unresolved,11,498
+SOUTHFIELD,Resolved Fast,Resolved Fast,534,948
+SOUTHFIELD,Resolved Fast,Resolved Slow,129,948
+SOUTHFIELD,Resolved Fast,Unresolved,46,948
+SOUTHFIELD,Resolved Slow,Resolved Fast,65,948
+SOUTHFIELD,Resolved Slow,Resolved Slow,53,948
+SOUTHFIELD,Resolved Slow,Unresolved,14,948
+SOUTHFIELD,Unresolved,Resolved Fast,25,948
+SOUTHFIELD,Unresolved,Resolved Slow,43,948
+SOUTHFIELD,Unresolved,Unresolved,39,948
+STEENBERG,Resolved Fast,Resolved Fast,938,1577
+STEENBERG,Resolved Fast,Resolved Slow,188,1577
+STEENBERG,Resolved Fast,Unresolved,51,1577
+STEENBERG,Resolved Slow,Resolved Fast,151,1577
+STEENBERG,Resolved Slow,Resolved Slow,72,1577
+STEENBERG,Resolved Slow,Unresolved,32,1577
+STEENBERG,Unresolved,Resolved Fast,57,1577
+STEENBERG,Unresolved,Resolved Slow,43,1577
+STEENBERG,Unresolved,Unresolved,45,1577
+STELLENBERG,Resolved Fast,Resolved Fast,207,439
+STELLENBERG,Resolved Fast,Resolved Slow,112,439
+STELLENBERG,Resolved Fast,Unresolved,16,439
+STELLENBERG,Resolved Slow,Resolved Fast,22,439
+STELLENBERG,Resolved Slow,Resolved Slow,14,439
+STELLENBERG,Resolved Slow,Unresolved,4,439
+STELLENBERG,Unresolved,Resolved Fast,2,439
+STELLENBERG,Unresolved,Resolved Slow,40,439
+STELLENBERG,Unresolved,Unresolved,22,439
+STELLENDALE,Resolved Fast,Resolved Fast,78,208
+STELLENDALE,Resolved Fast,Resolved Slow,56,208
+STELLENDALE,Resolved Fast,Unresolved,10,208
+STELLENDALE,Resolved Slow,Resolved Fast,9,208
+STELLENDALE,Resolved Slow,Resolved Slow,13,208
+STELLENDALE,Resolved Slow,Unresolved,2,208
+STELLENDALE,Unresolved,Resolved Fast,23,208
+STELLENDALE,Unresolved,Resolved Slow,11,208
+STELLENDALE,Unresolved,Unresolved,6,208
+STELLENRIDGE,Resolved Fast,Resolved Fast,115,266
+STELLENRIDGE,Resolved Fast,Resolved Slow,82,266
+STELLENRIDGE,Resolved Fast,Unresolved,13,266
+STELLENRIDGE,Resolved Slow,Resolved Fast,9,266
+STELLENRIDGE,Resolved Slow,Resolved Slow,8,266
+STELLENRIDGE,Resolved Slow,Unresolved,2,266
+STELLENRIDGE,Unresolved,Resolved Fast,4,266
+STELLENRIDGE,Unresolved,Resolved Slow,22,266
+STELLENRIDGE,Unresolved,Unresolved,11,266
+STIKLAND INDUSTRIA,Resolved Fast,Resolved Fast,125,301
+STIKLAND INDUSTRIA,Resolved Fast,Resolved Slow,64,301
+STIKLAND INDUSTRIA,Resolved Fast,Unresolved,17,301
+STIKLAND INDUSTRIA,Resolved Slow,Resolved Fast,12,301
+STIKLAND INDUSTRIA,Resolved Slow,Resolved Slow,19,301
+STIKLAND INDUSTRIA,Resolved Slow,Unresolved,7,301
+STIKLAND INDUSTRIA,Unresolved,Resolved Fast,5,301
+STIKLAND INDUSTRIA,Unresolved,Resolved Slow,23,301
+STIKLAND INDUSTRIA,Unresolved,Unresolved,29,301
+STRAND,Resolved Fast,Resolved Fast,2703,5995
+STRAND,Resolved Fast,Resolved Slow,1484,5995
+STRAND,Resolved Fast,Unresolved,45,5995
+STRAND,Resolved Slow,Resolved Fast,352,5995
+STRAND,Resolved Slow,Resolved Slow,505,5995
+STRAND,Resolved Slow,Unresolved,52,5995
+STRAND,Unresolved,Resolved Fast,74,5995
+STRAND,Unresolved,Resolved Slow,565,5995
+STRAND,Unresolved,Unresolved,215,5995
+STRANDFONTEIN,Resolved Fast,Resolved Fast,1126,2441
+STRANDFONTEIN,Resolved Fast,Resolved Slow,627,2441
+STRANDFONTEIN,Resolved Fast,Unresolved,137,2441
+STRANDFONTEIN,Resolved Slow,Resolved Fast,156,2441
+STRANDFONTEIN,Resolved Slow,Resolved Slow,110,2441
+STRANDFONTEIN,Resolved Slow,Unresolved,32,2441
+STRANDFONTEIN,Unresolved,Resolved Fast,66,2441
+STRANDFONTEIN,Unresolved,Resolved Slow,109,2441
+STRANDFONTEIN,Unresolved,Unresolved,78,2441
+SUMMER GREENS,Resolved Fast,Resolved Fast,508,773
+SUMMER GREENS,Resolved Fast,Resolved Slow,74,773
+SUMMER GREENS,Resolved Fast,Unresolved,15,773
+SUMMER GREENS,Resolved Slow,Resolved Fast,75,773
+SUMMER GREENS,Resolved Slow,Resolved Slow,30,773
+SUMMER GREENS,Resolved Slow,Unresolved,3,773
+SUMMER GREENS,Unresolved,Resolved Fast,21,773
+SUMMER GREENS,Unresolved,Resolved Slow,35,773
+SUMMER GREENS,Unresolved,Unresolved,12,773
+SUN VALLEY,Resolved Fast,Resolved Fast,142,318
+SUN VALLEY,Resolved Fast,Resolved Slow,95,318
+SUN VALLEY,Resolved Fast,Unresolved,16,318
+SUN VALLEY,Resolved Slow,Resolved Fast,11,318
+SUN VALLEY,Resolved Slow,Resolved Slow,22,318
+SUN VALLEY,Resolved Slow,Unresolved,3,318
+SUN VALLEY,Unresolved,Resolved Fast,7,318
+SUN VALLEY,Unresolved,Resolved Slow,14,318
+SUN VALLEY,Unresolved,Unresolved,8,318
+SUNBIRD PARK,Resolved Fast,Resolved Fast,105,207
+SUNBIRD PARK,Resolved Fast,Resolved Slow,46,207
+SUNBIRD PARK,Resolved Fast,Unresolved,3,207
+SUNBIRD PARK,Resolved Slow,Resolved Fast,11,207
+SUNBIRD PARK,Resolved Slow,Resolved Slow,17,207
+SUNBIRD PARK,Resolved Slow,Unresolved,3,207
+SUNBIRD PARK,Unresolved,Resolved Fast,2,207
+SUNBIRD PARK,Unresolved,Resolved Slow,14,207
+SUNBIRD PARK,Unresolved,Unresolved,6,207
+SUNNINGDALE,Resolved Fast,Resolved Fast,436,1359
+SUNNINGDALE,Resolved Fast,Resolved Slow,370,1359
+SUNNINGDALE,Resolved Fast,Unresolved,34,1359
+SUNNINGDALE,Resolved Slow,Resolved Fast,105,1359
+SUNNINGDALE,Resolved Slow,Resolved Slow,104,1359
+SUNNINGDALE,Resolved Slow,Unresolved,12,1359
+SUNNINGDALE,Unresolved,Resolved Fast,30,1359
+SUNNINGDALE,Unresolved,Resolved Slow,150,1359
+SUNNINGDALE,Unresolved,Unresolved,118,1359
+SUNNYDALE,Resolved Fast,Resolved Fast,939,1484
+SUNNYDALE,Resolved Fast,Resolved Slow,165,1484
+SUNNYDALE,Resolved Fast,Unresolved,29,1484
+SUNNYDALE,Resolved Slow,Resolved Fast,131,1484
+SUNNYDALE,Resolved Slow,Resolved Slow,45,1484
+SUNNYDALE,Resolved Slow,Unresolved,6,1484
+SUNNYDALE,Unresolved,Resolved Fast,48,1484
+SUNNYDALE,Unresolved,Resolved Slow,90,1484
+SUNNYDALE,Unresolved,Unresolved,31,1484
+SUNSET BEACH,Resolved Fast,Resolved Fast,232,398
+SUNSET BEACH,Resolved Fast,Resolved Slow,57,398
+SUNSET BEACH,Resolved Fast,Unresolved,6,398
+SUNSET BEACH,Resolved Slow,Resolved Fast,33,398
+SUNSET BEACH,Resolved Slow,Resolved Slow,18,398
+SUNSET BEACH,Resolved Slow,Unresolved,5,398
+SUNSET BEACH,Unresolved,Resolved Fast,12,398
+SUNSET BEACH,Unresolved,Resolved Slow,14,398
+SUNSET BEACH,Unresolved,Unresolved,21,398
+SURREY ESTATE,Resolved Fast,Resolved Fast,240,515
+SURREY ESTATE,Resolved Fast,Resolved Slow,74,515
+SURREY ESTATE,Resolved Fast,Unresolved,23,515
+SURREY ESTATE,Resolved Slow,Resolved Fast,52,515
+SURREY ESTATE,Resolved Slow,Resolved Slow,24,515
+SURREY ESTATE,Resolved Slow,Unresolved,15,515
+SURREY ESTATE,Unresolved,Resolved Fast,18,515
+SURREY ESTATE,Unresolved,Resolved Slow,36,515
+SURREY ESTATE,Unresolved,Unresolved,33,515
+SYBRAND PARK,Resolved Fast,Resolved Fast,339,499
+SYBRAND PARK,Resolved Fast,Resolved Slow,79,499
+SYBRAND PARK,Resolved Fast,Unresolved,5,499
+SYBRAND PARK,Resolved Slow,Resolved Fast,26,499
+SYBRAND PARK,Resolved Slow,Resolved Slow,8,499
+SYBRAND PARK,Resolved Slow,Unresolved,8,499
+SYBRAND PARK,Unresolved,Resolved Fast,14,499
+SYBRAND PARK,Unresolved,Resolved Slow,15,499
+SYBRAND PARK,Unresolved,Unresolved,5,499
+Site C,Resolved Fast,Resolved Fast,111,293
+Site C,Resolved Fast,Resolved Slow,68,293
+Site C,Resolved Fast,Unresolved,4,293
+Site C,Resolved Slow,Resolved Fast,43,293
+Site C,Resolved Slow,Resolved Slow,19,293
+Site C,Resolved Slow,Unresolved,4,293
+Site C,Unresolved,Resolved Fast,19,293
+Site C,Unresolved,Resolved Slow,11,293
+Site C,Unresolved,Unresolved,14,293
+TABLE VIEW,Resolved Fast,Resolved Fast,798,2097
+TABLE VIEW,Resolved Fast,Resolved Slow,448,2097
+TABLE VIEW,Resolved Fast,Unresolved,35,2097
+TABLE VIEW,Resolved Slow,Resolved Fast,188,2097
+TABLE VIEW,Resolved Slow,Resolved Slow,154,2097
+TABLE VIEW,Resolved Slow,Unresolved,24,2097
+TABLE VIEW,Unresolved,Resolved Fast,80,2097
+TABLE VIEW,Unresolved,Resolved Slow,256,2097
+TABLE VIEW,Unresolved,Unresolved,114,2097
+TAFELSIG,Resolved Fast,Resolved Fast,2182,4835
+TAFELSIG,Resolved Fast,Resolved Slow,963,4835
+TAFELSIG,Resolved Fast,Unresolved,133,4835
+TAFELSIG,Resolved Slow,Resolved Fast,474,4835
+TAFELSIG,Resolved Slow,Resolved Slow,303,4835
+TAFELSIG,Resolved Slow,Unresolved,64,4835
+TAFELSIG,Unresolved,Resolved Fast,174,4835
+TAFELSIG,Unresolved,Resolved Slow,405,4835
+TAFELSIG,Unresolved,Unresolved,137,4835
+TAMBOERSKLOOF,Resolved Fast,Resolved Fast,271,587
+TAMBOERSKLOOF,Resolved Fast,Resolved Slow,87,587
+TAMBOERSKLOOF,Resolved Fast,Unresolved,19,587
+TAMBOERSKLOOF,Resolved Slow,Resolved Fast,69,587
+TAMBOERSKLOOF,Resolved Slow,Resolved Slow,46,587
+TAMBOERSKLOOF,Resolved Slow,Unresolved,9,587
+TAMBOERSKLOOF,Unresolved,Resolved Fast,19,587
+TAMBOERSKLOOF,Unresolved,Resolved Slow,32,587
+TAMBOERSKLOOF,Unresolved,Unresolved,35,587
+THE CONIFERS,Resolved Fast,Resolved Fast,91,202
+THE CONIFERS,Resolved Fast,Resolved Slow,71,202
+THE CONIFERS,Resolved Fast,Unresolved,7,202
+THE CONIFERS,Resolved Slow,Resolved Fast,3,202
+THE CONIFERS,Resolved Slow,Resolved Slow,11,202
+THE CONIFERS,Resolved Slow,Unresolved,1,202
+THE CONIFERS,Unresolved,Resolved Slow,9,202
+THE CONIFERS,Unresolved,Unresolved,9,202
+THE HAGUE,Resolved Fast,Resolved Fast,425,686
+THE HAGUE,Resolved Fast,Resolved Slow,57,686
+THE HAGUE,Resolved Fast,Unresolved,11,686
+THE HAGUE,Resolved Slow,Resolved Fast,96,686
+THE HAGUE,Resolved Slow,Resolved Slow,25,686
+THE HAGUE,Resolved Slow,Unresolved,7,686
+THE HAGUE,Unresolved,Resolved Fast,20,686
+THE HAGUE,Unresolved,Resolved Slow,35,686
+THE HAGUE,Unresolved,Unresolved,10,686
+THEMBOKWEZI,Resolved Fast,Resolved Fast,99,203
+THEMBOKWEZI,Resolved Fast,Resolved Slow,42,203
+THEMBOKWEZI,Resolved Fast,Unresolved,1,203
+THEMBOKWEZI,Resolved Slow,Resolved Fast,12,203
+THEMBOKWEZI,Resolved Slow,Resolved Slow,25,203
+THEMBOKWEZI,Resolved Slow,Unresolved,3,203
+THEMBOKWEZI,Unresolved,Resolved Fast,5,203
+THEMBOKWEZI,Unresolved,Resolved Slow,12,203
+THEMBOKWEZI,Unresolved,Unresolved,4,203
+THORNTON,Resolved Fast,Resolved Fast,327,687
+THORNTON,Resolved Fast,Resolved Slow,104,687
+THORNTON,Resolved Fast,Unresolved,48,687
+THORNTON,Resolved Slow,Resolved Fast,72,687
+THORNTON,Resolved Slow,Resolved Slow,50,687
+THORNTON,Resolved Slow,Unresolved,15,687
+THORNTON,Unresolved,Resolved Fast,15,687
+THORNTON,Unresolved,Resolved Slow,24,687
+THORNTON,Unresolved,Unresolved,32,687
+THREE ANCHOR BAY,Resolved Fast,Resolved Fast,187,356
+THREE ANCHOR BAY,Resolved Fast,Resolved Slow,55,356
+THREE ANCHOR BAY,Resolved Fast,Unresolved,19,356
+THREE ANCHOR BAY,Resolved Slow,Resolved Fast,37,356
+THREE ANCHOR BAY,Resolved Slow,Resolved Slow,17,356
+THREE ANCHOR BAY,Resolved Slow,Unresolved,3,356
+THREE ANCHOR BAY,Unresolved,Resolved Fast,12,356
+THREE ANCHOR BAY,Unresolved,Resolved Slow,11,356
+THREE ANCHOR BAY,Unresolved,Unresolved,15,356
+TIJGERHOF,Resolved Fast,Resolved Fast,367,605
+TIJGERHOF,Resolved Fast,Resolved Slow,43,605
+TIJGERHOF,Resolved Fast,Unresolved,11,605
+TIJGERHOF,Resolved Slow,Resolved Fast,59,605
+TIJGERHOF,Resolved Slow,Resolved Slow,40,605
+TIJGERHOF,Resolved Slow,Unresolved,5,605
+TIJGERHOF,Unresolved,Resolved Fast,16,605
+TIJGERHOF,Unresolved,Resolved Slow,41,605
+TIJGERHOF,Unresolved,Unresolved,23,605
+TOKAI,Resolved Fast,Resolved Fast,383,875
+TOKAI,Resolved Fast,Resolved Slow,196,875
+TOKAI,Resolved Fast,Unresolved,17,875
+TOKAI,Resolved Slow,Resolved Fast,56,875
+TOKAI,Resolved Slow,Resolved Slow,50,875
+TOKAI,Resolved Slow,Unresolved,16,875
+TOKAI,Unresolved,Resolved Fast,46,875
+TOKAI,Unresolved,Resolved Slow,85,875
+TOKAI,Unresolved,Unresolved,26,875
+TOWNSEND ESTATE,Resolved Fast,Resolved Fast,655,1189
+TOWNSEND ESTATE,Resolved Fast,Resolved Slow,160,1189
+TOWNSEND ESTATE,Resolved Fast,Unresolved,54,1189
+TOWNSEND ESTATE,Resolved Slow,Resolved Fast,72,1189
+TOWNSEND ESTATE,Resolved Slow,Resolved Slow,34,1189
+TOWNSEND ESTATE,Resolved Slow,Unresolved,25,1189
+TOWNSEND ESTATE,Unresolved,Resolved Fast,30,1189
+TOWNSEND ESTATE,Unresolved,Resolved Slow,66,1189
+TOWNSEND ESTATE,Unresolved,Unresolved,93,1189
+TUSCANY GLEN,Resolved Fast,Resolved Fast,128,277
+TUSCANY GLEN,Resolved Fast,Resolved Slow,87,277
+TUSCANY GLEN,Resolved Fast,Unresolved,7,277
+TUSCANY GLEN,Resolved Slow,Resolved Fast,10,277
+TUSCANY GLEN,Resolved Slow,Resolved Slow,22,277
+TUSCANY GLEN,Resolved Slow,Unresolved,3,277
+TUSCANY GLEN,Unresolved,Resolved Slow,11,277
+TUSCANY GLEN,Unresolved,Unresolved,9,277
+TYGERDAL,Resolved Fast,Resolved Fast,140,354
+TYGERDAL,Resolved Fast,Resolved Slow,59,354
+TYGERDAL,Resolved Fast,Unresolved,16,354
+TYGERDAL,Resolved Slow,Resolved Fast,29,354
+TYGERDAL,Resolved Slow,Resolved Slow,26,354
+TYGERDAL,Resolved Slow,Unresolved,12,354
+TYGERDAL,Unresolved,Resolved Fast,15,354
+TYGERDAL,Unresolved,Resolved Slow,26,354
+TYGERDAL,Unresolved,Unresolved,31,354
+UITSIG,Resolved Fast,Resolved Fast,297,1088
+UITSIG,Resolved Fast,Resolved Slow,129,1088
+UITSIG,Resolved Fast,Unresolved,115,1088
+UITSIG,Resolved Slow,Resolved Fast,42,1088
+UITSIG,Resolved Slow,Resolved Slow,27,1088
+UITSIG,Resolved Slow,Unresolved,141,1088
+UITSIG,Unresolved,Resolved Fast,13,1088
+UITSIG,Unresolved,Resolved Slow,21,1088
+UITSIG,Unresolved,Unresolved,303,1088
+UITZICHT,Resolved Fast,Resolved Fast,198,406
+UITZICHT,Resolved Fast,Resolved Slow,64,406
+UITZICHT,Resolved Fast,Unresolved,21,406
+UITZICHT,Resolved Slow,Resolved Fast,36,406
+UITZICHT,Resolved Slow,Resolved Slow,15,406
+UITZICHT,Resolved Slow,Unresolved,5,406
+UITZICHT,Unresolved,Resolved Fast,11,406
+UITZICHT,Unresolved,Resolved Slow,36,406
+UITZICHT,Unresolved,Unresolved,20,406
+UMRHABULO TRIANGLE,Resolved Fast,Resolved Fast,462,970
+UMRHABULO TRIANGLE,Resolved Fast,Resolved Slow,152,970
+UMRHABULO TRIANGLE,Resolved Fast,Unresolved,18,970
+UMRHABULO TRIANGLE,Resolved Slow,Resolved Fast,92,970
+UMRHABULO TRIANGLE,Resolved Slow,Resolved Slow,69,970
+UMRHABULO TRIANGLE,Resolved Slow,Unresolved,7,970
+UMRHABULO TRIANGLE,Unresolved,Resolved Fast,22,970
+UMRHABULO TRIANGLE,Unresolved,Resolved Slow,110,970
+UMRHABULO TRIANGLE,Unresolved,Unresolved,38,970
+VALHALLA PARK,Resolved Fast,Resolved Fast,346,900
+VALHALLA PARK,Resolved Fast,Resolved Slow,67,900
+VALHALLA PARK,Resolved Fast,Unresolved,44,900
+VALHALLA PARK,Resolved Slow,Resolved Fast,74,900
+VALHALLA PARK,Resolved Slow,Resolved Slow,84,900
+VALHALLA PARK,Resolved Slow,Unresolved,69,900
+VALHALLA PARK,Unresolved,Resolved Fast,42,900
+VALHALLA PARK,Unresolved,Resolved Slow,37,900
+VALHALLA PARK,Unresolved,Unresolved,137,900
+VAN DER STEL,Resolved Fast,Resolved Fast,113,259
+VAN DER STEL,Resolved Fast,Resolved Slow,76,259
+VAN DER STEL,Resolved Fast,Unresolved,8,259
+VAN DER STEL,Resolved Slow,Resolved Fast,10,259
+VAN DER STEL,Resolved Slow,Resolved Slow,22,259
+VAN DER STEL,Resolved Slow,Unresolved,2,259
+VAN DER STEL,Unresolved,Resolved Fast,2,259
+VAN DER STEL,Unresolved,Resolved Slow,12,259
+VAN DER STEL,Unresolved,Unresolved,14,259
+VAN RIEBEECKSHOF,Resolved Fast,Resolved Fast,53,209
+VAN RIEBEECKSHOF,Resolved Fast,Resolved Slow,59,209
+VAN RIEBEECKSHOF,Resolved Fast,Unresolved,7,209
+VAN RIEBEECKSHOF,Resolved Slow,Resolved Fast,10,209
+VAN RIEBEECKSHOF,Resolved Slow,Resolved Slow,18,209
+VAN RIEBEECKSHOF,Resolved Slow,Unresolved,1,209
+VAN RIEBEECKSHOF,Unresolved,Resolved Fast,5,209
+VAN RIEBEECKSHOF,Unresolved,Resolved Slow,26,209
+VAN RIEBEECKSHOF,Unresolved,Unresolved,30,209
+VASCO ESTATE,Resolved Fast,Resolved Fast,512,936
+VASCO ESTATE,Resolved Fast,Resolved Slow,76,936
+VASCO ESTATE,Resolved Fast,Unresolved,61,936
+VASCO ESTATE,Resolved Slow,Resolved Fast,67,936
+VASCO ESTATE,Resolved Slow,Resolved Slow,37,936
+VASCO ESTATE,Resolved Slow,Unresolved,26,936
+VASCO ESTATE,Unresolved,Resolved Fast,28,936
+VASCO ESTATE,Unresolved,Resolved Slow,52,936
+VASCO ESTATE,Unresolved,Unresolved,77,936
+VICTORIA MXENGE,Resolved Fast,Resolved Fast,259,562
+VICTORIA MXENGE,Resolved Fast,Resolved Slow,43,562
+VICTORIA MXENGE,Resolved Fast,Unresolved,14,562
+VICTORIA MXENGE,Resolved Slow,Resolved Fast,73,562
+VICTORIA MXENGE,Resolved Slow,Resolved Slow,16,562
+VICTORIA MXENGE,Resolved Slow,Unresolved,15,562
+VICTORIA MXENGE,Unresolved,Resolved Fast,26,562
+VICTORIA MXENGE,Unresolved,Resolved Slow,54,562
+VICTORIA MXENGE,Unresolved,Unresolved,62,562
+VICTORIA PARK,Resolved Fast,Resolved Fast,149,242
+VICTORIA PARK,Resolved Fast,Resolved Slow,25,242
+VICTORIA PARK,Resolved Fast,Unresolved,6,242
+VICTORIA PARK,Resolved Slow,Resolved Fast,20,242
+VICTORIA PARK,Resolved Slow,Resolved Slow,23,242
+VICTORIA PARK,Resolved Slow,Unresolved,1,242
+VICTORIA PARK,Unresolved,Resolved Fast,1,242
+VICTORIA PARK,Unresolved,Resolved Slow,10,242
+VICTORIA PARK,Unresolved,Unresolved,7,242
+VIERLANDEN,Resolved Fast,Resolved Fast,155,305
+VIERLANDEN,Resolved Fast,Resolved Slow,67,305
+VIERLANDEN,Resolved Fast,Unresolved,11,305
+VIERLANDEN,Resolved Slow,Resolved Fast,19,305
+VIERLANDEN,Resolved Slow,Resolved Slow,13,305
+VIERLANDEN,Resolved Slow,Unresolved,2,305
+VIERLANDEN,Unresolved,Resolved Fast,4,305
+VIERLANDEN,Unresolved,Resolved Slow,24,305
+VIERLANDEN,Unresolved,Unresolved,10,305
+VOORBRUG,Resolved Fast,Resolved Fast,410,666
+VOORBRUG,Resolved Fast,Resolved Slow,55,666
+VOORBRUG,Resolved Fast,Unresolved,7,666
+VOORBRUG,Resolved Slow,Resolved Fast,76,666
+VOORBRUG,Resolved Slow,Resolved Slow,37,666
+VOORBRUG,Resolved Slow,Unresolved,2,666
+VOORBRUG,Unresolved,Resolved Fast,27,666
+VOORBRUG,Unresolved,Resolved Slow,45,666
+VOORBRUG,Unresolved,Unresolved,7,666
+VREDEHOEK,Resolved Fast,Resolved Fast,492,1051
+VREDEHOEK,Resolved Fast,Resolved Slow,116,1051
+VREDEHOEK,Resolved Fast,Unresolved,97,1051
+VREDEHOEK,Resolved Slow,Resolved Fast,89,1051
+VREDEHOEK,Resolved Slow,Resolved Slow,48,1051
+VREDEHOEK,Resolved Slow,Unresolved,22,1051
+VREDEHOEK,Unresolved,Resolved Fast,36,1051
+VREDEHOEK,Unresolved,Resolved Slow,72,1051
+VREDEHOEK,Unresolved,Unresolved,79,1051
+VREDEKLOOF,Resolved Fast,Resolved Fast,287,496
+VREDEKLOOF,Resolved Fast,Resolved Slow,75,496
+VREDEKLOOF,Resolved Fast,Unresolved,21,496
+VREDEKLOOF,Resolved Slow,Resolved Fast,33,496
+VREDEKLOOF,Resolved Slow,Resolved Slow,22,496
+VREDEKLOOF,Resolved Slow,Unresolved,4,496
+VREDEKLOOF,Unresolved,Resolved Fast,14,496
+VREDEKLOOF,Unresolved,Resolved Slow,25,496
+VREDEKLOOF,Unresolved,Unresolved,15,496
+VREDEKLOOF EAST,Resolved Fast,Resolved Fast,157,319
+VREDEKLOOF EAST,Resolved Fast,Resolved Slow,44,319
+VREDEKLOOF EAST,Resolved Fast,Unresolved,16,319
+VREDEKLOOF EAST,Resolved Slow,Resolved Fast,33,319
+VREDEKLOOF EAST,Resolved Slow,Resolved Slow,17,319
+VREDEKLOOF EAST,Resolved Slow,Unresolved,21,319
+VREDEKLOOF EAST,Unresolved,Resolved Fast,8,319
+VREDEKLOOF EAST,Unresolved,Resolved Slow,15,319
+VREDEKLOOF EAST,Unresolved,Unresolved,8,319
+VRYGROND,Resolved Fast,Resolved Fast,377,634
+VRYGROND,Resolved Fast,Resolved Slow,63,634
+VRYGROND,Resolved Fast,Unresolved,17,634
+VRYGROND,Resolved Slow,Resolved Fast,51,634
+VRYGROND,Resolved Slow,Resolved Slow,35,634
+VRYGROND,Resolved Slow,Unresolved,8,634
+VRYGROND,Unresolved,Resolved Fast,28,634
+VRYGROND,Unresolved,Resolved Slow,34,634
+VRYGROND,Unresolved,Unresolved,21,634
+WALLACEDENE,Resolved Fast,Resolved Fast,225,946
+WALLACEDENE,Resolved Fast,Resolved Slow,462,946
+WALLACEDENE,Resolved Fast,Unresolved,4,946
+WALLACEDENE,Resolved Slow,Resolved Fast,100,946
+WALLACEDENE,Resolved Slow,Resolved Slow,74,946
+WALLACEDENE,Resolved Slow,Unresolved,2,946
+WALLACEDENE,Unresolved,Resolved Fast,23,946
+WALLACEDENE,Unresolved,Resolved Slow,50,946
+WALLACEDENE,Unresolved,Unresolved,6,946
+WELGELEGEN,Resolved Fast,Resolved Fast,279,635
+WELGELEGEN,Resolved Fast,Resolved Slow,71,635
+WELGELEGEN,Resolved Fast,Unresolved,40,635
+WELGELEGEN,Resolved Slow,Resolved Fast,65,635
+WELGELEGEN,Resolved Slow,Resolved Slow,32,635
+WELGELEGEN,Resolved Slow,Unresolved,20,635
+WELGELEGEN,Unresolved,Resolved Fast,23,635
+WELGELEGEN,Unresolved,Resolved Slow,48,635
+WELGELEGEN,Unresolved,Unresolved,57,635
+WELGEMOED,Resolved Fast,Resolved Fast,227,548
+WELGEMOED,Resolved Fast,Resolved Slow,135,548
+WELGEMOED,Resolved Fast,Unresolved,11,548
+WELGEMOED,Resolved Slow,Resolved Fast,39,548
+WELGEMOED,Resolved Slow,Resolved Slow,34,548
+WELGEMOED,Resolved Slow,Unresolved,4,548
+WELGEMOED,Unresolved,Resolved Fast,6,548
+WELGEMOED,Unresolved,Resolved Slow,58,548
+WELGEMOED,Unresolved,Unresolved,34,548
+WELTEVREDEN VALLEY,Resolved Fast,Resolved Fast,288,455
+WELTEVREDEN VALLEY,Resolved Fast,Resolved Slow,51,455
+WELTEVREDEN VALLEY,Resolved Fast,Unresolved,12,455
+WELTEVREDEN VALLEY,Resolved Slow,Resolved Fast,8,455
+WELTEVREDEN VALLEY,Resolved Slow,Resolved Slow,19,455
+WELTEVREDEN VALLEY,Resolved Slow,Unresolved,10,455
+WELTEVREDEN VALLEY,Unresolved,Resolved Fast,28,455
+WELTEVREDEN VALLEY,Unresolved,Resolved Slow,23,455
+WELTEVREDEN VALLEY,Unresolved,Unresolved,16,455
+WESBANK,Resolved Fast,Resolved Fast,268,880
+WESBANK,Resolved Fast,Resolved Slow,335,880
+WESBANK,Resolved Fast,Unresolved,8,880
+WESBANK,Resolved Slow,Resolved Fast,67,880
+WESBANK,Resolved Slow,Resolved Slow,115,880
+WESBANK,Resolved Slow,Unresolved,3,880
+WESBANK,Unresolved,Resolved Fast,6,880
+WESBANK,Unresolved,Resolved Slow,70,880
+WESBANK,Unresolved,Unresolved,8,880
+WEST BEACH,Resolved Fast,Resolved Fast,119,296
+WEST BEACH,Resolved Fast,Resolved Slow,55,296
+WEST BEACH,Resolved Fast,Unresolved,13,296
+WEST BEACH,Resolved Slow,Resolved Fast,35,296
+WEST BEACH,Resolved Slow,Resolved Slow,25,296
+WEST BEACH,Resolved Slow,Unresolved,3,296
+WEST BEACH,Unresolved,Resolved Fast,14,296
+WEST BEACH,Unresolved,Resolved Slow,21,296
+WEST BEACH,Unresolved,Unresolved,11,296
+WESTGATE,Resolved Fast,Resolved Fast,130,279
+WESTGATE,Resolved Fast,Resolved Slow,47,279
+WESTGATE,Resolved Fast,Unresolved,10,279
+WESTGATE,Resolved Slow,Resolved Fast,26,279
+WESTGATE,Resolved Slow,Resolved Slow,33,279
+WESTGATE,Resolved Slow,Unresolved,3,279
+WESTGATE,Unresolved,Resolved Fast,6,279
+WESTGATE,Unresolved,Resolved Slow,14,279
+WESTGATE,Unresolved,Unresolved,10,279
+WESTLAKE,Resolved Fast,Resolved Fast,189,362
+WESTLAKE,Resolved Fast,Resolved Slow,50,362
+WESTLAKE,Resolved Fast,Unresolved,23,362
+WESTLAKE,Resolved Slow,Resolved Fast,34,362
+WESTLAKE,Resolved Slow,Resolved Slow,10,362
+WESTLAKE,Resolved Slow,Unresolved,10,362
+WESTLAKE,Unresolved,Resolved Fast,13,362
+WESTLAKE,Unresolved,Resolved Slow,25,362
+WESTLAKE,Unresolved,Unresolved,8,362
+WESTRIDGE,Resolved Fast,Resolved Fast,86,297
+WESTRIDGE,Resolved Fast,Resolved Slow,122,297
+WESTRIDGE,Resolved Fast,Unresolved,8,297
+WESTRIDGE,Resolved Slow,Resolved Fast,20,297
+WESTRIDGE,Resolved Slow,Resolved Slow,20,297
+WESTRIDGE,Resolved Slow,Unresolved,3,297
+WESTRIDGE,Unresolved,Resolved Fast,3,297
+WESTRIDGE,Unresolved,Resolved Slow,21,297
+WESTRIDGE,Unresolved,Unresolved,14,297
+WESTRIDGE - MITCHELLS PLA,Resolved Fast,Resolved Fast,245,384
+WESTRIDGE - MITCHELLS PLA,Resolved Fast,Resolved Slow,38,384
+WESTRIDGE - MITCHELLS PLA,Resolved Fast,Unresolved,6,384
+WESTRIDGE - MITCHELLS PLA,Resolved Slow,Resolved Fast,26,384
+WESTRIDGE - MITCHELLS PLA,Resolved Slow,Resolved Slow,24,384
+WESTRIDGE - MITCHELLS PLA,Resolved Slow,Unresolved,2,384
+WESTRIDGE - MITCHELLS PLA,Unresolved,Resolved Fast,10,384
+WESTRIDGE - MITCHELLS PLA,Unresolved,Resolved Slow,26,384
+WESTRIDGE - MITCHELLS PLA,Unresolved,Unresolved,7,384
+WESTRIDGE - MITCHELLS PLAIN,Resolved Fast,Resolved Fast,277,781
+WESTRIDGE - MITCHELLS PLAIN,Resolved Fast,Resolved Slow,243,781
+WESTRIDGE - MITCHELLS PLAIN,Resolved Fast,Unresolved,15,781
+WESTRIDGE - MITCHELLS PLAIN,Resolved Slow,Resolved Fast,55,781
+WESTRIDGE - MITCHELLS PLAIN,Resolved Slow,Resolved Slow,70,781
+WESTRIDGE - MITCHELLS PLAIN,Resolved Slow,Unresolved,5,781
+WESTRIDGE - MITCHELLS PLAIN,Unresolved,Resolved Fast,40,781
+WESTRIDGE - MITCHELLS PLAIN,Unresolved,Resolved Slow,64,781
+WESTRIDGE - MITCHELLS PLAIN,Unresolved,Unresolved,12,781
+WETTON,Resolved Fast,Resolved Fast,427,803
+WETTON,Resolved Fast,Resolved Slow,128,803
+WETTON,Resolved Fast,Unresolved,36,803
+WETTON,Resolved Slow,Resolved Fast,32,803
+WETTON,Resolved Slow,Resolved Slow,45,803
+WETTON,Resolved Slow,Unresolved,16,803
+WETTON,Unresolved,Resolved Fast,24,803
+WETTON,Unresolved,Resolved Slow,66,803
+WETTON,Unresolved,Unresolved,29,803
+WIMBLEDON ESTATE,Resolved Fast,Resolved Fast,125,273
+WIMBLEDON ESTATE,Resolved Fast,Resolved Slow,80,273
+WIMBLEDON ESTATE,Resolved Fast,Unresolved,4,273
+WIMBLEDON ESTATE,Resolved Slow,Resolved Fast,13,273
+WIMBLEDON ESTATE,Resolved Slow,Resolved Slow,18,273
+WIMBLEDON ESTATE,Resolved Slow,Unresolved,8,273
+WIMBLEDON ESTATE,Unresolved,Resolved Fast,2,273
+WIMBLEDON ESTATE,Unresolved,Resolved Slow,15,273
+WIMBLEDON ESTATE,Unresolved,Unresolved,8,273
+WINDERMERE,Resolved Fast,Resolved Fast,671,1162
+WINDERMERE,Resolved Fast,Resolved Slow,136,1162
+WINDERMERE,Resolved Fast,Unresolved,34,1162
+WINDERMERE,Resolved Slow,Resolved Fast,87,1162
+WINDERMERE,Resolved Slow,Resolved Slow,54,1162
+WINDERMERE,Resolved Slow,Unresolved,30,1162
+WINDERMERE,Unresolved,Resolved Fast,22,1162
+WINDERMERE,Unresolved,Resolved Slow,53,1162
+WINDERMERE,Unresolved,Unresolved,75,1162
+WINDSOR ESTATE,Resolved Fast,Resolved Fast,163,325
+WINDSOR ESTATE,Resolved Fast,Resolved Slow,52,325
+WINDSOR ESTATE,Resolved Fast,Unresolved,9,325
+WINDSOR ESTATE,Resolved Slow,Resolved Fast,50,325
+WINDSOR ESTATE,Resolved Slow,Resolved Slow,12,325
+WINDSOR ESTATE,Resolved Slow,Unresolved,5,325
+WINDSOR ESTATE,Unresolved,Resolved Fast,15,325
+WINDSOR ESTATE,Unresolved,Resolved Slow,11,325
+WINDSOR ESTATE,Unresolved,Unresolved,8,325
+WINDSOR PARK ESTATE,Resolved Fast,Resolved Fast,222,423
+WINDSOR PARK ESTATE,Resolved Fast,Resolved Slow,55,423
+WINDSOR PARK ESTATE,Resolved Fast,Unresolved,17,423
+WINDSOR PARK ESTATE,Resolved Slow,Resolved Fast,50,423
+WINDSOR PARK ESTATE,Resolved Slow,Resolved Slow,15,423
+WINDSOR PARK ESTATE,Resolved Slow,Unresolved,2,423
+WINDSOR PARK ESTATE,Unresolved,Resolved Fast,14,423
+WINDSOR PARK ESTATE,Unresolved,Resolved Slow,36,423
+WINDSOR PARK ESTATE,Unresolved,Unresolved,12,423
+WITSAND,Resolved Fast,Resolved Fast,82,251
+WITSAND,Resolved Fast,Resolved Slow,33,251
+WITSAND,Resolved Fast,Unresolved,2,251
+WITSAND,Resolved Slow,Resolved Fast,64,251
+WITSAND,Resolved Slow,Resolved Slow,11,251
+WITSAND,Resolved Slow,Unresolved,3,251
+WITSAND,Unresolved,Resolved Fast,25,251
+WITSAND,Unresolved,Resolved Slow,21,251
+WITSAND,Unresolved,Unresolved,10,251
+WOODLANDS,Resolved Fast,Resolved Fast,401,1000
+WOODLANDS,Resolved Fast,Resolved Slow,224,1000
+WOODLANDS,Resolved Fast,Unresolved,37,1000
+WOODLANDS,Resolved Slow,Resolved Fast,75,1000
+WOODLANDS,Resolved Slow,Resolved Slow,92,1000
+WOODLANDS,Resolved Slow,Unresolved,35,1000
+WOODLANDS,Unresolved,Resolved Fast,28,1000
+WOODLANDS,Unresolved,Resolved Slow,61,1000
+WOODLANDS,Unresolved,Unresolved,47,1000
+WOODSTOCK,Resolved Fast,Resolved Fast,1386,3489
+WOODSTOCK,Resolved Fast,Resolved Slow,358,3489
+WOODSTOCK,Resolved Fast,Unresolved,202,3489
+WOODSTOCK,Resolved Slow,Resolved Fast,217,3489
+WOODSTOCK,Resolved Slow,Resolved Slow,565,3489
+WOODSTOCK,Resolved Slow,Unresolved,53,3489
+WOODSTOCK,Unresolved,Resolved Fast,67,3489
+WOODSTOCK,Unresolved,Resolved Slow,508,3489
+WOODSTOCK,Unresolved,Unresolved,133,3489
+WYNBERG,Resolved Fast,Resolved Fast,1417,2744
+WYNBERG,Resolved Fast,Resolved Slow,401,2744
+WYNBERG,Resolved Fast,Unresolved,127,2744
+WYNBERG,Resolved Slow,Resolved Fast,187,2744
+WYNBERG,Resolved Slow,Resolved Slow,149,2744
+WYNBERG,Resolved Slow,Unresolved,72,2744
+WYNBERG,Unresolved,Resolved Fast,89,2744
+WYNBERG,Unresolved,Resolved Slow,155,2744
+WYNBERG,Unresolved,Unresolved,147,2744
+Woodstock,Resolved Fast,Resolved Fast,111,230
+Woodstock,Resolved Fast,Resolved Slow,43,230
+Woodstock,Resolved Fast,Unresolved,25,230
+Woodstock,Resolved Slow,Resolved Fast,16,230
+Woodstock,Resolved Slow,Resolved Slow,6,230
+Woodstock,Resolved Slow,Unresolved,4,230
+Woodstock,Unresolved,Resolved Fast,14,230
+Woodstock,Unresolved,Resolved Slow,6,230
+Woodstock,Unresolved,Unresolved,5,230
+ZEEKOEVLEI,Resolved Fast,Resolved Fast,199,457
+ZEEKOEVLEI,Resolved Fast,Resolved Slow,141,457
+ZEEKOEVLEI,Resolved Fast,Unresolved,22,457
+ZEEKOEVLEI,Resolved Slow,Resolved Fast,15,457
+ZEEKOEVLEI,Resolved Slow,Resolved Slow,24,457
+ZEEKOEVLEI,Resolved Slow,Unresolved,11,457
+ZEEKOEVLEI,Unresolved,Resolved Fast,19,457
+ZEEKOEVLEI,Unresolved,Resolved Slow,14,457
+ZEEKOEVLEI,Unresolved,Unresolved,12,457

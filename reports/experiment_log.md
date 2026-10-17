@@ -38,16 +38,17 @@ This log lists the experiments that were actually run and the files that hold th
 | E11 | Multilayer perceptron retrained with the Phase 5 procedure, then scored once on the locked test | Comparator named from the Phase 5 validation table before the test scores were read. Retrained validation macro-F1 matched Phase 5. | `results/tables/07_comparator_retrained_validation.csv`, `results/tables/07_comparator_locked_test_summary.csv` | Scored once |
 | E12 | McNemar comparison of E8 and E11 on the same 422,033 rows | Two-sided test of paired error rates, alpha 0.05 | `results/tables/07_mcnemar_test.csv`, `results/tables/07_paired_predictions.parquet` | Uses the two saved prediction columns |
 | E13 | Export of the frozen pipeline and a check that it reproduces the E8 labels | No new fit inside notebook 08 | `models/frozen_resolution_pipeline.joblib`, `results/tables/08_export_check.json` | Comparison only. 422,033 of 422,033 labels matched. |
+| E14 | Frozen hyperparameters with and without Work Center. The without-work-centre refit matched the saved champion validation macro-F1. | 2025 validation only. The champion file was not replaced. Work Center has no assignment time, so the higher with-work-centre score is not a logging-time result. | `results/tables/09_work_centre_comparison.csv`, `results/tables/09_work_centre_per_class.csv`, `results/tables/09_work_centre_config.json` | Not scored |
+| E15 | No new fit. One-vs-rest ROC and precision-recall curves from the E8 probabilities. | No model choice. Macro ROC-AUC and macro average precision were checked against `06_locked_test_summary.csv` and left unchanged. | `results/tables/09_per_class_ranking_locked_test.csv`, `results/figures/09_roc_per_class_locked_test.png`, `results/figures/09_pr_per_class_locked_test.png` | Uses the saved probabilities |
+| E16 | No new fit. Suburb and ward error tables from the E8 predictions joined back to the labelled file by the saved row index. | No model choice. Class metrics require a group of at least 200 rows and a class of at least 30 rows. | `results/tables/09_suburb_error_audit.csv`, `results/tables/09_ward_error_audit.csv`, `results/tables/09_geographic_audit_config.json` | Uses the saved predictions |
 
 ## Experiments that were not run
 
-- The work-centre ablation did not fit a second model. Work Center was already excluded. The recorded change is zero by construction. See the `remove_work_centre` row in `results/tables/07_ablation_summary.csv`.
+- The Phase 6 `remove_work_centre` row still did not fit a second model. E14 is the fitted comparison. E14 does not make Work Center a logging-time feature.
 - The embedding network is not an approved experiment. A lecturer has not approved that architecture in this repository.
 - No search was run for logistic regression, the multilayer perceptron, or the embedding network.
 - SMOTE was not used.
 - A dense random forest was not fit. The one-hot matrix is too large for a dense forest in this environment.
-- Per-class ROC and precision-recall curves were not saved as figures. Macro ROC-AUC and macro average precision were computed where `predict_proba` was available.
-- No suburb-level or ward-level comparison of model error was run.
 - No stakeholder interview or City review was run.
 - Notebooks 01 to 07 were not executed a second time from an empty environment during Phase 8. Their saved cell outputs are the source of the scores above. Notebook 08 was executed in Phase 8 and does not fit a model.
 
