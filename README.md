@@ -90,15 +90,15 @@ python -m src.data_loader
 
 ## Notebook order
 
-Run them in this order once each file exists. Notebooks 1 to 3 are in the repository. Notebook 2 reads the labelled file from notebook 1 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md). Notebook 3 fits a most-frequent dummy and a logistic regression on the training period only. Its written summary is [`reports/phase4_baselines.md`](reports/phase4_baselines.md).
+Run them in this order once each file exists. Notebooks 1 to 5 are in the repository. Notebook 2 reads the labelled file from notebook 1 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md). Notebook 3 fits a most-frequent dummy and a logistic regression on the training period only. Its written summary is [`reports/phase4_baselines.md`](reports/phase4_baselines.md). Notebooks 4 and 5 fit the traditional and neural models on those same partitions. Their written summary is [`reports/phase5_models.md`](reports/phase5_models.md). Notebook 5 chooses a provisional champion from validation macro-F1 and does not score the locked test.
 
 | Step | Notebook | What it will cover | Status |
 | --- | --- | --- | --- |
 | 1 | `notebooks/01_data_acquisition_and_audit.ipynb` | Source, raw file, column audit | Created |
 | 2 | `notebooks/02_exploratory_data_analysis.ipynb` | EDA and required figures | Created |
 | 3 | `notebooks/03_preprocessing_and_baselines.ipynb` | Leakage-safe features, dummy and logistic baselines | Created |
-| 4 | `notebooks/04_traditional_machine_learning.ipynb` | Logistic regression and a tree model | Not created |
-| 5 | `notebooks/05_neural_networks.ipynb` | Neural-network models in PyTorch | Not created |
+| 4 | `notebooks/04_traditional_machine_learning.ipynb` | Logistic regression and histogram gradient boosting | Created |
+| 5 | `notebooks/05_neural_networks.ipynb` | Multilayer perceptron and a pending embedding network | Created |
 | 6 | `notebooks/06_evaluation_and_optimisation.ipynb` | Comparison, overfitting, champion tuning | Not created |
 | 7 | `notebooks/07_ablation_and_statistical_testing.ipynb` | Ablations and McNemar's test | Not created |
 | 8 | `notebooks/08_final_model_export.ipynb` | Save the pipeline used by the app | Not created |
@@ -113,3 +113,5 @@ Notebook 01 builds the class from **Created On Date** and **Completed Date**. Th
 - `RANDOM_SEED` is 42.
 - Raw data is not rewritten.
 - Preprocessing that learns from data (imputation, encoding, scaling, rare-category grouping) is fit on the training period only. Validation and test rows are not resampled.
+- Class imbalance in the Phase 5 models is handled with balanced class weights. SMOTE is not used.
+- The Phase 5 provisional champion is chosen from validation macro-F1. The locked test is not scored in that phase.
