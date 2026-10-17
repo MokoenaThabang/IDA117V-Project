@@ -12,7 +12,9 @@ Checked on 17 October 2026 against the files in this repository. An open item is
 | Form screenshots | Four screenshots were captured from the running Streamlit page. | `evidence/screenshots/` |
 | Stakeholder interview | Pending. No interview has been conducted or recorded. | `reports/stakeholder_interview_guide.md` |
 | Embedding network | Lecturer approval recorded. No approval date was supplied, and the architecture was not changed. Validation macro-F1 0.481 does not beat histogram gradient boosting at 0.482, so it is not the champion. The locked test was not used. | `results/tables/05_split_metrics.csv`, `results/tables/10_embedding_champion_decision.json` |
-| Final report PDF | Exported. `reports/final_report.pdf` opens as a 26-page PDF and contains the work-centre comparison, the suburb and ward audit, the per-class curves, and the open approval items. | `reports/final_report.pdf` |
+| Logistic convergence check | The reported fit is still saga with max_iter 200. It stops at the cap with a warning. A max_iter 1000 refit also warned and had validation macro-F1 0.453, so it was not adopted and the locked test was not scored. | `results/tables/11_logistic_convergence.json` |
+| Hyperparameter search | Required and completed for the boosting champion only. No repository brief requires a search for logistic regression, the perceptron, or the embedding network, so those searches were not run. | `results/tables/06_search_summary.csv`, `reports/experiment_log.md` |
+| Final report PDF | Regenerated after the documentation reconciliation. | `reports/final_report.pdf` |
 
 Commands that reproduce the new tables and figures, from the repository root, with the labelled parquet and the saved test predictions in place:
 
@@ -21,9 +23,10 @@ python -m src.work_centre_comparison
 python -m src.geographic_error_audit
 python -m src.per_class_curves
 python -m src.embedding_experiment
+python -m src.logistic_convergence
 ```
 
-The work-centre command refits two models. The other two commands only read saved predictions.
+The work-centre command refits two models. The geographic audit and the curve command only read saved predictions. The embedding and logistic commands refit on the training period and score the 2025 validation period. They do not read the locked test.
 
 The report PDF is printed from the Markdown file. Pandoc is not installed in this environment. The export uses headless Chrome:
 
