@@ -42,11 +42,12 @@ This log lists the experiments that were actually run and the files that hold th
 | E15 | No new fit. One-vs-rest ROC and precision-recall curves from the E8 probabilities. | No model choice. Macro ROC-AUC and macro average precision were checked against `06_locked_test_summary.csv` and left unchanged. | `results/tables/09_per_class_ranking_locked_test.csv`, `results/figures/09_roc_per_class_locked_test.png`, `results/figures/09_pr_per_class_locked_test.png` | Uses the saved probabilities |
 | E16 | No new fit. Suburb and ward error tables from the E8 predictions joined back to the labelled file by the saved row index. | No model choice. Class metrics require a group of at least 200 rows and a class of at least 30 rows. | `results/tables/09_suburb_error_audit.csv`, `results/tables/09_ward_error_audit.csv`, `results/tables/09_geographic_audit_config.json` | Uses the saved predictions |
 | E17 | Approved embedding network refit. Same architecture, seed, and training-only encoder as E5. Work centre excluded. | Validation macro-F1 matched E5 at 0.480687. Histogram gradient boosting remains higher at 0.481660, so the champion is unchanged. The refit is not a second vote. | `results/tables/10_embedding_metrics.csv`, `results/tables/10_embedding_per_class.csv`, `results/tables/10_embedding_champion_decision.json`, `models/embedding_network.pt` | Not scored |
+| E18 | Saga logistic regression, same C, penalty, weights, tolerance, and seed as E2, with max_iter 1000. | Validation only. Still stopped at the cap with a convergence warning. Validation macro-F1 0.453, below the recorded 200-iteration score of 0.460, so E2 remains the reported logistic fit. | `results/tables/11_logistic_convergence.json`, `results/tables/11_logistic_convergence.csv` | Not scored |
 
 ## Experiments that were not run
 
 - The Phase 6 `remove_work_centre` row still did not fit a second model. E14 is the fitted comparison. E14 does not make Work Center a logging-time feature.
-- No search was run for logistic regression, the multilayer perceptron, or the embedding network. Approval recorded the existing embedding architecture. It did not add a search.
+- No hyperparameter search was run for logistic regression, the multilayer perceptron, or the embedding network. The repository has no marking brief that requires one. Phase 6 already searched the champion family on training-period folds. Those three models keep their pre-specified settings.
 - SMOTE was not used.
 - A dense random forest was not fit. The one-hot matrix is too large for a dense forest in this environment.
 - No stakeholder interview or City review was run.

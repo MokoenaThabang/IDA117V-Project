@@ -102,7 +102,7 @@ Notebooks 01 to 07 already contain executed outputs. They were not run again fro
 | 2 | `notebooks/02_exploratory_data_analysis.ipynb` | EDA and required figures | Created |
 | 3 | `notebooks/03_preprocessing_and_baselines.ipynb` | Leakage-safe features, dummy and logistic baselines | Created |
 | 4 | `notebooks/04_traditional_machine_learning.ipynb` | Logistic regression and histogram gradient boosting | Created |
-| 5 | `notebooks/05_neural_networks.ipynb` | Multilayer perceptron and a pending embedding network | Created |
+| 5 | `notebooks/05_neural_networks.ipynb` | Multilayer perceptron and the approved embedding network. The embedding network does not win on validation macro-F1 and has no locked-test score. | Created |
 | 6 | `notebooks/06_evaluation_and_optimisation.ipynb` | Champion tuning and one locked-test evaluation | Created |
 | 7 | `notebooks/07_ablation_and_statistical_testing.ipynb` | Ablations and McNemar's test | Created |
 | 8 | `notebooks/08_final_model_export.ipynb` | Check the saved pipeline. It does not refit. | Created |
@@ -120,7 +120,7 @@ Notebook 01 builds the class from **Created On Date** and **Completed Date**. Th
 - Class imbalance in the Phase 5 models is handled with balanced class weights. SMOTE is not used.
 - The Phase 5 provisional champion is chosen from validation macro-F1. The locked test is not scored in that phase.
 - Phase 6 tunes only that champion. The search is chronological cross-validation on the training period and optimises macro-F1. The frozen pipeline is scored once on the locked test and is not changed afterwards.
-- Work Center stays out of the model. The work-centre ablation records that exclusion and does not fit a second model.
+- Work Center stays out of the delivered model. A later sensitivity fit compared the frozen booster with and without work centre on the 2025 validation period only. It did not replace the champion.
 
 ## Prediction interface
 

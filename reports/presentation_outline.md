@@ -20,7 +20,7 @@ Predictors are complaint type, suburb, ward, subcouncil, weekday, month, and wee
 
 ## 5. Models on validation (2 minutes)
 
-Primary metric is macro-F1. The most-frequent dummy scores validation macro-F1 0.273. Logistic regression scores 0.460 and did not converge at 200 iterations. Histogram gradient boosting scores 0.482. The multilayer perceptron scores 0.476. The embedding network scores 0.481. Lecturer approval has been recorded, and it still does not choose the champion, because histogram gradient boosting scores 0.482 on the same validation rule. Show `results/figures/05_validation_comparison.png` and the MLP learning curve: training loss fell while validation loss rose.
+Primary metric is macro-F1. The most-frequent dummy scores validation macro-F1 0.273. Logistic regression scores 0.460 and did not converge at 200 iterations. A 1000-iteration check also did not converge and was not adopted. Histogram gradient boosting scores 0.482. The multilayer perceptron scores 0.476. The embedding network scores 0.481. Lecturer approval has been recorded, and it still does not choose the champion, because histogram gradient boosting scores 0.482 on the same validation rule. Show `results/figures/05_validation_comparison.png` and the MLP learning curve: training loss fell while validation loss rose.
 
 ## 6. Tuning and the one locked-test score (1 minute 30 seconds)
 
@@ -28,8 +28,8 @@ Eight random trials plus the untuned settings were scored inside 2023–2024 onl
 
 ## 7. Ablations and McNemar (1 minute 30 seconds)
 
-Removing suburb, ward, and subcouncil changes validation macro-F1 by −0.008. Turning class weights off changes it by −0.101, and Unresolved recall falls to 0.037. Work centre was already absent, so that ablation did not fit a second model. On the same 422,033 test rows, McNemar's continuity-corrected chi-square is 160.6875, p = 8.006e-37. The paired error rates differ. The macro-F1 gap versus the multilayer perceptron is −0.001. The test does not show that one model is better on every class.
+Removing suburb, ward, and subcouncil changes validation macro-F1 by −0.008. Turning class weights off changes it by −0.101, and Unresolved recall falls to 0.037. The Phase 6 work-centre row did not fit a second model. A later sensitivity fit did, on validation only, and did not replace the champion. On the same 422,033 test rows, McNemar's continuity-corrected chi-square is 160.6875, p = 8.006e-37. The paired error rates differ. The macro-F1 gap versus the multilayer perceptron is −0.001. The test does not show that one model is better on every class.
 
 ## 8. App, ethics, and what is unfinished (1 minute)
 
-The Streamlit form loads the saved pipeline and does not train. The demonstration sample is not a real case. No suburb or ward audit of model error was run. No stakeholder interview was run. The embedding network is approved and is not the delivered model. End on the recommendation: a person reviews the estimate, and the estimate is not a reason to reduce service in an area.
+The Streamlit form loads the saved pipeline and does not train. The demonstration sample is not a real case. Suburb and ward error audits have been run: `results/tables/09_suburb_error_audit.csv` and `results/tables/09_ward_error_audit.csv`. Groups below 200 rows are not evidence of geographic bias. No stakeholder interview has been recorded. The embedding network is approved, lost on validation macro-F1, and has no locked-test score. End on the recommendation: a person reviews the estimate, and the estimate is not a reason to reduce service in an area.

@@ -13,3 +13,18 @@ Ask the questions in plain language. Record the date, the role of the person, an
 7. Is there a person who should review a later version before anyone relies on it?
 
 Until those answers exist in a dated note, the project has no stakeholder validation.
+
+## Checklist for a real interview
+
+Do not fill this in with imagined answers. Leave every line blank until a person has actually been interviewed.
+
+- [ ] Date and place of the interview.
+- [ ] Role of the person, with permission to record that role.
+- [ ] Whether they agreed to be quoted.
+- [ ] Answers written in their words, one note per question above.
+- [ ] Any field they say is unknown at logging, especially work centre.
+- [ ] No resident name, address, or notification id in the note.
+- [ ] Reviewer name and the date the note was filed.
+- [ ] File the note beside this guide and change the submission checklist only after the note exists.
+
+Status: not conducted.

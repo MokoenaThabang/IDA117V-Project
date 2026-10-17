@@ -119,7 +119,7 @@ Class imbalance uses balanced weights from the training counts: Resolved Fast 0.
 
 The most-frequent dummy predicts the majority training class, Resolved Fast. On the validation period its accuracy is 0.693 and its macro-F1 is 0.273. On the locked test its accuracy is 0.680 and its macro-F1 is 0.270. Recall is 1 for Resolved Fast and 0 for the other two classes. That is the floor a useful model has to clear on macro-F1.
 
-Logistic regression uses saga, C = 1, L2, balanced class weights, max_iter 200, tolerance 0.001, and seed 42. Fit time was 247.9 seconds. The solver stopped at the iteration cap with a convergence warning. Validation scores are accuracy 0.578, macro-F1 0.460, and weighted-F1 0.630. Locked-test scores from notebook 03 are accuracy 0.577, macro-F1 0.467, and weighted-F1 0.610. Locked-test recall is 0.672 for Resolved Fast, 0.454 for Resolved Slow, and 0.303 for Unresolved. Resolved Slow precision is 0.202.
+Logistic regression uses saga, C = 1, L2, balanced class weights, max_iter 200, tolerance 0.001, and seed 42. Fit time was 247.9 seconds. The solver stopped at the iteration cap with a convergence warning. The one-hot columns are 0/1 and the weekend indicator is standardised on the training rows, so the warning is the iteration budget on 2,616,595 sparse rows, not a missing numeric scaler. A later refit with the same settings and max_iter 1000 also stopped at the cap, still with a convergence warning, and its validation macro-F1 was 0.453. That run was not adopted. The reported logistic scores remain the 200-iteration fit: validation accuracy 0.578, macro-F1 0.460, and weighted-F1 0.630. The details are in `results/tables/11_logistic_convergence.json`. Locked-test scores from notebook 03 are accuracy 0.577, macro-F1 0.467, and weighted-F1 0.610. Locked-test recall is 0.672 for Resolved Fast, 0.454 for Resolved Slow, and 0.303 for Unresolved. Resolved Slow precision is 0.202. The 1000-iteration refit did not score the locked test.
 
 Histogram gradient boosting, in the Phase 5 configuration, uses log loss, learning rate 0.1, at most 31 leaves, minimum 50 samples per leaf, L2 regularisation 1, and balanced weights. Early stopping watches validation macro-F1. Fit time was 17.9 seconds. It trained 8 iterations and the predictions use iteration 2. Validation macro-F1 at that iteration is 0.482. Accuracy is 0.591, weighted-F1 is 0.640, Resolved Slow recall is 0.416, and Unresolved recall is 0.492. Macro ROC-AUC is 0.739 and macro average precision is 0.506.
 
@@ -181,7 +181,7 @@ The saved checkpoint `models/embedding_network.pt`, with the training-only encod
 
 ![Approved embedding learning curves](../results/figures/10_embedding_learning_curves.png)
 
-Phase 6 tunes only that family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from `ParameterSampler` with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:
+The repository has no separate marking brief that requires a hyperparameter search for logistic regression, the multilayer perceptron, or the embedding network. Those models keep the settings fixed before they were fit. Phase 6 tunes only the boosting family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from `ParameterSampler` with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:
 
 - train through 30 June 2023, score the rest of 2023
 - train through 31 December 2023, score the first half of 2024
@@ -307,7 +307,7 @@ PHILIPPI is one large named suburb, with 9,674 test rows and an error rate of 0.
 
 ![Error rates for the 15 largest ward groups](../results/figures/09_ward_error_rates.png)
 
-The machine-readable tables are `results/tables/09_suburb_error_audit.csv`, `results/tables/09_suburb_class_metrics.csv`, `results/tables/09_suburb_confusion_counts.csv`, and the ward files with the same names. Confusion counts are saved only for groups with at least 200 rows. The support rules are in `results/tables/09_geographic_audit_config.json`.
+The machine-readable tables are `results/tables/09_suburb_error_audit.csv` and `results/tables/09_ward_error_audit.csv`. The class metrics are `results/tables/09_suburb_class_metrics.csv` and `results/tables/09_ward_class_metrics.csv`. The confusion counts are `results/tables/09_suburb_confusion_counts.csv` and `results/tables/09_ward_confusion_counts.csv`, and they are saved only for groups with at least 200 rows. The support rules are in `results/tables/09_geographic_audit_config.json`.
 
 ## 16. Ethics, fairness, limitations, and recommendations
 
@@ -321,7 +321,7 @@ Other limitations, all from the executed work:
 
 - The layer is frozen. Open requests may have been completed later, so some Unresolved labels can be wrong.
 - The 2025 class mix is not the 2023–2024 mix. Unresolved rises from 4.5% to 21.3%.
-- Logistic regression did not converge.
+- Logistic regression did not converge at 200 iterations or at a 1000-iteration check. The longer run was not adopted.
 - The embedding network is approved and is not the champion. Its recorded validation macro-F1 is 0.481, and histogram gradient boosting is 0.482. No approval date was supplied.
 - No stakeholder interview has been conducted.
 - The fitted work-centre comparison is not leakage-safe. The extract has no assignment time, and the champion still excludes that column.
