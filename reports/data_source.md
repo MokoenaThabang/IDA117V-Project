@@ -104,7 +104,7 @@ The description also still contains the unfilled phrases “[MONTH YEAR — e.g.
 
 ## Local copy
 
-The Hub CSV was not ready, so `python -m src.fetch_c3` saved the feature-layer attributes to `data/raw/c3_notifications.parquet` on 16 October 2026. That file is the extract notebook 01 audits. It is gitignored. The CSV endpoint, at 19:59 UTC the same day, had not finished:
+The Hub CSV was not ready, so `python -m src.fetch_c3` saved the feature-layer attributes to `data/raw/c3_notifications.parquet` on 16 October 2026. That file is the extract notebook 01 audits. It is gitignored. The CSV endpoint, at 19:59 UTC the same day, had not finished. The feature-layer copy is the local extract. The Hub CSV file itself was not saved:
 
 The Hub CSV download endpoint returned HTTP 202 on 16 October 2026 at 19:59 UTC:
 
@@ -112,7 +112,7 @@ The Hub CSV download endpoint returned HTTP 202 on 16 October 2026 at 19:59 UTC:
 
 The body said status `Pending` and “Up to date download file is being generated. Please check back again later.” The GeoJSON request at the same time said status `PagingData`, progress 11%, and `recordCount` 605,000. That figure is generation progress, not the layer count of 5,372,466.
 
-The full table was not paged out of the feature service and was not saved under `data/raw/`.
+The Hub CSV and GeoJSON downloads were not the copy used here. The feature-layer extract in `data/raw/c3_notifications.parquet` has the layer count of 5,372,466 rows. Notebook 01 audited that file. It stays gitignored.
 
 ## How to save the file locally
 
