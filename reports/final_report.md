@@ -135,7 +135,7 @@ The learning curve is `results/figures/05_mlp_learning_curves.png`. Training los
 
 ![MLP learning curves](../results/figures/05_mlp_learning_curves.png)
 
-The second network embeds each categorical field. Embedding dimension is 16, the hidden layer has 64 units, and dropout is 0.3. The optimiser, batch size, loss, and early-stopping rule match the perceptron. Unseen categories use index 0, and that embedding row stays at zero. It ran 7 epochs and restored epoch 4. Fit time was 236.2 seconds. Validation macro-F1 is 0.481. This architecture is pending lecturer approval. It is not an approved experiment, and it did not choose the champion. Its curve is `results/figures/05_embedding_learning_curves.png`. Training loss fell while validation loss rose, as it did for the perceptron.
+The second network embeds each categorical field. Embedding dimension is 16, the hidden layer has 64 units, and dropout is 0.3. The optimiser, batch size, loss, and early-stopping rule match the perceptron. Unseen categories use index 0, and that embedding row stays at zero. Work centre is not an input. It ran 7 epochs and restored epoch 4. Fit time was 236.2 seconds. Validation macro-F1 is 0.481. Lecturer approval has been recorded for this architecture. No approval date was supplied, and the architecture was not changed. The validation comparison now includes it. Histogram gradient boosting remains ahead, at 0.482, so the embedding network does not become the champion. The locked test was not used for that decision. Its curve is `results/figures/05_embedding_learning_curves.png`. Training loss fell while validation loss rose, as it did for the perceptron.
 
 ## 8. Evaluation and model comparison
 
@@ -175,7 +175,11 @@ Controls that were used: a chronological split, encoders and the scaler fit on t
 
 ## 10. Hyperparameter optimisation and champion selection
 
-The Phase 5 provisional champion is histogram gradient boosting, because its validation macro-F1 is the highest among approved models. The pending embedding network was excluded from that choice. The locked test was not an input.
+The Phase 5 provisional champion is histogram gradient boosting, because its validation macro-F1 is the highest among approved models. Lecturer approval of the embedding network has been recorded, so that model is now included. Its validation macro-F1 is 0.481, below histogram gradient boosting at 0.482. The locked test was not an input. The frozen boosting pipeline stays the delivered champion.
+
+The saved checkpoint `models/embedding_network.pt`, with the training-only encoder `models/embedding_encoder.joblib`, was fit with the same architecture, seed, and split. It reproduced the recorded validation macro-F1 of 0.480687 and the same per-class precision, recall, and F1. On the 2025 validation period those class scores are Resolved Fast 0.882 / 0.654 / 0.751, Resolved Slow 0.145 / 0.435 / 0.217, and Unresolved 0.485 / 0.462 / 0.474. Training macro-F1 is 0.586. Training loss fell and validation loss rose, which is why early stopping restored epoch 4 of 7. That saved fit is the same result, not a second vote. The frozen boosting validation macro-F1 is 0.477. The family comparison uses the Phase 5 boosting score of 0.482, which remains higher, so the frozen pipeline is not replaced.
+
+![Approved embedding learning curves](../results/figures/10_embedding_learning_curves.png)
 
 Phase 6 tunes only that family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from `ParameterSampler` with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:
 
@@ -318,7 +322,7 @@ Other limitations, all from the executed work:
 - The layer is frozen. Open requests may have been completed later, so some Unresolved labels can be wrong.
 - The 2025 class mix is not the 2023–2024 mix. Unresolved rises from 4.5% to 21.3%.
 - Logistic regression did not converge.
-- The embedding network is pending lecturer approval and is not the champion.
+- The embedding network is approved and is not the champion. Its recorded validation macro-F1 is 0.481, and histogram gradient boosting is 0.482. No approval date was supplied.
 - No stakeholder interview has been conducted.
 - The fitted work-centre comparison is not leakage-safe. The extract has no assignment time, and the champion still excludes that column.
 - Balanced weights improve Unresolved recall and, on the logistic test score, leave Resolved Slow precision at 0.202.
@@ -330,7 +334,7 @@ Practical recommendations:
 - Do not rank areas for reduced service from these scores.
 - If the model is shown to staff, show the three probabilities and the seven-day definition, and say that the weights are balanced.
 - Do not add work centre until an assignment time is known.
-- Do not treat the pending embedding network as the delivered model unless a lecturer approves it and the locked test is not used to make that approval.
+- The embedding network is an approved experiment and is not the delivered model. The champion decision used validation macro-F1 and did not use the locked test.
 
 ## 17. Conclusion and future work
 
@@ -338,8 +342,7 @@ On the measurements that were saved, a most-frequent prediction reaches validati
 
 This report does not declare the project complete. The following are still open:
 
-- Lecturer approval of the categorical embedding network. Until that decision, its scores stay out of the champion rule.
-- A stakeholder interview. The question list is `reports/stakeholder_interview_guide.md`. No interview has been recorded, so this report has no stakeholder validation.
+- A stakeholder interview. The question list is `reports/stakeholder_interview_guide.md`. No interview has been recorded, so this report has no stakeholder validation. Lecturer approval of the embedding network has been recorded, and that model did not replace the champion.
 - An assignment timestamp for work centre. The sensitivity comparison in section 11 was fit, and it still cannot support a logging-time model.
 - A full re-execution of notebooks 01 to 07 from an empty environment in this phase. Those notebooks already contain executed outputs with no error cells, and their source cells do not hardcode a machine path. They were not run again while this draft was written. Notebook 08 was executed. It only checks the saved pipeline.
 
@@ -349,8 +352,9 @@ The new tables and figures are reproduced with:
 python -m src.work_centre_comparison
 python -m src.geographic_error_audit
 python -m src.per_class_curves
+python -m src.embedding_experiment
 ```
 
 The submission status of each item is `reports/submission_checklist.md`.
 
-Future work that would not reuse the locked test for tuning: approve or reject the embedding architecture, record a stakeholder interview before any operational claim, calibrate the probabilities, and revisit work centre only if an assignment timestamp becomes available.
+Future work that would not reuse the locked test for tuning: record a stakeholder interview before any operational claim, calibrate the probabilities, and revisit work centre only if an assignment timestamp becomes available.

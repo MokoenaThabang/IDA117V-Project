@@ -240,3 +240,6 @@ models/*
 *.pt
 *.pth
 *.onnx
+# The approved embedding checkpoint and its training-only encoder.
+!models/embedding_network.pt
+!models/embedding_encoder.joblib
