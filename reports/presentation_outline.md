@@ -20,7 +20,7 @@ Predictors are complaint type, suburb, ward, subcouncil, weekday, month, and wee
 
 ## 5. Models on validation (2 minutes)
 
-Primary metric is macro-F1. The most-frequent dummy scores validation macro-F1 0.273. Logistic regression scores 0.460 and did not converge at 200 iterations. Histogram gradient boosting scores 0.482. The multilayer perceptron scores 0.476. The embedding network scores 0.481 and is still pending lecturer approval, so it does not choose the champion. Show `results/figures/05_validation_comparison.png` and the MLP learning curve: training loss fell while validation loss rose.
+Primary metric is macro-F1. The most-frequent dummy scores validation macro-F1 0.273. Logistic regression scores 0.460 and did not converge at 200 iterations. Histogram gradient boosting scores 0.482. The multilayer perceptron scores 0.476. The embedding network scores 0.481. Lecturer approval has been recorded, and it still does not choose the champion, because histogram gradient boosting scores 0.482 on the same validation rule. Show `results/figures/05_validation_comparison.png` and the MLP learning curve: training loss fell while validation loss rose.
 
 ## 6. Tuning and the one locked-test score (1 minute 30 seconds)
 
@@ -32,4 +32,4 @@ Removing suburb, ward, and subcouncil changes validation macro-F1 by −0.008. T
 
 ## 8. App, ethics, and what is unfinished (1 minute)
 
-The Streamlit form loads the saved pipeline and does not train. The demonstration sample is not a real case. No suburb or ward audit of model error was run. No stakeholder interview was run. The embedding network is not approved. End on the recommendation: a person reviews the estimate, and the estimate is not a reason to reduce service in an area.
+The Streamlit form loads the saved pipeline and does not train. The demonstration sample is not a real case. No suburb or ward audit of model error was run. No stakeholder interview was run. The embedding network is approved and is not the delivered model. End on the recommendation: a person reviews the estimate, and the estimate is not a reason to reduce service in an area.

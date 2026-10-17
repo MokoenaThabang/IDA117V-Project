@@ -42,7 +42,7 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertTrue(callable(training.make_hist_gradient_boosting))
         self.assertTrue(callable(training.provisional_champion))
         self.assertTrue(callable(neural.train_feedforward))
-        self.assertIn("pending lecturer approval", neural.EmbeddingNet.__doc__)
+        self.assertIn("Lecturer approval", neural.EmbeddingNet.__doc__)
         from src import optimisation, statistics
 
         self.assertTrue(callable(optimisation.run_champion_search))

@@ -1,5 +1,7 @@
 # Phase 5 model experiments
 
+Lecturer approval of the embedding network was recorded after this file was written. No approval date was supplied, and the architecture in this file was not changed. The scores below are the original run. The champion remains histogram gradient boosting because its validation macro-F1 is higher.
+
 Notebooks 04 and 05 fit the traditional models and the neural models on the same chronological partitions. The provisional champion is chosen from validation macro-F1. The locked test is not scored in this phase.
 
 ## Split

@@ -1,8 +1,9 @@
 """PyTorch models for the three-class resolution task.
 
-The multilayer perceptron is an approved experiment. The embedding network
-is implemented and can be trained, and it stays pending lecturer approval
-until that approval is recorded. Neither model reads the locked test split.
+The multilayer perceptron is an approved experiment. Lecturer approval has
+been recorded for the existing embedding network. No approval date was
+supplied, and this module does not change the architecture. Neither model
+reads the locked test split.
 """
 
 from __future__ import annotations
@@ -24,9 +25,9 @@ from src.training import (
     class_indices,
 )
 
-PENDING_EMBEDDING_NOTE = (
-    "The categorical embedding network is pending lecturer approval. "
-    "It is not an approved final experiment."
+APPROVED_EMBEDDING_NOTE = (
+    "Lecturer approval has been recorded for the existing embedding network. "
+    "No approval date was supplied, and the architecture was not changed."
 )
 
 
@@ -59,8 +60,8 @@ class EmbeddingNet(nn.Module):
     """Categorical embeddings plus the weekend indicator, then three logits.
 
     Index 0 of every embedding is padding. Categories that were absent from
-    training use that index and contribute a zero vector. This architecture
-    is pending lecturer approval.
+    training use that index and contribute a zero vector. Lecturer approval
+    has been recorded for this existing architecture.
     """
 
     def __init__(
@@ -296,7 +297,11 @@ def train_embedding_network(
     parameters: dict | None = None,
     verbose: bool = False,
 ) -> dict:
-    """Train the pending embedding network. Its scores are not a champion vote."""
+    """Train the approved embedding network.
+
+    Early stopping uses validation macro-F1. This function does not read the
+    locked test and it does not decide the champion.
+    """
     assert_split_may_be_scored("validation")
     settings = dict(EMBEDDING_PARAMETERS)
     if parameters:
@@ -395,8 +400,8 @@ def train_embedding_network(
         "cardinalities": [int(size) for size in cardinalities],
         "class_weights": [float(weight) for weight in weights],
         "parameters": settings,
-        "approval": "pending_lecturer_approval",
-        "approval_note": PENDING_EMBEDDING_NOTE,
+        "approval": "approved",
+        "approval_note": APPROVED_EMBEDDING_NOTE,
     }
 
 

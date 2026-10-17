@@ -178,7 +178,7 @@ class ChampionAndConfigTest(unittest.TestCase):
         self.assertFalse(config["imbalance"]["smote"])
         self.assertFalse(config["locked_test_scored_in_phase_5"])
         self.assertEqual(config["logistic_regression"]["class_weight"], "balanced")
-        self.assertEqual(config["embedding_network"]["approval"], PENDING_APPROVAL)
+        self.assertEqual(config["embedding_network"]["approval"], APPROVED_APPROVAL)
         weights = balanced_class_weights(
             ["Resolved Fast", "Resolved Fast", "Resolved Slow", "Unresolved"]
         )
@@ -288,6 +288,32 @@ class ChampionAndConfigTest(unittest.TestCase):
         self.assertIn("pending lecturer approval", report)
         self.assertNotIn("provisional champion is embedding_network", report)
         self.assertIn("locked test", report.lower())
+
+    def test_approved_embedding_wins_only_on_validation_macro_f1(self) -> None:
+        from src.embedding_experiment import champion_decision_from_metrics
+
+        recorded = pd.read_csv(PROJECT_ROOT / "results" / "tables" / "05_split_metrics.csv")
+        decision = champion_decision_from_metrics(recorded, 0.4765377211093145)
+        self.assertEqual(decision["champion_model"], "hist_gradient_boosting")
+        self.assertFalse(decision["champion_changed"])
+        self.assertFalse(decision["locked_test_used"])
+        self.assertIsNone(decision["approval_date"])
+        self.assertGreater(
+            decision["champion_validation_macro_f1"],
+            decision["embedding_validation_macro_f1"],
+        )
+        self.assertGreater(
+            decision["embedding_validation_macro_f1"],
+            decision["frozen_boosting_validation_macro_f1"],
+        )
+        higher = recorded.copy()
+        mask = higher["model"].eq("embedding_network") & higher["split"].eq("validation")
+        higher.loc[mask, "macro_f1"] = 0.99
+        higher.loc[mask, "recall_unresolved"] = 0.99
+        higher.loc[mask, "recall_resolved_slow"] = 0.99
+        promoted = champion_decision_from_metrics(higher, 0.4765377211093145)
+        self.assertEqual(promoted["champion_model"], "embedding_network")
+        self.assertTrue(promoted["champion_changed"])
 
 
 def _metric_row(model: str, split: str, approval: str, macro_f1: float) -> dict:
@@ -432,8 +458,8 @@ class ModelFitTest(unittest.TestCase):
                 "learning_rate": 1e-2,
             },
         )
-        self.assertEqual(result["approval"], PENDING_APPROVAL)
-        self.assertIn("pending lecturer approval", result["approval_note"])
+        self.assertEqual(result["approval"], APPROVED_APPROVAL)
+        self.assertIn("No approval date was supplied", result["approval_note"])
         unseen_vector = result["model"].embeddings[complaint].weight.detach().numpy()[0]
         self.assertTrue(np.allclose(unseen_vector, 0.0))
         module = EmbeddingNet([3, 3], embedding_dim=4, hidden_size=6)

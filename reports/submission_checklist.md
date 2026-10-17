@@ -11,7 +11,7 @@ Checked on 17 October 2026 against the files in this repository. An open item is
 | Per-class ROC and precision-recall | Computed from the saved locked-test probabilities. The earlier macro ROC-AUC 0.724 and macro average precision 0.519 were left in `06_locked_test_summary.csv` and matched. | `results/figures/09_roc_per_class_locked_test.png`, `results/figures/09_pr_per_class_locked_test.png`, `results/tables/09_per_class_ranking_locked_test.csv` |
 | Form screenshots | Four screenshots were captured from the running Streamlit page. | `evidence/screenshots/` |
 | Stakeholder interview | Pending. No interview has been conducted or recorded. | `reports/stakeholder_interview_guide.md` |
-| Embedding network | Pending lecturer approval. It is not the champion. | `reports/model_card.md` |
+| Embedding network | Lecturer approval recorded. No approval date was supplied, and the architecture was not changed. Validation macro-F1 0.481 does not beat histogram gradient boosting at 0.482, so it is not the champion. The locked test was not used. | `results/tables/05_split_metrics.csv`, `results/tables/10_embedding_champion_decision.json` |
 | Final report PDF | Exported. `reports/final_report.pdf` opens as a 26-page PDF and contains the work-centre comparison, the suburb and ward audit, the per-class curves, and the open approval items. | `reports/final_report.pdf` |
 
 Commands that reproduce the new tables and figures, from the repository root, with the labelled parquet and the saved test predictions in place:
@@ -20,6 +20,7 @@ Commands that reproduce the new tables and figures, from the repository root, wi
 python -m src.work_centre_comparison
 python -m src.geographic_error_audit
 python -m src.per_class_curves
+python -m src.embedding_experiment
 ```
 
 The work-centre command refits two models. The other two commands only read saved predictions.

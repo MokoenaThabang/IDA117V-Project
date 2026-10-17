@@ -69,7 +69,7 @@ MLP_PARAMETERS = {
 }
 
 EMBEDDING_PARAMETERS = {
-    "approval": PENDING_APPROVAL,
+    "approval": APPROVED_APPROVAL,
     "embedding_dim": 16,
     "hidden_size": 64,
     "activation": "ReLU",
@@ -537,7 +537,7 @@ def base_experiment_config() -> dict:
             "unseen_index": 0,
             "unseen_vector": "zero, not updated",
             "fit_on": "train",
-            "approval": PENDING_APPROVAL,
+            "approval": APPROVED_APPROVAL,
         },
         "logistic_regression": logistic_config(),
         "hist_gradient_boosting": {
@@ -555,7 +555,9 @@ def base_experiment_config() -> dict:
         "champion_rule": (
             "Highest validation macro-F1 among approved models. "
             "Ties break on Unresolved recall, then Resolved Slow recall. "
-            "The pending embedding network is excluded."
+            "The embedding network is included because lecturer approval was recorded. "
+            "A model that is still marked pending is excluded. "
+            "The locked test is not an input."
         ),
     }
 
@@ -812,8 +814,9 @@ def render_phase5_report(
         "",
         *tree_lines,
         "",
-        "The embedding encoder, used only by the pending network, keeps the same 200-row rare rule and does not "
-        "apply the 255-level cap. Unseen categories use index 0, whose embedding stays at zero.",
+        "The embedding encoder keeps the same 200-row rare rule and does not "
+        "apply the 255-level cap. Unseen categories use index 0, whose embedding stays at zero. "
+        "Work centre is not one of its inputs.",
         "",
         "## Imbalance",
         "",
@@ -841,8 +844,13 @@ def render_phase5_report(
         f"Fit time was {float(mlp['fit_seconds']):.1f} seconds.",
         "",
         "The second neural architecture is a categorical embedding network. "
-        "It is pending lecturer approval and is not an approved final experiment. "
-        f"Embedding dimension {embedding['embedding_dim']}, hidden size {embedding['hidden_size']}, "
+        + (
+            "Lecturer approval has been recorded for this architecture. No approval date was supplied, "
+            "and the architecture was not changed. "
+            if not comparison.loc[comparison["model"].eq("embedding_network") & comparison["approval"].eq(PENDING_APPROVAL)].shape[0]
+            else "It is pending lecturer approval and is not an approved final experiment. "
+        )
+        + f"Embedding dimension {embedding['embedding_dim']}, hidden size {embedding['hidden_size']}, "
         f"dropout {embedding['dropout']}, AdamW learning rate {embedding['learning_rate']}, "
         f"weight decay {embedding['weight_decay']}, batch size {embedding['batch_size']}. "
         f"It ran {int(embedding['epochs_ran'])} epochs and restored epoch {int(embedding['best_epoch'])}. "
