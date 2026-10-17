@@ -1,15 +1,17 @@
-"""Leakage checks and the resolution-time label.
+"""Leakage checks, the resolution-time label, and the baseline preprocessor.
 
-The label uses Created On Date and Completed Date. Completed Date and
-Changed on are not model features. Thresholds are arguments: Phase 1 does
-not estimate them from the extract, and this module does not set defaults.
+The label uses Created On Date and Completed Date. Completed Date, Changed
+on, resolution duration, and the target are not model features. The baseline
+preprocessor is fit on the training period only.
 """
 
 from __future__ import annotations
 
 from datetime import date, datetime
 
+import numpy as np
 import pandas as pd
+from sklearn.base import BaseEstimator, TransformerMixin
 
 from src.config import (
     CONSTRUCTED_COLUMNS,
@@ -291,4 +293,514 @@ def build_resolution_target(
             "duration_flag": duration_flag,
         },
         index=frame.index,
+    )
+
+
+# Calendar fields are derived from Created On Date before the split. The raw
+# timestamp is not a predictor. Rare-category counts are learned later, on
+# the training rows only.
+DAY_NAMES = (
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+    "Sunday",
+)
+MONTH_NAMES = (
+    "January",
+    "February",
+    "March",
+    "April",
+    "May",
+    "June",
+    "July",
+    "August",
+    "September",
+    "October",
+    "November",
+    "December",
+)
+SOURCE_CATEGORICAL_COLUMNS = (
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+)
+CATEGORICAL_FEATURES = SOURCE_CATEGORICAL_COLUMNS + (
+    "created_day_of_week",
+    "created_month",
+)
+NUMERIC_FEATURES = ("created_is_weekend",)
+MODEL_FEATURES = CATEGORICAL_FEATURES + NUMERIC_FEATURES
+
+# Requests created after this date are left out of every modelling split.
+# May 2026 is where Resolved Slow collapses and Unresolved jumps, while the
+# extract itself ends on 6 October 2026. The cut is a pre-specified
+# evaluation rule, not a threshold tuned on the test score.
+TRAIN_END = pd.Timestamp("2024-12-31")
+VALIDATION_END = pd.Timestamp("2025-12-31")
+MATURE_END = pd.Timestamp("2026-04-30")
+RARE_CATEGORY_MIN_COUNT = 200
+RARE_CATEGORY_LABEL = "(rare)"
+MISSING_CATEGORY_LABEL = "(missing)"
+
+_FEATURE_DECISIONS = (
+    (
+        "C3_Complaint_Type",
+        "include",
+        "Complaint category stored when the request is logged.",
+    ),
+    (
+        "Suburb",
+        "include",
+        "Coarse place name on the request. Stored placeholders such as '#' are kept as their own values.",
+    ),
+    (
+        "Ward",
+        "include",
+        "Ward on the request. This is a coarse area, not a coordinate.",
+    ),
+    (
+        "Sub_Council",
+        "include",
+        "Subcouncil on the request. The stored value 'Not assigned' is kept as text.",
+    ),
+    (
+        "created_day_of_week",
+        "include",
+        "Day name derived from Created On Date. One-hot encoded because weekday order is not a linear scale.",
+    ),
+    (
+        "created_month",
+        "include",
+        "Month name derived from Created On Date. One-hot encoded so December is not treated as far from January.",
+    ),
+    (
+        "created_is_weekend",
+        "include",
+        "1 when Created On Date is Saturday or Sunday, otherwise 0. This is the only numeric predictor and is standardised on the training rows.",
+    ),
+    (
+        "Created_On_Date",
+        "exclude",
+        "Used to build the chronological split and the calendar fields. The raw timestamp is not a predictor.",
+    ),
+    (
+        "Work_Center",
+        "exclude",
+        "Present on the request, but the extract has no assignment time. It is not treated as known at logging.",
+    ),
+    (
+        "Notifications_Created",
+        "exclude",
+        "Not one of the logging-time candidate features for this baseline.",
+    ),
+    (
+        "Notification",
+        "exclude",
+        "Request identifier.",
+    ),
+    (
+        "Notification_type",
+        "exclude",
+        "Identifier mixed with free text.",
+    ),
+    (
+        "ObjectId",
+        "exclude",
+        "Row identifier.",
+    ),
+    (
+        "Completed_Date",
+        "exclude",
+        "Known only after completion.",
+    ),
+    (
+        "Changed_on",
+        "exclude",
+        "Updated after logging.",
+    ),
+    (
+        "resolution_days",
+        "exclude",
+        "Computed from Completed Date minus Created On Date.",
+    ),
+    (
+        "resolution_outcome",
+        "exclude",
+        "Target. Never a predictor.",
+    ),
+    (
+        "label_status",
+        "exclude",
+        "Constructed from the label rule.",
+    ),
+    (
+        "duration_flag",
+        "exclude",
+        "Constructed from resolution duration.",
+    ),
+    (
+        "X_Y_Co_ordinate_1",
+        "exclude",
+        "Precise location. Withheld from the model.",
+    ),
+    (
+        "X_Y_Co_ordinate_2",
+        "exclude",
+        "Precise location. Withheld from the model.",
+    ),
+)
+
+
+def feature_decision_table() -> pd.DataFrame:
+    """Return the logging-time decision for each candidate or blocked field."""
+    return pd.DataFrame(
+        [
+            {"column": column, "decision": decision, "reason": reason}
+            for column, decision, reason in _FEATURE_DECISIONS
+        ]
+    )
+
+
+def _reject_blocked_features(columns: list[str]) -> None:
+    """Raise when a predictor list contains leakage, identifiers, or the target."""
+    blocked = _blocked_names()
+    blocked.update({"work_center", "created_on_date", "created on date", "notifications_created"})
+    found = [column for column in columns if str(column).casefold() in blocked]
+    if found:
+        raise ValueError(
+            "These columns cannot be baseline predictors: "
+            + ", ".join(found)
+            + ". Completed Date, Changed on, resolution duration, the target, "
+            "identifiers, coordinates, and Work Center are excluded."
+        )
+
+
+def add_calendar_features(
+    frame: pd.DataFrame,
+    created_column: str = SERVICE_CREATED_DATE_COLUMN,
+) -> pd.DataFrame:
+    """Add weekday, month, and weekend fields. The input frame is not modified."""
+    if created_column not in frame.columns:
+        raise ValueError(
+            f"Cannot derive calendar features without {created_column}. "
+            f"Actual columns: {', '.join(map(str, frame.columns))}."
+        )
+    created = pd.to_datetime(frame[created_column], errors="coerce")
+    output = frame.copy()
+    day_lookup = dict(enumerate(DAY_NAMES))
+    month_lookup = dict(enumerate(MONTH_NAMES, start=1))
+    output["created_day_of_week"] = created.dt.dayofweek.map(day_lookup).astype("object")
+    output["created_month"] = created.dt.month.map(month_lookup).astype("object")
+    weekend = pd.Series(np.nan, index=frame.index, dtype="float64")
+    known = created.notna()
+    weekend.loc[known] = created.loc[known].dt.dayofweek.ge(5).astype(float)
+    output["created_is_weekend"] = weekend
+    return output
+
+
+def logging_feature_frame(
+    frame: pd.DataFrame,
+    created_column: str = SERVICE_CREATED_DATE_COLUMN,
+) -> pd.DataFrame:
+    """Return only the predictors used by the baseline.
+
+    The raw creation timestamp, the target, and Work Center are not included.
+    """
+    missing = [column for column in SOURCE_CATEGORICAL_COLUMNS if column not in frame.columns]
+    if missing or created_column not in frame.columns:
+        required = list(SOURCE_CATEGORICAL_COLUMNS) + [created_column]
+        absent = [column for column in required if column not in frame.columns]
+        raise ValueError(
+            "Cannot build the logging-time feature frame. Missing columns: "
+            + ", ".join(absent)
+            + ". Actual columns: "
+            + ", ".join(map(str, frame.columns))
+            + "."
+        )
+    dated = add_calendar_features(frame, created_column)
+    features = dated.loc[:, list(MODEL_FEATURES)].copy()
+    _reject_blocked_features(list(features.columns))
+    return features
+
+
+def _class_counts(outcomes: pd.Series) -> dict[str, int]:
+    counts = outcomes.value_counts(dropna=False)
+    return {label: int(counts.get(label, 0)) for label in TARGET_LABELS}
+
+
+def chronological_splits(
+    frame: pd.DataFrame,
+    created_column: str = SERVICE_CREATED_DATE_COLUMN,
+    target_column: str = "resolution_outcome",
+    train_end: pd.Timestamp = TRAIN_END,
+    validation_end: pd.Timestamp = VALIDATION_END,
+    mature_end: pd.Timestamp = MATURE_END,
+) -> tuple[dict[str, pd.DataFrame], pd.DataFrame, pd.DataFrame]:
+    """Split labelled rows by Created On Date.
+
+    Train is through ``train_end``, validation through ``validation_end``,
+    and the locked test through ``mature_end``. Later labelled rows are a
+    censored tail and are not placed in any modelling split. Unlabelled rows
+    are excluded. Nothing is resampled.
+    """
+    if created_column not in frame.columns or target_column not in frame.columns:
+        missing = [
+            column
+            for column in (created_column, target_column)
+            if column not in frame.columns
+        ]
+        raise ValueError(
+            "Cannot split this frame. Missing columns: "
+            + ", ".join(missing)
+            + ". Actual columns: "
+            + ", ".join(map(str, frame.columns))
+            + "."
+        )
+    train_day = pd.Timestamp(train_end).normalize()
+    validation_day = pd.Timestamp(validation_end).normalize()
+    mature_day = pd.Timestamp(mature_end).normalize()
+    if not (train_day < validation_day < mature_day):
+        raise ValueError(
+            "Split dates must increase: train_end < validation_end < mature_end. "
+            f"Got {train_day.date()}, {validation_day.date()}, {mature_day.date()}."
+        )
+
+    created = pd.to_datetime(frame[created_column], errors="coerce").dt.normalize()
+    labelled = frame[target_column].notna() & created.notna()
+    mature = labelled & created.le(mature_day)
+    masks = {
+        "train": mature & created.le(train_day),
+        "validation": mature & created.gt(train_day) & created.le(validation_day),
+        "test": mature & created.gt(validation_day) & created.le(mature_day),
+    }
+    splits = {name: frame.loc[mask].copy() for name, mask in masks.items()}
+    for name, part in splits.items():
+        if part.empty:
+            raise ValueError(
+                f"The {name} split has no labelled rows. "
+                f"Boundaries are {train_day.date()}, {validation_day.date()}, {mature_day.date()}."
+            )
+
+    rows = []
+    for name, part in splits.items():
+        part_created = pd.to_datetime(part[created_column])
+        counts = _class_counts(part[target_column])
+        total = int(len(part))
+        rows.append(
+            {
+                "split": name,
+                "rows": total,
+                "start_date": str(part_created.min().date()),
+                "end_date": str(part_created.max().date()),
+                **{label: counts[label] for label in TARGET_LABELS},
+                **{
+                    f"{label} percent": (counts[label] / total * 100.0) if total else 0.0
+                    for label in TARGET_LABELS
+                },
+            }
+        )
+    summary = pd.DataFrame(rows)
+    exclusions = pd.DataFrame(
+        [
+            {
+                "reason": "unlabelled_or_missing_created_date",
+                "rows": int((~labelled).sum()),
+            },
+            {
+                "reason": "labelled_after_mature_end",
+                "rows": int((labelled & created.gt(mature_day)).sum()),
+            },
+            {
+                "reason": "train",
+                "rows": int(masks["train"].sum()),
+            },
+            {
+                "reason": "validation",
+                "rows": int(masks["validation"].sum()),
+            },
+            {
+                "reason": "test",
+                "rows": int(masks["test"].sum()),
+            },
+        ]
+    )
+    return splits, summary, exclusions
+
+
+class GroupRareCategories(TransformerMixin, BaseEstimator):
+    """Replace infrequent categories with one shared label.
+
+    Counts are learned in ``fit``. A category that is new at transform time
+    uses the same label, because it also has no training support. Missing
+    values stay missing so a later imputer can give them their own level.
+    """
+
+    def __init__(self, min_count: int = RARE_CATEGORY_MIN_COUNT, other_label: str = RARE_CATEGORY_LABEL):
+        self.min_count = min_count
+        self.other_label = other_label
+
+    def fit(self, X, y=None):
+        if int(self.min_count) < 1:
+            raise ValueError(f"min_count must be at least 1. Got {self.min_count}.")
+        frame = self._frame(X, fitting=True)
+        self.n_features_in_ = frame.shape[1]
+        self.columns_ = [str(column) for column in frame.columns]
+        self.kept_categories_ = {}
+        self.training_counts_ = {}
+        for column in self.columns_:
+            text = self._clean_text(frame[column])
+            if bool(text.eq(self.other_label).any()):
+                raise ValueError(
+                    f"Column {column} already contains the grouping label {self.other_label!r}. "
+                    "Choose a label that is not a stored category."
+                )
+            counts = text.dropna().value_counts()
+            self.training_counts_[column] = {str(name): int(count) for name, count in counts.items()}
+            kept = {str(name) for name, count in counts.items() if int(count) >= int(self.min_count)}
+            self.kept_categories_[column] = kept
+        return self
+
+    def transform(self, X):
+        self._check_fitted()
+        frame = self._frame(X, fitting=False)
+        if frame.shape[1] != self.n_features_in_:
+            raise ValueError(
+                f"Expected {self.n_features_in_} columns and received {frame.shape[1]}."
+            )
+        output = np.empty(frame.shape, dtype=object)
+        for index, column in enumerate(self.columns_):
+            text = self._clean_text(frame.iloc[:, index])
+            missing = text.isna()
+            known = text.isin(self.kept_categories_[column])
+            grouped = text.astype("object")
+            grouped = grouped.where(known | missing, self.other_label)
+            grouped = grouped.where(~missing, np.nan)
+            output[:, index] = grouped.to_numpy()
+        return output
+
+    def get_feature_names_out(self, input_features=None):
+        self._check_fitted()
+        return np.asarray(self.columns_, dtype=object)
+
+    def rare_summary(self) -> pd.DataFrame:
+        """Count how many training categories were kept or grouped."""
+        self._check_fitted()
+        rows = []
+        for column in self.columns_:
+            counts = self.training_counts_[column]
+            kept = self.kept_categories_[column]
+            total = int(sum(counts.values()))
+            kept_rows = int(sum(count for name, count in counts.items() if name in kept))
+            rows.append(
+                {
+                    "column": column,
+                    "training_rows": total,
+                    "distinct_categories": len(counts),
+                    "kept_categories": len(kept),
+                    "grouped_categories": len(counts) - len(kept),
+                    "min_count": int(self.min_count),
+                    "kept_row_percent": (kept_rows / total * 100.0) if total else 0.0,
+                }
+            )
+        return pd.DataFrame(rows)
+
+    def _check_fitted(self) -> None:
+        if not hasattr(self, "kept_categories_"):
+            raise AttributeError("GroupRareCategories must be fit before transform.")
+
+    def _frame(self, X, fitting: bool) -> pd.DataFrame:
+        if isinstance(X, pd.DataFrame):
+            return X.reset_index(drop=True)
+        array = np.asarray(X, dtype=object)
+        if array.ndim == 1:
+            array = array.reshape(-1, 1)
+        if fitting:
+            names = [f"feature_{index}" for index in range(array.shape[1])]
+        else:
+            names = list(getattr(self, "columns_", []))
+            if len(names) != array.shape[1]:
+                names = [f"feature_{index}" for index in range(array.shape[1])]
+        return pd.DataFrame(array, columns=names)
+
+    @staticmethod
+    def _clean_text(series: pd.Series) -> pd.Series:
+        text = series.astype("string").str.strip()
+        return text.mask(text.eq(""), pd.NA)
+
+
+def build_baseline_preprocessor(
+    categorical_columns: tuple[str, ...] | list[str] | None = None,
+    numeric_columns: tuple[str, ...] | list[str] | None = None,
+    min_count: int = RARE_CATEGORY_MIN_COUNT,
+):
+    """Build a ColumnTransformer that is fit on training rows only.
+
+    Categorical columns are grouped, imputed with a constant missing level,
+    and one-hot encoded. Unseen one-hot levels are ignored. Numeric columns
+    are standardised. The transformer does not look at ``y``.
+    """
+    from sklearn.compose import ColumnTransformer
+    from sklearn.impute import SimpleImputer
+    from sklearn.pipeline import Pipeline
+    from sklearn.preprocessing import OneHotEncoder, StandardScaler
+
+    categorical = list(CATEGORICAL_FEATURES if categorical_columns is None else categorical_columns)
+    numeric = list(NUMERIC_FEATURES if numeric_columns is None else numeric_columns)
+    _reject_blocked_features(categorical + numeric)
+    if not categorical and not numeric:
+        raise ValueError("The baseline preprocessor needs at least one feature column.")
+
+    transformers = []
+    if categorical:
+        categorical_pipe = Pipeline(
+            steps=[
+                ("rare", GroupRareCategories(min_count=min_count)),
+                (
+                    "impute",
+                    SimpleImputer(strategy="constant", fill_value=MISSING_CATEGORY_LABEL),
+                ),
+                (
+                    "one_hot",
+                    OneHotEncoder(handle_unknown="ignore", sparse_output=True, dtype=np.float64),
+                ),
+            ]
+        )
+        transformers.append(("categorical", categorical_pipe, categorical))
+    if numeric:
+        transformers.append(("numeric", StandardScaler(), numeric))
+    return ColumnTransformer(transformers=transformers, remainder="drop", verbose_feature_names_out=False)
+
+
+def make_most_frequent_baseline():
+    """Predict the class that is most common in the training rows."""
+    from sklearn.dummy import DummyClassifier
+
+    from src.config import RANDOM_SEED
+
+    return DummyClassifier(strategy="most_frequent", random_state=RANDOM_SEED)
+
+
+def make_logistic_baseline():
+    """L2 logistic regression with balanced class weights.
+
+    ``C`` stays at the library default. ``tol`` and ``max_iter`` are set so
+    the sparse solver can finish on this extract. They were not chosen by
+    searching validation scores. Balanced weights are used because the
+    training years contain many more Resolved Fast rows than Unresolved rows.
+    """
+    from sklearn.linear_model import LogisticRegression
+
+    from src.config import RANDOM_SEED
+
+    return LogisticRegression(
+        C=1.0,
+        solver="saga",
+        class_weight="balanced",
+        max_iter=200,
+        tol=1e-3,
+        random_state=RANDOM_SEED,
     )

@@ -1,4 +1,4 @@
-"""Classification metrics shared by later model notebooks.
+"""Classification metrics shared by the model notebooks.
 
 Macro-F1 is the primary score. These functions only score arrays they are
 given. They do not load data and they do not choose a champion model.
@@ -7,8 +7,10 @@ given. They do not load data and they do not choose a champion model.
 from __future__ import annotations
 
 from collections.abc import Sequence
+from pathlib import Path
 
 import numpy as np
+import pandas as pd
 from sklearn.metrics import (
     accuracy_score,
     average_precision_score,
@@ -107,3 +109,78 @@ def ranking_scores(
             average_precision_score(indicator, probabilities, average="macro")
         ),
     }
+
+
+def _recall_column(label: str) -> str:
+    return "recall_" + label.lower().replace(" ", "_")
+
+
+def metrics_tables(scores: dict, model: str, split: str) -> tuple[pd.DataFrame, pd.DataFrame]:
+    """Turn one classification_scores result into an overall row and class rows."""
+    summary = {
+        "model": model,
+        "split": split,
+        "accuracy": scores["accuracy"],
+        "macro_f1": scores["macro_f1"],
+        "weighted_f1": scores["weighted_f1"],
+    }
+    per_class_rows = []
+    for row in scores["per_class"]:
+        summary[_recall_column(row["label"])] = row["recall"]
+        per_class_rows.append(
+            {
+                "model": model,
+                "split": split,
+                "label": row["label"],
+                "precision": row["precision"],
+                "recall": row["recall"],
+                "f1": row["f1"],
+                "support": row["support"],
+            }
+        )
+    return pd.DataFrame([summary]), pd.DataFrame(per_class_rows)
+
+
+def probability_summary(estimator, features, labels: Sequence[str] = TARGET_LABELS) -> dict:
+    """Check that predict_proba covers the classes and that rows sum to one."""
+    if not hasattr(estimator, "predict_proba"):
+        raise AttributeError(f"{type(estimator).__name__} does not implement predict_proba.")
+    probabilities = np.asarray(estimator.predict_proba(features), dtype=float)
+    class_names = [str(name) for name in estimator.classes_]
+    if probabilities.ndim != 2 or probabilities.shape[1] != len(class_names):
+        raise ValueError(
+            "predict_proba must have one column per class. "
+            f"Got shape {probabilities.shape} for classes {class_names}."
+        )
+    missing = [label for label in labels if label not in class_names]
+    if missing:
+        raise ValueError(
+            "predict_proba is missing classes: "
+            + ", ".join(missing)
+            + f". Estimator classes: {', '.join(class_names)}."
+        )
+    row_sums = probabilities.sum(axis=1)
+    return {
+        "rows": int(probabilities.shape[0]),
+        "columns": int(probabilities.shape[1]),
+        "classes": class_names,
+        "row_sum_min": float(row_sums.min()) if len(row_sums) else float("nan"),
+        "row_sum_max": float(row_sums.max()) if len(row_sums) else float("nan"),
+        "min_probability": float(probabilities.min()) if probabilities.size else float("nan"),
+        "max_probability": float(probabilities.max()) if probabilities.size else float("nan"),
+    }
+
+
+def save_metric_tables(
+    summary: pd.DataFrame,
+    per_class: pd.DataFrame,
+    directory: Path,
+    prefix: str = "04_baseline",
+) -> dict[str, Path]:
+    """Write the overall and per-class metric tables."""
+    directory.mkdir(parents=True, exist_ok=True)
+    summary_path = directory / f"{prefix}_summary.csv"
+    per_class_path = directory / f"{prefix}_per_class.csv"
+    summary.to_csv(summary_path, index=False)
+    per_class.to_csv(per_class_path, index=False)
+    return {"summary": summary_path, "per_class": per_class_path}

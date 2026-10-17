@@ -304,3 +304,30 @@ def plot_duration_bins(
             fontsize=8,
         )
     return _finish(figure, filename, directory)
+
+
+def plot_confusion_matrix(matrix, labels, title: str, filename: str, directory: Path | None = None):
+    """Save a count confusion matrix. Rows are the actual class."""
+    import matplotlib.pyplot as plt
+    import numpy as np
+    import seaborn as sns
+
+    use_project_style()
+    counts = np.asarray(matrix, dtype=int)
+    annotations = np.array([[f"{int(value):,}" for value in row] for row in counts])
+    figure, axis = plt.subplots(figsize=(8.2, 6.4), constrained_layout=True)
+    sns.heatmap(
+        counts,
+        annot=annotations,
+        fmt="",
+        cmap="Blues",
+        xticklabels=list(labels),
+        yticklabels=list(labels),
+        cbar_kws={"label": "Requests"},
+        ax=axis,
+    )
+    axis.set_xlabel("Predicted outcome")
+    axis.set_ylabel("Actual outcome", labelpad=16)
+    axis.set_title(title)
+    axis.tick_params(axis="y", pad=4)
+    return _finish(figure, filename, directory, apply_layout=False)

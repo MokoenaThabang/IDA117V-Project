@@ -32,6 +32,8 @@ class ProjectSmokeTest(unittest.TestCase):
         self.assertEqual(config.OBSERVATION_WINDOW_DAYS, 7)
         self.assertTrue(callable(data_loader.list_raw_files))
         self.assertTrue(callable(preprocessing.build_resolution_target))
+        self.assertTrue(callable(preprocessing.build_baseline_preprocessor))
+        self.assertTrue(callable(evaluation.metrics_tables))
         self.assertTrue(callable(evaluation.classification_scores))
         self.assertTrue(callable(visualization.save_figure))
         self.assertTrue(callable(eda.target_distribution))

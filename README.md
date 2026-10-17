@@ -90,13 +90,13 @@ python -m src.data_loader
 
 ## Notebook order
 
-Run them in this order once each file exists. Notebooks 1 and 2 are in the repository. Notebook 2 reads the labelled file from notebook 1 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md).
+Run them in this order once each file exists. Notebooks 1 to 3 are in the repository. Notebook 2 reads the labelled file from notebook 1 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md). Notebook 3 fits a most-frequent dummy and a logistic regression on the training period only. Its written summary is [`reports/phase4_baselines.md`](reports/phase4_baselines.md).
 
 | Step | Notebook | What it will cover | Status |
 | --- | --- | --- | --- |
 | 1 | `notebooks/01_data_acquisition_and_audit.ipynb` | Source, raw file, column audit | Created |
 | 2 | `notebooks/02_exploratory_data_analysis.ipynb` | EDA and required figures | Created |
-| 3 | `notebooks/03_preprocessing_and_baselines.ipynb` | Cleaning, features, dummy baseline | Not created |
+| 3 | `notebooks/03_preprocessing_and_baselines.ipynb` | Leakage-safe features, dummy and logistic baselines | Created |
 | 4 | `notebooks/04_traditional_machine_learning.ipynb` | Logistic regression and a tree model | Not created |
 | 5 | `notebooks/05_neural_networks.ipynb` | Neural-network models in PyTorch | Not created |
 | 6 | `notebooks/06_evaluation_and_optimisation.ipynb` | Comparison, overfitting, champion tuning | Not created |
@@ -112,4 +112,4 @@ Notebook 01 builds the class from **Created On Date** and **Completed Date**. Th
 - Python 3.12 was used to pin the versions in `requirements.txt`.
 - `RANDOM_SEED` is 42.
 - Raw data is not rewritten.
-- Preprocessing that learns from data (imputation, encoding, scaling, feature selection, resampling) must be fit on training data only. That fitting is not part of Phase 1.
+- Preprocessing that learns from data (imputation, encoding, scaling, rare-category grouping) is fit on the training period only. Validation and test rows are not resampled.
