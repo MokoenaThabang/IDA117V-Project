@@ -1,0 +1,2 @@
+model,split,accuracy,macro_f1,weighted_f1,recall_resolved_fast,recall_resolved_slow,recall_unresolved,macro_roc_auc,macro_average_precision,approval,fit_seconds
+multilayer_perceptron,validation,0.6005238827980425,0.4764661870392401,0.6470152883144004,0.6842838860878548,0.45238714639581046,0.39385827718960537,0.7394346106513995,0.5075727906392361,approved,340.2432107580098

@@ -345,7 +345,7 @@ This report does not declare the project complete. The following are still open:
 
 - A stakeholder interview. The question list is `reports/stakeholder_interview_guide.md`. No interview has been recorded, so this report has no stakeholder validation. Lecturer approval of the embedding network has been recorded, and that model did not replace the champion.
 - An assignment timestamp for work centre. The sensitivity comparison in section 11 was fit, and it still cannot support a logging-time model.
-- A full re-execution of notebooks 01 to 07 from an empty environment in this phase. Those notebooks already contain executed outputs with no error cells, and their source cells do not hardcode a machine path. They were not run again while this draft was written. Notebook 08 was executed. It only checks the saved pipeline.
+- Notebooks 01 to 04 finished in an isolated results directory. Notebook 05 failed once because it imported a removed name, then finished after that import was corrected. Notebook 06 finished there as well. Its locked-test macro-F1 matched the saved champion, and that run recorded the embedding network as the comparator under the earlier rule. The current rule, applied to that run's Phase 5 table, selects the multilayer perceptron. Notebook 06 was not executed again. On 18 October 2026 the current notebook 07 was executed from a copy of the recorded champion files. The copy is `evidence/reproducibility/notebooks/pr14_notebook07/`. It did not replace the original notebook or `results/tables/06_test_predictions.parquet`. The paired predictions and the McNemar statistic matched the saved table. Fit times differed. Notebook 08 checks the saved pipeline and does not refit.
 
 The new tables and figures are reproduced with:
 

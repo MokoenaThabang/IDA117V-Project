@@ -8,7 +8,7 @@ IDA117V project. At the moment a City of Cape Town municipal service request is 
 
 The intended users are municipal service departments that need to see requests which may need earlier attention. The estimate is a review aid. It must not be used to deny or reduce service.
 
-The draft report is [`reports/final_report.md`](reports/final_report.md). It is assembled from the saved notebook outputs. This repository does not declare the project complete: lecturer approval of the embedding network has been recorded and that model is not the champion, no stakeholder interview has been recorded, and notebooks 01 to 07 were not re-executed from an empty environment while the draft was written. The open items are listed at the end of the report.
+The draft report is [`reports/final_report.md`](reports/final_report.md). It is assembled from the saved notebook outputs. This repository does not declare the project complete. Lecturer approval of the embedding network has been recorded and that model is not the champion. No stakeholder interview has been recorded. The readiness notes are in [`reports/submission_readiness.md`](reports/submission_readiness.md).
 
 ## Dataset
 
