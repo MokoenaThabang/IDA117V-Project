@@ -135,7 +135,7 @@ The learning curve is `results/figures/05_mlp_learning_curves.png`. Training los
 
 ![MLP learning curves](../results/figures/05_mlp_learning_curves.png)
 
-The second network embeds each categorical field. Embedding dimension is 16, the hidden layer has 64 units, and dropout is 0.3. The optimiser, batch size, loss, and early-stopping rule match the perceptron. Unseen categories use index 0, and that embedding row stays at zero. Work centre is not an input. It ran 7 epochs and restored epoch 4. Fit time was 236.2 seconds. Validation macro-F1 is 0.481. Lecturer approval has been recorded for this architecture. No approval date was supplied, and the architecture was not changed. The validation comparison now includes it. Histogram gradient boosting remains ahead, at 0.482, so the embedding network does not become the champion. The locked test was not used for that decision. Its curve is `results/figures/10_embedding_learning_curves.png`. The earlier notebook file `results/figures/05_embedding_learning_curves.png` is kept so the original notebook output remains traceable. The final report uses the corrected figure. Training loss fell while validation loss rose, as it did for the perceptron.
+The second network embeds each categorical field. Embedding dimension is 16, the hidden layer has 64 units, and dropout is 0.3. The optimiser, batch size, loss, and early-stopping rule match the perceptron. Unseen categories use index 0, and that embedding row stays at zero. Work centre is not an input. It ran 7 epochs and restored epoch 4. Fit time was 236.2 seconds. Validation macro-F1 is 0.481. Lecturer approval has been recorded for this architecture. No approval date was supplied, and the architecture was not changed. The validation comparison now includes it. Histogram gradient boosting remains ahead, at 0.482, so the embedding network does not become the champion. The locked test was not used for that decision. Its curve is `results/figures/10_embedding_learning_curves.png`. The notebook file `results/figures/05_embedding_learning_curves.png` was redrawn from the same saved history and uses the same approved title. The final report uses the corrected figure. Training loss fell while validation loss rose, as it did for the perceptron.
 
 ## 8. Evaluation and model comparison
 
@@ -242,7 +242,7 @@ Validation support is 648,570 Resolved Fast, 88,411 Resolved Slow, and 199,488 U
 
 ## 12. McNemar's test
 
-The comparison is the frozen booster and the multilayer perceptron on the same 422,033 locked-test cases. The perceptron was the strongest approved model other than the champion on the Phase 5 validation table. That choice was made before the locked-test scores were inspected. Paired predictions are in `results/tables/07_paired_predictions.parquet`. The file has the source row index, the true label, both predictions, and the champion probabilities. It does not have notification ids or coordinates.
+The comparison is the frozen booster and the multilayer perceptron on the same 422,033 locked-test cases. The comparator is the approved model other than the champion with the highest validation macro-F1. Ties break on Unresolved recall, then Resolved Slow recall, then model name. The embedding network is excluded from that choice because it was not selected as champion and is not scored on the locked test. Under that rule the comparator is the multilayer perceptron. The choice does not use the locked-test scores. Paired predictions are in `results/tables/07_paired_predictions.parquet`. The file has the source row index, the true label, both predictions, and the champion probabilities. It does not have notification ids or coordinates.
 
 Hypotheses, two-sided, alpha 0.05:
 
@@ -324,7 +324,7 @@ Other limitations, all from the executed work:
 - Logistic regression did not converge at 200 iterations, at a 1000-iteration check, or in the separate no-intercept and variance-scaled checks. Those runs were not adopted. The reported baseline remains the 200-iteration fit.
 - The embedding network is approved and is not the champion. Its recorded validation macro-F1 is 0.481, and histogram gradient boosting is 0.482. No approval date was supplied.
 - No stakeholder interview has been conducted.
-- A fresh run of notebook 06 now names the embedding network as the Phase 6 comparator because it is approved and its validation macro-F1 is above the multilayer perceptron. Notebook 07 stops rather than score that comparator on the locked test. The saved McNemar comparison remains the multilayer perceptron comparison.
+- The embedding network is excluded from the McNemar comparator because it was not selected as champion and is not scored on the locked test. The recorded comparator remains the multilayer perceptron.
 - The fitted work-centre comparison is not leakage-safe. The extract has no assignment time, and the champion still excludes that column.
 - Balanced weights improve Unresolved recall and, on the logistic test score, leave Resolved Slow precision at 0.202.
 - Macro ROC-AUC near 0.72 to 0.74 is better than chance and is not a basis for an automated decision. Resolved Slow average precision on the locked test is 0.216.

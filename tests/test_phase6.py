@@ -21,7 +21,9 @@ from src.config import TARGET_LABELS  # noqa: E402
 from src.optimisation import (  # noqa: E402
     GEOGRAPHIC_FEATURES,
     ablation_plan,
+    assert_recorded_comparator,
     choose_final_candidate,
+    comparison_record,
     frozen_iteration,
     full_feature_list,
     geographic_categorical_columns,
@@ -33,7 +35,8 @@ from src.optimisation import (  # noqa: E402
     training_fold_table,
 )
 from src.preprocessing import CATEGORICAL_FEATURES, MODEL_FEATURES  # noqa: E402
-from src.statistics import mcnemar_test, paired_correctness_counts  # noqa: E402
+from src.model_comparison import saved_comparison_record  # noqa: E402
+from src.statistics import assert_aligned_observations, mcnemar_test, paired_correctness_counts  # noqa: E402
 from src.training import APPROVED_APPROVAL, PENDING_APPROVAL, TreeCategoryEncoder, summarise_predictions  # noqa: E402
 
 
@@ -86,6 +89,84 @@ class SearchProtocolTest(unittest.TestCase):
         )
         chosen = strongest_approved_comparator(comparison)
         self.assertEqual(chosen["model"], "multilayer_perceptron")
+
+    def test_approved_embedding_is_barred_from_the_comparator(self) -> None:
+        comparison = pd.DataFrame(
+            [
+                {
+                    "model": "hist_gradient_boosting",
+                    "approval": "approved",
+                    "macro_f1": 0.482,
+                    "recall_unresolved": 0.49,
+                    "recall_resolved_slow": 0.42,
+                },
+                {
+                    "model": "embedding_network",
+                    "approval": "approved",
+                    "macro_f1": 0.481,
+                    "recall_unresolved": 0.46,
+                    "recall_resolved_slow": 0.44,
+                },
+                {
+                    "model": "multilayer_perceptron",
+                    "approval": "approved",
+                    "macro_f1": 0.476,
+                    "recall_unresolved": 0.39,
+                    "recall_resolved_slow": 0.45,
+                },
+                {
+                    "model": "logistic_regression",
+                    "approval": "approved",
+                    "macro_f1": 0.460,
+                    "recall_unresolved": 0.37,
+                    "recall_resolved_slow": 0.46,
+                },
+            ]
+        )
+        self.assertEqual(strongest_approved_comparator(comparison)["model"], "multilayer_perceptron")
+        unbarred = strongest_approved_comparator(comparison, excluded=())
+        self.assertEqual(unbarred["model"], "embedding_network")
+        record = comparison_record(comparison)
+        self.assertEqual(record["comparator"], "multilayer_perceptron")
+        self.assertFalse(record["locked_test_used_for_selection"])
+        frozen = {
+            "champion_family": "hist_gradient_boosting",
+            "comparator": "multilayer_perceptron",
+            "comparator_phase5_validation_macro_f1": 0.476,
+            "split_id": record["split_id"],
+        }
+        self.assertEqual(assert_recorded_comparator(frozen, comparison)["comparator"], "multilayer_perceptron")
+        frozen["comparator"] = "embedding_network"
+        with self.assertRaises(ValueError):
+            assert_recorded_comparator(frozen, comparison)
+
+    def test_tie_break_uses_unresolved_recall_before_the_model_name(self) -> None:
+        comparison = pd.DataFrame(
+            [
+                {
+                    "model": "hist_gradient_boosting",
+                    "approval": "approved",
+                    "macro_f1": 0.5,
+                    "recall_unresolved": 0.1,
+                    "recall_resolved_slow": 0.1,
+                },
+                {
+                    "model": "aaa_model",
+                    "approval": "approved",
+                    "macro_f1": 0.4,
+                    "recall_unresolved": 0.2,
+                    "recall_resolved_slow": 0.9,
+                },
+                {
+                    "model": "zzz_model",
+                    "approval": "approved",
+                    "macro_f1": 0.4,
+                    "recall_unresolved": 0.3,
+                    "recall_resolved_slow": 0.1,
+                },
+            ]
+        )
+        self.assertEqual(strongest_approved_comparator(comparison, excluded=())["model"], "zzz_model")
 
     def test_work_centre_ablation_is_already_excluded(self) -> None:
         plan = ablation_plan(full_feature_list())
@@ -217,6 +298,49 @@ class McNemarTest(unittest.TestCase):
         self.assertAlmostEqual(result["p_value"], float(stats.chi2.sf(statistic, df=1)))
         self.assertTrue(result["significant"])
         self.assertIn("every class", result["conclusion"])
+
+    def test_alignment_rejects_a_reordered_or_relabelled_file(self) -> None:
+        reference = pd.DataFrame(
+            {
+                "source_index": [3, 1, 2],
+                "y_true": ["Resolved Fast", "Resolved Slow", "Unresolved"],
+                "champion_predicted": ["Resolved Fast", "Resolved Fast", "Unresolved"],
+            }
+        )
+        swapped = reference.iloc[[1, 0, 2]].reset_index(drop=True)
+        with self.assertRaises(ValueError):
+            assert_aligned_observations(reference, swapped)
+        relabelled = reference.copy()
+        relabelled.loc[0, "y_true"] = "Unresolved"
+        with self.assertRaises(ValueError):
+            assert_aligned_observations(reference, relabelled)
+        missing = reference.drop(columns=["source_index"])
+        with self.assertRaises(ValueError):
+            assert_aligned_observations(reference, missing)
+
+    def test_saved_mcnemar_files_agree_on_the_recorded_comparator(self) -> None:
+        comparison_path = PROJECT_ROOT / "results" / "tables" / "05_model_comparison.csv"
+        frozen_path = PROJECT_ROOT / "results" / "tables" / "06_frozen_decision.json"
+        champion_path = PROJECT_ROOT / "results" / "tables" / "06_test_predictions.parquet"
+        paired_path = PROJECT_ROOT / "results" / "tables" / "07_paired_predictions.parquet"
+        for path in (comparison_path, frozen_path, champion_path, paired_path):
+            self.assertTrue(path.is_file(), path)
+        import json
+
+        record = saved_comparison_record(
+            pd.read_csv(comparison_path),
+            json.loads(frozen_path.read_text(encoding="utf-8")),
+            pd.read_parquet(champion_path),
+            pd.read_parquet(paired_path),
+        )
+        self.assertEqual(record["champion_model"], "hist_gradient_boosting")
+        self.assertEqual(record["comparator_model"], "multilayer_perceptron")
+        self.assertEqual(record["test_rows"], 422033)
+        self.assertEqual(record["contingency"]["champion_only"], 19282)
+        self.assertEqual(record["contingency"]["comparator_only"], 21854)
+        self.assertAlmostEqual(record["statistic"], 160.6875)
+        self.assertIn("paired error", record["interpretation"])
+        self.assertNotIn("embedding_network", record["comparator_model"])
 
     def test_locked_test_still_requires_authorisation(self) -> None:
         with self.assertRaises(RuntimeError):
