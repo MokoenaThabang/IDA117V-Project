@@ -2,6 +2,8 @@
 
 IDA117V group project. One page for the members to complete. This page lists the work that is actually in the repository. It does not assign that work to a person. No signature below is a signature. No row claims that a presentation was attended or that a defence was marked.
 
+The only human name in the git history is Thabang Mokoena, on four commits dated 15 October 2026: the initial repository, the README, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. That history is not a signed division of labour, and it is not a student number. The signature columns stay empty because no signature was supplied. The brief requires every member to sign. This page does not meet that requirement until they do.
+
 The brief asks every member to participate in a 10–12 minute presentation and to defend the modelling choices. `reports/presentation_outline.md` is a speaking outline of about 11 minutes. It is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
 
 | Work that exists in the repository | Name | Student number | Signature | Date |

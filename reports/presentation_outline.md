@@ -1,6 +1,16 @@
 # Presentation outline
 
-About 11 minutes. Every figure below is a saved project output. Scores come from `results/tables/08_model_metrics.csv`, the phase reports, or `results/tables/13_roc_all_models_locked_test.csv` and `results/tables/13_question62_record.json`.
+## What the brief requires
+
+The only presentation text in this repository is `reports/IDA117V_Project_Template.pdf`. It says presentations run from 5 October to 17 October 2026. Question 8.3 asks for a concise team presentation and a live or recorded interface demonstration, a defence of the modelling choices, and a signed contribution statement. The suggested length is 10–12 minutes plus questions, and every member participates. No lecturer message in this repository changes that text. This outline was not confirmed with a lecturer, because no lecturer contact is recorded here.
+
+## Evidence that is not in the repository
+
+There is no slide file, no attendance record, no recording, and no defence mark. Today in this workspace is 18 October 2026, after the window printed in the brief. This outline is the speaking plan. It is not evidence that the presentation happened.
+
+## Speaking plan
+
+About 11 minutes, inside the brief’s 10–12 minute suggestion. Every figure below is a saved project output. Scores come from `results/tables/08_model_metrics.csv`, the phase reports, or `results/tables/13_roc_all_models_locked_test.csv` and `results/tables/13_question62_record.json`. The interface demonstration is `streamlit run app/app.py`, using the cases in `reports/demonstration_checklist.md`.
 
 ## 1. Problem (1 minute)
 

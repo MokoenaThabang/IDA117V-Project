@@ -2,13 +2,13 @@
 
 | Cover field | Entry |
 | --- | --- |
-| Student names |  |
-| Student numbers |  |
-| Group number |  |
-| Lecturer |  |
-| Submission date |  |
+| Student names | Thabang Mokoena is the only human name in this repository's git history. It is on the four commits of 15 October 2026. No other group member is named in the repository. |
+| Student numbers | Not recorded. |
+| Group number | Not recorded. |
+| Lecturer | Not recorded. |
+| Submission date | Not recorded. |
 
-The IDA117V cover asks for these five fields. They are blank here. This report does not invent a name, a student number, a group number, a lecturer, or a submission date. The group writes them before submission.
+The IDA117V cover asks for these five fields. The name above is the git author of the repository scaffold. It is not a class list. No student number, group number, lecturer, or submission date is stored in the repository. The digits in the GitHub noreply address are an account id, not a student number, and they are not entered here.
 
 Draft report for IDA117V. The numbers come from the executed notebooks and the tables in `results/tables/`. This draft does not say the project is complete. The last section lists what was not run and what still needs a decision.
 
@@ -151,7 +151,11 @@ Class imbalance uses balanced weights from the training counts: Resolved Fast 0.
 
 The most-frequent dummy predicts the majority training class, Resolved Fast. On the validation period its accuracy is 0.693 and its macro-F1 is 0.273. On the locked test its accuracy is 0.680 and its macro-F1 is 0.270. Recall is 1 for Resolved Fast and 0 for the other two classes. That is the floor a useful model has to clear on macro-F1.
 
-Logistic regression uses saga, C = 1, L2, balanced class weights, max_iter 200, tolerance 0.001, and seed 42. Fit time was 247.9 seconds. The solver stopped at the iteration cap with a convergence warning. The one-hot columns are 0/1 and the weekend indicator is standardised on the training rows, so the warning is the iteration budget on 2,616,595 sparse rows, not a missing numeric scaler. A later refit with the same settings and max_iter 1000 also stopped at the cap, still with a convergence warning, and its validation macro-F1 was 0.453. That run was not adopted. Two further checks kept max_iter 200 and the same C, tolerance, solver, and class weights. Removing the intercept left the warning in place and scored validation macro-F1 0.467. Variance-scaling the one-hot block, while leaving the already standardised weekend column unchanged, also stopped at iteration 200 with a warning and scored validation macro-F1 0.465. Neither variant was adopted. The reported logistic scores remain the 200-iteration fit with an intercept: validation accuracy 0.578, macro-F1 0.460, and weighted-F1 0.630. The details are in `results/tables/11_logistic_convergence.json` and `results/tables/12_logistic_conditioning.json`. Locked-test scores from notebook 03 are accuracy 0.577, macro-F1 0.467, and weighted-F1 0.610. Locked-test recall is 0.672 for Resolved Fast, 0.454 for Resolved Slow, and 0.303 for Unresolved. Resolved Slow precision is 0.202. The 1000-iteration refit did not score the locked test.
+Logistic regression uses saga, C = 1, L2, balanced class weights, max_iter 200, tolerance 0.001, and seed 42. Fit time was 247.9 seconds. The solver stopped at the iteration cap with a convergence warning. The one-hot columns are 0/1 and the weekend indicator is standardised on the training rows, so the warning is the iteration budget on 2,616,595 sparse rows, not a missing numeric scaler. A later refit with the same settings and max_iter 1000 also stopped at the cap, still with a convergence warning, and its validation macro-F1 was 0.453. That run was not adopted. Two further checks kept max_iter 200 and the same C, tolerance, solver, and class weights. Removing the intercept left the warning in place and scored validation macro-F1 0.467. Variance-scaling the one-hot block, while leaving the already standardised weekend column unchanged, also stopped at iteration 200 with a warning and scored validation macro-F1 0.465. Neither variant was adopted. The reported logistic scores remain the 200-iteration fit with an intercept: validation accuracy 0.578, macro-F1 0.460, and weighted-F1 0.630. The details are in `results/tables/11_logistic_convergence.json` and `results/tables/12_logistic_conditioning.json`. Locked-test scores from notebook 03 are accuracy 0.577, macro-F1 0.467, and weighted-F1 0.610.
+
+Those saved scores are comparable with the other models because they use the same labels, the same chronological split, and the same metric functions. They are the scores of a fit that stopped at the iteration cap. They are not the scores of a solution that met the tolerance. `results/tables/11_logistic_convergence.json` records `converged` as false and `convergence_warning` as true. The 1000-iteration check is a different fit, with validation macro-F1 0.453, and it is not mixed into the comparison table. On 18 October 2026 the common ROC figure refit the same 200-iteration settings on the training period. That refit raised `ConvergenceWarning` and reproduced the saved validation macro-F1 of 0.460268 within 0.0001 before its locked-test curve was kept. The warning is retained. This report does not describe the logistic model as having converged.
+
+Locked-test recall for that same 200-iteration fit is 0.672 for Resolved Fast, 0.454 for Resolved Slow, and 0.303 for Unresolved. Resolved Slow precision is 0.202. The 1000-iteration refit did not score the locked test.
 
 Histogram gradient boosting, in the Phase 5 configuration, uses log loss, learning rate 0.1, at most 31 leaves, minimum 50 samples per leaf, L2 regularisation 1, and balanced weights. Early stopping watches validation macro-F1. Fit time was 17.9 seconds. It trained 8 iterations and the predictions use iteration 2. Validation macro-F1 at that iteration is 0.482. Accuracy is 0.591, weighted-F1 is 0.640, Resolved Slow recall is 0.416, and Unresolved recall is 0.492. Macro ROC-AUC is 0.739 and macro average precision is 0.506.
 
@@ -403,12 +407,12 @@ The delivered use is a queue aid for a reviewer in the department that receives 
 
 This report does not declare the project complete. The following are still open:
 
-- Cover fields: student names, student numbers, group number, lecturer, and submission date. They are blank because they were not supplied.
-- The contribution statement in `reports/contribution_statement.md`. The work rows match the repository. The name, student-number, and signature fields are blank for the members to complete.
-- A presentation and defence. The speaking outline is `reports/presentation_outline.md`. The brief's window is 5–17 October 2026. This repository has no attendance record and no defence outcome.
+- Student numbers, the group number, the lecturer, the submission date, and any members who are not in the git history. The cover names Thabang Mokoena from the commits of 15 October 2026 and leaves the other fields empty.
+- Signatures on `reports/contribution_statement.md`. The work rows match the repository. The signature cells are empty. The brief requires every member to sign, so this page is not yet a signed declaration.
+- A presentation and defence. The speaking outline is `reports/presentation_outline.md`, written to the brief’s 10–12 minute request, with an interface demonstration. The brief’s window is 5–17 October 2026. This repository has no attendance record and no defence outcome.
 - Lecturer approval of the embedding network has been recorded, and no approval date was supplied. The architecture was not changed. The model did not replace the champion.
 - An assignment timestamp for work centre. The sensitivity comparison in section 11 was fit, and it still cannot support a logging-time model.
-- Notebooks 01 to 04 finished in an isolated results directory. Notebook 05 failed once because it imported a removed name, then finished after that import was corrected. Notebook 06 finished there as well. Its locked-test macro-F1 matched the saved champion. Notebook 06 was not executed again, and `results/tables/06_test_predictions.parquet` was not replaced. On 18 October 2026 notebook 07 was executed from a copy of the recorded champion files. The copy is `evidence/reproducibility/notebooks/pr14_notebook07/`. That run is the historical perceptron comparison: the paired predictions and the statistic 160.6875 matched the saved table, and fit times differed. Question 6.2 was scored afterwards from the saved embedding checkpoint. The notebook source now calls that comparison in section 4. Section 4 itself has not been executed inside the notebook. Notebook 08 checks the saved pipeline and does not refit.
+- Notebooks 01 to 04 finished in an isolated results directory. Notebook 05 failed once because it imported a removed name, then finished after that import was corrected. Notebook 06 finished there as well. Its locked-test macro-F1 matched the saved champion. Notebook 06 was not executed again, and `results/tables/06_test_predictions.parquet` was not replaced. On 18 October 2026 notebook 07 was executed from a copy of the recorded champion files. The copy is `evidence/reproducibility/notebooks/pr14_notebook07/`. That run is the historical perceptron comparison: the paired predictions and the statistic 160.6875 matched the saved table, and fit times differed. Question 6.2 was scored afterwards from the saved embedding checkpoint. On 18 October 2026, notebook 07 section 4 was executed in `notebooks/07_ablation_and_statistical_testing.ipynb`. The displayed contingency was 229,320 both correct, 23,738 champion only, 18,625 embedding only, and 150,350 both wrong. The displayed statistic was 616.8718929254302 and the p-value was 3.58188637074921e-136. Those values match `results/tables/13_question62_record.json`. The execution rewrote that record and the embedding prediction file with the same bytes. It did not rewrite `results/tables/06_test_predictions.parquet` or `results/tables/07_mcnemar_test.csv`. Section 3 of the notebook, the historical perceptron refit, was not run again. Notebook 08 checks the saved pipeline and does not refit.
 
 The new tables and figures are reproduced with:
 
@@ -426,9 +430,55 @@ The submission status of each item is `reports/submission_checklist.md`.
 
 Future work that would not reuse the locked test for tuning: calibrate the probabilities, and revisit work centre only if an assignment timestamp becomes available. A stakeholder interview is not a brief requirement. None was conducted. Any later operational claim would need one.
 
+## References
+
+University of South Africa (2026) *IDA117V project template, Semester 2 2026*. The copy read for this report is `reports/IDA117V_Project_Template.pdf`.
+
+City of Cape Town (2026) *Service Requests 2023 until 06 October 2026 (Deprecated)*. SAP C3 Notifications feature layer. City of Cape Town Open Data Portal. Available at: https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore (Accessed: 16 October 2026). Terms read the same day: https://www.capetown.gov.za/general/city-of-cape-town-open-data-terms-of-use/
+
+Republic of South Africa (2013) *Protection of Personal Information Act 4 of 2013*. Pretoria: Government Printer.
+
+Defazio, A., Bach, F. and Lacoste-Julien, S. (2014) ‘SAGA: a fast incremental gradient method with support for non-strongly convex composite objectives’, *Advances in Neural Information Processing Systems*, 27.
+
+Edwards, A.L. (1948) ‘Note on the “correction for continuity” in testing the significance of the difference between correlated proportions’, *Psychometrika*, 13(3), pp. 185–187.
+
+Fawcett, T. (2006) ‘An introduction to ROC analysis’, *Pattern Recognition Letters*, 27(8), pp. 861–874.
+
+Guo, C. and Berkhahn, F. (2016) ‘Entity embeddings of categorical variables’, *arXiv:1604.06737*. The embedding network uses one learned vector per training category. It is not a copy of that paper’s code.
+
+Harris, C.R. et al. (2020) ‘Array programming with NumPy’, *Nature*, 585, pp. 357–362. NumPy 2.5.4.
+
+Hunter, J.D. (2007) ‘Matplotlib: a 2D graphics environment’, *Computing in Science & Engineering*, 9(3), pp. 90–95. Matplotlib 3.11.2.
+
+Loshchilov, I. and Hutter, F. (2019) ‘Decoupled weight decay regularization’, *International Conference on Learning Representations*. The neural fits use `torch.optim.AdamW`.
+
+McKinney, W. (2010) ‘Data structures for statistical computing in Python’, *Proceedings of the 9th Python in Science Conference*, pp. 56–61. pandas 3.0.6.
+
+McNemar, Q. (1947) ‘Note on the sampling error of the difference between correlated proportions or percentages’, *Psychometrika*, 12(2), pp. 153–157.
+
+Paszke, A. et al. (2019) ‘PyTorch: an imperative style, high-performance deep learning library’, *Advances in Neural Information Processing Systems*, 32. The installed build is torch 2.14.1+cpu.
+
+Pedregosa, F. et al. (2011) ‘Scikit-learn: machine learning in Python’, *Journal of Machine Learning Research*, 12, pp. 2825–2830. scikit-learn 1.9.1 supplies the dummy classifier, the saga logistic regression, and histogram gradient boosting.
+
+Streamlit Inc. (2026) *Streamlit*. Version 1.66.0. Available at: https://streamlit.io (Accessed: 18 October 2026).
+
+Virtanen, P. et al. (2020) ‘SciPy 1.0: fundamental algorithms for scientific computing in Python’, *Nature Methods*, 17, pp. 261–272. SciPy 1.18.1 supplies `binomtest` and `chi2` for McNemar’s test.
+
+Waskom, M.L. (2021) ‘seaborn: statistical data visualization’, *Journal of Open Source Software*, 6(60), 3021. seaborn 0.13.2 is used for figure styling.
+
+Joblib 1.6.0 stores the encoder and the frozen pipeline. openpyxl 3.1.5 is the Excel reader named in `src/data_loader.py`. JupyterLab 4.6.4 executed the notebooks. No external code fragment was copied into `src/`.
+
+## AI-assistance disclosure
+
+The assignment brief says to label AI-assisted work according to institutional policy. The brief itself does not attach a module declaration form. UNISA’s academic-integrity material requires students to acknowledge AI tools. The Unisa Press *Ethical AI use guidelines* of 29 July 2025 apply to Unisa Press manuscripts. They are not a form found in this module, and this report does not treat them as a signed assignment declaration. No prompt log was stored in the repository, so this section does not reconstruct prompts it does not have.
+
+What the git history shows is this. On 15 October 2026, four commits by Thabang Mokoena added the initial repository, `README.md`, `LICENSE`, `.gitignore`, `src/.gitkeep`, and `requirements.txt`. The later commits that added the audit, the models, the notebooks, the tests, the tables, the figures, and this report are authored `Cursor Agent <cursoragent@cursor.com>`. Those commits were produced in Cursor cloud-agent sessions. The session that added this disclosure identifies its model as Grok 4.7. Earlier sessions are not given a model name here, because that name is not stored on the commits.
+
+The measured scores, contingency counts, and figures cited above were produced by the project code from the City extract. They were not typed in as invented results. The agents wrote and ran that code, drafted the report from the saved tables, and exported the PDF. Human authors remain responsible for the submission. This disclosure is not a signature, and it does not assign a mark.
+
 ## Appendix A. Contribution statement
 
-The page the members sign is `reports/contribution_statement.md`. It is reproduced here so the PDF contains the same blank fields. No name, student number, or signature has been filled in. The outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
+The page the members sign is `reports/contribution_statement.md`. It is reproduced here so the PDF contains the same fields. The only human name in the git history is Thabang Mokoena, and that name is not written into a signature cell. No student number or signature has been supplied. The brief requires a one-page statement signed by all members. These empty signature cells mean that requirement is not met. The outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
 
 | Work that exists in the repository | Name | Student number | Signature | Date |
 | --- | --- | --- | --- | --- |

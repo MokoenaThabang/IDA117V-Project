@@ -28,8 +28,8 @@ This note does not say the submission is complete.
 | 6.2 McNemar against the strongest comparator on the same test cases | 5 | Met | The Question 6.2 comparator is the embedding network, validation macro-F1 0.480687, above the perceptron at 0.476466 and below histogram gradient boosting at 0.481660. On the same 422,033 locked-test rows: 229,320 both correct, 23,738 champion only, 18,625 embedding only, 150,350 both wrong. Statistic 616.8719. p-value 3.582e-136. Alpha 0.05. The record is `results/tables/13_question62_record.json`. The champion was not changed. The perceptron comparison, statistic 160.6875, remains in `results/tables/07_mcnemar_test.csv` as a historical result. |
 | 7.1–7.4 Interface | 7 | Met locally | `streamlit run app/app.py` loads `models/frozen_resolution_pipeline.joblib`. The form shows the class, probabilities, and a plain-language meaning. Invalid input is rejected. `reports/demonstration_checklist.md` has more than three scored cases and invalid cases. Screenshots are in `evidence/screenshots/`. There is no hosted demonstration link. The brief allows a local launch command instead. |
 | 8.1 Recommendation, limits, fairness, when not to use the model | 2 | Met | Report section 16. The suburb and ward audit is not claimed as a disparity finding. |
-| 8.2 Repository package | 3 | Partial | README, `requirements.txt`, seed 42, notebook order, source URL, data dictionary, saved pipeline, and interface code are present. The raw extract is not in git. There is no reference list for the libraries, and AI-assisted work is not labelled. |
-| 8.3 Presentation and signed contribution statement | 2 | Not met | `reports/presentation_outline.md` is about 11 minutes and cites the common ROC figure and the embedding McNemar result. There is no slide file, no attendance record, and no defence outcome. `reports/contribution_statement.md` lists the repository work and leaves name, student-number, and signature fields blank. The brief's presentation window is 5–17 October 2026. |
+| 8.2 Repository package | 3 | Partial | README, `requirements.txt`, seed 42, notebook order, source URL, data dictionary, saved pipeline, and interface code are present. The raw extract is not in git. The report now has a reference list and an AI-assistance disclosure based on the git history. A module-specific signed AI form was not in the brief or the repository. |
+| 8.3 Presentation and signed contribution statement | 2 | Not met | The brief asks for a 10–12 minute presentation, participation by every member, an interface demonstration, a defence, and a statement signed by all members, during 5–17 October 2026. `reports/presentation_outline.md` is the speaking plan. There is no slide file, attendance record, recording, or defence outcome. `reports/contribution_statement.md` names the only human git author and leaves the signature cells empty. |
 
 ## Verified files that did not change in this check
 
@@ -43,10 +43,9 @@ This note does not say the submission is complete.
 
 ## Still required before the brief can be treated as met
 
-1. The cover fields: student names, student numbers, group number, lecturer, and submission date. The table is in the report and the cells are blank.
-2. Signatures on `reports/contribution_statement.md`. The work rows are filled. The name and signature columns are not.
-3. The presentation the brief asks every member to give, and a defence outcome. The outline exists. Attendance does not.
-4. A short reference list, and a label for AI-assisted work if institutional policy requires one.
-5. A compute-environment description is still thin, and random cross-validation means are not shown for every model. The chronological split is the design that was used.
+1. Student numbers, the group number, the lecturer, the submission date, and any group members who are not named in git. The cover records only Thabang Mokoena, from the 15 October 2026 commits.
+2. Signatures on `reports/contribution_statement.md`. The brief requires them. The cells are empty because none were supplied. This file is not a signed declaration.
+3. Evidence that the presentation was given and that a defence took place. The brief’s window is 5–17 October 2026. The outline exists. Attendance does not.
+4. A compute-environment description is still thin, and random cross-validation means are not shown for every model. The chronological split is the design that was used.
 
 Question 6.2, the common ROC figure, the false-positive and false-negative discussion, and the POPIA discussion are now in the report. Logistic regression still does not converge at the checked settings. The report does not claim that it does. No stakeholder interview was conducted. The brief does not contain an interview question.
