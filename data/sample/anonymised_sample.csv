@@ -1,0 +1,2001 @@
+C3_Complaint_Type,department,suburb_group,Ward,Sub_Council,Created_On_Date,target
+No Power,Electricity,HOUT BAY,74,Sub-Council 20,2023-11-12,Resolved Fast
+No Power,Electricity,CLAREMONT,,,2023-04-12,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,GLENCAIRN,61,Sub-Council 19,2025-10-30,Unresolved
+WAT: Broken Leading,Water & Sanitation,BROOKLYN,55,Sub-Council 3,2025-10-08,Resolved Fast
+Street Lights - All Lights Out,Energy,RETREAT,,,2023-03-24,Resolved Fast
+Animal Carcass Removal - Dog - Large,Solid waste,OTHER,7,Sub-Council 2,2023-04-29,Resolved Slow
+No Power,Electricity,PHILIPPI,17,,2026-03-25,Resolved Fast
+Damaged Bin - 240L,Solid waste,WALLACEDENE,101,Sub-Council 2,2025-03-05,Resolved Fast
+Other (Enter detailed Fault description),Electricity,JOE SLOVO PARK,4,Sub-Council 3,2023-09-03,Resolved Fast
+Street Lights - All Lights Out,Electricity,HAZENDAL,49,Sub-Council 11,2025-10-23,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,HANOVER PARK,47,Sub-Council 11,2025-10-23,Resolved Fast
+No Power,Electricity,HOUT BAY,74,Sub-Council 20,2025-05-23,Resolved Fast
+Stolen Bins - 240L,Solid waste,OTHER,,,2026-02-05,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,BELLVILLE SOUTH,9,Sub-Council 6,2023-10-25,Resolved Fast
+Meter Replacement Project,OTHER,CLAREMONT,58,Sub-Council 20,2024-11-29,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LEIDEN,20,Sub-Council 5,2025-07-15,Resolved Fast
+Meter Replacement Project,Electricity,BELLVILLE SOUTH,9,Sub-Council 6,2023-04-17,Resolved Slow
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,PINEHURST,103,Sub-Council 7,2024-12-11,Resolved Fast
+Damaged Bin - 240L,Solid waste,LAVENDER HILL,,,2024-07-19,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,OAKDALE,3,Sub-Council 6,2025-10-21,Unresolved
+Stolen Bins - 240L,Solid waste,CROSSROADS,36,Sub-Council 13,2025-11-18,Resolved Fast
+WMM: Move/ Lower Meter 20mm and below,Water & Sanitation,DELFT 6,,,2025-07-09,Resolved Fast
+WAT: Shut-Off Supply Request,Water & Sanitation,BIG BAY,23,Sub-Council 1,2025-10-22,Resolved Fast
+Damaged Bin - 240L,Solid waste,OTHER,3,Sub-Council 6,2025-05-26,Unresolved
+No Power,Electricity,FISH HOEK,64,Sub-Council 19,2025-05-30,Resolved Fast
+PPM Faulty Mode,Electricity,BELGRAVIA,46,Sub-Council 14,2023-04-09,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,STEENBERG,68,Sub-Council 18,2024-03-07,Resolved Fast
+No Power,Energy,BELGRAVIA,46,Sub-Council 11,2025-06-10,Resolved Fast
+PPM Tariff Query / Change,Energy,DISTRICT SIX,,,2025-07-01,Resolved Fast
+WAT: Missing Cover Fire Hydrant,Water & Sanitation,UMRHABULO TRIANGLE,96,Sub-Council 10,2026-04-17,Unresolved
+WMM: Damaged Meter Below 40mm,Water & Sanitation,LENTEGEUR,78,Sub-Council 17,2026-01-29,Resolved Fast
+No Power,Electricity,VRYGROND,45,Sub-Council 19,2025-05-28,Resolved Fast
+Street Lights - All Lights Out,Energy,VAN DER STEL,,,2026-02-10,Resolved Slow
+PPM Faulty (Enter detailed description),Energy,RAVENSMEAD,,,2025-12-02,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MELKBOSCH STRAND,,,2024-04-17,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CROSSROADS,36,Sub-Council 13,2023-10-24,Resolved Fast
+WMM: Damaged Meter Below 40mm,Water & Sanitation,TAFELSIG,82,Sub-Council 12,2023-06-21,Resolved Fast
+PPM Customer Unable to Purchase,Energy,BISHOPSCOURT,62,Sub-Council 20,2025-10-01,Resolved Fast
+Consumption Complaint / Estimations,OTHER,PAARDEN EILAND,55,Sub-Council 16,2023-09-27,Resolved Slow
+MTR: Customer Account Adjustment,Water & Sanitation,DURBANVILLE,,,2026-01-28,Resolved Fast
+No Power,Electricity,#,,,2026-05-13,Resolved Fast
+Metal and Steelwork - (see long text),OTHER,HEIDEVELD,,,2023-07-10,Resolved Slow
+WMM: No Water Below 40mm,Water & Sanitation,SHERWOOD,32,Sub-Council 1,2023-06-23,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SALT RIVER,115,Sub-Council 16,2024-06-26,Resolved Slow
+WMM: Faulty Meter 20mm and below,Water & Sanitation,WINDSOR PARK ESTATE,102,Sub-Council 2,2024-05-17,Resolved Fast
+PPM Keypad Faulty,Electricity,RETREAT,110,Sub-Council 18,2024-05-28,Resolved Fast
+Manhole Cover Missing,Informal settlements,#,,,2024-02-05,Resolved Slow
+No Power,Electricity,MELKBOSCH STRAND,23,Sub-Council 1,2025-04-11,Resolved Fast
+No Power,Electricity,OTHER,,,2026-01-20,Resolved Fast
+Other (Enter detailed Fault description),Electricity,VASCO ESTATE,27,Sub-Council 4,2023-10-30,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,LAVENDER HILL,,,2025-06-13,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WOODLANDS,75,Sub-Council 17,2024-03-18,Resolved Slow
+Street Lights - Single Light Out,Electricity,LOEVENSTEIN,70,Sub-Council 7,2025-05-03,Resolved Fast
+Plumbing,OTHER,BONTEHEUWEL,,,2023-10-03,Resolved Slow
+Street Lights - ON,Energy,RUYTERWACHT,,,2023-02-04,Resolved Fast
+Damaged Bin - 240L,Solid waste,BLOEKOMBOS,101,Sub-Council 2,2024-06-27,Unresolved
+Damaged Bin - 240L,Solid waste,BONTEHEUWEL,50,Sub-Council 15,2024-03-05,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,#,,,2023-03-24,Resolved Slow
+PPM Faulty (Enter detailed description),Electricity,GUGULETU,39,Sub-Council 13,2024-04-08,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,MANENBERG,30,Sub-Council 14,2023-12-21,Resolved Fast
+Damaged Bin - 240L,Solid waste,MAMRE,29,Sub-Council 1,2025-02-06,Unresolved
+SEW: Missing Manhole Cover,Water & Sanitation,ATLANTIS INDUSTRIAL,32,Sub-Council 1,2025-03-13,Resolved Fast
+PPM Tripping,Electricity,MILNERTON,55,Sub-Council 3,2025-04-08,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,SCOTTSVILLE,111,Sub-Council 2,2023-12-13,Resolved Fast
+SEW: Faulty Damaged Manhole Cover,Water & Sanitation,PAREL VALLEI,15,Sub-Council 8,2025-04-23,Unresolved
+WMM: No Water Below 40mm,Water & Sanitation,MFULENI,108,Sub-Council 14,2024-09-17,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WESBANK,19,Sub-Council 14,2024-11-04,Resolved Slow
+No Power,Electricity,LANGA,52,Sub-Council 15,2023-11-24,Resolved Fast
+Fallen Branch,Open space,PINELANDS,,,2024-10-24,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,NYANGA,37,Sub-Council 13,2023-12-22,Resolved Fast
+Replace Window Handles,Public housing,MANENBERG,,,2026-02-09,Unresolved
+Street Lights - Single Light Out,Energy,OTHER,17,Sub-Council 14,2026-02-16,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,TUSCANY GLEN,17,Sub-Council 21,2024-02-02,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,EYETHU,94,Sub-Council 10,2024-05-02,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,GLENLILY,2,Sub-Council 6,2024-04-05,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,PARKLANDS,113,Sub-Council 3,2023-02-02,Resolved Fast
+PPM Rejecting Code,Electricity,HELENA HEIGHTS,15,Sub-Council 8,2024-06-03,Resolved Fast
+No Power,Energy,FLAMINGO VLEI,3,,2026-02-18,Resolved Fast
+Street Lights - Single Light Out,Electricity,LANSDOWNE,60,Sub-Council 11,2025-03-04,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,STEENBERG,68,Sub-Council 18,2024-10-14,Resolved Fast
+Cable Exposed,Electricity,OTHER,,,2023-05-12,Resolved Fast
+Damaged Bin - 240L,Solid waste,PROTEA HEIGHTS,8,Sub-Council 2,2024-02-27,Resolved Fast
+Street Lights - All Lights Out,Electricity,EASTRIDGE,92,Sub-Council 12,2026-05-07,Unresolved
+No Power,Electricity,OTHER,,,2025-06-14,Resolved Fast
+Stolen Bins - 240L,Solid waste,BROWNS FARM,,,2025-10-25,Resolved Fast
+Other (Enter detailed Fault description),Electricity,HEIDEVELD,44,Sub-Council 14,2023-03-29,Resolved Fast
+No Power,Electricity,BELGRAVIA,,,2023-06-21,Resolved Fast
+Street Lights - All Lights Out,Electricity,KLIPKOP,10,Sub-Council 6,2024-09-18,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,PROTEA PARK - WESFLEUR,32,Sub-Council 1,2023-08-17,Resolved Fast
+WAT: Burst Pipe,OTHER,WYNBERG,62,Sub-Council 20,2023-03-15,Resolved Fast
+PPM Keypad Faulty,Electricity,#,,,2025-06-23,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,UMRHABULO TRIANGLE,96,Sub-Council 10,2024-05-20,Resolved Fast
+SEW: Blocked/Overflow,OTHER,UMRHABULO TRIANGLE,,,2023-07-18,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,,,2025-07-30,Unresolved
+WAT: Missing Cover Fire Hydrant,Water & Sanitation,GLENLILY,2,Sub-Council 6,2024-06-18,Unresolved
+Street Lights - Single Light Out,Electricity,STRAND,,,2024-07-25,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EUREKA ESTATE,25,Sub-Council 4,2025-06-05,Resolved Fast
+No Power,Electricity,MAMRE,29,Sub-Council 1,2023-11-08,Resolved Fast
+MTR: Internal Billing/Adjustment,Water & Sanitation,PROTEA HEIGHTS,8,Sub-Council 2,2025-12-02,Unresolved
+PPM Faulty Mode,Electricity,BRIDGETOWN,44,Sub-Council 14,2024-08-11,Resolved Slow
+Street Lights - All Lights Out,Energy,VREDELUST BELLVILLE,,,2024-07-14,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,BELGRAVIA,,,2026-03-07,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,FAIRDALE,108,Sub-Council 21,2024-08-21,Resolved Slow
+No Power,Electricity,MFULENI,,,2024-03-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,5,Sub-Council 7,2025-06-13,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,EDGEMEAD,5,Sub-Council 3,2024-04-13,Resolved Fast
+Stolen Bins - 240L,Solid waste,#,,,2023-08-25,Resolved Slow
+WAT: Broken Leading,OTHER,HOUT BAY,74,Sub-Council 20,2023-01-12,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,HANOVER PARK,47,Sub-Council 11,2024-07-05,Resolved Slow
+No Power,Electricity,GRASSY PARK,65,Sub-Council 18,2023-12-30,Resolved Fast
+No Power,Electricity,ATHLONE,11,,2026-03-31,Resolved Fast
+Dumping on Parks,Open space,DE KUILEN,11,Sub-Council 14,2024-12-03,Resolved Slow
+Stolen Bins - 240L,Solid waste,HARARE,,,2026-04-07,Resolved Fast
+Other,OTHER,OTHER,,,2025-10-27,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,CLAREMONT,59,Sub-Council 11,2024-03-22,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,#,,,2025-08-15,Resolved Fast
+Cable Exposed,Electricity,BONTEHEUWEL,,,2026-02-13,Unresolved
+Unhealthy/Unhygienic Conditions,Health,CAPE TOWN,,,2024-09-30,Resolved Slow
+Stolen Bins - 240L,Solid waste,DELFT SOUTH,24,Sub-Council 5,2025-05-19,Resolved Fast
+Meter Replacement Project,OTHER,WYNBERG,63,Sub-Council 20,2024-10-02,Resolved Slow
+No Power,Electricity,RONDEBOSCH EAST,60,Sub-Council 11,2024-09-12,Resolved Fast
+Illegal Dumping,Solid waste,EERSTERIVIER SOUTH,16,Sub-Council 14,2026-01-07,Resolved Slow
+Street Lights - Single Light Out,Energy,WYNBERG,62,Sub-Council 20,2024-02-28,Resolved Slow
+Electrical,Electricity,SCOTTSDENE,,,2023-10-10,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,ROCKLANDS,81,Sub-Council 17,2025-02-06,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,MITCHELLS PLAIN,,,2025-07-29,Unresolved
+Street Lights - All Lights Out,Electricity,WETTON,,,2024-07-28,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,CONSTANTIA,73,Sub-Council 20,2025-12-03,Resolved Fast
+Unhealthy/Unhygienic Conditions,Water & Sanitation,BISHOP LAVIS,22,Sub-Council 5,2023-10-19,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,UMRHABULO TRIANGLE,96,Sub-Council 10,2023-07-04,Resolved Slow
+Reconnect (After Hours),Energy,GOEDEMOED,112,Sub-Council 7,2023-10-02,Resolved Fast
+Meter Replacement Project,OTHER,SEA POINT,,,2025-08-08,Resolved Slow
+Street Lights - Single Light Out,Electricity,KALKSTEENFONTEIN,,,2023-03-07,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,ILITHA PARK,,,2024-08-29,Resolved Fast
+No Power,Electricity,LANGA,15,,2026-02-24,Resolved Fast
+Compost Bin Application - 150L,Solid waste,THE HAGUE,13,Sub-Council 5,2023-12-07,Resolved Fast
+PPM Tripping,Electricity,HAZENDAL,49,Sub-Council 11,2025-08-03,Resolved Fast
+Damaged Bin - 240L,Solid waste,PHILIPPI,80,Sub-Council 13,2025-04-14,Resolved Fast
+Street Sweeping,Solid waste,PROTEA PARK - WESFLEUR,32,Sub-Council 1,2025-11-13,Unresolved
+Kiosk Damaged,Energy,HARARE,98,Sub-Council 10,2024-05-23,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,BEACONVALE,26,Sub-Council 4,2023-11-17,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,BONNIE BROOK,,,2026-01-05,Resolved Fast
+No Power,Electricity,OTHER,84,Sub-Council 8,2024-12-25,Resolved Fast
+PPM Burning/Burning Smell,Electricity,OAKGLEN,3,Sub-Council 6,2026-03-01,Resolved Fast
+Street Lights - Single Light Out,Electricity,MOWBRAY,57,Sub-Council 16,2025-02-06,Resolved Fast
+WAT: No Supply,Water & Sanitation,GRASSY PARK,65,Sub-Council 18,2023-03-21,Resolved Fast
+PPM Faulty Mode,Electricity,SEA POINT,54,Sub-Council 16,2023-06-06,Resolved Fast
+No Power,Electricity,#,,,2023-05-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,#,,,2024-10-10,Resolved Slow
+WINF: Missing Tap,Informal settlements,DELFT,,,2025-03-29,Resolved Fast
+Pest Control,Health,#,,,2023-05-05,Resolved Fast
+Pest Control,Health,#,,,2026-04-10,Resolved Fast
+Stolen Bins - 240L,Solid waste,ASANDA,,,2025-12-17,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,OTHER,10,Sub-Council 6,2026-05-19,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,WINDERMERE,56,Sub-Council 3,2025-10-10,Resolved Fast
+Wires Down,Energy,OCEAN VIEW,61,Sub-Council 19,2025-07-24,Resolved Fast
+Vector Control,Health,LANGA,,,2025-03-20,Resolved Fast
+Street Lights - All Lights Out,Energy,OTHER,,,2023-03-08,Resolved Slow
+No Power,Electricity,EAGLE PARK,67,Sub-Council 18,2023-03-02,Resolved Fast
+Dumping on Parks,Open space,MILNERTON,,,2026-01-04,Resolved Slow
+Other (Enter detailed Fault description),Electricity,#,,,2023-06-03,Resolved Fast
+Reconnect (Non - Payment),Energy,VREDEHOEK,77,Sub-Council 16,2025-06-12,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,ELSIES RIVER,28,Sub-Council 4,2024-04-30,Resolved Fast
+WMM: Missing Cover Meter 20mm and below,Water & Sanitation,FLAMINGO VLEI,113,Sub-Council 3,2023-09-08,Resolved Fast
+Window Service: Peg / Sliding Stays/Hing,Public housing,LEONSDALE,,,2025-06-19,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,JOE SLOVO PARK,4,Sub-Council 3,2025-06-06,Resolved Fast
+No Power,Electricity,NOMZAMO,85,Sub-Council 8,2025-05-19,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,MIKPUNT,105,Sub-Council 7,2023-08-03,Resolved Slow
+No Power,Electricity,WYNBERG,62,Sub-Council 20,2024-01-19,Resolved Fast
+Electrical,Electricity,LAVENDER HILL,,,2024-03-28,Unresolved
+Street Lights - All Lights Out,Energy,LEIDEN,106,Sub-Council 5,2025-03-19,Resolved Fast
+SEW: Blocked/Overflow,OTHER,OCEAN VIEW,61,Sub-Council 19,2023-02-19,Resolved Slow
+Illegal Dumping,Solid waste,NEW WOODLANDS,75,Sub-Council 17,2024-12-17,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,NOMZAMO,,,2026-04-07,Resolved Fast
+Street Lights - All Lights Out,Electricity,CRAWFORD,48,Sub-Council 11,2025-05-13,Resolved Fast
+Informal Settlements-Fire Debris Removal,Solid waste,#,,,2026-03-16,Resolved Fast
+Carpentry,Public housing,HEIDEVELD,,,2023-09-27,Resolved Slow
+Replace Window Handles,Public housing,GRASSY PARK,,,2026-04-15,Unresolved
+Street Lights - Single Light Out,Electricity,CLAREMONT,58,Sub-Council 11,2024-04-26,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,BELHAR EXT 21,12,Sub-Council 5,2025-03-17,Resolved Fast
+Street Lights - All Lights Out,Electricity,BRIZA,15,Sub-Council 8,2024-02-09,Resolved Fast
+Phase Missing,Electricity,SYBRAND PARK,60,Sub-Council 11,2026-03-14,Resolved Fast
+No Power,Electricity,#,,,2024-01-09,Resolved Fast
+No Power,Electricity,GUGULETU,44,Sub-Council 11,2025-03-04,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,EIKENDAL,7,Sub-Council 2,2024-12-24,Resolved Fast
+Reconnect (After Hours),Energy,ATHLONE,48,Sub-Council 11,2026-03-22,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,STRAND,83,Sub-Council 8,2025-05-26,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,ROSEDALE - KLEIN VLEI,,,2025-12-07,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WYNBERG,63,Sub-Council 20,2025-10-13,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,LENTEGEUR,76,Sub-Council 12,2024-05-16,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2023-08-14,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETU,,,2025-12-08,Resolved Fast
+Tap Missing,Informal settlements,PHILIPPI,80,Sub-Council 13,2023-04-18,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,SCOTTSDENE,7,Sub-Council 2,2024-01-27,Resolved Slow
+No Power,Electricity,OTHER,15,Sub-Council 8,2024-07-08,Resolved Fast
+Painting: Re-Let Only,Public housing,GRASSY PARK,,,2025-05-07,Unresolved
+MTR: Internal MTR Related Queries,Water & Sanitation,GRASSY PARK,,,2023-05-08,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,ZEEKOEVLEI,67,Sub-Council 18,2026-01-25,Resolved Fast
+No Power,Electricity,ATHLONE,48,Sub-Council 11,2024-02-20,Resolved Fast
+Street Lights - Single Light Out,Electricity,RONDEBOSCH,59,Sub-Council 11,2024-01-30,Resolved Fast
+Street Lights - All Lights Out,Electricity,MOUNTVIEW,,,2023-02-17,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,PELIKAN PARK,67,Sub-Council 18,2025-11-13,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,MOUNTAINSIDE ESTATE,,,2025-08-07,Unresolved
+No Power,Electricity,KENILWORTH,58,Sub-Council 20,2024-10-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CONNAUGHT,25,Sub-Council 4,2025-07-13,Resolved Slow
+Street Lights - Single Light Out,Electricity,#,,,2024-11-04,Resolved Slow
+PPM Rejecting Code,Electricity,WESTLAKE,71,Sub-Council 20,2025-07-12,Resolved Fast
+Street Lights - All Lights Out,Electricity,KUILSRIVIER SOUTH SMALLHOLDINGS,19,Sub-Council 14,2025-05-13,Resolved Fast
+No Power,Electricity,PHILIPPI,88,Sub-Council 17,2024-05-03,Resolved Fast
+Wires Down,Energy,WESBANK,19,Sub-Council 14,2025-07-27,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,DELFT 4,13,Sub-Council 5,2024-01-23,Resolved Fast
+PPM Rejecting Code,Electricity,PHILIPPI,88,Sub-Council 17,2025-08-24,Resolved Fast
+Damaged Bin - 240L,Solid waste,BELHAR EXT 2,,,2026-01-21,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,SAREPTA,11,Sub-Council 14,2026-03-02,Resolved Fast
+No Power,Electricity,TOKAI,71,Sub-Council 20,2025-12-31,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,SUMMER GREENS,4,Sub-Council 3,2023-11-13,Resolved Fast
+Street Lights - Single Light Out,Electricity,BEACON VALLEY,116,Sub-Council 12,2026-04-23,Resolved Fast
+Stolen Bins - 240L,Solid waste,DELFT 7,106,Sub-Council 5,2024-10-15,Resolved Fast
+Damaged Bin - 240L,Solid waste,GREENLANDS,9,Sub-Council 6,2024-04-18,Resolved Slow
+Stolen Bins - 240L,Solid waste,TAFELSIG,82,Sub-Council 12,2023-03-20,Resolved Slow
+SEW: Blocked/Overflow,OTHER,#,,,2023-12-17,Resolved Fast
+Kiosk Damaged,Energy,GREENVILLE GARDEN CITY,105,Sub-Council 7,2025-04-14,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,#,23,Sub-Council 1,2024-03-28,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,STEENBERG,68,Sub-Council 18,2023-09-06,Resolved Fast
+Repair Signage at Park,Open space,BELMONT PARK,,,2024-08-17,Resolved Slow
+Senior Citizens & D/P Rates Rebates,Water & Sanitation,TABLE VIEW,113,Sub-Council 3,2023-06-05,Resolved Fast
+SINF: Blocked Manhole,Informal settlements,#,,,2025-08-30,Unresolved
+No Power,Energy,OTHER,,,2024-10-16,Resolved Fast
+Street Lights - Single Light Out,Electricity,GUGULETU,39,Sub-Council 13,2024-05-17,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,PINELANDS,53,Sub-Council 15,2023-10-30,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,10,Sub-Council 6,2025-03-05,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,MANENBERG,30,Sub-Council 14,2024-08-19,Resolved Slow
+Damaged Bin - 240L,Solid waste,CAMPS BAY / BAKOVEN,54,Sub-Council 16,2025-08-31,Resolved Fast
+No Power,Electricity,GUGULETU,13,,2025-11-19,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,WESTLAKE,71,Sub-Council 20,2024-09-13,Resolved Slow
+Damaged Bin - 240L,Solid waste,OTTERY,66,Sub-Council 18,2023-11-27,Resolved Fast
+No Power,Electricity,KLEINBRON,103,Sub-Council 7,2025-05-27,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,NEWLANDS,59,Sub-Council 20,2024-09-24,Resolved Slow
+No Power,Electricity,BELHAR EXT 23,12,Sub-Council 5,2025-04-08,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BISHOP LAVIS,42,Sub-Council 4,2023-03-28,Resolved Fast
+Sewer: Blocked/Overflow,Water & Sanitation,SCOTTSDENE,,,2023-05-27,Resolved Slow
+Stolen Bins - 240L,Solid waste,NEW WOODLANDS,75,Sub-Council 17,2024-04-18,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,SUMMER GREENS,4,Sub-Council 3,2023-10-13,Resolved Fast
+Street Lights - Single Light Out,Electricity,CLAREMONT,,,2024-09-06,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,GORDONS STRAND ESTATE,100,Sub-Council 8,2025-04-27,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,DUNOON,104,Sub-Council 3,2025-02-09,Unresolved
+Pest Control,Health,ROCKLANDS,81,Sub-Council 17,2023-04-06,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EYETHU,94,Sub-Council 10,2024-06-12,Resolved Slow
+No Power,Electricity,HEIDEVELD,,,2023-04-27,Resolved Fast
+Street Lights - Single Light Out,Electricity,ROSEBANK,,,2024-11-02,Resolved Fast
+PPM Faulty Mode,Energy,#,,,2023-08-17,Resolved Fast
+Street Lights - Single Light Out,Electricity,SOUTHFIELD,72,Sub-Council 18,2025-11-23,Resolved Slow
+PPM Faulty Mode,Electricity,MFULENI,,,2023-06-15,Resolved Slow
+Street Lights - Single Light Out,Energy,EIKENDAL,111,Sub-Council 2,2024-03-21,Resolved Slow
+Street Lights - All Lights Out,Energy,SONSTRAAL,,,2024-06-12,Resolved Slow
+AMI Validations (CSS),Energy,MILNERTON,55,Sub-Council 3,2025-04-22,Resolved Fast
+SEW: Blocked/Overflow,OTHER,NONQUBELA,89,Sub-Council 9,2023-12-20,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PLUMSTEAD,63,Sub-Council 20,2025-08-04,Resolved Fast
+No Power,Energy,LANSDOWNE,60,Sub-Council 11,2024-01-03,Resolved Fast
+Street Lights - All Lights Out,Electricity,BONTEHEUWEL,50,Sub-Council 15,2024-09-04,Resolved Fast
+No Power,Electricity,FLORIDA,25,Sub-Council 4,2024-06-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BLOEKOMBOS,101,Sub-Council 2,2024-01-19,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,THE RANGE,28,Sub-Council 4,2026-04-29,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PAROW NORTH,2,Sub-Council 6,2024-12-02,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,BELLVILLE CBD,2,Sub-Council 6,2024-05-19,Resolved Fast
+Damaged Toilet - Full Flush Toilet,Informal settlements,OTHER,,,2024-10-18,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KEWTOWN,,,2023-03-28,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,OTHER,,,2025-12-12,Resolved Fast
+SEW: Blocked/Overflow,OTHER,STRAND,85,Sub-Council 8,2023-01-02,Resolved Fast
+Plumbing,OTHER,HANOVER PARK,,,2023-10-26,Resolved Fast
+Tree Trimming,Open space,EDGEMEAD,5,Sub-Council 7,2024-12-20,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,CONSTANTIA,73,Sub-Council 20,2026-01-02,Resolved Fast
+Stolen Bins - 240L,Solid waste,NYANGA,,,2026-01-22,Resolved Slow
+Compost Bin Application - 150L,OTHER,#,,,2023-05-01,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,BONTEHEUWEL,50,Sub-Council 15,2025-04-09,Unresolved
+SEW: Blocked/Overflow,OTHER,OTHER,108,Sub-Council 21,2023-08-06,Resolved Slow
+EPIC Solid Waste,Solid waste,#,,,2023-07-28,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BELLVILLE,,,2025-03-14,Resolved Fast
+Stolen Bins - 240L,Solid waste,VALHALLA PARK,31,Sub-Council 15,2025-10-15,Resolved Fast
+No Power,Electricity,SILVERTOWN,11,,2026-03-29,Resolved Fast
+WMM: Damaged Meter 20mm and below,Water & Sanitation,JOE SLOVO PARK,4,Sub-Council 3,2025-04-07,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,LOTUS RIVER,65,Sub-Council 18,2025-07-25,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,OTTERY,66,Sub-Council 18,2024-08-07,Resolved Slow
+No Power,Electricity,RYLANDS,46,Sub-Council 14,2024-06-17,Resolved Fast
+Street Lights - All Lights Out,Energy,VALHALLA PARK,31,Sub-Council 15,2024-06-03,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-03-04,Resolved Slow
+Damaged Bin - 240L,Solid waste,MONTCLAIR,,,2025-11-17,Resolved Fast
+No Power,Electricity,GUGULETU,39,Sub-Council 13,2023-12-05,Resolved Fast
+No Power,Electricity,LANSDOWNE,60,Sub-Council 11,2024-07-27,Resolved Fast
+No Power,Electricity,ATHLONE,,,2024-08-25,Resolved Fast
+Wires Down,Electricity,ATHLONE,49,Sub-Council 11,2025-04-10,Resolved Fast
+PPM Display Blank,Electricity,GUGULETU,,Sub-Council 13,2025-07-07,Resolved Slow
+WAT: Faulty Meter 25mm and up,OTHER,MUIZENBERG,64,Sub-Council 19,2023-11-14,Resolved Slow
+WAT: Low Pressure,Water & Sanitation,OTHER,30,Sub-Council 11,2025-02-05,Unresolved
+Stolen Bins - 240L,Solid waste,PEERLESS PARK WEST,111,Sub-Council 2,2023-03-22,Resolved Fast
+No Power,Electricity,ASANDA,85,Sub-Council 8,2025-07-27,Resolved Fast
+Replace Window Panes,Public housing,SCOTTSDENE,,,2024-11-14,Unresolved
+Street Lights - All Lights Out,Electricity,CRAWFORD,,,2024-10-16,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,UITZICHT,103,Sub-Council 7,2023-11-07,Resolved Slow
+Low Voltage and/or Shocks,Electricity,LANSDOWNE,60,Sub-Council 11,2024-05-28,Resolved Fast
+WMM: Damaged Meter 20mm and below,Water & Sanitation,MACASSAR,109,Sub-Council 8,2025-03-06,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,SHERWOOD,,,2026-04-14,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,BLOMMENDAL,,,2023-06-21,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,NYANGA,37,Sub-Council 13,2024-08-15,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,OTHER,60,Sub-Council 11,2023-10-30,Resolved Fast
+Damaged Bin - 240L,Solid waste,SEA POINT,54,Sub-Council 16,2024-03-14,Resolved Slow
+Water,Water & Sanitation,BELHAR EXT 20,,,2023-07-15,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WOODSTOCK,,,2023-03-23,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,OTHER,21,Sub-Council 7,2024-03-07,Resolved Slow
+No Power,Electricity,STRAND,,,2025-12-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,83,Sub-Council 8,2024-08-31,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,AUSTINVILLE,14,Sub-Council 14,2026-03-05,Resolved Fast
+Street Lights - All Lights Out,Energy,ROSEDALE - KLEIN VLEI,17,Sub-Council 14,2026-05-07,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SEA POINT,54,Sub-Council 16,2025-02-09,Unresolved
+WAT: No Water 40mm and Above,Water & Sanitation,DURBANVILLE,112,Sub-Council 7,2026-05-08,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MUIZENBERG,64,Sub-Council 19,2026-05-19,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,PARKLANDS,107,Sub-Council 1,2023-10-10,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,PLATTEKLOOF 2,1,Sub-Council 7,2024-10-20,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,NONQUBELA,89,Sub-Council 9,2023-10-25,Resolved Slow
+Street Lights - All Lights Out,Energy,EASTRIDGE,116,Sub-Council 12,2023-07-18,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,LENTEGEUR,78,Sub-Council 17,2026-03-18,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LOTUS RIVER,65,Sub-Council 18,2025-10-10,Resolved Fast
+Damaged Bin - 240L,Solid waste,WYNBERG,,,2025-10-17,Resolved Slow
+SEW: Re-Instatement,Water & Sanitation,DISTRICT SIX,115,Sub-Council 16,2025-08-22,Unresolved
+PPM Faulty Mode,Energy,VOORBRUG,20,Sub-Council 5,2026-04-07,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,41,Sub-Council 13,2025-11-17,Resolved Fast
+SEW: Blocked/Overflow,OTHER,GORDONS BAY,,,2023-07-07,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SUN VALLEY,69,Sub-Council 19,2025-10-13,Resolved Fast
+PPM Customer Unable to Purchase,Energy,PHILIPPI,43,Sub-Council 17,2025-06-23,Resolved Fast
+Street Lights - All Lights Out,Electricity,STRAND,100,Sub-Council 8,2024-01-31,Resolved Slow
+WAT: Burst Pipe,OTHER,SOMERSET WEST,84,Sub-Council 8,2023-10-19,Resolved Slow
+Sewer: Blocked/Overflow,OTHER,ANCHORAGE PARK,100,Sub-Council 8,2023-05-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETHU,,,2025-06-26,Unresolved
+No Power,Electricity,OCEAN VIEW,61,Sub-Council 19,2023-05-13,Resolved Fast
+Stolen Bins - 240L,Solid waste,GOODWOOD EXT 1,27,Sub-Council 4,2024-03-11,Resolved Fast
+No Power,Energy,BONNIE BRAE,2,,2026-04-21,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,ZEEKOEVLEI,67,Sub-Council 18,2024-07-02,Resolved Fast
+Stolen Bins - 240L,Solid waste,LEIDEN,20,Sub-Council 5,2024-08-13,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-03-14,Resolved Fast
+Wires Exposed,Electricity,UITSIG,,,2026-04-01,Unresolved
+PPM Faulty (Enter detailed description),Electricity,OOSTERZEE-BELLVILLE,2,Sub-Council 6,2025-11-26,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,KOMMETJIE,,,2026-01-21,Resolved Slow
+Roofs,Public housing,MANENBERG,,,2026-01-14,Unresolved
+Equipment Damaged,Electricity,WESTLAKE,71,Sub-Council 20,2025-04-10,Resolved Fast
+Street Lights - All Lights Out,Electricity,HEIDEVELD,44,Sub-Council 11,2025-05-02,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SCARBOROUGH,61,Sub-Council 19,2025-11-02,Resolved Fast
+No Power,Electricity,#,,,2024-05-22,Resolved Fast
+No Power,Electricity,LWANDLE,86,Sub-Council 8,2025-06-10,Resolved Fast
+Damaged Bin - 240L,Solid waste,OTHER,5,Sub-Council 7,2026-02-24,Resolved Fast
+No Power,Electricity,SYBRAND PARK,60,Sub-Council 11,2023-03-04,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,HIGHBURY,19,Sub-Council 21,2023-08-21,Resolved Slow
+Phase Missing,Electricity,ATHLONE,60,Sub-Council 11,2024-08-25,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,77,Sub-Council 16,2026-04-13,Resolved Fast
+Stolen Bins - 240L,Solid waste,LENTEGEUR,76,Sub-Council 12,2025-04-28,Resolved Fast
+No Power,Electricity,#,,,2023-07-27,Resolved Slow
+MTR: Customer Account Adjustment,Water & Sanitation,GRASSY PARK,,,2025-07-30,Resolved Fast
+Street Lights - All Lights Out,Electricity,MILNERTON,,,2026-04-22,Resolved Fast
+Illegal Dumping,Solid waste,CONSTANTIA,,,2024-04-11,Resolved Fast
+WMM: Faulty Meter 20mm and below,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2023-09-26,Resolved Fast
+WAT: Missing Cover Meter 25mm and up,Water & Sanitation,OBSERVATORY,57,Sub-Council 16,2023-10-30,Resolved Slow
+Tree Removal,Open space,#,,,2025-03-17,Unresolved
+WC Pan: Repair / Replace,Public housing,ELSIES RIVER,,,2025-11-21,Unresolved
+WAT: Broken Leading,Water & Sanitation,NONQUBELA,89,Sub-Council 9,2023-07-07,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-10-16,Resolved Fast
+PPM Customer Unable to Purchase,Energy,LANGA,52,Sub-Council 15,2026-03-11,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,FLAMINGO VLEI,,,2025-12-17,Resolved Slow
+MTR: Customer Technical & MTR Related,Water & Sanitation,OTHER,83,Sub-Council 8,2024-12-13,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,107,Sub-Council 1,2026-01-08,Resolved Fast
+No Power,Electricity,CLAREMONT,59,Sub-Council 11,2023-10-03,Resolved Fast
+Wires Down,Electricity,WYNBERG,63,Sub-Council 20,2025-02-10,Resolved Fast
+No Power,Electricity,BONTEHEUWEL,31,Sub-Council 15,2023-03-20,Resolved Slow
+No Power,Electricity,LANSDOWNE,60,Sub-Council 11,2024-03-15,Resolved Fast
+SEW: Empty Conservancy Tank,OTHER,FIRLANDS,,,2023-06-27,Resolved Fast
+No Power,Electricity,SILVERTOWN,49,Sub-Council 11,2024-09-30,Resolved Fast
+No Power,Energy,SANDOWN,,,2024-07-28,Resolved Fast
+No Power,Electricity,STRAND,83,Sub-Council 8,2025-05-07,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,CONSTANTIA,71,Sub-Council 20,2025-05-20,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,KALK BAY,64,Sub-Council 19,2026-04-20,Resolved Fast
+No Power,Electricity,BONTEHEUWEL,50,Sub-Council 15,2024-07-22,Resolved Fast
+No Power,Electricity,KAAPZICHT,,,2024-10-15,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,STRAND,83,Sub-Council 8,2025-03-08,Unresolved
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,THE HAGUE,13,Sub-Council 5,2024-01-24,Resolved Fast
+Faulty PSO,Electricity,KEWTOWN,,,2025-06-18,Resolved Fast
+No Power,Electricity,HOUT BAY,,,2024-06-26,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,HARARE,,,2023-07-27,Resolved Slow
+No Power,Electricity,SEAWINDS,45,Sub-Council 19,2023-08-24,Resolved Fast
+Meter Replacement Project,Electricity,KENILWORTH,59,Sub-Council 20,2024-09-16,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,21,Sub-Council 7,2023-10-09,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,ROSEDALE - KLEIN VLEI,,,2026-03-09,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,DURBANVILLE HILLS,112,Sub-Council 7,2026-03-20,Resolved Fast
+Kiosk Damaged,Energy,PINEHURST,,,2023-10-11,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,RYLANDS,46,Sub-Council 14,2024-07-21,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,MITCHELLS PLAIN CBD,116,Sub-Council 12,2024-01-22,Resolved Slow
+SEW: Blocked/Overflow,OTHER,DELFT,,,2023-01-24,Resolved Fast
+WC Pan: Repair / Replace,Public housing,AVONDALE,,,2025-04-01,Unresolved
+PPM Burning/Burning Smell,Electricity,MOUNTVIEW,48,Sub-Council 11,2023-12-09,Resolved Fast
+WINF: Pipe Burst,Informal settlements,KHAYELITSHA,,,2024-08-10,Resolved Fast
+MTR: Customer Master Data Update,Water & Sanitation,VIERLANDEN,105,Sub-Council 7,2023-11-28,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,STRAND,85,Sub-Council 8,2024-02-09,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2024-12-13,Resolved Fast
+WAT: No Supply,Water & Sanitation,GARDENS,77,Sub-Council 16,2023-01-27,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,CLIFTON,,,2026-01-13,Unresolved
+Compost Bin Application - 150L,Solid waste,SONSTRAAL HEIGHTS,103,Sub-Council 7,2023-03-14,Resolved Fast
+No Power,Electricity,KENILWORTH,,,2024-06-21,Resolved Fast
+Bin Swallowed by Truck,Solid waste,OTHER,,,2025-10-22,Resolved Fast
+Illegal Dumping,Solid waste,OTHER,9,Sub-Council 6,2025-02-03,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,PARKLANDS,,,2024-07-04,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,TUSCANY GLEN,17,Sub-Council 14,2024-12-13,Resolved Fast
+MTR: Customer Master Data Update,Water & Sanitation,#,,,2024-01-30,Resolved Fast
+Incorrect Reading/Request Actual Reading,Energy,THE RANGE,28,Sub-Council 4,2023-07-25,Resolved Fast
+No Power,Electricity,LANSDOWNE,60,Sub-Council 11,2023-02-14,Resolved Fast
+Plumbing,Public housing,LAVENDER HILL,,,2024-03-11,Resolved Fast
+Mowing - Road Reserves,Open space,CAPE FARMS - DISTRICT B,23,Sub-Council 1,2025-11-12,Unresolved
+WAT: Broken Leading,Water & Sanitation,TAFELSIG,92,Sub-Council 12,2024-09-13,Resolved Fast
+Consumption Complaint / Estimations,Energy,CHARLESVILLE,,,2025-08-04,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,FLORIDA,25,Sub-Council 4,2023-08-17,Resolved Fast
+Incorrect Reading/Request Actual Reading,Energy,OTHER,15,Sub-Council 8,2025-05-26,Resolved Fast
+No Power,Electricity,VRYGROND,,,2023-12-26,Resolved Fast
+Street Lights - All Lights Out,Energy,ONVERWACHT - THE STRAND,,,2024-09-27,Resolved Fast
+Street Lights - Single Light Out,Energy,DURBANVILLE,112,Sub-Council 7,2026-04-23,Unresolved
+No Power,Electricity,STEENBERG,68,Sub-Council 18,2023-04-21,Resolved Fast
+Damaged Bin - 240L,Solid waste,EASTRIDGE,92,Sub-Council 12,2023-09-05,Resolved Slow
+Street Lights - Single Light Out,Electricity,CAMPS BAY / BAKOVEN,54,Sub-Council 16,2023-09-27,Resolved Fast
+No Power,Energy,MFULENI,108,Sub-Council 21,2023-04-28,Resolved Fast
+Damaged Bin - 240L,Solid waste,KALKSTEENFONTEIN,,,2026-04-09,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,GLENLILY,,,2023-05-14,Resolved Fast
+Tree Trimming,Open space,THORNTON,,,2024-10-02,Resolved Fast
+Fallen Branch,Open space,LOTUS RIVER,,,2025-10-17,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,VREDELUST BELLVILLE,,,2023-09-30,Resolved Slow
+Street Lights - All Lights Out,Electricity,LENTEGEUR,76,Sub-Council 12,2025-03-10,Resolved Fast
+Damaged Bin - 240L,Solid waste,VERGESIG,112,Sub-Council 7,2023-10-16,Resolved Fast
+PPM Keypad Faulty,Electricity,CONSTANTIA,62,Sub-Council 20,2024-12-04,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,OTTERY,66,Sub-Council 18,2023-10-31,Resolved Fast
+Meter Replacement Project,OTHER,SEA POINT,54,Sub-Council 16,2025-05-06,Unresolved
+Reconnect (Non - Payment),Energy,BELGRAVIA,46,Sub-Council 14,2024-05-13,Resolved Fast
+General Revenue Related Issues,Water & Sanitation,BOTHASIG,5,Sub-Council 3,2024-05-16,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BOQUINAR INDUSTRIAL AREA,31,Sub-Council 15,2026-03-27,Resolved Fast
+No Power,Electricity,WYNBERG,,,2026-02-17,Resolved Fast
+No Power,Electricity,NEWFIELDS,,,2024-08-01,Resolved Fast
+PPM Not Registered,Electricity,#,,,2023-03-25,Resolved Fast
+PPM Faulty Mode,Electricity,CRAWFORD,48,Sub-Council 11,2024-12-10,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BISHOP LAVIS,42,Sub-Council 15,2026-04-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LANGA,51,Sub-Council 15,2026-02-02,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,CHURCHILL ESTATE,2,Sub-Council 6,2025-11-01,Resolved Slow
+SINF: Faulty Cistern,Informal settlements,#,,,2024-02-20,Resolved Fast
+Street Lights - All Lights Out,Energy,STEENBERG,,,2024-08-05,Resolved Slow
+No Power,Electricity,MANENBERG,,,2024-03-24,Resolved Fast
+Other,Open space,RONDEBOSCH,,,2024-04-11,Resolved Slow
+Tree affecting power supply,Electricity,ROSEBANK,,,2026-01-16,Resolved Fast
+PPM Keypad Faulty,Electricity,PHILIPPI,80,Sub-Council 13,2024-01-16,Resolved Slow
+Wires Down,Electricity,RONDEBOSCH,59,Sub-Council 20,2026-05-14,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,STRAND,85,Sub-Council 8,2025-03-26,Unresolved
+WAT: Run to Waste,OTHER,GUGULETU,,,2023-02-28,Resolved Fast
+Street Lights - Single Light Out,Electricity,BROADLANDS VILLAGE,100,Sub-Council 8,2025-08-31,Resolved Fast
+No Power,Electricity,GUGULETU,13,,2026-04-20,Resolved Fast
+Damaged Recycling Bin - 240L,Solid waste,BOTHASIG,5,Sub-Council 7,2026-03-30,Resolved Fast
+Pest Control,Health,ENKANINI,,,2024-10-31,Resolved Fast
+Plumbing,Public housing,AVONWOOD,,,2024-03-27,Resolved Slow
+Park Cleaning,Open space,MANDELA PARK,,,2026-01-14,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,TOWNSEND ESTATE,27,Sub-Council 4,2026-03-28,Resolved Fast
+Repair Staircase Landings,Public housing,HANOVER PARK,,,2025-11-05,Resolved Slow
+No Power,Electricity,ATHLONE,48,Sub-Council 11,2025-05-07,Resolved Fast
+Street Lights - Single Light Out,Energy,BISHOP LAVIS,42,Sub-Council 15,2025-07-25,Unresolved
+PPM Faulty Mode,Electricity,STRAND,83,Sub-Council 8,2023-04-15,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,SAXONSEA,29,Sub-Council 1,2023-05-28,Resolved Fast
+PPM Faulty Mode,Energy,MFULENI,114,Sub-Council 9,2024-04-20,Resolved Fast
+Street Lights - Single Light Out,Electricity,MUIZENBERG,,,2023-01-04,Resolved Fast
+PPM Display Blank,Electricity,AVONDALE - WESFLEUR,,,2025-07-04,Resolved Fast
+Stolen Bins - 240L,Solid waste,STRANDFONTEIN,43,Sub-Council 17,2024-12-30,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,BOSTON,2,Sub-Council 6,2025-06-05,Unresolved
+PPM Rejecting Code,Electricity,HIGHBURY,19,Sub-Council 21,2024-02-05,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,OTHER,,,2023-12-09,Resolved Fast
+PPM Tripping,Electricity,PLUMSTEAD,63,Sub-Council 20,2024-11-25,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LWANDLE,86,Sub-Council 8,2026-01-15,Resolved Slow
+PPM Faulty (Enter detailed description),Electricity,MFULENI,114,Sub-Council 14,2026-03-03,Resolved Fast
+No Power,Electricity,WOODSTOCK,,,2024-07-07,Resolved Fast
+PPM Display Blank,Electricity,LANGA,51,Sub-Council 15,2025-04-29,Resolved Fast
+Street Lights - All Lights Out,Energy,THE HAGUE,13,Sub-Council 5,2023-01-19,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,KUYASA,99,Sub-Council 10,2024-03-13,Resolved Fast
+No Power,Electricity,PHILIPPI,80,Sub-Council 13,2025-04-22,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,MANDELA PARK,97,Sub-Council 10,2025-02-06,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CENTURY CITY,55,Sub-Council 16,2023-04-25,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,#,4,Sub-Council 3,2024-02-06,Resolved Fast
+Kiosk Damaged,Electricity,#,,,2024-01-10,Resolved Fast
+Wires Down,Electricity,RIVERSIDE,,,2024-10-29,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,STRANDFONTEIN,43,Sub-Council 17,2026-04-17,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,BANTRY BAY,54,Sub-Council 16,2025-03-09,Unresolved
+Damaged Bin - 240L,Solid waste,PHILIPPI,,,2024-09-25,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,NEWFIELDS,46,Sub-Council 11,2026-03-17,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,GUGULETU,39,Sub-Council 13,2025-07-10,Resolved Fast
+Damaged Bin - 240L,Solid waste,ROOSENDAL,13,Sub-Council 5,2023-09-11,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LANGA,51,Sub-Council 15,2024-11-21,Resolved Fast
+WINF: Pipe Burst,Informal settlements,OTHER,,,2025-12-18,Resolved Fast
+Tap Missing,Informal settlements,PHILIPPI,80,Sub-Council 13,2023-04-14,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,PARKLANDS,107,Sub-Council 1,2025-03-24,Resolved Fast
+No Power,Electricity,GRASSY PARK,110,Sub-Council 18,2025-02-09,Resolved Fast
+Street Lights - Single Light Out,Energy,OTHER,,,2025-06-16,Resolved Fast
+Meter Replacement Project,OTHER,CLIFTON,,,2025-07-16,Unresolved
+Faulty Hydrants,OTHER,MAITLAND,56,Sub-Council 3,2025-04-30,Unresolved
+WMM: Damaged Meter 20mm and below,Water & Sanitation,FISH HOEK,64,Sub-Council 19,2025-07-14,Resolved Fast
+No Power,Electricity,GUGULETU,13,,2026-04-08,Resolved Fast
+No Power,Electricity,ATHLONE,,,2025-10-24,Resolved Fast
+Replace WC Seat,Public housing,LAVENDER HILL,,,2025-06-20,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,PROTEA VALLEY,70,Sub-Council 7,2025-08-10,Unresolved
+SEW: Infestation Cockroach,Water & Sanitation,LOTUS RIVER,66,Sub-Council 18,2026-04-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WOODLANDS,75,Sub-Council 17,2024-07-08,Resolved Slow
+Main Leak,Water & Sanitation,KOMMETJIE,69,Sub-Council 19,2024-02-01,Resolved Fast
+PPM Tariff Query / Change,Energy,SERCOR PARK,100,Sub-Council 8,2023-09-13,Resolved Fast
+Street Lights - All Lights Out,Electricity,GRASSY PARK,,,2024-06-02,Resolved Fast
+PPM Tariff Query / Change,Energy,MARTINVILLE,,,2025-04-09,Resolved Fast
+Debtors Account Correspondence,Water & Sanitation,PINEHURST,103,Sub-Council 7,2023-08-29,Resolved Fast
+PPM Display Blank,Electricity,LANGA,,,2025-06-29,Resolved Fast
+Sparks on Pole,Energy,ELSIES RIVER,,,2023-05-31,Resolved Fast
+PPM Display Blank,Electricity,OTHER,,,2024-04-22,Resolved Fast
+No Power,Energy,WALLACEDENE,,,2024-08-23,Resolved Fast
+Street Lights - All Lights Out,Electricity,TAFELSIG,,,2024-06-11,Unresolved
+Equipment Damaged,Electricity,BELGRAVIA,46,Sub-Council 11,2025-04-20,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,SALT RIVER,57,Sub-Council 16,2025-12-11,Resolved Fast
+Street Lights - All Lights Out,Electricity,STRAND,,,2025-07-03,Resolved Fast
+No Power,Electricity,PINELANDS,16,,2026-04-19,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,OTHER,LOTUS RIVER,65,Sub-Council 18,2023-02-23,Resolved Fast
+Electrical,Electricity,#,,,2023-08-08,Unresolved
+SEW: Blocked/Overflow,Informal settlements,ATLANTIS,,,2025-04-05,Resolved Slow
+No Power,Electricity,SUNNYDALE,69,Sub-Council 19,2024-10-07,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-03-20,Resolved Fast
+No Power,Electricity,ELSIES RIVER INDUSTRIA,,,2024-10-14,Resolved Fast
+Street Lights - All Lights Out,Electricity,CAPE TOWN,,,2024-05-23,Resolved Fast
+WMM: Faulty Meter 20mm and below,Water & Sanitation,LOEVENSTEIN,70,Sub-Council 7,2024-03-01,Resolved Fast
+SEW: Blocked/Overflow,OTHER,EAGLE PARK,67,Sub-Council 18,2023-09-18,Resolved Fast
+WINF: Leak at Standpipe,Informal settlements,#,,,2025-06-23,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,PAROW EAST,26,Sub-Council 4,2025-07-14,Resolved Fast
+Repair Equipment  at Park,Open space,MOWBRAY,57,Sub-Council 16,2025-05-27,Unresolved
+PPM Faulty (Enter detailed description),Electricity,PLUMSTEAD,63,Sub-Council 20,2024-10-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LANSDOWNE,60,Sub-Council 11,2023-04-28,Resolved Fast
+Street Lights - Single Light Out,Electricity,PAROW NORTH,2,Sub-Council 6,2026-03-10,Resolved Fast
+No Power,Electricity,WYNBERG,62,Sub-Council 20,2024-08-02,Resolved Fast
+PPM Faulty Mode,Electricity,LOTUS RIVER,65,Sub-Council 18,2023-06-05,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,WESTRIDGE - SOMERSET WEST,15,Sub-Council 8,2023-11-21,Resolved Fast
+Beach Cleaning,Solid waste,SIMON'S TOWN,61,Sub-Council 19,2025-04-01,Resolved Fast
+Air Pollution,Health,PAROW VALLEY,,,2023-02-13,Resolved Slow
+Street Lights - All Lights Out,Energy,ST DUMAS,11,Sub-Council 21,2023-12-20,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EPPING INDUSTRIA 1,53,Sub-Council 15,2023-06-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BISHOP LAVIS,,,2023-03-04,Resolved Fast
+No Power,Electricity,LWANDLE,,,2024-05-31,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,VREDELUST BELLVILLE,2,Sub-Council 6,2024-07-25,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BELLVILLE CBD,,,2024-06-21,Resolved Fast
+Street Lights - All Lights Out,Energy,VALHALLA PARK,31,Sub-Council 15,2023-10-04,Resolved Slow
+WAT: Faulty Stopcock,Informal settlements,HOUT BAY,,,2024-03-01,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,RUGBY,55,Sub-Council 3,2025-02-06,Resolved Fast
+PPM Faulty Mode,Electricity,GUGULETU,,,2023-01-31,Resolved Fast
+PPM Customer Unable to Purchase,Energy,FORESHORE,,,2026-04-22,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,BELLVILLE CBD,10,Sub-Council 6,2024-09-11,Resolved Slow
+PPM Rejecting Code,Electricity,HANOVER PARK,,,2026-02-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PAREL VALLEI,15,Sub-Council 8,2026-03-30,Resolved Fast
+Street Lights - All Lights Out,Electricity,ROBINVALE,,,2024-08-14,Resolved Fast
+Reconnect (Non - Payment),Energy,DISTRICT SIX,77,Sub-Council 16,2024-10-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BALVENIE,28,Sub-Council 4,2026-04-29,Resolved Fast
+WAT: Leak at Meter/Stopcock 40mm and Abo,Water & Sanitation,PARKLANDS,107,Sub-Council 1,2026-02-20,Resolved Fast
+Repair Equipment  at Park,Open space,EERSTERIVIER,,,2025-12-09,Resolved Slow
+Street Lights - Single Light Out,Electricity,TWIN PALMS,,,2024-06-11,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SERCOR PARK,100,Sub-Council 8,2023-10-30,Resolved Fast
+Street Lights - All Lights Out,Electricity,BOTHASIG,5,Sub-Council 7,2025-05-16,Resolved Slow
+PPM Display Blank,Electricity,STELLENDALE,19,Sub-Council 14,2024-11-21,Resolved Fast
+Damaged Bin - 240L,Solid waste,BLOEKOMBOS,101,Sub-Council 2,2024-09-16,Resolved Slow
+WAT: Faulty Meter 25mm and up,Water & Sanitation,LENTEGEUR,76,Sub-Council 12,2025-04-03,Resolved Fast
+Other (Enter detailed Fault description),Electricity,BONTEHEUWEL,50,Sub-Council 15,2023-10-22,Resolved Slow
+PPM Burning/Burning Smell,Electricity,PARKWOOD,65,Sub-Council 18,2023-08-07,Resolved Fast
+SEW: Blocked/Overflow,OTHER,STRAND,,,2023-03-15,Resolved Fast
+SEW: Blocked/Overflow,Informal settlements,SIR LOWRYS PASS,,,2025-04-29,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,GLENLILY,2,Sub-Council 6,2025-10-15,Unresolved
+Non-Collection of 240L Bin,Solid waste,BELRAIL,10,Sub-Council 6,2024-02-12,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,PARKLANDS,,,2026-01-13,Resolved Fast
+Plumbing,Public housing,ELSIES RIVER,,,2024-04-25,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,WETTON,66,Sub-Council 18,2024-05-10,Unresolved
+PPM Rejecting Code,Electricity,MFULENI,114,Sub-Council 14,2025-06-01,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BRACKENFELL SOUTH,,,2025-07-04,Unresolved
+Street Lights - Single Light Out,Electricity,GRAANENDAL,,,2024-08-02,Resolved Fast
+Meter Replacement Project,OTHER,TOKAI,71,Sub-Council 20,2024-01-30,Resolved Slow
+Equipment Damaged,Energy,OTHER,,,2023-09-04,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,MUIZENBERG,64,Sub-Council 19,2024-05-23,Resolved Fast
+No Power,Electricity,MANENBERG,11,,2025-11-23,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,60,Sub-Council 11,2025-05-29,Resolved Fast
+Faulty locks: Internal / External,Public housing,KEWTOWN,,,2026-03-06,Unresolved
+Other (Enter detailed Fault description),Electricity,#,,,2024-12-10,Resolved Fast
+WAT: Leak at Meter/Stopcock 25mm and up,Water & Sanitation,ATLANTIS INDUSTRIAL,32,Sub-Council 1,2025-11-04,Unresolved
+WMM: No Water Below 40mm,Water & Sanitation,EASTRIDGE,,,2025-12-11,Resolved Fast
+Illegal Dumping,Solid waste,MILNERTON,55,Sub-Council 16,2023-01-17,Resolved Fast
+SEW: Blocked/Overflow,OTHER,MANDELA PARK,97,Sub-Council 10,2023-12-04,Resolved Fast
+PPM Rejecting Code,Electricity,LENTEGEUR,78,Sub-Council 17,2024-01-03,Resolved Fast
+PPM Display Blank,Electricity,STRAND,,,2024-10-18,Resolved Fast
+PPM Customer Unable to Purchase,Energy,HARMONY VILLAGE,75,Sub-Council 17,2025-10-05,Resolved Fast
+No Power,Electricity,LAVENDER HILL,110,Sub-Council 18,2024-05-03,Resolved Fast
+No Power,Electricity,WOODSTOCK,,,2023-06-12,Resolved Fast
+Stolen Bins - 240L,Solid waste,KUYASA,,,2026-03-10,Resolved Slow
+PPM Tripping,Electricity,PLUMSTEAD,62,Sub-Council 20,2024-05-13,Resolved Fast
+PPM Keypad Faulty,Electricity,GUGULETU,40,Sub-Council 13,2025-06-09,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,PARKLANDS,113,Sub-Council 3,2025-05-05,Resolved Fast
+Noise Pollution,Health,STRAND,83,Sub-Council 8,2025-04-26,Unresolved
+No Power,Electricity,PHILIPPI,,,2025-07-14,Resolved Fast
+Stolen Bins - 240L,Solid waste,HARMONY VILLAGE,75,Sub-Council 17,2023-10-25,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,STRAND,83,Sub-Council 8,2024-11-23,Resolved Slow
+PPM Keypad Faulty,Electricity,LWANDLE,,,2023-06-23,Resolved Fast
+WAT: Broken Leading,Informal settlements,KHAYELITSHA,,,2024-01-15,Resolved Fast
+WAT: No Supply,Water & Sanitation,MANENBERG,,,2024-03-08,Unresolved
+WAT: Leak at Meter/Stopcock 25mm and up,Water & Sanitation,EKUPHUMLENI,97,Sub-Council 10,2023-08-16,Resolved Fast
+No Power,Electricity,PHILIPPI,,,2024-06-08,Resolved Fast
+Other (Enter detailed Fault description),Electricity,MUIZENBERG,64,Sub-Council 19,2025-05-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LANSDOWNE,60,Sub-Council 11,2026-05-04,Resolved Fast
+Stolen Bins - 240L,Solid waste,BISHOP LAVIS,,,2025-07-07,Resolved Fast
+Stolen Bins - 240L,Solid waste,STRAND,,,2024-11-14,Resolved Fast
+PPM Rejecting Code,Electricity,OBSERVATORY,57,Sub-Council 16,2025-11-18,Resolved Fast
+Street Lights - Single Light Out,Electricity,ROSEBANK,,,2024-03-30,Resolved Fast
+Stolen Bins - 240L,Solid waste,BELLVILLE SOUTH,9,Sub-Council 6,2024-05-23,Resolved Fast
+No Power,Electricity,OTHER,,,2023-01-09,Resolved Fast
+No Power,Energy,PHILIPPI,88,Sub-Council 17,2024-07-17,Resolved Slow
+No Power,Electricity,RICHMOND ESTATE,,,2023-04-21,Resolved Fast
+Vector Control,Health,WESTRIDGE - MITCHELLS PLAIN,81,Sub-Council 17,2023-12-05,Resolved Fast
+Cable Exposed,Electricity,MOWBRAY,,,2023-06-08,Resolved Fast
+SINF: Faulty Cistern,Informal settlements,#,,,2026-01-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WINDERMERE,,,2023-04-27,Resolved Fast
+No Power,Electricity,LWANDLE,,,2024-01-03,Resolved Slow
+Damaged Bin - 240L,Solid waste,BELMONT PARK,,,2023-07-27,Resolved Fast
+WMM: Faulty Meter 20mm and below,Water & Sanitation,OTTERY,63,Sub-Council 20,2023-09-18,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,PHILIPPI,80,Sub-Council 13,2024-08-29,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,RONDEBOSCH,,,2025-02-06,Unresolved
+Cleaning / Sweeping / Refuse Removal,Public housing,MACASSAR,,,2026-03-30,Unresolved
+WAT: No Supply,Water & Sanitation,WINDSOR PARK ESTATE,102,Sub-Council 2,2025-10-03,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,MANDELA PARK,97,Sub-Council 10,2023-10-25,Resolved Slow
+Doors: Internal / External,Public housing,HANOVER PARK,,,2026-01-05,Unresolved
+No Power,Energy,WALLACEDENE,6,Sub-Council 2,2025-05-22,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2023-04-03,Resolved Fast
+Stolen Bins - 240L,Solid waste,PHILIPPI,34,Sub-Council 13,2023-03-21,Resolved Slow
+SINF: Faulty Cistern,Informal settlements,KHAYELITSHA,,,2024-08-26,Resolved Fast
+No Power,Energy,#,,,2023-11-16,Resolved Fast
+PPM Keypad Faulty,Electricity,WESTLAKE,71,Sub-Council 20,2025-02-01,Resolved Fast
+Stolen Bins - 240L,Solid waste,LANGA,,,2025-06-05,Resolved Fast
+Kiosk Damaged,Electricity,NYANGA,37,Sub-Council 13,2026-03-01,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,DELFT,,,2026-05-13,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,OTHER,,,2025-05-16,Unresolved
+No Power,Electricity,SEAWINDS,45,Sub-Council 19,2025-03-24,Resolved Fast
+WC Pan: Repair / Replace,Public housing,KALKSTEENFONTEIN,,,2025-02-06,Unresolved
+MTR: Customer Phone in Reading,Water & Sanitation,DURBANVILLE,112,Sub-Council 7,2023-03-23,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-05-27,Unresolved
+WMM: Damaged Meter Below 40mm,Water & Sanitation,MACASSAR VILLAGE,109,Sub-Council 21,2023-04-06,Resolved Fast
+No Power,Energy,DURBANVILLE,,,2023-06-12,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KEWTOWN,49,Sub-Council 11,2025-06-26,Unresolved
+Cable Exposed,Electricity,STEENBERG,,,2024-07-31,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,AUDAS ESTATE,84,Sub-Council 8,2025-03-12,Unresolved
+No Power,Electricity,GUGULETU,,,2026-01-08,Resolved Fast
+WAT: No Supply,Water & Sanitation,ROCKLANDS,79,Sub-Council 17,2025-12-01,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CONSTANTIA,62,Sub-Council 20,2023-10-19,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,LENTEGEUR,78,Sub-Council 17,2026-03-05,Resolved Slow
+Sewer Stack Pipe: Repair / Replace,Public housing,MANENBERG,,,2026-04-29,Unresolved
+Stolen Bins - 240L,Solid waste,PINELANDS,,,2024-08-21,Resolved Fast
+No Power,Electricity,PLUMSTEAD,63,Sub-Council 20,2024-11-06,Resolved Fast
+Equipment Damaged,Electricity,KENSINGTON,,,2023-03-13,Resolved Fast
+WAT: Damaged Meter 40mm and Above,Water & Sanitation,PLUMSTEAD,,,2024-07-16,Resolved Slow
+Street Lights - Single Light Out,Electricity,#,,,2023-07-17,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,STRAND,83,Sub-Council 8,2025-05-03,Resolved Fast
+No Power,Electricity,BELGRAVIA,46,Sub-Council 14,2023-01-28,Resolved Fast
+Wires Down,Electricity,FISH HOEK,64,Sub-Council 19,2023-11-24,Resolved Fast
+Phase Missing,Electricity,FRESNAYE,54,Sub-Council 16,2023-09-08,Resolved Fast
+No Power,Electricity,STRANDFONTEIN,43,Sub-Council 17,2023-03-25,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,CROSSROADS,36,Sub-Council 13,2025-05-07,Unresolved
+WMM: No Water 20mm and below,Water & Sanitation,ATLANTIS,,,2024-05-08,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,LWANDLE,86,Sub-Council 8,2025-08-11,Unresolved
+Street Lights - All Lights Out,Electricity,COLORADO PARK,,,2023-07-05,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,GLENCAIRN,,,2026-01-19,Resolved Fast
+Suspect Tampering,OTHER,DURBANVILLE,105,Sub-Council 7,2025-03-14,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,VASCO ESTATE,,,2023-07-10,Resolved Fast
+Vector Control,Water & Sanitation,OTTERY,66,Sub-Council 18,2024-02-08,Unresolved
+PPM Not Registered,Energy,#,,,2024-03-04,Resolved Fast
+No Power,Electricity,RONDEBOSCH,59,Sub-Council 11,2023-09-15,Resolved Fast
+No Power,Electricity,RONDEBOSCH,20,,2026-05-13,Resolved Fast
+No Power,Electricity,OTHER,30,Sub-Council 14,2023-10-12,Resolved Fast
+Street Lights - Single Light Out,Electricity,LOTUS RIVER,65,Sub-Council 18,2025-04-02,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MACASSAR,,,2024-06-11,Unresolved
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,MOWBRAY,57,Sub-Council 16,2025-10-28,Unresolved
+No Power,Energy,BELMONT PARK,101,Sub-Council 2,2025-03-10,Resolved Fast
+Damaged Bin - 240L,Solid waste,PELIKAN PARK,,,2024-10-15,Resolved Fast
+WINF: Faulty Tap,Informal settlements,OTHER,,,2026-02-20,Resolved Fast
+PPM KRN Fault,OTHER,LWANDLE,86,Sub-Council 8,2025-05-20,Unresolved
+Geyser Repair / Replace,Public housing,LOTUS RIVER,,,2026-02-06,Resolved Slow
+Disobeying a Stop Sign,OTHER,OTHER,,,2025-11-18,Unresolved
+Street Lights - All Lights Out,Energy,#,,,2023-10-12,Resolved Slow
+No Power,Electricity,STRAND,85,Sub-Council 8,2026-01-21,Resolved Fast
+Meter Replacement Project,OTHER,GREEN POINT,,,2025-06-23,Unresolved
+No Power,Electricity,MAITLAND,56,Sub-Council 15,2023-09-22,Resolved Slow
+PPM Tripping,Electricity,VAN DER STEL,84,Sub-Council 8,2024-12-26,Resolved Fast
+Illegal Dumping,Solid waste,ROBINVALE,32,Sub-Council 1,2025-05-13,Unresolved
+No Power,Electricity,PAROW NORTH,2,Sub-Council 6,2024-10-30,Resolved Fast
+No Power,Electricity,BONTEHEUWEL,,,2023-06-19,Resolved Fast
+WMM: Damaged Meter Below 40mm,Water & Sanitation,SAXONSEA,29,Sub-Council 1,2024-09-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CONSTANTIA,,,2026-05-10,Resolved Fast
+EPIC Water,Water & Sanitation,#,,,2025-03-05,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,MANENBERG,46,Sub-Council 11,2024-10-01,Resolved Fast
+No Power,Electricity,ATHLONE,,,2024-07-27,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,LANGEBERG RIDGE,,,2024-04-07,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,#,,,2024-05-30,Resolved Slow
+Street Lights - All Lights Out,Electricity,MANENBERG,30,Sub-Council 11,2025-07-05,Resolved Slow
+No Power,Electricity,PLATTEKLOOF 3,1,Sub-Council 3,2024-07-10,Resolved Fast
+Consumption Complaint / Estimations,Energy,LOEVENSTEIN,70,Sub-Council 7,2024-01-22,Resolved Fast
+Illegal Dumping,Solid waste,TUSCANY GLEN,17,Sub-Council 14,2026-03-13,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WINDERMERE,,,2026-03-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LEONSDALE,26,Sub-Council 4,2023-02-15,Resolved Fast
+Kiosk Damaged,Electricity,BROOKLYN,,,2023-02-20,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,OTHER,,,2023-10-04,Resolved Slow
+No Power,Electricity,SALT RIVER,57,Sub-Council 16,2025-03-23,Resolved Fast
+Reconnect (Non - Payment),Energy,RONDEBOSCH,59,Sub-Council 11,2024-03-12,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,GRASSY PARK,,,2025-11-08,Resolved Fast
+Street Lights - All Lights Out,Energy,PHILIPPI,35,Sub-Council 12,2024-01-30,Resolved Slow
+WAT: Burst Pipe,Water & Sanitation,FAIRDALE,108,Sub-Council 21,2023-12-09,Resolved Slow
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,WINDERMERE,56,Sub-Council 15,2024-03-18,Resolved Fast
+Stolen Bins - 240L,Solid waste,#,,,2025-02-08,Resolved Fast
+Street Lights - Single Light Out,Electricity,CAPE FARMS - DISTRICT B,23,Sub-Council 1,2026-03-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,HANOVER PARK,,,2024-08-22,Resolved Slow
+WAT: No Supply,Water & Sanitation,GEORGE PARK,85,Sub-Council 8,2023-11-09,Resolved Fast
+Customer : Master Data Updates/Queries,Water & Sanitation,SANDOWN,23,Sub-Council 1,2025-05-05,Unresolved
+WAT: Burst Pipe,Water & Sanitation,EDGEMEAD,5,Sub-Council 7,2026-05-20,Resolved Fast
+Meter Replacement Project,OTHER,GREEN POINT,115,Sub-Council 16,2025-04-24,Unresolved
+Fallen Branch,Open space,EDGEMEAD,,,2025-12-20,Resolved Slow
+Other,OTHER,CAPE TOWN,,,2025-03-10,Resolved Slow
+Consumption Complaint / Estimations,Energy,WYNBERG,63,Sub-Council 20,2024-11-05,Resolved Fast
+Street Lights - All Lights Out,Energy,SOMERSET RIDGE,,,2024-08-09,Resolved Slow
+WAT: Faulty Meter 25mm and up,Water & Sanitation,OTHER,100,Sub-Council 8,2025-03-08,Unresolved
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,FOREST HEIGHTS,,,2025-11-10,Resolved Fast
+Vector Control,Water & Sanitation,SUNNINGDALE,23,Sub-Council 1,2024-02-15,Unresolved
+Masonary,OTHER,MANENBERG,,,2023-12-06,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,84,Sub-Council 8,2025-06-24,Resolved Fast
+Timber Floors,Public housing,RUGBY,,,2025-11-12,Unresolved
+Barricading,Public housing,HEIDEVELD,,,2026-01-06,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,MEADOWRIDGE,,,2026-04-22,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,RIVERSIDE,109,Sub-Council 21,2024-02-13,Resolved Slow
+Street Sweeping,Solid waste,DOBSON,,,2024-07-23,Resolved Fast
+SINF: Faulty Cistern,Informal settlements,KHAYALITSHA,,,2024-04-23,Resolved Fast
+Incorrect Reading/Request Actual Reading,Energy,#,,,2023-03-23,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,BLOEKOMBOS,101,Sub-Council 2,2024-08-12,Resolved Fast
+SINF: Blocked Manhole,Informal settlements,#,,,2025-04-24,Unresolved
+PPM Display Blank,Electricity,GUGULETU,39,Sub-Council 13,2025-11-29,Resolved Fast
+Street Lights - All Lights Out,Electricity,CAPE TOWN,59,Sub-Council 20,2026-04-04,Resolved Fast
+Other (Enter Detailed Fault Description),OTHER,HANOVER PARK,47,Sub-Council 11,2024-12-10,Resolved Slow
+No Power,Electricity,WOODLANDS,75,Sub-Council 17,2023-12-03,Resolved Fast
+Plumbing,Public housing,ATLANTIS,,,2024-05-20,Resolved Slow
+WAT: Burst Pipe,Water & Sanitation,GORDONS BAY,100,Sub-Council 8,2024-04-04,Resolved Slow
+No Power,Electricity,NYANGA,37,Sub-Council 13,2024-02-13,Resolved Fast
+PPM Display Blank,Electricity,TOWNSEND ESTATE,27,Sub-Council 4,2025-04-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,THE HAGUE,13,Sub-Council 5,2024-12-02,Resolved Fast
+No Power,Electricity,CAPE TOWN CITY CENTRE,115,Sub-Council 16,2024-06-18,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KIRSTENHOF,,,2025-06-27,Resolved Fast
+PPM Rejecting Code,Electricity,STRAND,83,Sub-Council 8,2024-04-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BRIDGETOWN,,,2026-01-19,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,PEERLESS PARK EAST,,,2025-11-12,Resolved Fast
+WINF: Pipe Burst,Informal settlements,#,,,2025-08-27,Resolved Fast
+PPM Faulty Mode,Electricity,STRAND,85,Sub-Council 8,2023-05-04,Resolved Fast
+No Power,Electricity,WETTON,66,Sub-Council 18,2025-10-23,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,RUYTERWACHT,,,2024-09-18,Resolved Fast
+Street Lights - Single Light Out,Electricity,MABILLE PARK,11,Sub-Council 14,2025-03-20,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,NORTHPINE,7,Sub-Council 2,2025-08-05,Resolved Fast
+Damaged Bin - 240L,Solid waste,OAKGLEN,,,2026-05-11,Resolved Fast
+No Power,Electricity,BONTEHEUWEL,50,Sub-Council 15,2023-09-25,Resolved Fast
+PPM Rejecting Code,Electricity,OBSERVATORY,,,2023-06-21,Resolved Fast
+PPM Customer Unable to Purchase,Energy,VAN RIEBEECKSHOF,70,Sub-Council 7,2025-05-02,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,NEWFIELDS,47,Sub-Council 11,2025-08-30,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,LEIDEN,20,Sub-Council 5,2024-06-13,Resolved Fast
+No Power,Energy,STELLENBERG,21,Sub-Council 7,2025-02-01,Resolved Fast
+Stolen Bins - 240L,Solid waste,STRANDFONTEIN,43,Sub-Council 17,2024-02-22,Resolved Slow
+No Power,Electricity,LANGA,,,2025-10-16,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,LOEVENSTEIN,70,Sub-Council 7,2025-07-22,Resolved Fast
+No Power,Electricity,LAVENDER HILL,,,2024-09-15,Resolved Fast
+Stolen Bins - 240L,Solid waste,MORGANS VILLAGE,75,Sub-Council 17,2025-08-28,Unresolved
+Repair Fencing at Park,Open space,ROSEBANK,57,Sub-Council 16,2024-12-06,Resolved Fast
+PPM Customer Unable to Purchase,Energy,VREDENBERG - BELLVILLE,,,2026-05-10,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,DURBANVILLE,,,2025-10-03,Unresolved
+PPM Rejecting Code,Electricity,DISTRICT SIX,115,Sub-Council 16,2024-08-29,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,RYLANDS,46,Sub-Council 11,2025-07-30,Unresolved
+Stolen Bins - 240L,Solid waste,STRANDFONTEIN,43,Sub-Council 17,2024-03-08,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WALLACEDENE,6,Sub-Council 2,2024-05-06,Resolved Fast
+PPM Tripping,Electricity,GUGULETU,41,Sub-Council 13,2025-04-24,Resolved Fast
+Street Lights - All Lights Out,Electricity,DURBANVILLE,112,Sub-Council 7,2025-12-01,Resolved Fast
+Street Lights - Single Light Out,Electricity,NORTHPINE,7,Sub-Council 2,2026-04-30,Resolved Fast
+Damaged Bin - 240L,Solid waste,EASTRIDGE,92,Sub-Council 12,2023-02-15,Resolved Fast
+Kiosk Damaged,Electricity,FISH HOEK,64,Sub-Council 19,2024-08-05,Resolved Fast
+PPM Display Blank,Electricity,LWANDLE,,,2025-10-06,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,BRACKEN HEIGHTS,111,Sub-Council 2,2023-09-18,Resolved Fast
+Carpentry,OTHER,LEONSDALE,,,2023-08-03,Resolved Slow
+Kiosk Damaged,Electricity,#,,,2023-02-27,Resolved Fast
+Street Lights - All Lights Out,Electricity,PHILIPPI,,,2026-02-11,Resolved Slow
+MTR: Internal MTR Related Queries,Water & Sanitation,#,,,2025-06-06,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,BISHOP LAVIS,22,Sub-Council 5,2025-05-22,Resolved Fast
+Stolen Bins - 240L,Solid waste,TAFELSIG,82,Sub-Council 12,2026-03-18,Resolved Slow
+WAT: Broken Leading,OTHER,CONSTANTIA,73,Sub-Council 20,2024-03-11,Resolved Slow
+Sewerline Blocked,Informal settlements,OTHER,,,2023-05-27,Resolved Slow
+Street Lights - Single Light Out,OTHER,PORTLAND,79,Sub-Council 17,2024-05-06,Unresolved
+WAT: Re-instatement,Water & Sanitation,CENTURY CITY,55,Sub-Council 3,2026-04-30,Unresolved
+WAT: Broken Leading,Water & Sanitation,SILVERSANDS,108,Sub-Council 14,2024-10-06,Resolved Slow
+Plumbing,Public housing,HOUT BAY,,,2024-04-02,Resolved Slow
+Sparks on Pole,Electricity,WYNBERG,63,Sub-Council 20,2026-02-05,Resolved Fast
+Street Lights - Single Light Out,Energy,EINDHOVEN,,,2026-01-19,Resolved Fast
+Stolen Bins - 240L,Solid waste,#,,,2024-08-08,Resolved Fast
+Street Lights - All Lights Out,Energy,HEATHFIELD,,,2023-10-05,Resolved Slow
+WMM: No Water Below 40mm,Water & Sanitation,STRAND,85,Sub-Council 8,2023-02-07,Resolved Fast
+WAT: No Supply,Water & Sanitation,SUNNINGDALE,23,Sub-Council 1,2024-12-24,Resolved Fast
+PPM Rejecting Code,Electricity,OCEAN VIEW,61,Sub-Council 19,2023-09-27,Resolved Fast
+Street Lights - Single Light Out,Electricity,OTHER,,,2026-01-15,Resolved Fast
+Street Lights - All Lights Out,Electricity,BISHOP LAVIS,,Sub-Council 4,2024-06-06,Resolved Fast
+WAT: Burst Pipe,Informal settlements,DELFT,,,2024-11-27,Resolved Fast
+No Power,Electricity,GUGULETHU,,,2025-10-12,Resolved Fast
+Incorrect Reading/Request Actual Reading,Energy,STRAND,83,Sub-Council 8,2023-01-17,Resolved Slow
+Plumbing,Public housing,MANENBERG,,,2024-06-11,Unresolved
+No Power,Electricity,PHILIPPI,88,Sub-Council 17,2023-03-13,Resolved Fast
+Street Lights - Single Light Out,Energy,OTHER,2,Sub-Council 6,2026-03-14,Resolved Fast
+Bush Clearing,Open space,#,,,2026-05-18,Unresolved
+Street Lights - Single Light Out,Electricity,CLAREMONT,,,2023-05-07,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,AVONWOOD,,,2026-01-08,Resolved Fast
+No Power,Electricity,WYNBERG,,,2025-07-08,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,ROSEDALE - KLEIN VLEI,17,Sub-Council 14,2024-10-04,Resolved Slow
+No Power,Electricity,PHILIPPI,43,Sub-Council 17,2024-10-24,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,RICHMOND ESTATE,27,Sub-Council 4,2023-08-07,Unresolved
+Phase Missing,Electricity,HOUT BAY,74,Sub-Council 20,2024-04-28,Resolved Fast
+Street Lights - Single Light Out,Energy,MATROOSFONTEIN,42,Sub-Council 15,2025-03-02,Resolved Fast
+Bush Clearing,Open space,PORTLAND,,,2026-01-15,Resolved Slow
+Damaged Recycling Bin - 130L,Solid waste,BOTHASIG,5,Sub-Council 7,2025-04-16,Resolved Fast
+Compost Bin Application - 150L,Solid waste,#,,,2023-03-25,Resolved Fast
+Tree Trimming,Open space,#,,,2026-03-17,Unresolved
+WAT: Low Pressure,Water & Sanitation,AMANDA GLEN,,,2024-07-06,Resolved Slow
+PPM Keypad Faulty,Electricity,ASANDA,85,Sub-Council 8,2025-11-17,Resolved Fast
+No Power,Electricity,STELLENRYK,,,2023-06-19,Resolved Fast
+PPM Faulty Mode,Electricity,PHILIPPI,33,Sub-Council 17,2023-10-07,Resolved Fast
+WAT: No Water 40mm and Above,Water & Sanitation,GLENCAIRN,,,2026-01-25,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SALT RIVER,115,Sub-Council 16,2025-04-25,Resolved Fast
+Street Sweeping,Solid waste,STRAND,83,Sub-Council 8,2026-05-07,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,ADRIAANSE,42,Sub-Council 4,2024-01-09,Resolved Fast
+Tree Trimming,Open space,EAGLE PARK,67,Sub-Council 18,2026-04-12,Unresolved
+PPM Faulty Mode,Electricity,CONSTANTIA,62,Sub-Council 20,2025-10-06,Resolved Fast
+No Power,Electricity,MAITLAND,56,Sub-Council 15,2023-09-13,Resolved Fast
+Wires Down,Electricity,RONDEBOSCH,59,Sub-Council 11,2023-11-13,Resolved Slow
+Plumbing,Public housing,HANOVER PARK,,,2024-06-12,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PHILIPPI,33,Sub-Council 17,2024-01-20,Resolved Slow
+Incorrect Reading/Request Actual Reading,Energy,EVERITE INDUSTRIA,7,Sub-Council 2,2023-05-29,Resolved Fast
+WAT: No Supply,Water & Sanitation,OTHER,10,Sub-Council 6,2024-12-09,Resolved Fast
+No Power,Electricity,EASTRIDGE,92,Sub-Council 12,2025-04-25,Resolved Fast
+Sparks on Pole,Electricity,NYANGA,38,Sub-Council 13,2026-05-12,Resolved Fast
+Outlet Bend Defective,Informal settlements,OTHER,,,2024-03-06,Resolved Fast
+WINF: Missing Tap,Informal settlements,KHAYELITSHA,,,2024-06-14,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,PHILIPPI,34,Sub-Council 13,2026-03-05,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,LENTEGEUR,76,Sub-Council 12,2023-09-07,Resolved Fast
+SINF: Faulty Pan Connector,Informal settlements,KHAYELITSHA,,,2025-03-14,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,3,Sub-Council 6,2026-05-11,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LEIDEN,20,Sub-Council 5,2024-07-23,Resolved Fast
+SEW: Faulty Damaged Manhole Cover,Water & Sanitation,OTHER,,,2024-09-02,Resolved Slow
+Doors: Internal / External,Public housing,MANENBERG,,,2026-02-06,Unresolved
+Meter Replacement Project,Electricity,#,,,2023-12-04,Unresolved
+WAT: No Supply,Water & Sanitation,NOMZAMO,86,Sub-Council 8,2024-10-02,Resolved Slow
+WAT: No Supply,Water & Sanitation,FISH HOEK,64,Sub-Council 19,2023-10-18,Resolved Fast
+Stolen Bins - 240L,Solid waste,GUGULETU,,,2025-07-09,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,LAVENDER HILL,68,Sub-Council 18,2025-11-05,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EERSTERIVIER,,,2024-11-20,Resolved Slow
+Financial Adjustment/Transfer of Payment,OTHER,#,,,2024-08-07,Resolved Fast
+SEW: Blocked/Overflow,OTHER,KOMMETJIE,,,2023-08-13,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,LEONSDALE,26,Sub-Council 4,2025-12-17,Unresolved
+Stolen Bins - 240L,Solid waste,LEIDEN,106,Sub-Council 5,2024-08-26,Resolved Fast
+No Power,Electricity,PHILIPPI,34,Sub-Council 13,2025-08-09,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,BIG BAY,,,2025-12-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,TAFELSIG,,,2025-12-09,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,,,2024-06-17,Resolved Fast
+PPM KRN Fault,OTHER,MACASSAR,,,2025-08-13,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,LOTUS RIVER,65,Sub-Council 18,2024-11-19,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,OTHER,,,2024-01-08,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,JOE SLOVO PARK,4,Sub-Council 3,2025-04-07,Resolved Fast
+Street Lights - Single Light Out,Electricity,SUNNINGDALE,107,Sub-Council 1,2026-01-13,Resolved Fast
+WAT: No Water 40mm and Above,Water & Sanitation,KENILWORTH,58,Sub-Council 20,2026-05-19,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,DENNEMERE,14,Sub-Council 21,2024-08-29,Resolved Slow
+Street Lights - Single Light Out,Energy,FOREST HEIGHTS,,,2023-06-13,Resolved Fast
+PPM Display Blank,Electricity,SONKRING,8,Sub-Council 2,2025-03-06,Resolved Fast
+Compost Bin Application - 150L,Solid waste,ROCKLANDS,79,Sub-Council 17,2023-09-23,Resolved Fast
+SINF: Missing Toilet Door,Informal settlements,OTHER,,,2023-01-30,Resolved Fast
+No Power,Electricity,SONNEKUIL,,,2024-11-10,Resolved Fast
+PPM Rejecting Code,Electricity,JACARANDAS,14,Sub-Council 21,2024-07-30,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,HOHEIZEN,70,Sub-Council 7,2025-02-08,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,OTHER,70,Sub-Council 7,2024-10-04,Resolved Slow
+WAT: Overflow Reservoir,Water & Sanitation,TOKAI,71,Sub-Council 20,2026-05-03,Resolved Fast
+Street Lights - All Lights Out,Electricity,MANENBERG,46,Sub-Council 14,2023-11-28,Resolved Slow
+Traffic Calming (Speedbumps),OTHER,SURREY ESTATE,,,2024-05-05,Resolved Fast
+Street Lights - Single Light Out,Energy,SCOTTSVILLE,111,Sub-Council 2,2025-11-12,Resolved Slow
+WAT: No Supply,Water & Sanitation,PAARDEN EILAND,55,Sub-Council 16,2023-05-08,Resolved Fast
+Compost Bin Application - 150L,Solid waste,#,,,2023-08-17,Resolved Fast
+Street Lights - All Lights Out,Electricity,MILNERTON,,,2023-07-04,Resolved Fast
+Lights - Corridor,Electricity,STEENBERG,,,2026-04-15,Resolved Slow
+Sewer: Blocked/Overflow,OTHER,GEORGE PARK,85,Sub-Council 8,2023-08-25,Resolved Fast
+Financial Adjustment/Transfer of Payment,Water & Sanitation,RONDEBOSCH EAST,60,Sub-Council 11,2025-03-05,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,KUYASA,99,Sub-Council 10,2026-01-29,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,MONTCLAIR,,,2025-07-15,Resolved Fast
+Burst Water Main,Public housing,GRASSY PARK,,,2025-12-08,Resolved Fast
+Suspect Tampering,OTHER,HANOVER PARK,47,Sub-Council 11,2024-08-26,Resolved Slow
+No Power,Electricity,OTTERY,,,2024-07-12,Resolved Fast
+No Power,Electricity,STRAND,85,Sub-Council 8,2023-03-13,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2025-04-20,Resolved Slow
+Street Lights - All Lights Out,Energy,#,,,2023-06-22,Resolved Slow
+Damaged Bin - 240L,Solid waste,ROUNDHAY,84,Sub-Council 8,2023-05-24,Resolved Fast
+MTR: Customer Tariff Related,Water & Sanitation,BEACON VALLEY,116,Sub-Council 12,2025-04-03,Resolved Slow
+PPM Display Blank,Electricity,#,,,2024-11-13,Resolved Fast
+MTR: Internal MTR Related Queries,Water & Sanitation,#,,,2023-02-15,Resolved Fast
+Street Lights - All Lights Out,Energy,SCOTTSDENE,7,Sub-Council 2,2023-11-16,Resolved Slow
+SEW: Empty Conservancy Tank,Water & Sanitation,ZEEKOEVLEI,67,Sub-Council 18,2024-12-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CROSSROADS,36,Sub-Council 13,2025-02-03,Resolved Fast
+No Power,Electricity,CONSTANTIA,,,2025-10-03,Resolved Fast
+No Power,Electricity,CLAREMONT,,,2023-04-20,Resolved Fast
+Equipment Damaged,Electricity,BROADLANDS PARK,100,Sub-Council 8,2023-11-24,Resolved Fast
+MTR: Customer Account Adjustment,Water & Sanitation,RETREAT,68,Sub-Council 18,2023-04-04,Resolved Fast
+No Power,Electricity,HOUT BAY,74,Sub-Council 20,2023-06-23,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,WETTON,66,Sub-Council 18,2023-12-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KENSINGTON,56,Sub-Council 3,2024-12-11,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,WOODSTOCK,,,2025-07-14,Resolved Fast
+No Power,Electricity,PHILIPPI,43,Sub-Council 17,2024-11-29,Resolved Fast
+No Power,Electricity,GUGULETU,39,Sub-Council 13,2025-05-21,Resolved Fast
+Damaged Bin - 240L,Solid waste,PHILIPPI,33,Sub-Council 17,2025-11-12,Resolved Fast
+Faulty PSO,Electricity,LAVENDER HILL,,,2026-01-09,Resolved Slow
+No Power,Electricity,VRYGROND,19,,2026-05-08,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,GLENCAIRN,61,Sub-Council 19,2023-10-12,Resolved Fast
+No Power,Electricity,GOODWOOD ESTATE,27,Sub-Council 4,2024-02-25,Resolved Fast
+SEW: Blocked/Overflow,OTHER,PLUMSTEAD,73,Sub-Council 20,2023-04-29,Resolved Slow
+MTR: Customer Technical & MTR Related,Water & Sanitation,UMRHABULO TRIANGLE,95,Sub-Council 10,2024-01-29,Resolved Fast
+Financial Adjustment/Transfer of Payment,OTHER,#,,,2023-06-15,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EERSTERIVIER,16,Sub-Council 14,2025-07-05,Resolved Fast
+Stolen Bins - 240L,Solid waste,OTHER,75,Sub-Council 17,2024-03-12,Resolved Fast
+Vector Control,Health,KUYASA,99,Sub-Council 10,2025-03-06,Resolved Fast
+Meter Replacement Project,OTHER,TIJGERHOF,,,2025-12-03,Unresolved
+WAT: Run to Waste,Water & Sanitation,LENTEGEUR,76,Sub-Council 12,2023-06-07,Resolved Fast
+Street Lights - Single Light Out,Electricity,SUNRIDGE,113,Sub-Council 3,2026-02-08,Resolved Fast
+PPM Display Blank,Electricity,OTHER,,,2024-04-06,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,TABLE VIEW,107,Sub-Council 1,2025-02-10,Unresolved
+Damaged Bin - 240L,Solid waste,STRANDFONTEIN,,,2023-02-16,Resolved Fast
+Pest Control,OTHER,OTTERY,,,2025-12-13,Unresolved
+Incorrect Reading/Request Actual Reading,Energy,SUMMER GREENS,,,2023-03-31,Resolved Fast
+Plumbing,OTHER,LAVENDER HILL,,,2024-01-18,Resolved Fast
+No Power,Electricity,LOTUS RIVER,66,Sub-Council 18,2025-03-02,Resolved Fast
+Street Lights - All Lights Out,Electricity,LOTUS RIVER,,,2024-05-23,Resolved Slow
+No Power,Electricity,OTHER,8,Sub-Council 2,2023-10-25,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,LEIDEN,,,2025-08-20,Resolved Fast
+Stolen Bins - 240L,Solid waste,PHILIPPI,43,Sub-Council 17,2024-03-28,Resolved Slow
+No Power,Electricity,PHILIPPI,33,Sub-Council 17,2024-01-12,Resolved Fast
+PPM Display Blank,Energy,KALKFONTEIN,19,Sub-Council 21,2024-03-12,Resolved Fast
+MTR: Internal MTR Related Queries,Water & Sanitation,PHILIPPI,80,Sub-Council 13,2025-05-12,Resolved Fast
+No Power,Electricity,LANSDOWNE,60,Sub-Council 11,2025-04-11,Resolved Fast
+Reconnect (Non - Payment),Energy,CENTURY CITY,55,Sub-Council 3,2025-07-16,Resolved Fast
+Meter Replacement Project,OTHER,WETTON,66,Sub-Council 18,2024-11-13,Resolved Slow
+Street Lights - Single Light Out,Electricity,RUSTHOF,,,2023-03-29,Resolved Fast
+No Power,Electricity,DIEP RIVER,73,Sub-Council 20,2023-09-27,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,RIDGEWORTH,21,Sub-Council 7,2025-04-01,Resolved Fast
+Street Lights - All Lights Out,Electricity,BEACON VALLEY,116,Sub-Council 12,2025-05-28,Resolved Fast
+WMM: Damaged Meter Below 40mm,Water & Sanitation,ATHLONE,,,2026-02-27,Unresolved
+PPM Display Blank,Electricity,VRYGROND,45,Sub-Council 19,2025-11-16,Resolved Fast
+PPM Display Blank,Electricity,GUGULETU,,,2026-01-21,Resolved Fast
+Sparks on Pole,Electricity,KENILWORTH,58,Sub-Council 20,2026-05-11,Resolved Fast
+Replace Window Panes,Public housing,BELLVILLE SOUTH,,,2025-07-02,Unresolved
+Stolen Bins - 240L,Solid waste,PORTLAND,,,2024-09-16,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KIRSTENHOF,71,Sub-Council 20,2025-05-28,Resolved Fast
+WAT: Leak at Fire Hydrant,Water & Sanitation,FORESHORE,,,2023-06-05,Resolved Slow
+PPM Rejecting Code,Electricity,MANENBERG,30,Sub-Council 14,2023-10-17,Resolved Fast
+Faulty PSO,Electricity,LAVENDER HILL,,,2026-03-04,Resolved Slow
+Debtors Account Correspondence,Water & Sanitation,#,,,2026-03-24,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,MILNERTON,,,2024-04-01,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,VASCO ESTATE,26,Sub-Council 4,2026-05-13,Resolved Fast
+PPM Tripping,Electricity,MITCHELLS PLAIN,,,2024-04-18,Resolved Fast
+SEW: Blocked/Overflow,OTHER,AMANDELRUG,,,2023-04-25,Resolved Fast
+PPM Display Blank,Electricity,#,,,2024-11-14,Resolved Fast
+No Power,Electricity,GUGULETU,40,Sub-Council 14,2023-07-01,Resolved Fast
+Damaged Bin - 240L,Solid waste,LENTEGEUR,76,Sub-Council 12,2023-08-17,Resolved Fast
+No Power,Electricity,PHILIPPI,,,2024-05-13,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,KEWTOWN,49,Sub-Council 14,2024-07-19,Resolved Fast
+Water,Health,MILNERTON,55,Sub-Council 3,2025-04-27,Unresolved
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,KHAYA,94,Sub-Council 10,2024-02-05,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,SUNNINGDALE,23,Sub-Council 1,2025-10-06,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,SAXONSEA,29,Sub-Council 1,2025-10-07,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,OBSERVATORY,57,Sub-Council 16,2023-10-31,Resolved Fast
+Mowing - Parks,Open space,WELGELEGEN,,,2024-09-06,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,LANGA,51,Sub-Council 15,2025-06-17,Resolved Fast
+PPM KRN Fault,OTHER,CROSSROADS,37,Sub-Council 13,2023-08-03,Unresolved
+SEW: Faulty Damaged Manhole Cover,Water & Sanitation,GLENCAIRN,61,Sub-Council 19,2023-12-18,Resolved Fast
+No Power,Electricity,GRASSY PARK,67,Sub-Council 18,2025-08-31,Resolved Fast
+PPM Display Blank,Electricity,WESTLAKE,71,Sub-Council 20,2023-06-08,Resolved Fast
+Mowing - Road Reserves,Open space,STELLENDALE,19,Sub-Council 21,2024-07-02,Resolved Slow
+Carpentry,Public housing,HANOVER PARK,,,2023-10-09,Unresolved
+WAT: No Supply,Water & Sanitation,LOTUS RIVER,,,2023-06-27,Resolved Fast
+Street Lights - All Lights Out,Energy,DELFT,,,2023-02-20,Resolved Fast
+WINF: Leak at Standpipe,Informal settlements,OTHER,,,2025-07-30,Unresolved
+No Power,Electricity,BELGRAVIA,46,Sub-Council 14,2024-07-07,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,GUGULETU,39,Sub-Council 13,2025-12-08,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,KENRIDGE,70,Sub-Council 7,2023-08-20,Resolved Slow
+Stolen Bins - 240L,Solid waste,MITCHELLS PLAIN,,,2023-01-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-12-29,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LAKESIDE,64,Sub-Council 19,2024-08-16,Resolved Slow
+Stolen Bins - 240L,Solid waste,CROSSROADS,36,Sub-Council 13,2025-10-03,Resolved Fast
+Street Lights - Single Light Out,Electricity,LAKESIDE,,,2023-06-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2026-01-15,Resolved Slow
+WAT: Run to Waste,Water & Sanitation,BISHOP LAVIS,,,2024-06-24,Unresolved
+WAT: Faulty Stopcock,Informal settlements,KHAYELITSHA,,,2024-08-07,Resolved Slow
+Cistern: Repair / Replace,Public housing,BELHAR,,,2026-04-13,Resolved Slow
+PPM Display Blank,Electricity,CONSTANTIA,,,2024-08-01,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,PARKLANDS,113,Sub-Council 3,2025-11-21,Resolved Fast
+Tree Removal,Open space,BO OAKDALE,21,Sub-Council 7,2025-10-01,Unresolved
+Non-Collection of 240L Bin,Solid waste,ELIM,11,Sub-Council 14,2026-05-04,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,100,Sub-Council 8,2024-01-24,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,PROTEA HEIGHTS,8,Sub-Council 2,2024-09-13,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,STEENBERG,,,2024-09-03,Resolved Fast
+No Power,Electricity,MOWBRAY,,,2025-03-17,Resolved Fast
+Stolen Bins - 240L,Solid waste,STRAND,83,Sub-Council 8,2024-08-08,Resolved Fast
+WAT: No Supply,OTHER,SIMON'S TOWN,61,Sub-Council 19,2023-12-24,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,EVERITE INDUSTRIA,,,2024-10-13,Resolved Slow
+Missing Payments,OTHER,#,,,2025-05-05,Resolved Fast
+WAT: No Supply,Water & Sanitation,EDENPARK,,,2025-07-08,Resolved Fast
+No Power,Electricity,PROTEA HEIGHTS,,,2023-11-04,Resolved Fast
+WAT: Quality Discoloration,OTHER,STRAND,85,Sub-Council 8,2024-07-05,Resolved Slow
+No Power,Electricity,CRAWFORD,48,Sub-Council 11,2026-01-04,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,KALKFONTEIN,,,2026-01-15,Resolved Fast
+No Power,Electricity,CHURCHILL ESTATE,6,,2026-04-22,Resolved Fast
+PPM Display Blank,Electricity,MORGENSTER,111,Sub-Council 2,2023-05-12,Resolved Fast
+Compost Bin Application - 150L,Solid waste,WALLACEDENE,6,Sub-Council 2,2024-09-12,Resolved Fast
+No Power,Electricity,#,,,2024-07-04,Resolved Fast
+Informal Settlements-Dumping,Solid waste,PHILIPPI,,,2025-10-15,Unresolved
+Compost Bin Application - 150L,Solid waste,MABILLE PARK,11,Sub-Council 21,2024-07-13,Resolved Fast
+Illegal Dumping,Solid waste,ATHLONE,,,2024-05-13,Resolved Fast
+Street Lights - Single Light Out,Electricity,OTHER,,,2024-07-06,Resolved Slow
+MTR: Customer Basic Supply Investigation,Water & Sanitation,#,,,2024-04-11,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,CAMPS BAY / BAKOVEN,54,Sub-Council 16,2023-08-23,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MELKBOSCH STRAND,23,Sub-Council 1,2023-09-28,Resolved Fast
+Street Lights - Single Light Out,Electricity,GUGULETHU,,,2023-03-08,Resolved Slow
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,GLENLILY,2,Sub-Council 6,2024-08-07,Resolved Fast
+Bush Clearing,Solid waste,MELKBOSCH STRAND,,,2024-08-11,Resolved Slow
+Equipment Damaged,Electricity,WINDERMERE,,,2023-03-30,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,EASTRIDGE,116,Sub-Council 12,2024-12-18,Resolved Slow
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,STRAND,100,Sub-Council 8,2024-11-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PHILIPPI,34,Sub-Council 13,2024-08-13,Resolved Fast
+Street Lights - All Lights Out,Energy,ELECTRIC CITY,,,2023-05-09,Resolved Slow
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,CROSSROADS,36,Sub-Council 13,2023-08-22,Resolved Fast
+Street Lights - All Lights Out,Energy,MACASSAR VILLAGE,109,Sub-Council 21,2024-02-04,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETU,40,Sub-Council 13,2026-01-29,Resolved Fast
+Electrical,Electricity,HOUT BAY,,,2023-09-26,Resolved Slow
+Damaged Bin - 240L,Solid waste,TAFELSIG,92,Sub-Council 12,2024-01-11,Resolved Fast
+WAT: Leak at Fire Hydrant,Water & Sanitation,OTHER,84,Sub-Council 8,2024-08-30,Resolved Slow
+PPM Display Blank,Electricity,#,,,2025-12-15,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EASTRIDGE,116,Sub-Council 12,2024-05-02,Resolved Fast
+MTR: Internal MTR Related Queries,Water & Sanitation,MFULENI,,,2023-05-23,Resolved Slow
+No Power,Electricity,HIGHBURY PARK,19,Sub-Council 21,2024-05-08,Resolved Fast
+Compost Bin Application - 150L,Solid waste,BELHAR EXT 17,22,Sub-Council 5,2023-03-08,Resolved Fast
+Street Lights - Single Light Out,Electricity,COLORADO PARK,,,2024-04-29,Resolved Fast
+Damaged Bin - 240L,Solid waste,OTHER,,,2025-11-06,Resolved Slow
+Suspect Tampering,OTHER,FLORIDA,25,Sub-Council 4,2025-03-12,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,SCOTTSDENE,7,Sub-Council 2,2024-04-03,Resolved Fast
+Kiosk Damaged,Electricity,EASTRIDGE,,,2023-02-26,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,MILNERTON,55,Sub-Council 16,2023-12-18,Resolved Slow
+Plumbing,Public housing,MANENBERG,,,2024-02-26,Unresolved
+Other (Enter detailed Fault description),Electricity,FRESNAYE,54,Sub-Council 16,2025-06-20,Resolved Fast
+No Power,Electricity,GARDENS,77,Sub-Council 16,2023-02-04,Resolved Fast
+WAT: No Water 40mm and Above,Water & Sanitation,OTHER,1,Sub-Council 7,2026-04-26,Resolved Fast
+PPM Keypad Faulty,Electricity,HAZENDAL,49,Sub-Council 14,2024-06-18,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,ZEEKOEVLEI,67,Sub-Council 18,2025-03-18,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETU,39,Sub-Council 13,2024-07-22,Resolved Slow
+Sparks on Pole,Electricity,PHILIPPI,33,Sub-Council 17,2024-10-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SAREPTA,11,Sub-Council 14,2026-04-06,Resolved Slow
+SINF: Faulty Pan Connector,Informal settlements,#,,,2026-02-16,Resolved Fast
+Noise Pollution,Health,#,,,2023-05-19,Resolved Slow
+WAT: Run to Waste,Water & Sanitation,MAITLAND,56,Sub-Council 15,2023-11-20,Resolved Slow
+No Power,Electricity,MAITLAND,3,,2026-03-31,Unresolved
+Street Lights - All Lights Out,Electricity,#,,,2023-11-23,Resolved Fast
+WINF: Leak at Standpipe,Informal settlements,,,,2025-11-13,Resolved Fast
+Illegal Dumping,Solid waste,ROBINVALE,32,Sub-Council 1,2025-05-16,Unresolved
+SINF: Blocked Manhole,Informal settlements,KHAYELITSHA,,,2025-06-06,Resolved Fast
+No Power,Electricity,THE RANGE,,,2023-06-12,Resolved Fast
+Wires Down,Electricity,WOODSTOCK,,,2023-09-25,Resolved Fast
+Street Lights - All Lights Out,Electricity,KENILWORTH,,,2024-07-05,Resolved Slow
+WAT: Leak at Meter/Stopcock 40mm and Abo,Water & Sanitation,STRANDFONTEIN,,,2023-03-09,Resolved Fast
+Fallen Tree,Open space,GREEN POINT,115,Sub-Council 16,2026-05-13,Unresolved
+Street Lights - All Lights Out,Energy,WYNBERG,63,Sub-Council 20,2023-09-26,Resolved Slow
+No Power,Electricity,SUMMER GREENS,,,2024-04-29,Resolved Fast
+WAT: No Supply,Water & Sanitation,RETREAT,110,Sub-Council 18,2024-08-06,Resolved Slow
+No Power,Electricity,PHILIPPI,80,Sub-Council 13,2024-02-25,Resolved Fast
+No Power,Electricity,CAPE TOWN,,,2023-02-27,Resolved Fast
+Stolen Bins - 240L,Solid waste,PHILIPPI,34,Sub-Council 13,2026-05-15,Resolved Fast
+Doors: Internal / External,Public housing,MANENBERG,,,2026-02-20,Unresolved
+Stolen Bins - 240L,Solid waste,OTHER,34,Sub-Council 13,2023-01-23,Resolved Fast
+Recycling Bin Application Form,Solid waste,PINEHURST,,,2025-11-05,Resolved Fast
+No Power,Electricity,PORTLAND,79,Sub-Council 17,2025-11-01,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,NOORDHOEK,,,2024-03-27,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,NORTHPINE,,,2024-05-02,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,ILITHA PARK,98,Sub-Council 10,2023-08-30,Resolved Fast
+Equipment Damaged,Electricity,ROCKLANDS,,,2024-10-04,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,WESTRIDGE - MITCHELLS PLAIN,81,Sub-Council 17,2025-10-15,Resolved Fast
+PPM Display Blank,Electricity,CAPE TOWN,,,2023-08-23,Resolved Fast
+Stolen Bins - 240L,Solid waste,BELGRAVIA,48,Sub-Council 11,2024-03-04,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MATROOSFONTEIN,42,Sub-Council 15,2026-03-15,Resolved Fast
+Plumbing,Public housing,OTHER,,,2024-05-16,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,ROBINVALE,32,Sub-Council 1,2025-10-15,Resolved Fast
+Street Lights - Single Light Out,Energy,DURBANVILLE,,,2023-10-18,Resolved Slow
+PPM Faulty (Enter detailed description),Electricity,OTHER,,,2024-07-01,Unresolved
+Meter Replacement Project,Energy,MELKBOSCH STRAND,23,Sub-Council 1,2025-05-27,Unresolved
+Street Lights - All Lights Out,Energy,LOTUS RIVER,,,2023-04-25,Resolved Slow
+Health Haz: Unhygienic disposal of excre,OTHER,CAPE TOWN CITY CENTRE,,,2026-01-11,Unresolved
+WMM: No Water 20mm and below,Water & Sanitation,RICHWOOD,5,Sub-Council 3,2023-08-02,Resolved Fast
+No Power,Electricity,PHILIPPI,,,2023-05-16,Resolved Fast
+Suspect Tampering,OTHER,PHILIPPI,33,Sub-Council 17,2024-03-20,Unresolved
+WMM: No Water Below 40mm,Water & Sanitation,FRESNAYE,,,2026-04-07,Resolved Fast
+Street Lights - Single Light Out,Electricity,OTHER,,,2024-10-22,Resolved Fast
+WMM: Damaged Meter 20mm and below,Water & Sanitation,HAGLEY,19,Sub-Council 14,2025-05-17,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,PINELANDS,53,Sub-Council 16,2025-02-06,Unresolved
+Street Lights - Single Light Out,Electricity,HANOVER PARK,47,Sub-Council 11,2024-01-09,Resolved Slow
+WAT: Shut-Off Supply Request,Water & Sanitation,OTHER,11,Sub-Council 14,2025-08-30,Resolved Fast
+No Power,Electricity,HANOVER PARK,47,Sub-Council 11,2025-06-18,Resolved Fast
+SEW: Blocked/Overflow,OTHER,NOMZAMO,86,Sub-Council 8,2023-05-22,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-10-10,Resolved Fast
+Tree Trimming,Open space,BOTHASIG,5,Sub-Council 7,2025-03-05,Unresolved
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,OTHER,,,2025-10-20,Resolved Fast
+Illegal Dumping,Solid waste,TOKAI,71,Sub-Council 20,2023-07-21,Resolved Slow
+No Power,Electricity,KLIPKOP,10,Sub-Council 6,2023-06-05,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,43,Sub-Council 17,2025-07-24,Resolved Fast
+Meter Replacement Project,Electricity,CHRISMAR,3,Sub-Council 6,2025-05-06,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,SOUTHFORK,100,Sub-Council 8,2024-07-10,Resolved Slow
+Street Lights - Single Light Out,Energy,EIKENDAL,7,Sub-Council 2,2026-03-06,Unresolved
+Sparks on Pole,Energy,GUGULETU,39,Sub-Council 13,2025-11-16,Unresolved
+Carpentry,Public housing,LWANDLE,,,2024-06-07,Unresolved
+Street Lights - All Lights Out,Electricity,MILNERTON,,,2024-07-16,Resolved Fast
+Fire Call,Electricity,OTHER,,,2025-04-06,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-07-11,Resolved Slow
+PPM Faulty Mode,Electricity,LOTUS RIVER,65,Sub-Council 18,2024-12-28,Resolved Fast
+SEW: Foul Smell,Water & Sanitation,BELLVILLE SOUTH,9,Sub-Council 6,2023-10-29,Resolved Fast
+Taps Leaking: Inside / Outside,Public housing,MANENBERG,,,2025-06-02,Unresolved
+Pole Knocked: Motor Vehicle Accident,Electricity,BELGRAVIA,46,Sub-Council 14,2024-04-29,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,EAGLE PARK,67,Sub-Council 18,2026-04-02,Resolved Fast
+Senior Citizens & D/P Rates Rebates,Water & Sanitation,SUNNINGDALE,,,2025-07-24,Resolved Fast
+Cistern: Repair / Replace,Public housing,LAVENDER HILL,,,2025-03-24,Resolved Fast
+MTR: Internal MTR Related Queries,Water & Sanitation,#,,,2023-03-13,Resolved Fast
+Plumbing,Public housing,MANENBERG,,,2024-03-06,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,LWANDLE,,,2026-02-03,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,DURBANVILLE,,,2024-08-24,Resolved Slow
+Payment Confirmation,OTHER,,,,2025-11-03,Resolved Fast
+Stolen Bins - 240L,Solid waste,LEIDEN,20,Sub-Council 5,2025-07-10,Resolved Slow
+Wires Down,Electricity,OTHER,,,2024-05-03,Resolved Fast
+Stolen Bins - 240L,Solid waste,VOORBRUG,20,Sub-Council 5,2025-05-06,Resolved Fast
+No Power,Electricity,D'URBANVALE,112,Sub-Council 7,2023-11-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,HANOVER PARK,47,Sub-Council 11,2025-05-23,Resolved Fast
+No Power,Electricity,LENTEGEUR,76,Sub-Council 12,2024-11-17,Resolved Fast
+PPM Tripping,Electricity,PLUMSTEAD,62,Sub-Council 20,2024-05-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WESBANK,19,Sub-Council 14,2024-10-23,Resolved Slow
+Tree Trimming,Open space,THORNTON,,,2025-10-20,Resolved Slow
+Street Lights - All Lights Out,Energy,OTHER,,,2023-10-08,Resolved Slow
+Electrical,Electricity,LWANDLE,,,2023-08-03,Unresolved
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,DUNOON,104,Sub-Council 3,2024-06-24,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,TAMBOERSKLOOF,77,Sub-Council 16,2024-03-05,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,11,Sub-Council 14,2026-04-22,Resolved Fast
+No Power,Electricity,GUGULETU,40,Sub-Council 14,2023-04-05,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,PLUMSTEAD,63,Sub-Council 20,2024-10-11,Resolved Fast
+PPM Rejecting Code,Electricity,MACASSAR VILLAGE,,Sub-Council 21,2023-04-03,Resolved Slow
+PPM Display Blank,Electricity,CLAREMONT,,,2025-07-07,Resolved Fast
+Street Lights - Single Light Out,Energy,THE HAGUE,,,2023-03-13,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,AMANDA GLEN,21,Sub-Council 7,2023-12-27,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,OBSERVATORY,57,Sub-Council 16,2025-07-24,Resolved Fast
+Sparks on Pole,Electricity,#,,,2025-06-10,Resolved Fast
+Stolen Bins - 240L,Solid waste,HIGHBURY,,,2025-07-24,Resolved Fast
+No Power,Electricity,RYLANDS,,,2024-05-07,Resolved Fast
+Street Lights - All Lights Out,Electricity,MANENBERG,30,Sub-Council 11,2026-04-22,Unresolved
+Stolen Bins - 240L,Solid waste,TAFELSIG,82,Sub-Council 12,2024-11-19,Resolved Fast
+SINF: Faulty Cistern,Informal settlements,#,,,2025-10-13,Resolved Fast
+No Power,Electricity,LENTEGEUR,,,2024-10-17,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,SOUTHFIELD,,,2024-08-03,Resolved Fast
+SEW: Blocked/Overflow,OTHER,EYETHU,94,Sub-Council 10,2023-05-03,Resolved Fast
+Damaged Bin - 240L,Solid waste,CAMELOT,19,Sub-Council 14,2024-09-10,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,CLAREMONT,59,Sub-Council 20,2026-02-16,Unresolved
+Tree Removal,Open space,VIERLANDEN,105,Sub-Council 7,2026-02-04,Unresolved
+Street Lights - All Lights Out,Energy,PHILIPPI,88,Sub-Council 17,2024-03-20,Resolved Slow
+WMM: No Water Below 40mm,Water & Sanitation,OTHER,,,2026-02-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MANDELA PARK,97,Sub-Council 10,2026-02-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PAROW,,,2023-03-28,Resolved Fast
+Pest Control,Health,MFULENI,114,Sub-Council 14,2024-11-16,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,PARKLANDS,107,Sub-Council 1,2025-03-25,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,THORNTON,53,Sub-Council 16,2025-10-01,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,STRAND,,,2025-06-04,Unresolved
+WAT: Faulty Meter 25mm and up,Water & Sanitation,ROCKLANDS,79,Sub-Council 17,2024-02-09,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,VRYGROND,,,2023-04-20,Resolved Fast
+Street Lights - Single Light Out,Electricity,#,,,2023-11-24,Resolved Slow
+Street Lights - All Lights Out,Energy,LEIDEN,,,2024-07-09,Resolved Slow
+Street Lights - All Lights Out,Energy,BELLVILLE SOUTH,9,Sub-Council 6,2024-03-10,Resolved Slow
+Damaged Toilet - Container Toilet,Informal settlements,OTHER,,,2024-04-26,Resolved Fast
+Stolen Bins - 240L,Solid waste,KLEINVLEI TOWN,14,Sub-Council 21,2023-12-13,Resolved Fast
+Meter Replacement Project,OTHER,SEA POINT,,,2025-08-22,Unresolved
+Electrical,Electricity,LOTUS RIVER,,,2024-03-14,Resolved Fast
+Repair Fencing at Park,Open space,ROSEBANK,57,Sub-Council 16,2025-11-12,Resolved Fast
+Street Sweeping,Solid waste,#,,,2024-02-06,Resolved Fast
+WAT: Faulty Stopcock,Water & Sanitation,HOUT BAY,,,2025-10-23,Resolved Fast
+No Power,Electricity,WELTEVREDEN VALLEY,,,2024-08-12,Resolved Fast
+No Power,Electricity,#,,,2026-05-15,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,#,,,2024-07-01,Resolved Fast
+PPM Keypad Faulty,Electricity,SONEIKE I,8,Sub-Council 2,2025-06-20,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,BOQUINAR INDUSTRIAL AREA,31,Sub-Council 15,2025-04-04,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,KALKFONTEIN,19,Sub-Council 14,2024-12-11,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,CROSSROADS,36,Sub-Council 13,2024-12-05,Resolved Slow
+PPM Faulty (Enter detailed description),Electricity,OTHER,67,Sub-Council 18,2026-05-14,Resolved Fast
+No Power,Electricity,OTHER,,,2023-09-27,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,VREDEKLOOF,103,Sub-Council 7,2023-07-08,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,BROOKLYN,55,Sub-Council 16,2024-01-16,Resolved Fast
+Stolen Bins - 240L,Solid waste,FOREST VILLAGE,,,2025-11-27,Unresolved
+No Power,Electricity,PHOENIX,3,,2026-05-19,Resolved Fast
+WAT: Faulty Stopcock,Water & Sanitation,#,75,Sub-Council 17,2024-03-22,Resolved Slow
+Mowing - Parks,Open space,MORGENSTER HEIGHTS,,,2024-10-09,Resolved Slow
+WMM: Damaged Meter 20mm and below,Water & Sanitation,SHERWOOD,,,2025-06-20,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,EASTRIDGE,92,Sub-Council 12,2023-10-06,Resolved Fast
+WAT: Leak at Fire Hydrant,Water & Sanitation,MAMRE,,,2025-11-24,Unresolved
+No Power,Electricity,#,,,2024-09-05,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KENILWORTH,58,Sub-Council 20,2025-12-01,Resolved Fast
+No Power,Electricity,PINATI ESTATE,11,,2026-04-28,Resolved Fast
+Street Lights - Single Light Out,Energy,SOMERSET RIDGE,15,Sub-Council 8,2024-03-18,Resolved Slow
+WAT: Burst Pipe,Water & Sanitation,GRASSY PARK,110,Sub-Council 18,2025-02-09,Unresolved
+WMM: No Water Below 40mm,Water & Sanitation,TOKAI,71,Sub-Council 20,2026-01-17,Unresolved
+Damaged Bin - 240L,Solid waste,KENSINGTON,56,Sub-Council 3,2025-11-20,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,BELHAR EXT 23,12,Sub-Council 5,2025-10-02,Resolved Fast
+No Power,Electricity,PHILIPPI,88,Sub-Council 17,2025-05-30,Resolved Fast
+Noise Pollution,Health,KUYASA,,,2024-06-06,Resolved Slow
+WAT: Leak at Valve,Water & Sanitation,ELFINDALE,72,Sub-Council 18,2025-03-07,Unresolved
+WMM: No Water 20mm and below,Water & Sanitation,OCEAN VIEW,61,Sub-Council 19,2025-04-01,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,MANENBERG,30,Sub-Council 14,2024-02-12,Resolved Fast
+Sewer: Blocked/Overflow,OTHER,MEADOWRIDGE,,,2023-05-22,Resolved Fast
+Noise Pollution,Health,#,,,2025-10-20,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,STRAND,,,2025-10-06,Resolved Fast
+Illegal Dumping,Solid waste,OTHER,111,Sub-Council 2,2026-02-02,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,RUYTERWACHT,28,Sub-Council 4,2024-10-31,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2025-11-02,Resolved Fast
+Street Lights - Single Light Out,Energy,MALIBU VILLAGE,,,2024-07-19,Resolved Slow
+Low Voltage and/or Shocks,Electricity,RONDEBOSCH,58,Sub-Council 11,2023-10-27,Resolved Fast
+No Power,Energy,MFULENI,114,Sub-Council 9,2024-07-01,Resolved Fast
+No Power,Electricity,#,54,Sub-Council 16,2025-06-09,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,WALLACEDENE,101,Sub-Council 2,2026-03-26,Resolved Fast
+PPM KRN Fault,OTHER,#,,,2024-07-22,Resolved Slow
+No Power,Electricity,OTHER,,,2023-05-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MACASSAR,109,Sub-Council 21,2024-07-17,Resolved Slow
+WAT: Faulty Meter 25mm and up,OTHER,GLENCAIRN,61,Sub-Council 19,2024-01-25,Resolved Slow
+PPM Faulty (Enter detailed description),Electricity,STEENBERG,68,Sub-Council 18,2026-05-12,Resolved Slow
+WMM: No Water Below 40mm,Water & Sanitation,WINDERMERE,56,Sub-Council 15,2023-01-08,Resolved Fast
+SEW: Re-Instatement,Water & Sanitation,LANGA,51,Sub-Council 15,2023-08-03,Resolved Slow
+SEW: Infestation Cockroach,Water & Sanitation,OTTERY,,Sub-Council 18,2025-11-10,Resolved Fast
+No Power,Electricity,OTHER,,,2026-02-19,Resolved Fast
+Street Lights - All Lights Out,Electricity,SILVEROAKS,,,2025-04-10,Resolved Fast
+Damaged Bin - 240L,Solid waste,#,,,2024-05-13,Resolved Fast
+No Power,Energy,WYNBERG,63,Sub-Council 20,2024-08-28,Resolved Fast
+Suggestions for improvements,OTHER,SANDDRIFT,,,2026-01-08,Unresolved
+Stolen Bins - 240L,Solid waste,NONQUBELA,89,Sub-Council 9,2025-03-12,Resolved Fast
+No Power,Electricity,GRASSY PARK,65,Sub-Council 18,2024-11-02,Resolved Slow
+PPM Rejecting Code,Electricity,LENTEGEUR,76,Sub-Council 12,2023-03-07,Resolved Fast
+No Power,Electricity,NYANGA,,,2023-12-27,Resolved Fast
+Other (Enter detailed Fault description),Electricity,PHILIPPI PARK,,,2024-08-16,Unresolved
+Doors: Internal / External,Public housing,LAVENDER HILL,,,2026-01-07,Resolved Fast
+No Power,Electricity,STEENBERG,68,Sub-Council 18,2024-05-17,Resolved Fast
+Illegal Dumping,Solid waste,MOWBRAY,57,Sub-Council 16,2025-03-07,Resolved Fast
+No Power,Electricity,SYBRAND PARK,60,Sub-Council 11,2024-09-16,Resolved Fast
+Carpentry,OTHER,PARKWOOD EST,,,2024-01-16,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,SCOTTSDENE,7,Sub-Council 2,2023-12-31,Resolved Fast
+Stolen Bins - 240L,Solid waste,STRANDFONTEIN,43,Sub-Council 17,2024-06-24,Resolved Fast
+Street Lights - Single Light Out,Electricity,PORTLAND,78,Sub-Council 17,2023-01-16,Resolved Fast
+Street Lights - All Lights Out,Energy,WYNBERG,,,2023-12-06,Resolved Fast
+WAT: Leak at Fire Hydrant,Water & Sanitation,COLORADO PARK,75,Sub-Council 17,2024-03-03,Unresolved
+WMM: Faulty Meter 20mm and below,Water & Sanitation,EASTRIDGE,92,Sub-Council 12,2023-11-24,Resolved Fast
+WAT: Leak at Meter/Stopcock 25mm and up,Water & Sanitation,RICHMOND ESTATE,26,Sub-Council 4,2023-12-20,Unresolved
+Street Lights - Single Light Out,Electricity,ATHLONE,48,Sub-Council 11,2025-10-25,Resolved Fast
+No Power,Electricity,NYANGA,37,Sub-Council 13,2024-01-07,Resolved Fast
+Stolen Bins - 240L,Solid waste,WYNBERG,63,Sub-Council 20,2023-01-04,Resolved Fast
+Plumbing,OTHER,NYANGA,,,2023-07-26,Resolved Slow
+Dumping on Parks,Open space,ZEEKOEVLEI,,,2024-08-08,Resolved Slow
+Damaged Bin - 240L,Solid waste,UITZICHT,103,Sub-Council 7,2024-05-02,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,ONVERWACHT - THE STRAND,,,2024-05-08,Unresolved
+Street Lights - Single Light Out,Electricity,NEW WOODLANDS,75,Sub-Council 17,2026-02-25,Unresolved
+WAT: Broken Leading,Water & Sanitation,SANDOWN,,,2024-08-22,Resolved Fast
+No Power,Electricity,PHILIPPI,35,Sub-Council 12,2025-08-05,Resolved Fast
+Sparks on Pole,Electricity,OTHER,,,2023-10-21,Resolved Fast
+WMM: Damaged Meter Below 40mm,Water & Sanitation,RETREAT,72,Sub-Council 18,2024-07-29,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,GLENCAIRN,61,Sub-Council 19,2024-03-22,Unresolved
+Faulty Hydrants,OTHER,BOQUINAR INDUSTRIAL AREA,31,Sub-Council 15,2025-12-03,Unresolved
+WAT: No Supply,Water & Sanitation,OTHER,15,Sub-Council 8,2023-01-30,Resolved Fast
+PPM Display Blank,Electricity,CROSSROADS,37,Sub-Council 13,2023-05-27,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,PINEHURST,103,Sub-Council 7,2024-12-19,Resolved Fast
+PPM Faulty Mode,Electricity,ZEEKOEVLEI,67,Sub-Council 18,2025-11-07,Resolved Fast
+No Power,Electricity,KLEINBOSCH,1,Sub-Council 7,2025-05-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,FISH HOEK,64,Sub-Council 19,2024-08-10,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,#,,,2023-04-24,Resolved Fast
+Street Lights - All Lights Out,Electricity,PEERLESS PARK WEST,,,2024-11-02,Resolved Fast
+Taps Leaking: Inside / Outside,Public housing,SCOTTSDENE,7,Sub-Council 2,2026-05-05,Unresolved
+Street Lights - All Lights Out,Energy,OTHER,,,2023-08-16,Resolved Fast
+Wires Down,Electricity,HAZENDAL,,,2024-03-29,Resolved Fast
+Street Lights - Single Light Out,Electricity,BROOKLYN,,,2024-04-11,Resolved Fast
+No Power,Electricity,GUGULETU,40,Sub-Council 14,2023-03-12,Resolved Fast
+Street Lights - Single Light Out,Electricity,RONDEBOSCH,,,2023-05-09,Resolved Fast
+No Power,Electricity,LANSDOWNE,,,2024-09-04,Resolved Fast
+Recycling Bin Application Form,Solid waste,MELKBOSCH STRAND,23,Sub-Council 1,2023-10-25,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,WOODSTOCK,57,Sub-Council 16,2026-05-13,Resolved Fast
+No Power,Electricity,SOUTHFIELD,72,Sub-Council 18,2025-02-06,Resolved Fast
+Street Lights - All Lights Out,Electricity,MANENBERG,,,2024-06-22,Resolved Fast
+Pest Control,Health,ATHLONE,,,2026-01-03,Resolved Slow
+Replace Window Handles,Public housing,SCOTTSDENE,,,2025-05-12,Unresolved
+WAT:Stolen Meter/Stopcock 40mm and above,Water & Sanitation,HEATHFIELD,72,Sub-Council 18,2024-11-29,Resolved Slow
+WAT: Run to Waste,OTHER,OTHER,21,Sub-Council 7,2023-01-14,Resolved Fast
+Replace Flush Pipe,Public housing,MANENBERG,,,2026-03-25,Unresolved
+Property Management - Lease,OTHER,OTHER,,,2026-04-10,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,MONTE VISTA,1,Sub-Council 7,2026-04-09,Resolved Fast
+WMM: Damaged Meter 20mm and below,Water & Sanitation,STRAND,83,Sub-Council 8,2025-05-05,Resolved Fast
+Faulty PSO,Electricity,MANENBERG,,,2025-04-22,Resolved Fast
+WAT: No Supply,Water & Sanitation,EDGEMEAD,5,Sub-Council 7,2024-12-15,Resolved Slow
+No Power,Electricity,PLUMSTEAD,73,Sub-Council 20,2024-05-11,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MANENBERG,,,2024-04-08,Resolved Fast
+No Power,Electricity,VRYGROND,45,Sub-Council 19,2024-12-20,Resolved Slow
+Stolen Bins - 240L,Solid waste,GUGULETU,,,2024-10-10,Resolved Fast
+Street Lights - All Lights Out,Electricity,FAIRFIELD ESTATE,2,Sub-Council 6,2026-05-12,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,MAMRE,29,Sub-Council 1,2024-03-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,THORNTON,,,2024-07-26,Resolved Slow
+Suspect Tampering,OTHER,HEIDEVELD,44,Sub-Council 14,2024-05-27,Unresolved
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,RUYTERWACHT,28,Sub-Council 4,2024-01-02,Resolved Fast
+WMM: Damaged Meter Below 40mm,Water & Sanitation,LANSDOWNE,,,2023-04-16,Resolved Fast
+Stolen Bins - 240L,Solid waste,GORDONS BAY VILLAGE,100,Sub-Council 8,2023-08-16,Resolved Fast
+WAT: No Supply,Water & Sanitation,OTHER,57,Sub-Council 16,2026-02-25,Resolved Slow
+MTR: Customer Account Adjustment,Water & Sanitation,PORTLAND,,,2025-07-10,Unresolved
+Street Lights - Single Light Out,Electricity,#,,,2023-02-20,Resolved Fast
+Bin Cleaning in Parks/POS,Open space,CONSTANTIA,,,2024-09-06,Resolved Slow
+No Power,Electricity,PHILIPPI,80,Sub-Council 13,2025-02-10,Unresolved
+No Power,Electricity,RAVENSMEAD,25,Sub-Council 4,2024-12-18,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,HEIDEVELD,44,Sub-Council 11,2024-09-08,Resolved Fast
+Damaged Bin - 240L,Solid waste,VASCO ESTATE,27,Sub-Council 4,2023-12-28,Resolved Fast
+No Power,Energy,OTHER,93,Sub-Council 9,2024-02-08,Resolved Fast
+Damaged Bin - 240L,Solid waste,RYLANDS,,,2024-04-02,Resolved Fast
+No Power,Electricity,PARKWOOD,65,Sub-Council 18,2024-10-05,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,SCOTTSDENE,7,Sub-Council 2,2023-11-22,Resolved Fast
+Street Lights - All Lights Out,Energy,VRYGROND,,,2023-06-15,Resolved Slow
+No Power,Electricity,FISH HOEK,,,2023-07-21,Resolved Fast
+SEW: Blocked/Overflow,OTHER,FIRGROVE,109,Sub-Council 21,2023-11-25,Resolved Fast
+Suspect Tampering,Electricity,LWANDLE,,,2026-03-19,Resolved Fast
+WINF: Pipe Burst,Informal settlements,DURBANVILLE,,,2023-05-25,Resolved Fast
+No Power,Electricity,MANENBERG,46,Sub-Council 11,2025-08-15,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,BROOKLYN,,,2025-12-18,Resolved Fast
+Street Lights - Single Light Out,Electricity,GARDENS,,,2023-06-01,Resolved Fast
+No Power,Electricity,SALT RIVER,57,Sub-Council 16,2025-04-14,Resolved Fast
+Residential Bin Application - 240L,Solid waste,PINEHURST,,,2025-08-06,Resolved Fast
+Meter Replacement Project,OTHER,EDGEMEAD,5,Sub-Council 3,2024-07-16,Resolved Slow
+No Power,Electricity,GRASSY PARK,110,Sub-Council 18,2025-10-18,Resolved Fast
+Wires Down,Electricity,GRASSY PARK,65,Sub-Council 18,2026-03-04,Resolved Fast
+SEW: Blocked/Overflow,OTHER,OTHER,94,Sub-Council 10,2023-01-16,Resolved Fast
+PPM Faulty Mode,Electricity,ASANDA,85,Sub-Council 8,2024-08-08,Resolved Fast
+WAT: No Supply,Water & Sanitation,BONNIE BRAE,102,Sub-Council 2,2025-11-24,Resolved Fast
+SEW: Foul Smell,Water & Sanitation,BISHOP LAVIS,42,Sub-Council 4,2024-03-02,Resolved Fast
+No Power,Electricity,CLOVELLY,64,Sub-Council 19,2023-08-21,Resolved Fast
+Illegal Dumping,Solid waste,OBSERVATORY,,,2023-04-16,Resolved Fast
+No Power,Electricity,LANSDOWNE,60,Sub-Council 11,2024-10-09,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,MELKBOSCH STRAND,23,Sub-Council 1,2023-05-25,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,SOUTHFIELD,72,Sub-Council 18,2025-05-01,Resolved Fast
+PPM Faulty Mode,Electricity,VANGUARD ESTATE,44,Sub-Council 11,2026-03-20,Resolved Fast
+PPM Faulty Mode,Electricity,ASANDA,,,2026-01-22,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,HIGHBURY,11,Sub-Council 14,2024-12-05,Resolved Fast
+Street Lights - Single Light Out,Electricity,ROCKLANDS,,,2023-02-22,Resolved Fast
+WMM: Missing Cover Meter Below 40mm,Water & Sanitation,ROCKLANDS,79,Sub-Council 17,2024-11-08,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,RUYTERWACHT,28,Sub-Council 4,2023-04-27,Resolved Fast
+Main Leak,Informal settlements,#,,,2023-09-27,Resolved Fast
+MTR: Customer Technical & MTR Related,Water & Sanitation,ATHLONE,49,Sub-Council 14,2024-08-28,Resolved Slow
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,HOUT BAY,,,2025-08-27,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,THREE ANCHOR BAY,,,2026-01-22,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,FIRLANDS,,Sub-Council 8,2026-01-15,Resolved Fast
+WAT: No Supply,Water & Sanitation,OTHER,22,Sub-Council 5,2025-11-27,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,GUGULETU,44,Sub-Council 14,2023-10-03,Resolved Fast
+Illegal Dumping,Solid waste,PLUMSTEAD,63,Sub-Council 20,2026-03-06,Resolved Fast
+No Power,Electricity,GUGULETU,39,Sub-Council 13,2024-04-30,Resolved Fast
+SEW: Blocked/Overflow,OTHER,DELFT 4,,,2023-02-06,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KHAYELITSHA,,,2026-04-15,Resolved Fast
+Street Lights - Single Light Out,Electricity,PARKLANDS,,,2024-08-14,Resolved Fast
+WAT: Safety and Security,OTHER,,,,2025-11-13,Unresolved
+Cistern Defective,Informal settlements,FISH HOEK,,,2024-03-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-01-31,Resolved Fast
+Street Lights - ON,Electricity,CAMPS BAY / BAKOVEN,,,2024-07-22,Resolved Slow
+Cable Exposed,Energy,BISHOP LAVIS,,,2026-01-15,Resolved Fast
+WMM: Missing Cover Meter Below 40mm,Water & Sanitation,WINDSOR ESTATE,,,2026-01-26,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,NOORDHOEK,69,Sub-Council 19,2025-04-11,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,FLAMINGO VLEI,113,Sub-Council 3,2025-03-02,Resolved Fast
+WC Pan: Repair / Replace,Public housing,HANOVER PARK,,,2025-06-30,Unresolved
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,UITSIG,25,Sub-Council 4,2024-11-10,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,OTHER,60,Sub-Council 11,2025-08-04,Resolved Fast
+Pest Control,OTHER,CLAREMONT,,,2025-12-19,Unresolved
+WAT: No Supply,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2025-04-30,Resolved Fast
+Compost Bin Application - 150L,Solid waste,STRANDFONTEIN,,,2025-10-21,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,CONSTANTIA,,,2025-07-01,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,PROTEA HEIGHTS,,Sub-Council 2,2025-06-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2025-04-25,Resolved Fast
+Damaged Bin - 240L,Solid waste,BOSTON,2,Sub-Council 6,2024-02-14,Resolved Fast
+Stolen Bins - 240L,Solid waste,ILITHA PARK,98,Sub-Council 10,2023-12-13,Resolved Fast
+Damaged Bin - 240L,Solid waste,WELGEDACHT,70,Sub-Council 7,2025-03-06,Resolved Slow
+No Power,Electricity,DISTRICT SIX,77,Sub-Council 16,2024-03-11,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,STRANDFONTEIN,43,Sub-Council 17,2026-02-26,Resolved Fast
+Street Sweeping,Solid waste,SIMON'S TOWN,61,Sub-Council 19,2025-04-25,Unresolved
+No Power,Electricity,VALHALLA PARK,31,Sub-Council 15,2023-03-04,Resolved Fast
+WAT: Quality Discoloration,OTHER,LOTUS RIVER,,,2024-11-04,Resolved Fast
+Recycling Bin Application Form,Solid waste,PINEHURST,103,Sub-Council 7,2023-01-12,Resolved Fast
+Health Haz: Accumulation of material,Health,GATESVILLE,,,2026-01-29,Resolved Slow
+SEW: Infestation Cockroach,Water & Sanitation,CRAWFORD,48,Sub-Council 11,2025-03-19,Resolved Fast
+Street Lights - Single Light Out,Energy,BELHAR EXT 17,,,2024-09-22,Resolved Slow
+WMM: Stolen Meters/Stopcock Below 40mm,Water & Sanitation,GRASSY PARK,110,Sub-Council 18,2026-02-07,Resolved Fast
+SEW: Blocked/Overflow,OTHER,KHAYA,,,2023-03-20,Resolved Fast
+Cistern Defective,Informal settlements,LOTUS RIVER,,,2025-04-10,Resolved Fast
+Meter Replacement Project,OTHER,RAVENSMEAD,10,Sub-Council 6,2024-05-28,Resolved Slow
+Street Lights - Single Light Out,Electricity,#,,,2023-04-14,Resolved Fast
+Street Lights - Single Light Out,Energy,OTHER,5,Sub-Council 7,2026-04-25,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,BOTHASIG,,,2024-09-03,Resolved Slow
+Equipment Damaged,Electricity,SALT RIVER,57,Sub-Council 16,2026-05-11,Resolved Fast
+SEW: Blocked/Overflow,OTHER,SONSTRAAL,21,Sub-Council 7,2023-04-06,Resolved Fast
+No Power,Energy,HEATHFIELD,,,2023-04-14,Resolved Fast
+PPM Tariff Query / Change,Energy,LANSDOWNE,,,2025-11-26,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,OTHER,8,Sub-Council 2,2025-08-28,Resolved Fast
+WAT: Stolen Meter all sizes,OTHER,#,,,2023-10-20,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PINEHURST,,,2025-07-24,Resolved Slow
+No Power,Electricity,PHILIPPI,88,Sub-Council 17,2023-03-30,Resolved Fast
+Street Lights - Single Light Out,Electricity,GRASSY PARK,65,Sub-Council 18,2026-02-20,Resolved Fast
+Sink Cupboards,Public housing,OTHER,,,2024-12-24,Resolved Slow
+No Power,Electricity,HEIDEVELD,44,Sub-Council 14,2024-05-18,Resolved Fast
+Street Lights - All Lights Out,Energy,#,,,2023-05-26,Resolved Fast
+Street Lights - Single Light Out,Electricity,TABLE VIEW,113,Sub-Council 3,2025-11-18,Resolved Fast
+Street Lights - Single Light Out,Electricity,PORTLAND,79,Sub-Council 17,2023-08-17,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-01-31,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,#,,,2024-07-24,Resolved Slow
+Damaged Bin - 240L,Solid waste,KHAYA,94,Sub-Council 10,2026-03-30,Unresolved
+PPM Display Blank,Electricity,LAND EN ZEEZICHT,84,Sub-Council 8,2025-08-22,Resolved Fast
+MTR: Internal Master Data Update,Water & Sanitation,CONSTANTIA,,,2025-08-05,Unresolved
+Illegal Dumping,Solid waste,LEIDEN,20,Sub-Council 5,2026-05-05,Unresolved
+WMM: Faulty Meter 20mm and below,Water & Sanitation,PHILIPPI,43,Sub-Council 17,2023-08-10,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,NYANGA,38,Sub-Council 13,2025-03-25,Resolved Fast
+No Power,Electricity,NYANGA,13,,2026-03-09,Resolved Fast
+Street Lights - All Lights Out,Energy,OTHER,19,Sub-Council 21,2023-01-11,Resolved Fast
+Litter Bins Not Serviced,Solid waste,MONTE VISTA,1,Sub-Council 3,2024-02-15,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,GROENVALLEI,3,Sub-Council 6,2023-09-07,Resolved Slow
+Damaged Bin - 240L,Solid waste,BELHAR EXT 13,12,Sub-Council 5,2023-06-07,Resolved Fast
+Damaged Bin - 240L,Solid waste,VREDEKLOOF,103,Sub-Council 7,2024-01-24,Resolved Fast
+PPM Keypad Faulty,Electricity,OTHER,,,2026-02-11,Resolved Fast
+Tap Defective,Informal settlements,OTHER,,,2023-05-03,Resolved Slow
+No Power,Electricity,LOTUS RIVER,66,Sub-Council 18,2025-04-15,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,VOORBRUG,,,2026-05-11,Resolved Fast
+Suspect Tampering,OTHER,HANOVER PARK,47,Sub-Council 11,2024-07-26,Resolved Slow
+PPM Display Blank,Electricity,PHILIPPI,,,2026-05-16,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,BELGRAVIA,46,Sub-Council 11,2025-05-30,Unresolved
+Pole Knocked: Motor Vehicle Accident,Energy,HERITAGE PARK,84,Sub-Council 8,2024-12-02,Resolved Slow
+Sewerline Blocked,Informal settlements,MASIPHUMELELE,,,2025-04-11,Unresolved
+WAT: Re-instatement,Water & Sanitation,FISH HOEK,,,2026-05-06,Unresolved
+PPM Service Charge Query,Energy,OTTERY,63,Sub-Council 20,2024-10-28,Resolved Fast
+Replace Flush Pipe,Public housing,OTHER,,,2024-11-06,Resolved Slow
+PPM Display Blank,Electricity,GUGULETU,,,2025-03-29,Resolved Fast
+Stolen Bins - 240L,Solid waste,#,,,2023-09-04,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,MXOLISI PHETANI,87,Sub-Council 9,2024-04-30,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,MELKBOSCH STRAND,23,Sub-Council 1,2024-09-21,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,PARKWOOD,65,Sub-Council 18,2024-09-01,Resolved Fast
+Street Lights - Single Light Out,Energy,GORDONS BAY VILLAGE,,,2024-11-04,Resolved Slow
+Street Lights - Single Light Out,Electricity,LAKESIDE,64,Sub-Council 19,2025-08-09,Resolved Fast
+Suspect Tampering,OTHER,HEIDEVELD,44,Sub-Council 14,2024-05-02,Resolved Slow
+No Power,Electricity,CLAREMONT,,,2025-07-08,Resolved Fast
+Street Lights - All Lights Out,Electricity,ATHLONE,,,2026-01-07,Resolved Fast
+Equipment Maintenance,Energy,GLENCAIRN,,,2023-01-25,Resolved Slow
+Health Haz: Unhygienic disposal of excre,Health,HANOVER PARK,47,Sub-Council 11,2025-11-06,Resolved Fast
+WAT: No Supply,Water & Sanitation,BROWNS FARM,,,2025-08-09,Resolved Fast
+WAT: No Supply,OTHER,SOMERSET WEST,,,2023-09-04,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,LAKESIDE,64,Sub-Council 19,2024-01-19,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,CONSTANTIA,73,Sub-Council 20,2023-05-04,Resolved Fast
+PPM Rejecting Code,Electricity,MUIZENBERG,,,2023-06-12,Resolved Fast
+MDUS Event SPU Billing,OTHER,BELLVILLE CBD,10,Sub-Council 6,2023-07-18,Resolved Slow
+Street Sweeping,Solid waste,RONDEBOSCH,59,Sub-Council 11,2024-01-12,Resolved Fast
+No Power,Electricity,PINELANDS,16,,2025-11-17,Resolved Fast
+Damaged Bin - 240L,Solid waste,STRANDFONTEIN,43,Sub-Council 17,2024-02-07,Resolved Fast
+No Power,Electricity,FLORIDA,25,Sub-Council 4,2023-04-16,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,DE TIJGER,2,Sub-Council 6,2024-12-10,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,PARKLANDS,113,Sub-Council 3,2024-02-09,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,BOTHASIG,,,2024-04-22,Unresolved
+Reduce No of Bins,Solid waste,#,,,2024-02-13,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,SCOTTSVILLE,111,Sub-Council 2,2023-06-08,Resolved Fast
+Incorrect Reading/Request Actual Reading,Energy,#,,,2024-11-19,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,SEA POINT,,,2023-07-08,Resolved Fast
+Stolen Bins - 240L,Solid waste,KUYASA,,,2025-10-13,Resolved Fast
+Other (Enter detailed Fault description),Electricity,STEENBERG,68,Sub-Council 18,2024-04-29,Resolved Fast
+Stolen Bins - 240L,Solid waste,FOUNTAIN VILLAGE,,,2026-01-19,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,BOTHASIG,5,Sub-Council 7,2025-08-18,Resolved Fast
+Stolen Bins - 240L,Solid waste,MFULENI,,,2024-06-28,Resolved Fast
+Reconnect (After Hours),Energy,#,,,2024-10-28,Resolved Fast
+SEW: Blocked/Overflow,OTHER,UMRHABULO TRIANGLE,,,2023-07-13,Resolved Fast
+Painting,Public housing,PAROW,,,2024-04-23,Resolved Slow
+Reconnect (Non - Payment),Energy,#,,,2026-03-04,Resolved Fast
+MDUS Event SPU Billing,OTHER,SEA POINT,54,Sub-Council 16,2023-11-14,Resolved Slow
+Street Lights - Single Light Out,Electricity,HOUT BAY,74,Sub-Council 20,2026-05-13,Unresolved
+Damaged Bin - 240L,Solid waste,ROSEDALE - KLEIN VLEI,,,2023-03-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,NOMZAMO,,,2025-12-18,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,GLENLILY,,,2023-06-09,Resolved Slow
+Street Lights - ON,Electricity,MOWBRAY,,,2023-02-27,Resolved Fast
+Sparks on Pole,Energy,BOSTON,2,Sub-Council 6,2026-04-04,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SOUTHFIELD,72,Sub-Council 18,2025-07-01,Resolved Fast
+SEW: Faulty Pump Station,OTHER,OTHER,,,2023-05-27,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,OTHER,,,2023-03-15,Resolved Slow
+Street Lights - Single Light Out,Electricity,AVONDALE,10,Sub-Council 6,2023-01-04,Resolved Fast
+PPM Faulty Mode,Electricity,#,,,2026-04-20,Resolved Fast
+WMM: Faulty Meter 20mm and below,Water & Sanitation,CAPE TOWN,,,2024-03-13,Resolved Fast
+No Power,Electricity,BRACKENFELL SOUTH,,,2023-04-21,Resolved Fast
+Meter Replacement Project,OTHER,SEA POINT,54,Sub-Council 16,2024-08-23,Resolved Slow
+PPM Display Blank,Electricity,WELTEVREDEN VALLEY,,,2024-01-31,Resolved Fast
+MTR: Internal MTR Related Queries,Water & Sanitation,ASANDA,85,Sub-Council 8,2024-05-21,Resolved Fast
+No Power,Electricity,LAVENDER HILL,,,2024-05-31,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,LENTEGEUR,76,Sub-Council 12,2024-02-12,Resolved Fast
+PPM Tariff Query / Change,Energy,NYANGA,38,Sub-Council 13,2024-11-25,Resolved Fast
+WC Pan: Repair / Replace,Public housing,ATLANTIS,,,2026-01-05,Unresolved
+Street Lights - Single Light Out,Electricity,NORTHPINE,7,Sub-Council 2,2025-08-13,Resolved Fast
+Street Lights - All Lights Out,Energy,OTHER,,,2025-04-16,Unresolved
+Street Lights - Single Light Out,Electricity,RICHMOND ESTATE,26,Sub-Council 4,2024-10-07,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,RIVERGATE,107,Sub-Council 1,2024-02-22,Resolved Slow
+Reconnect (Non - Payment),Energy,WYNBERG,63,Sub-Council 20,2024-06-13,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,KALKFONTEIN,19,Sub-Council 21,2023-07-24,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,SILVERTOWN,49,Sub-Council 11,2025-06-12,Resolved Slow
+WINF: Faulty Tap,Informal settlements,#,,,2026-05-09,Resolved Fast
+WAT: Low Pressure,OTHER,PLUMSTEAD,63,Sub-Council 20,2023-09-30,Resolved Slow
+Replace Window Handles,Public housing,MANENBERG,,,2025-03-24,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETHU,,,2024-01-28,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,15,Sub-Council 8,2026-05-20,Unresolved
+Illegal Dumping,Solid waste,KIRSTENHOF,,,2025-06-22,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,LENTEGEUR,76,Sub-Council 12,2026-03-26,Resolved Fast
+No Power,Electricity,RYLANDS,11,,2026-02-17,Resolved Fast
+Other (Enter detailed Fault description),Electricity,PLUMSTEAD,63,Sub-Council 20,2023-09-07,Resolved Fast
+WAT: Leak at Meter/Stopcock 40mm and Abo,Water & Sanitation,WETTON,66,Sub-Council 18,2026-03-20,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,RONDEBOSCH EAST,60,Sub-Council 11,2023-01-25,Resolved Fast
+No Power,Electricity,PHILIPPI,33,Sub-Council 17,2023-08-12,Resolved Fast
+No Power,Electricity,#,,,2023-02-24,Resolved Fast
+Street Lights - All Lights Out,Electricity,EDGEMEAD,5,Sub-Council 7,2025-04-18,Resolved Fast
+WMM: Faulty Meter 20mm and below,Water & Sanitation,SOUTHFIELD,72,Sub-Council 18,2023-12-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,11,Sub-Council 21,2023-11-25,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-07-21,Resolved Slow
+No Power,Electricity,OTHER,111,Sub-Council 2,2025-03-08,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,#,,,2025-08-08,Resolved Slow
+Stolen Bins - 240L,Solid waste,#,,,2023-04-13,Resolved Fast
+Damaged Bin - 240L,Solid waste,BRACKENFELL SOUTH,8,Sub-Council 2,2025-06-03,Resolved Fast
+SEW: Faulty Damaged Manhole Cover,Water & Sanitation,BOSTON,,,2024-07-01,Resolved Fast
+Compost Bin Application - 150L,Solid waste,SAXONSEA,,,2025-08-05,Resolved Fast
+Compost Bin Application - 150L,Solid waste,DIEP RIVER,,,2025-08-18,Resolved Fast
+Financial Adjustment,OTHER,MOUILLE POINT,54,Sub-Council 16,2025-05-08,Unresolved
+WAT: Broken Leading,Water & Sanitation,UITSIG,25,Sub-Council 4,2024-06-28,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,RETREAT,,,2026-01-11,Resolved Fast
+Damaged Bin - 240L,Solid waste,PHILIPPI,,,2025-06-30,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,NEW WOODLANDS,75,Sub-Council 17,2023-08-15,Resolved Fast
+WAT: Missing Cover Fire Hydrant,Water & Sanitation,DISTRICT SIX,,,2024-05-14,Unresolved
+WAT: No Supply,Water & Sanitation,TOWNSEND ESTATE,27,Sub-Council 4,2025-05-05,Resolved Slow
+No Power,Electricity,NYANGA,37,Sub-Council 13,2023-03-21,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETU,39,Sub-Council 13,2024-11-18,Resolved Slow
+PPM Rejecting Code,Electricity,RONDEBOSCH,58,Sub-Council 20,2025-11-05,Resolved Fast
+Street Lights - Single Light Out,Electricity,TIJGERHOF,,,2024-08-22,Resolved Fast
+PPM Faulty Mode,Electricity,HANOVER PARK,47,Sub-Council 11,2023-03-27,Resolved Fast
+Street Lights - All Lights Out,Electricity,HANOVER PARK,47,Sub-Council 11,2023-10-08,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,EVERSDAL,21,Sub-Council 7,2025-03-13,Resolved Fast
+PPM Faulty Mode,Electricity,UITZICHT,103,Sub-Council 7,2025-08-27,Resolved Fast
+PPM Display Blank,Electricity,CAPE FARMS - DISTRICT H,61,Sub-Council 19,2026-04-02,Resolved Fast
+Street Lights - All Lights Out,Energy,#,,,2023-05-30,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,SIMON'S TOWN,61,Sub-Council 19,2025-08-07,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,ADRIAANSE,,,2025-11-10,Resolved Slow
+Street Lights - Single Light Out,Electricity,BELLAIR,3,Sub-Council 6,2025-03-18,Resolved Fast
+Tree Trimming @ Recreation Facilities,OTHER,LYNN'S VIEW,,,2026-05-12,Unresolved
+Meter Replacement Project,Electricity,#,,,2024-04-11,Unresolved
+Suspect Tampering,OTHER,MANENBERG,,,2026-03-27,Resolved Fast
+WMM: Damaged Meter 20mm and below,Water & Sanitation,PARKLANDS,,,2025-07-20,Resolved Fast
+Street Lights - Single Light Out,Electricity,STRANDFONTEIN,43,Sub-Council 17,2025-06-09,Resolved Fast
+Stolen Bins - 240L,Solid waste,CROSSROADS,,,2023-06-21,Resolved Fast
+SEW: Faulty Damaged Manhole Cover,Water & Sanitation,BELLVILLE,,,2023-02-20,Resolved Slow
+Street Lights - Single Light Out,Electricity,OTHER,,,2025-11-07,Resolved Fast
+Street Sweeping,Solid waste,WINDERMERE,56,Sub-Council 15,2024-01-31,Resolved Fast
+SEW: Broken Pipe,Water & Sanitation,CENTURY CITY,55,Sub-Council 16,2023-04-16,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,WESBANK,19,Sub-Council 14,2024-09-05,Resolved Slow
+WAT: Run to Waste,Water & Sanitation,ATLANTIS,,,2025-05-17,Resolved Fast
+No Power,Electricity,BELMONT PARK,111,Sub-Council 2,2024-02-14,Resolved Fast
+Pole Knocked: Motor Vehicle Accident,Electricity,BELLVILLE SOUTH,,,2024-10-04,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,STRAND,83,Sub-Council 8,2025-06-06,Resolved Fast
+Street Lights - Single Light Out,Electricity,LANGEBERG RIDGE,103,Sub-Council 7,2023-04-13,Resolved Fast
+No Power,Electricity,RETREAT,,,2023-07-24,Resolved Fast
+No Power,Electricity,CRAWFORD,,,2023-02-23,Resolved Fast
+WAT: No Supply,Water & Sanitation,EVERITE INDUSTRIA,,,2025-07-16,Resolved Fast
+No Power,Electricity,MUIZENBERG,64,Sub-Council 19,2025-02-02,Resolved Fast
+No Power,Electricity,OTHER,,,2023-04-25,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,OTHER,101,Sub-Council 2,2024-07-31,Resolved Slow
+Stolen Bins - 240L,Solid waste,#,,,2023-01-10,Resolved Fast
+Street Lights - All Lights Out,Energy,OTHER,,,2023-05-09,Resolved Slow
+Dumping on Parks,Solid waste,#,,,2024-06-21,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,NYANGA,,,2024-07-09,Resolved Slow
+WMM: No Water 20mm and below,Water & Sanitation,BRACKEN HEIGHTS,,Sub-Council 2,2025-07-08,Resolved Fast
+Stolen Bins - 240L,Solid waste,GUGULETU,39,Sub-Council 13,2024-12-06,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,SUNNYDALE,,,2024-04-26,Resolved Fast
+No Power,Energy,STRAND,,,2025-12-12,Resolved Slow
+Street Lights - All Lights Out,Electricity,ATLANTIS,,,2025-07-07,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,SUNNYDALE,69,Sub-Council 19,2024-11-27,Resolved Slow
+Tree Trimming,Open space,#,,,2025-02-05,Unresolved
+SEW: Blocked/Overflow,OTHER,FISH HOEK,64,Sub-Council 19,2023-07-07,Resolved Fast
+Street Lights - All Lights Out,Electricity,LOTUS RIVER,65,Sub-Council 18,2026-03-18,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,TABLE VIEW,113,Sub-Council 3,2025-03-03,Resolved Slow
+SINF: Faulty Pan Connector,Informal settlements,OTHER,,,2024-03-02,Resolved Fast
+Cistern: Repair / Replace,Public housing,HOUT BAY,,,2025-07-08,Resolved Slow
+Damaged Bin - 240L,Solid waste,SONEIKE I,8,Sub-Council 2,2025-04-22,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,ZEEKOEVLEI,67,Sub-Council 18,2025-08-12,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,SALT RIVER,,Sub-Council 16,2026-02-04,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,OTHER,2,Sub-Council 6,2025-11-20,Resolved Fast
+DB: Tampering,Electricity,VALHALLA PARK,,,2025-03-13,Unresolved
+Sewer: Blocked/Overflow,Water & Sanitation,ST DUMAS,,,2025-08-10,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,MANDELA PARK,97,Sub-Council 10,2024-10-10,Resolved Slow
+No Power,Electricity,PARKWOOD,65,Sub-Council 18,2024-03-09,Resolved Fast
+SEW: Blocked/Overflow,OTHER,STEENBERG,68,Sub-Council 18,2023-09-03,Resolved Fast
+PPM Display Blank,Electricity,GUGULETU,41,Sub-Council 13,2023-06-08,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,FISH HOEK,64,Sub-Council 19,2025-07-21,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-12-14,Resolved Fast
+No Power,Electricity,HELDERBERG ESTATE,15,Sub-Council 8,2026-01-20,Resolved Fast
+SEW: Re-Instatement,Water & Sanitation,RUYTERWACHT,28,Sub-Council 4,2025-11-03,Unresolved
+Re-Putty Window panes,Public housing,PARKWOOD,,,2025-10-13,Resolved Slow
+WAT: Burst Pipe,Water & Sanitation,OTHER,84,Sub-Council 8,2024-02-06,Resolved Slow
+WAT: Re-instatement,Water & Sanitation,PAROW INDUSTRIA,,,2026-03-13,Unresolved
+Damaged Bin - 240L,Solid waste,MORGANS VILLAGE,75,Sub-Council 17,2023-12-09,Resolved Fast
+No Power,Electricity,MOWBRAY,57,Sub-Council 16,2025-06-22,Resolved Fast
+Broken/faulty Equipment,OTHER,STRAND,,,2024-09-09,Resolved Slow
+WAT: Leak in Road/Pavement/Undergr,OTHER,OTHER,15,Sub-Council 8,2023-05-01,Resolved Slow
+Other (Enter detailed Fault description),Electricity,#,,,2023-03-09,Resolved Slow
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,EDGEMEAD,5,Sub-Council 3,2024-04-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,STRANDFONTEIN,43,Sub-Council 17,2024-12-03,Resolved Fast
+No Power,Electricity,MAITLAND,,,2024-08-28,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SAMORA MACHEL,,,2024-12-25,Resolved Slow
+Identify Cables,Energy,#,,,2026-04-15,Resolved Fast
+No Power,Electricity,OTHER,15,Sub-Council 8,2026-01-05,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,ORANJEZICHT,77,Sub-Council 16,2026-02-22,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,SUNNINGDALE,23,Sub-Council 1,2025-12-03,Resolved Fast
+Sewerage Volumetric Assessment,Water & Sanitation,BELHAR EXT 23,,,2026-01-27,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,BELL GLEN,109,Sub-Council 21,2024-07-20,Resolved Slow
+No Power,Electricity,#,,,2023-11-21,Resolved Fast
+Damaged Bin - 240L,Solid waste,MALIBU VILLAGE,17,Sub-Council 21,2023-07-26,Resolved Fast
+PPM Tripping,Electricity,BELLVILLE SOUTH,9,Sub-Council 6,2023-08-25,Resolved Slow
+Street Lights - Single Light Out,Energy,DELFT SOUTH,24,Sub-Council 5,2025-05-02,Resolved Fast
+No Power,Electricity,#,,,2024-07-26,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BONTEHEUWEL,31,Sub-Council 15,2025-04-22,Resolved Fast
+Fire Call,Energy,HOUT BAY,,,2023-03-06,Resolved Fast
+WAT: Run to Waste,OTHER,OTHER,100,Sub-Council 8,2023-01-27,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,WESTRIDGE - MITCHELLS PLAIN,81,Sub-Council 17,2024-05-09,Resolved Fast
+RES: Pressure Managem Enquiry,OTHER,CONSTANTIA,,,2023-03-15,Resolved Fast
+Masonary,OTHER,BEACON VALLEY,,,2023-10-31,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,DOOR DE KRAAL,70,Sub-Council 7,2023-09-12,Resolved Fast
+Phase Missing,Electricity,LANSDOWNE,60,Sub-Council 11,2023-10-13,Resolved Slow
+SEW: Blocked/Overflow,OTHER,SAMORA MACHEL,,,2023-01-21,Resolved Fast
+Equipment Damaged,Energy,OTHER,,,2023-02-08,Resolved Fast
+Street Lights - All Lights Out,Electricity,#,,,2024-12-06,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BELLVILLE SOUTH,9,Sub-Council 6,2023-10-27,Resolved Fast
+Reinforce Staircases / landings,Public housing,MACASSAR,,,2025-12-11,Unresolved
+Tree affecting power supply,Electricity,LANSDOWNE,,,2024-10-29,Resolved Slow
+WAT: Burst Pipe,Water & Sanitation,STRAND,,,2024-08-10,Resolved Slow
+SEW: Blocked/Overflow,OTHER,KHAYA,94,Sub-Council 10,2023-11-16,Resolved Fast
+No Power,Electricity,PHILIPPI,13,,2025-12-01,Unresolved
+No Power,Electricity,KRAAIFONTEIN,,,2023-04-21,Resolved Fast
+No Power,Energy,DURBANVILLE,,,2023-06-17,Resolved Fast
+PPM Tripping,Electricity,ROCKLANDS,79,Sub-Council 17,2023-03-31,Resolved Fast
+Electrical,Electricity,MANENBERG,,,2024-03-12,Resolved Slow
+WAT: Re-instatement,OTHER,WYNBERG,,,2025-12-29,Resolved Slow
+WAT: Re-instatement,Water & Sanitation,BROOKLYN,,,2026-01-19,Unresolved
+WAT: Leak at Meter/Stopcock 40mm and Abo,Water & Sanitation,LANGEBERG RIDGE,,,2023-01-31,Resolved Fast
+Reconnect (Non - Payment),Energy,LENTEGEUR,76,Sub-Council 12,2024-02-02,Resolved Fast
+No Power,Electricity,OTHER,,,2023-05-30,Resolved Fast
+No Power,Electricity,STRAND,,,2025-04-10,Resolved Fast
+Additional Bin Application - 240L,Solid waste,PROTEA HEIGHTS,,,2026-03-03,Resolved Fast
+WAT: Faulty Fire Hydrant,Water & Sanitation,SIMON'S TOWN,,,2025-10-30,Unresolved
+Wires Exposed,Public housing,BELLVILLE SOUTH,9,Sub-Council 6,2025-03-28,Unresolved
+WAT: Stolen Meter all sizes,Water & Sanitation,CLAREMONT,58,Sub-Council 11,2024-02-17,Resolved Fast
+No Power,Energy,OTHER,109,Sub-Council 21,2023-09-26,Resolved Fast
+No Power,Electricity,MANENBERG,30,Sub-Council 14,2024-05-24,Resolved Slow
+No Power,Electricity,HOUT BAY,,,2024-11-11,Resolved Fast
+Street Lights - All Lights Out,Electricity,EDGEMEAD,5,Sub-Council 7,2025-10-02,Resolved Fast
+No Power,Electricity,PHILIPPI,43,Sub-Council 17,2023-03-04,Resolved Fast
+Street Lights - All Lights Out,Electricity,MANENBERG,,,2023-05-02,Resolved Slow
+No Power,Electricity,MFULENI,114,Sub-Council 9,2023-01-17,Resolved Fast
+Illegal Dumping,Solid waste,NEWLANDS,59,Sub-Council 11,2024-03-06,Resolved Fast
+Painting,OTHER,LOTUS RIVER,,,2023-07-20,Resolved Slow
+Meter Replacement Project,OTHER,MOWBRAY,,,2026-01-21,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2024-09-13,Resolved Slow
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,VRYGROND,45,Sub-Council 19,2023-07-27,Resolved Fast
+Other,Informal settlements,#,,,2025-05-02,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,TABLE VIEW,113,Sub-Council 3,2024-05-11,Resolved Fast
+EPIC Roads,OTHER,#,,,2025-10-22,Unresolved
+Dumping on Parks,Open space,WESTRIDGE - MITCHELLS PLAIN,78,Sub-Council 17,2026-01-31,Unresolved
+Street Lights - All Lights Out,Electricity,MILNERTON,,,2026-02-06,Resolved Fast
+Meter Replacement Project,OTHER,HELDERBERG VILLAGE,15,Sub-Council 8,2023-04-24,Resolved Slow
+PPM Burning/Burning Smell,Electricity,MANENBERG,30,Sub-Council 11,2024-10-08,Resolved Fast
+MTR: Internal MTR Related Queries,Water & Sanitation,#,,,2026-02-20,Unresolved
+No Power,Energy,GUGULETU,,,2023-04-04,Resolved Fast
+Cable Exposed,Electricity,TOKAI,71,Sub-Council 20,2025-08-16,Resolved Fast
+Meter Replacement Project,OTHER,CONSTANTIA,62,Sub-Council 20,2024-02-27,Resolved Slow
+No Power,Electricity,CROSSROADS,,,2025-07-01,Resolved Fast
+No Power,Energy,STRAND,,,2023-06-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BELMONT PARK,,,2023-04-18,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,OTHER,,,2025-07-27,Unresolved
+Street Lights - All Lights Out,Electricity,OAKDALE,,,2024-08-14,Resolved Fast
+Street Lights - All Lights Out,Electricity,MARCONI BEAM,,,2024-07-02,Resolved Slow
+No Power,Electricity,HOUT BAY,,,2023-06-11,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,BONTEHEUWEL,31,Sub-Council 15,2023-09-12,Resolved Fast
+WAT: Broken Leading,OTHER,BELHAR EXT 19,12,Sub-Council 5,2023-02-03,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,WOODSTOCK,57,Sub-Council 16,2025-03-17,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,BELL GLEN,109,Sub-Council 8,2025-10-18,Resolved Fast
+Blocked Toilet - Full Flush Tlt,Informal settlements,KHAYELITSHA,,,2023-10-18,Resolved Fast
+No Power,Electricity,PHILIPPI,,,2025-10-07,Resolved Fast
+Street Lights - Single Light Out,Electricity,SILVEROAKS,11,Sub-Council 14,2025-03-21,Resolved Fast
+No Power,Electricity,OTHER,23,Sub-Council 1,2025-04-14,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,PANORAMA,1,Sub-Council 7,2025-06-05,Resolved Fast
+No Power,Energy,BISHOP LAVIS,42,Sub-Council 4,2023-08-28,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,SEA POINT,54,Sub-Council 16,2023-04-15,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SAXONSEA,29,Sub-Council 1,2025-04-09,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,STRAND,85,Sub-Council 8,2026-05-15,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,GUGULETU,,,2025-12-19,Unresolved
+WAT: Quality Discoloration,OTHER,BOSTON,2,Sub-Council 6,2026-04-27,Unresolved
+No Power,Electricity,SUMMER GREENS,,,2023-08-24,Resolved Fast
+PPM Display Blank,Electricity,NYANGA,,,2026-02-10,Resolved Fast
+No Power,Electricity,OTHER,15,Sub-Council 8,2024-01-16,Resolved Fast
+Tree Trimming,Open space,GOODWOOD,,,2025-04-09,Resolved Slow
+SEW: Empty Conservancy Tank,Water & Sanitation,OTHER,6,Sub-Council 2,2026-02-20,Resolved Slow
+No Power,Electricity,STRANDFONTEIN,43,Sub-Council 17,2024-09-16,Resolved Fast
+PPM Tripping,Electricity,HANOVER PARK,,,2023-07-13,Resolved Fast
+SEW: Infestation Cockroach,Water & Sanitation,SALT RIVER,,,2023-01-31,Resolved Fast
+No Power,Electricity,LANSDOWNE,60,Sub-Council 11,2024-01-03,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,ROCKLANDS,81,Sub-Council 17,2024-05-27,Resolved Fast
+No Power,Electricity,ATHLONE,48,Sub-Council 11,2025-05-02,Resolved Fast
+No Power,Electricity,RONDEBOSCH,,,2025-07-04,Resolved Fast
+Street Lights - All Lights Out,Electricity,ROCKLANDS,79,Sub-Council 17,2025-11-26,Resolved Fast
+PPM Rejecting Code,Electricity,HEIDEVELD,44,Sub-Council 11,2025-04-17,Resolved Fast
+Street Lights - All Lights Out,Energy,#,,,2024-07-17,Resolved Slow
+Stolen Bins - 240L,Solid waste,#,,,2023-12-08,Resolved Fast
+Reading Supplied by Customer,Energy,STRAND,85,Sub-Council 8,2024-04-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BONTEHEUWEL,31,Sub-Council 15,2025-12-09,Resolved Fast
+WAT: Faulty Stopcock,Informal settlements,GUGULETHU,,,2023-12-09,Resolved Fast
+Other (Enter detailed Fault description),Energy,EAGLE PARK,67,Sub-Council 18,2023-07-14,Resolved Slow
+Roofs,Public housing,FISH HOEK,64,Sub-Council 19,2025-10-26,Unresolved
+No Power,Energy,STRAND,83,Sub-Council 8,2024-04-07,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,GRASSY PARK,65,Sub-Council 18,2024-12-19,Resolved Slow
+WAT: Stolen Meter all sizes,Water & Sanitation,NORTHPINE,,,2023-08-23,Resolved Slow
+Wires Down,Energy,OTHER,,,2023-03-16,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,79,Sub-Council 17,2023-06-09,Resolved Fast
+No Power,Electricity,PLUMSTEAD,20,,2025-11-21,Resolved Fast
+Phase Missing,Electricity,GRASSY PARK,65,Sub-Council 18,2023-01-02,Resolved Fast
+WMM: Damaged Meter 20mm and below,Water & Sanitation,MAMRE,,,2025-11-26,Unresolved
+No Power,Electricity,HOUT BAY,74,Sub-Council 20,2023-05-16,Resolved Fast
+Incorrect Reading/Request Actual Reading,Energy,#,,,2024-10-04,Resolved Fast
+RES: Plumbers Registration,Water & Sanitation,#,,,2023-06-08,Resolved Fast
+Damaged Bin - 240L,Solid waste,EASTRIDGE,116,Sub-Council 12,2023-08-02,Resolved Slow
+Street Lights - All Lights Out,Electricity,LENTEGEUR,78,Sub-Council 17,2024-12-31,Resolved Fast
+SINF: Faulty Cistern,Informal settlements,KRAAIFONTEIN,,,2024-01-12,Resolved Fast
+No Power,Energy,SANDDRIFT,3,,2026-04-21,Resolved Fast
+Street Lights - All Lights Out,Electricity,OTHER,23,Sub-Council 1,2024-12-20,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,MUIZENBERG,64,Sub-Council 19,2023-01-10,Resolved Fast
+WINF: Pipe Burst,Informal settlements,#,,,2025-08-02,Resolved Fast
+Stolen Bins - 240L,Solid waste,WINDERMERE,56,Sub-Council 15,2024-03-01,Resolved Fast
+PPM Keypad Faulty,Electricity,LWANDLE,86,Sub-Council 8,2024-03-12,Resolved Fast
+Meter Replacement Project,OTHER,OBSERVATORY,,,2026-01-12,Unresolved
+Stolen Bins - 240L,Solid waste,TIJGERHOF,55,Sub-Council 16,2023-09-01,Resolved Fast
+Vector Control,Water & Sanitation,BELHAR EXT 17,22,Sub-Council 5,2024-03-01,Resolved Slow
+No Power,Electricity,GLENLILY,,,2023-06-10,Resolved Fast
+Street Lights - All Lights Out,Energy,GRASSY PARK,110,Sub-Council 18,2023-08-29,Resolved Slow
+WAT: Re-instatement,Water & Sanitation,MILNERTON,55,Sub-Council 3,2025-08-04,Unresolved
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,FISH HOEK,64,Sub-Council 19,2024-06-20,Unresolved
+PPM Faulty Mode,Electricity,PAROW,,,2025-03-07,Resolved Fast
+Incorrect Reading/Request Actual Reading,OTHER,PLUMSTEAD,,,2023-05-22,Unresolved
+WMM: No Water Below 40mm,Water & Sanitation,BELHAR EXT 4,22,Sub-Council 5,2026-02-15,Resolved Fast
+Street Lights - Single Light Out,Electricity,OTHER,,,2024-07-13,Resolved Slow
+SEW: Blocked/Overflow,Informal settlements,KHAYELITSHA,,,2024-07-01,Resolved Fast
+No Power,Electricity,BELGRAVIA,48,Sub-Council 11,2024-10-24,Resolved Fast
+Painting: Water Damage / Mould,Public housing,SILVERTOWN,,,2025-04-30,Unresolved
+WAT: Leak in Road/Pavement/Undergr,OTHER,#,,,2023-02-25,Resolved Slow
+Bush Clearing,Open space,GREENVILLE GARDEN CITY,105,Sub-Council 7,2025-06-05,Unresolved
+WAT: Run to Waste,Water & Sanitation,BELLVILLE SOUTH,9,Sub-Council 6,2025-10-15,Resolved Fast
+Street Lights - All Lights Out,Electricity,WESTRIDGE - MITCHELLS PLAIN,81,Sub-Council 17,2024-07-30,Resolved Slow
+WMM: No Water Below 40mm,Water & Sanitation,CONSTANTIA,73,Sub-Council 20,2023-01-06,Resolved Fast
+Stolen Bins - 240L,Solid waste,VREDEKLOOF EAST,102,Sub-Council 2,2023-02-28,Resolved Fast
+Property Management - Lease,OTHER,#,,,2024-10-17,Resolved Slow
+WAT: No Supply,Water & Sanitation,HELDERVUE,15,Sub-Council 8,2025-11-13,Resolved Fast
+Stolen Bins - 240L,Solid waste,NEWFIELDS,47,Sub-Council 11,2024-06-13,Resolved Fast
+No Power,Electricity,GREENWAYS,,,2024-07-17,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,ZOO PARK,102,Sub-Council 2,2023-01-27,Resolved Fast
+WINF: Pipe Burst,Informal settlements,KHAYELITSHA,,,2025-02-05,Resolved Fast
+Stolen Bins - 240L,Solid waste,CAPE TOWN,14,Sub-Council 21,2023-08-29,Resolved Fast
+Repair / Replace: Baths,Public housing,HANOVER PARK,,,2025-10-07,Unresolved
+Illegal Dumping,Solid waste,RETREAT,110,Sub-Council 18,2024-11-11,Resolved Fast
+No Power,Electricity,WESTGATE,,,2024-07-10,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,NOMZAMO,86,Sub-Council 8,2024-09-06,Resolved Slow
+Stolen Bins - 240L,Solid waste,CAPE TOWN,,,2023-09-01,Resolved Fast
+Reconnect (Non - Payment),Energy,GARDENS,115,Sub-Council 16,2023-11-23,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KALKFONTEIN,,,2024-04-18,Resolved Slow
+Other (Enter detailed Fault description),OTHER,RAVENSMEAD,,,2025-10-27,Unresolved
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,MONTANA,31,Sub-Council 15,2023-07-01,Resolved Fast
+Unlawful clearing of indigenous vegetati,OTHER,CONSTANTIA,62,Sub-Council 20,2026-02-03,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KLEINBRON,103,Sub-Council 7,2025-08-12,Resolved Fast
+WAT: Leak at Meter/Stopcock 40mm and Abo,Water & Sanitation,MANDALAY,76,Sub-Council 12,2024-10-22,Resolved Slow
+No Power,Electricity,PHILIPPI,,,2025-10-06,Resolved Fast
+SEW: Faulty Damaged Manhole Cover,Water & Sanitation,BISHOP LAVIS,42,Sub-Council 15,2025-04-23,Resolved Fast
+Electrical,Electricity,MANENBERG,,,2024-04-18,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,CLAREMONT,58,Sub-Council 11,2023-09-15,Resolved Fast
+Identify Cables,Energy,#,,,2023-12-29,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,STRANDFONTEIN,43,Sub-Council 17,2026-05-20,Unresolved
+Street Lights - All Lights Out,Energy,FISH HOEK,,,2023-05-30,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,DELFT SOUTH,106,Sub-Council 5,2025-12-20,Resolved Fast
+Street Lights - Single Light Out,Electricity,BERGVLIET,73,Sub-Council 20,2025-04-07,Resolved Fast
+Vinyl Flooring,Public housing,GUGULETU,,,2025-05-08,Unresolved
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,HOUT BAY,74,Sub-Council 20,2024-08-29,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,THORNTON,53,Sub-Council 16,2025-03-07,Resolved Fast
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,TABLE VIEW,113,Sub-Council 3,2024-05-09,Resolved Fast
+No Power,Electricity,GARDENS,115,Sub-Council 16,2024-07-26,Resolved Fast
+Street Lights - Single Light Out,Electricity,BRACKENFELL SOUTH,8,Sub-Council 2,2026-04-06,Resolved Slow
+Damaged Bin - 240L,Solid waste,DOOR DE KRAAL,70,Sub-Council 7,2023-09-09,Resolved Fast
+SEW: Blocked/Overflow,OTHER,MFULENI,,,2023-07-23,Resolved Fast
+No Power,Electricity,PELIKAN PARK,67,Sub-Council 18,2023-12-05,Resolved Fast
+No Power,Electricity,SAXONSEA,32,Sub-Council 1,2025-05-30,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,TAFELSIG,82,Sub-Council 12,2024-03-01,Resolved Fast
+No Power,Electricity,STRAND,,,2023-05-31,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,DELFT,,,2024-08-14,Resolved Fast
+Stolen Bins - 240L,Solid waste,TAFELSIG,92,Sub-Council 12,2023-10-24,Resolved Fast
+No Power,Electricity,SYBRAND PARK,,,2025-06-19,Resolved Fast
+WAT: No Supply,Water & Sanitation,ROUXVILLE,11,Sub-Council 14,2025-05-31,Resolved Fast
+Financial Adjustment,Energy,#,,,2023-12-21,Resolved Fast
+Street Lights - All Lights Out,Electricity,RONDEBOSCH,58,Sub-Council 20,2026-02-27,Resolved Fast
+Clinic Services,Health,#,,,2025-08-08,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,UITSIG,25,Sub-Council 4,2023-08-07,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,OTHER,,,2025-12-16,Resolved Fast
+Street Lights - Single Light Out,Electricity,EDGEMEAD,5,Sub-Council 3,2023-01-21,Resolved Fast
+Damaged Bin - 240L,Solid waste,BRACKENFELL SOUTH,8,Sub-Council 2,2023-08-28,Resolved Fast
+Equipment Damaged,Electricity,HOUT BAY,,,2024-05-05,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,NOMZAMO,86,Sub-Council 8,2024-08-19,Resolved Fast
+Other (Enter detailed Fault description),Electricity,LANGA,52,Sub-Council 15,2024-01-05,Resolved Fast
+Damaged Bin - 240L,Solid waste,#,,,2025-03-14,Resolved Slow
+Cistern: Repair / Replace,Public housing,KRAAIFONTEIN,,,2025-02-05,Unresolved
+WAT: Faulty Stopcock,Water & Sanitation,SUN VALLEY,,,2025-07-24,Resolved Fast
+Cleansing,OTHER,MACASSAR,,,2024-02-06,Resolved Slow
+Street Lights - Single Light Out,Electricity,LAKESIDE,,,2024-04-22,Resolved Slow
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,WOODSTOCK,115,Sub-Council 16,2024-10-08,Resolved Fast
+Residential Bin Application - 240L,Solid waste,PARKLANDS,23,Sub-Council 1,2024-08-08,Resolved Fast
+PPM Keypad Faulty,Electricity,TAFELSIG,82,Sub-Council 12,2023-01-11,Resolved Fast
+SEW: Foul Smell,Water & Sanitation,MILNERTON,55,Sub-Council 16,2023-12-15,Resolved Fast
+Damaged Bin - 240L,Solid waste,TABLE VIEW,,,2023-07-28,Resolved Fast
+Illegal Dumping,Solid waste,OTHER,,,2023-03-16,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,ROCKLANDS,81,Sub-Council 17,2025-02-06,Resolved Fast
+Damaged Bin - 240L,Solid waste,LEIDEN,20,Sub-Council 5,2023-10-26,Resolved Fast
+Doors: Internal / External,Public housing,LOTUS RIVER,66,Sub-Council 18,2026-04-27,Unresolved
+WAT: Leak in Road/Pavement/Undergr,Water & Sanitation,BELHAR EXT 22,12,Sub-Council 5,2025-05-11,Unresolved
+SINF: Faulty Cistern,Informal settlements,KHAYELITSHA,,,2024-04-02,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2023-01-13,Resolved Fast
+No Power,Electricity,PHILIPPI,33,Sub-Council 17,2024-10-07,Resolved Fast
+Maint.Build:Lights not working at Facili,Open space,BELHAR EXT 7,,,2024-06-20,Unresolved
+Damaged Bin - 240L,Solid waste,#,,,2026-01-21,Resolved Fast
+WAT: Leak at Meter/Stopcock 25mm and up,Water & Sanitation,RYLANDS,46,Sub-Council 14,2024-06-17,Resolved Fast
+PPM Keypad Faulty,Electricity,NYANGA,38,Sub-Council 13,2024-04-18,Resolved Fast
+Damaged Bin - 240L,Solid waste,VOORBRUG,20,Sub-Council 5,2024-01-24,Resolved Fast
+No Power,Electricity,RONDEBOSCH,20,,2026-04-19,Resolved Fast
+SEW: Blocked/Overflow,OTHER,VICTORIA MXENGE,,,2023-07-17,Resolved Fast
+Change of Situation Address,OTHER,RONDEBOSCH,59,Sub-Council 11,2024-04-02,Resolved Fast
+Damaged Bin - 240L,Solid waste,FOUNTAIN VILLAGE,108,Sub-Council 21,2023-11-18,Resolved Fast
+Reconnect (After Hours),Energy,KENRIDGE,70,Sub-Council 7,2023-11-23,Resolved Fast
+Damaged Bin - 240L,Solid waste,PHILIPPI,34,Sub-Council 13,2023-02-01,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,HAZENDAL,49,Sub-Council 14,2024-04-16,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,RAVENSMEAD,25,Sub-Council 4,2025-03-06,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,GRASSY PARK,67,Sub-Council 18,2025-08-26,Unresolved
+Street Lights - Single Light Out,Electricity,#,,,2023-06-23,Resolved Fast
+SEW: Blocked/Overflow,OTHER,EYETHU,94,Sub-Council 10,2023-03-27,Resolved Fast
+No Power,Electricity,WINDERMERE,56,Sub-Council 15,2024-08-01,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,PENHILL,14,Sub-Council 14,2025-08-03,Resolved Slow
+WMM: Damaged Meter Below 40mm,Water & Sanitation,TAFELSIG,,,2024-10-29,Resolved Fast
+PPM Display Blank,Electricity,GUGULETU,44,Sub-Council 11,2025-08-30,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,KALKFONTEIN,,,2024-11-12,Resolved Slow
+PPM Display Blank,Electricity,MANENBERG,30,Sub-Council 11,2025-10-21,Resolved Fast
+Non-Collection of 240L Bin,Solid waste,SALT RIVER,57,Sub-Council 16,2024-08-07,Resolved Fast
+WMM: Faulty Meter 20mm and below,Water & Sanitation,MANDELA PARK,97,Sub-Council 10,2023-09-11,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,ATHLONE,49,Sub-Council 11,2025-03-17,Resolved Fast
+Street Lights - Single Light Out,Electricity,OAKGLEN,3,Sub-Council 6,2026-03-06,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,HEIDEVELD,44,Sub-Council 11,2025-08-05,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,VOORBRUG,,,2023-07-27,Resolved Fast
+Flickering Lights,Electricity,#,,,2023-10-04,Resolved Fast
+No Power,Energy,BOTHASIG,5,Sub-Council 7,2025-08-05,Resolved Fast
+WAT: Leak at Fire Hydrant,Water & Sanitation,KEMPENVILLE,10,Sub-Council 6,2023-10-10,Resolved Slow
+SEW: Blocked/Overflow,OTHER,WESBANK,,,2023-02-02,Resolved Fast
+Low Voltage and/or Shocks,Electricity,NEWFIELDS,,,2025-12-15,Resolved Fast
+No Power,Electricity,LWANDLE,86,Sub-Council 8,2024-01-19,Resolved Fast
+No Power,Electricity,RUGBY,,,2024-07-22,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,BELLVILLE SOUTH,9,Sub-Council 6,2025-02-05,Resolved Fast
+Electrical,Electricity,ATLANTIS,,,2024-04-08,Unresolved
+SEW: Blocked/Overflow,Informal settlements,OTHER,,,2023-11-09,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,BISHOPSCOURT,,,2026-02-16,Resolved Fast
+Damaged Bin - 240L,Solid waste,NONQUBELA,,,2025-08-06,Resolved Slow
+WMM: No Water Below 40mm,Water & Sanitation,FISH HOEK,64,Sub-Council 19,2026-02-19,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,GUGULETU,,,2023-07-07,Resolved Slow
+WAT: No Supply,Water & Sanitation,CRAWFORD,48,Sub-Council 11,2025-03-08,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OTHER,,,2023-03-26,Resolved Fast
+Street Lights - Single Light Out,Energy,STRANDFONTEIN,,,2023-04-05,Resolved Slow
+WAT: Faulty Stopcock,Water & Sanitation,NORTHPINE,,,2023-06-19,Resolved Fast
+Stolen Bins - 240L,Solid waste,MACASSAR,,,2026-01-12,Resolved Slow
+PPM Display Blank,Electricity,PHOENIX,4,Sub-Council 3,2025-03-04,Resolved Fast
+No Power,Electricity,PHILIPPI,33,Sub-Council 17,2023-07-24,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,GREEN POINT,,Sub-Council 16,2025-10-09,Resolved Fast
+Street Lights - All Lights Out,Electricity,MAITLAND,56,Sub-Council 3,2026-05-19,Unresolved
+Equipment Damaged,Energy,WESBANK,,,2023-07-24,Resolved Fast
+Damaged Bin - 240L,Solid waste,CLAREMONT,58,Sub-Council 20,2026-01-05,Resolved Slow
+Sparks on Pole,Electricity,MANENBERG,46,Sub-Council 14,2024-08-28,Resolved Fast
+Refund / Overpayment,OTHER,#,,,2025-08-29,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,BEACON VALLEY,116,Sub-Council 12,2024-05-15,Resolved Fast
+Damaged Bin - 240L,Solid waste,WYNBERG,,,2023-02-22,Resolved Slow
+Wires Down,Electricity,MFULENI,,,2024-06-11,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,DE BRON,70,Sub-Council 7,2025-05-04,Resolved Fast
+Light Switches,Electricity,HANOVER PARK,,,2025-08-12,Unresolved
+Faulty PSO,Electricity,UITSIG,,,2025-11-26,Unresolved
+SEW: Blocked/Overflow,Water & Sanitation,PROTEA PARK - WESFLEUR,,,2025-12-28,Resolved Fast
+Street Lights - Single Light Out,Electricity,NEWLANDS,,,2024-09-10,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,TABLE VIEW,113,Sub-Council 3,2023-07-29,Resolved Fast
+PPM Display Blank,Electricity,LANSDOWNE,60,Sub-Council 11,2026-04-29,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,OCEAN VIEW,61,Sub-Council 19,2024-07-05,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,KHAYELITSHA,,,2026-01-13,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,SAXONSEA,,,2025-07-19,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,EDGEMEAD,,,2024-10-08,Resolved Slow
+Phase Missing,Electricity,PLUMSTEAD,63,Sub-Council 20,2025-12-11,Resolved Fast
+WAT: Re-instatement,Water & Sanitation,CRAWFORD,48,Sub-Council 11,2026-05-14,Unresolved
+WAT: Low Pressure,Water & Sanitation,LEONSDALE,26,Sub-Council 4,2024-08-27,Resolved Fast
+No Power,Electricity,#,,,2023-08-16,Resolved Fast
+WAT: Low Pressure,Water & Sanitation,SERCOR PARK,100,Sub-Council 8,2023-12-22,Resolved Slow
+Pest Control,Health,#,,,2024-09-06,Resolved Fast
+Street Lights - All Lights Out,Electricity,MANENBERG,,,2024-07-23,Resolved Fast
+Illegal Dumping,Solid waste,MOWBRAY,,,2025-12-10,Resolved Slow
+SEW: Blocked/Overflow,Water & Sanitation,BONTEHEUWEL,50,Sub-Council 15,2024-01-23,Resolved Fast
+WMM: Damaged Meter Below 40mm,Water & Sanitation,ORANJEZICHT,,,2026-02-24,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,PARKLANDS,23,Sub-Council 1,2024-01-09,Resolved Slow
+Sparks on Pole,Electricity,GRASSY PARK,110,Sub-Council 18,2024-06-30,Resolved Fast
+WMM: Leak at Meter/Stopcock Below 40mm,Water & Sanitation,HARARE,98,Sub-Council 10,2023-01-17,Resolved Fast
+SEW: Foul Smell,Water & Sanitation,OTHER,62,Sub-Council 20,2024-12-04,Resolved Fast
+Sparks on Pole,Electricity,HOUTBAY,,,2023-08-27,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LANGA,52,Sub-Council 15,2025-02-02,Resolved Fast
+Cable Exposed,Energy,OTHER,,,2023-04-21,Resolved Fast
+Compost Bin Application - 150L,Solid waste,#,,,2023-02-22,Resolved Fast
+Stolen Bins - 240L,Solid waste,DELFT SOUTH,,,2024-05-18,Resolved Fast
+SEW: Missing Manhole Cover,Water & Sanitation,BISHOP LAVIS,,,2023-06-23,Resolved Slow
+WAT: No Supply,Water & Sanitation,RAVENSMEAD,,,2024-07-09,Resolved Fast
+Financial Adjustment,Energy,#,,,2026-04-14,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,LEONSDALE,,,2026-03-07,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,WETTON,66,Sub-Council 18,2024-02-01,Resolved Fast
+PPM Tariff Query / Change,Energy,STIKLAND INDUSTRIA,3,Sub-Council 6,2024-07-25,Resolved Fast
+WAT: Broken Leading,Water & Sanitation,BERGVLIET,,,2024-09-10,Resolved Slow
+WAT: Broken Leading,Water & Sanitation,SALT RIVER,,,2024-05-08,Resolved Slow
+Repair / Replace: Sink,Public housing,BELHAR,,,2025-04-14,Unresolved
+MTR: Internal MTR Related Queries,Water & Sanitation,#,,,2024-04-17,Resolved Fast
+WAT: Leak at Meter/Stopcock 40mm and Abo,Water & Sanitation,HILLCREST HEIGHTS,,,2024-11-14,Resolved Slow
+No Power,Electricity,BONTEHEUWEL,50,Sub-Council 15,2025-03-23,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,PHILIPPI,34,Sub-Council 13,2025-08-22,Resolved Fast
+Other (Enter detailed Fault description),Energy,MAITLAND,56,Sub-Council 3,2025-03-27,Unresolved
+Plumbing,OTHER,PAROW,,,2023-07-17,Resolved Slow
+SEW: Empty Conservancy Tank,Water & Sanitation,WELTEVREDEN VALLEY,43,Sub-Council 17,2023-11-28,Resolved Fast
+Compost Bin Application - 150L,Solid waste,BELHAR EXT 2,22,Sub-Council 5,2023-04-19,Resolved Fast
+WAT: Run to Waste,Water & Sanitation,SCOTTSVILLE,111,Sub-Council 2,2025-07-15,Resolved Fast
+SEW: Empty Conservancy Tank,Water & Sanitation,MIKPUNT,105,Sub-Council 7,2024-10-07,Resolved Fast
+Damaged Bin - 240L,Solid waste,RUWARI,7,Sub-Council 2,2023-07-19,Resolved Fast
+Phase Missing,Electricity,ATHLONE,,,2026-04-07,Resolved Fast
+Street Lights - All Lights Out,Energy,OTHER,,,2023-03-14,Resolved Slow
+Tree Removal,Open space,#,,,2025-12-10,Resolved Fast
+Sparks on Pole,Electricity,BONTEHEUWEL,50,Sub-Council 15,2024-12-30,Resolved Fast
+PPM Faulty (Enter detailed description),Electricity,PHILIPPI,88,Sub-Council 17,2025-03-10,Resolved Fast
+No Power,Electricity,TAFELSIG,82,Sub-Council 12,2023-08-27,Resolved Fast
+WINF: Faulty Tap,Informal settlements,#,,,2025-10-23,Resolved Fast
+No Power,Electricity,RYLANDS,46,Sub-Council 14,2024-06-28,Resolved Fast
+No Power,Electricity,OAKDALE,,,2023-04-12,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,DUNOON,,,2023-11-13,Resolved Fast
+WAT: Leak at Valve,Water & Sanitation,KOMMETJIE,,,2024-04-16,Unresolved
+Street Lights - All Lights Out,Electricity,MAITLAND,56,Sub-Council 15,2023-10-22,Resolved Fast
+PPM Burning/Burning Smell,Electricity,MAMRE,29,Sub-Council 1,2026-04-16,Resolved Fast
+Sewer: Blocked/Overflow,Water & Sanitation,DE LA HAYE,,,2023-05-19,Resolved Fast
+Street Lights - All Lights Out,Energy,FOREST VILLAGE,16,Sub-Council 21,2024-01-12,Resolved Fast
+Other,OTHER,#,,,2024-12-09,Resolved Slow
+WAT: Burst Pipe,Water & Sanitation,BRACKENFELL SOUTH,8,Sub-Council 2,2023-10-29,Resolved Slow
+Wires Down,Electricity,ATHLONE,48,Sub-Council 11,2026-05-13,Resolved Fast
+PPM KRN Fault,OTHER,#,,,2025-05-20,Unresolved
+WINF: Pipe Burst,Informal settlements,KHAYELITSHA,,,2025-03-15,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,SEAWINDS,45,Sub-Council 19,2025-06-02,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,WESBANK,19,Sub-Council 21,2023-11-06,Resolved Fast
+Illegal Dumping,Solid waste,LOEVENSTEIN,70,Sub-Council 7,2025-11-07,Resolved Fast
+Street Lights - Single Light Out,Electricity,ELSIES RIVER,,,2024-09-05,Resolved Fast
+Other (Enter detailed Fault description),Electricity,PLUMSTEAD,,,2026-02-10,Resolved Fast
+WAT: Leak at Fire Hydrant,Water & Sanitation,CAPE TOWN CITY CENTRE,,,2026-01-19,Resolved Fast
+PPM Display Blank,Electricity,#,,,2026-04-10,Resolved Fast
+No Power,Electricity,PHILIPPI,34,Sub-Council 13,2023-03-09,Resolved Fast
+WMM: No Water 20mm and below,Water & Sanitation,TAFELSIG,92,Sub-Council 12,2023-09-14,Resolved Fast
+WMM: Leak at Meter/Stopcock 20mm below,Water & Sanitation,SIMON'S TOWN,61,Sub-Council 19,2023-10-12,Resolved Slow
+PPM Display Blank,Electricity,PAROW,26,Sub-Council 4,2025-02-08,Resolved Fast
+Reconnect (Non - Payment),Energy,GREEN POINT,115,Sub-Council 16,2023-03-23,Resolved Fast
+WAT: Stolen Meter all sizes,OTHER,STEENBERG,68,Sub-Council 18,2024-03-17,Resolved Fast
+Window Service: Peg / Sliding Stays/Hing,Public housing,#,,,2024-11-08,Unresolved
+PPM Display Blank,Electricity,LANGA,51,Sub-Council 15,2024-02-05,Resolved Fast
+SEW: Broken Pipe,Water & Sanitation,OTHER,,,2024-10-10,Resolved Slow
+WAT: Leak at Valve,Water & Sanitation,PLUMSTEAD,,,2026-04-23,Unresolved
+WAT: Low Pressure,Water & Sanitation,EERSTERIVIER,16,Sub-Council 21,2024-05-03,Resolved Fast
+Pole Knocked: Motor Vehicle Accident,Electricity,STRAND,83,Sub-Council 8,2025-10-28,Resolved Fast
+WAT: Burst Pipe,Water & Sanitation,VREDENBERG - BELLVILLE,3,Sub-Council 6,2025-08-28,Unresolved
+MTR: Customer Account Adjustment,Energy,PROTEA VALLEY,70,Sub-Council 7,2024-06-04,Resolved Slow
+No Power,Electricity,AVONDALE - PAROW,2,Sub-Council 6,2023-07-10,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,STELLENRIDGE,21,Sub-Council 7,2024-01-31,Resolved Fast
+Wires Down,Electricity,WYNBERG,62,Sub-Council 20,2025-12-05,Resolved Fast
+Repair Irrigation,Open space,CAPE TOWN,,,2023-02-28,Resolved Slow
+WAT: No Supply,Water & Sanitation,ROSEBANK,59,Sub-Council 20,2026-02-26,Unresolved
+Compost Bin Application - 150L,Solid waste,RONDEBOSCH,59,Sub-Council 11,2023-04-08,Resolved Fast
+Meter Replacement Project,OTHER,WYNBERG,62,Sub-Council 20,2024-10-21,Resolved Slow
+Compost Bin Application - 150L,Solid waste,UMRHABULO TRIANGLE,95,Sub-Council 10,2023-09-26,Resolved Fast
+No Power,Electricity,OTHER,,,2023-05-08,Resolved Fast
+WMM: No Water Below 40mm,Water & Sanitation,WESTRIDGE - SOMERSET WEST,15,Sub-Council 8,2026-05-03,Resolved Fast
+Stolen Bins - 240L,Solid waste,VICTORIA MXENGE,91,Sub-Council 9,2025-06-04,Resolved Fast
+SEW: Blocked/Overflow,Water & Sanitation,#,,,2026-04-20,Resolved Fast
+Cable Exposed,Electricity,OTHER,,,2023-05-14,Resolved Fast
+No Power,Electricity,SUNNYDALE,69,Sub-Council 19,2024-02-25,Unresolved
+PPM Faulty (Enter detailed description),Electricity,MFULENI,114,Sub-Council 14,2026-05-13,Resolved Fast
