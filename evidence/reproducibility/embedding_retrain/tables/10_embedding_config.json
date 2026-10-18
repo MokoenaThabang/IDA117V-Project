@@ -1,0 +1,40 @@
+{
+  "command": "python -m src.embedding_experiment",
+  "encoder_file": "evidence/reproducibility/embedding_retrain/models/embedding_encoder.joblib",
+  "features": [
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+    "created_day_of_week",
+    "created_month",
+    "created_is_weekend"
+  ],
+  "fit_on": "train",
+  "learning_curve": "evidence/reproducibility/embedding_retrain/figures/10_embedding_learning_curves.png",
+  "locked_test_scored": false,
+  "model_file": "evidence/reproducibility/embedding_retrain/models/embedding_network.pt",
+  "official_artifacts_replaced": false,
+  "parameters": {
+    "activation": "ReLU",
+    "approval": "approved",
+    "batch_size": 8192,
+    "class_weight": "balanced",
+    "dropout": 0.3,
+    "embedding_dim": 16,
+    "hidden_size": 64,
+    "learning_rate": 0.001,
+    "loss": "CrossEntropyLoss",
+    "max_epochs": 8,
+    "optimiser": "AdamW",
+    "patience": 3,
+    "seed": 42,
+    "unseen_index": 0,
+    "weight_decay": 0.0001
+  },
+  "scored_splits": [
+    "train",
+    "validation"
+  ],
+  "work_centre_included": false
+}

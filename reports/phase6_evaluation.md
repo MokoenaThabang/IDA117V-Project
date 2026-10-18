@@ -1,6 +1,6 @@
 # Phase 6 evaluation
 
-The provisional champion family is histogram gradient boosting, from the Phase 5 validation macro-F1 ranking. Pending embedding results did not enter that choice. Tuning used chronological folds inside the training period only.
+The provisional champion family is histogram gradient boosting, from the Phase 5 validation macro-F1 ranking. At that ranking the embedding network was still pending, so those results did not enter the choice. Lecturer approval was recorded later. The approved validation macro-F1 is 0.481, still below histogram gradient boosting at 0.482, so the champion is unchanged. Tuning used chronological folds inside the training period only.
 
 ## Search
 

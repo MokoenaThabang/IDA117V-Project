@@ -1,0 +1,300 @@
+Isolated notebook execution
+DATA_INTERIM_DIR=/workspace/evidence/reproducibility/notebooks/isolated/interim
+DATA_PROCESSED_DIR=/workspace/evidence/reproducibility/notebooks/isolated/processed
+MODELS_DIR=/workspace/evidence/reproducibility/notebooks/isolated/models
+NVM_DIR=/home/ubuntu/.nvm
+REPORTS_DIR=/workspace/evidence/reproducibility/notebooks/isolated/reports
+RESULTS_DIR=/workspace/evidence/reproducibility/notebooks/isolated/results
+
+START 01_data_acquisition_and_audit.ipynb
+FINISHED /workspace/evidence/reproducibility/notebooks/executed/01_data_acquisition_and_audit.ipynb
+START 02_exploratory_data_analysis.ipynb
+FINISHED /workspace/evidence/reproducibility/notebooks/executed/02_exploratory_data_analysis.ipynb
+START 03_preprocessing_and_baselines.ipynb
+FINISHED /workspace/evidence/reproducibility/notebooks/executed/03_preprocessing_and_baselines.ipynb
+START 04_traditional_machine_learning.ipynb
+FINISHED /workspace/evidence/reproducibility/notebooks/executed/04_traditional_machine_learning.ipynb
+START 05_neural_networks.ipynb
+FAILED 05_neural_networks.ipynb
+Traceback (most recent call last):
+  File "/workspace/scripts/execute_notebooks_isolated.py", line 77, in main
+    path = execute_one(name)
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/scripts/execute_notebooks_isolated.py", line 58, in execute_one
+    client.execute()
+  File "/workspace/.venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/workspace/.venv/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/workspace/.venv/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+from pathlib import Path
+import sys
+
+import numpy as np
+import pandas as pd
+from IPython.display import Image, display
+
+cwd = Path.cwd().resolve()
+project_root = None
+for candidate in [cwd, *cwd.parents]:
+    if (candidate / "src" / "config.py").is_file():
+        project_root = candidate
+        break
+if project_root is None:
+    raise FileNotFoundError("Start JupyterLab from the project folder.")
+if str(project_root) not in sys.path:
+    sys.path.insert(0, str(project_root))
+
+from src import config
+from src.evaluation import classification_scores
+from src.neural import PENDING_EMBEDDING_NOTE, predict_embedding, predict_feedforward, train_embedding_network, train_feedforward
+from src.preprocessing import (
+    SOURCE_CATEGORICAL_COLUMNS,
+    build_baseline_preprocessor,
+    chronological_splits,
+    logging_feature_frame,
+)
+from src.training import (
+    APPROVED_APPROVAL,
+    EmbeddingCategoryEncoder,
+    assert_split_may_be_scored,
+    base_experiment_config,
+    class_indices,
+    render_phase5_report,
+    save_json,
+    summarise_predictions,
+    validation_comparison,
+    provisional_champion,
+)
+from src.visualization import (
+    plot_confusion_matrix,
+    plot_learning_curves,
+    plot_train_validation_macro_f1,
+    plot_validation_comparison,
+)
+
+config.set_random_seeds()
+assert_split_may_be_scored("validation")
+traditional_path = config.TABLES_DIR / "05_traditional_summary.csv"
+traditional_class_path = config.TABLES_DIR / "05_traditional_per_class.csv"
+traditional_run_path = config.TABLES_DIR / "05_traditional_run.json"
+for required in (traditional_path, traditional_class_path, traditional_run_path):
+    if not required.is_file():
+        raise FileNotFoundError(
+            "Notebook 05 reads the tables written by notebook 04. "
+            f"Missing file: {required}."
+        )
+print(PENDING_EMBEDDING_NOTE)
+print(f"Project root: {config.PROJECT_ROOT}")
+print(f"Random seed: {config.RANDOM_SEED}")
+
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mImportError[39m                               Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[1][39m[32m, line 21[39m
+[32m     17[39m     sys.path.insert([32m0[39m, str(project_root))
+[32m     18[39m 
+[32m     19[39m [38;5;28;01mfrom[39;00m src [38;5;28;01mimport[39;00m config
+[32m     20[39m [38;5;28;01mfrom[39;00m src.evaluation [38;5;28;01mimport[39;00m classification_scores
+[32m---> [39m[32m21[39m [38;5;28;01mfrom[39;00m src.neural [38;5;28;01mimport[39;00m PENDING_EMBEDDING_NOTE, predict_embedding, predict_feedforward, train_embedding_network, train_feedforward
+[32m     22[39m from src.preprocessing import (
+[32m     23[39m     SOURCE_CATEGORICAL_COLUMNS,
+[32m     24[39m     build_baseline_preprocessor,
+
+[31mImportError[39m: cannot import name 'PENDING_EMBEDDING_NOTE' from 'src.neural' (/workspace/src/neural.py)
+
+COMPLETED 01_data_acquisition_and_audit.ipynb, 02_exploratory_data_analysis.ipynb, 03_preprocessing_and_baselines.ipynb, 04_traditional_machine_learning.ipynb
+Isolated notebook execution from 05_neural_networks.ipynb
+DATA_INTERIM_DIR=/workspace/evidence/reproducibility/notebooks/isolated/interim
+DATA_PROCESSED_DIR=/workspace/evidence/reproducibility/notebooks/isolated/processed
+MODELS_DIR=/workspace/evidence/reproducibility/notebooks/isolated/models
+NVM_DIR=/home/ubuntu/.nvm
+REPORTS_DIR=/workspace/evidence/reproducibility/notebooks/isolated/reports
+RESULTS_DIR=/workspace/evidence/reproducibility/notebooks/isolated/results
+
+START 05_neural_networks.ipynb
+FINISHED /workspace/evidence/reproducibility/notebooks/executed/05_neural_networks.ipynb
+START 06_evaluation_and_optimisation.ipynb
+FINISHED /workspace/evidence/reproducibility/notebooks/executed/06_evaluation_and_optimisation.ipynb
+START 07_ablation_and_statistical_testing.ipynb
+FAILED 07_ablation_and_statistical_testing.ipynb
+Traceback (most recent call last):
+  File "/workspace/scripts/execute_notebooks_isolated.py", line 82, in main
+    path = execute_one(name)
+           ^^^^^^^^^^^^^^^^^
+  File "/workspace/scripts/execute_notebooks_isolated.py", line 58, in execute_one
+    client.execute()
+  File "/workspace/.venv/lib/python3.12/site-packages/jupyter_core/utils/__init__.py", line 165, in wrapped
+    return loop.run_until_complete(inner)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/usr/lib/python3.12/asyncio/base_events.py", line 687, in run_until_complete
+    return future.result()
+           ^^^^^^^^^^^^^^^
+  File "/workspace/.venv/lib/python3.12/site-packages/nbclient/client.py", line 709, in async_execute
+    await self.async_execute_cell(
+  File "/workspace/.venv/lib/python3.12/site-packages/nbclient/client.py", line 1062, in async_execute_cell
+    await self._check_raise_for_error(cell, cell_index, exec_reply)
+  File "/workspace/.venv/lib/python3.12/site-packages/nbclient/client.py", line 918, in _check_raise_for_error
+    raise CellExecutionError.from_cell_and_msg(cell, exec_reply_content)
+nbclient.exceptions.CellExecutionError: An error occurred while executing the following cell:
+------------------
+if frozen["comparator"] != "multilayer_perceptron":
+    raise RuntimeError(
+        "This notebook retrains the Phase 5 multilayer perceptron. "
+        f"The frozen comparator is {frozen['comparator']}."
+    )
+champion_predictions = pd.read_parquet(prediction_path)
+if len(champion_predictions) != len(test_index):
+    raise RuntimeError("Champion prediction rows do not match the locked test.")
+if not np.array_equal(champion_predictions["source_index"].to_numpy(), test_index.astype(np.int64)):
+    raise RuntimeError("Champion prediction order does not match the locked test index.")
+if not np.array_equal(champion_predictions["y_true"].to_numpy(), y_test):
+    raise RuntimeError("Champion prediction labels do not match the locked test labels.")
+
+preprocessor = build_baseline_preprocessor()
+preprocessor.fit(X_train)
+print("Retraining the multilayer perceptron.", flush=True)
+mlp_result = train_feedforward(
+    preprocessor.transform(X_train),
+    y_train,
+    preprocessor.transform(X_validation),
+    y_validation,
+    verbose=True,
+)
+print(
+    f"Retrained validation macro-F1 at the restored epoch: {mlp_result['best_validation_macro_f1']:.3f}. "
+    f"Phase 5 validation macro-F1: {float(frozen['comparator_phase5_validation_macro_f1']):.3f}."
+)
+print(f"Restored epoch: {mlp_result['best_epoch']}. Epochs run: {mlp_result['epochs_ran']}.")
+
+validation_predicted, validation_probabilities, _loss = predict_feedforward(
+    mlp_result["model"],
+    preprocessor.transform(X_validation),
+    class_indices(y_validation),
+    batch_size=int(mlp_result["parameters"]["batch_size"]),
+)
+validation_summary, _validation_classes = summarise_predictions(
+    y_validation,
+    validation_predicted,
+    validation_probabilities,
+    model="multilayer_perceptron",
+    split="validation",
+    approval="approved",
+    fit_seconds=mlp_result["fit_seconds"],
+)
+print("Retrained comparator validation scores:")
+display(validation_summary.round(3))
+
+test_predicted, test_probabilities, _loss = predict_feedforward(
+    mlp_result["model"],
+    preprocessor.transform(X_test),
+    class_indices(y_test),
+    batch_size=int(mlp_result["parameters"]["batch_size"]),
+)
+comparator_summary, comparator_classes = summarise_predictions(
+    y_test,
+    test_predicted,
+    test_probabilities,
+    model="multilayer_perceptron",
+    split="test",
+    approval="approved",
+    fit_seconds=mlp_result["fit_seconds"],
+    locked_test_authorised=True,
+)
+comparator_scores = classification_scores(y_test, test_predicted)
+_figure, comparator_path = plot_confusion_matrix(
+    comparator_scores["confusion_matrix"],
+    list(config.TARGET_LABELS),
+    f"Comparator MLP — locked test (macro-F1 {comparator_scores['macro_f1']:.3f})",
+    "07_confusion_comparator_locked_test.png",
+)
+display(comparator_summary.round(3))
+display(comparator_classes.round(3))
+display(Image(filename=str(comparator_path)))
+
+paired = champion_predictions.copy()
+paired["comparator_predicted"] = test_predicted
+counts = paired_correctness_counts(
+    paired["y_true"],
+    paired["champion_predicted"],
+    paired["comparator_predicted"],
+)
+result = mcnemar_test(counts)
+count_table = paired_correctness_table(counts)
+display(count_table)
+print(result["method"])
+print(f"Statistic: {result['statistic']}")
+print(f"p-value: {result['p_value']:.4g}")
+print(f"Threshold: {result['alpha']}")
+print(result["conclusion"])
+
+champion_test = pd.read_csv(config.TABLES_DIR / "06_locked_test_summary.csv").iloc[0]
+accuracy_difference = float(champion_test["accuracy"]) - float(comparator_summary["accuracy"].iloc[0])
+macro_difference = float(champion_test["macro_f1"]) - float(comparator_summary["macro_f1"].iloc[0])
+print(f"Accuracy difference, champion minus comparator: {accuracy_difference:+.4f}")
+print(f"Macro-F1 difference, champion minus comparator: {macro_difference:+.4f}")
+print(
+    "The p-value refers to the paired error rate. "
+    "The accuracy and macro-F1 gaps are the practical comparison, including per-class recall in the tables above."
+)
+
+paired.to_parquet(config.TABLES_DIR / "07_paired_predictions.parquet", index=False)
+count_table.to_csv(config.TABLES_DIR / "07_mcnemar_counts.csv", index=False)
+pd.DataFrame([{**counts, **result, "comparator": frozen["comparator"]}]).to_csv(
+    config.TABLES_DIR / "07_mcnemar_test.csv", index=False
+)
+comparator_summary.to_csv(config.TABLES_DIR / "07_comparator_locked_test_summary.csv", index=False)
+comparator_classes.to_csv(config.TABLES_DIR / "07_comparator_locked_test_per_class.csv", index=False)
+validation_summary.to_csv(config.TABLES_DIR / "07_comparator_retrained_validation.csv", index=False)
+
+test_metrics = pd.concat(
+    [pd.read_csv(config.TABLES_DIR / "06_locked_test_summary.csv"), comparator_summary],
+    ignore_index=True,
+)
+mcnemar_payload = {
+    "comparator": frozen["comparator"],
+    **counts,
+    **result,
+    "accuracy_difference": accuracy_difference,
+    "macro_f1_difference": macro_difference,
+}
+report = render_phase6_report(
+    pd.read_csv(search_path),
+    pd.read_csv(candidate_path).loc[lambda frame: frame["split"].eq("validation")],
+    frozen,
+    test_metrics,
+    ablation,
+    mcnemar_payload,
+)
+report_path = config.REPORTS_DIR / "phase6_evaluation.md"
+report_path.write_text(report, encoding="utf-8")
+save_json({"frozen": frozen, "mcnemar": mcnemar_payload}, config.TABLES_DIR / "07_experiment_log.json")
+print(f"Wrote {report_path}")
+print(report)
+
+------------------
+
+
+[31m---------------------------------------------------------------------------[39m
+[31mRuntimeError[39m                              Traceback (most recent call last)
+[36mCell[39m[36m [39m[32mIn[3][39m[32m, line 2[39m
+[32m      1[39m [38;5;28;01mif[39;00m frozen[[33m"comparator"[39m] != [33m"multilayer_perceptron"[39m:
+[32m----> [39m[32m2[39m     raise RuntimeError(
+[32m      3[39m         [33m"This notebook retrains the Phase 5 multilayer perceptron. "[39m
+[32m      4[39m         f"The frozen comparator is {frozen[[33m'comparator'[39m]}."
+[32m      5[39m     )
+
+[31mRuntimeError[39m: This notebook retrains the Phase 5 multilayer perceptron. The frozen comparator is embedding_network.
+
+COMPLETED 05_neural_networks.ipynb, 06_evaluation_and_optimisation.ipynb
