@@ -150,7 +150,7 @@ That command needs `data/processed/service_requests_labelled.parquet`. The app i
 
 | File | What it holds |
 | --- | --- |
-| [`reports/final_report.md`](reports/final_report.md) | Report draft. Export to PDF with Pandoc when that tool is installed. |
+| [`reports/final_report.md`](reports/final_report.md) | Report source. The PDF is `reports/final_report.pdf`, written by `python scripts/export_report_pdf.py`. |
 | [`reports/experiment_log.md`](reports/experiment_log.md) | Experiments that were run, and experiments that were not. |
 | [`results/tables/08_model_metrics.csv`](results/tables/08_model_metrics.csv) | Model metrics copied from the phase tables. |
 | [`results/tables/07_paired_predictions.parquet`](results/tables/07_paired_predictions.parquet) | Paired locked-test predictions for McNemar's test. No notification ids. |

@@ -43,6 +43,8 @@ This log lists the experiments that were actually run and the files that hold th
 | E16 | No new fit. Suburb and ward error tables from the E8 predictions joined back to the labelled file by the saved row index. | No model choice. Class metrics require a group of at least 200 rows and a class of at least 30 rows. | `results/tables/09_suburb_error_audit.csv`, `results/tables/09_ward_error_audit.csv`, `results/tables/09_geographic_audit_config.json` | Uses the saved predictions |
 | E17 | Approved embedding network refit. Same architecture, seed, and training-only encoder as E5. Work centre excluded. | Validation macro-F1 matched E5 at 0.480687. Histogram gradient boosting remains higher at 0.481660, so the champion is unchanged. The refit is not a second vote. | `results/tables/10_embedding_metrics.csv`, `results/tables/10_embedding_per_class.csv`, `results/tables/10_embedding_champion_decision.json`, `models/embedding_network.pt` | Not scored |
 | E18 | Saga logistic regression, same C, penalty, weights, tolerance, and seed as E2, with max_iter 1000. | Validation only. Still stopped at the cap with a convergence warning. Validation macro-F1 0.453, below the recorded 200-iteration score of 0.460, so E2 remains the reported logistic fit. | `results/tables/11_logistic_convergence.json`, `results/tables/11_logistic_convergence.csv` | Not scored |
+| E19 | Approved embedding network reproduced with `python -m src.embedding_experiment`. The saved checkpoint was scored, then the network was retrained beside it. | Train and validation metrics and the learning curve matched the saved tables. The largest gap was floating-point noise of about 1e-16. The checkpoint file was not replaced. Histogram gradient boosting remains the champion. | `results/tables/12_embedding_reproduction.json`, `evidence/reproducibility/embedding_retrain/figures/10_embedding_learning_curves.png` | Not scored |
+| E20 | Two saga variants at max_iter 200: no intercept, and variance-scaled one-hot columns. | Both stopped at iteration 200 with a convergence warning. Validation macro-F1 was 0.467 and 0.465. Neither replaced the reported 200-iteration baseline. | `results/tables/12_logistic_conditioning.json`, `results/tables/12_logistic_variants.csv` | Not scored |
 
 ## Experiments that were not run
 
@@ -51,7 +53,7 @@ This log lists the experiments that were actually run and the files that hold th
 - SMOTE was not used.
 - A dense random forest was not fit. The one-hot matrix is too large for a dense forest in this environment.
 - No stakeholder interview or City review was run.
-- Notebooks 01 to 07 were not executed a second time from an empty environment during Phase 8. Their saved cell outputs are the source of the scores above. Notebook 08 was executed in Phase 8 and does not fit a model.
+- Notebooks 01 to 06 were executed again in an isolated results directory. Metric tables matched the saved scores. Fit times differed. Notebook 07 stopped before McNemar's test because a fresh notebook 06 names the approved embedding network as the comparator, and notebook 07 refuses to score any comparator other than the multilayer perceptron. The original locked-test files were not replaced. The log is `evidence/reproducibility/notebooks/execution_log.txt`.
 
 ## Champion rule
 

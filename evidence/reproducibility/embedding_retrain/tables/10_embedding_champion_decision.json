@@ -1,0 +1,30 @@
+{
+  "approval_date": null,
+  "approval_source": "The project instruction stated that the lecturer approved the embedding network. No approval date and no additional architecture details were supplied.",
+  "architecture_changed": false,
+  "best_epoch": 4,
+  "champion_changed": false,
+  "champion_model": "hist_gradient_boosting",
+  "champion_validation_macro_f1": 0.4816599009477968,
+  "delivered_model": "frozen histogram gradient boosting pipeline",
+  "embedding_validation_macro_f1": 0.4806872719871502,
+  "epochs_ran": 7,
+  "features": [
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+    "created_day_of_week",
+    "created_month",
+    "created_is_weekend"
+  ],
+  "fit_seconds": 231.10067256099137,
+  "frozen_boosting_validation_macro_f1": 0.4765377211093145,
+  "locked_test_used": false,
+  "n_parameters": 34035,
+  "rule": "Highest validation macro-F1 among approved models. Ties break on Unresolved recall, then Resolved Slow recall. The locked test is not an input.",
+  "saved_refit_is_a_second_vote": false,
+  "saved_refit_validation_macro_f1": 0.4806872719871502,
+  "score_used_for_champion_rule": "results/tables/05_split_metrics.csv",
+  "work_centre_included": false
+}

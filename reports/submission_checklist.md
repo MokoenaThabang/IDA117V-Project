@@ -24,9 +24,10 @@ python -m src.geographic_error_audit
 python -m src.per_class_curves
 python -m src.embedding_experiment
 python -m src.logistic_convergence
+python -m src.logistic_conditioning
 ```
 
-The work-centre command refits two models. The geographic audit and the curve command only read saved predictions. The embedding and logistic commands refit on the training period and score the 2025 validation period. They do not read the locked test.
+The work-centre command refits two models. The geographic audit and the curve command only read saved predictions. The embedding command scores the saved checkpoint and retrains beside it when `models/embedding_network.pt` already exists, so that file is not replaced. The logistic conditioning command fits two separate variants on the training period and scores the 2025 validation period. None of these commands reads the locked test.
 
 The report PDF is printed from the Markdown file. Pandoc is not installed in this environment. The export uses headless Chrome:
 

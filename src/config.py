@@ -67,7 +67,7 @@ APP_DIR = PROJECT_ROOT / "app"
 RESULTS_DIR = _env_path("RESULTS_DIR", PROJECT_ROOT / "results")
 FIGURES_DIR = RESULTS_DIR / "figures"
 TABLES_DIR = RESULTS_DIR / "tables"
-REPORTS_DIR = PROJECT_ROOT / "reports"
+REPORTS_DIR = _env_path("REPORTS_DIR", PROJECT_ROOT / "reports")
 TESTS_DIR = PROJECT_ROOT / "tests"
 
 # Optional single-file override when data/raw holds more than one download.

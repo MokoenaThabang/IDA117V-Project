@@ -1,7 +1,7 @@
 {
-  "champion_rule": "Highest validation macro-F1 among approved models. Ties break on Unresolved recall, then Resolved Slow recall. The pending embedding network is excluded.",
+  "champion_rule": "Highest validation macro-F1 among approved models. Ties break on Unresolved recall, then Resolved Slow recall. The embedding network is included because lecturer approval was recorded. A model that is still marked pending is excluded. The locked test is not an input.",
   "embedding_categories": {
-    "approval": "pending_lecturer_approval",
+    "approval": "approved",
     "fit_on": "train",
     "rare_min_count": 200,
     "unseen_index": 0,
@@ -9,7 +9,7 @@
   },
   "embedding_network": {
     "activation": "ReLU",
-    "approval": "pending_lecturer_approval",
+    "approval": "approved",
     "batch_size": 8192,
     "class_weight": "balanced",
     "dropout": 0.3,
@@ -56,7 +56,7 @@
   },
   "measured": {
     "embedding_network": {
-      "approval": "pending_lecturer_approval",
+      "approval": "approved",
       "batch_size": 8192,
       "best_epoch": 4,
       "dropout": 0.3,

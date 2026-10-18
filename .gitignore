@@ -243,3 +243,7 @@ models/*
 # The approved embedding checkpoint and its training-only encoder.
 !models/embedding_network.pt
 !models/embedding_encoder.joblib
+
+# Isolated notebook reruns copy the processed extract and refit models.
+# The execution log and executed notebook copies stay available to commit.
+evidence/reproducibility/notebooks/isolated/
