@@ -1,0 +1,4 @@
+experiment,executed_fit,macro_f1,recall_resolved_slow,recall_unresolved,delta_macro_f1,delta_recall_resolved_slow,delta_recall_unresolved,fit_seconds,note
+remove_geographic_features,True,0.4687128456972565,0.4340410129961204,0.4750611565607956,-0.007824875412058008,0.0015495809344991396,0.033184953480911106,4.5170858050114475,"Retrained without suburb, ward, and subcouncil. Complaint type and calendar fields stay."
+remove_work_centre,False,0.4765377211093145,0.4324914320616213,0.4418762030798845,0.0,0.0,0.0,5.026059477000672,Work Center is already excluded from the frozen pipeline because the extract has no assignment time. Removing it does not change the inputs. No second model was fit.
+no_class_weight,True,0.37567191544270734,0.3438712377419099,0.03675910330445942,-0.10086580566660719,-0.08862019431971135,-0.4051170997754251,4.625778525994974,Same features and frozen hyperparameters with class_weight left unset. SMOTE is not used.

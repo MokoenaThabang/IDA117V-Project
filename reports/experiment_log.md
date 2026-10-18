@@ -49,7 +49,7 @@ This log lists the experiments that were actually run and the files that hold th
 ## Experiments that were not run
 
 - The Phase 6 `remove_work_centre` row still did not fit a second model. E14 is the fitted comparison. E14 does not make Work Center a logging-time feature.
-- No hyperparameter search was run for logistic regression, the multilayer perceptron, or the embedding network. The repository has no marking brief that requires one. Phase 6 already searched the champion family on training-period folds. Those three models keep their pre-specified settings.
+- No hyperparameter search was run for logistic regression, the multilayer perceptron, or the embedding network. The assignment brief says to optimise only the strongest validation model. Phase 6 searched that champion family on training-period folds. The other three models keep their pre-specified settings.
 - SMOTE was not used.
 - A dense random forest was not fit. The one-hot matrix is too large for a dense forest in this environment.
 - No stakeholder interview or City review was run.

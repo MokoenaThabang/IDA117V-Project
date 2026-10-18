@@ -20,7 +20,7 @@ Predictors are complaint type, suburb, ward, subcouncil, weekday, month, and wee
 
 ## 5. Models on validation (2 minutes)
 
-Primary metric is macro-F1. The most-frequent dummy scores validation macro-F1 0.273. Logistic regression scores 0.460 and did not converge at 200 iterations. A 1000-iteration check also did not converge and was not adopted. Histogram gradient boosting scores 0.482. The multilayer perceptron scores 0.476. The embedding network scores 0.481. Lecturer approval has been recorded, and it still does not choose the champion, because histogram gradient boosting scores 0.482 on the same validation rule. Show `results/figures/05_validation_comparison.png` and the MLP learning curve: training loss fell while validation loss rose.
+Primary metric is macro-F1. The most-frequent dummy scores validation macro-F1 0.273. Logistic regression scores 0.460 and did not converge at 200 iterations. A 1000-iteration check also did not converge and was not adopted. Histogram gradient boosting scores 0.482. The multilayer perceptron scores 0.476. The embedding network scores 0.481. Lecturer approval has been recorded, and it still does not choose the champion, because histogram gradient boosting scores 0.482 on the same validation rule. Show `results/figures/05_validation_comparison.png`, the MLP learning curve, and the approved embedding curve `results/figures/10_embedding_learning_curves.png`. Training loss fell while validation loss rose. Do not use a figure titled as pending approval.
 
 ## 6. Tuning and the one locked-test score (1 minute 30 seconds)
 

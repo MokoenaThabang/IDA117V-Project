@@ -66,4 +66,4 @@ The highest approved validation recall for Unresolved is 0.492 (hist_gradient_bo
 
 The categorical embedding network has validation macro-F1 0.481, Resolved Slow recall 0.435, and Unresolved recall 0.462. Lecturer approval has been recorded, so those scores are included in the champion rule. Histogram gradient boosting remains higher at 0.482. No locked-test score was produced for the embedding network.
 
-These Phase 5 settings were not grid-searched. The champion family was tuned later on training-period folds. This phase does not claim a locked-test result. The repository does not contain a marking brief that requires a separate search for logistic regression, the perceptron, or the embedding network.
+These Phase 5 settings were not grid-searched. The champion family was tuned later on training-period folds. This phase does not claim a locked-test result. The assignment brief says to optimise only the strongest validation model, so logistic regression, the perceptron, and the embedding network were not searched here.
