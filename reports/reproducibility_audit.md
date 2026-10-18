@@ -1,6 +1,6 @@
 # Reproducibility and submission audit
 
-Checked on 18 October 2026. This audit does not say the assignment is complete. No stakeholder interview has been conducted. The embedding network was not given a locked-test score, and it was not selected as champion.
+Checked on 18 October 2026. This audit does not say the assignment is complete. No stakeholder interview has been conducted. The brief does not require one. At the time of this audit the embedding network had not been given a locked-test score, and it was not selected as champion. Later the same day, Question 6.2 scored the saved checkpoint on the existing locked test. That comparison is `results/tables/13_question62_record.json`. It did not change the champion. The findings below describe the audit as it stood before that score.
 
 ## Embedding experiment
 
@@ -89,4 +89,4 @@ A clean rerun of notebook 06 previously named the embedding network because that
 
 - No stakeholder interview.
 - Logistic regression still does not converge at the reported settings or at the checked variants. The 200-iteration intercept model remains the reported baseline.
-- The embedding network has no locked-test score because it was not selected as champion.
+- The embedding network was not selected as champion. Its later locked-test score is the Question 6.2 comparison only.

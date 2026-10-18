@@ -1,0 +1,2 @@
+model,split,accuracy,macro_f1,weighted_f1,recall_resolved_fast,recall_resolved_slow,recall_unresolved,macro_roc_auc,macro_average_precision,approval,fit_seconds
+embedding_network,test,0.58750145130831,0.49614251979762275,0.6212877588176223,0.6586819256715576,0.42947406977808983,0.44215912366676274,0.7273737034487041,0.5276356001926459,approved,

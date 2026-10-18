@@ -1,5 +1,15 @@
 # Cape Town service-request resolution classifier
 
+| Cover field | Entry |
+| --- | --- |
+| Student names | Thabang Mokoena is the only human name in this repository's git history. It is on the four commits of 15 October 2026. No other group member is named in the repository. |
+| Student numbers | Not recorded. |
+| Group number | Not recorded. |
+| Lecturer | Not recorded. |
+| Submission date | Not recorded. |
+
+The IDA117V cover asks for these five fields. The name above is the git author of the repository scaffold. It is not a class list. No student number, group number, lecturer, or submission date is stored in the repository. The digits in the GitHub noreply address are an account id, not a student number, and they are not entered here.
+
 Draft report for IDA117V. The numbers come from the executed notebooks and the tables in `results/tables/`. This draft does not say the project is complete. The last section lists what was not run and what still needs a decision.
 
 The PDF export of this file is `reports/final_report.pdf`. It was printed from `reports/final_report.html` with headless Chrome, because Pandoc is not installed. The figure paths below are relative to this Markdown file. Regenerating the HTML and the PDF is described in `reports/submission_checklist.md`.
@@ -8,9 +18,31 @@ The PDF export of this file is `reports/final_report.pdf`. It was printed from `
 
 At the moment a municipal service request is logged, the project estimates which of three resolution outcomes is likely: Resolved Fast, Resolved Slow, or Unresolved. The estimate uses only information that can be treated as known at logging.
 
-The requests are City of Cape Town SAP C3 notifications. The people affected are the residents and businesses whose requests are in that system, and the municipal service departments that receive them. No stakeholder interview was conducted, so this report does not claim a department finding or a resident finding. The intended benefit, as stated for the project, is to show requests that may need earlier human attention.
+The requests are City of Cape Town SAP C3 notifications. The people affected are the residents and businesses whose requests are in that system. The decision-maker for this project is a reviewer in the municipal service department that receives the request at logging. The intended use is a queue aid: show which newly logged requests may need earlier human attention. The brief does not require a stakeholder interview. None was conducted, so this report does not claim a department finding or a resident finding.
 
-The estimate is not a service decision. It must not be used to deny or reduce service to an area.
+The estimate is not a service decision. A person remains between the score and any operational action. It must not be used to deny or reduce service to an area, and it must not be left to run without that review.
+
+The primary technical metric is macro-F1. The service-delivery indicator used with it is whether a request that will not be resolved within seven days is brought to a reviewer. In this framing, Resolved Slow and Unresolved are the two outcomes that call for earlier attention, and Resolved Fast is the outcome that does not.
+
+A false positive, in that framing, is a request flagged as Resolved Slow or Unresolved when it is Resolved Fast. The operational cost is reviewer time spent on a request that closes inside seven days, and a noisier queue. It is not, by itself, a denial of service. The champion's locked-test precision for Resolved Slow is 0.210, so most of those particular flags are the wrong class.
+
+A false negative is a request scored as Resolved Fast when it is Resolved Slow or Unresolved. The operational cost falls on the resident or business waiting for the service, because the request is not brought forward. The champion's locked-test recall for Unresolved is 0.418, so a large share of unresolved requests is not labelled Unresolved. Scoring Unresolved as Resolved Slow, or the reverse, sends the reviewer the wrong expectation: a slow completion rather than a request that is still open, or the opposite.
+
+These costs are reasons for human oversight. The interface shows all three probabilities. A single class label is not an instruction to delay, refuse, or prioritise an area.
+
+## 1.1 POPIA and the fields that were withheld
+
+This section describes how the project handled personal information. It does not certify that the processing complies with the Protection of Personal Information Act 4 of 2013.
+
+The extract is a published municipal operational layer, not a private list collected for this course. It can still contain personal information. A notification identifier can be linked to a person. The free-text notification type can name a person or a complaint in the requester's words. The coordinate fields can locate a dwelling. Suburb, ward, and subcouncil are coarser, but a rare suburb together with a complaint type can still narrow the household.
+
+The model does not use the notification identifier, the free-text notification type, the coordinates, the completion date, or the changed-on date. The published tables and the paired prediction file do not contain notification identifiers or coordinates. Location enters the model only as suburb, ward, and subcouncil, which are already on the public layer.
+
+The City published the layer under its own open-data terms. Those terms are custom, not a Creative Commons licence, and they say the data are provided as is. This project uses that published copy for an academic classifier. Lawful processing by the City, and any further condition on reuse, is not decided in this report.
+
+Data minimisation is the reason the feature list is short: complaint type, suburb, ward, subcouncil, and the weekday, month, and weekend flag derived from the created date. The raw extract is gitignored. The interface does not write a new file of addresses, and it does not contain a credential. Retention of the local copy is for reproduction of these results. The copy is not redistributed with the code.
+
+Access to the raw file is limited to the machine where the notebooks were run. The security step in this repository is exclusion from git, not a claim that the machine itself was audited. A later operational deployment would need the department's own access control, a retention schedule, and a review of whether the published fields are still appropriate. None of that is certified here.
 
 ## 2. Dataset provenance, licence, and dataset card
 
@@ -119,7 +151,11 @@ Class imbalance uses balanced weights from the training counts: Resolved Fast 0.
 
 The most-frequent dummy predicts the majority training class, Resolved Fast. On the validation period its accuracy is 0.693 and its macro-F1 is 0.273. On the locked test its accuracy is 0.680 and its macro-F1 is 0.270. Recall is 1 for Resolved Fast and 0 for the other two classes. That is the floor a useful model has to clear on macro-F1.
 
-Logistic regression uses saga, C = 1, L2, balanced class weights, max_iter 200, tolerance 0.001, and seed 42. Fit time was 247.9 seconds. The solver stopped at the iteration cap with a convergence warning. The one-hot columns are 0/1 and the weekend indicator is standardised on the training rows, so the warning is the iteration budget on 2,616,595 sparse rows, not a missing numeric scaler. A later refit with the same settings and max_iter 1000 also stopped at the cap, still with a convergence warning, and its validation macro-F1 was 0.453. That run was not adopted. Two further checks kept max_iter 200 and the same C, tolerance, solver, and class weights. Removing the intercept left the warning in place and scored validation macro-F1 0.467. Variance-scaling the one-hot block, while leaving the already standardised weekend column unchanged, also stopped at iteration 200 with a warning and scored validation macro-F1 0.465. Neither variant was adopted. The reported logistic scores remain the 200-iteration fit with an intercept: validation accuracy 0.578, macro-F1 0.460, and weighted-F1 0.630. The details are in `results/tables/11_logistic_convergence.json` and `results/tables/12_logistic_conditioning.json`. Locked-test scores from notebook 03 are accuracy 0.577, macro-F1 0.467, and weighted-F1 0.610. Locked-test recall is 0.672 for Resolved Fast, 0.454 for Resolved Slow, and 0.303 for Unresolved. Resolved Slow precision is 0.202. The 1000-iteration refit did not score the locked test.
+Logistic regression uses saga, C = 1, L2, balanced class weights, max_iter 200, tolerance 0.001, and seed 42. Fit time was 247.9 seconds. The solver stopped at the iteration cap with a convergence warning. The one-hot columns are 0/1 and the weekend indicator is standardised on the training rows, so the warning is the iteration budget on 2,616,595 sparse rows, not a missing numeric scaler. A later refit with the same settings and max_iter 1000 also stopped at the cap, still with a convergence warning, and its validation macro-F1 was 0.453. That run was not adopted. Two further checks kept max_iter 200 and the same C, tolerance, solver, and class weights. Removing the intercept left the warning in place and scored validation macro-F1 0.467. Variance-scaling the one-hot block, while leaving the already standardised weekend column unchanged, also stopped at iteration 200 with a warning and scored validation macro-F1 0.465. Neither variant was adopted. The reported logistic scores remain the 200-iteration fit with an intercept: validation accuracy 0.578, macro-F1 0.460, and weighted-F1 0.630. The details are in `results/tables/11_logistic_convergence.json` and `results/tables/12_logistic_conditioning.json`. Locked-test scores from notebook 03 are accuracy 0.577, macro-F1 0.467, and weighted-F1 0.610.
+
+Those saved scores are comparable with the other models because they use the same labels, the same chronological split, and the same metric functions. They are the scores of a fit that stopped at the iteration cap. They are not the scores of a solution that met the tolerance. `results/tables/11_logistic_convergence.json` records `converged` as false and `convergence_warning` as true. The 1000-iteration check is a different fit, with validation macro-F1 0.453, and it is not mixed into the comparison table. On 18 October 2026 the common ROC figure refit the same 200-iteration settings on the training period. That refit raised `ConvergenceWarning` and reproduced the saved validation macro-F1 of 0.460268 within 0.0001 before its locked-test curve was kept. The warning is retained. This report does not describe the logistic model as having converged.
+
+Locked-test recall for that same 200-iteration fit is 0.672 for Resolved Fast, 0.454 for Resolved Slow, and 0.303 for Unresolved. Resolved Slow precision is 0.202. The 1000-iteration refit did not score the locked test.
 
 Histogram gradient boosting, in the Phase 5 configuration, uses log loss, learning rate 0.1, at most 31 leaves, minimum 50 samples per leaf, L2 regularisation 1, and balanced weights. Early stopping watches validation macro-F1. Fit time was 17.9 seconds. It trained 8 iterations and the predictions use iteration 2. Validation macro-F1 at that iteration is 0.482. Accuracy is 0.591, weighted-F1 is 0.640, Resolved Slow recall is 0.416, and Unresolved recall is 0.492. Macro ROC-AUC is 0.739 and macro average precision is 0.506.
 
@@ -139,7 +175,7 @@ The second network embeds each categorical field. Embedding dimension is 16, the
 
 ## 8. Evaluation and model comparison
 
-Macro-F1 is the primary metric. Accuracy, weighted-F1, and recall for Resolved Slow and Unresolved are reported with it. Where the model implements `predict_proba`, macro one-versus-rest ROC-AUC and macro average precision are reported. Section 14 adds the per-class ROC and precision-recall curves for the frozen champion. The earlier macro summaries were kept.
+Macro-F1 is the primary metric. Accuracy, weighted-F1, and recall for Resolved Slow and Unresolved are reported with it. Where the model implements `predict_proba`, macro one-versus-rest ROC-AUC and macro average precision are reported. Section 14 adds the per-class ROC and precision-recall curves for the frozen champion, and one locked-test ROC figure for every required model. The earlier macro summaries were kept.
 
 Phase 5 validation comparison, approved models only:
 
@@ -199,13 +235,14 @@ The frozen model was scored once on the locked test and was not changed afterwar
 | | Accuracy | Macro-F1 | Weighted-F1 | Slow recall | Unresolved recall | ROC-AUC | PR-AUC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Frozen booster | 0.600 | 0.494 | 0.629 | 0.400 | 0.418 | 0.724 | 0.519 |
+| Embedding network | 0.588 | 0.496 | 0.621 | 0.429 | 0.442 | 0.727 | 0.528 |
 | Multilayer perceptron | 0.606 | 0.495 | 0.634 | 0.458 | 0.345 | 0.731 | 0.529 |
 
 Locked-test precision for the frozen booster is 0.829 for Resolved Fast, 0.210 for Resolved Slow, and 0.495 for Unresolved. Support is 287,131, 65,522, and 69,380. The low Resolved Slow precision means most requests predicted as slow are not slow.
 
 ![Frozen model, locked-test confusion matrix](../results/figures/06_confusion_locked_test.png)
 
-The perceptron was retrained with the Phase 5 procedure before its test score. Its retrained validation macro-F1 is 0.476, the same value as Phase 5. Its locked-test confusion matrix is `results/figures/07_confusion_comparator_locked_test.png`.
+The embedding-network row uses the saved checkpoint on these same locked-test rows. It is the Question 6.2 comparator in section 12. It was not used to choose the champion. The perceptron row is the historical supplementary comparison. The perceptron was retrained with the Phase 5 procedure before its test score. Its retrained validation macro-F1 is 0.476, the same value as Phase 5. Its locked-test confusion matrix is `results/figures/07_confusion_comparator_locked_test.png`.
 
 ## 11. Ablation experiments
 
@@ -243,20 +280,26 @@ Validation support is 648,570 Resolved Fast, 88,411 Resolved Slow, and 199,488 U
 
 ## 12. McNemar's test
 
-The comparison is the frozen booster and the multilayer perceptron on the same 422,033 locked-test cases. The comparator is the approved model other than the champion with the highest validation macro-F1. Ties break on Unresolved recall, then Resolved Slow recall, then model name. The embedding network is excluded from that choice because it was not selected as champion and is not scored on the locked test. Under that rule the comparator is the multilayer perceptron. The choice does not use the locked-test scores. Paired predictions are in `results/tables/07_paired_predictions.parquet`. The file has the source row index, the true label, both predictions, and the champion probabilities. It does not have notification ids or coordinates.
+Question 6.2 compares the frozen histogram gradient boosting champion with the approved embedding network. Both are scored on the same 422,033 locked-test cases. The comparator is the strongest approved model other than the champion by Phase 5 validation macro-F1: histogram gradient boosting 0.481660, embedding network 0.480687, multilayer perceptron 0.476466. Ties would break on Unresolved recall, then Resolved Slow recall, then model name. The locked test was not used to choose the champion or this comparator.
+
+The embedding predictions come from the saved checkpoint `models/embedding_network.pt` and the encoder `models/embedding_encoder.joblib`. The encoder was fit on the training period. The network was not trained again, and it was not trained on the locked test. Before those test rows were scored, the same checkpoint was applied to the 2025 validation period. The recomputed validation macro-F1 is 0.480687, the same value as the saved Phase 5 table. The prediction file is `results/tables/13_embedding_locked_test_predictions.parquet`. Its `source_index` order and ground-truth labels match `results/tables/06_test_predictions.parquet` and the chronological test split. The split identifier is `chronological|train_end=2024-12-31|validation_end=2025-12-31|test_end=2026-04-30|seed=42`. The file has no notification identifiers and no coordinates.
 
 Hypotheses, two-sided, alpha 0.05:
 
 - Null: the two models have the same probability of being correct on a locked-test case.
 - Alternative: those probabilities differ.
 
-| Both correct | Champion only | Comparator only | Both wrong | Discordant |
+| Both correct | Champion only | Embedding only | Both wrong | Discordant |
 | --- | --- | --- | --- | --- |
-| 233,776 | 19,282 | 21,854 | 147,121 | 41,136 |
+| 229,320 | 23,738 | 18,625 | 150,350 | 42,363 |
 
-The discordant count is above 25, so the continuity-corrected chi-square approximation is the method that the code uses. The exact binomial test is reserved for fewer than 25 discordant cases. The statistic is (|19282 − 21854| − 1)² / 41136 = 160.6875. The p-value is 8.006e-37. That is below 0.05, so the paired error rates differ. The comparator is correct on 2,572 more of the discordant cases.
+The discordant count is above 25, so the continuity-corrected chi-square approximation is the method that the code uses. The exact binomial test is reserved for fewer than 25 discordant cases. The statistic is (|23738 − 18625| − 1)² / 42363 = 616.8719. The p-value is 3.582e-136. That is below 0.05, so the paired error rates differ. The champion is correct on 5,113 more of the discordant cases.
 
-The test compares paired error rates. It does not show that one model is better on every class. The practical gaps, champion minus comparator, are −0.006 in accuracy and −0.001 in macro-F1. On this test set the perceptron has higher Resolved Slow recall (0.458 against 0.400) and lower Unresolved recall (0.345 against 0.418). A small accuracy gap can still have a very small p-value when the test set has 422,033 rows. The frozen model was not changed after this result.
+The test compares paired error rates. It does not show that one model is better on every class, and it was not used to replace the champion. On this test set the champion's accuracy is 0.600 and its macro-F1 is 0.494. The embedding network's accuracy is 0.588 and its macro-F1 is 0.496. The gaps, champion minus embedding network, are +0.012 in accuracy and −0.002 in macro-F1. Embedding Resolved Slow recall is 0.429 against the champion's 0.400. Embedding Unresolved recall is 0.442 against 0.418. A small macro-F1 gap can still have a very small p-value when the test set has 422,033 rows. The record, including the model names, the row count, the split identifier, and this interpretation, is `results/tables/13_question62_record.json`.
+
+### Historical supplementary comparison
+
+An earlier paired test used the multilayer perceptron. That result is kept, and it is not the Question 6.2 comparison. The perceptron was retrained with the Phase 5 procedure. Its retrained validation macro-F1 is 0.476. On the same 422,033 rows the counts are 233,776 both correct, 19,282 champion only, 21,854 perceptron only, and 147,121 both wrong. The continuity-corrected statistic is 160.6875 and the p-value is 8.006e-37. The practical gaps, champion minus perceptron, are −0.006 in accuracy and −0.001 in macro-F1. The perceptron has higher Resolved Slow recall (0.458 against 0.400) and lower Unresolved recall (0.345 against 0.418). Those files are `results/tables/07_mcnemar_test.csv` and `results/tables/07_paired_predictions.parquet`. The frozen-decision file still names the perceptron in the comparator field that notebook 07 originally read. That historical field was not rewritten.
 
 ## 13. Prediction interface
 
@@ -288,9 +331,27 @@ The curves use the frozen champion's locked-test probabilities in `results/table
 
 Resolved Slow is the weak ranking class. Its average precision is 0.216, close to its share of the locked test, and its ROC-AUC is 0.613. The full-precision table is `results/tables/09_per_class_ranking_locked_test.csv`.
 
-![Locked-test one-vs-rest ROC](../results/figures/09_roc_per_class_locked_test.png)
+![Locked-test one-vs-rest ROC for the frozen champion](../results/figures/09_roc_per_class_locked_test.png)
 
-![Locked-test one-vs-rest precision-recall](../results/figures/09_pr_per_class_locked_test.png)
+![Locked-test one-vs-rest precision-recall for the frozen champion](../results/figures/09_pr_per_class_locked_test.png)
+
+### One figure for every required model
+
+The assignment asks for one ROC figure covering the required models. The required set used here is the most-frequent dummy, logistic regression, histogram gradient boosting, the multilayer perceptron, and the approved embedding network. Each curve is the macro average of the three one-versus-rest curves, drawn on the same 422,033 locked-test rows. A class curve is omitted only when that class has no positive rows or is the only class present. All three classes are present, so every model has three class curves. The class AUCs and the macro and micro averages are in `results/tables/13_roc_all_models_locked_test.csv`.
+
+Champion probabilities are the saved columns in `results/tables/06_test_predictions.parquet`. Embedding probabilities are the checkpoint scores from section 12. The dummy, logistic regression, and the perceptron were refit on the training period only. Each refit had to reproduce its saved validation macro-F1 within 0.0001 before its locked-test scores were kept. The logistic refit also had to raise the same non-convergence warning as the reported baseline. All three passed. No curve was omitted, and these scores were not used to change the champion.
+
+| Model | Fast AUC | Slow AUC | Unresolved AUC | Macro AUC | Micro AUC |
+| --- | --- | --- | --- | --- | --- |
+| Most-frequent dummy | 0.500 | 0.500 | 0.500 | 0.500 | 0.760 |
+| Logistic regression | 0.763 | 0.608 | 0.791 | 0.721 | 0.786 |
+| Histogram gradient boosting | 0.763 | 0.613 | 0.796 | 0.724 | 0.789 |
+| Embedding network | 0.764 | 0.615 | 0.803 | 0.727 | 0.788 |
+| Multilayer perceptron | 0.773 | 0.624 | 0.796 | 0.731 | 0.800 |
+
+The champion's class AUCs match the table above them. The dummy assigns the same class probabilities to every row, so each one-versus-rest AUC is 0.500 and its curve lies on the diagonal. Its micro AUC is higher because the micro average pools the three score columns, and those columns are not the same constant. That micro value is not a ranking result. Logistic regression remains the non-converged fit. The perceptron has the highest macro AUC on this figure, 0.731. That is a locked-test description. The champion remains the frozen booster chosen on validation macro-F1.
+
+![Locked test: macro one-vs-rest ROC for all required models](../results/figures/13_roc_all_models_locked_test.png)
 
 ## 15. Suburb and ward error audit
 
@@ -323,9 +384,9 @@ Other limitations, all from the executed work:
 - The layer is frozen. Open requests may have been completed later, so some Unresolved labels can be wrong.
 - The 2025 class mix is not the 2023–2024 mix. Unresolved rises from 4.5% to 21.3%.
 - Logistic regression did not converge at 200 iterations, at a 1000-iteration check, or in the separate no-intercept and variance-scaled checks. Those runs were not adopted. The reported baseline remains the 200-iteration fit.
-- The embedding network is approved and is not the champion. Its recorded validation macro-F1 is 0.481, and histogram gradient boosting is 0.482. No approval date was supplied.
-- No stakeholder interview has been conducted.
-- The embedding network is excluded from the McNemar comparator because it was not selected as champion and is not scored on the locked test. The recorded comparator remains the multilayer perceptron.
+- The embedding network is approved and is not the champion. Its recorded validation macro-F1 is 0.481, and histogram gradient boosting is 0.482. No approval date was supplied. Its locked-test score in section 12 is the Question 6.2 comparison. It was not used to choose the champion.
+- No stakeholder interview has been conducted. The brief does not require one.
+- Question 6.2 is the McNemar comparison of the frozen champion and the embedding network. The earlier perceptron table remains a supplementary result.
 - The fitted work-centre comparison is not leakage-safe. The extract has no assignment time, and the champion still excludes that column.
 - Balanced weights improve Unresolved recall and, on the logistic test score, leave Resolved Slow precision at 0.202.
 - Macro ROC-AUC near 0.72 to 0.74 is better than chance and is not a basis for an automated decision. Resolved Slow average precision on the locked test is 0.216.
@@ -340,13 +401,18 @@ Practical recommendations:
 
 ## 17. Conclusion and future work
 
-On the measurements that were saved, a most-frequent prediction reaches validation macro-F1 0.273. Logistic regression reaches 0.460. Histogram gradient boosting reaches 0.482 in the Phase 5 early-stopped fit and is the approved champion family. A training-fold search did not beat the untuned refit on the 2025 validation macro-F1, so the frozen pipeline keeps those untuned settings with a 12-iteration cap. Its single locked-test macro-F1 is 0.494. The multilayer perceptron is close on macro-F1 and differs in which minority class it recalls. McNemar's test finds a difference in paired error rates and does not justify replacing the frozen model after seeing the test.
+On the measurements that were saved, a most-frequent prediction reaches validation macro-F1 0.273. Logistic regression reaches 0.460 and did not converge. The multilayer perceptron reaches 0.476. The approved embedding network reaches 0.481. Histogram gradient boosting reaches 0.482 in the Phase 5 early-stopped fit and remains the champion under that validation rule. A training-fold search did not beat the untuned refit on the 2025 validation macro-F1, so the frozen pipeline keeps those untuned settings with a 12-iteration cap. Its single locked-test macro-F1 is 0.494, its accuracy is 0.600, its Resolved Slow precision is 0.210, and its Unresolved recall is 0.418. Question 6.2 then compares that frozen model with the embedding network on the same locked-test rows. The continuity-corrected statistic is 616.8719 and the p-value is 3.582e-136. The accuracy gap is +0.012 and the macro-F1 gap is −0.002, champion minus embedding network. That difference in paired error rates is not a reason to replace the frozen model after seeing the test.
+
+The delivered use is a queue aid for a reviewer in the department that receives the request. The three probabilities stay visible. A class label is not an instruction to delay, refuse, or reduce service. Suburb and ward error rates vary, and complaint type is not held constant, so those tables are not a finding that one area should receive less service. Work centre still has no assignment time, so it stays out of the logging-time model even though a validation-only sensitivity fit scored higher.
 
 This report does not declare the project complete. The following are still open:
 
-- A stakeholder interview. The question list is `reports/stakeholder_interview_guide.md`. No interview has been recorded, so this report has no stakeholder validation. Lecturer approval of the embedding network has been recorded, and that model did not replace the champion.
+- Student numbers, the group number, the lecturer, the submission date, and any members who are not in the git history. The cover names Thabang Mokoena from the commits of 15 October 2026 and leaves the other fields empty.
+- Signatures on `reports/contribution_statement.md`. The work rows match the repository. The signature cells are empty. The brief requires every member to sign, so this page is not yet a signed declaration.
+- A presentation and defence. The speaking outline is `reports/presentation_outline.md`, written to the brief’s 10–12 minute request, with an interface demonstration. The brief’s window is 5–17 October 2026. This repository has no attendance record and no defence outcome.
+- Lecturer approval of the embedding network has been recorded, and no approval date was supplied. The architecture was not changed. The model did not replace the champion.
 - An assignment timestamp for work centre. The sensitivity comparison in section 11 was fit, and it still cannot support a logging-time model.
-- Notebooks 01 to 04 finished in an isolated results directory. Notebook 05 failed once because it imported a removed name, then finished after that import was corrected. Notebook 06 finished there as well. Its locked-test macro-F1 matched the saved champion, and that run recorded the embedding network as the comparator under the earlier rule. The current rule, applied to that run's Phase 5 table, selects the multilayer perceptron. Notebook 06 was not executed again. On 18 October 2026 the current notebook 07 was executed from a copy of the recorded champion files. The copy is `evidence/reproducibility/notebooks/pr14_notebook07/`. It did not replace the original notebook or `results/tables/06_test_predictions.parquet`. The paired predictions and the McNemar statistic matched the saved table. Fit times differed. Notebook 08 checks the saved pipeline and does not refit.
+- Notebooks 01 to 04 finished in an isolated results directory. Notebook 05 failed once because it imported a removed name, then finished after that import was corrected. Notebook 06 finished there as well. Its locked-test macro-F1 matched the saved champion. Notebook 06 was not executed again, and `results/tables/06_test_predictions.parquet` was not replaced. On 18 October 2026 notebook 07 was executed from a copy of the recorded champion files. The copy is `evidence/reproducibility/notebooks/pr14_notebook07/`. That run is the historical perceptron comparison: the paired predictions and the statistic 160.6875 matched the saved table, and fit times differed. Question 6.2 was scored afterwards from the saved embedding checkpoint. On 18 October 2026, notebook 07 section 4 was executed in `notebooks/07_ablation_and_statistical_testing.ipynb`. The displayed contingency was 229,320 both correct, 23,738 champion only, 18,625 embedding only, and 150,350 both wrong. The displayed statistic was 616.8718929254302 and the p-value was 3.58188637074921e-136. Those values match `results/tables/13_question62_record.json`. The execution rewrote that record and the embedding prediction file with the same bytes. It did not rewrite `results/tables/06_test_predictions.parquet` or `results/tables/07_mcnemar_test.csv`. Section 3 of the notebook, the historical perceptron refit, was not run again. Notebook 08 checks the saved pipeline and does not refit.
 
 The new tables and figures are reproduced with:
 
@@ -355,8 +421,74 @@ python -m src.work_centre_comparison
 python -m src.geographic_error_audit
 python -m src.per_class_curves
 python -m src.embedding_experiment
+python -m src.locked_test_comparison
 ```
+
+`python -m src.locked_test_comparison` reloads the saved embedding checkpoint, checks it on the 2025 validation period, scores the existing locked test once, and writes the Question 6.2 table. It also refits the dummy, the non-converged logistic regression, and the multilayer perceptron on the training period when their validation macro-F1 matches the saved value, and it writes the common ROC figure. It does not replace `results/tables/06_test_predictions.parquet` or `results/tables/06_frozen_decision.json`.
 
 The submission status of each item is `reports/submission_checklist.md`.
 
-Future work that would not reuse the locked test for tuning: record a stakeholder interview before any operational claim, calibrate the probabilities, and revisit work centre only if an assignment timestamp becomes available.
+Future work that would not reuse the locked test for tuning: calibrate the probabilities, and revisit work centre only if an assignment timestamp becomes available. A stakeholder interview is not a brief requirement. None was conducted. Any later operational claim would need one.
+
+## References
+
+University of South Africa (2026) *IDA117V project template, Semester 2 2026*. The copy read for this report is `reports/IDA117V_Project_Template.pdf`.
+
+City of Cape Town (2026) *Service Requests 2023 until 06 October 2026 (Deprecated)*. SAP C3 Notifications feature layer. City of Cape Town Open Data Portal. Available at: https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore (Accessed: 16 October 2026). Terms read the same day: https://www.capetown.gov.za/general/city-of-cape-town-open-data-terms-of-use/
+
+Republic of South Africa (2013) *Protection of Personal Information Act 4 of 2013*. Pretoria: Government Printer.
+
+Defazio, A., Bach, F. and Lacoste-Julien, S. (2014) ‘SAGA: a fast incremental gradient method with support for non-strongly convex composite objectives’, *Advances in Neural Information Processing Systems*, 27.
+
+Edwards, A.L. (1948) ‘Note on the “correction for continuity” in testing the significance of the difference between correlated proportions’, *Psychometrika*, 13(3), pp. 185–187.
+
+Fawcett, T. (2006) ‘An introduction to ROC analysis’, *Pattern Recognition Letters*, 27(8), pp. 861–874.
+
+Guo, C. and Berkhahn, F. (2016) ‘Entity embeddings of categorical variables’, *arXiv:1604.06737*. The embedding network uses one learned vector per training category. It is not a copy of that paper’s code.
+
+Harris, C.R. et al. (2020) ‘Array programming with NumPy’, *Nature*, 585, pp. 357–362. NumPy 2.5.4.
+
+Hunter, J.D. (2007) ‘Matplotlib: a 2D graphics environment’, *Computing in Science & Engineering*, 9(3), pp. 90–95. Matplotlib 3.11.2.
+
+Loshchilov, I. and Hutter, F. (2019) ‘Decoupled weight decay regularization’, *International Conference on Learning Representations*. The neural fits use `torch.optim.AdamW`.
+
+McKinney, W. (2010) ‘Data structures for statistical computing in Python’, *Proceedings of the 9th Python in Science Conference*, pp. 56–61. pandas 3.0.6.
+
+McNemar, Q. (1947) ‘Note on the sampling error of the difference between correlated proportions or percentages’, *Psychometrika*, 12(2), pp. 153–157.
+
+Paszke, A. et al. (2019) ‘PyTorch: an imperative style, high-performance deep learning library’, *Advances in Neural Information Processing Systems*, 32. The installed build is torch 2.14.1+cpu.
+
+Pedregosa, F. et al. (2011) ‘Scikit-learn: machine learning in Python’, *Journal of Machine Learning Research*, 12, pp. 2825–2830. scikit-learn 1.9.1 supplies the dummy classifier, the saga logistic regression, and histogram gradient boosting.
+
+Streamlit Inc. (2026) *Streamlit*. Version 1.66.0. Available at: https://streamlit.io (Accessed: 18 October 2026).
+
+Virtanen, P. et al. (2020) ‘SciPy 1.0: fundamental algorithms for scientific computing in Python’, *Nature Methods*, 17, pp. 261–272. SciPy 1.18.1 supplies `binomtest` and `chi2` for McNemar’s test.
+
+Waskom, M.L. (2021) ‘seaborn: statistical data visualization’, *Journal of Open Source Software*, 6(60), 3021. seaborn 0.13.2 is used for figure styling.
+
+Joblib 1.6.0 stores the encoder and the frozen pipeline. openpyxl 3.1.5 is the Excel reader named in `src/data_loader.py`. JupyterLab 4.6.4 executed the notebooks. No external code fragment was copied into `src/`.
+
+## AI-assistance disclosure
+
+The assignment brief says to label AI-assisted work according to institutional policy. The brief itself does not attach a module declaration form. UNISA’s academic-integrity material requires students to acknowledge AI tools. The Unisa Press *Ethical AI use guidelines* of 29 July 2025 apply to Unisa Press manuscripts. They are not a form found in this module, and this report does not treat them as a signed assignment declaration. No prompt log was stored in the repository, so this section does not reconstruct prompts it does not have.
+
+What the git history shows is this. On 15 October 2026, four commits by Thabang Mokoena added the initial repository, `README.md`, `LICENSE`, `.gitignore`, `src/.gitkeep`, and `requirements.txt`. The later commits that added the audit, the models, the notebooks, the tests, the tables, the figures, and this report are authored `Cursor Agent <cursoragent@cursor.com>`. Those commits were produced in Cursor cloud-agent sessions. The session that added this disclosure identifies its model as Grok 4.7. Earlier sessions are not given a model name here, because that name is not stored on the commits.
+
+The measured scores, contingency counts, and figures cited above were produced by the project code from the City extract. They were not typed in as invented results. The agents wrote and ran that code, drafted the report from the saved tables, and exported the PDF. Human authors remain responsible for the submission. This disclosure is not a signature, and it does not assign a mark.
+
+## Appendix A. Contribution statement
+
+The page the members sign is `reports/contribution_statement.md`. It is reproduced here so the PDF contains the same fields. The only human name in the git history is Thabang Mokoena, and that name is not written into a signature cell. No student number or signature has been supplied. The brief requires a one-page statement signed by all members. These empty signature cells mean that requirement is not met. The outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
+
+| Work that exists in the repository | Name | Student number | Signature | Date |
+| --- | --- | --- | --- | --- |
+| Data source, licence note, and raw-file audit. Notebooks 01 and 02. Data dictionary. |  |  |  |  |
+| Label rule, chronological split, and leakage-safe preprocessing. |  |  |  |  |
+| Most-frequent dummy and logistic regression, including the recorded non-convergence. |  |  |  |  |
+| Histogram gradient boosting, the training-fold search, and the frozen pipeline. |  |  |  |  |
+| Multilayer perceptron and the approved embedding network. |  |  |  |  |
+| Ablations, the historical perceptron McNemar table, and the Question 6.2 embedding comparison. |  |  |  |  |
+| Streamlit form, saved pipeline, and demonstration cases. |  |  |  |  |
+| Report, ROC figure, suburb and ward audit, and the check of the saved tables. |  |  |  |  |
+
+Each person signs only the rows they did. The locked-test scores were not used to choose the champion. The embedding-network test score is the Question 6.2 comparison only.

@@ -1,6 +1,6 @@
 # Team contribution template
 
-Fill this in with the people who did the work. Do not invent names, student numbers, or tasks. Leave a row blank if that role was not used.
+The signed page for this project is `reports/contribution_statement.md`. That page lists the work that is in the repository and leaves the name, student-number, and signature fields blank. This older role table is kept so a group can still record a role if it wants to. Do not invent names, student numbers, or tasks. Leave a row blank if that role was not used.
 
 | Name | Student number | Role | Notebooks or modules | Report sections | Review done for |
 | --- | --- | --- | --- | --- | --- |

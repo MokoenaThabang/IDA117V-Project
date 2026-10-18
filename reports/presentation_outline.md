@@ -1,6 +1,16 @@
 # Presentation outline
 
-About 11 minutes. Every figure below is a saved project output. Do not add a score that is not in `results/tables/08_model_metrics.csv` or the phase reports.
+## What the brief requires
+
+The only presentation text in this repository is `reports/IDA117V_Project_Template.pdf`. It says presentations run from 5 October to 17 October 2026. Question 8.3 asks for a concise team presentation and a live or recorded interface demonstration, a defence of the modelling choices, and a signed contribution statement. The suggested length is 10–12 minutes plus questions, and every member participates. No lecturer message in this repository changes that text. This outline was not confirmed with a lecturer, because no lecturer contact is recorded here.
+
+## Evidence that is not in the repository
+
+There is no slide file, no attendance record, no recording, and no defence mark. Today in this workspace is 18 October 2026, after the window printed in the brief. This outline is the speaking plan. It is not evidence that the presentation happened.
+
+## Speaking plan
+
+About 11 minutes, inside the brief’s 10–12 minute suggestion. Every figure below is a saved project output. Scores come from `results/tables/08_model_metrics.csv`, the phase reports, or `results/tables/13_roc_all_models_locked_test.csv` and `results/tables/13_question62_record.json`. The interface demonstration is `streamlit run app/app.py`, using the cases in `reports/demonstration_checklist.md`.
 
 ## 1. Problem (1 minute)
 
@@ -28,8 +38,8 @@ Eight random trials plus the untuned settings were scored inside 2023–2024 onl
 
 ## 7. Ablations and McNemar (1 minute 30 seconds)
 
-Removing suburb, ward, and subcouncil changes validation macro-F1 by −0.008. Turning class weights off changes it by −0.101, and Unresolved recall falls to 0.037. The Phase 6 work-centre row did not fit a second model. A later sensitivity fit did, on validation only, and did not replace the champion. On the same 422,033 test rows, McNemar's continuity-corrected chi-square is 160.6875, p = 8.006e-37. The paired error rates differ. The macro-F1 gap versus the multilayer perceptron is −0.001. The test does not show that one model is better on every class.
+Removing suburb, ward, and subcouncil changes validation macro-F1 by −0.008. Turning class weights off changes it by −0.101, and Unresolved recall falls to 0.037. The Phase 6 work-centre row did not fit a second model. A later sensitivity fit did, on validation only, and did not replace the champion. Question 6.2 compares the frozen champion with the embedding network on the same 422,033 test rows. The continuity-corrected chi-square is 616.8719, p = 3.582e-136. The champion is correct on 5,113 more discordant cases. The macro-F1 gap, champion minus embedding network, is −0.002, and the accuracy gap is +0.012. The test does not show that one model is better on every class, and the champion stays the frozen booster. The earlier perceptron comparison, statistic 160.6875, is a supplementary result.
 
 ## 8. App, ethics, and what is unfinished (1 minute)
 
-The Streamlit form loads the saved pipeline and does not train. The demonstration sample is not a real case. Suburb and ward error audits have been run: `results/tables/09_suburb_error_audit.csv` and `results/tables/09_ward_error_audit.csv`. Groups below 200 rows are not evidence of geographic bias. No stakeholder interview has been recorded. The embedding network is approved, lost on validation macro-F1, and has no locked-test score. End on the recommendation: a person reviews the estimate, and the estimate is not a reason to reduce service in an area.
+The Streamlit form loads the saved pipeline and does not train. The demonstration sample is not a real case. Suburb and ward error audits have been run: `results/tables/09_suburb_error_audit.csv` and `results/tables/09_ward_error_audit.csv`. Groups below 200 rows are not evidence of geographic bias. The embedding network is approved, lost on validation macro-F1, and its locked-test score is only the Question 6.2 comparison. Show the common ROC figure `results/figures/13_roc_all_models_locked_test.png` with the class-AUC table `results/tables/13_roc_all_models_locked_test.csv`. The brief does not require a stakeholder interview, and none was recorded. The outline is not an attendance record. End on the recommendation: a person reviews the estimate, and the estimate is not a reason to reduce service in an area.

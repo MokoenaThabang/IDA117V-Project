@@ -94,7 +94,7 @@ python -m src.data_loader
 
 Run them in this order, from the project folder, after the raw extract is in `data/raw/`. Each notebook finds the project root by looking for `src/config.py` in the working directory or a parent. Do not hardcode a machine path. Notebook 02 reads the labelled file from notebook 01 and does not train a model. Its written summary is [`reports/phase3_eda_findings.md`](reports/phase3_eda_findings.md). Notebook 03 fits a most-frequent dummy and a logistic regression on the training period only. Its written summary is [`reports/phase4_baselines.md`](reports/phase4_baselines.md). Notebooks 04 and 05 fit the traditional and neural models on those same partitions. Their written summary is [`reports/phase5_models.md`](reports/phase5_models.md). Notebook 05 chooses a provisional champion from validation macro-F1 and does not score the locked test. Notebooks 06 and 07 tune that champion on chronological folds inside the training period, score the locked test once, and then run the ablations and McNemar's test. Their written summary is [`reports/phase6_evaluation.md`](reports/phase6_evaluation.md). Notebook 08 checks the saved pipeline and does not fit a model.
 
-Notebook 06 records the comparator before the locked test is opened. Notebook 07 reads that record and does not choose a different model. The comparator is the approved model other than the champion with the highest validation macro-F1. Ties break on Unresolved recall, then Resolved Slow recall, then model name. The embedding network is excluded because it is not scored on the locked test. To check the saved comparison without refitting, run `python -m src.model_comparison`. It writes `results/tables/07_comparison_record.json`.
+Notebook 06 records a historical comparator before the locked test is opened. That recorded field is the multilayer perceptron, because the selector used for the frozen decision excluded the embedding network. Question 6.2 uses a separate comparison. The strongest approved model other than the champion, by Phase 5 validation macro-F1, is the embedding network. `python -m src.locked_test_comparison` loads the saved checkpoint, checks the 2025 validation macro-F1, scores the existing locked test once, and writes `results/tables/13_question62_record.json`. It does not change the champion. The earlier perceptron table remains `results/tables/07_mcnemar_test.csv`. `python -m src.model_comparison` still checks that historical record.
 
 Notebooks 01 to 07 already contain executed outputs. They were not run again from an empty environment while the Phase 8 draft was written. Notebook 08 was executed.
 
@@ -104,7 +104,7 @@ Notebooks 01 to 07 already contain executed outputs. They were not run again fro
 | 2 | `notebooks/02_exploratory_data_analysis.ipynb` | EDA and required figures | Created |
 | 3 | `notebooks/03_preprocessing_and_baselines.ipynb` | Leakage-safe features, dummy and logistic baselines | Created |
 | 4 | `notebooks/04_traditional_machine_learning.ipynb` | Logistic regression and histogram gradient boosting | Created |
-| 5 | `notebooks/05_neural_networks.ipynb` | Multilayer perceptron and the approved embedding network. The embedding network does not win on validation macro-F1 and has no locked-test score. | Created |
+| 5 | `notebooks/05_neural_networks.ipynb` | Multilayer perceptron and the approved embedding network. The embedding network does not win on validation macro-F1. Its locked-test score is the Question 6.2 comparison only. | Created |
 | 6 | `notebooks/06_evaluation_and_optimisation.ipynb` | Champion tuning and one locked-test evaluation | Created |
 | 7 | `notebooks/07_ablation_and_statistical_testing.ipynb` | Ablations and McNemar's test | Created |
 | 8 | `notebooks/08_final_model_export.ipynb` | Check the saved pipeline. It does not refit. | Created |
@@ -155,9 +155,11 @@ That command needs `data/processed/service_requests_labelled.parquet`. The app i
 | [`reports/final_report.md`](reports/final_report.md) | Report source. The PDF is `reports/final_report.pdf`, written by `python scripts/export_report_pdf.py`. |
 | [`reports/experiment_log.md`](reports/experiment_log.md) | Experiments that were run, and experiments that were not. |
 | [`results/tables/08_model_metrics.csv`](results/tables/08_model_metrics.csv) | Model metrics copied from the phase tables. |
-| [`results/tables/07_paired_predictions.parquet`](results/tables/07_paired_predictions.parquet) | Paired locked-test predictions for McNemar's test. No notification ids. |
+| [`results/tables/07_paired_predictions.parquet`](results/tables/07_paired_predictions.parquet) | Historical paired locked-test predictions for the perceptron comparison. No notification ids. |
+| [`results/tables/13_question62_record.json`](results/tables/13_question62_record.json) | Question 6.2 McNemar record: frozen champion against the embedding network. |
 | [`reports/demonstration_checklist.md`](reports/demonstration_checklist.md) | Demonstration cases run on the saved pipeline. |
 | [`reports/presentation_outline.md`](reports/presentation_outline.md) | 11-minute presentation outline. |
-| [`reports/team_contribution_template.md`](reports/team_contribution_template.md) | Blank contribution table. Fill it with the people who did the work. |
+| [`reports/contribution_statement.md`](reports/contribution_statement.md) | Contribution statement. Work rows are filled from the repository. Signature fields are blank. |
+| [`reports/team_contribution_template.md`](reports/team_contribution_template.md) | Earlier blank role table. Use the contribution statement for the signed page. |
 
 Plots and confusion matrices are in `results/figures/`. The City extract stays in `data/raw/` and `data/processed/`, which are gitignored. Do not commit those files or a file that contains notification ids, coordinates, or personal contact details. The published layer does not include a name, phone number, email address, or street address.

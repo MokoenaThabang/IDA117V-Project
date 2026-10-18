@@ -1,0 +1,16 @@
+model,label,support,roc_auc,curve_defined,macro_roc_auc,micro_roc_auc,evaluation_set
+Histogram gradient boosting,Resolved Fast,287131,0.7634266778117105,True,0.7241433691367188,0.7888473588632676,locked test
+Histogram gradient boosting,Resolved Slow,65522,0.6127943144049921,True,0.7241433691367188,0.7888473588632676,locked test
+Histogram gradient boosting,Unresolved,69380,0.7962091151934538,True,0.7241433691367188,0.7888473588632676,locked test
+Embedding network,Resolved Fast,287131,0.7639715013759711,True,0.7273737034487041,0.7877773045157068,locked test
+Embedding network,Resolved Slow,65522,0.6148716482486123,True,0.7273737034487041,0.7877773045157068,locked test
+Embedding network,Unresolved,69380,0.8032779607215286,True,0.7273737034487041,0.7877773045157068,locked test
+Most-frequent dummy,Resolved Fast,287131,0.5,True,0.5,0.76026400779086,locked test
+Most-frequent dummy,Resolved Slow,65522,0.5,True,0.5,0.76026400779086,locked test
+Most-frequent dummy,Unresolved,69380,0.5,True,0.5,0.76026400779086,locked test
+Logistic regression,Resolved Fast,287131,0.7633543999285958,True,0.7209304038259057,0.7855350506296028,locked test
+Logistic regression,Resolved Slow,65522,0.6083518727242925,True,0.7209304038259057,0.7855350506296028,locked test
+Logistic regression,Unresolved,69380,0.7910849388248287,True,0.7209304038259057,0.7855350506296028,locked test
+Multilayer perceptron,Resolved Fast,287131,0.7725680745643428,True,0.7309327792770434,0.7996019951060497,locked test
+Multilayer perceptron,Resolved Slow,65522,0.6242010918661345,True,0.7309327792770434,0.7996019951060497,locked test
+Multilayer perceptron,Unresolved,69380,0.7960291714006529,True,0.7309327792770434,0.7996019951060497,locked test
