@@ -30,6 +30,8 @@ The frozen parameters were not changed after these test metrics were computed.
 
 ## McNemar
 
+This section is the historical supplementary comparison with the multilayer perceptron. Question 6.2 uses the approved embedding network and is recorded in `results/tables/13_question62_record.json`.
+
 Comparator: multilayer_perceptron. Both correct 233,776. Champion only 19,282. Comparator only 21,854. Both wrong 147,121.
 
 Method: chi-square with continuity correction. Statistic: 160.6875. p-value: 8.006e-37. Threshold: 0.05. Conclusion: The paired error rates differ at the 0.05 threshold. This does not show that one model is better on every class.

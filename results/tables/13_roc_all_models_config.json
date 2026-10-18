@@ -1,0 +1,19 @@
+{
+  "champion_unchanged": true,
+  "class_auc_in_table": true,
+  "curve": "macro average of the three one-vs-rest ROC curves",
+  "evaluation_set": "locked test",
+  "figure": "results/figures/13_roc_all_models_locked_test.png",
+  "micro_auc_in_table": true,
+  "models": [
+    "Histogram gradient boosting",
+    "Embedding network",
+    "Most-frequent dummy",
+    "Logistic regression",
+    "Multilayer perceptron"
+  ],
+  "probabilities_fabricated": false,
+  "skipped": {},
+  "split_id": "chronological|train_end=2024-12-31|validation_end=2025-12-31|test_end=2026-04-30|seed=42",
+  "table": "results/tables/13_roc_all_models_locked_test.csv"
+}
