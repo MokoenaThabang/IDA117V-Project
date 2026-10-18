@@ -146,13 +146,14 @@ Phase 5 validation comparison, approved models only:
 | Model | Accuracy | Macro-F1 | Weighted-F1 | Slow recall | Unresolved recall | ROC-AUC | PR-AUC |
 | --- | --- | --- | --- | --- | --- | --- | --- |
 | Histogram gradient boosting | 0.591 | 0.482 | 0.640 | 0.416 | 0.492 | 0.739 | 0.506 |
+| Embedding network | 0.592 | 0.481 | 0.642 | 0.435 | 0.462 | 0.741 | 0.513 |
 | Multilayer perceptron | 0.601 | 0.476 | 0.647 | 0.452 | 0.394 | 0.739 | 0.508 |
 | Logistic regression | 0.578 | 0.460 | 0.630 | 0.460 | 0.367 | 0.729 | 0.496 |
 | Most-frequent dummy | 0.693 | 0.273 | 0.567 | 0.000 | 0.000 | not computed | not computed |
 
 ![Validation comparison](../results/figures/05_validation_comparison.png)
 
-The dummy has the highest accuracy and the lowest macro-F1. Logistic regression has the highest approved Resolved Slow recall. Boosting has the highest approved macro-F1 and the highest approved Unresolved recall.
+The dummy has the highest accuracy and the lowest macro-F1. It is the naïve baseline and is not one of the four substantive models. Logistic regression has the highest Resolved Slow recall. Boosting has the highest macro-F1 and the highest Unresolved recall. The approved embedding network is second on macro-F1, at 0.481.
 
 The locked test was scored for the dummy and logistic regression in notebook 03. It was not scored in Phase 5. It was scored once more, after the Phase 6 freeze, for the frozen booster and for the multilayer perceptron. Those later scores are in section 10. Confusion matrices for the Phase 5 validation fits are in `results/figures/05_confusion_*_validation.png`.
 
@@ -165,7 +166,7 @@ Training macro-F1 is higher than validation macro-F1 for every fitted model in P
 | Histogram gradient boosting | 0.573 | 0.482 | +0.091 |
 | Multilayer perceptron | 0.633 | 0.476 | +0.156 |
 | Logistic regression | 0.578 | 0.460 | +0.118 |
-| Embedding network, pending approval | 0.586 | 0.481 | +0.105 |
+| Embedding network | 0.586 | 0.481 | +0.105 |
 
 The perceptron gap is the largest. Its validation loss rose while training loss fell, which is the overfitting pattern the early-stopping rule was there to limit. The restored epoch is the one with the highest validation macro-F1, not the last epoch.
 
@@ -181,7 +182,7 @@ The saved checkpoint `models/embedding_network.pt`, with the training-only encod
 
 ![Approved embedding learning curves](../results/figures/10_embedding_learning_curves.png)
 
-The repository has no separate marking brief that requires a hyperparameter search for logistic regression, the multilayer perceptron, or the embedding network. Those models keep the settings fixed before they were fit. Phase 6 tunes only the boosting family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from `ParameterSampler` with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:
+The assignment brief, `reports/IDA117V_Project_Template.pdf`, says to optimise only the strongest validation model. That model is histogram gradient boosting. Logistic regression, the multilayer perceptron, and the embedding network keep the settings fixed before they were fit. Phase 6 tunes only the boosting family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from `ParameterSampler` with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:
 
 - train through 30 June 2023, score the rest of 2023
 - train through 31 December 2023, score the first half of 2024

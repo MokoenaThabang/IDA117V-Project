@@ -193,6 +193,16 @@ pre { white-space: pre-wrap; }
 <td>0.506</td>
 </tr>
 <tr>
+<td>Embedding network</td>
+<td>0.592</td>
+<td>0.481</td>
+<td>0.642</td>
+<td>0.435</td>
+<td>0.462</td>
+<td>0.741</td>
+<td>0.513</td>
+</tr>
+<tr>
 <td>Multilayer perceptron</td>
 <td>0.601</td>
 <td>0.476</td>
@@ -225,7 +235,7 @@ pre { white-space: pre-wrap; }
 </tbody>
 </table>
 <p><img alt="Validation comparison" src="../results/figures/05_validation_comparison.png" /></p>
-<p>The dummy has the highest accuracy and the lowest macro-F1. Logistic regression has the highest approved Resolved Slow recall. Boosting has the highest approved macro-F1 and the highest approved Unresolved recall.</p>
+<p>The dummy has the highest accuracy and the lowest macro-F1. It is the naïve baseline and is not one of the four substantive models. Logistic regression has the highest Resolved Slow recall. Boosting has the highest macro-F1 and the highest Unresolved recall. The approved embedding network is second on macro-F1, at 0.481.</p>
 <p>The locked test was scored for the dummy and logistic regression in notebook 03. It was not scored in Phase 5. It was scored once more, after the Phase 6 freeze, for the frozen booster and for the multilayer perceptron. Those later scores are in section 10. Confusion matrices for the Phase 5 validation fits are in <code>results/figures/05_confusion_*_validation.png</code>.</p>
 <h2>9. Overfitting diagnosis and controls</h2>
 <p>Training macro-F1 is higher than validation macro-F1 for every fitted model in Phase 5.</p>
@@ -258,7 +268,7 @@ pre { white-space: pre-wrap; }
 <td>+0.118</td>
 </tr>
 <tr>
-<td>Embedding network, pending approval</td>
+<td>Embedding network</td>
 <td>0.586</td>
 <td>0.481</td>
 <td>+0.105</td>
@@ -272,7 +282,7 @@ pre { white-space: pre-wrap; }
 <p>The Phase 5 provisional champion is histogram gradient boosting, because its validation macro-F1 is the highest among approved models. Lecturer approval of the embedding network has been recorded, so that model is now included. Its validation macro-F1 is 0.481, below histogram gradient boosting at 0.482. The locked test was not an input. The frozen boosting pipeline stays the delivered champion.</p>
 <p>The saved checkpoint <code>models/embedding_network.pt</code>, with the training-only encoder <code>models/embedding_encoder.joblib</code>, was fit with the same architecture, seed, and split. It reproduced the recorded validation macro-F1 of 0.480687 and the same per-class precision, recall, and F1. On the 2025 validation period those class scores are Resolved Fast 0.882 / 0.654 / 0.751, Resolved Slow 0.145 / 0.435 / 0.217, and Unresolved 0.485 / 0.462 / 0.474. Training macro-F1 is 0.586. Training loss fell and validation loss rose, which is why early stopping restored epoch 4 of 7. That saved fit is the same result, not a second vote. The frozen boosting validation macro-F1 is 0.477. The family comparison uses the Phase 5 boosting score of 0.482, which remains higher, so the frozen pipeline is not replaced.</p>
 <p><img alt="Approved embedding learning curves" src="../results/figures/10_embedding_learning_curves.png" /></p>
-<p>The repository has no separate marking brief that requires a hyperparameter search for logistic regression, the multilayer perceptron, or the embedding network. Those models keep the settings fixed before they were fit. Phase 6 tunes only the boosting family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from <code>ParameterSampler</code> with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:</p>
+<p>The assignment brief, <code>reports/IDA117V_Project_Template.pdf</code>, says to optimise only the strongest validation model. That model is histogram gradient boosting. Logistic regression, the multilayer perceptron, and the embedding network keep the settings fixed before they were fit. Phase 6 tunes only the boosting family. The search space is learning rate {0.05, 0.1, 0.2}, maximum leaves {15, 31, 63}, minimum samples per leaf {50, 200, 500}, and L2 {0.1, 1.0, 10.0}. Eight draws come from <code>ParameterSampler</code> with seed 42. Trial 0 is the untuned Phase 5 setting. Each trial is scored on three expanding folds inside the training period:</p>
 <ul>
 <li>train through 30 June 2023, score the rest of 2023</li>
 <li>train through 31 December 2023, score the first half of 2024</li>
