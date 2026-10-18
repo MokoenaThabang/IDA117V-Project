@@ -53,7 +53,7 @@ This log lists the experiments that were actually run and the files that hold th
 - SMOTE was not used.
 - A dense random forest was not fit. The one-hot matrix is too large for a dense forest in this environment.
 - No stakeholder interview or City review was run.
-- Notebooks 01 to 06 were executed again in an isolated results directory. Metric tables matched the saved scores. Fit times differed. Notebook 07 stopped before McNemar's test because a fresh notebook 06 names the approved embedding network as the comparator, and notebook 07 refuses to score any comparator other than the multilayer perceptron. The original locked-test files were not replaced. The log is `evidence/reproducibility/notebooks/execution_log.txt`.
+- Notebooks 01 to 06 were executed again in an isolated results directory. Metric tables matched the saved scores. Fit times differed. That rerun named the embedding network as the comparator because the approval label had changed and the selector did not yet apply the locked-test exclusion. The saved McNemar files were not replaced. The comparator rule now excludes the embedding network, and notebook 07 reads the comparator recorded by notebook 06. The log of the earlier isolated run is `evidence/reproducibility/notebooks/execution_log.txt`.
 
 ## Champion rule
 

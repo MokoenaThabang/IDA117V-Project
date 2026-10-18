@@ -288,27 +288,128 @@ def choose_final_candidate(untuned_validation_macro_f1: float, tuned_validation_
     return "untuned"
 
 
-def strongest_approved_comparator(comparison: pd.DataFrame, champion: str = PROVISIONAL_CHAMPION) -> pd.Series:
+COMPARATOR_RULE = (
+    "Highest validation macro-F1 among approved models other than the champion. "
+    "Ties break on Unresolved recall, then Resolved Slow recall, then model name. "
+    "Pending models are excluded. "
+    "The embedding network is excluded because it is not scored on the locked test: "
+    "it was not selected as champion, and the comparator is scored once on that test. "
+    "The locked test is not an input to this choice."
+)
+
+
+def chronological_split_id() -> str:
+    """Identifier for the pre-specified chronological split. It is not a score."""
+    from src.preprocessing import MATURE_END, TRAIN_END, VALIDATION_END
+
+    return (
+        f"chronological|train_end={pd.Timestamp(TRAIN_END).date()}"
+        f"|validation_end={pd.Timestamp(VALIDATION_END).date()}"
+        f"|test_end={pd.Timestamp(MATURE_END).date()}|seed={RANDOM_SEED}"
+    )
+
+
+def _validation_rows(comparison: pd.DataFrame) -> pd.DataFrame:
+    if "split" not in comparison.columns:
+        return comparison.copy()
+    rows = comparison.loc[comparison["split"].eq("validation")].copy()
+    if rows.empty:
+        raise ValueError("The comparison table has no validation rows.")
+    return rows
+
+
+def strongest_approved_comparator(
+    comparison: pd.DataFrame,
+    champion: str = PROVISIONAL_CHAMPION,
+    excluded: tuple[str, ...] | list[str] | None = None,
+) -> pd.Series:
     """Highest validation macro-F1 among approved models other than the champion.
 
-    Pending-approval models are excluded. This uses the Phase 5 validation
-    table and does not read the locked test.
+    Pending-approval models are excluded. ``excluded`` defaults to the models
+    barred from the locked test. The sort is mergesort, so equal keys keep
+    their existing order before the explicit tie-break columns. This function
+    does not read the locked test.
     """
     required = {"model", "approval", "macro_f1"}
-    missing = required - set(comparison.columns)
+    table = _validation_rows(comparison)
+    missing = required - set(table.columns)
     if missing:
         raise ValueError("Comparator table is missing columns: " + ", ".join(sorted(missing)) + ".")
-    rows = comparison.loc[
-        comparison["approval"].eq("approved") & ~comparison["model"].eq(champion)
+    barred = COMPARATOR_EXCLUSIONS if excluded is None else tuple(excluded)
+    rows = table.loc[
+        table["approval"].eq("approved")
+        & ~table["model"].eq(champion)
+        & ~table["model"].isin(barred)
     ].copy()
     if rows.empty:
         raise ValueError("No approved comparator is available.")
-    ranked = rows.sort_values(
-        ["macro_f1", "model"],
-        ascending=[False, True],
-        kind="mergesort",
-    )
+    sort_columns = ["macro_f1"]
+    ascending = [False]
+    for column in ("recall_unresolved", "recall_resolved_slow"):
+        if column in rows.columns:
+            sort_columns.append(column)
+            ascending.append(False)
+    sort_columns.append("model")
+    ascending.append(True)
+    ranked = rows.sort_values(sort_columns, ascending=ascending, kind="mergesort")
     return ranked.iloc[0]
+
+
+def comparison_record(
+    comparison: pd.DataFrame,
+    champion: str = PROVISIONAL_CHAMPION,
+) -> dict:
+    """Record the champion and comparator chosen from the validation table."""
+    table = _validation_rows(comparison)
+    champion_rows = table.loc[table["model"].eq(champion) & table["approval"].eq("approved")]
+    if champion_rows.empty:
+        raise ValueError(f"The validation table has no approved row for {champion}.")
+    chosen = strongest_approved_comparator(table, champion=champion)
+    return {
+        "split_id": chronological_split_id(),
+        "champion": champion,
+        "champion_validation_macro_f1": float(champion_rows.iloc[0]["macro_f1"]),
+        "comparator": str(chosen["model"]),
+        "comparator_validation_macro_f1": float(chosen["macro_f1"]),
+        "comparator_rule": COMPARATOR_RULE,
+        "excluded_from_comparator": list(COMPARATOR_EXCLUSIONS),
+        "exclusion_reason": (
+            "embedding_network is not scored on the locked test because it was not "
+            "selected as champion. The comparator is scored once, so a barred model "
+            "cannot be the comparator."
+        ),
+        "tie_break": ["macro_f1", "recall_unresolved", "recall_resolved_slow", "model"],
+        "locked_test_used_for_selection": False,
+    }
+
+
+def assert_recorded_comparator(frozen: dict, comparison: pd.DataFrame) -> dict:
+    """Require notebook 07 to use the comparator recorded by notebook 06."""
+    if "comparator" not in frozen:
+        raise ValueError("The frozen decision does not name a comparator.")
+    record = comparison_record(comparison, champion=str(frozen.get("champion_family", PROVISIONAL_CHAMPION)))
+    if str(frozen["comparator"]) != record["comparator"]:
+        raise ValueError(
+            "The frozen decision and the comparator rule name different models. "
+            f"Recorded: {frozen['comparator']}. Rule: {record['comparator']}."
+        )
+    recorded_score = frozen.get("comparator_phase5_validation_macro_f1")
+    if recorded_score is not None:
+        gap = abs(float(recorded_score) - record["comparator_validation_macro_f1"])
+        if gap > 1e-12:
+            raise ValueError(
+                "The recorded comparator validation macro-F1 does not match the Phase 5 table. "
+                f"Recorded: {recorded_score}. Table: {record['comparator_validation_macro_f1']}."
+            )
+    recorded_split = frozen.get("split_id")
+    if recorded_split not in (None, record["split_id"]):
+        raise ValueError(
+            "The frozen split identifier does not match the project split. "
+            f"Recorded: {recorded_split}. Project: {record['split_id']}."
+        )
+    if str(frozen.get("champion_family", record["champion"])) != record["champion"]:
+        raise ValueError("The frozen champion family does not match the comparison record.")
+    return record
 
 
 def fit_frozen_boosting(

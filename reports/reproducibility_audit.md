@@ -8,7 +8,7 @@ Checked on 18 October 2026. This audit does not say the assignment is complete. 
 
 The saved checkpoint and the retrain both matched `results/tables/10_embedding_metrics.csv` and `results/tables/10_embedding_history.csv`. The largest absolute gap was about 1e-16, which is floating-point noise. Validation macro-F1 remained 0.480687. The champion stayed histogram gradient boosting. The record is `results/tables/12_embedding_reproduction.json`.
 
-The corrected learning curve is `results/figures/10_embedding_learning_curves.png`. Its title is "Approved embedding network". The older file `results/figures/05_embedding_learning_curves.png` still has the title "Embedding network (pending lecturer approval)". It is kept because it is the original notebook figure. The final report, the presentation materials, and the README do not use it as the current curve. Notebook 05 still names the old filename in the cell that would write it on a future run.
+The corrected learning curve is `results/figures/10_embedding_learning_curves.png`. Its title is "Approved embedding network". `results/figures/05_embedding_learning_curves.png` was redrawn from the same saved history, so it no longer carries the pending title. The final report uses the corrected figure.
 
 ## Logistic regression
 
@@ -27,7 +27,7 @@ The earlier max_iter 1000 fit also warned and scored 0.453. It was not adopted. 
 
 ## Old learning-curve figure
 
-References to `results/figures/05_embedding_learning_curves.png` remain in `notebooks/05_neural_networks.ipynb`, where that cell writes the notebook's own figure, and in `reports/final_report.md`, which says the old file is kept for traceability. The figure displayed in the report is `results/figures/10_embedding_learning_curves.png`. No README or presentation slide uses the old file as the current result.
+`results/figures/05_embedding_learning_curves.png` was redrawn from `results/tables/10_embedding_history.csv` with the title "Approved embedding network". Notebook 05 still writes that filename on a future run. The figure displayed in the final report is `results/figures/10_embedding_learning_curves.png`.
 
 ## Notebooks 01 to 07
 
@@ -79,12 +79,14 @@ python scripts/export_report_pdf.py
 python -m pytest tests -q
 ```
 
-`python -m src.embedding_experiment` does not replace an existing checkpoint. The notebook command writes only under `evidence/reproducibility/notebooks/`. Notebook 07 stops when the frozen comparator is not the multilayer perceptron.
+`python -m src.embedding_experiment` does not replace an existing checkpoint. The notebook command writes only under `evidence/reproducibility/notebooks/`. `python -m src.model_comparison` checks the saved champion and comparator predictions and writes `results/tables/07_comparison_record.json`. It does not refit either model.
+
+## Comparator
+
+A clean rerun of notebook 06 previously named the embedding network because that model is now approved and the old selector took the highest approved validation macro-F1 other than the champion. Notebook 07 then stopped, because it required the multilayer perceptron. The saved predictions were already aligned on `source_index` and were not the cause. The comparator rule now uses the same tie-break as the champion and excludes the embedding network, because that network is not scored on the locked test. Notebook 07 reads the frozen decision and stops if that name disagrees with the rule. The saved McNemar comparison remains the multilayer perceptron comparison.
 
 ## Unresolved
 
 - No stakeholder interview.
 - Logistic regression still does not converge at the reported settings or at the checked variants. The 200-iteration intercept model remains the reported baseline.
-- The embedding network has no locked-test score.
-- A clean rerun of notebook 06 changes the named comparator from the multilayer perceptron to the embedding network. Notebook 07 then stops. The saved McNemar result is the original perceptron comparison.
-- `results/figures/05_embedding_learning_curves.png` still shows the old pending title.
+- The embedding network has no locked-test score because it was not selected as champion.

@@ -49,5 +49,11 @@
   "tuned_trial": 5,
   "tuned_validation_macro_f1": 0.46992097415081197,
   "untuned_training_fold_mean_macro_f1": 0.540287849188581,
-  "untuned_validation_macro_f1": 0.4765377211093145
+  "untuned_validation_macro_f1": 0.4765377211093145,
+  "comparator_rule": "Highest validation macro-F1 among approved models other than the champion. Ties break on Unresolved recall, then Resolved Slow recall, then model name. Pending models are excluded. The embedding network is excluded because it is not scored on the locked test: it was not selected as champion, and the comparator is scored once on that test. The locked test is not an input to this choice.",
+  "excluded_from_comparator": [
+    "embedding_network"
+  ],
+  "split_id": "chronological|train_end=2024-12-31|validation_end=2025-12-31|test_end=2026-04-30|seed=42",
+  "locked_test_used_for_selection": false
 }
