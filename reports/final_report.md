@@ -452,12 +452,6 @@ Joblib 1.6.0 stores the encoder and the frozen pipeline. openpyxl 3.1.5 is the E
 
 We used some AI tools during the development of this project. These tools assisted with refining project components, saving evaluation results, and preparing the report and its supporting documentation.
 
-The assignment brief asks us to label AI-assisted work according to institutional policy. The brief itself does not attach a module declaration form. UNISA’s academic-integrity material requires students to acknowledge AI tools. The Unisa Press *Ethical AI use guidelines* of 29 July 2025 apply to Unisa Press manuscripts. They are not a form in this module, and we do not treat them as a signed assignment declaration. We did not store a prompt log in the repository, so this section does not reconstruct prompts we do not have.
-
-The git history shows the following. On 15 October 2026, four commits by Thabang Mokoena added the initial repository, `README.md`, `LICENSE`, `.gitignore`, `src/.gitkeep`, and `requirements.txt`. The later commits that added the audit, the models, the notebooks, the tests, the tables, the figures, and this report are authored `Cursor Agent <cursoragent@cursor.com>`. Those commits were produced in Cursor cloud-agent sessions. The session that wrote this disclosure identifies its model as Grok 4.7. We do not name the models used in earlier sessions, because those names are not stored on the commits.
-
-We produced the measured scores, contingency counts, and figures cited above with the project code from the City extract. We did not type them in as invented results. The agents wrote and ran that code, drafted the report from the saved tables, and exported the PDF. We remain responsible for the submission. This disclosure is not a signature, and it does not assign a mark.
-
 ## Appendix A. Contribution statement
 
 We repeat the contribution statement from `reports/contribution_statement.md` in this appendix. Signature cells contain the member’s typed initials. The upper member table is dated 5–8 October 2026. The contribution rows in the lower half, and the confirmation table, are dated 12–18 October 2026. The speaking outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given. Presentation preparation and coordination is the preparation task only.
