@@ -160,6 +160,19 @@ The repository can be connected to a Render web service. This repository change 
 - `.streamlit/config.toml` turns off the browser launch and the file watcher, and listens on `0.0.0.0`. The start command supplies Render's `PORT`.
 - The only model file the process loads is `models/frozen_resolution_pipeline.joblib`. Its path is resolved from the repository root. Startup does not train, does not execute a notebook, and does not read `data/raw/` or `data/processed/`.
 
+## Team
+
+The members named for this submission are listed below. The list is not a signed division of work. Signature and date fields are in `reports/contribution_statement.md`, and they are blank. Group number, lecturer, and submission date are not recorded.
+
+| Name | Initials | Student number | Email |
+| --- | --- | --- | --- |
+| Mpumelelo Ngozo | MSP | 218409202 | 218409202@tut4life.ac.za |
+| Selowa Tumiso | TS | 218340172 | 218340172@tut4life.ac.za |
+| Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za |
+| Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za |
+
+Git records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, this README’s first version, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. That record does not assign the modelling, the report, or the interface, and it does not describe work by the other three members. Contribution categories remain “To be confirmed by the team”.
+
 ## Deliverables
 
 | File | What it holds |
@@ -171,7 +184,7 @@ The repository can be connected to a Render web service. This repository change 
 | [`results/tables/13_question62_record.json`](results/tables/13_question62_record.json) | Question 6.2 McNemar record: frozen champion against the embedding network. |
 | [`reports/demonstration_checklist.md`](reports/demonstration_checklist.md) | Demonstration cases run on the saved pipeline. |
 | [`reports/presentation_outline.md`](reports/presentation_outline.md) | 11-minute presentation outline. |
-| [`reports/contribution_statement.md`](reports/contribution_statement.md) | Contribution statement. Work rows are filled from the repository. Signature fields are blank. |
+| [`reports/contribution_statement.md`](reports/contribution_statement.md) | Contribution statement. The four members are named. Contribution categories are “To be confirmed by the team”. Signature and date fields are blank. |
 | [`reports/team_contribution_template.md`](reports/team_contribution_template.md) | Earlier blank role table. Use the contribution statement for the signed page. |
 
 Plots and confusion matrices are in `results/figures/`. The City extract stays in `data/raw/` and `data/processed/`, which are gitignored. Do not commit those files or a file that contains notification ids, coordinates, or personal contact details. The published layer does not include a name, phone number, email address, or street address.
