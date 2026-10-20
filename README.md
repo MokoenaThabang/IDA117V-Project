@@ -162,7 +162,7 @@ The repository can be connected to a Render web service. This repository change 
 
 ## Team
 
-The members named for this submission are listed below. The list is not a signed division of work. Signature and date fields are in `reports/contribution_statement.md`, and they are blank. Group number, lecturer, and submission date are not recorded.
+The members named for this submission are listed below. The division of work, typed initials, and dates are in `reports/contribution_statement.md`. Group number, lecturer, and submission date are not recorded.
 
 | Name | Initials | Student number | Email |
 | --- | --- | --- | --- |
@@ -171,7 +171,7 @@ The members named for this submission are listed below. The list is not a signed
 | Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za |
 | Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za |
 
-Git records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, this README’s first version, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. That record does not assign the modelling, the report, or the interface, and it does not describe work by the other three members. Contribution categories remain “To be confirmed by the team”.
+Git records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, this README’s first version, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. The contribution statement records the division the team supplied: Thabang Mokoena for problem definition, exploratory analysis, and the Streamlit interface; Mpumelelo Ngozo for the data audit and model development; Selowa Tumiso for preprocessing and the statistical comparisons; Ualwela Netshidzati for the technical report and presentation preparation.
 
 ## Deliverables
 
@@ -184,7 +184,7 @@ Git records four commits on 15 October 2026 by Thabang Mokoena: the initial repo
 | [`results/tables/13_question62_record.json`](results/tables/13_question62_record.json) | Question 6.2 McNemar record: frozen champion against the embedding network. |
 | [`reports/demonstration_checklist.md`](reports/demonstration_checklist.md) | Demonstration cases run on the saved pipeline. |
 | [`reports/presentation_outline.md`](reports/presentation_outline.md) | 11-minute presentation outline. |
-| [`reports/contribution_statement.md`](reports/contribution_statement.md) | Contribution statement. The four members are named. Contribution categories are “To be confirmed by the team”. Signature and date fields are blank. |
-| [`reports/team_contribution_template.md`](reports/team_contribution_template.md) | Earlier blank role table. Use the contribution statement for the signed page. |
+| [`reports/contribution_statement.md`](reports/contribution_statement.md) | Contribution statement. Each category names one member. Signature cells contain that member’s initials, with one date per member. |
+| [`reports/team_contribution_template.md`](reports/team_contribution_template.md) | Role table using the same division. Use the contribution statement for the signed page. |
 
 Plots and confusion matrices are in `results/figures/`. The City extract stays in `data/raw/` and `data/processed/`, which are gitignored. Do not commit those files or a file that contains notification ids, coordinates, or personal contact details. The published layer does not include a name, phone number, email address, or street address.

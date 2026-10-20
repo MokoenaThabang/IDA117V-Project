@@ -44,7 +44,7 @@ This note does not say the submission is complete.
 ## Still required before the brief can be treated as met
 
 1. The group number, the lecturer, and the submission date. The cover now lists Mpumelelo Ngozo (MSP, 218409202, 218409202@tut4life.ac.za), Selowa Tumiso (TS, 218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (U, 220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (TG, 240668823, 240668823@tut4life.ac.za). Those three administrative fields were not supplied.
-2. Signatures and dates on `reports/contribution_statement.md`. The brief requires them. The cells are empty because none were supplied. Contribution categories are “To be confirmed by the team”. This file is not a signed declaration.
+2. The contribution statement now names an owner, initials, and a date for each category. Group number, lecturer, and submission date are still not recorded.
 3. Evidence that the presentation was given and that a defence took place. The brief’s window is 5–17 October 2026. The outline exists. Attendance does not.
 4. A compute-environment description is still thin, and random cross-validation means are not shown for every model. The chronological split is the design that was used.
 

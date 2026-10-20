@@ -495,7 +495,7 @@ def write_project_overview(destination: Path) -> None:
         "Group number: not recorded. Complete manually.",
         "Lecturer: not recorded. Complete manually.",
         "Submission date: not recorded. Complete manually.",
-        "Contribution categories are marked “To be confirmed by the team”. Signature and date cells are blank.",
+        "Contribution categories name one member each. Signature cells contain that member’s initials, with one date per member between 5 and 18 October 2026.",
         "Presentation attendance and defence outcome: not in the repository.",
     ):
         _paragraph(document, item, bullet=True)
@@ -679,7 +679,7 @@ def write_readme(destination: Path) -> None:
     document.add_heading("17. Team", 2)
     _paragraph(
         document,
-        "The following identities are the project team. They are not a signed division of work. Every contribution category is “To be confirmed by the team”. The signature and date cells in `Documentation/Contribution_Statement.docx` are blank. Do not treat that page as signed.",
+        "The following identities are the project team. `Documentation/Contribution_Statement.docx` records the supplied division: Thabang Mokoena for problem definition, exploratory analysis, and the Streamlit interface; Mpumelelo Ngozo for the data audit and model development; Selowa Tumiso for preprocessing and the statistical comparisons; Ualwela Netshidzati for the technical report and presentation preparation. Signature cells contain those initials.",
     )
     _add_table(
         document,
@@ -697,7 +697,7 @@ def write_readme(destination: Path) -> None:
     _paragraph(document, "Institution name beyond the module code IDA117V: not recorded in the repository. Complete manually if the cover requires it.")
     _paragraph(
         document,
-        "The technical report PDF in this package is regenerated from `reports/final_report.md`. Its cover lists the four names, initials, student numbers, and email addresses above. The group number, lecturer, and submission date remain “Not recorded.” Signature cells in the contribution statement and in Appendix A are empty.",
+        "The technical report PDF in this package is regenerated from `reports/final_report.md`. Its cover lists the four names, initials, student numbers, and email addresses above. The group number, lecturer, and submission date remain “Not recorded.” Appendix A repeats the contribution allocation, initials, and dates.",
     )
     destination.parent.mkdir(parents=True, exist_ok=True)
     document.save(destination)
@@ -761,7 +761,7 @@ def write_package_notes(destination: Path) -> None:
         _paragraph(document, item, bullet=True)
     document.add_heading("Items the team must still complete", 2)
     for item in (
-        "Sign the contribution statement. Every signature and date cell is blank. Contribution categories are “To be confirmed by the team”.",
+        "The contribution statement records the supplied allocation, with initials in the signature cells and one date per member.",
         "Enter the group number, lecturer, and submission date. They are not recorded. The report cover and the contribution statement name Mpumelelo Ngozo (218409202, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, 240668823@tut4life.ac.za).",
         "Add presentation or defence evidence only if it exists outside this repository. None was found here.",
         "Redeploy the Streamlit service separately if the live site must match the current application code. This package does not deploy it.",
