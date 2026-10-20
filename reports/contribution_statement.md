@@ -1,6 +1,6 @@
 # Contribution statement
 
-IDA117V group project. This page names the four members and lists the work that is in the repository. It does not assign that work to a person except for the git record stated below. No signature below is a signature. No row claims that a presentation was attended or that a defence was marked. A blank signature cell is unsigned. Typed initials are not entered in any signature cell.
+IDA117V group project. We name the four members on this page and list the work that is in the repository. We do not assign that work to a person except for the git record stated below. No signature below is a signature. No row claims that a presentation was attended or that a defence was marked. A blank signature cell is unsigned. We have not entered typed initials in any signature cell.
 
 ## Team
 
@@ -11,7 +11,7 @@ IDA117V group project. This page names the four members and lists the work that 
 | Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za |  |  |
 | Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za |  |  |
 
-The repository records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, the README, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. That record is not a signed division of labour. It does not assign the later modelling, the report, or the interface to him, and it does not describe work by Mpumelelo Ngozo, Selowa Tumiso, or Ualwela Netshidzati. No separate task description is written for those three members, because the repository does not say which tasks they completed. The signature columns stay empty because no signature was supplied. The brief requires every member to sign. This page does not meet that requirement until they do.
+The repository records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, the README, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. That record is not a signed division of labour. It does not assign the later modelling, the report, or the interface to him, and it does not describe work by Mpumelelo Ngozo, Selowa Tumiso, or Ualwela Netshidzati. We have not written a separate task description for those three members, because the repository does not say which tasks they completed. The signature columns stay empty because no signature was supplied. The brief requires every member to sign. This page does not meet that requirement until each of us signs.
 
 The brief asks every member to participate in a 10–12 minute presentation and to defend the modelling choices. `reports/presentation_outline.md` is a speaking outline of about 11 minutes. It is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
 
@@ -33,7 +33,7 @@ Each cell is “To be confirmed by the team” because the repository does not s
 
 ## Confirmation table
 
-The group confirms that the locked-test scores were not used to choose the champion, and that the embedding-network test score is the Question 6.2 comparison only. The names below identify who may sign. A blank signature means the row is unsigned. Do not sign for a presentation that has not happened. If the institution accepts typed initials as an acknowledgement, the member completes that cell. This file does not do it for them.
+We confirm that the locked-test scores were not used to choose the champion, and that the embedding-network test score is the Question 6.2 comparison only. The names below identify who may sign. A blank signature means the row is unsigned. A member should not sign for a presentation that has not happened. If the institution accepts typed initials as an acknowledgement, that member completes the cell. We do not complete it here.
 
 | Confirmation | Printed name | Student number | Signature | Date |
 | --- | --- | --- | --- | --- |

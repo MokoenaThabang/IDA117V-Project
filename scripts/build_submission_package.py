@@ -421,7 +421,7 @@ def write_project_overview(destination: Path) -> None:
     document.add_heading("Label and split", 2)
     _paragraph(
         document,
-        "Resolved Fast means completed within seven calendar days. That cut is a project rule, not a City standard. The split id recorded for the frozen decision is `"
+        "Resolved Fast means completed within seven calendar days. That cut is our project rule, not a City standard. The split id recorded for the frozen decision is `"
         + decision["split_id"]
         + "`. Training ends on 31 December 2024, validation is 2025, and the locked test is 1 January 2026 through 30 April 2026. Seed 42.",
     )
@@ -489,7 +489,7 @@ def write_project_overview(destination: Path) -> None:
         document,
         "Predictions must support human review. They must not be used to deny or reduce service to an area. This is an academic prototype for an IDA117V project. It is not an official City of Cape Town system. The POPIA section of the report describes the fields that were withheld. It does not certify compliance.",
     )
-    document.add_heading("Fields still open", 2)
+    document.add_heading("Cover fields the team must still supply", 2)
     for item in (
         "The report cover names Mpumelelo Ngozo (218409202), Selowa Tumiso (218340172), Ualwela Netshidzati (220069117), and Thabang Mokoena (240668823).",
         "Group number: not recorded. Complete manually.",
@@ -521,7 +521,7 @@ def write_readme(destination: Path) -> None:
     document.add_heading("1. Project title and purpose", 2)
     _paragraph(
         document,
-        "The project estimates, at logging time, which of three resolution outcomes is likely for a City of Cape Town SAP C3 service request: Resolved Fast, Resolved Slow, or Unresolved.",
+        "Our project estimates, at logging time, which of three resolution outcomes is likely for a City of Cape Town SAP C3 service request: Resolved Fast, Resolved Slow, or Unresolved.",
     )
     document.add_heading("2. Problem", 2)
     _paragraph(
@@ -531,7 +531,7 @@ def write_readme(destination: Path) -> None:
     document.add_heading("3. Decision-maker and appropriate use", 2)
     _paragraph(
         document,
-        "The intended decision-maker is a reviewer in the municipal service department that receives the request. The estimate is a queue aid. A person remains between the score and any operational action. Predictions must support human review. They must not be used to deny or reduce service to an area. This is an academic prototype. It is not an official City of Cape Town system.",
+        "The decision-maker for our estimate is a reviewer in the municipal service department that receives the request. The estimate is a queue aid. A person remains between the score and any operational action. Predictions must support human review. They must not be used to deny or reduce service to an area. We treat this as an academic prototype and not as an official City of Cape Town system.",
     )
     document.add_heading("4. Dataset", 2)
     _paragraph(
@@ -759,7 +759,7 @@ def write_package_notes(destination: Path) -> None:
         "A second copy of the technical report in Word. The PDF is the submitted report.",
     ):
         _paragraph(document, item, bullet=True)
-    document.add_heading("Manual items still open", 2)
+    document.add_heading("Items the team must still complete", 2)
     for item in (
         "Sign the contribution statement. Every signature and date cell is blank. Contribution categories are “To be confirmed by the team”.",
         "Enter the group number, lecturer, and submission date. They are not recorded. The report cover and the contribution statement name Mpumelelo Ngozo (218409202, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, 240668823@tut4life.ac.za).",
