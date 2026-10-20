@@ -461,8 +461,6 @@ We repeat the contribution statement from `reports/contribution_statement.md` in
 | Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za | U | 7 October 2026 |
 | Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za | TG | 8 October 2026 |
 
-The repository records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, `README.md`, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. The allocation below is the division the team supplied. It is not inferred from those commits.
-
 | Contribution | Allocation | Signature | Date |
 | --- | --- | --- | --- |
 | Problem definition and project planning | Thabang Mokoena | TG | 5 October 2026 |

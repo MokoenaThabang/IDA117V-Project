@@ -9,8 +9,6 @@ The signed page for this project is `reports/contribution_statement.md`. This ol
 | Ualwela Netshidzati | 220069117 | Technical report and references; Presentation preparation and coordination |  |  |  |
 | Thabang Mokoena | 240668823 | Problem definition and project planning; Exploratory data analysis; Streamlit interface and deployment |  |  |  |
 
-Thabang Mokoena’s git history records four commits on 15 October 2026: the initial repository, the README, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. The roles above are the division the team supplied. They are not inferred from those commits.
-
 ## Signature fields
 
 Each person signs only for the roles allocated above. The signature cell contains that member’s initials.

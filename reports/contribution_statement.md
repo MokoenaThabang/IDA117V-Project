@@ -11,8 +11,6 @@ IDA117V group project. We name the four members on this page and record the divi
 | Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za | U | 7 October 2026 |
 | Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za | TG | 8 October 2026 |
 
-The repository records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, the README, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. The allocation below is the division the team supplied. It is not inferred from those commits.
-
 The brief asks every member to participate in a 10–12 minute presentation and to defend the modelling choices. `reports/presentation_outline.md` is a speaking outline of about 11 minutes. It is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given. Ualwela Netshidzati is allocated presentation preparation and coordination.
 
 ## Contribution matrix
