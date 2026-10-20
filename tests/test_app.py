@@ -43,6 +43,36 @@ def _pipeline():
 
 
 class PipelineLoadTest(unittest.TestCase):
+    def test_pipeline_path_is_project_relative(self) -> None:
+        path = pipeline_path()
+        self.assertEqual(path, PROJECT_ROOT / "models" / "frozen_resolution_pipeline.joblib")
+        self.assertTrue(path.is_file())
+        text = str(path)
+        self.assertNotRegex(text, r"^[A-Za-z]:[\\/]")
+
+    def test_loading_the_pipeline_does_not_read_a_dataset(self) -> None:
+        import pandas as pd
+
+        def fail(*args, **kwargs):
+            raise AssertionError("The application read a dataset while loading the pipeline.")
+
+        originals = pd.read_parquet, pd.read_csv, pd.read_excel
+        pd.read_parquet = pd.read_csv = pd.read_excel = fail
+        try:
+            loaded = load_pipeline()
+        finally:
+            pd.read_parquet, pd.read_csv, pd.read_excel = originals
+        self.assertEqual(loaded["format"], "ida117v-frozen-hgb-v1")
+        self.assertEqual(list(loaded["features"]), list(MODEL_FEATURES))
+
+    def test_startup_modules_do_not_train_or_open_the_extract(self) -> None:
+        for relative in ("app/app.py", "app/predict.py"):
+            source = (PROJECT_ROOT / relative).read_text(encoding="utf-8")
+            self.assertNotIn("read_parquet", source)
+            self.assertNotIn("read_csv", source)
+            self.assertNotIn("read_excel", source)
+            self.assertNotIn(".fit(", source)
+
     def test_missing_file_tells_the_user_not_to_expect_training(self) -> None:
         with self.assertRaises(FileNotFoundError) as caught:
             load_pipeline(PROJECT_ROOT / "models" / "does_not_exist.joblib")
@@ -200,13 +230,15 @@ class StreamlitFlowTest(unittest.TestCase):
                 parts.append(str(getattr(element, "value", "")))
         return "\n".join(parts)
 
-    def test_page_shows_notices_and_rejects_an_empty_form(self) -> None:
+    def test_page_hides_the_notice_banners_and_rejects_an_empty_form(self) -> None:
         app = self._app()
         text = self._joined_text(app).lower()
-        self.assertIn("academic prototype", text)
-        self.assertIn("not an official city of cape town system", text)
-        self.assertIn("deny or reduce service", text)
-        self.assertIn("work centre is not collected", text)
+        self.assertNotIn("academic prototype", text)
+        self.assertNotIn("not an official city of cape town system", text)
+        self.assertNotIn("deny or reduce service", text)
+        self.assertNotIn("work centre is not collected", text)
+        self.assertEqual(len(app.warning), 0)
+        self.assertEqual(len(app.info), 0)
         labels = [select.label for select in app.selectbox]
         self.assertEqual(labels, ["Complaint type", "Suburb", "Ward", "Subcouncil"])
         estimate = next(button for button in app.button if "Estimate" in button.label)
@@ -234,9 +266,12 @@ class InterfaceCopyTest(unittest.TestCase):
         self.assertNotIn(".fit(", source)
         self.assertNotIn("fit_frozen", source)
         self.assertNotIn("export_frozen", source)
-        self.assertIn("ACADEMIC_NOTICE", source)
-        self.assertIn("SERVICE_WARNING", source)
-        self.assertIn("WORK_CENTRE_NOTICE", source)
+        self.assertNotIn("ACADEMIC_NOTICE", source)
+        self.assertNotIn("SERVICE_WARNING", source)
+        self.assertNotIn("WORK_CENTRE_NOTICE", source)
+        self.assertNotIn("st.error(ACADEMIC_NOTICE", source)
+        self.assertNotIn("st.warning(", source)
+        self.assertNotIn("st.info(WORK_CENTRE_NOTICE", source)
         form = source.split("with st.form")[1]
         self.assertNotIn("Work", form)
         self.assertIn("FIELD_LABELS[column]", source)

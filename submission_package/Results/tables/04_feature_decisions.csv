@@ -1,0 +1,22 @@
+column,decision,reason
+C3_Complaint_Type,include,Complaint category stored when the request is logged.
+Suburb,include,Coarse place name on the request. Stored placeholders such as '#' are kept as their own values.
+Ward,include,"Ward on the request. This is a coarse area, not a coordinate."
+Sub_Council,include,Subcouncil on the request. The stored value 'Not assigned' is kept as text.
+created_day_of_week,include,Day name derived from Created On Date. One-hot encoded because weekday order is not a linear scale.
+created_month,include,Month name derived from Created On Date. One-hot encoded so December is not treated as far from January.
+created_is_weekend,include,"1 when Created On Date is Saturday or Sunday, otherwise 0. This is the only numeric predictor and is standardised on the training rows."
+Created_On_Date,exclude,Used to build the chronological split and the calendar fields. The raw timestamp is not a predictor.
+Work_Center,exclude,"Present on the request, but the extract has no assignment time. It is not treated as known at logging."
+Notifications_Created,exclude,Not one of the logging-time candidate features for this baseline.
+Notification,exclude,Request identifier.
+Notification_type,exclude,Identifier mixed with free text.
+ObjectId,exclude,Row identifier.
+Completed_Date,exclude,Known only after completion.
+Changed_on,exclude,Updated after logging.
+resolution_days,exclude,Computed from Completed Date minus Created On Date.
+resolution_outcome,exclude,Target. Never a predictor.
+label_status,exclude,Constructed from the label rule.
+duration_flag,exclude,Constructed from resolution duration.
+X_Y_Co_ordinate_1,exclude,Precise location. Withheld from the model.
+X_Y_Co_ordinate_2,exclude,Precise location. Withheld from the model.

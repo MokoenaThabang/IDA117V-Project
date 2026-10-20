@@ -10,7 +10,7 @@ Template-ordered Jupyter notebooks. Run from the **repo root**.
 
 ## How to run
 
-1. `python -m pip install -r requirements.txt`
+1. `python -m pip install -r requirements-research.txt`
 2. Put frozen Drive splits in `data/processed/` (`train.parquet`, `val.parquet`, `test.parquet`). See [`data/README.md`](../data/README.md).
 3. From the **repo root** (so `src/prep.py` and `data/processed/` resolve):
 

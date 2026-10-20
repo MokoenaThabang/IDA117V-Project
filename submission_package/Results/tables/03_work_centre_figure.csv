@@ -1,0 +1,13 @@
+rank,Work_Center,Resolved Fast,Resolved Slow,Unresolved,requests,Resolved Fast percent,Resolved Slow percent,Unresolved percent,selection_rule
+1,Energy,184066,80005,30416,294487,62.50394754267591,27.167582949332232,10.328469507991864,largest 12 groups by labelled request count
+2,Electricity - FLR-Vanguard-Contractor,118029,15753,5372,139154,84.81897753567989,11.320551331618207,3.860471132701899,largest 12 groups by labelled request count
+3,Electricity - FLR-Wynberg-Contractor,97168,10960,6293,114421,84.92147420490994,9.578661259733789,5.499864535356272,largest 12 groups by labelled request count
+4,Electricity - FLR-M'Plain-Contractor,92665,12685,6470,111820,82.86979073510999,11.34412448578072,5.786084779109283,largest 12 groups by labelled request count
+5,Pinelands Sewer Depot Dispatch,81663,21280,7059,110002,74.23774113197942,19.345102816312433,6.417156051708151,largest 12 groups by labelled request count
+6,Electricity - FLR-Gugulethu-Contractor,83834,11733,12751,108318,77.39618530622796,10.831994682324266,11.771820011447774,largest 12 groups by labelled request count
+7,WSR- CTA Debt Management,100873,1309,1433,103615,97.35366500989238,1.2633305988515178,1.3830043912560923,largest 12 groups by labelled request count
+8,Electricity - FLR-Muizenberg-Contractor,81604,9372,6166,97142,84.00485886640176,9.647732185872227,6.347408947726009,largest 12 groups by labelled request count
+9,Electricity - FLR-Mowbray-Contractor,83396,7853,3993,95242,87.56220994939208,8.24531194221037,4.192478108397555,largest 12 groups by labelled request count
+10,Impuma Collections,60669,13114,9880,83663,72.51592699281642,15.674790528668586,11.809282478514994,largest 12 groups by labelled request count
+11,Cape Town / SPM,61221,8487,9699,79407,77.09773697532964,10.687974611810041,12.214288412860327,largest 12 groups by labelled request count
+12,Tierberg Collections,62026,10469,6044,78539,78.9747768624505,13.329683342033894,7.695539795515603,largest 12 groups by labelled request count

@@ -1,0 +1,3 @@
+name,fit_intercept,max_iter,tol,C,solver,iterations_used,convergence_warning,converged,validation_macro_f1,validation_accuracy,adopted_as_the_reported_baseline,locked_test_scored
+saga_no_intercept_max_iter_200,False,200,0.001,1.0,saga,200,True,False,0.46731422586592597,0.5821580853183608,False,False
+saga_variance_scaled_one_hot_max_iter_200,True,200,0.001,1.0,saga,200,True,False,0.46510603688848823,0.5693055509579068,False,False

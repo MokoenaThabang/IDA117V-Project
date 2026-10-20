@@ -1,0 +1,7 @@
+column,distinct_training_levels,kept_levels,grouped_levels,missing_training_rows,embedding_rows,unseen_index,min_count
+C3_Complaint_Type,998,372,626,0,374,0,200
+Suburb,28394,1080,27314,0,1082,0,200
+Ward,219,218,1,0,220,0,200
+Sub_Council,32,23,9,164058,26,0,200
+created_day_of_week,7,7,0,0,8,0,200
+created_month,12,12,0,0,13,0,200

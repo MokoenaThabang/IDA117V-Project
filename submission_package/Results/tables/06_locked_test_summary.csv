@@ -1,0 +1,2 @@
+model,split,accuracy,macro_f1,weighted_f1,recall_resolved_fast,recall_resolved_slow,recall_unresolved,macro_roc_auc,macro_average_precision,approval,fit_seconds
+untuned,test,0.5996166176578609,0.49389671114581174,0.6292593443247928,0.6888911333154553,0.40021672110130946,0.4184635341597002,0.7241433691367188,0.5191797850303996,approved,5.026059477000672

@@ -1,0 +1,57 @@
+{
+  "champion_changed": false,
+  "champion_model": "hist_gradient_boosting",
+  "champion_rule": "Highest validation macro-F1 among approved models. Ties break on Unresolved recall, then Resolved Slow recall. The locked test is not an input.",
+  "checkpoint_sha256_unchanged": true,
+  "command": "python -m src.embedding_experiment",
+  "corrected_learning_curve": "results/figures/10_embedding_learning_curves.png",
+  "locked_test_scored": false,
+  "recorded_validation_macro_f1": 0.4806872719871502,
+  "retrain_destination": "/workspace/evidence/reproducibility/embedding_retrain",
+  "retrain_history_gaps_against_saved_table": {
+    "train_loss": 0.0,
+    "train_macro_f1": 0.0,
+    "validation_loss": 0.0,
+    "validation_macro_f1": 5.551115123125783e-17
+  },
+  "retrain_learning_curve": "evidence/reproducibility/embedding_retrain/figures/10_embedding_learning_curves.png",
+  "retrain_metric_gaps_against_saved_table": {
+    "train": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "recall_resolved_fast": 0.0,
+      "recall_resolved_slow": 0.0,
+      "recall_unresolved": 0.0,
+      "weighted_f1": 0.0
+    },
+    "validation": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "recall_resolved_fast": 0.0,
+      "recall_resolved_slow": 0.0,
+      "recall_unresolved": 5.551115123125783e-17,
+      "weighted_f1": 0.0
+    }
+  },
+  "retrain_validation_macro_f1": 0.4806872719871502,
+  "retrains_model": true,
+  "saved_checkpoint_metric_gaps": {
+    "train": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "recall_resolved_fast": 0.0,
+      "recall_resolved_slow": 0.0,
+      "recall_unresolved": 0.0,
+      "weighted_f1": 0.0
+    },
+    "validation": {
+      "accuracy": 0.0,
+      "macro_f1": 0.0,
+      "recall_resolved_fast": 0.0,
+      "recall_resolved_slow": 0.0,
+      "recall_unresolved": 5.551115123125783e-17,
+      "weighted_f1": 0.0
+    }
+  },
+  "saved_checkpoint_overwritten": false
+}

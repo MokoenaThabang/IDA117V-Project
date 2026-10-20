@@ -1,0 +1,24 @@
+{
+  "hist_gradient_boosting": {
+    "best_iteration": 2,
+    "fit_seconds": 17.925579347996973,
+    "hit_max_iter": false,
+    "n_iter_trained": 8,
+    "validation_macro_f1_at_best": 0.48165990094779687
+  },
+  "logistic_regression": {
+    "convergence_warning": true,
+    "fit_seconds": 247.9389658939981,
+    "max_iter": 200,
+    "n_iter": 200,
+    "tol": 0.001
+  },
+  "one_hot": {
+    "columns": 1718,
+    "dense_float32_gib": 16.74633551388979,
+    "density": 0.004074505238649592,
+    "name": "train",
+    "nonzero": 18316165,
+    "rows": 2616595
+  }
+}

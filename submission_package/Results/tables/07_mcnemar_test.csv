@@ -1,0 +1,2 @@
+rows,both_correct,champion_only,comparator_only,both_wrong,discordant,statistic,p_value,alpha,method,significant,conclusion,comparator
+422033,233776,19282,21854,147121,41136,160.6875,8.00644675266312e-37,0.05,chi-square with continuity correction,True,The paired error rates differ at the 0.05 threshold. This does not show that one model is better on every class.,multilayer_perceptron

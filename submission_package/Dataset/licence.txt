@@ -1,0 +1,88 @@
+City of Cape Town Open Data — licence / terms captured for IDA117V
+====================================================================
+
+Dataset item:
+  https://odp-cctegis.opendata.arcgis.com/datasets/90711027d33940b5a06e96ad8a8f7ede_0/explore
+Hub title: Service Requests 2023 until 06 October 2026 (Deprecated)
+Owner: City of Cape Town
+Structured licence on the Hub item: custom
+  https://www.capetown.gov.za/General/Terms-of-use-open-data
+(same document as)
+  https://www.capetown.gov.za/general/city-of-cape-town-open-data-terms-of-use/
+
+Download date (UTC): 2026-10-15
+Access method: ArcGIS FeatureServer query (JSON pages, resultType=standard),
+written locally as parquet parts. Hub CSV export was still generating at
+download time (status PagingData).
+
+This is not a Creative Commons or Zindi licence. The City publishes the data
+free of charge under its Open Data Policy, “as is”, without warranties, and
+without accepting liability for decisions made on the data.
+
+The full raw extract is not committed to git (size + these terms). Obtain it
+with `python src/download_extract.py` (see data/README.md).
+
+--------------------------------------------------------------------
+Verbatim text retrieved 15 October 2026 from
+https://www.capetown.gov.za/general/city-of-cape-town-open-data-terms-of-use/
+
+City of Cape Town Open Data terms of use
+
+The following terms of use apply to visitors and users of the Open Data
+Portal section of the City of Cape Town’s website.
+
+Disclaimer
+
+The City of Cape Town (“the City”) in accordance with its Open Data Policy
+hereby makes data available without any remuneration. The City including all
+of its employees, senior managers, officers, directors, agents, and
+representatives (collectively referred to herein as the "City”), makes this
+data available on an “as is” basis and explicitly disclaims any
+representations and warranties, including, without limitation, the implied
+warranties of merchantability and fitness for a particular purpose.
+
+The City makes no representations or warranties of any kind, express or
+implied, about the completeness, accuracy, reliability, suitability or
+availability of data on the website or the data, products, services, or
+related graphics contained therein for any purpose. Any reliance you place
+on such data is therefore strictly at your own risk.
+
+The City of Cape Town takes no responsibility for, and will not be liable
+for any errors, omissions, or inaccuracies in the data provided on this
+website regardless how caused; or any decision made or action taken or not
+taken by anyone using or relying upon data provided on this website.
+
+This website may, from time to time and at the City’s sole discretion,
+display, embed, showcase, or otherwise reference third-party websites,
+platforms, or digital content solely for illustrative purposes;
+specifically, to demonstrate examples of what can be produced or achieved
+using publicly available data made accessible through the City's Open Data
+Portal. Such third-party content is displayed for informational and
+demonstrative purposes only and does not constitute an endorsement,
+recommendation, affiliation, sponsorship, or partnership of any kind
+between the City and the relevant third-party.
+
+The City of Cape Town takes no responsibility for, and will not be liable
+for the website being temporarily unavailable due to technical issues
+beyond our control. The User hereby irrevocably accepts the terms and
+conditions set out herein when this site is accessed and data is used. The
+City hereby reserves the right, at its sole discretion, to unilaterally
+edit, add, remove and/or amend any term and/or condition applicable to this
+site without any prior warning to the User. The City reserves the right to
+remove or prevent access to any User who breach any term and/or condition.
+
+ESRI Master Agreement
+
+Unless superseded by a signed license agreement between you and Esri, Esri
+is willing to provide Esri offerings and Services to you only if you accept
+all terms and conditions contained in this Agreement as the sole and final
+agreement of the parties regarding your acquisition of Esri Offerings and
+Services.
+
+Open Data Policy (portal page, retrieved 15 October 2026):
+https://www.capetown.gov.za/City-Connect/All-City-online-services/open-data-portal/
+
+The City of Cape Town generates a large amount of useful information and
+data and places it on the Open Data Portal. Shared data creates a
+transparent City. The data included in the portal is approved in terms of
+the Open Data Policy (policy document dated 03/12/2020 on that page).

@@ -1,0 +1,59 @@
+{
+  "champion_family": "hist_gradient_boosting",
+  "class_weight": "balanced",
+  "comparator": "multilayer_perceptron",
+  "comparator_phase5_validation_macro_f1": 0.4764661870392401,
+  "decision_rule": "Keep the tuned refit only when its 2025 validation macro-F1 is higher than the untuned refit. A tie keeps the untuned settings.",
+  "early_stopping": false,
+  "encoder": "TreeCategoryEncoder fit on the training period",
+  "features": [
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+    "created_day_of_week",
+    "created_month",
+    "created_is_weekend"
+  ],
+  "folds": [
+    {
+      "fold": 1,
+      "train_end": "2023-06-30",
+      "validate_end": "2023-12-31"
+    },
+    {
+      "fold": 2,
+      "train_end": "2023-12-31",
+      "validate_end": "2024-06-30"
+    },
+    {
+      "fold": 3,
+      "train_end": "2024-06-30",
+      "validate_end": "2024-12-31"
+    }
+  ],
+  "locked_test_macro_f1": 0.49389671114581174,
+  "locked_test_scored": true,
+  "max_iter": 12,
+  "parameters": {
+    "l2_regularization": 1.0,
+    "learning_rate": 0.1,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 50
+  },
+  "phase5_champion_validation_macro_f1": 0.4816599009477968,
+  "search_seed": 42,
+  "search_trials": 8,
+  "selected": "untuned",
+  "tuned_training_fold_mean_macro_f1": 0.5442947500860499,
+  "tuned_trial": 5,
+  "tuned_validation_macro_f1": 0.46992097415081197,
+  "untuned_training_fold_mean_macro_f1": 0.540287849188581,
+  "untuned_validation_macro_f1": 0.4765377211093145,
+  "comparator_rule": "Highest validation macro-F1 among approved models other than the champion. Ties break on Unresolved recall, then Resolved Slow recall, then model name. Pending models are excluded. The embedding network is excluded because it is not scored on the locked test: it was not selected as champion, and the comparator is scored once on that test. The locked test is not an input to this choice.",
+  "excluded_from_comparator": [
+    "embedding_network"
+  ],
+  "split_id": "chronological|train_end=2024-12-31|validation_end=2025-12-31|test_end=2026-04-30|seed=42",
+  "locked_test_used_for_selection": false
+}

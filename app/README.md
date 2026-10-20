@@ -1,5 +1,17 @@
 # App
 
-Streamlit user interface is added later (Q7). This folder is a placeholder.
+Streamlit interface for the frozen resolution pipeline.
 
-The app must load the saved pipeline from `models/`, accept valid input, and return a class plus a limitation notice. A notebook cell is not a user interface.
+From the project folder:
+
+```bash
+streamlit run app/app.py
+```
+
+The process loads `models/frozen_resolution_pipeline.joblib` through a path relative to the repository. It does not fit a model, run a notebook, or read the raw extract.
+
+On Render, the start command is:
+
+```bash
+streamlit run app/app.py --server.address 0.0.0.0 --server.port $PORT
+```

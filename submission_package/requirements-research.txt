@@ -1,0 +1,15 @@
+# Notebook, figure, spreadsheet, and embedding-network dependencies.
+# The Streamlit service does not install this file.
+# From the project folder, after the application requirements:
+#   python -m pip install -r requirements-research.txt
+# The PyTorch CPU index is required so Linux does not pull large CUDA wheels.
+# A Windows CPU wheel for this same torch version is published on that index.
+
+-r requirements.txt
+--extra-index-url https://download.pytorch.org/whl/cpu
+
+matplotlib==3.11.2
+seaborn==0.13.2
+jupyterlab==4.6.4
+openpyxl==3.1.5
+torch==2.14.1+cpu

@@ -1,0 +1,12 @@
+# Render blueprint for the prediction app. Applying this file creates or
+# updates a service definition. It does not by itself mean a deploy succeeded.
+services:
+  - type: web
+    name: cape-town-resolution-classifier
+    runtime: python
+    buildCommand: pip install -r requirements.txt
+    startCommand: streamlit run app/app.py --server.address 0.0.0.0 --server.port $PORT
+    healthCheckPath: /_stcore/health
+    envVars:
+      - key: PYTHON_VERSION
+        value: "3.12.3"

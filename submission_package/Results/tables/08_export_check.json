@@ -1,0 +1,18 @@
+{
+  "pipeline_file": "models/frozen_resolution_pipeline.joblib",
+  "features": [
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+    "created_day_of_week",
+    "created_month",
+    "created_is_weekend"
+  ],
+  "selected": "untuned",
+  "max_iter": 12,
+  "locked_test_rows_matched": 422033,
+  "locked_test_rows": 422033,
+  "demonstration_prediction": "Resolved Fast",
+  "refit_performed_in_this_notebook": false
+}

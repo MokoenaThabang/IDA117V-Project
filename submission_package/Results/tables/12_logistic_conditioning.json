@@ -1,0 +1,98 @@
+{
+  "cause": "The weekend indicator is already standardised on the training rows, and the one-hot values are 0/1. Each categorical block sums to 1, so an intercept makes the design dependent. Column norms still differ because frequent levels are much more common than rare levels. Saga is the sparse multinomial solver; a dense solver would materialise the one-hot matrix. L2 regularisation is present at C = 1. The recorded fit and the earlier max_iter 1000 fit both stopped on the iteration cap with a convergence warning.",
+  "champion_changed": false,
+  "diagnostics": {
+    "categorical_blocks_sum_to_one": [
+      {
+        "feature": "C3_Complaint_Type",
+        "levels": 373,
+        "max_abs_gap_from_one": 0.0
+      },
+      {
+        "feature": "Suburb",
+        "levels": 1081,
+        "max_abs_gap_from_one": 0.0
+      },
+      {
+        "feature": "Ward",
+        "levels": 219,
+        "max_abs_gap_from_one": 0.0
+      },
+      {
+        "feature": "Sub_Council",
+        "levels": 25,
+        "max_abs_gap_from_one": 0.0
+      },
+      {
+        "feature": "created_day_of_week",
+        "levels": 7,
+        "max_abs_gap_from_one": 0.0
+      },
+      {
+        "feature": "created_month",
+        "levels": 12,
+        "max_abs_gap_from_one": 0.0
+      }
+    ],
+    "column_norm_max": 1617.589255651062,
+    "column_norm_min": 11.313708498984761,
+    "column_norm_ratio": 142.97604148067072,
+    "columns": 1718,
+    "intercept_plus_full_one_hot_is_dependent": true,
+    "one_hot_max": 1.0,
+    "one_hot_min": 1.0,
+    "one_hot_stored_values": [
+      1.0
+    ],
+    "rows": 2616595,
+    "sparse": true,
+    "weekend_training_mean": 2.0855226776163563e-17,
+    "weekend_training_std": 1.0
+  },
+  "locked_test_scored": false,
+  "reported_baseline": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "convergence_warning": true,
+    "fit_intercept": true,
+    "function": "src.preprocessing.make_logistic_baseline",
+    "max_iter": 200,
+    "replaced": false,
+    "solver": "saga",
+    "tol": 0.001,
+    "validation_macro_f1": 0.4602680703697125
+  },
+  "variants": [
+    {
+      "C": 1.0,
+      "adopted_as_the_reported_baseline": false,
+      "converged": false,
+      "convergence_warning": true,
+      "fit_intercept": false,
+      "iterations_used": 200,
+      "locked_test_scored": false,
+      "max_iter": 200,
+      "name": "saga_no_intercept_max_iter_200",
+      "solver": "saga",
+      "tol": 0.001,
+      "validation_accuracy": 0.5821580853183608,
+      "validation_macro_f1": 0.46731422586592597
+    },
+    {
+      "C": 1.0,
+      "adopted_as_the_reported_baseline": false,
+      "converged": false,
+      "convergence_warning": true,
+      "fit_intercept": true,
+      "iterations_used": 200,
+      "locked_test_scored": false,
+      "max_iter": 200,
+      "name": "saga_variance_scaled_one_hot_max_iter_200",
+      "solver": "saga",
+      "tol": 0.001,
+      "validation_accuracy": 0.5693055509579068,
+      "validation_macro_f1": 0.46510603688848823
+    }
+  ],
+  "warnings_suppressed": false
+}
