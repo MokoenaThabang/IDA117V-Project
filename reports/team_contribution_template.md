@@ -17,7 +17,7 @@ Each person signs only for the roles allocated above. The signature cell contain
 
 | Printed name | Student number | Signature | Date |
 | --- | --- | --- | --- |
-| Mpumelelo Ngozo | 218409202 | MSP | 18 October 2026 |
-| Selowa Tumiso | 218340172 | TS | 17 October 2026 |
-| Ualwela Netshidzati | 220069117 | U | 8 October 2026 |
-| Thabang Mokoena | 240668823 | TG | 10 October 2026 |
+| Mpumelelo Ngozo | 218409202 | MSP | 5 October 2026 |
+| Selowa Tumiso | 218340172 | TS | 6 October 2026 |
+| Ualwela Netshidzati | 220069117 | U | 16 October 2026 |
+| Thabang Mokoena | 240668823 | TG | 18 October 2026 |

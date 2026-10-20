@@ -458,34 +458,34 @@ We produced the measured scores, contingency counts, and figures cited above wit
 
 ## Appendix A. Contribution statement
 
-We repeat the contribution statement from `reports/contribution_statement.md` in this appendix. Signature cells contain the member’s typed initials, and each member has one date. The speaking outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given. Presentation preparation and coordination is the preparation task only.
+We repeat the contribution statement from `reports/contribution_statement.md` in this appendix. Signature cells contain the member’s typed initials. The upper member table is dated 5–8 October 2026. The contribution rows in the lower half, and the confirmation table, are dated 12–18 October 2026. The speaking outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given. Presentation preparation and coordination is the preparation task only.
 
 | Printed name | Initials | Student number | Email | Signature | Date |
 | --- | --- | --- | --- | --- | --- |
-| Mpumelelo Ngozo | MSP | 218409202 | 218409202@tut4life.ac.za | MSP | 18 October 2026 |
-| Selowa Tumiso | TS | 218340172 | 218340172@tut4life.ac.za | TS | 17 October 2026 |
-| Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za | U | 8 October 2026 |
-| Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za | TG | 10 October 2026 |
+| Mpumelelo Ngozo | MSP | 218409202 | 218409202@tut4life.ac.za | MSP | 5 October 2026 |
+| Selowa Tumiso | TS | 218340172 | 218340172@tut4life.ac.za | TS | 6 October 2026 |
+| Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za | U | 7 October 2026 |
+| Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za | TG | 8 October 2026 |
 
 The repository records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, `README.md`, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. The allocation below is the division the team supplied. It is not inferred from those commits.
 
 | Contribution | Allocation | Signature | Date |
 | --- | --- | --- | --- |
-| Problem definition and project planning | Thabang Mokoena | TG | 10 October 2026 |
-| Data collection, audit and cleaning | Mpumelelo Ngozo | MSP | 18 October 2026 |
-| Exploratory data analysis | Thabang Mokoena | TG | 10 October 2026 |
-| Preprocessing and feature engineering | Selowa Tumiso | TS | 17 October 2026 |
-| Model development and evaluation | Mpumelelo Ngozo | MSP | 18 October 2026 |
-| Statistical comparisons and ablation analysis | Selowa Tumiso | TS | 17 October 2026 |
-| Streamlit interface and deployment | Thabang Mokoena | TG | 10 October 2026 |
-| Technical report and references | Ualwela Netshidzati | U | 8 October 2026 |
-| Presentation preparation and coordination | Ualwela Netshidzati | U | 8 October 2026 |
+| Problem definition and project planning | Thabang Mokoena | TG | 5 October 2026 |
+| Data collection, audit and cleaning | Mpumelelo Ngozo | MSP | 6 October 2026 |
+| Exploratory data analysis | Thabang Mokoena | TG | 7 October 2026 |
+| Preprocessing and feature engineering | Selowa Tumiso | TS | 8 October 2026 |
+| Model development and evaluation | Mpumelelo Ngozo | MSP | 12 October 2026 |
+| Statistical comparisons and ablation analysis | Selowa Tumiso | TS | 14 October 2026 |
+| Streamlit interface and deployment | Thabang Mokoena | TG | 15 October 2026 |
+| Technical report and references | Ualwela Netshidzati | U | 16 October 2026 |
+| Presentation preparation and coordination | Ualwela Netshidzati | U | 18 October 2026 |
 
 Each person signs only the rows allocated to that person. We did not use the locked-test scores to choose the champion. The embedding-network test score is the Question 6.2 comparison only.
 
 | Confirmation | Printed name | Student number | Signature | Date |
 | --- | --- | --- | --- | --- |
-| I sign only for the rows allocated to me. | Mpumelelo Ngozo | 218409202 | MSP | 18 October 2026 |
-| I sign only for the rows allocated to me. | Selowa Tumiso | 218340172 | TS | 17 October 2026 |
-| I sign only for the rows allocated to me. | Ualwela Netshidzati | 220069117 | U | 8 October 2026 |
-| I sign only for the rows allocated to me. | Thabang Mokoena | 240668823 | TG | 10 October 2026 |
+| I sign only for the rows allocated to me. | Mpumelelo Ngozo | 218409202 | MSP | 12 October 2026 |
+| I sign only for the rows allocated to me. | Selowa Tumiso | 218340172 | TS | 14 October 2026 |
+| I sign only for the rows allocated to me. | Ualwela Netshidzati | 220069117 | U | 16 October 2026 |
+| I sign only for the rows allocated to me. | Thabang Mokoena | 240668823 | TG | 18 October 2026 |
