@@ -21,14 +21,11 @@ import pandas as pd
 import streamlit as st
 
 from app.predict import (
-    ACADEMIC_NOTICE,
     FIELD_LABELS,
     SERVICE_CREATED_DATE_COLUMN,
-    SERVICE_WARNING,
     SOURCE_CATEGORICAL_COLUMNS,
     SUPPORTED_DATE_END,
     SUPPORTED_DATE_START,
-    WORK_CENTRE_NOTICE,
     InputError,
     load_pipeline,
     predict_request,
@@ -108,8 +105,6 @@ def main() -> None:
         "to be resolved within seven days, resolved later, or still unresolved after the "
         "seven-day observation window."
     )
-    st.error(ACADEMIC_NOTICE)
-    st.warning(SERVICE_WARNING)
 
     try:
         pipeline = load_pipeline()
@@ -117,7 +112,6 @@ def main() -> None:
         st.error(str(exc))
         st.stop()
 
-    st.info(WORK_CENTRE_NOTICE)
     st.caption(pipeline["sample_input"]["description"])
     if st.button("Fill demonstration sample", key="fill_sample"):
         _apply_sample(pipeline)

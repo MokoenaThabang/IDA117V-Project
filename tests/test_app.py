@@ -200,13 +200,15 @@ class StreamlitFlowTest(unittest.TestCase):
                 parts.append(str(getattr(element, "value", "")))
         return "\n".join(parts)
 
-    def test_page_shows_notices_and_rejects_an_empty_form(self) -> None:
+    def test_page_hides_the_notice_banners_and_rejects_an_empty_form(self) -> None:
         app = self._app()
         text = self._joined_text(app).lower()
-        self.assertIn("academic prototype", text)
-        self.assertIn("not an official city of cape town system", text)
-        self.assertIn("deny or reduce service", text)
-        self.assertIn("work centre is not collected", text)
+        self.assertNotIn("academic prototype", text)
+        self.assertNotIn("not an official city of cape town system", text)
+        self.assertNotIn("deny or reduce service", text)
+        self.assertNotIn("work centre is not collected", text)
+        self.assertEqual(len(app.warning), 0)
+        self.assertEqual(len(app.info), 0)
         labels = [select.label for select in app.selectbox]
         self.assertEqual(labels, ["Complaint type", "Suburb", "Ward", "Subcouncil"])
         estimate = next(button for button in app.button if "Estimate" in button.label)
@@ -234,9 +236,12 @@ class InterfaceCopyTest(unittest.TestCase):
         self.assertNotIn(".fit(", source)
         self.assertNotIn("fit_frozen", source)
         self.assertNotIn("export_frozen", source)
-        self.assertIn("ACADEMIC_NOTICE", source)
-        self.assertIn("SERVICE_WARNING", source)
-        self.assertIn("WORK_CENTRE_NOTICE", source)
+        self.assertNotIn("ACADEMIC_NOTICE", source)
+        self.assertNotIn("SERVICE_WARNING", source)
+        self.assertNotIn("WORK_CENTRE_NOTICE", source)
+        self.assertNotIn("st.error(ACADEMIC_NOTICE", source)
+        self.assertNotIn("st.warning(", source)
+        self.assertNotIn("st.info(WORK_CENTRE_NOTICE", source)
         form = source.split("with st.form")[1]
         self.assertNotIn("Work", form)
         self.assertIn("FIELD_LABELS[column]", source)

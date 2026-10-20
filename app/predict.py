@@ -60,10 +60,6 @@ SERVICE_WARNING = (
     "Predictions must support human review. "
     "They must not be used to deny or reduce service to an area."
 )
-WORK_CENTRE_NOTICE = (
-    "Work centre is not collected. The fitted pipeline excludes it because "
-    "the extract has no assignment time, so it is not treated as known when a request is logged."
-)
 
 
 class InputError(ValueError):
