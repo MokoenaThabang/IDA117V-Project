@@ -489,12 +489,12 @@ def write_project_overview(destination: Path) -> None:
         document,
         "Predictions must support human review. They must not be used to deny or reduce service to an area. This is an academic prototype for an IDA117V project. It is not an official City of Cape Town system. The POPIA section of the report describes the fields that were withheld. It does not certify compliance.",
     )
-    document.add_heading("Cover fields the team must still supply", 2)
+    document.add_heading("Cover", 2)
     for item in (
         "The report cover names Mpumelelo Ngozo (218409202), Selowa Tumiso (218340172), Ualwela Netshidzati (220069117), and Thabang Mokoena (240668823).",
-        "Group number: not recorded. Complete manually.",
-        "Lecturer: not recorded. Complete manually.",
-        "Submission date: not recorded. Complete manually.",
+        "Group name: Point Break.",
+        "Lecturer: Dr Masethe.",
+        "Submission date: 20 October 2026.",
         "Contribution categories name one member each. Signature cells contain that member’s initials. Upper rows are dated 5–8 October 2026. The lower half is dated 12–18 October 2026.",
         "Presentation attendance and defence outcome: not in the repository.",
     ):
@@ -691,13 +691,13 @@ def write_readme(destination: Path) -> None:
             ["Thabang Mokoena", "240668823", "TG", "240668823@tut4life.ac.za"],
         ],
     )
-    _paragraph(document, "Group number: not recorded. Complete manually.")
-    _paragraph(document, "Lecturer: not recorded. Complete manually.")
-    _paragraph(document, "Submission date: not recorded. Complete manually.")
+    _paragraph(document, "Group name: Point Break.")
+    _paragraph(document, "Lecturer: Dr Masethe.")
+    _paragraph(document, "Submission date: 20 October 2026.")
     _paragraph(document, "Institution name beyond the module code IDA117V: not recorded in the repository. Complete manually if the cover requires it.")
     _paragraph(
         document,
-        "The technical report PDF in this package is regenerated from `reports/final_report.md`. Its cover lists the four names, initials, student numbers, and email addresses above. The group number, lecturer, and submission date remain “Not recorded.” Appendix A repeats the contribution allocation, initials, and dates.",
+        "The technical report PDF in this package is regenerated from `reports/final_report.md`. Its cover lists the four names, initials, student numbers, and email addresses above, with group name Point Break, lecturer Dr Masethe, and submission date 20 October 2026. Appendix A repeats the contribution allocation, initials, and dates.",
     )
     destination.parent.mkdir(parents=True, exist_ok=True)
     document.save(destination)
@@ -762,7 +762,7 @@ def write_package_notes(destination: Path) -> None:
     document.add_heading("Items the team must still complete", 2)
     for item in (
         "The contribution statement records the supplied allocation, with initials in the signature cells. Upper rows are dated 5–8 October 2026 and the lower half is dated 12–18 October 2026.",
-        "Enter the group number, lecturer, and submission date. They are not recorded. The report cover and the contribution statement name Mpumelelo Ngozo (218409202, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, 240668823@tut4life.ac.za).",
+        "The cover records group name Point Break, lecturer Dr Masethe, and submission date 20 October 2026. The members are Mpumelelo Ngozo (218409202, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, 240668823@tut4life.ac.za).",
         "Add presentation or defence evidence only if it exists outside this repository. None was found here.",
         "Redeploy the Streamlit service separately if the live site must match the current application code. This package does not deploy it.",
     ):

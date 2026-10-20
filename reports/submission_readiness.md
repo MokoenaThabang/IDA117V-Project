@@ -8,7 +8,7 @@ This note does not say the submission is complete.
 
 | Brief item | Marks | Status | Evidence |
 | --- | --- | --- | --- |
-| 1.1 Problem, population, decision-maker, unit, inputs, classes, horizon | 4 | Partial | `reports/final_report.md` section 1 names Cape Town service requests, residents and businesses, and a reviewer in the municipal service department. The unit is one request at logging. Classes are Resolved Fast, Resolved Slow, and Unresolved. The horizon is seven days. The cover lists Mpumelelo Ngozo (218409202), Selowa Tumiso (218340172), Ualwela Netshidzati (220069117), and Thabang Mokoena (240668823). Group number, lecturer, and submission date were not supplied. |
+| 1.1 Problem, population, decision-maker, unit, inputs, classes, horizon | 4 | Partial | `reports/final_report.md` section 1 names Cape Town service requests, residents and businesses, and a reviewer in the municipal service department. The unit is one request at logging. Classes are Resolved Fast, Resolved Slow, and Unresolved. The horizon is seven days. The cover lists Mpumelelo Ngozo (218409202), Selowa Tumiso (218340172), Ualwela Netshidzati (220069117), and Thabang Mokoena (240668823). The group name is Point Break, the lecturer is Dr Masethe, and the submission date is 20 October 2026. |
 | 1.2 Primary metric, service indicator, false-positive and false-negative cost | 2 | Met | Macro-F1 is the primary metric. The service indicator is whether a request that will not resolve within seven days is brought to a reviewer. Section 1 states the operational cost of a false positive and a false negative for the three classes, using the champion's locked-test Resolved Slow precision 0.210 and Unresolved recall 0.418. |
 | 1.3 Provenance, licence, coverage, limitations, POPIA, privacy, fairness, misuse | 4 | Met as a discussion | Section 1.1 names POPIA and covers personal information, lawful processing, minimisation, access, retention, and security. It does not claim that compliance has been certified. Fairness and misuse are in section 16. Provenance remains in section 2 and `reports/data_source.md`. |
 | 2.1 Data dictionary and audit | 4 | Met | `results/tables/02_data_dictionary.csv`. Duplicates, missingness, invalid dates, and leakage fields are in the report. |
@@ -43,9 +43,7 @@ This note does not say the submission is complete.
 
 ## Still required before the brief can be treated as met
 
-1. The group number, the lecturer, and the submission date. The cover now lists Mpumelelo Ngozo (MSP, 218409202, 218409202@tut4life.ac.za), Selowa Tumiso (TS, 218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (U, 220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (TG, 240668823, 240668823@tut4life.ac.za). Those three administrative fields were not supplied.
-2. The contribution statement now names an owner, initials, and a date for each category. Group number, lecturer, and submission date are still not recorded.
-3. Evidence that the presentation was given and that a defence took place. The brief’s window is 5–17 October 2026. The outline exists. Attendance does not.
-4. A compute-environment description is still thin, and random cross-validation means are not shown for every model. The chronological split is the design that was used.
+1. Evidence that the presentation was given and that a defence took place. The brief’s window is 5–17 October 2026. The outline exists. Attendance does not. The cover records the group name Point Break, the lecturer Dr Masethe, and the submission date 20 October 2026.
+2. A compute-environment description is still thin, and random cross-validation means are not shown for every model. The chronological split is the design that was used.
 
 Question 6.2, the common ROC figure, the false-positive and false-negative discussion, and the POPIA discussion are now in the report. Logistic regression still does not converge at the checked settings. The report does not claim that it does. No stakeholder interview was conducted. The brief does not contain an interview question.

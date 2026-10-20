@@ -162,7 +162,7 @@ The repository can be connected to a Render web service. This repository change 
 
 ## Team
 
-The members named for this submission are listed below. The division of work, typed initials, and dates are in `reports/contribution_statement.md`. Group number, lecturer, and submission date are not recorded.
+The members named for this submission are listed below. The group name is Point Break, the lecturer is Dr Masethe, and the submission date is 20 October 2026. The division of work, typed initials, and dates are in `reports/contribution_statement.md`.
 
 | Name | Initials | Student number | Email |
 | --- | --- | --- | --- |

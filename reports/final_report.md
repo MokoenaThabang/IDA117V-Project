@@ -6,9 +6,9 @@
 | Initials | MSP; TS; U; TG |
 | Student numbers | 218409202; 218340172; 220069117; 240668823 |
 | Email addresses | 218409202@tut4life.ac.za; 218340172@tut4life.ac.za; 220069117@tut4life.ac.za; 240668823@tut4life.ac.za |
-| Group number | Not recorded. |
-| Lecturer | Not recorded. |
-| Submission date | Not recorded. |
+| Group name | Point Break |
+| Lecturer | Dr Masethe |
+| Submission date | 20 October 2026 |
 
 | Name | Initials | Student number | Email |
 | --- | --- | --- | --- |
@@ -17,7 +17,7 @@
 | Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za |
 | Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za |
 
-The IDA117V cover asks for student names, student numbers, group number, lecturer, and submission date. We record the four names, initials, student numbers, and email addresses supplied for our group. Group number, lecturer, and submission date have not been supplied, so those fields stay blank. They are not signatures. The digits in the GitHub noreply address are an account id, not a student number, and we do not enter them here.
+The IDA117V cover asks for student names, student numbers, group number, lecturer, and submission date. We record the four names, initials, student numbers, and email addresses supplied for our group. Our group name is Point Break, our lecturer is Dr Masethe, and our submission date is 20 October 2026. They are not signatures. The digits in the GitHub noreply address are an account id, not a student number, and we do not enter them here.
 
 This report presents our IDA117V analysis of Cape Town service-request resolution. The figures and scores come from the executed notebooks and the tables in `results/tables/`.
 

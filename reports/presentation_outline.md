@@ -2,11 +2,11 @@
 
 ## What the brief requires
 
-The only presentation text in this repository is `reports/IDA117V_Project_Template.pdf`. It says presentations run from 5 October to 17 October 2026. Question 8.3 asks for a concise team presentation and a live or recorded interface demonstration, a defence of the modelling choices, and a signed contribution statement. The suggested length is 10–12 minutes plus questions, and every member participates. No lecturer message in this repository changes that text. This outline was not confirmed with a lecturer, because no lecturer contact is recorded here.
+The only presentation text in this repository is `reports/IDA117V_Project_Template.pdf`. It says presentations run from 5 October to 17 October 2026. Question 8.3 asks for a concise team presentation and a live or recorded interface demonstration, a defence of the modelling choices, and a signed contribution statement. The suggested length is 10–12 minutes plus questions, and every member participates. The lecturer named for this submission is Dr Masethe. No message from Dr Masethe in this repository changes that text.
 
 ## Team
 
-The members named for this submission are Mpumelelo Ngozo (218409202, MSP, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, TS, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, U, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, TG, 240668823@tut4life.ac.za). Speaking parts are not assigned. The repository does not say which member presents which section. The brief asks every member to participate. This outline does not record that they did.
+The group name is Point Break. The lecturer is Dr Masethe. The submission date is 20 October 2026. The members named for this submission are Mpumelelo Ngozo (218409202, MSP, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, TS, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, U, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, TG, 240668823@tut4life.ac.za). Speaking parts are not assigned. The repository does not say which member presents which section. The brief asks every member to participate. This outline does not record that they did.
 
 ## Evidence that is not in the repository
 

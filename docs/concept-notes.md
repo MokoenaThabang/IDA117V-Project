@@ -1,6 +1,6 @@
 # Concept notes — Cape Town C3 resolution classifier
 
-One page for the pre-modelling checkpoint. Roster, group number and lecturer: **TBD later** (do not invent).
+One page for the pre-modelling checkpoint. Group name: Point Break. Lecturer: Dr Masethe. Submission date: 20 October 2026.
 
 | Field | Our answer |
 | --- | --- |
