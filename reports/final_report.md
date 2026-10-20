@@ -2,13 +2,22 @@
 
 | Cover field | Entry |
 | --- | --- |
-| Student names | Thabang Mokoena is the only human name in this repository's git history. It is on the four commits of 15 October 2026. No other group member is named in the repository. |
-| Student numbers | Not recorded. |
+| Student names | Mpumelelo Ngozo; Selowa Tumiso; Ualwela Netshidzati; Thabang Mokoena |
+| Initials | MSP; TS; U; TG |
+| Student numbers | 218409202; 218340172; 220069117; 240668823 |
+| Email addresses | 218409202@tut4life.ac.za; 218340172@tut4life.ac.za; 220069117@tut4life.ac.za; 240668823@tut4life.ac.za |
 | Group number | Not recorded. |
 | Lecturer | Not recorded. |
 | Submission date | Not recorded. |
 
-The IDA117V cover asks for these five fields. The name above is the git author of the repository scaffold. It is not a class list. No student number, group number, lecturer, or submission date is stored in the repository. The digits in the GitHub noreply address are an account id, not a student number, and they are not entered here.
+| Name | Initials | Student number | Email |
+| --- | --- | --- | --- |
+| Mpumelelo Ngozo | MSP | 218409202 | 218409202@tut4life.ac.za |
+| Selowa Tumiso | TS | 218340172 | 218340172@tut4life.ac.za |
+| Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za |
+| Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za |
+
+The IDA117V cover asks for student names, student numbers, group number, lecturer, and submission date. The four names, initials, student numbers, and email addresses above were supplied for this update. The group number, lecturer, and submission date were not supplied. These fields are not signatures.
 
 Draft report for IDA117V. The numbers come from the executed notebooks and the tables in `results/tables/`. This draft does not say the project is complete. The last section lists what was not run and what still needs a decision.
 
@@ -407,7 +416,7 @@ The delivered use is a queue aid for a reviewer in the department that receives 
 
 This report does not declare the project complete. The following are still open:
 
-- Student numbers, the group number, the lecturer, the submission date, and any members who are not in the git history. The cover names Thabang Mokoena from the commits of 15 October 2026 and leaves the other fields empty.
+- The group number, the lecturer, and the submission date. The cover now lists Mpumelelo Ngozo (218409202), Selowa Tumiso (218340172), Ualwela Netshidzati (220069117), and Thabang Mokoena (240668823).
 - Signatures on `reports/contribution_statement.md`. The work rows match the repository. The signature cells are empty. The brief requires every member to sign, so this page is not yet a signed declaration.
 - A presentation and defence. The speaking outline is `reports/presentation_outline.md`, written to the brief’s 10–12 minute request, with an interface demonstration. The brief’s window is 5–17 October 2026. This repository has no attendance record and no defence outcome.
 - Lecturer approval of the embedding network has been recorded, and no approval date was supplied. The architecture was not changed. The model did not replace the champion.
@@ -478,7 +487,16 @@ The measured scores, contingency counts, and figures cited above were produced b
 
 ## Appendix A. Contribution statement
 
-The page the members sign is `reports/contribution_statement.md`. It is reproduced here so the PDF contains the same fields. The only human name in the git history is Thabang Mokoena, and that name is not written into a signature cell. No student number or signature has been supplied. The brief requires a one-page statement signed by all members. These empty signature cells mean that requirement is not met. The outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
+This appendix repeats `reports/contribution_statement.md`. The signature and date cells are empty. An empty signature cell is not a signature, and this page is not a signed declaration. The brief asks for a one-page statement signed by all members. The outline is not a slide file, not an attendance record, and not a defence result. The presentation window in the brief is 5–17 October 2026. This repository has no evidence that the presentation was given.
+
+| Name | Initials | Student number | Email | Signature | Date |
+| --- | --- | --- | --- | --- | --- |
+| Mpumelelo Ngozo | MSP | 218409202 | 218409202@tut4life.ac.za |  |  |
+| Selowa Tumiso | TS | 218340172 | 218340172@tut4life.ac.za |  |  |
+| Ualwela Netshidzati | U | 220069117 | 220069117@tut4life.ac.za |  |  |
+| Thabang Mokoena | TG | 240668823 | 240668823@tut4life.ac.za |  |  |
+
+The repository records four commits on 15 October 2026 by Thabang Mokoena: the initial repository, `README.md`, the `src` placeholder, and `requirements.txt`. Later commits are authored Cursor Agent. That record does not assign the later modelling, the report, or the interface to him, and it does not describe work by Mpumelelo Ngozo, Selowa Tumiso, or Ualwela Netshidzati. No separate task description is added for those three members, because the repository does not say which tasks they completed.
 
 | Work that exists in the repository | Name | Student number | Signature | Date |
 | --- | --- | --- | --- | --- |
@@ -492,3 +510,10 @@ The page the members sign is `reports/contribution_statement.md`. It is reproduc
 | Report, ROC figure, suburb and ward audit, and the check of the saved tables. |  |  |  |  |
 
 Each person signs only the rows they did. The locked-test scores were not used to choose the champion. The embedding-network test score is the Question 6.2 comparison only.
+
+| Confirmation | Name | Student number | Signature | Date |
+| --- | --- | --- | --- | --- |
+| I sign only for rows I did. | Mpumelelo Ngozo | 218409202 |  |  |
+| I sign only for rows I did. | Selowa Tumiso | 218340172 |  |  |
+| I sign only for rows I did. | Ualwela Netshidzati | 220069117 |  |  |
+| I sign only for rows I did. | Thabang Mokoena | 240668823 |  |  |

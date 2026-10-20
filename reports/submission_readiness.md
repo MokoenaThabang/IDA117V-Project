@@ -8,7 +8,7 @@ This note does not say the submission is complete.
 
 | Brief item | Marks | Status | Evidence |
 | --- | --- | --- | --- |
-| 1.1 Problem, population, decision-maker, unit, inputs, classes, horizon | 4 | Partial | `reports/final_report.md` section 1 names Cape Town service requests, residents and businesses, and a reviewer in the municipal service department. The unit is one request at logging. Classes are Resolved Fast, Resolved Slow, and Unresolved. The horizon is seven days. The cover fields are present and blank: student names, student numbers, group number, lecturer, and submission date were not supplied. |
+| 1.1 Problem, population, decision-maker, unit, inputs, classes, horizon | 4 | Partial | `reports/final_report.md` section 1 names Cape Town service requests, residents and businesses, and a reviewer in the municipal service department. The unit is one request at logging. Classes are Resolved Fast, Resolved Slow, and Unresolved. The horizon is seven days. The cover lists Mpumelelo Ngozo (218409202, MSP), Selowa Tumiso (218340172, TS), Ualwela Netshidzati (220069117, U), and Thabang Mokoena (240668823, TG), with their tut4life email addresses. The group number, lecturer, and submission date were not supplied. |
 | 1.2 Primary metric, service indicator, false-positive and false-negative cost | 2 | Met | Macro-F1 is the primary metric. The service indicator is whether a request that will not resolve within seven days is brought to a reviewer. Section 1 states the operational cost of a false positive and a false negative for the three classes, using the champion's locked-test Resolved Slow precision 0.210 and Unresolved recall 0.418. |
 | 1.3 Provenance, licence, coverage, limitations, POPIA, privacy, fairness, misuse | 4 | Met as a discussion | Section 1.1 names POPIA and covers personal information, lawful processing, minimisation, access, retention, and security. It does not claim that compliance has been certified. Fairness and misuse are in section 16. Provenance remains in section 2 and `reports/data_source.md`. |
 | 2.1 Data dictionary and audit | 4 | Met | `results/tables/02_data_dictionary.csv`. Duplicates, missingness, invalid dates, and leakage fields are in the report. |
@@ -29,7 +29,7 @@ This note does not say the submission is complete.
 | 7.1–7.4 Interface | 7 | Met locally | `streamlit run app/app.py` loads `models/frozen_resolution_pipeline.joblib`. The form shows the class, probabilities, and a plain-language meaning. Invalid input is rejected. `reports/demonstration_checklist.md` has more than three scored cases and invalid cases. Screenshots are in `evidence/screenshots/`. There is no hosted demonstration link. The brief allows a local launch command instead. |
 | 8.1 Recommendation, limits, fairness, when not to use the model | 2 | Met | Report section 16. The suburb and ward audit is not claimed as a disparity finding. |
 | 8.2 Repository package | 3 | Partial | README, `requirements.txt`, seed 42, notebook order, source URL, data dictionary, saved pipeline, and interface code are present. The raw extract is not in git. The report now has a reference list and an AI-assistance disclosure based on the git history. A module-specific signed AI form was not in the brief or the repository. |
-| 8.3 Presentation and signed contribution statement | 2 | Not met | The brief asks for a 10–12 minute presentation, participation by every member, an interface demonstration, a defence, and a statement signed by all members, during 5–17 October 2026. `reports/presentation_outline.md` is the speaking plan. There is no slide file, attendance record, recording, or defence outcome. `reports/contribution_statement.md` names the only human git author and leaves the signature cells empty. |
+| 8.3 Presentation and signed contribution statement | 2 | Not met | The brief asks for a 10–12 minute presentation, participation by every member, an interface demonstration, a defence, and a statement signed by all members, during 5–17 October 2026. `reports/presentation_outline.md` is the speaking plan. There is no slide file, attendance record, recording, or defence outcome. `reports/contribution_statement.md` lists the four members and leaves the signature cells empty. The work rows are not assigned to a person. |
 
 ## Verified files that did not change in this check
 
@@ -43,8 +43,8 @@ This note does not say the submission is complete.
 
 ## Still required before the brief can be treated as met
 
-1. Student numbers, the group number, the lecturer, the submission date, and any group members who are not named in git. The cover records only Thabang Mokoena, from the 15 October 2026 commits.
-2. Signatures on `reports/contribution_statement.md`. The brief requires them. The cells are empty because none were supplied. This file is not a signed declaration.
+1. The group number, the lecturer, and the submission date. The cover now lists all four members, their initials, student numbers, and email addresses.
+2. Signatures on `reports/contribution_statement.md`. The brief requires them. The cells are empty because none were supplied. This file is not a signed declaration. The work rows are not assigned, because the repository does not record who completed each task.
 3. Evidence that the presentation was given and that a defence took place. The brief’s window is 5–17 October 2026. The outline exists. Attendance does not.
 4. A compute-environment description is still thin, and random cross-validation means are not shown for every model. The chronological split is the design that was used.
 
