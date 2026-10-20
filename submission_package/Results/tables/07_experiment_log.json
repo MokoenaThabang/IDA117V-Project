@@ -1,0 +1,72 @@
+{
+  "frozen": {
+    "champion_family": "hist_gradient_boosting",
+    "class_weight": "balanced",
+    "comparator": "multilayer_perceptron",
+    "comparator_phase5_validation_macro_f1": 0.4764661870392401,
+    "decision_rule": "Keep the tuned refit only when its 2025 validation macro-F1 is higher than the untuned refit. A tie keeps the untuned settings.",
+    "early_stopping": false,
+    "encoder": "TreeCategoryEncoder fit on the training period",
+    "features": [
+      "C3_Complaint_Type",
+      "Suburb",
+      "Ward",
+      "Sub_Council",
+      "created_day_of_week",
+      "created_month",
+      "created_is_weekend"
+    ],
+    "folds": [
+      {
+        "fold": 1,
+        "train_end": "2023-06-30",
+        "validate_end": "2023-12-31"
+      },
+      {
+        "fold": 2,
+        "train_end": "2023-12-31",
+        "validate_end": "2024-06-30"
+      },
+      {
+        "fold": 3,
+        "train_end": "2024-06-30",
+        "validate_end": "2024-12-31"
+      }
+    ],
+    "locked_test_macro_f1": 0.49389671114581174,
+    "locked_test_scored": true,
+    "max_iter": 12,
+    "parameters": {
+      "l2_regularization": 1.0,
+      "learning_rate": 0.1,
+      "max_leaf_nodes": 31,
+      "min_samples_leaf": 50
+    },
+    "phase5_champion_validation_macro_f1": 0.4816599009477968,
+    "search_seed": 42,
+    "search_trials": 8,
+    "selected": "untuned",
+    "tuned_training_fold_mean_macro_f1": 0.5442947500860499,
+    "tuned_trial": 5,
+    "tuned_validation_macro_f1": 0.46992097415081197,
+    "untuned_training_fold_mean_macro_f1": 0.540287849188581,
+    "untuned_validation_macro_f1": 0.4765377211093145
+  },
+  "mcnemar": {
+    "accuracy_difference": -0.006094310160579819,
+    "alpha": 0.05,
+    "both_correct": 233776,
+    "both_wrong": 147121,
+    "champion_only": 19282,
+    "comparator": "multilayer_perceptron",
+    "comparator_only": 21854,
+    "conclusion": "The paired error rates differ at the 0.05 threshold. This does not show that one model is better on every class.",
+    "discordant": 41136,
+    "macro_f1_difference": -0.0009885937623457242,
+    "method": "chi-square with continuity correction",
+    "p_value": 8.00644675266312e-37,
+    "rows": 422033,
+    "significant": true,
+    "statistic": 160.6875
+  }
+}

@@ -1,0 +1,5 @@
+status,display_name,requests,percent_of_analysis_file,kind
+completion_recorded,Recorded completion,3906387,85.05452988077215,duration_known
+blank_unresolved,Open at least 7 days (Unresolved),670415,14.597077209712674,meaningful_blank
+blank_insufficient_follow_up,Open fewer than 7 days (no label),15981,0.34795744559477076,meaningful_blank
+completion_before_creation,Completion before creation (excluded),20,0.0004354639203989372,invalid_date

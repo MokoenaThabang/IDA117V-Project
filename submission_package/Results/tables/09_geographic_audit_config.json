@@ -1,0 +1,25 @@
+{
+  "interpretation": "Groups below the support threshold are not evidence of geographic bias. Placeholder and blank codes are stored values, not measured neighbourhood effects.",
+  "min_class_support": 30,
+  "min_group_support_for_class_metrics": 200,
+  "model": "frozen histogram gradient boosting champion",
+  "prediction_file": "results/tables/06_test_predictions.parquet",
+  "row_level_records_saved": false,
+  "split": "locked test",
+  "suburb": {
+    "blank_rows": 1666,
+    "groups": 7806,
+    "groups_below_support": 7447,
+    "placeholder_rows": 38341,
+    "rows": 422033,
+    "rows_in_groups_below_support": 61698
+  },
+  "ward": {
+    "blank_rows": 2490,
+    "groups": 119,
+    "groups_below_support": 4,
+    "placeholder_rows": 213081,
+    "rows": 422033,
+    "rows_in_groups_below_support": 467
+  }
+}

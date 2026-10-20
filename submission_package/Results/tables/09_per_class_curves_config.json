@@ -1,0 +1,9 @@
+{
+  "curves_use_probabilities": true,
+  "macro_average_precision": 0.5191797850303996,
+  "macro_roc_auc": 0.7241433691367188,
+  "prior_summary_left_unchanged": "results/tables/06_locked_test_summary.csv",
+  "recomputed_gap_average_precision": 0.0,
+  "recomputed_gap_roc": 0.0,
+  "source_predictions": "results/tables/06_test_predictions.parquet"
+}

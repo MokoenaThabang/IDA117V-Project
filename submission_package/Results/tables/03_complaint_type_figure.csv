@@ -1,0 +1,13 @@
+rank,C3_Complaint_Type,Resolved Fast,Resolved Slow,Unresolved,requests,Resolved Fast percent,Resolved Slow percent,Unresolved percent,selection_rule
+1,No Power,427556,29401,17861,474818,90.046291421134,6.192056745953186,3.761651832912821,largest 12 groups by labelled request count
+2,SEW: Blocked/Overflow,342180,93578,35360,471118,72.63148510564233,19.86296426797533,7.50555062638235,largest 12 groups by labelled request count
+3,Street Lights - All Lights Out,113872,62521,23451,199844,56.98044474690258,31.284902223734512,11.734653029362903,largest 12 groups by labelled request count
+4,Street Lights - Single Light Out,126511,39359,23400,189270,66.84154910973741,20.79516035293496,12.363290537327627,largest 12 groups by labelled request count
+5,Damaged Bin - 240L,85850,22864,13966,122680,69.97880665145092,18.63710466253668,11.38408868601239,largest 12 groups by labelled request count
+6,Stolen Bins - 240L,82131,19594,12571,114296,71.85815776580108,17.143207111359978,10.998635122838945,largest 12 groups by labelled request count
+7,Suspect Tampering,12828,37774,32880,83482,15.366186722886372,45.24807742986512,39.38573584724851,largest 12 groups by labelled request count
+8,WAT: Leak in Road/Pavement/Undergr,34534,28350,16332,79216,43.594728337709554,35.78822460109069,20.61704706119976,largest 12 groups by labelled request count
+9,Duplicate,26024,47655,3,73682,35.319345294644556,64.6765831546375,0.00407155071795011,largest 12 groups by labelled request count
+10,MTR: Customer Reconnection Request,71288,254,320,71862,99.20124683421001,0.3534552336422587,0.44529793214772756,largest 12 groups by labelled request count
+11,PPM Display Blank,58665,5054,4883,68602,85.51499956269495,7.367132153581528,7.1178682837235066,largest 12 groups by labelled request count
+12,Customer : Reconnection Request,65734,115,96,65945,99.68003639396467,0.1743877473652286,0.1455758586701039,largest 12 groups by labelled request count

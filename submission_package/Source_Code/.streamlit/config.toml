@@ -1,0 +1,12 @@
+# The Render start command passes --server.port $PORT. This file makes a
+# local `streamlit run app/app.py` listen on all interfaces as well, and
+# stops the process from opening a browser or watching the repository.
+
+[server]
+headless = true
+address = "0.0.0.0"
+fileWatcherType = "none"
+runOnSave = false
+
+[browser]
+gatherUsageStats = false

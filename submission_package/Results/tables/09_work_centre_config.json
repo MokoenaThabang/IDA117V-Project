@@ -1,0 +1,38 @@
+{
+  "champion_changed": false,
+  "class_weight": "balanced",
+  "early_stopping": false,
+  "leakage_status": "Work Center is present on the request. No assignment timestamp is in the extract, so this column is not known to be available at logging. The with-work-centre model is not a logging-time champion.",
+  "locked_test_scored": false,
+  "max_iter": 12,
+  "parameters": {
+    "l2_regularization": 1.0,
+    "learning_rate": 0.1,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 50
+  },
+  "purpose": "Sensitivity comparison. The champion excluded Work Center because the extract has no assignment time. Both models were fit for this table. The champion file was not replaced.",
+  "saved_champion_validation_macro_f1": 0.4765377211093145,
+  "seed": 42,
+  "split": "validation 2025, same chronological split as Phase 4",
+  "with_features": [
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+    "created_day_of_week",
+    "created_month",
+    "created_is_weekend",
+    "Work_Center"
+  ],
+  "without_features": [
+    "C3_Complaint_Type",
+    "Suburb",
+    "Ward",
+    "Sub_Council",
+    "created_day_of_week",
+    "created_month",
+    "created_is_weekend"
+  ],
+  "without_model_minus_saved_champion_macro_f1": 0.0
+}

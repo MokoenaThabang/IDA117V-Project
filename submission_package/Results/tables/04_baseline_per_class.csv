@@ -1,0 +1,19 @@
+model,split,label,precision,recall,f1,support
+dummy_most_frequent,train,Resolved Fast,0.6615269080618131,1.0,0.7962879263068818,1730948
+dummy_most_frequent,train,Resolved Slow,0.0,0.0,0.0,767337
+dummy_most_frequent,train,Unresolved,0.0,0.0,0.0,118310
+dummy_most_frequent,validation,Resolved Fast,0.6925696419208751,1.0,0.8183647216251462,648570
+dummy_most_frequent,validation,Resolved Slow,0.0,0.0,0.0,88411
+dummy_most_frequent,validation,Unresolved,0.0,0.0,0.0,199488
+dummy_most_frequent,test,Resolved Fast,0.6803520103878132,1.0,0.8097731977370538,287131
+dummy_most_frequent,test,Resolved Slow,0.0,0.0,0.0,65522
+dummy_most_frequent,test,Unresolved,0.0,0.0,0.0,69380
+logistic_regression,train,Resolved Fast,0.8700025485117892,0.7533784954833999,0.8075013731236814,1730948
+logistic_regression,train,Resolved Slow,0.5447603742708614,0.5548670271341014,0.5497672556830288,767337
+logistic_regression,train,Unresolved,0.25500136860770944,0.7244358042430902,0.3772209727607621,118310
+logistic_regression,validation,Resolved Fast,0.8748710770590835,0.659170174383644,0.7518558185914245,648570
+logistic_regression,validation,Resolved Slow,0.1373105005721693,0.4600898078293425,0.21150026517475537,88411
+logistic_regression,validation,Unresolved,0.4834459370299016,0.3673053015720244,0.4174481273429577,199488
+logistic_regression,test,Resolved Fast,0.823376800710043,0.6720277503996434,0.7400432995898236,287131
+logistic_regression,test,Resolved Slow,0.2024239948251796,0.4537254662556088,0.2799512211199367,65522
+logistic_regression,test,Unresolved,0.5146511172089376,0.3027673681176131,0.38124795818360013,69380

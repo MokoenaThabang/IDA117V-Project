@@ -1,0 +1,12 @@
+metric,value
+completed_requests,3906387.0
+median_days,2.0
+p75_days,7.0
+p90_days,32.0
+p99_days,236.0
+maximum_days,1135.0
+same_calendar_day,1129914.0
+within_7_days,2969242.0
+longer_than_365_days,14953.0
+longer_than_730_days,3075.0
+longer_than_1000_days,300.0

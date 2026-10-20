@@ -1,0 +1,7 @@
+column,training_rows,distinct_categories,kept_categories,grouped_categories,min_count,kept_row_percent
+C3_Complaint_Type,2616595,998,372,626,200,99.05270016949508
+Suburb,2616595,28394,1080,27314,200,95.20892610434554
+Ward,2616595,219,218,1,200,99.99510814627406
+Sub_Council,2452537,32,23,9,200,99.98629990087815
+created_day_of_week,2616595,7,7,0,200,100.0
+created_month,2616595,12,12,0,200,100.0

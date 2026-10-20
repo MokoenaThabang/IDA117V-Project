@@ -1,0 +1,37 @@
+{
+  "alpha": 0.05,
+  "champion": "hist_gradient_boosting",
+  "champion_model": "hist_gradient_boosting",
+  "champion_validation_macro_f1": 0.4816599009477968,
+  "comparator": "multilayer_perceptron",
+  "comparator_model": "multilayer_perceptron",
+  "comparator_rule": "Highest validation macro-F1 among approved models other than the champion. Ties break on Unresolved recall, then Resolved Slow recall, then model name. Pending models are excluded. The embedding network is excluded because it is not scored on the locked test: it was not selected as champion, and the comparator is scored once on that test. The locked test is not an input to this choice.",
+  "comparator_validation_macro_f1": 0.4764661870392401,
+  "conclusion": "The paired error rates differ at the 0.05 threshold. This does not show that one model is better on every class.",
+  "contingency": {
+    "both_correct": 233776,
+    "both_wrong": 147121,
+    "champion_only": 19282,
+    "comparator_only": 21854
+  },
+  "discordant": 41136,
+  "excluded_from_comparator": [
+    "embedding_network"
+  ],
+  "exclusion_reason": "embedding_network is not scored on the locked test because it was not selected as champion. The comparator is scored once, so a barred model cannot be the comparator.",
+  "interpretation": "The test compares paired error outcomes on the same locked-test observations. It does not establish that one model is better on every class, and it does not by itself establish general superiority.",
+  "locked_test_used_for_selection": false,
+  "method": "chi-square with continuity correction",
+  "p_value": 8.00644675266312e-37,
+  "predictions_regenerated": false,
+  "significant": true,
+  "split_id": "chronological|train_end=2024-12-31|validation_end=2025-12-31|test_end=2026-04-30|seed=42",
+  "statistic": 160.6875,
+  "test_rows": 422033,
+  "tie_break": [
+    "macro_f1",
+    "recall_unresolved",
+    "recall_resolved_slow",
+    "model"
+  ]
+}

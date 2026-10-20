@@ -1,0 +1,151 @@
+{
+  "champion_rule": "Highest validation macro-F1 among approved models. Ties break on Unresolved recall, then Resolved Slow recall. The embedding network is included because lecturer approval was recorded. A model that is still marked pending is excluded. The locked test is not an input.",
+  "embedding_categories": {
+    "approval": "approved",
+    "fit_on": "train",
+    "rare_min_count": 200,
+    "unseen_index": 0,
+    "unseen_vector": "zero, not updated"
+  },
+  "embedding_network": {
+    "activation": "ReLU",
+    "approval": "approved",
+    "batch_size": 8192,
+    "class_weight": "balanced",
+    "dropout": 0.3,
+    "embedding_dim": 16,
+    "hidden_size": 64,
+    "learning_rate": 0.001,
+    "loss": "CrossEntropyLoss",
+    "max_epochs": 8,
+    "optimiser": "AdamW",
+    "patience": 3,
+    "seed": 42,
+    "unseen_index": 0,
+    "weight_decay": 0.0001
+  },
+  "hist_gradient_boosting": {
+    "class_weight": "balanced",
+    "early_stopping": true,
+    "l2_regularization": 1.0,
+    "learning_rate": 0.1,
+    "loss": "log_loss",
+    "max_bins": 255,
+    "max_iter": 40,
+    "max_leaf_nodes": 31,
+    "min_samples_leaf": 50,
+    "n_iter_no_change": 6,
+    "random_state": 42,
+    "scoring": "f1_macro"
+  },
+  "imbalance": {
+    "method": "class_weight_balanced",
+    "resample_locked_test": false,
+    "resample_validation": false,
+    "smote": false
+  },
+  "locked_test_scored_in_phase_5": false,
+  "logistic_regression": {
+    "C": 1.0,
+    "class_weight": "balanced",
+    "l1_ratio": 0.0,
+    "max_iter": 200,
+    "random_state": 42,
+    "solver": "saga",
+    "tol": 0.001
+  },
+  "measured": {
+    "embedding_network": {
+      "approval": "approved",
+      "batch_size": 8192,
+      "best_epoch": 4,
+      "dropout": 0.3,
+      "embedding_dim": 16,
+      "epochs_ran": 7,
+      "fit_seconds": 236.24927143099922,
+      "hidden_size": 64,
+      "learning_rate": 0.001,
+      "weight_decay": 0.0001
+    },
+    "hist_gradient_boosting": {
+      "best_iteration": 2,
+      "fit_seconds": 17.925579347996973,
+      "hit_max_iter": false,
+      "n_iter_trained": 8,
+      "validation_macro_f1_at_best": 0.48165990094779687
+    },
+    "logistic_regression": {
+      "convergence_warning": true,
+      "fit_seconds": 247.9389658939981,
+      "max_iter": 200,
+      "n_iter": 200,
+      "tol": 0.001
+    },
+    "multilayer_perceptron": {
+      "batch_size": 8192,
+      "best_epoch": 3,
+      "dropout": 0.3,
+      "epochs_ran": 6,
+      "fit_seconds": 329.47221051300585,
+      "hidden_sizes": [
+        128,
+        64
+      ],
+      "learning_rate": 0.001,
+      "n_features": 1718,
+      "n_parameters": 228483,
+      "stopped_early": true,
+      "weight_decay": 0.0001
+    },
+    "neural_loss_curves": {
+      "embedding_network": true,
+      "multilayer_perceptron": true
+    }
+  },
+  "multilayer_perceptron": {
+    "activation": "ReLU",
+    "batch_size": 8192,
+    "class_weight": "balanced",
+    "dropout": 0.3,
+    "hidden_sizes": [
+      128,
+      64
+    ],
+    "learning_rate": 0.001,
+    "loss": "CrossEntropyLoss",
+    "max_epochs": 8,
+    "optimiser": "AdamW",
+    "patience": 3,
+    "seed": 42,
+    "weight_decay": 0.0001
+  },
+  "one_hot": {
+    "fit_on": "train",
+    "missing_label": "(missing)",
+    "rare_label": "(rare)",
+    "rare_min_count": 200,
+    "unknown_categories": "ignore"
+  },
+  "provisional_champion": {
+    "locked_test_used": false,
+    "model": "hist_gradient_boosting",
+    "recall_resolved_slow": 0.4155591498795399,
+    "recall_unresolved": 0.4921699550850176,
+    "validation_macro_f1": 0.4816599009477968
+  },
+  "seed": 42,
+  "split": {
+    "mature_end": "2026-04-30",
+    "method": "chronological",
+    "shuffled": false,
+    "train_end": "2024-12-31",
+    "validation_end": "2025-12-31"
+  },
+  "tree_categories": {
+    "fit_on": "train",
+    "max_bins": 255,
+    "max_kept_levels": 253,
+    "rare_min_count": 200,
+    "unseen": "trained rare level, or missing when no rare level was learned"
+  }
+}
