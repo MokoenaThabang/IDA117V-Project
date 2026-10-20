@@ -450,6 +450,8 @@ Joblib 1.6.0 stores the encoder and the frozen pipeline. openpyxl 3.1.5 is the E
 
 ## AI-assistance disclosure
 
+We used some AI tools during the development of this project. These tools assisted with refining project components, saving evaluation results, and preparing the report and its supporting documentation.
+
 The assignment brief asks us to label AI-assisted work according to institutional policy. The brief itself does not attach a module declaration form. UNISA’s academic-integrity material requires students to acknowledge AI tools. The Unisa Press *Ethical AI use guidelines* of 29 July 2025 apply to Unisa Press manuscripts. They are not a form in this module, and we do not treat them as a signed assignment declaration. We did not store a prompt log in the repository, so this section does not reconstruct prompts we do not have.
 
 The git history shows the following. On 15 October 2026, four commits by Thabang Mokoena added the initial repository, `README.md`, `LICENSE`, `.gitignore`, `src/.gitkeep`, and `requirements.txt`. The later commits that added the audit, the models, the notebooks, the tests, the tables, the figures, and this report are authored `Cursor Agent <cursoragent@cursor.com>`. Those commits were produced in Cursor cloud-agent sessions. The session that wrote this disclosure identifies its model as Grok 4.7. We do not name the models used in earlier sessions, because those names are not stored on the commits.
