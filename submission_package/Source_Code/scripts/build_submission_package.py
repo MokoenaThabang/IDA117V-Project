@@ -491,10 +491,11 @@ def write_project_overview(destination: Path) -> None:
     )
     document.add_heading("Fields still open", 2)
     for item in (
+        "The report cover names Mpumelelo Ngozo (218409202), Selowa Tumiso (218340172), Ualwela Netshidzati (220069117), and Thabang Mokoena (240668823).",
         "Group number: not recorded. Complete manually.",
         "Lecturer: not recorded. Complete manually.",
         "Submission date: not recorded. Complete manually.",
-        "Contribution signatures and dates: blank. Do not treat the statement as signed.",
+        "Contribution categories are marked “To be confirmed by the team”. Signature and date cells are blank.",
         "Presentation attendance and defence outcome: not in the repository.",
     ):
         _paragraph(document, item, bullet=True)
@@ -678,7 +679,7 @@ def write_readme(destination: Path) -> None:
     document.add_heading("17. Team", 2)
     _paragraph(
         document,
-        "The following identities were supplied for this submission document. They are not a signed division of work. The contribution statement in `Documentation/Contribution_Statement.docx` still has blank name, signature, and date cells. Do not treat it as signed.",
+        "The following identities are the project team. They are not a signed division of work. Every contribution category is “To be confirmed by the team”. The signature and date cells in `Documentation/Contribution_Statement.docx` are blank. Do not treat that page as signed.",
     )
     _add_table(
         document,
@@ -696,7 +697,7 @@ def write_readme(destination: Path) -> None:
     _paragraph(document, "Institution name beyond the module code IDA117V: not recorded in the repository. Complete manually if the cover requires it.")
     _paragraph(
         document,
-        "The technical report PDF in this package is the copy at `reports/final_report.pdf` on the branch used to build the package. Its cover still says student numbers, group number, lecturer, and submission date are not recorded. Filling those cover fields requires editing the report source and exporting the PDF again. That edit was not made here.",
+        "The technical report PDF in this package is regenerated from `reports/final_report.md`. Its cover lists the four names, initials, student numbers, and email addresses above. The group number, lecturer, and submission date remain “Not recorded.” Signature cells in the contribution statement and in Appendix A are empty.",
     )
     destination.parent.mkdir(parents=True, exist_ok=True)
     document.save(destination)
@@ -760,9 +761,8 @@ def write_package_notes(destination: Path) -> None:
         _paragraph(document, item, bullet=True)
     document.add_heading("Manual items still open", 2)
     for item in (
-        "Sign the contribution statement. Every signature cell is blank.",
-        "Enter the group number, lecturer, and submission date. They are not recorded.",
-        "The four student identities are written in `README.docx` from the details supplied for that document. They are not written into signature cells and they are not on the PDF cover in this package.",
+        "Sign the contribution statement. Every signature and date cell is blank. Contribution categories are “To be confirmed by the team”.",
+        "Enter the group number, lecturer, and submission date. They are not recorded. The report cover and the contribution statement name Mpumelelo Ngozo (218409202, 218409202@tut4life.ac.za), Selowa Tumiso (218340172, 218340172@tut4life.ac.za), Ualwela Netshidzati (220069117, 220069117@tut4life.ac.za), and Thabang Mokoena (240668823, 240668823@tut4life.ac.za).",
         "Add presentation or defence evidence only if it exists outside this repository. None was found here.",
         "Redeploy the Streamlit service separately if the live site must match the current application code. This package does not deploy it.",
     ):
