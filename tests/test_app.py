@@ -43,6 +43,36 @@ def _pipeline():
 
 
 class PipelineLoadTest(unittest.TestCase):
+    def test_pipeline_path_is_project_relative(self) -> None:
+        path = pipeline_path()
+        self.assertEqual(path, PROJECT_ROOT / "models" / "frozen_resolution_pipeline.joblib")
+        self.assertTrue(path.is_file())
+        text = str(path)
+        self.assertNotRegex(text, r"^[A-Za-z]:[\\/]")
+
+    def test_loading_the_pipeline_does_not_read_a_dataset(self) -> None:
+        import pandas as pd
+
+        def fail(*args, **kwargs):
+            raise AssertionError("The application read a dataset while loading the pipeline.")
+
+        originals = pd.read_parquet, pd.read_csv, pd.read_excel
+        pd.read_parquet = pd.read_csv = pd.read_excel = fail
+        try:
+            loaded = load_pipeline()
+        finally:
+            pd.read_parquet, pd.read_csv, pd.read_excel = originals
+        self.assertEqual(loaded["format"], "ida117v-frozen-hgb-v1")
+        self.assertEqual(list(loaded["features"]), list(MODEL_FEATURES))
+
+    def test_startup_modules_do_not_train_or_open_the_extract(self) -> None:
+        for relative in ("app/app.py", "app/predict.py"):
+            source = (PROJECT_ROOT / relative).read_text(encoding="utf-8")
+            self.assertNotIn("read_parquet", source)
+            self.assertNotIn("read_csv", source)
+            self.assertNotIn("read_excel", source)
+            self.assertNotIn(".fit(", source)
+
     def test_missing_file_tells_the_user_not_to_expect_training(self) -> None:
         with self.assertRaises(FileNotFoundError) as caught:
             load_pipeline(PROJECT_ROOT / "models" / "does_not_exist.joblib")

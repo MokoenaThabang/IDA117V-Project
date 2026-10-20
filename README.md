@@ -29,6 +29,7 @@ py -m venv .venv
 .venv\Scripts\activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -m pip install -r requirements-research.txt
 ```
 
 `py -m venv .venv` is the usual Windows command. If `py` is not available, use `python -m venv .venv` instead.
@@ -40,15 +41,16 @@ python3 -m venv .venv
 source .venv/bin/activate
 python -m pip install --upgrade pip
 python -m pip install -r requirements.txt
+python -m pip install -r requirements-research.txt
 ```
 
-The pinned neural-network framework is **PyTorch** (CPU build). `requirements.txt` points at the PyTorch CPU index so a Linux install does not download CUDA libraries. No model is trained by the install.
+`requirements.txt` is the Streamlit application and the saved histogram gradient-boosting pipeline. `requirements-research.txt` adds JupyterLab, the figure libraries, Excel reading, and the pinned **PyTorch** CPU build. That file points at the PyTorch CPU index so a Linux install does not download CUDA libraries. No model is trained by the install. The Render service installs only `requirements.txt`.
 
 Optional path and threshold overrides live in [`.env.example`](.env.example). Copy it to `.env` only if you need them. Leave the day thresholds blank until a later notebook chooses them from training data.
 
 ## How to open the notebooks
 
-JupyterLab is the interface installed by `requirements.txt`. Start it from the project folder:
+JupyterLab is installed by `requirements-research.txt`. Start it from the project folder:
 
 ```bat
 jupyter lab
@@ -138,7 +140,7 @@ On Windows, use the same command after `.venv\Scripts\activate`.
 
 The form asks for complaint type, suburb, ward, subcouncil, and the request creation date. Work centre is not requested. The creation date is used only to derive the weekday, the month, and the weekend flag. Dropdown values are categories kept from the training period. A value outside that list is grouped with rare or unseen levels. The demonstration sample is a set of frequent training categories, not a logged request and not an unresolved case.
 
-`requirements.txt` already pins Streamlit and joblib. Install it with the setup commands above before launching the app.
+`requirements.txt` pins Streamlit, joblib, pandas, NumPy, SciPy, and scikit-learn. Install it with the setup commands above before launching the app.
 
 To write the pipeline file again from the labelled extract and the frozen decision in `results/tables/06_frozen_decision.json`:
 
@@ -147,6 +149,16 @@ python -m app.export_frozen_pipeline --force
 ```
 
 That command needs `data/processed/service_requests_labelled.parquet`. The app itself does not run it. The export checks that the refit matches the locked-test predictions already saved by notebook 06, and it stops without replacing the file if they differ.
+
+## Render
+
+The repository can be connected to a Render web service. This repository change does not deploy the service and does not record a public URL.
+
+- Python `3.12.3`, in `.python-version` and as `PYTHON_VERSION` in `render.yaml`. A new Render service otherwise defaults to a newer Python than the one used to pin these packages.
+- Build command: `pip install -r requirements.txt`
+- Start command: `streamlit run app/app.py --server.address 0.0.0.0 --server.port $PORT`
+- `.streamlit/config.toml` turns off the browser launch and the file watcher, and listens on `0.0.0.0`. The start command supplies Render's `PORT`.
+- The only model file the process loads is `models/frozen_resolution_pipeline.joblib`. Its path is resolved from the repository root. Startup does not train, does not execute a notebook, and does not read `data/raw/` or `data/processed/`.
 
 ## Deliverables
 

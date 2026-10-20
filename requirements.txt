@@ -1,17 +1,12 @@
-# Direct dependencies for the IDA117V Cape Town resolution classifier.
-# Versions were installed and imported successfully with Python 3.12 on Linux.
-# The PyTorch CPU index is required so Linux does not pull large CUDA wheels.
-# A Windows CPU wheel for this same torch version is published on that index.
---extra-index-url https://download.pytorch.org/whl/cpu
+# Runtime dependencies for the Streamlit app and the saved histogram
+# gradient-boosting pipeline in models/frozen_resolution_pipeline.joblib.
+# Versions were installed and imported successfully with Python 3.12.3 on Linux.
+# Notebooks, figures, spreadsheets, and the embedding network are not loaded
+# by the app. Those packages are pinned in requirements-research.txt.
 
 pandas==3.0.6
 numpy==2.5.4
 scipy==1.18.1
-matplotlib==3.11.2
-seaborn==0.13.2
 scikit-learn==1.9.1
-jupyterlab==4.6.4
 joblib==1.6.0
 streamlit==1.66.0
-openpyxl==3.1.5
-torch==2.14.1+cpu
